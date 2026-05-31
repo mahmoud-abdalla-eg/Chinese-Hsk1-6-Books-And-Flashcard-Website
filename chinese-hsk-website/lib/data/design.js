@@ -10,9 +10,9 @@ export const courseHighlights = [
     text: "Chinese on the front, pinyin and meanings on the back, then Again, Hard, Good, and Easy scheduling.",
   },
   {
-    label: "Voice practice",
-    title: "Shadow, record, compare",
-    text: "Learners hear native audio, record themselves, and receive an estimated browser score until Azure assessment is configured.",
+    label: "Coming soon",
+    title: "Pronunciation practice",
+    text: "Speaking practice and pronunciation scoring are planned, but they are not active in the app yet.",
   },
 ];
 
@@ -23,6 +23,7 @@ export const studyModes = [
   "Listening Quiz",
   "Translation Quiz",
   "Typing Quiz",
+  "Pronunciation Practice Soon",
 ];
 
 export const dailyTopics = [
@@ -71,5 +72,10 @@ export const levelThemes = {
     accent: "from-indigo-400 to-slate-700",
     scene: "Fluent flow",
     tone: "Grow into nuanced listening and expression.",
+  },
+  6: {
+    accent: "from-violet-500 to-slate-800",
+    scene: "Advanced mastery",
+    tone: "Practice high-level grammar now; vocabulary can be added from admin when reviewed data is ready.",
   },
 };

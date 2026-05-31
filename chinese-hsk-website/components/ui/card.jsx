@@ -20,14 +20,11 @@ export function Surface({ className = "", children }) {
 
 export function Pill({ children, tone = "amber" }) {
   const tones = {
-    amber:
-      "bg-amber-100 text-amber-950 ring-amber-200 dark:bg-amber-300/15 dark:text-amber-200 dark:ring-amber-300/20",
-    blue: "bg-sky-100 text-sky-950 ring-sky-200 dark:bg-sky-300/15 dark:text-sky-200 dark:ring-sky-300/20",
-    green:
-      "bg-emerald-100 text-emerald-950 ring-emerald-200 dark:bg-emerald-300/15 dark:text-emerald-200 dark:ring-emerald-300/20",
-    rose: "bg-rose-100 text-rose-950 ring-rose-200 dark:bg-rose-300/15 dark:text-rose-200 dark:ring-rose-300/20",
-    slate:
-      "bg-slate-100 text-slate-700 ring-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:ring-slate-700",
+    amber: "bg-amber-100 text-amber-950 ring-amber-200",
+    blue: "bg-blue-100 text-blue-950 ring-blue-200",
+    green: "bg-teal-100 text-teal-950 ring-teal-200",
+    rose: "bg-rose-100 text-rose-950 ring-rose-200",
+    slate: "bg-slate-100 text-slate-700 ring-slate-200",
   };
   return (
     <span
@@ -58,11 +55,11 @@ export function SectionHeading({ eyebrow, title, text, align = "left" }) {
       }
     >
       {eyebrow ? <Pill>{eyebrow}</Pill> : null}
-      <h2 className="mt-4 text-4xl font-black tracking-tight text-slate-950 dark:text-white sm:text-5xl">
+      <h2 className="mt-4 text-4xl font-black text-slate-950 sm:text-5xl">
         {title}
       </h2>
       {text ? (
-        <p className="mt-4 text-lg font-semibold leading-8 text-slate-600 dark:text-slate-300">
+        <p className="mt-4 text-lg font-semibold leading-8 text-slate-600">
           {text}
         </p>
       ) : null}

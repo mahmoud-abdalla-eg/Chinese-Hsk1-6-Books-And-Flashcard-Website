@@ -1,11 +1,15 @@
 import Link from "next/link";
 import LevelCard from "@/components/hsk/level-card";
 import { Card, Pill, SectionHeading, Surface } from "@/components/ui/card";
+import { getManagedHskSummary } from "@/lib/admin/course-words";
+import { getSiteContentMap } from "@/lib/admin/site-content";
 import { courseHighlights, dailyTopics, studyModes } from "@/lib/data/design";
-import { getHskSummary } from "@/lib/data/hsk";
 
-export default function HomePage() {
-  const summaries = getHskSummary();
+export const dynamic = "force-dynamic";
+
+export default async function HomePage() {
+  const summaries = await getManagedHskSummary();
+  const siteText = await getSiteContentMap();
   const totalWords = summaries.reduce((sum, item) => sum + item.wordCount, 0);
   const totalUnits = summaries.reduce((sum, item) => sum + item.unitCount, 0);
   return (
@@ -14,19 +18,17 @@ export default function HomePage() {
         <div className="animate-rise-in space-y-7">
           <Pill>Conversation-first HSK 3.0</Pill>
           <h1 className="text-balance max-w-5xl text-5xl font-black leading-[0.95] text-slate-950 sm:text-7xl lg:text-8xl">
-            Learn Chinese inside conversations that feel alive.
+            {siteText["home.hero.title"]}
           </h1>
           <p className="max-w-2xl text-lg font-semibold leading-8 text-slate-600">
-            A multilingual HSK 1-5 learning studio for vocabulary, long
-            dialogue, flashcards, listening, shadowing, pronunciation recording,
-            and local-first progress.
+            {siteText["home.hero.subtitle"]}
           </p>
           <div className="flex flex-wrap gap-3">
             <Link
               href="/hsk/1"
               className="rounded-full bg-teal-700 px-6 py-4 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-teal-800"
             >
-              Start HSK 1
+              {siteText["home.cta.primary"]}
             </Link>
             <Link
               href="/flashcards"
@@ -106,12 +108,12 @@ export default function HomePage() {
             </div>
             <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-4">
               <div className="mb-3 flex items-center justify-between text-xs font-black uppercase tracking-[0.16em] text-slate-500">
-                <span>Pronunciation score</span>
-                <span>Estimated</span>
+                <span>Pronunciation practice</span>
+                <span>Coming soon</span>
               </div>
-              <div className="h-3 rounded-full bg-slate-200">
-                <div className="h-3 w-[76%] rounded-full bg-teal-600" />
-              </div>
+              <p className="text-sm font-semibold leading-6 text-slate-600">
+                Speaking practice and pronunciation scoring are not active yet.
+              </p>
             </div>
           </div>
         </Surface>
@@ -120,10 +122,10 @@ export default function HomePage() {
       <section className="space-y-8">
         <SectionHeading
           eyebrow="Choose your level"
-          title="Five HSK levels, one consistent learning rhythm."
+          title="Six HSK levels, one consistent learning rhythm."
           text="Each level is split into focused units so you can study words, examples, flashcards, grammar, and conversation practice at a comfortable pace."
         />
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-5">
+        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-6">
           {summaries.map((summary) => (
             <LevelCard key={summary.level} summary={summary} />
           ))}
@@ -148,7 +150,7 @@ export default function HomePage() {
         <SectionHeading
           eyebrow="Study modes"
           title="A complete practice loop, not a vocabulary dump."
-          text="Move between conversations, flashcards, grammar, listening, translation, and pronunciation practice without losing your place."
+          text="Move between conversations, flashcards, grammar, listening, and translation practice without losing your place. Pronunciation practice is coming soon."
         />
         <div className="grid gap-3 sm:grid-cols-2">
           {studyModes.map((mode, index) => (
@@ -156,9 +158,7 @@ export default function HomePage() {
               <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-teal-700 text-sm font-black text-white">
                 {String(index + 1).padStart(2, "0")}
               </span>
-              <span className="font-black text-slate-950">
-                {mode}
-              </span>
+              <span className="font-black text-slate-950">{mode}</span>
             </Card>
           ))}
         </div>

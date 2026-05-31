@@ -1,7 +1,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 
-const expected = { 1: 300, 2: 197, 3: 491, 4: 990, 5: 1579 };
+const expected = { 1: 300, 2: 197, 3: 491, 4: 990, 5: 1579, 6: 0 };
 const root = process.cwd();
 function readWords(level) {
   return JSON.parse(
@@ -48,7 +48,7 @@ function validateLevel(level) {
   };
 }
 let hasWarnings = false;
-for (let level = 1; level <= 5; level += 1) {
+for (let level = 1; level <= 6; level += 1) {
   const result = validateLevel(level);
   const warnings = [];
   if (result.actualCount !== result.expectedCount)

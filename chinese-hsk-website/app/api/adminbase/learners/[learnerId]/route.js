@@ -1,0 +1,15 @@
+import { deleteLearner } from "@/lib/admin/learners";
+import { getAdminUser } from "@/lib/auth/admin";
+
+export const dynamic = "force-dynamic";
+
+export async function DELETE(_request, { params }) {
+  const admin = await getAdminUser();
+  if (!admin) return Response.json({ error: "Admin only" }, { status: 401 });
+  const { learnerId } = await params;
+  try {
+    return Response.json({ deleted: await deleteLearner(learnerId) });
+  } catch (error) {
+    return Response.json({ error: error.message }, { status: 400 });
+  }
+}

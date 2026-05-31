@@ -17,10 +17,10 @@ export default function UnitCard({ unit }) {
           </span>
         </div>
         <div>
-          <h3 className="text-2xl font-black text-slate-950 dark:text-white">
+          <h3 className="text-2xl font-black text-slate-950">
             Words {unit.start}-{unit.end}
           </h3>
-          <p className="mt-2 text-sm font-semibold leading-6 text-slate-600 dark:text-slate-300">
+          <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
             Study the words, review flashcards, practice conversation,
             listening, shadowing, and track your progress in one focused room.
           </p>
@@ -29,7 +29,7 @@ export default function UnitCard({ unit }) {
         <div className="flex flex-wrap gap-3">
           <Link
             href={`/hsk/${unit.level}/unit/${unit.id}`}
-            className="rounded-full bg-amber-200 px-4 py-2 text-sm font-black text-slate-950"
+            className="rounded-full bg-teal-700 px-4 py-2 text-sm font-black text-white hover:bg-teal-800"
           >
             Open unit
           </Link>

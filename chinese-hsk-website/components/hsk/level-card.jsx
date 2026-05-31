@@ -5,11 +5,10 @@ import { levelThemes } from "@/lib/data/design";
 export default function LevelCard({ summary }) {
   const theme = levelThemes[summary.level];
   return (
-    <Card className="group relative min-h-[320px] overflow-hidden transition duration-300 hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(15,23,42,0.14)]">
+    <Card className="group relative min-h-[320px] overflow-hidden transition duration-300 hover:-translate-y-0.5 hover:border-teal-300">
       <div
         className={`absolute inset-x-0 top-0 h-2 bg-gradient-to-r ${theme.accent}`}
       />
-      <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-amber-500/10 blur-3xl transition duration-500 group-hover:scale-125" />
       <div className="absolute bottom-5 right-5 font-serif text-8xl font-black text-slate-950/[0.04]">
         {summary.level}
       </div>
@@ -17,7 +16,7 @@ export default function LevelCard({ summary }) {
         <div className="space-y-5">
           <div className="flex items-center justify-between gap-3">
             <Pill>HSK {summary.level}</Pill>
-            <span className="rounded-full bg-amber-200 px-3 py-1 text-xs font-black text-slate-950">
+            <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-black text-blue-900">
               {summary.progress}%
             </span>
           </div>
@@ -48,7 +47,7 @@ export default function LevelCard({ summary }) {
           <ProgressBar value={summary.progress} />
           <Link
             href={`/hsk/${summary.level}`}
-            className="inline-flex w-full justify-center rounded-full bg-amber-200 px-5 py-3 text-sm font-black text-slate-950 shadow-lg transition hover:-translate-y-0.5"
+            className="inline-flex w-full justify-center rounded-full bg-teal-700 px-5 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-teal-800"
           >
             Start HSK {summary.level}
           </Link>

@@ -1,4 +1,5 @@
 import "./globals.css";
+import SiteAnalytics from "@/components/analytics/site-analytics";
 import { LanguageProvider } from "@/components/language/language-provider";
 import SiteFooter from "@/components/layout/site-footer";
 import SiteHeader from "@/components/layout/site-header";
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
         <LanguageProvider>
           <div className="min-h-screen overflow-hidden">
             <SiteHeader />
+            <SiteAnalytics />
             <main className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
               {children}
             </main>

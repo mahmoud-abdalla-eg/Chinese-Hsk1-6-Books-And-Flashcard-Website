@@ -1,16 +1,19 @@
 import ConversationLesson from "@/components/conversations/conversation-lesson";
 import FlashcardDeck from "@/components/flashcards/flashcard-deck";
+import CompletionToggle from "@/components/progress/completion-toggle";
 import { Card, Pill, ProgressBar, Surface } from "@/components/ui/card";
 import VocabularyList from "@/components/vocabulary/vocabulary-list";
-import { getConversationForUnit } from "@/lib/data/conversations";
+import { getManagedConversationForUnit } from "@/lib/admin/course-conversations";
+import { getManagedHskWords, getManagedUnit } from "@/lib/admin/course-words";
 import { levelThemes } from "@/lib/data/design";
-import { getHskWords, getUnit } from "@/lib/data/hsk";
+
+export const dynamic = "force-dynamic";
 
 export default async function UnitPage({ params }) {
   const { level, unitId } = await params;
-  const unit = getUnit(level, unitId);
-  const allWords = getHskWords(level);
-  const conversation = getConversationForUnit(level, unitId);
+  const unit = await getManagedUnit(level, unitId);
+  const allWords = await getManagedHskWords(level);
+  const conversation = await getManagedConversationForUnit(level, unitId);
   const theme = levelThemes[Number(level)];
   if (!unit) return <Card>Unit not found.</Card>;
   return (
@@ -24,13 +27,12 @@ export default async function UnitPage({ params }) {
             <Pill tone="blue">
               HSK {level} - Unit {unit.id}
             </Pill>
-            <h1 className="mt-5 text-5xl font-black tracking-[-0.05em] text-slate-950 dark:text-white sm:text-7xl">
+            <h1 className="mt-5 text-5xl font-black text-slate-950 sm:text-7xl">
               Words {unit.start}-{unit.end}
             </h1>
-            <p className="mt-4 max-w-3xl text-lg font-semibold leading-8 text-slate-600 dark:text-slate-300">
+            <p className="mt-4 max-w-3xl text-lg font-semibold leading-8 text-slate-600">
               A complete study room with vocabulary, flashcards, conversation
-              coverage, listening practice, pronunciation recording, and local
-              progress.
+              coverage, listening practice, and local progress.
             </p>
           </div>
           <Card>
@@ -44,16 +46,23 @@ export default async function UnitPage({ params }) {
             <div className="mt-5 grid grid-cols-2 gap-3 text-sm">
               <a
                 href="#vocabulary"
-                className="rounded-2xl bg-slate-950 px-4 py-3 text-center font-black text-white dark:bg-slate-900/80 dark:text-white"
+                className="rounded-2xl bg-teal-700 px-4 py-3 text-center font-black text-white hover:bg-teal-800"
               >
                 Vocabulary
               </a>
               <a
                 href="#conversation"
-                className="rounded-2xl bg-amber-100 px-4 py-3 text-center font-black text-amber-950 dark:bg-amber-300/15 dark:text-amber-100"
+                className="rounded-2xl bg-blue-50 px-4 py-3 text-center font-black text-blue-950 hover:bg-blue-100"
               >
                 Conversation
               </a>
+            </div>
+            <div className="mt-5">
+              <CompletionToggle
+                id={`hsk-${level}-unit-${unit.id}`}
+                label="unit"
+                type="unit"
+              />
             </div>
           </Card>
         </div>

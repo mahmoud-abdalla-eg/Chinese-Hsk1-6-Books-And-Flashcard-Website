@@ -26,7 +26,7 @@ function audioExists(audioPath) {
   );
 }
 const levels = [];
-for (let level = 1; level <= 5; level += 1) {
+for (let level = 1; level <= 6; level += 1) {
   const words = readWords(level);
   const conversations = readConversations(level);
   const repetition = Object.fromEntries(words.map((word) => [word.id, 0]));

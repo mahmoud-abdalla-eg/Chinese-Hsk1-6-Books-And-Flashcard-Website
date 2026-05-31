@@ -4,15 +4,15 @@ import { EXPECTED_HSK_COUNTS, HSK_LEVELS, UNIT_SIZE } from "./schema";
 
 const root = process.cwd();
 
-function readJson(relativePath) {
-  const file = path.join(root, relativePath);
+function readHskJson(level) {
+  const file = path.join(root, "source-data", "hsk", `hsk-${level}.json`);
   return JSON.parse(fs.readFileSync(file, "utf8"));
 }
 
 export function getHskWords(level) {
   const numericLevel = Number(level);
   if (!HSK_LEVELS.includes(numericLevel)) return [];
-  return readJson(`source-data/hsk/hsk-${numericLevel}.json`);
+  return readHskJson(numericLevel);
 }
 
 export function getAllHskWords() {

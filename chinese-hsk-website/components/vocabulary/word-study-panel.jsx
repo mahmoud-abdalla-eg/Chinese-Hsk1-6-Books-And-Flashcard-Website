@@ -1,25 +1,16 @@
 "use client";
 
-import { useEffect, useState } from "react";
 import AudioButton from "@/components/audio/audio-button";
-import PronunciationRecorder from "@/components/pronunciation/pronunciation-recorder";
-import { defaultProgress, progressKey } from "@/lib/progress/storage";
+import { usePersistentProgress } from "@/lib/progress/use-progress";
 
 export default function WordStudyPanel({ word }) {
-  const [progress, setProgress] = useState(defaultProgress());
-  useEffect(() => {
-    const saved = window.localStorage.getItem(progressKey);
-    if (saved) setProgress(JSON.parse(saved));
-  }, []);
-  const persist = (next) => {
-    const withDate = { ...next, lastStudiedDate: new Date().toISOString() };
-    setProgress(withDate);
-    window.localStorage.setItem(progressKey, JSON.stringify(withDate));
-  };
+  const { progress, saveProgress } = usePersistentProgress();
   const toggle = (key, id) => {
-    const set = new Set(progress[key]);
-    set.has(id) ? set.delete(id) : set.add(id);
-    persist({ ...progress, [key]: [...set] });
+    saveProgress((current) => {
+      const set = new Set(current[key]);
+      set.has(id) ? set.delete(id) : set.add(id);
+      return { ...current, [key]: [...set] };
+    });
   };
   const learned = progress.learnedWords.includes(word.id);
   const favorite = progress.favorites.includes(word.id);
@@ -31,19 +22,18 @@ export default function WordStudyPanel({ word }) {
         <button
           type="button"
           onClick={() => toggle("favorites", word.id)}
-          className="rounded-full border border-rose-200 bg-white px-4 py-2 text-sm font-black text-rose-700 dark:border-rose-900 dark:bg-slate-950 dark:text-rose-200"
+          className="rounded-full border border-rose-200 bg-white px-4 py-2 text-sm font-black text-rose-700 hover:bg-rose-50"
         >
           {favorite ? "Saved to favorites" : "Save to favorites"}
         </button>
         <button
           type="button"
           onClick={() => toggle("learnedWords", word.id)}
-          className="rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-black text-emerald-700 dark:border-emerald-900 dark:bg-slate-950 dark:text-emerald-200"
+          className="rounded-full border border-emerald-200 bg-white px-4 py-2 text-sm font-black text-emerald-700 hover:bg-emerald-50"
         >
           {learned ? "Learned" : "Mark as learned"}
         </button>
       </div>
-      <PronunciationRecorder expectedText={word.example.hanzi || word.hanzi} />
     </div>
   );
 }
