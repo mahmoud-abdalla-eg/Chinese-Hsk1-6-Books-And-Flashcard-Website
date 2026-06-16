@@ -1,4 +1,4 @@
-# Mandarin Flow HSK — HSK 1–5 Books & Flashcards
+# Mandarin Flow HSK — HSK 1–6 Books & Flashcards
 
 [![License: Source Available — Non-Commercial](https://img.shields.io/badge/License-Source%20Available--Non--Commercial-red.svg)](./LICENSE.md)
 
