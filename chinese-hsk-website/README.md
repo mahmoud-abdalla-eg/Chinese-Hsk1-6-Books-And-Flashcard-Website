@@ -193,6 +193,106 @@ The learner-facing pages are optimized for faster navigation:
 
 Admin and account/API routes remain dynamic because they depend on current user/session or live editing state.
 
+## Contributing
+
+Contributions are welcome. This project needs help from developers, Chinese learners, teachers, translators, designers, and people who can carefully test the lessons.
+
+### How to Start
+
+1. Fork the repository.
+2. Create a branch with a clear name, for example `fix-hsk4-examples` or `add-hsk6-conversations`.
+3. Run the app locally with `npm install` and `npm run dev`.
+4. Pick one small task from the lists below.
+5. Run the relevant checks before opening a pull request.
+6. Explain what changed, what you tested, and whether any content still needs review.
+
+### Good First Tasks
+
+- Review HSK word translations and report incorrect English or Arabic meanings.
+- Add missing pinyin for example sentences.
+- Check generated Arabic translations and mark awkward or wrong sentences.
+- Improve empty states, loading states, and mobile layout issues.
+- Test account login, logout, password change, and progress syncing.
+- Test flashcards across HSK levels and report broken words, missing examples, or confusing labels.
+- Check admin pages for forms that are hard to use or missing validation.
+- Improve README sections, setup notes, screenshots, and contributor documentation.
+
+### What Needs to Be Built Next
+
+- HSK 6 conversation units.
+- More reviewed example sentences for words that only have generated placeholders.
+- Audio file generation and matching for word and sentence playback.
+- Better admin import review tools for bulk vocabulary and grammar updates.
+- More complete Arabic UI and content review.
+- Better dashboard insights for long-term spaced repetition.
+- Teacher-friendly review queues for content that needs human checking.
+- Automated tests for auth, progress sync, flashcards, and admin CRUD flows.
+- Accessibility checks for keyboard navigation, color contrast, and screen readers.
+
+### What Needs Fixing or Checking
+
+- Verify all HSK 1-6 words have correct simplified Chinese, traditional Chinese, pinyin, English meaning, Arabic meaning, and part of speech.
+- Check all generated examples before treating them as final learning content.
+- Confirm HSK unit ordering stays stable after imports.
+- Make sure each user only sees and edits their own study data.
+- Check that public pages stay fast after new content is added.
+- Confirm MongoDB indexes exist in production.
+- Review admin permissions before exposing admin tools publicly.
+- Test the site on mobile widths, especially flashcards, account pages, dashboards, and admin tables.
+- Check that missing audio does not break study pages.
+- Keep `.env.local` and secrets out of commits.
+
+### Content Review Guidelines
+
+When reviewing vocabulary, prefer accuracy over speed. For each word, check:
+
+- Chinese characters are correct.
+- Pinyin tones are correct.
+- English meaning is natural and not too broad.
+- Arabic meaning is natural and appropriate for the HSK context.
+- Example sentence uses the target word correctly.
+- Example translation matches the Chinese sentence.
+- The word belongs to the listed HSK level.
+
+If you are not sure about a translation, leave a note in the pull request instead of guessing silently.
+
+### Pull Request Checklist
+
+Before opening a pull request, try to run:
+
+```bash
+npm run lint
+npm run validate
+npm run coverage
+```
+
+For code changes, also test the affected page manually. Useful pages to check:
+
+```text
+/
+/hsk/1
+/hsk/1/unit/1
+/flashcards
+/flashcards/hsk/1
+/grammar
+/conversations
+/dashboard
+/account
+/adminbase
+```
+
+If one of the checks fails because of an unrelated existing issue, mention that clearly in the pull request.
+
+### Pull Request Notes
+
+Please include:
+
+- What you changed.
+- Why the change is needed.
+- Screenshots for UI changes.
+- What you tested.
+- Any content that still needs human review.
+
 ## Deployment
 
 This project can be deployed to any platform that supports Next.js and MongoDB connectivity.
