@@ -1,4 +1,5 @@
 import { ObjectId } from "mongodb";
+import { unstable_cache } from "next/cache";
 import { getGrammarPath } from "@/lib/data/grammar";
 import { getMongoDatabase } from "@/lib/db/mongodb";
 
@@ -7,8 +8,15 @@ const grammarUnitsCollection = "course_grammar_units";
 const stateCollection = "course_data_state";
 const GRAMMAR_UNIT_SIZE = 12;
 const GRAMMAR_SOURCE_VERSION = "hsk-1-6-pdf-674";
+const PUBLIC_CACHE_SECONDS = 300;
 
-export async function getManagedGrammarPath() {
+export const getManagedGrammarPath = unstable_cache(
+  async () => getManagedGrammarPathUncached(),
+  ["managed-grammar-path"],
+  { revalidate: PUBLIC_CACHE_SECONDS },
+);
+
+async function getManagedGrammarPathUncached() {
   try {
     await ensureGrammarSeeded();
     const db = await getMongoDatabase();
@@ -23,7 +31,13 @@ export async function getManagedGrammarPath() {
   }
 }
 
-export async function getManagedGrammarLevels() {
+export const getManagedGrammarLevels = unstable_cache(
+  async () => getManagedGrammarLevelsUncached(),
+  ["managed-grammar-levels"],
+  { revalidate: PUBLIC_CACHE_SECONDS },
+);
+
+async function getManagedGrammarLevelsUncached() {
   const items = await getManagedGrammarPath();
   const grouped = new Map();
   for (const item of items) {
@@ -36,13 +50,25 @@ export async function getManagedGrammarLevels() {
     .map(([level, entries]) => ({ level, entries }));
 }
 
-export async function getManagedGrammarItemsForLevel(level) {
+export const getManagedGrammarItemsForLevel = unstable_cache(
+  async (level) => getManagedGrammarItemsForLevelUncached(level),
+  ["managed-grammar-items-level"],
+  { revalidate: PUBLIC_CACHE_SECONDS },
+);
+
+async function getManagedGrammarItemsForLevelUncached(level) {
   const numericLevel = Number(level);
   const items = await getManagedGrammarPath();
   return items.filter((item) => Number(item.hskLevel) === numericLevel);
 }
 
-export async function getManagedGrammarUnitsForLevel(level) {
+export const getManagedGrammarUnitsForLevel = unstable_cache(
+  async (level) => getManagedGrammarUnitsForLevelUncached(level),
+  ["managed-grammar-units-level"],
+  { revalidate: PUBLIC_CACHE_SECONDS },
+);
+
+async function getManagedGrammarUnitsForLevelUncached(level) {
   const items = await getManagedGrammarItemsForLevel(level);
   try {
     const db = await getMongoDatabase();
@@ -89,7 +115,13 @@ export async function getManagedGrammarUnitsForLevel(level) {
   return units;
 }
 
-export async function getManagedGrammarUnit(level, unitId) {
+export const getManagedGrammarUnit = unstable_cache(
+  async (level, unitId) => getManagedGrammarUnitUncached(level, unitId),
+  ["managed-grammar-unit"],
+  { revalidate: PUBLIC_CACHE_SECONDS },
+);
+
+async function getManagedGrammarUnitUncached(level, unitId) {
   const units = await getManagedGrammarUnitsForLevel(level);
   return units.find((unit) => unit.id === Number(unitId));
 }

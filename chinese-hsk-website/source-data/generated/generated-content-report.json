@@ -1,0 +1,13 @@
+{
+  "createdAt": "2026-06-02T00:00:00.000Z",
+  "totalWords": 5706,
+  "wordArabic": 5706,
+  "exampleEnglish": 5706,
+  "exampleArabic": 5706,
+  "metaExamplesGenerated": 4243,
+  "missing": {
+    "wordArabic": 0,
+    "exampleEnglish": 0,
+    "exampleArabic": 0
+  }
+}

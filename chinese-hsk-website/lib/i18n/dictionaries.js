@@ -1,6 +1,5 @@
 export const languages = {
   en: { label: "English", dir: "ltr" },
-  zh: { label: "\u4e2d\u6587", dir: "ltr" },
   ar: { label: "\u0627\u0644\u0639\u0631\u0628\u064a\u0629", dir: "rtl" },
 };
 
@@ -64,6 +63,16 @@ export const dictionary = {
     en: "Again",
     zh: "\u518d\u6765",
     ar: "\u0645\u0631\u0629 \u0623\u062e\u0631\u0649",
+  },
+  show: {
+    en: "Show",
+    zh: "\u663e\u793a",
+    ar: "\u0625\u0638\u0647\u0627\u0631",
+  },
+  hide: {
+    en: "Hide",
+    zh: "\u9690\u85cf",
+    ar: "\u0625\u062e\u0641\u0627\u0621",
   },
   hard: {
     en: "Hard",
@@ -247,8 +256,19 @@ export const dictionary = {
   },
   dailyActivity: {
     en: "Daily activity",
-    zh: "\u6bcf\u65e5\u6d3b\u52a8",
     ar: "\u0627\u0644\u0646\u0634\u0627\u0637 \u0627\u0644\u064a\u0648\u0645\u064a",
+  },
+  levelCompletion: {
+    en: "Level completion",
+    ar: "\u0625\u0646\u062c\u0627\u0632 \u0627\u0644\u0645\u0633\u062a\u0648\u064a\u0627\u062a",
+  },
+  recentScores: {
+    en: "Recent scores",
+    ar: "\u0622\u062e\u0631 \u0627\u0644\u0646\u062a\u0627\u0626\u062c",
+  },
+  reviewMix: {
+    en: "Review mix",
+    ar: "\u062a\u0648\u0632\u064a\u0639 \u0627\u0644\u0645\u0631\u0627\u062c\u0639\u0629",
   },
   noReviewHistory: {
     en: "No review history yet.",

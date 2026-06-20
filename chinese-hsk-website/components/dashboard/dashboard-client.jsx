@@ -49,6 +49,12 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
     }))
     .sort((a, b) => b.hardReviews - a.hardReviews || b.attempts - a.attempts)
     .slice(0, 8);
+  const qualityCounts = ["Again", "Hard", "Good", "Easy"].map((quality) => ({
+    label: qualityLabel(quality, tr),
+    value: progress.reviewHistory.filter((review) => review.quality === quality)
+      .length,
+  }));
+  const maxDailyCount = Math.max(1, ...dailyActivity.map((day) => day.count));
   return (
     <div className="space-y-8 pb-8">
       <Surface className="grid gap-8 p-7 lg:grid-cols-[1fr_360px] lg:items-center lg:p-10">
@@ -161,6 +167,64 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
           </Card>
         </div>
       </div>
+      <div className="grid gap-6 lg:grid-cols-3">
+        <Card>
+          <h2 className="text-2xl font-black text-slate-950">
+            {tr("levelCompletion")}
+          </h2>
+          <div className="mt-4 grid gap-3">
+            {levelProgress.map((level) => (
+              <BarRow
+                key={level.level}
+                label={`HSK ${level.level}`}
+                value={level.learnedWords.length}
+                max={Math.max(1, level.wordCount)}
+                detail={`${level.learnedWords.length}/${level.wordCount}`}
+              />
+            ))}
+          </div>
+        </Card>
+        <Card>
+          <h2 className="text-2xl font-black text-slate-950">
+            {tr("reviewMix")}
+          </h2>
+          <div className="mt-4 grid gap-3">
+            {qualityCounts.map((item) => (
+              <BarRow
+                key={item.label}
+                label={item.label}
+                value={item.value}
+                max={Math.max(1, progress.reviewHistory.length)}
+                detail={item.value}
+              />
+            ))}
+          </div>
+        </Card>
+        <Card>
+          <h2 className="text-2xl font-black text-slate-950">
+            {tr("recentScores")}
+          </h2>
+          <div className="mt-4 grid gap-3 text-sm font-bold text-slate-600">
+            {recent.length ? (
+              recent.map((item) => (
+                <div
+                  key={`${item.wordId}-${item.reviewedAt}`}
+                  className="flex items-center justify-between rounded-2xl bg-slate-50 px-4 py-3"
+                >
+                  <span>
+                    {formatWord(wordById.get(item.wordId), lang) || item.wordId}
+                  </span>
+                  <span className="rounded-full bg-white px-3 py-1 text-xs font-black text-slate-950">
+                    {qualityLabel(item.quality, tr)}
+                  </span>
+                </div>
+              ))
+            ) : (
+              <span>{tr("noReviewHistory")}</span>
+            )}
+          </div>
+        </Card>
+      </div>
       <Card>
         <h2 className="text-2xl font-black text-slate-950">
           {tr("wordsByLevel")}
@@ -256,11 +320,29 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
                   <span>{day.day}</span>
                   <span>{day.count}</span>
                 </div>
-                <ProgressBar value={Math.min(100, day.count * 20)} />
+                <ProgressBar value={(day.count / maxDailyCount) * 100} />
               </div>
             ))}
           </div>
         </Card>
+      </div>
+    </div>
+  );
+}
+
+function BarRow({ detail, label, max, value }) {
+  const percent = Math.min(100, Math.round((Number(value || 0) / max) * 100));
+  return (
+    <div>
+      <div className="mb-1 flex justify-between text-xs font-black text-slate-600">
+        <span>{label}</span>
+        <span>{detail}</span>
+      </div>
+      <div className="h-3 overflow-hidden rounded-full bg-slate-100">
+        <div
+          className="h-full rounded-full bg-teal-700"
+          style={{ width: `${percent}%` }}
+        />
       </div>
     </div>
   );

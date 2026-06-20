@@ -1,7 +1,9 @@
 import { ObjectId } from "mongodb";
+import { unstable_cache } from "next/cache";
 import { getMongoDatabase } from "@/lib/db/mongodb";
 
 const contentCollection = "site_content";
+const PUBLIC_CACHE_SECONDS = 300;
 const defaults = [
   {
     key: "home.hero.title",
@@ -21,7 +23,21 @@ const defaults = [
   },
 ];
 
-export async function getSiteContentMap() {
+const contentMigrations = [
+  {
+    key: "home.hero.subtitle",
+    from: "A multilingual HSK 1-5 learning studio for vocabulary, long dialogue, flashcards, listening, shadowing, pronunciation recording, and saved progress.",
+    to: "A multilingual HSK 1-6 learning studio for vocabulary, long dialogue, flashcards, listening, grammar, and saved progress.",
+  },
+];
+
+export const getSiteContentMap = unstable_cache(
+  async () => getSiteContentMapUncached(),
+  ["site-content-map"],
+  { revalidate: PUBLIC_CACHE_SECONDS },
+);
+
+async function getSiteContentMapUncached() {
   try {
     await ensureSiteContentSeeded();
     const db = await getMongoDatabase();
@@ -97,5 +113,21 @@ async function ensureSiteContentSeeded() {
         upsert: true,
       },
     })),
+  );
+  await Promise.all(
+    contentMigrations.map((migration) =>
+      db.collection(contentCollection).updateOne(
+        {
+          key: migration.key,
+          value: migration.from,
+        },
+        {
+          $set: {
+            value: migration.to,
+            updatedAt: new Date(),
+          },
+        },
+      ),
+    ),
   );
 }

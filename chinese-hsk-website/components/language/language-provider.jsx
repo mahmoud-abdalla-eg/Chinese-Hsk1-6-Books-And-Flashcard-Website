@@ -14,7 +14,11 @@ export function LanguageProvider({ children }) {
 
   useEffect(() => {
     const saved = window.localStorage.getItem("mandarin-flow-language");
-    if (saved && languages[saved]) setLang(saved);
+    if (saved && languages[saved]) {
+      setLang(saved);
+      return;
+    }
+    if (saved) window.localStorage.setItem("mandarin-flow-language", "en");
   }, []);
 
   useEffect(() => {

@@ -76,6 +76,6 @@ export const levelThemes = {
   6: {
     accent: "from-violet-500 to-slate-800",
     scene: "Advanced mastery",
-    tone: "Practice high-level grammar now; vocabulary can be added from admin when reviewed data is ready.",
+    tone: "Build advanced vocabulary, grammar, and reading confidence with focused practice units.",
   },
 };

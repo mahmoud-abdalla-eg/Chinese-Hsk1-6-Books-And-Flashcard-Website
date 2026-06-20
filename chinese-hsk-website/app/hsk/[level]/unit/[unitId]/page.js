@@ -6,8 +6,19 @@ import VocabularyList from "@/components/vocabulary/vocabulary-list";
 import { getManagedConversationForUnit } from "@/lib/admin/course-conversations";
 import { getManagedHskWords, getManagedUnit } from "@/lib/admin/course-words";
 import { levelThemes } from "@/lib/data/design";
+import { getUnitsForLevel } from "@/lib/data/hsk";
+import { HSK_LEVELS } from "@/lib/data/schema";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
+
+export function generateStaticParams() {
+  return HSK_LEVELS.flatMap((level) =>
+    getUnitsForLevel(level).map((unit) => ({
+      level: String(level),
+      unitId: String(unit.id),
+    })),
+  );
+}
 
 export default async function UnitPage({ params }) {
   const { level, unitId } = await params;

@@ -6,11 +6,13 @@ import {
 
 export const dynamic = "force-dynamic";
 
-export async function GET(request) {
-  const userId =
-    (await getSessionUserId()) || request.nextUrl.searchParams.get("userId");
+export async function GET() {
+  const userId = await getSessionUserId();
   if (!userId) {
-    return Response.json({ error: "Missing userId." }, { status: 400 });
+    return Response.json(
+      { error: "Log in to sync progress." },
+      { status: 401 },
+    );
   }
   try {
     const record = await getUserProgress(userId);
@@ -30,7 +32,13 @@ export async function GET(request) {
 export async function PUT(request) {
   try {
     const body = await request.json();
-    const userId = (await getSessionUserId()) || body.userId;
+    const userId = await getSessionUserId();
+    if (!userId) {
+      return Response.json(
+        { error: "Log in to sync progress." },
+        { status: 401 },
+      );
+    }
     const saved = await saveUserProgress(userId, body.progress);
     return Response.json(saved);
   } catch {

@@ -3,7 +3,7 @@ import { Card, Pill, SectionHeading, Surface } from "@/components/ui/card";
 import { getManagedHskSummary } from "@/lib/admin/course-words";
 import { levelThemes } from "@/lib/data/design";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
 
 export default async function ConversationsPage() {
   const summaries = await getManagedHskSummary();

@@ -51,6 +51,36 @@ export async function getUserById(userId) {
   return user ? userPublic(user) : null;
 }
 
+export async function changeUserPassword({
+  currentPassword,
+  newPassword,
+  userId,
+}) {
+  if (!ObjectId.isValid(userId)) {
+    throw new Error("Log in again before changing your password.");
+  }
+  if (String(newPassword || "").length < 8) {
+    throw new Error("New password must be at least 8 characters.");
+  }
+  const db = await getMongoDatabase();
+  const user = await db
+    .collection(usersCollection)
+    .findOne({ _id: new ObjectId(userId) });
+  if (!user || !(await verifyPassword(currentPassword, user.passwordHash))) {
+    throw new Error("Current password is incorrect.");
+  }
+  await db.collection(usersCollection).updateOne(
+    { _id: new ObjectId(userId) },
+    {
+      $set: {
+        passwordHash: await hashPassword(newPassword),
+        updatedAt: new Date(),
+      },
+    },
+  );
+  return true;
+}
+
 function normalizeEmail(email) {
   return String(email || "")
     .trim()
@@ -77,5 +107,6 @@ function userPublic(user) {
     id: String(user._id),
     name: user.name,
     email: user.email,
+    createdAt: user.createdAt ? new Date(user.createdAt).toISOString() : null,
   };
 }

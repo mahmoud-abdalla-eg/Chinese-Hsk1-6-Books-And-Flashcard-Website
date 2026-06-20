@@ -78,37 +78,25 @@ export async function getAnalyticsStats() {
       db
         .collection("user_progress")
         .aggregate([
-          { $project: { hardWords: "$progress.hardWords" } },
-          { $unwind: "$hardWords" },
-          { $group: { _id: "$hardWords", count: { $sum: 1 } } },
+          { $project: { reviews: "$progress.reviewHistory" } },
+          { $unwind: "$reviews" },
+          { $match: { "reviews.quality": { $in: ["Again", "Hard"] } } },
+          {
+            $group: {
+              _id: "$reviews.wordId",
+              count: { $sum: 1 },
+              hanzi: { $first: "$reviews.hanzi" },
+              pinyin: { $first: "$reviews.pinyin" },
+              level: { $first: "$reviews.level" },
+            },
+          },
           { $sort: { count: -1 } },
           { $limit: 10 },
         ])
         .toArray(),
       db
         .collection("user_progress")
-        .aggregate([
-          { $project: { completedUnits: "$progress.completedUnits" } },
-          { $unwind: "$completedUnits" },
-          {
-            $project: {
-              level: {
-                $regexFind: {
-                  input: "$completedUnits",
-                  regex: /hsk-(\d+)/,
-                },
-              },
-            },
-          },
-          { $match: { "level.captures.0": { $exists: true } } },
-          {
-            $group: {
-              _id: { $arrayElemAt: ["$level.captures", 0] },
-              count: { $sum: 1 },
-            },
-          },
-          { $sort: { _id: 1 } },
-        ])
+        .find({}, { projection: { _id: 0, progress: 1 } })
         .toArray(),
     ]);
     return {
@@ -142,9 +130,12 @@ export async function getAnalyticsStats() {
       })),
       hardWords: hardWords.map((item) => ({
         wordId: item._id,
+        word: item.hanzi || item._id,
+        pinyin: item.pinyin || "",
+        level: item.level || "",
         count: item.count,
       })),
-      studiedLevels: studiedLevels.map((item) => ({
+      studiedLevels: summarizeStudiedLevels(studiedLevels).map((item) => ({
         level: item._id,
         count: item.count,
       })),
@@ -164,6 +155,28 @@ export async function getAnalyticsStats() {
       studiedLevels: [],
     };
   }
+}
+
+function summarizeStudiedLevels(records) {
+  const counts = new Map();
+  for (const record of records) {
+    for (const review of record.progress?.reviewHistory || []) {
+      addLevel(counts, review.level);
+    }
+    for (const unitId of record.progress?.completedUnits || []) {
+      addLevel(counts, unitId);
+    }
+  }
+  return [...counts.entries()]
+    .map(([level, count]) => ({ _id: level, count }))
+    .sort((a, b) => Number(a._id) - Number(b._id));
+}
+
+function addLevel(counts, value) {
+  const match = String(value || "").match(/(?:hsk-)?([1-6])/i);
+  if (!match) return;
+  const level = match[1];
+  counts.set(level, (counts.get(level) || 0) + 1);
 }
 
 function summarizePerformance(samples) {

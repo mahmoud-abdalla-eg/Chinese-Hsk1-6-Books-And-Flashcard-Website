@@ -1,0 +1,455 @@
+{
+  "levels": {
+    "4": {
+      "v2UniqueRows": 293,
+      "plainUniqueRows": 1190,
+      "added": 67,
+      "newCount": 1057,
+      "skippedPlainPatterns": [
+        "虽然……但是……",
+        "因为…… 所以……",
+        "不但…… 而且……"
+      ],
+      "skippedDuplicateVariants": [
+        {
+          "source": "报导",
+          "existing": "报道"
+        },
+        {
+          "source": "仲介",
+          "existing": "中介"
+        },
+        {
+          "source": "着名",
+          "existing": "著名"
+        }
+      ],
+      "skippedFragments": ["分之"],
+      "addedWords": [
+        {
+          "id": "zuoxi",
+          "hanzi": "作息",
+          "pinyin": "zuòxi",
+          "meaningEn": "work and rest"
+        },
+        {
+          "id": "yemaozi",
+          "hanzi": "夜猫子",
+          "pinyin": "yèmāozi",
+          "meaningEn": "a person who goes to bed late,night owl"
+        },
+        {
+          "id": "mei-xiang-dao",
+          "hanzi": "没想到",
+          "pinyin": "méi xiǎng dào",
+          "meaningEn": "didn't expect"
+        },
+        {
+          "id": "xiaohai",
+          "hanzi": "小孩",
+          "pinyin": "xiǎohái",
+          "meaningEn": "child"
+        },
+        {
+          "id": "canhe",
+          "hanzi": "餐盒",
+          "pinyin": "cānhé",
+          "meaningEn": "meal box"
+        },
+        {
+          "id": "suliaodai",
+          "hanzi": "塑料袋",
+          "pinyin": "sùliàodài",
+          "meaningEn": "plastic bag"
+        },
+        {
+          "id": "ludi",
+          "hanzi": "绿地",
+          "pinyin": "lǜdì",
+          "meaningEn": "afforested land"
+        },
+        {
+          "id": "xing-3",
+          "hanzi": "型",
+          "pinyin": "xíng",
+          "meaningEn": "type"
+        },
+        {
+          "id": "yueguang-zu",
+          "hanzi": "月光族",
+          "pinyin": "yuèguāng zú",
+          "meaningEn": "those who spend their monthly income even before their next salary"
+        },
+        {
+          "id": "yuechu",
+          "hanzi": "月初",
+          "pinyin": "yuèchū",
+          "meaningEn": "early in the month"
+        },
+        {
+          "id": "fufei",
+          "hanzi": "付费",
+          "pinyin": "fùfèi",
+          "meaningEn": "to pay"
+        },
+        {
+          "id": "sichuan",
+          "hanzi": "四川",
+          "pinyin": "sìchuān",
+          "meaningEn": "Sichuan, a province in southwest China"
+        },
+        {
+          "id": "guran",
+          "hanzi": "固然",
+          "pinyin": "gùrán",
+          "meaningEn": "admittedly (it's true that...)​"
+        },
+        {
+          "id": "qima",
+          "hanzi": "起码",
+          "pinyin": "qǐmǎ",
+          "meaningEn": "at the minimum, at the very least"
+        },
+        {
+          "id": "xinyi",
+          "hanzi": "心意",
+          "pinyin": "xīnyì",
+          "meaningEn": "mind, intention, regard"
+        },
+        {
+          "id": "jingjiu",
+          "hanzi": "敬酒",
+          "pinyin": "jìngjiǔ",
+          "meaningEn": "to toast, to propose a toast"
+        },
+        {
+          "id": "jiuxi",
+          "hanzi": "酒席",
+          "pinyin": "jiǔxí",
+          "meaningEn": "feast, banquet"
+        },
+        {
+          "id": "fengwei",
+          "hanzi": "风味",
+          "pinyin": "fēngwèi",
+          "meaningEn": "flavor"
+        },
+        {
+          "id": "canju",
+          "hanzi": "餐具",
+          "pinyin": "cānjù",
+          "meaningEn": "tableware"
+        },
+        {
+          "id": "su",
+          "hanzi": "素",
+          "pinyin": "sù",
+          "meaningEn": "vegetarian"
+        },
+        {
+          "id": "zuodong",
+          "hanzi": "做东",
+          "pinyin": "zuòdōng",
+          "meaningEn": "to play the host, to host sb"
+        },
+        {
+          "id": "youxing",
+          "hanzi": "游行",
+          "pinyin": "yóuxíng",
+          "meaningEn": "to parade, march, demonstrate"
+        },
+        {
+          "id": "fanren",
+          "hanzi": "烦人",
+          "pinyin": "fánrén",
+          "meaningEn": "annoying"
+        },
+        {
+          "id": "gaofeng-shiqi",
+          "hanzi": "高峰时期",
+          "pinyin": "gāofēng shíqī",
+          "meaningEn": "rush hour,peak time"
+        },
+        {
+          "id": "duse",
+          "hanzi": "堵塞",
+          "pinyin": "dǔsè",
+          "meaningEn": "to block"
+        },
+        {
+          "id": "huaxiao",
+          "hanzi": "花销",
+          "pinyin": "huāxiāo",
+          "meaningEn": "expenses,costs"
+        },
+        {
+          "id": "feidei",
+          "hanzi": "非得",
+          "pinyin": "fēiděi",
+          "meaningEn": "have to, must"
+        },
+        {
+          "id": "zao-zhidao",
+          "hanzi": "早知道",
+          "pinyin": "zǎo zhīdào",
+          "meaningEn": "(if sb）have known that"
+        },
+        {
+          "id": "tingchewei",
+          "hanzi": "停车位",
+          "pinyin": "tíngchēwèi",
+          "meaningEn": "parking space"
+        },
+        {
+          "id": "keman",
+          "hanzi": "客满",
+          "pinyin": "kèmǎn",
+          "meaningEn": "full"
+        },
+        {
+          "id": "rennai",
+          "hanzi": "忍耐",
+          "pinyin": "rěnnài",
+          "meaningEn": "to bear with, endure"
+        },
+        {
+          "id": "shuidian-fei",
+          "hanzi": "水电费",
+          "pinyin": "shuǐdiàn fèi",
+          "meaningEn": "utility fee"
+        },
+        {
+          "id": "taojian",
+          "hanzi": "套间",
+          "pinyin": "tàojiān",
+          "meaningEn": "small inner room"
+        },
+        {
+          "id": "yi-da-zao",
+          "hanzi": "一大早",
+          "pinyin": "yí dà zǎo",
+          "meaningEn": "early in the morning"
+        },
+        {
+          "id": "xiao-zhen",
+          "hanzi": "小镇",
+          "pinyin": "xiǎo zhèn",
+          "meaningEn": "town"
+        },
+        {
+          "id": "jishi-3",
+          "hanzi": "急事",
+          "pinyin": "jíshì",
+          "meaningEn": "urgent matter, pressing matter"
+        },
+        {
+          "id": "shiyue",
+          "hanzi": "失约",
+          "pinyin": "shīyuē",
+          "meaningEn": "to miss appointment"
+        },
+        {
+          "id": "zhong-nian-ren",
+          "hanzi": "中年人",
+          "pinyin": "zhōng nián rén",
+          "meaningEn": "middle age person"
+        },
+        {
+          "id": "ba-diao",
+          "hanzi": "拔掉",
+          "pinyin": "bá diào",
+          "meaningEn": "to pull off"
+        },
+        {
+          "id": "yibufen",
+          "hanzi": "一部分",
+          "pinyin": "yībùfèn",
+          "meaningEn": "part of it"
+        },
+        {
+          "id": "xiangdao",
+          "hanzi": "向导",
+          "pinyin": "xiàngdǎo",
+          "meaningEn": "guide"
+        },
+        {
+          "id": "dao-shihou",
+          "hanzi": "到时候",
+          "pinyin": "dào shíhou",
+          "meaningEn": "when the time comes, at that time"
+        },
+        {
+          "id": "hangkong-gongsi",
+          "hanzi": "航空公司",
+          "pinyin": "hángkōng gōngsī",
+          "meaningEn": "airline company"
+        },
+        {
+          "id": "dancheng",
+          "hanzi": "单程",
+          "pinyin": "dānchéng",
+          "meaningEn": "one way, one path"
+        },
+        {
+          "id": "songchao",
+          "hanzi": "宋朝",
+          "pinyin": "sòngcháo",
+          "meaningEn": "Song dynasty"
+        },
+        {
+          "id": "hu-2",
+          "hanzi": "虎",
+          "pinyin": "hǔ",
+          "meaningEn": "tiger"
+        },
+        {
+          "id": "dalie",
+          "hanzi": "打猎",
+          "pinyin": "dǎliè",
+          "meaningEn": "to hunt"
+        },
+        {
+          "id": "ganchu",
+          "hanzi": "感触",
+          "pinyin": "gǎnchù",
+          "meaningEn": "one’s thoughts and feelings"
+        },
+        {
+          "id": "diandeng",
+          "hanzi": "电灯",
+          "pinyin": "diàndēng",
+          "meaningEn": "light"
+        },
+        {
+          "id": "fuwu-fei",
+          "hanzi": "服务费",
+          "pinyin": "fúwù fèi",
+          "meaningEn": "service fee, cover charge"
+        },
+        {
+          "id": "zizhucan",
+          "hanzi": "自助餐",
+          "pinyin": "zìzhùcān",
+          "meaningEn": "buffet"
+        },
+        {
+          "id": "yanhou",
+          "hanzi": "咽喉",
+          "pinyin": "yānhóu",
+          "meaningEn": "throat"
+        },
+        {
+          "id": "diezi",
+          "hanzi": "碟子",
+          "pinyin": "diézi",
+          "meaningEn": "saucer, plate, dish"
+        },
+        {
+          "id": "nianjia",
+          "hanzi": "年假",
+          "pinyin": "niánjià",
+          "meaningEn": "annual leave"
+        },
+        {
+          "id": "word",
+          "hanzi": "百分之",
+          "pinyin": "",
+          "meaningEn": "word"
+        },
+        {
+          "id": "changjiang",
+          "hanzi": "长江",
+          "pinyin": "Chángjiāng",
+          "meaningEn": "the Yangtze River"
+        },
+        {
+          "id": "word-2",
+          "hanzi": "抽烟",
+          "pinyin": "",
+          "meaningEn": "word"
+        },
+        {
+          "id": "dashiguan",
+          "hanzi": "大使馆",
+          "pinyin": "dàshǐguǎn",
+          "meaningEn": "embassy"
+        },
+        {
+          "id": "dengjipai",
+          "hanzi": "登机牌",
+          "pinyin": "dēngjīpái",
+          "meaningEn": "boarding pass"
+        },
+        {
+          "id": "word-3",
+          "hanzi": "放暑假",
+          "pinyin": "",
+          "meaningEn": "word"
+        },
+        {
+          "id": "fukuan",
+          "hanzi": "付款",
+          "pinyin": "fùkuǎn",
+          "meaningEn": "pay"
+        },
+        {
+          "id": "gaosugonglu",
+          "hanzi": "高速公路",
+          "pinyin": "gāosùgōnglù",
+          "meaningEn": "expressway"
+        },
+        {
+          "id": "lajitong",
+          "hanzi": "垃圾桶",
+          "pinyin": "lājītǒng",
+          "meaningEn": "trash can"
+        },
+        {
+          "id": "libaitian",
+          "hanzi": "礼拜天",
+          "pinyin": "lǐbàitiān",
+          "meaningEn": "Sunday"
+        },
+        {
+          "id": "sho-uhuo-yua-n",
+          "hanzi": "售货员",
+          "pinyin": "shò uhuò yuá n",
+          "meaningEn": "shop assistant; salesclerk"
+        },
+        {
+          "id": "word-4",
+          "hanzi": "弹钢琴",
+          "pinyin": "",
+          "meaningEn": "word"
+        },
+        {
+          "id": "tia-nko-ng",
+          "hanzi": "填空",
+          "pinyin": "tiá nkò ng",
+          "meaningEn": "(of a test or questionnaire) to fill in the blanks"
+        }
+      ]
+    },
+    "5": {
+      "added": 0,
+      "newCount": 1579,
+      "status": "not imported",
+      "reason": "The local HSK 5 PDF extracts Chinese words as unreadable embedded-font glyphs, so importing it would corrupt vocabulary data.",
+      "readableChineseCharactersInSample": 12,
+      "sampleExtractedWordGlyphs": [
+        "Ѩᇘ",
+        "㠷",
+        "䏖",
+        "ᛙ",
+        "\u0001",
+        "\u0001޷àihào",
+        "\u0001\u0002",
+        "\u0001৘",
+        "\u0001੯",
+        "\u0001৺",
+        "҆੩",
+        "҆ഉ"
+      ]
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import { ObjectId } from "mongodb";
+import { unstable_cache } from "next/cache";
 import {
   getAllConversations,
   getConversationsForLevel,
@@ -8,8 +9,15 @@ import { getMongoDatabase } from "@/lib/db/mongodb";
 
 const conversationsCollection = "course_conversations";
 const stateCollection = "course_data_state";
+const PUBLIC_CACHE_SECONDS = 300;
 
-export async function getManagedConversationsForLevel(level) {
+export const getManagedConversationsForLevel = unstable_cache(
+  async (level) => getManagedConversationsForLevelUncached(level),
+  ["managed-conversations-level"],
+  { revalidate: PUBLIC_CACHE_SECONDS },
+);
+
+async function getManagedConversationsForLevelUncached(level) {
   const numericLevel = Number(level);
   if (!HSK_LEVELS.includes(numericLevel)) return [];
   try {
@@ -26,7 +34,13 @@ export async function getManagedConversationsForLevel(level) {
   }
 }
 
-export async function getManagedConversationForUnit(level, unitId) {
+export const getManagedConversationForUnit = unstable_cache(
+  async (level, unitId) => getManagedConversationForUnitUncached(level, unitId),
+  ["managed-conversation-unit"],
+  { revalidate: PUBLIC_CACHE_SECONDS },
+);
+
+async function getManagedConversationForUnitUncached(level, unitId) {
   const conversations = await getManagedConversationsForLevel(level);
   return conversations.find(
     (conversation) => Number(conversation.unitId) === Number(unitId),

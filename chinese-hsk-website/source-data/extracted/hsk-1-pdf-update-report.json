@@ -1,0 +1,305 @@
+{
+  "sourceFolder": "E:\\Chinese Website\\Chinese-Hsk1-5-Books-And-Flashcard-Website\\Hsk Words For Each Level\\hsk-1",
+  "checkedPdfs": ["hsk 1.pdf", "hsk-1-vocabulary-list-(studyblog.org).pdf"],
+  "mainPdfUniqueRows": 364,
+  "studyblogUniqueWords": 150,
+  "addedToHsk1": 49,
+  "newHsk1Count": 349,
+  "studyblogOnlyMissingGlobally": ["北京"],
+  "addedWords": [
+    {
+      "id": "naguoren",
+      "hanzi": "哪国人",
+      "pinyin": "nǎguórén",
+      "meaningEn": "person from which country"
+    },
+    {
+      "id": "renshi-ni-hen-gaoxing",
+      "hanzi": "认识你很高兴",
+      "pinyin": "rènshì nǐ hěn gāoxìng",
+      "meaningEn": "It's nice to meet you"
+    },
+    {
+      "id": "meiguo",
+      "hanzi": "美国",
+      "pinyin": "Měiguó",
+      "meaningEn": "United States"
+    },
+    {
+      "id": "riben",
+      "hanzi": "日本",
+      "pinyin": "Rìběn",
+      "meaningEn": "Japan"
+    },
+    {
+      "id": "xiongdi-jiemei",
+      "hanzi": "兄弟姐妹",
+      "pinyin": "xiōngdì jiěmèi",
+      "meaningEn": "siblings"
+    },
+    {
+      "id": "bei-3",
+      "hanzi": "杯",
+      "pinyin": "bēi",
+      "meaningEn": "cup, cups"
+    },
+    {
+      "id": "ping-4",
+      "hanzi": "瓶",
+      "pinyin": "píng",
+      "meaningEn": "bottle, bottles"
+    },
+    {
+      "id": "jidian",
+      "hanzi": "几点",
+      "pinyin": "jǐdiǎn",
+      "meaningEn": "What time"
+    },
+    {
+      "id": "chifan",
+      "hanzi": "吃饭",
+      "pinyin": "chīfàn",
+      "meaningEn": "to eat"
+    },
+    {
+      "id": "fuwuyuan",
+      "hanzi": "服务员",
+      "pinyin": "fúwùyuán",
+      "meaningEn": "waiter, waitress"
+    },
+    {
+      "id": "diancai",
+      "hanzi": "点菜",
+      "pinyin": "diǎncài",
+      "meaningEn": "to order food"
+    },
+    {
+      "id": "maidan",
+      "hanzi": "买单",
+      "pinyin": "mǎidān",
+      "meaningEn": "to pay"
+    },
+    {
+      "id": "shenme-shihou",
+      "hanzi": "什么时候",
+      "pinyin": "shénme shíhou",
+      "meaningEn": "when"
+    },
+    {
+      "id": "youkong",
+      "hanzi": "有空",
+      "pinyin": "yǒukòng",
+      "meaningEn": "have free time, to be free"
+    },
+    {
+      "id": "daqiu",
+      "hanzi": "打球",
+      "pinyin": "dǎqiú",
+      "meaningEn": "to play ball games, ball sports"
+    },
+    {
+      "id": "qiusai",
+      "hanzi": "球赛",
+      "pinyin": "qiúsài",
+      "meaningEn": "match, ball games"
+    },
+    {
+      "id": "guangjie",
+      "hanzi": "逛街",
+      "pinyin": "guàngjiē",
+      "meaningEn": "to go shopping"
+    },
+    {
+      "id": "zaoqi-2",
+      "hanzi": "早起",
+      "pinyin": "zǎoqǐ",
+      "meaningEn": "to wake up early"
+    },
+    {
+      "id": "mei-wenti",
+      "hanzi": "没问题",
+      "pinyin": "méi wèntí",
+      "meaningEn": "no problem"
+    },
+    {
+      "id": "zuocai",
+      "hanzi": "做菜",
+      "pinyin": "zuòcài",
+      "meaningEn": "to cook"
+    },
+    {
+      "id": "changge",
+      "hanzi": "唱歌",
+      "pinyin": "chànggē",
+      "meaningEn": "to sing"
+    },
+    {
+      "id": "yingyu",
+      "hanzi": "英语",
+      "pinyin": "yīngyǔ",
+      "meaningEn": "English"
+    },
+    {
+      "id": "xiezi",
+      "hanzi": "写字",
+      "pinyin": "xiězì",
+      "meaningEn": "to write"
+    },
+    {
+      "id": "zhongfan",
+      "hanzi": "中饭",
+      "pinyin": "zhōngfàn",
+      "meaningEn": "lunch"
+    },
+    {
+      "id": "kanyikan",
+      "hanzi": "看一看",
+      "pinyin": "kànyíkàn",
+      "meaningEn": "look, have a look"
+    },
+    {
+      "id": "dalou",
+      "hanzi": "大楼",
+      "pinyin": "dàlóu",
+      "meaningEn": "building"
+    },
+    {
+      "id": "haibian",
+      "hanzi": "海边",
+      "pinyin": "hǎibiān",
+      "meaningEn": "beach"
+    },
+    {
+      "id": "wanr",
+      "hanzi": "玩儿",
+      "pinyin": "wánr",
+      "meaningEn": "to play, have fun"
+    },
+    {
+      "id": "gonggong-qiche",
+      "hanzi": "公共汽车",
+      "pinyin": "gōnggòng qìchē",
+      "meaningEn": "bus"
+    },
+    {
+      "id": "duile",
+      "hanzi": "对了",
+      "pinyin": "duìle",
+      "meaningEn": "by the way"
+    },
+    {
+      "id": "wangle",
+      "hanzi": "忘了",
+      "pinyin": "wàngle",
+      "meaningEn": "to forget"
+    },
+    {
+      "id": "zuoguai",
+      "hanzi": "左拐",
+      "pinyin": "zuǒguǎi",
+      "meaningEn": "to turn left"
+    },
+    {
+      "id": "youguai",
+      "hanzi": "右拐",
+      "pinyin": "yòuguǎi",
+      "meaningEn": "to turn right"
+    },
+    {
+      "id": "ting-yinyue",
+      "hanzi": "听音乐",
+      "pinyin": "tīng yīnyuè",
+      "meaningEn": "to listen to music"
+    },
+    {
+      "id": "deng-yihuir",
+      "hanzi": "等一会儿",
+      "pinyin": "děng yìhuǐr",
+      "meaningEn": "wait a moment; later"
+    },
+    {
+      "id": "pashan",
+      "hanzi": "爬山",
+      "pinyin": "páshān",
+      "meaningEn": "to climb a mountain, to hike a mountain"
+    },
+    {
+      "id": "chepiao",
+      "hanzi": "车票",
+      "pinyin": "chēpiào",
+      "meaningEn": "transportation ticket"
+    },
+    {
+      "id": "zai-3",
+      "hanzi": "载",
+      "pinyin": "zài",
+      "meaningEn": "to give somebody a ride"
+    },
+    {
+      "id": "shangci",
+      "hanzi": "上次",
+      "pinyin": "shàngcì",
+      "meaningEn": "last time"
+    },
+    {
+      "id": "duojiu",
+      "hanzi": "多久",
+      "pinyin": "duōjiǔ",
+      "meaningEn": "how long"
+    },
+    {
+      "id": "shengri-hui",
+      "hanzi": "生日会",
+      "pinyin": "shēngrì huì",
+      "meaningEn": "birthday party"
+    },
+    {
+      "id": "pingguo-pai",
+      "hanzi": "苹果派",
+      "pinyin": "píngguǒ pài",
+      "meaningEn": "apple pie"
+    },
+    {
+      "id": "haojiu-bujian",
+      "hanzi": "好久不见",
+      "pinyin": "hǎojiǔ bújiàn",
+      "meaningEn": "long time no see"
+    },
+    {
+      "id": "lanse",
+      "hanzi": "蓝色",
+      "pinyin": "lánsè",
+      "meaningEn": "blue"
+    },
+    {
+      "id": "jinianpin",
+      "hanzi": "纪念品",
+      "pinyin": "jìniànpǐn",
+      "meaningEn": "souvenir"
+    },
+    {
+      "id": "huiguo",
+      "hanzi": "回国",
+      "pinyin": "huíguó",
+      "meaningEn": "to return to home country"
+    },
+    {
+      "id": "beijing",
+      "hanzi": "北京",
+      "pinyin": "běijīng",
+      "meaningEn": "Beijing"
+    },
+    {
+      "id": "xie-xin",
+      "hanzi": "写信",
+      "pinyin": "xiě xìn",
+      "meaningEn": "to write a letter"
+    },
+    {
+      "id": "xiaxue",
+      "hanzi": "下雪",
+      "pinyin": "xiàxuě",
+      "meaningEn": "to snow"
+    }
+  ]
+}

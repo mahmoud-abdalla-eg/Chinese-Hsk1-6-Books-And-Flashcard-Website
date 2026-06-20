@@ -1,8 +1,19 @@
 import { Card, Pill, Surface } from "@/components/ui/card";
 import WordStudyPanel from "@/components/vocabulary/word-study-panel";
 import { getManagedWord } from "@/lib/admin/course-words";
+import { getHskWords } from "@/lib/data/hsk";
+import { HSK_LEVELS } from "@/lib/data/schema";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
+
+export function generateStaticParams() {
+  return HSK_LEVELS.flatMap((level) =>
+    getHskWords(level).map((word) => ({
+      level: String(level),
+      wordId: word.id,
+    })),
+  );
+}
 
 export default async function WordPage({ params }) {
   const { level, wordId } = await params;

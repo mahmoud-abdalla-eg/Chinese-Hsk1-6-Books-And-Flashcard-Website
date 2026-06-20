@@ -3,8 +3,13 @@ import FlashcardLevelHero from "@/components/flashcards/flashcard-level-hero";
 import { Card } from "@/components/ui/card";
 import { getManagedHskWords } from "@/lib/admin/course-words";
 import { levelThemes } from "@/lib/data/design";
+import { HSK_LEVELS } from "@/lib/data/schema";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
+
+export function generateStaticParams() {
+  return HSK_LEVELS.map((level) => ({ level: String(level) }));
+}
 
 export default async function LevelFlashcardsPage({ params }) {
   const { level } = await params;

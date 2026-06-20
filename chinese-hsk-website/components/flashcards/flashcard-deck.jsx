@@ -11,6 +11,7 @@ export default function FlashcardDeck({ words }) {
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [reviews, setReviews] = useState([]);
+  const [againMarkedIds, setAgainMarkedIds] = useState([]);
   const { saveProgress } = usePersistentProgress();
   const word = words[index] || null;
   const due = useMemo(() => reviews.length, [reviews]);
@@ -26,19 +27,36 @@ export default function FlashcardDeck({ words }) {
     ? word.example.ar || tr("arabicExampleComingSoon")
     : word.example.en || englishExampleFallback;
   const rate = (quality) => {
+    const alreadyMarkedAgain = againMarkedIds.includes(word.id);
+    if (quality === "Again" && alreadyMarkedAgain) {
+      setFlipped((value) => !value);
+      return;
+    }
     const reviewedAt = new Date().toISOString();
     const nextReviewAt = scoreReview(quality);
     const review = {
+      hanzi: word.hanzi,
+      level: word.level || word.hskLevel,
+      meaningEn: word.meaning?.en || "",
+      pinyin: word.pinyin,
       wordId: word.id,
       quality,
       nextReviewAt,
       reviewedAt,
     };
-    setReviews((current) => [...current, review]);
+    if (quality === "Again") {
+      setAgainMarkedIds((current) =>
+        current.includes(word.id) ? current : [...current, word.id],
+      );
+    } else {
+      setReviews((current) => [...current, review]);
+    }
     saveProgress((current) => {
       const hardWords = new Set(current.hardWords);
       const learnedWords = new Set(current.learnedWords);
-      learnedWords.add(word.id);
+      if (quality === "Good" || quality === "Easy") {
+        learnedWords.add(word.id);
+      }
       quality === "Again" || quality === "Hard"
         ? hardWords.add(word.id)
         : hardWords.delete(word.id);
@@ -67,11 +85,15 @@ export default function FlashcardDeck({ words }) {
         },
       };
     });
+    if (quality === "Again") {
+      setFlipped((value) => !value);
+      return;
+    }
     setFlipped(false);
     setIndex((current) => (current + 1) % words.length);
   };
   return (
-    <div className="space-y-5">
+    <div className="space-y-5" data-no-static-translate>
       <div className="rounded-3xl border border-slate-200 bg-white p-5 text-center shadow-sm sm:p-8">
         <p className="text-sm font-black uppercase tracking-[0.18em] text-teal-700">
           {tr("card")} {index + 1} / {words.length} - {tr("reviewsThisSession")}{" "}
@@ -122,11 +144,15 @@ export default function FlashcardDeck({ words }) {
       </div>
       <div className="grid grid-cols-2 gap-3 sm:grid-cols-4" dir="ltr">
         {[
-          ["Again", "bg-rose-600"],
+          [
+            "Again",
+            flipped ? "bg-slate-700" : "bg-indigo-700",
+            flipped ? tr("hide") : tr("show"),
+          ],
           ["Hard", "bg-amber-600"],
           ["Good", "bg-teal-700"],
           ["Easy", "bg-slate-950"],
-        ].map(([quality, color]) => (
+        ].map(([quality, color, label]) => (
           <button
             key={quality}
             type="button"
@@ -134,7 +160,7 @@ export default function FlashcardDeck({ words }) {
             className={`rounded-2xl px-4 py-4 text-sm font-black text-white shadow-lg transition hover:-translate-y-0.5 ${color}`}
             dir={isArabic ? "rtl" : "ltr"}
           >
-            {tr(quality.toLowerCase())}
+            {label || tr(quality.toLowerCase())}
           </button>
         ))}
       </div>

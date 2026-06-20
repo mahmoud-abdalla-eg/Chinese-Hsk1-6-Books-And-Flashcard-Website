@@ -5,8 +5,19 @@ import {
   getManagedGrammarUnit,
   getManagedGrammarUnitsForLevel,
 } from "@/lib/admin/course-grammar";
+import { getGrammarUnitsForLevel } from "@/lib/data/grammar";
+import { HSK_LEVELS } from "@/lib/data/schema";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
+
+export function generateStaticParams() {
+  return HSK_LEVELS.flatMap((level) =>
+    getGrammarUnitsForLevel(level).map((unit) => ({
+      level: String(level),
+      unitId: String(unit.id),
+    })),
+  );
+}
 
 export default async function GrammarUnitPage({ params }) {
   const { level, unitId } = await params;

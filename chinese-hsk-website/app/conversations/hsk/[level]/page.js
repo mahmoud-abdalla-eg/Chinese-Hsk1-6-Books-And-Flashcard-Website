@@ -3,8 +3,13 @@ import { Card, Pill, Surface } from "@/components/ui/card";
 import { getManagedConversationsForLevel } from "@/lib/admin/course-conversations";
 import { getManagedHskWords } from "@/lib/admin/course-words";
 import { levelThemes } from "@/lib/data/design";
+import { HSK_LEVELS } from "@/lib/data/schema";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
+
+export function generateStaticParams() {
+  return HSK_LEVELS.map((level) => ({ level: String(level) }));
+}
 
 export default async function LevelConversationsPage({ params }) {
   const { level } = await params;

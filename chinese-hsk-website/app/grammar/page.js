@@ -14,7 +14,7 @@ const levelLabels = {
   6: "Polished expression",
 };
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
 
 export default async function GrammarPage() {
   const grammarItems = await getManagedGrammarPath();

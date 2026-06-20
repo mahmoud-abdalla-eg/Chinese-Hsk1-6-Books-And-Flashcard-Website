@@ -12,36 +12,45 @@ import {
 export function usePersistentProgress() {
   const [progress, setProgress] = useState(defaultProgress());
   const [syncStatus, setSyncStatus] = useState("loading");
-  const [userId, setUserId] = useState(null);
+  const [storageKey, setStorageKey] = useState(null);
 
   useEffect(() => {
-    const id = ensureUserId();
-    setUserId(id);
-    const local = loadLocalProgress();
-    setProgress(local);
-
     let cancelled = false;
     async function loadRemoteProgress() {
       try {
         const account = await loadAccount();
-        const progressUrl = account?.user
-          ? "/api/progress"
-          : `/api/progress?userId=${id}`;
-        const response = await fetch(progressUrl, {
+        const key = account?.user
+          ? accountProgressKey(account.user.id)
+          : anonymousProgressKey();
+        const local = loadLocalProgress(key, !account?.user);
+        if (cancelled) return;
+        setStorageKey(key);
+        setProgress(local);
+
+        if (!account?.user) {
+          setSyncStatus("local");
+          return;
+        }
+        const response = await fetch("/api/progress", {
           cache: "no-store",
         });
         if (!response.ok) throw new Error("Progress load failed.");
         const data = await response.json();
         const merged = mergeProgress(local, data.progress);
         if (cancelled) return;
-        saveLocalProgress(merged);
+        saveLocalProgress(key, merged);
         setProgress(merged);
         setSyncStatus("synced");
         if (JSON.stringify(merged) !== JSON.stringify(data.progress)) {
-          await saveRemoteProgress(id, merged);
+          await saveRemoteProgress(merged);
         }
       } catch {
-        if (!cancelled) setSyncStatus("local");
+        if (!cancelled) {
+          const key = anonymousProgressKey();
+          setStorageKey(key);
+          setProgress(loadLocalProgress(key, true));
+          setSyncStatus("local");
+        }
       }
     }
 
@@ -53,6 +62,8 @@ export function usePersistentProgress() {
 
   const saveProgress = useCallback(
     (nextProgress) => {
+      const activeKey = storageKey || anonymousProgressKey();
+      if (!storageKey) setStorageKey(activeKey);
       setProgress((current) => {
         const next =
           typeof nextProgress === "function"
@@ -62,53 +73,60 @@ export function usePersistentProgress() {
           ...next,
           lastStudiedDate: new Date().toISOString(),
         };
-        saveLocalProgress(withDate);
-        if (userId) {
+        saveLocalProgress(activeKey, withDate);
+        if (storageKey) {
           setSyncStatus("syncing");
-          saveRemoteProgress(userId, withDate)
-            .then(() => setSyncStatus("synced"))
+          saveRemoteProgress(withDate)
+            .then((synced) => setSyncStatus(synced ? "synced" : "local"))
             .catch(() => setSyncStatus("local"));
         }
         return withDate;
       });
     },
-    [userId],
+    [storageKey],
   );
 
-  return { progress, saveProgress, syncStatus, userId };
+  return { progress, saveProgress, syncStatus, userId: storageKey };
 }
 
-function loadLocalProgress() {
+function loadLocalProgress(key, includeLegacy = false) {
   try {
-    const saved = window.localStorage.getItem(progressKey);
+    const saved =
+      window.localStorage.getItem(key) ||
+      (includeLegacy ? window.localStorage.getItem(progressKey) : null);
     return saved ? sanitizeProgress(JSON.parse(saved)) : defaultProgress();
   } catch {
     return defaultProgress();
   }
 }
 
-function saveLocalProgress(progress) {
-  window.localStorage.setItem(progressKey, JSON.stringify(progress));
+function saveLocalProgress(key, progress) {
+  window.localStorage.setItem(key, JSON.stringify(progress));
 }
 
-function ensureUserId() {
+function anonymousProgressKey() {
   const saved = window.localStorage.getItem(progressUserKey);
-  if (saved) return saved;
+  if (saved) return `${progressKey}:${saved}`;
   const id = `mf_${crypto.randomUUID().replaceAll("-", "")}`;
   window.localStorage.setItem(progressUserKey, id);
-  return id;
+  return `${progressKey}:${id}`;
 }
 
-async function saveRemoteProgress(userId, progress) {
+function accountProgressKey(userId) {
+  return `${progressKey}:account:${userId}`;
+}
+
+async function saveRemoteProgress(progress) {
   const account = await loadAccount();
-  const body = account?.user ? { progress } : { userId, progress };
+  if (!account?.user) return false;
   const response = await fetch("/api/progress", {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(body),
+    body: JSON.stringify({ progress }),
   });
   if (!response.ok) throw new Error("Progress save failed.");
-  return response.json();
+  await response.json();
+  return true;
 }
 
 async function loadAccount() {

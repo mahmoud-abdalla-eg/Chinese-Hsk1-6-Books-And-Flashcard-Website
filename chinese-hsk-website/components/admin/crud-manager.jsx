@@ -214,7 +214,20 @@ function Field({ field, value, onChange }) {
   return (
     <div className="grid gap-1 text-sm font-black text-slate-700">
       <label htmlFor={fieldId}>{field.label}</label>
-      {field.type === "textarea" || field.type === "json" ? (
+      {field.type === "select" ? (
+        <select
+          id={fieldId}
+          value={value || ""}
+          onChange={(event) => onChange(event.target.value)}
+          className={common}
+        >
+          {(field.options || []).map((option) => (
+            <option key={option.value || option} value={option.value || option}>
+              {option.label || option}
+            </option>
+          ))}
+        </select>
+      ) : field.type === "textarea" || field.type === "json" ? (
         <textarea
           id={fieldId}
           rows={field.rows || 5}
@@ -239,6 +252,11 @@ function Field({ field, value, onChange }) {
           className={common}
         />
       )}
+      {field.helper ? (
+        <span className="text-xs font-semibold leading-5 text-slate-500">
+          {field.helper}
+        </span>
+      ) : null}
     </div>
   );
 }

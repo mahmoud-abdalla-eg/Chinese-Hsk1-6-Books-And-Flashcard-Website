@@ -1,0 +1,565 @@
+{
+  "sourceRows": 1299,
+  "added": 0,
+  "updatedExisting": 111,
+  "managedWords": 111,
+  "newCount": 1690,
+  "skippedExisting": 1299,
+  "managedWordList": [
+    {
+      "hanzi": "鞭炮",
+      "pinyin": "biānpào",
+      "meaningEn": "firecracker"
+    },
+    {
+      "hanzi": "辩论",
+      "pinyin": "biànlùn",
+      "meaningEn": "debate"
+    },
+    {
+      "hanzi": "不见得",
+      "pinyin": "bújiàndé",
+      "meaningEn": "not necessarily"
+    },
+    {
+      "hanzi": "诚恳",
+      "pinyin": "chéngkěn",
+      "meaningEn": "sincere"
+    },
+    {
+      "hanzi": "次要",
+      "pinyin": "cìyào",
+      "meaningEn": "secondary"
+    },
+    {
+      "hanzi": "粗糙",
+      "pinyin": "cūcāo",
+      "meaningEn": "rough"
+    },
+    {
+      "hanzi": "倒霉",
+      "pinyin": "dǎoméi",
+      "meaningEn": "have bad luck"
+    },
+    {
+      "hanzi": "地毯",
+      "pinyin": "dìtǎn",
+      "meaningEn": "carpet"
+    },
+    {
+      "hanzi": "动画片",
+      "pinyin": "dònghuàpiàn",
+      "meaningEn": "cartoon"
+    },
+    {
+      "hanzi": "度过",
+      "pinyin": "dùguò",
+      "meaningEn": "spend"
+    },
+    {
+      "hanzi": "肥皂",
+      "pinyin": "féizào",
+      "meaningEn": "soap"
+    },
+    {
+      "hanzi": "讽刺",
+      "pinyin": "fěngcì",
+      "meaningEn": "satire"
+    },
+    {
+      "hanzi": "乖",
+      "pinyin": "guāi",
+      "meaningEn": "well-behaved"
+    },
+    {
+      "hanzi": "光滑",
+      "pinyin": "guānghuá",
+      "meaningEn": "smooth"
+    },
+    {
+      "hanzi": "国庆节",
+      "pinyin": "guóqìngjié",
+      "meaningEn": "national day"
+    },
+    {
+      "hanzi": "豪华",
+      "pinyin": "háohuá",
+      "meaningEn": "luxury"
+    },
+    {
+      "hanzi": "何必",
+      "pinyin": "hébì",
+      "meaningEn": "why bother; why should"
+    },
+    {
+      "hanzi": "后背",
+      "pinyin": "hòubèi",
+      "meaningEn": "back"
+    },
+    {
+      "hanzi": "胡说",
+      "pinyin": "húshuō",
+      "meaningEn": "nonsense"
+    },
+    {
+      "hanzi": "慌张",
+      "pinyin": "huāngzhāng",
+      "meaningEn": "flurried"
+    },
+    {
+      "hanzi": "假装",
+      "pinyin": "jiǎzhuāng",
+      "meaningEn": "pretend"
+    },
+    {
+      "hanzi": "借口",
+      "pinyin": "jièkǒu",
+      "meaningEn": "excuse"
+    },
+    {
+      "hanzi": "戒",
+      "pinyin": "jiè",
+      "meaningEn": "quit"
+    },
+    {
+      "hanzi": "桔子",
+      "pinyin": "júzi",
+      "meaningEn": "tangerine; orange"
+    },
+    {
+      "hanzi": "军事",
+      "pinyin": "jūnshì",
+      "meaningEn": "military"
+    },
+    {
+      "hanzi": "苗条",
+      "pinyin": "miáotiao",
+      "meaningEn": "slim"
+    },
+    {
+      "hanzi": "名胜古迹",
+      "pinyin": "míngshènggǔjì",
+      "meaningEn": "historic sites and scenic spots"
+    },
+    {
+      "hanzi": "嫩",
+      "pinyin": "nèn",
+      "meaningEn": "tender, delicate"
+    },
+    {
+      "hanzi": "宁可",
+      "pinyin": "nìngkě",
+      "meaningEn": "would rather"
+    },
+    {
+      "hanzi": "轻视",
+      "pinyin": "qīngshì",
+      "meaningEn": "despise"
+    },
+    {
+      "hanzi": "忍不住",
+      "pinyin": "rěnbuzhù",
+      "meaningEn": "cannot help; unable to hold back"
+    },
+    {
+      "hanzi": "日程",
+      "pinyin": "rìchéng",
+      "meaningEn": "schedule"
+    },
+    {
+      "hanzi": "使劲儿",
+      "pinyin": "shǐjìnr",
+      "meaningEn": "exert all one's strength"
+    },
+    {
+      "hanzi": "数码",
+      "pinyin": "shùmǎ",
+      "meaningEn": "digital"
+    },
+    {
+      "hanzi": "摔倒",
+      "pinyin": "shuāidǎo",
+      "meaningEn": "fall"
+    },
+    {
+      "hanzi": "丝绸",
+      "pinyin": "sīchóu",
+      "meaningEn": "silk"
+    },
+    {
+      "hanzi": "随身",
+      "pinyin": "suíshēn",
+      "meaningEn": "carry with oneself"
+    },
+    {
+      "hanzi": "太极拳",
+      "pinyin": "tàijíquán",
+      "meaningEn": "tai chi"
+    },
+    {
+      "hanzi": "讨价还价",
+      "pinyin": "tǎojiàhuánjià",
+      "meaningEn": "bargain"
+    },
+    {
+      "hanzi": "体贴",
+      "pinyin": "tǐtiē",
+      "meaningEn": "considerate"
+    },
+    {
+      "hanzi": "推辞",
+      "pinyin": "tuīcí",
+      "meaningEn": "decline; refuse politely"
+    },
+    {
+      "hanzi": "问候",
+      "pinyin": "wènhòu",
+      "meaningEn": "greet; give regards"
+    },
+    {
+      "hanzi": "勿",
+      "pinyin": "wù",
+      "meaningEn": "do not"
+    },
+    {
+      "hanzi": "孝顺",
+      "pinyin": "xiàoshun",
+      "meaningEn": "filial; devoted to parents"
+    },
+    {
+      "hanzi": "英俊",
+      "pinyin": "yīngjùn",
+      "meaningEn": "handsome"
+    },
+    {
+      "hanzi": "应付",
+      "pinyin": "yìngfu",
+      "meaningEn": "cope with"
+    },
+    {
+      "hanzi": "油炸",
+      "pinyin": "yóuzhá",
+      "meaningEn": "fried in oil"
+    },
+    {
+      "hanzi": "责备",
+      "pinyin": "zébèi",
+      "meaningEn": "blame; reproach"
+    },
+    {
+      "hanzi": "支票",
+      "pinyin": "zhīpiào",
+      "meaningEn": "check; cheque"
+    },
+    {
+      "hanzi": "爱惜",
+      "pinyin": "àixī",
+      "meaningEn": "cherish; take good care of"
+    },
+    {
+      "hanzi": "标点",
+      "pinyin": "biāodiǎn",
+      "meaningEn": "punctuation"
+    },
+    {
+      "hanzi": "惭愧",
+      "pinyin": "cánkuì",
+      "meaningEn": "feel ashamed"
+    },
+    {
+      "hanzi": "测验",
+      "pinyin": "cèyàn",
+      "meaningEn": "test"
+    },
+    {
+      "hanzi": "吃亏",
+      "pinyin": "chīkuī",
+      "meaningEn": "suffer a loss"
+    },
+    {
+      "hanzi": "迟早",
+      "pinyin": "chízǎo",
+      "meaningEn": "sooner or later"
+    },
+    {
+      "hanzi": "池塘",
+      "pinyin": "chítáng",
+      "meaningEn": "pond"
+    },
+    {
+      "hanzi": "充电器",
+      "pinyin": "chōngdiànqì",
+      "meaningEn": "charger"
+    },
+    {
+      "hanzi": "抽屉",
+      "pinyin": "chōuti",
+      "meaningEn": "drawer"
+    },
+    {
+      "hanzi": "窗帘",
+      "pinyin": "chuānglián",
+      "meaningEn": "curtains"
+    },
+    {
+      "hanzi": "打喷嚏",
+      "pinyin": "dǎpēntì",
+      "meaningEn": "sneeze"
+    },
+    {
+      "hanzi": "胆小鬼",
+      "pinyin": "dǎnxiǎoguǐ",
+      "meaningEn": "coward"
+    },
+    {
+      "hanzi": "当心",
+      "pinyin": "dāngxīn",
+      "meaningEn": "watch out"
+    },
+    {
+      "hanzi": "岛屿",
+      "pinyin": "dǎoyǔ",
+      "meaningEn": "islands"
+    },
+    {
+      "hanzi": "电台",
+      "pinyin": "diàntái",
+      "meaningEn": "radio station"
+    },
+    {
+      "hanzi": "钓",
+      "pinyin": "diào",
+      "meaningEn": "fish with a hook"
+    },
+    {
+      "hanzi": "兑换",
+      "pinyin": "duìhuàn",
+      "meaningEn": "exchange"
+    },
+    {
+      "hanzi": "躲藏",
+      "pinyin": "duǒcáng",
+      "meaningEn": "hide oneself"
+    },
+    {
+      "hanzi": "发抖",
+      "pinyin": "fādǒu",
+      "meaningEn": "tremble; shiver"
+    },
+    {
+      "hanzi": "非",
+      "pinyin": "fēi",
+      "meaningEn": "non-; must; not"
+    },
+    {
+      "hanzi": "废话",
+      "pinyin": "fèihuà",
+      "meaningEn": "nonsense"
+    },
+    {
+      "hanzi": "钢铁",
+      "pinyin": "gāngtiě",
+      "meaningEn": "steel"
+    },
+    {
+      "hanzi": "管子",
+      "pinyin": "guǎnzi",
+      "meaningEn": "pipe"
+    },
+    {
+      "hanzi": "光盘",
+      "pinyin": "guāngpán",
+      "meaningEn": "CD"
+    },
+    {
+      "hanzi": "归纳",
+      "pinyin": "guīnà",
+      "meaningEn": "summarize; induce"
+    },
+    {
+      "hanzi": "柜台",
+      "pinyin": "guìtái",
+      "meaningEn": "counter"
+    },
+    {
+      "hanzi": "何况",
+      "pinyin": "hékuàng",
+      "meaningEn": "not to mention; let alone"
+    },
+    {
+      "hanzi": "华裔",
+      "pinyin": "huáyì",
+      "meaningEn": "of Chinese descent"
+    },
+    {
+      "hanzi": "系领带",
+      "pinyin": "jìlǐngdài",
+      "meaningEn": "wear a tie"
+    },
+    {
+      "hanzi": "夹子",
+      "pinyin": "jiāzi",
+      "meaningEn": "clip"
+    },
+    {
+      "hanzi": "艰巨",
+      "pinyin": "jiānjù",
+      "meaningEn": "arduous"
+    },
+    {
+      "hanzi": "狡猾",
+      "pinyin": "jiǎohuá",
+      "meaningEn": "cunning"
+    },
+    {
+      "hanzi": "卡车",
+      "pinyin": "kǎchē",
+      "meaningEn": "truck"
+    },
+    {
+      "hanzi": "刻苦",
+      "pinyin": "kèkǔ",
+      "meaningEn": "hardworking"
+    },
+    {
+      "hanzi": "劳驾",
+      "pinyin": "láojià",
+      "meaningEn": "excuse me"
+    },
+    {
+      "hanzi": "冷淡",
+      "pinyin": "lěngdàn",
+      "meaningEn": "cool attitude"
+    },
+    {
+      "hanzi": "零件",
+      "pinyin": "língjiàn",
+      "meaningEn": "spare part"
+    },
+    {
+      "hanzi": "流泪",
+      "pinyin": "liúlèi",
+      "meaningEn": "shed tears"
+    },
+    {
+      "hanzi": "煤炭",
+      "pinyin": "méitàn",
+      "meaningEn": "coal"
+    },
+    {
+      "hanzi": "模特",
+      "pinyin": "mótè",
+      "meaningEn": "model"
+    },
+    {
+      "hanzi": "难怪",
+      "pinyin": "nánguài",
+      "meaningEn": "no wonder"
+    },
+    {
+      "hanzi": "青少年",
+      "pinyin": "qīngshàonián",
+      "meaningEn": "teenagers"
+    },
+    {
+      "hanzi": "绳子",
+      "pinyin": "shéngzi",
+      "meaningEn": "rope"
+    },
+    {
+      "hanzi": "省略",
+      "pinyin": "shěnglüè",
+      "meaningEn": "ellipsis"
+    },
+    {
+      "hanzi": "湿润",
+      "pinyin": "shīrùn",
+      "meaningEn": "moist"
+    },
+    {
+      "hanzi": "梳子",
+      "pinyin": "shūzi",
+      "meaningEn": "comb"
+    },
+    {
+      "hanzi": "甩",
+      "pinyin": "shuǎi",
+      "meaningEn": "throw; shake off"
+    },
+    {
+      "hanzi": "撕",
+      "pinyin": "sī",
+      "meaningEn": "tear"
+    },
+    {
+      "hanzi": "丝毫",
+      "pinyin": "sīháo",
+      "meaningEn": "the slightest bit"
+    },
+    {
+      "hanzi": "坦率",
+      "pinyin": "tǎnshuài",
+      "meaningEn": "frank"
+    },
+    {
+      "hanzi": "逃避",
+      "pinyin": "táobì",
+      "meaningEn": "escape"
+    },
+    {
+      "hanzi": "疼爱",
+      "pinyin": "téng'ài",
+      "meaningEn": "love dearly"
+    },
+    {
+      "hanzi": "提纲",
+      "pinyin": "tígāng",
+      "meaningEn": "outline"
+    },
+    {
+      "hanzi": "退步",
+      "pinyin": "tuìbù",
+      "meaningEn": "regress; fall behind"
+    },
+    {
+      "hanzi": "吻",
+      "pinyin": "wěn",
+      "meaningEn": "kiss"
+    },
+    {
+      "hanzi": "瞎",
+      "pinyin": "xiā",
+      "meaningEn": "blind"
+    },
+    {
+      "hanzi": "要不",
+      "pinyin": "yàobù",
+      "meaningEn": "or; otherwise"
+    },
+    {
+      "hanzi": "赞美",
+      "pinyin": "zànměi",
+      "meaningEn": "praise"
+    },
+    {
+      "hanzi": "照常",
+      "pinyin": "zhàocháng",
+      "meaningEn": "as usual"
+    },
+    {
+      "hanzi": "振动",
+      "pinyin": "zhèndòng",
+      "meaningEn": "vibration"
+    },
+    {
+      "hanzi": "执照",
+      "pinyin": "zhízhào",
+      "meaningEn": "license"
+    },
+    {
+      "hanzi": "自私",
+      "pinyin": "zìsī",
+      "meaningEn": "selfish"
+    }
+  ]
+}

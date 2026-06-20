@@ -1,0 +1,896 @@
+{
+  "levels": {
+    "2": {
+      "v2UniqueRows": 366,
+      "plainUniqueRows": 299,
+      "added": 54,
+      "newCount": 251,
+      "skippedPlainPatterns": ["虽然……但是……", "因为…… 所以……"],
+      "addedWords": [
+        {
+          "id": "yanchanghui",
+          "hanzi": "演唱会",
+          "pinyin": "yǎnchànghuì",
+          "meaningEn": "concert"
+        },
+        {
+          "id": "yin-tian",
+          "hanzi": "阴天",
+          "pinyin": "yīn tiān",
+          "meaningEn": "cloudy"
+        },
+        {
+          "id": "guo-malu",
+          "hanzi": "过马路",
+          "pinyin": "guò mǎlù",
+          "meaningEn": "to cross the street"
+        },
+        {
+          "id": "shai-taiyang",
+          "hanzi": "晒太阳",
+          "pinyin": "shài tàiyáng",
+          "meaningEn": "to bask in the sun"
+        },
+        {
+          "id": "tianshi",
+          "hanzi": "甜食",
+          "pinyin": "tiánshí",
+          "meaningEn": "dessert ；sweet"
+        },
+        {
+          "id": "laji-shiwu",
+          "hanzi": "垃圾食物",
+          "pinyin": "lājī shíwù",
+          "meaningEn": "Junk food"
+        },
+        {
+          "id": "dao-cha",
+          "hanzi": "刀叉",
+          "pinyin": "dāo chā",
+          "meaningEn": "knife and fork"
+        },
+        {
+          "id": "yuedi",
+          "hanzi": "月底",
+          "pinyin": "yuèdǐ",
+          "meaningEn": "end of the month"
+        },
+        {
+          "id": "da-san",
+          "hanzi": "打伞",
+          "pinyin": "dǎ sǎn",
+          "meaningEn": "to hold up an umbrella"
+        },
+        {
+          "id": "yigui",
+          "hanzi": "衣柜",
+          "pinyin": "yīguì",
+          "meaningEn": "wardrobe"
+        },
+        {
+          "id": "jiaju-dian",
+          "hanzi": "家具店",
+          "pinyin": "jiājù diàn",
+          "meaningEn": "furniture store"
+        },
+        {
+          "id": "xia-2",
+          "hanzi": "虾",
+          "pinyin": "xiā",
+          "meaningEn": "shrimp, prawn"
+        },
+        {
+          "id": "niurou",
+          "hanzi": "牛肉",
+          "pinyin": "niúròu",
+          "meaningEn": "beef"
+        },
+        {
+          "id": "yangrou",
+          "hanzi": "羊肉",
+          "pinyin": "yángròu",
+          "meaningEn": "mutton, lamb meat"
+        },
+        {
+          "id": "zhuo",
+          "hanzi": "桌",
+          "pinyin": "zhuō",
+          "meaningEn": "measure word for tables of guests at a banquet etc"
+        },
+        {
+          "id": "shuiping",
+          "hanzi": "水瓶",
+          "pinyin": "shuǐpíng",
+          "meaningEn": "water bottle"
+        },
+        {
+          "id": "qianbi-2",
+          "hanzi": "钱币",
+          "pinyin": "qiánbì",
+          "meaningEn": "coins"
+        },
+        {
+          "id": "kandao",
+          "hanzi": "看到",
+          "pinyin": "kàndào",
+          "meaningEn": "to see, to catch sight of"
+        },
+        {
+          "id": "fangke",
+          "hanzi": "房客",
+          "pinyin": "fángkè",
+          "meaningEn": "tenant"
+        },
+        {
+          "id": "xiaci",
+          "hanzi": "下次",
+          "pinyin": "xiàcì",
+          "meaningEn": "next time"
+        },
+        {
+          "id": "tan-yi-tan",
+          "hanzi": "谈一谈",
+          "pinyin": "tán yī tán",
+          "meaningEn": "to talk about"
+        },
+        {
+          "id": "baihuo-gongsi",
+          "hanzi": "百货公司",
+          "pinyin": "bǎihuò gōngsī",
+          "meaningEn": "department store"
+        },
+        {
+          "id": "shi-zhongxin",
+          "hanzi": "市中心",
+          "pinyin": "shì zhōngxīn",
+          "meaningEn": "city center, downtown"
+        },
+        {
+          "id": "shang-che",
+          "hanzi": "上车",
+          "pinyin": "shàng chē",
+          "meaningEn": "to get on or into (a bus, train, car etc)"
+        },
+        {
+          "id": "qingtian",
+          "hanzi": "晴天",
+          "pinyin": "qíngtiān",
+          "meaningEn": "sunny day"
+        },
+        {
+          "id": "xiache",
+          "hanzi": "下车",
+          "pinyin": "xiàchē",
+          "meaningEn": "to get off or out of (a bus, train, car etc)"
+        },
+        {
+          "id": "bu-xiaoxin",
+          "hanzi": "不小心",
+          "pinyin": "bù xiǎoxīn",
+          "meaningEn": "/Adv heedless, careless"
+        },
+        {
+          "id": "saodi",
+          "hanzi": "扫地",
+          "pinyin": "sǎodì",
+          "meaningEn": "to sweep the floor"
+        },
+        {
+          "id": "chushi-2",
+          "hanzi": "出事",
+          "pinyin": "chūshì",
+          "meaningEn": "to have an accident, to meet with a mishap"
+        },
+        {
+          "id": "hutu",
+          "hanzi": "糊涂",
+          "pinyin": "hútú",
+          "meaningEn": "muddled, silly, confused"
+        },
+        {
+          "id": "hao-zai",
+          "hanzi": "好在",
+          "pinyin": "hǎo zài",
+          "meaningEn": "luckily, fortunately"
+        },
+        {
+          "id": "bie-ji",
+          "hanzi": "别急",
+          "pinyin": "bié jí",
+          "meaningEn": "Dont rush, dont be anxious"
+        },
+        {
+          "id": "xiaotou",
+          "hanzi": "小偷",
+          "pinyin": "xiǎotōu",
+          "meaningEn": "thief"
+        },
+        {
+          "id": "guaibude",
+          "hanzi": "怪不得",
+          "pinyin": "guàibùdé",
+          "meaningEn": "no wonder!, so that's why!"
+        },
+        {
+          "id": "jin-qiu",
+          "hanzi": "进球",
+          "pinyin": "jìn qiú",
+          "meaningEn": "to score a goal"
+        },
+        {
+          "id": "tu-3",
+          "hanzi": "秃",
+          "pinyin": "tū",
+          "meaningEn": "bald"
+        },
+        {
+          "id": "qiuxing",
+          "hanzi": "球星",
+          "pinyin": "qiúxīng",
+          "meaningEn": "sports star (ball sport)"
+        },
+        {
+          "id": "jili",
+          "hanzi": "吉利",
+          "pinyin": "jílì",
+          "meaningEn": "auspicious, lucky, propitious"
+        },
+        {
+          "id": "facai",
+          "hanzi": "发财",
+          "pinyin": "fācái",
+          "meaningEn": "to get rich"
+        },
+        {
+          "id": "qingren-jie",
+          "hanzi": "情人节",
+          "pinyin": "qíngrén jié",
+          "meaningEn": "Valentine's Day"
+        },
+        {
+          "id": "yixia-er",
+          "hanzi": "一下儿",
+          "pinyin": "yīxià er",
+          "meaningEn": "(used after a verb) in a while, give it a try"
+        },
+        {
+          "id": "zhaodao",
+          "hanzi": "找到",
+          "pinyin": "zhǎodào",
+          "meaningEn": "to find"
+        },
+        {
+          "id": "shuizhao",
+          "hanzi": "睡着",
+          "pinyin": "shuìzháo",
+          "meaningEn": "to fall asleep"
+        },
+        {
+          "id": "qianbao",
+          "hanzi": "钱包",
+          "pinyin": "qiánbāo",
+          "meaningEn": "purse, wallet"
+        },
+        {
+          "id": "fuwutai",
+          "hanzi": "服务台",
+          "pinyin": "fúwùtái",
+          "meaningEn": "service desk, information desk, reception desk"
+        },
+        {
+          "id": "nazou",
+          "hanzi": "拿走",
+          "pinyin": "názǒu",
+          "meaningEn": "to take away"
+        },
+        {
+          "id": "huansonghui",
+          "hanzi": "欢送会",
+          "pinyin": "huānsònghùi",
+          "meaningEn": "farewell party, going away party"
+        },
+        {
+          "id": "quanguo",
+          "hanzi": "全国",
+          "pinyin": "quánguó",
+          "meaningEn": "whole nation, nationwide"
+        },
+        {
+          "id": "changcheng",
+          "hanzi": "长城",
+          "pinyin": "chángchéng",
+          "meaningEn": "the Great Wall"
+        },
+        {
+          "id": "da-lanqiu",
+          "hanzi": "打篮球",
+          "pinyin": "dǎ lánqiú",
+          "meaningEn": "to play basketball"
+        },
+        {
+          "id": "huochezhan",
+          "hanzi": "火车站",
+          "pinyin": "huǒchēzhàn",
+          "meaningEn": "train station"
+        },
+        {
+          "id": "di-yi",
+          "hanzi": "第一",
+          "pinyin": "dì yī",
+          "meaningEn": "the first, 1st, number one"
+        },
+        {
+          "id": "tizuqiu",
+          "hanzi": "踢足球",
+          "pinyin": "tīzúqiú",
+          "meaningEn": "to play soccer"
+        },
+        {
+          "id": "miantiao",
+          "hanzi": "面条",
+          "pinyin": "miàntiáo",
+          "meaningEn": "noodles"
+        }
+      ]
+    },
+    "3": {
+      "v2UniqueRows": 417,
+      "plainUniqueRows": 594,
+      "added": 91,
+      "newCount": 582,
+      "skippedPlainPatterns": [
+        "虽然……但是……",
+        "因为…… 所以……",
+        "不但…… 而且……"
+      ],
+      "addedWords": [
+        {
+          "id": "meicuo",
+          "hanzi": "没错",
+          "pinyin": "méicuò",
+          "meaningEn": "That's right!"
+        },
+        {
+          "id": "xiaokan",
+          "hanzi": "小看",
+          "pinyin": "xiǎokàn",
+          "meaningEn": "to despise, to underestimate"
+        },
+        {
+          "id": "shuo-ding-le",
+          "hanzi": "说定了",
+          "pinyin": "shuō dìng le",
+          "meaningEn": "deal"
+        },
+        {
+          "id": "louyishou",
+          "hanzi": "露一手",
+          "pinyin": "lòuyìshǒu",
+          "meaningEn": "show"
+        },
+        {
+          "id": "luxing-tuan",
+          "hanzi": "旅行团",
+          "pinyin": "lǚxíng tuán",
+          "meaningEn": "tour group"
+        },
+        {
+          "id": "yidali",
+          "hanzi": "意大利",
+          "pinyin": "Yìdàlì",
+          "meaningEn": "Italy"
+        },
+        {
+          "id": "deguo",
+          "hanzi": "德国",
+          "pinyin": "Déguó",
+          "meaningEn": "Germany"
+        },
+        {
+          "id": "biru-shuo",
+          "hanzi": "比如说",
+          "pinyin": "bǐrú shuō",
+          "meaningEn": "for example"
+        },
+        {
+          "id": "zhiyi",
+          "hanzi": "之一",
+          "pinyin": "zhīyī",
+          "meaningEn": "one of something"
+        },
+        {
+          "id": "xibanya",
+          "hanzi": "西班牙",
+          "pinyin": "Xībānyá",
+          "meaningEn": "Spain"
+        },
+        {
+          "id": "wanshui",
+          "hanzi": "晚睡",
+          "pinyin": "wǎnshuì",
+          "meaningEn": "to stay up late"
+        },
+        {
+          "id": "zhuanqian",
+          "hanzi": "赚钱",
+          "pinyin": "zhuànqián",
+          "meaningEn": "to earn money"
+        },
+        {
+          "id": "chi-kutou",
+          "hanzi": "吃苦头",
+          "pinyin": "chī kǔtou",
+          "meaningEn": "to suffer"
+        },
+        {
+          "id": "zuo-shengyi",
+          "hanzi": "做生意",
+          "pinyin": "zuò shēngyì",
+          "meaningEn": "do business"
+        },
+        {
+          "id": "you-yiyi",
+          "hanzi": "有意义",
+          "pinyin": "yǒu yìyì",
+          "meaningEn": "meaningful"
+        },
+        {
+          "id": "zhainan",
+          "hanzi": "宅男",
+          "pinyin": "zháinán",
+          "meaningEn": "male addicted to computers, computer games, adult cartoons etc"
+        },
+        {
+          "id": "zheng-tian",
+          "hanzi": "整天",
+          "pinyin": "zhěng tiān",
+          "meaningEn": "all day long; whole day"
+        },
+        {
+          "id": "tongwu",
+          "hanzi": "同屋",
+          "pinyin": "tóngwū",
+          "meaningEn": "roommate"
+        },
+        {
+          "id": "hao-qiao",
+          "hanzi": "好巧",
+          "pinyin": "hǎo qiǎo",
+          "meaningEn": "by chance, by coincidence, to happen to"
+        },
+        {
+          "id": "jiaohuan-xuesheng",
+          "hanzi": "交换学生",
+          "pinyin": "jiāohuàn xuésheng",
+          "meaningEn": "exchange students"
+        },
+        {
+          "id": "chuanzhuo",
+          "hanzi": "穿着",
+          "pinyin": "chuānzhuó",
+          "meaningEn": "attire, clothes, dress"
+        },
+        {
+          "id": "shimao",
+          "hanzi": "时髦",
+          "pinyin": "shímáo",
+          "meaningEn": "fashionable"
+        },
+        {
+          "id": "shatan",
+          "hanzi": "沙滩",
+          "pinyin": "shātān",
+          "meaningEn": "beach, sandy shore"
+        },
+        {
+          "id": "youyongchi",
+          "hanzi": "游泳池",
+          "pinyin": "yóuyǒngchí",
+          "meaningEn": "swimming pool"
+        },
+        {
+          "id": "dengshan",
+          "hanzi": "登山",
+          "pinyin": "dēngshān",
+          "meaningEn": "to climb a mountain"
+        },
+        {
+          "id": "yingzheng",
+          "hanzi": "应征",
+          "pinyin": "yìngzhēng",
+          "meaningEn": "to apply for job"
+        },
+        {
+          "id": "di-yibu",
+          "hanzi": "第一步",
+          "pinyin": "dì yībù",
+          "meaningEn": "the first step, step one"
+        },
+        {
+          "id": "xia-yi-bu",
+          "hanzi": "下一步",
+          "pinyin": "xià yī bù",
+          "meaningEn": "the next step, then"
+        },
+        {
+          "id": "shipu",
+          "hanzi": "食谱",
+          "pinyin": "shípǔ",
+          "meaningEn": "recipe"
+        },
+        {
+          "id": "youni",
+          "hanzi": "油腻",
+          "pinyin": "yóunì",
+          "meaningEn": "greasy, oily"
+        },
+        {
+          "id": "meiyong",
+          "hanzi": "没用",
+          "pinyin": "méiyòng",
+          "meaningEn": "useless"
+        },
+        {
+          "id": "yaojin",
+          "hanzi": "要紧",
+          "pinyin": "yàojǐn",
+          "meaningEn": "serious, important , critical"
+        },
+        {
+          "id": "zhanzhu",
+          "hanzi": "站住",
+          "pinyin": "zhànzhù",
+          "meaningEn": "to stop, to halt, to freeze"
+        },
+        {
+          "id": "shengyi-ren",
+          "hanzi": "生意人",
+          "pinyin": "shēngyì rén",
+          "meaningEn": "businessman"
+        },
+        {
+          "id": "heixin",
+          "hanzi": "黑心",
+          "pinyin": "hēixīn",
+          "meaningEn": "dirty, dishonest"
+        },
+        {
+          "id": "quanjia",
+          "hanzi": "全家",
+          "pinyin": "quánjiā",
+          "meaningEn": "all family"
+        },
+        {
+          "id": "choukong",
+          "hanzi": "抽空",
+          "pinyin": "chōukòng",
+          "meaningEn": "to find time to do something"
+        },
+        {
+          "id": "jihao",
+          "hanzi": "记号",
+          "pinyin": "jìhào",
+          "meaningEn": "mark"
+        },
+        {
+          "id": "xiachen",
+          "hanzi": "下沉",
+          "pinyin": "xiàchén",
+          "meaningEn": "to sink"
+        },
+        {
+          "id": "lu-2",
+          "hanzi": "绿",
+          "pinyin": "lǜ",
+          "meaningEn": "green"
+        },
+        {
+          "id": "caoxin",
+          "hanzi": "操心",
+          "pinyin": "cāoxīn",
+          "meaningEn": "to worry about"
+        },
+        {
+          "id": "waijiao-guan",
+          "hanzi": "外交官",
+          "pinyin": "wàijiāo guān",
+          "meaningEn": "diplomat"
+        },
+        {
+          "id": "man-2",
+          "hanzi": "瞒",
+          "pinyin": "mán",
+          "meaningEn": "to hide the truth from"
+        },
+        {
+          "id": "dushengnu",
+          "hanzi": "独生女",
+          "pinyin": "dúshēngnǚ",
+          "meaningEn": "only daughter"
+        },
+        {
+          "id": "libie",
+          "hanzi": "离别",
+          "pinyin": "líbié",
+          "meaningEn": "to leave, to depart"
+        },
+        {
+          "id": "shichuan",
+          "hanzi": "试穿",
+          "pinyin": "shìchuān",
+          "meaningEn": "to try wearing clothes, fitting trial"
+        },
+        {
+          "id": "hutou",
+          "hanzi": "户头",
+          "pinyin": "hùtóu",
+          "meaningEn": "bank account"
+        },
+        {
+          "id": "zhuanzhang",
+          "hanzi": "转账",
+          "pinyin": "zhuǎnzhàng",
+          "meaningEn": "to transfer account"
+        },
+        {
+          "id": "shouju",
+          "hanzi": "收据",
+          "pinyin": "shōujù",
+          "meaningEn": "receipt"
+        },
+        {
+          "id": "jiaofei",
+          "hanzi": "缴费",
+          "pinyin": "jiǎofèi",
+          "meaningEn": "to pay a fee"
+        },
+        {
+          "id": "huasuan",
+          "hanzi": "划算",
+          "pinyin": "huásuàn",
+          "meaningEn": "worthwhile, value for money, to view as profitable"
+        },
+        {
+          "id": "fangshui",
+          "hanzi": "防水",
+          "pinyin": "fángshuǐ",
+          "meaningEn": "waterproof"
+        },
+        {
+          "id": "wanbei",
+          "hanzi": "晚辈",
+          "pinyin": "wǎnbèi",
+          "meaningEn": "younger family members"
+        },
+        {
+          "id": "shangyidai",
+          "hanzi": "上一代",
+          "pinyin": "shàngyídài",
+          "meaningEn": "last generation"
+        },
+        {
+          "id": "xingkui",
+          "hanzi": "幸亏",
+          "pinyin": "xìngkuī",
+          "meaningEn": "fortunately, luckily"
+        },
+        {
+          "id": "zhuangdao",
+          "hanzi": "撞到",
+          "pinyin": "zhuàngdào",
+          "meaningEn": "to bump into, to hit"
+        },
+        {
+          "id": "xingmu",
+          "hanzi": "醒目",
+          "pinyin": "xǐngmù",
+          "meaningEn": "eye-catching"
+        },
+        {
+          "id": "si-shenghuo",
+          "hanzi": "私生活",
+          "pinyin": "sī shēnghuó",
+          "meaningEn": "private life"
+        },
+        {
+          "id": "ganshe",
+          "hanzi": "干涉",
+          "pinyin": "gānshè",
+          "meaningEn": "to intervene"
+        },
+        {
+          "id": "rangbu",
+          "hanzi": "让步",
+          "pinyin": "ràngbù",
+          "meaningEn": "to concede, concession"
+        },
+        {
+          "id": "chi-huai-duzi",
+          "hanzi": "吃坏肚子",
+          "pinyin": "chī huài dùzi",
+          "meaningEn": "to get sick because of bad food"
+        },
+        {
+          "id": "laduzi",
+          "hanzi": "拉肚子",
+          "pinyin": "lādùzi",
+          "meaningEn": "to have diarrhea"
+        },
+        {
+          "id": "minggui",
+          "hanzi": "名贵",
+          "pinyin": "míngguì",
+          "meaningEn": "famous and valuable, rare, precious"
+        },
+        {
+          "id": "youleyuan",
+          "hanzi": "游乐园",
+          "pinyin": "yóulèyuán",
+          "meaningEn": "amusement park"
+        },
+        {
+          "id": "diuren",
+          "hanzi": "丢人",
+          "pinyin": "diūrén",
+          "meaningEn": "/Adj to lose face"
+        },
+        {
+          "id": "panyan",
+          "hanzi": "攀岩",
+          "pinyin": "pānyán",
+          "meaningEn": "to climb rock"
+        },
+        {
+          "id": "nashou",
+          "hanzi": "拿手",
+          "pinyin": "náshǒu",
+          "meaningEn": "good at, skilled in"
+        },
+        {
+          "id": "waixiang",
+          "hanzi": "外向",
+          "pinyin": "wàixiàng",
+          "meaningEn": "extroverted"
+        },
+        {
+          "id": "neixiang",
+          "hanzi": "内向",
+          "pinyin": "nèixiàng",
+          "meaningEn": "introverted"
+        },
+        {
+          "id": "waihang",
+          "hanzi": "外行",
+          "pinyin": "wàiháng",
+          "meaningEn": "nonprofessional"
+        },
+        {
+          "id": "louxia",
+          "hanzi": "楼下",
+          "pinyin": "lóuxià",
+          "meaningEn": "downstair"
+        },
+        {
+          "id": "weizi",
+          "hanzi": "位子",
+          "pinyin": "wèizi",
+          "meaningEn": "Seat"
+        },
+        {
+          "id": "haibao",
+          "hanzi": "海报",
+          "pinyin": "hǎibào",
+          "meaningEn": "poster"
+        },
+        {
+          "id": "yishi-banhui",
+          "hanzi": "一时半会",
+          "pinyin": "yìshí bànhui",
+          "meaningEn": "a while"
+        },
+        {
+          "id": "maohan",
+          "hanzi": "冒汗",
+          "pinyin": "màohàn",
+          "meaningEn": "to sweat"
+        },
+        {
+          "id": "dishang",
+          "hanzi": "地上",
+          "pinyin": "dìshàng",
+          "meaningEn": "On the ground"
+        },
+        {
+          "id": "xi-lian",
+          "hanzi": "洗脸",
+          "pinyin": "xǐ liǎn",
+          "meaningEn": "to face wash, wash your face"
+        },
+        {
+          "id": "bu-ting",
+          "hanzi": "不停",
+          "pinyin": "bù tíng",
+          "meaningEn": "incessant"
+        },
+        {
+          "id": "loushui",
+          "hanzi": "漏水",
+          "pinyin": "lòushuǐ",
+          "meaningEn": "to leak (water)"
+        },
+        {
+          "id": "dong-3",
+          "hanzi": "冬",
+          "pinyin": "dōng",
+          "meaningEn": "winter"
+        },
+        {
+          "id": "gua-feng",
+          "hanzi": "刮风",
+          "pinyin": "guā fēng",
+          "meaningEn": "windy, blow wind"
+        },
+        {
+          "id": "shuaya",
+          "hanzi": "刷牙",
+          "pinyin": "shuāyá",
+          "meaningEn": "brush teeth"
+        },
+        {
+          "id": "xia-3",
+          "hanzi": "夏",
+          "pinyin": "xià",
+          "meaningEn": "summer"
+        },
+        {
+          "id": "chun",
+          "hanzi": "春",
+          "pinyin": "chūn",
+          "meaningEn": "spring"
+        },
+        {
+          "id": "qiu-2",
+          "hanzi": "秋",
+          "pinyin": "qiū",
+          "meaningEn": "autumn"
+        },
+        {
+          "id": "liaotian",
+          "hanzi": "聊天",
+          "pinyin": "liáotiān",
+          "meaningEn": "to chat with"
+        },
+        {
+          "id": "xingli-xiang",
+          "hanzi": "行李箱",
+          "pinyin": "xínglǐ xiāng",
+          "meaningEn": "suitcase, baggage, trunk"
+        },
+        {
+          "id": "huanghe",
+          "hanzi": "黄河",
+          "pinyin": "huánghé",
+          "meaningEn": "Yellow River"
+        },
+        {
+          "id": "dianziyoujian",
+          "hanzi": "电子邮件",
+          "pinyin": "diànzǐyóujiàn",
+          "meaningEn": "email"
+        },
+        {
+          "id": "xiongmao",
+          "hanzi": "熊猫",
+          "pinyin": "xióngmāo",
+          "meaningEn": "panda"
+        },
+        {
+          "id": "zhaoxiangji",
+          "hanzi": "照相机",
+          "pinyin": "zhàoxiàngjī",
+          "meaningEn": "camera"
+        }
+      ]
+    }
+  }
+}

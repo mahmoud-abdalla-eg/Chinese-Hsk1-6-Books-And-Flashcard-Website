@@ -120,6 +120,18 @@ export default function ConversationManager() {
     });
   }
 
+  function moveLine(index, direction) {
+    setSelected((item) => {
+      const next = structuredClone(item || current);
+      const lines = [...(next.dialogue || [])];
+      const target = index + direction;
+      if (target < 0 || target >= lines.length) return next;
+      [lines[index], lines[target]] = [lines[target], lines[index]];
+      next.dialogue = lines;
+      return next;
+    });
+  }
+
   return (
     <div className="grid gap-6 xl:grid-cols-[1fr_520px]">
       <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
@@ -265,13 +277,29 @@ export default function ConversationManager() {
                 >
                   <div className="mb-2 flex justify-between">
                     <strong className="text-sm">Line {index + 1}</strong>
-                    <button
-                      type="button"
-                      onClick={() => removeLine(index)}
-                      className="text-xs font-black text-rose-700"
-                    >
-                      Remove
-                    </button>
+                    <div className="flex gap-2">
+                      <button
+                        type="button"
+                        onClick={() => moveLine(index, -1)}
+                        className="text-xs font-black text-slate-600"
+                      >
+                        Up
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => moveLine(index, 1)}
+                        className="text-xs font-black text-slate-600"
+                      >
+                        Down
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => removeLine(index)}
+                        className="text-xs font-black text-rose-700"
+                      >
+                        Remove
+                      </button>
+                    </div>
                   </div>
                   <div className="grid gap-2">
                     <Field
@@ -288,6 +316,7 @@ export default function ConversationManager() {
                       label="Chinese"
                       value={line.hanzi}
                       onChange={(v) => updateLine(index, "hanzi", v)}
+                      type="textarea"
                     />
                     <Field
                       label="Pinyin"
@@ -298,12 +327,14 @@ export default function ConversationManager() {
                       label="English"
                       value={line.translation?.en}
                       onChange={(v) => updateLine(index, "translation.en", v)}
+                      type="textarea"
                     />
                     <Field
                       label="Arabic"
                       value={line.translation?.ar}
                       onChange={(v) => updateLine(index, "translation.ar", v)}
                       dir="rtl"
+                      type="textarea"
                     />
                     <Field
                       label="Audio path"
@@ -334,17 +365,30 @@ export default function ConversationManager() {
 
 function Field({ label, value, onChange, type = "text", dir }) {
   const id = `conversation-${label.toLowerCase().replaceAll(" ", "-")}`;
+  const className =
+    "rounded-xl border border-slate-300 px-3 py-2 font-semibold text-slate-950 outline-none focus:border-teal-500";
   return (
     <div className="grid gap-1 text-sm font-black text-slate-700">
       <label htmlFor={id}>{label}</label>
-      <input
-        id={id}
-        type={type}
-        value={value || ""}
-        onChange={(event) => onChange(event.target.value)}
-        dir={dir}
-        className="rounded-xl border border-slate-300 px-3 py-2 font-semibold text-slate-950 outline-none focus:border-teal-500"
-      />
+      {type === "textarea" ? (
+        <textarea
+          id={id}
+          rows={3}
+          value={value || ""}
+          onChange={(event) => onChange(event.target.value)}
+          dir={dir}
+          className={className}
+        />
+      ) : (
+        <input
+          id={id}
+          type={type}
+          value={value || ""}
+          onChange={(event) => onChange(event.target.value)}
+          dir={dir}
+          className={className}
+        />
+      )}
     </div>
   );
 }

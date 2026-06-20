@@ -5,7 +5,7 @@ import { getManagedHskSummary } from "@/lib/admin/course-words";
 import { getSiteContentMap } from "@/lib/admin/site-content";
 import { courseHighlights, dailyTopics, studyModes } from "@/lib/data/design";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
 
 export default async function HomePage() {
   const summaries = await getManagedHskSummary();
@@ -43,7 +43,7 @@ export default async function HomePage() {
               Grammar path
             </Link>
           </div>
-          <div className="grid max-w-2xl grid-cols-3 overflow-hidden rounded-2xl border border-slate-200 bg-white text-center shadow-sm">
+          <div className="grid max-w-md grid-cols-2 overflow-hidden rounded-2xl border border-slate-200 bg-white text-center shadow-sm">
             <div className="p-4">
               <strong className="block text-3xl font-black text-slate-950">
                 {totalWords}
@@ -58,14 +58,6 @@ export default async function HomePage() {
               </strong>
               <span className="text-xs font-black uppercase tracking-[0.16em] text-slate-500">
                 units
-              </span>
-            </div>
-            <div className="p-4">
-              <strong className="block text-3xl font-black text-slate-950">
-                3
-              </strong>
-              <span className="text-xs font-black uppercase tracking-[0.16em] text-slate-500">
-                UI languages
               </span>
             </div>
           </div>

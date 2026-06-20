@@ -11,6 +11,7 @@ const emptyWord = {
   partOfSpeech: "word",
   meaning: { en: "", ar: "" },
   example: { hanzi: "", pinyin: "", en: "", ar: "" },
+  examples: [],
   audio: { word: "", example: "" },
   tags: [],
 };
@@ -157,6 +158,9 @@ export default function WordManager() {
                   </td>
                   <td className="px-3 py-3 font-semibold text-slate-500">
                     {word.audio?.word ? "Ready" : "Missing"}
+                    <span className="block text-xs">
+                      {word.examples?.length || 0} examples
+                    </span>
                   </td>
                   <td className="px-3 py-3">
                     <div className="flex gap-2">
@@ -253,6 +257,14 @@ export default function WordManager() {
             dir="rtl"
           />
           <Field
+            label="All examples JSON"
+            type="json"
+            rows={8}
+            value={currentWord.examples || []}
+            onChange={(value) => update(["examples"], value)}
+            helper="Optional. Keep reviewed examples as objects with hanzi, pinyin, en, and ar."
+          />
+          <Field
             label="Word audio path"
             value={currentWord.audio?.word || ""}
             onChange={(value) => update(["audio", "word"], value)}
@@ -276,18 +288,67 @@ export default function WordManager() {
   );
 }
 
-function Field({ label, value, onChange, type = "text", placeholder, dir }) {
+function Field({
+  dir,
+  helper,
+  label,
+  onChange,
+  placeholder,
+  rows = 5,
+  type = "text",
+  value,
+}) {
+  const common =
+    "rounded-xl border border-slate-300 px-3 py-2 font-semibold text-slate-950 outline-none focus:border-teal-500";
+  const fieldId = `word-${label.toLowerCase().replaceAll(" ", "-")}`;
   return (
-    <label className="grid gap-1 text-sm font-black text-slate-700">
-      {label}
-      <input
-        type={type}
-        value={value || ""}
-        onChange={(event) => onChange(event.target.value)}
-        placeholder={placeholder}
-        dir={dir}
-        className="rounded-xl border border-slate-300 px-3 py-2 font-semibold text-slate-950 outline-none focus:border-teal-500"
-      />
-    </label>
+    <div className="grid gap-1 text-sm font-black text-slate-700">
+      <label htmlFor={fieldId}>{label}</label>
+      {type === "textarea" || type === "json" ? (
+        <textarea
+          id={fieldId}
+          rows={rows}
+          value={type === "json" ? prettyJson(value) : value || ""}
+          onChange={(event) =>
+            onChange(
+              type === "json"
+                ? parseJson(event.target.value)
+                : event.target.value,
+            )
+          }
+          placeholder={placeholder}
+          dir={dir}
+          className={common}
+        />
+      ) : (
+        <input
+          id={fieldId}
+          type={type}
+          value={value || ""}
+          onChange={(event) => onChange(event.target.value)}
+          placeholder={placeholder}
+          dir={dir}
+          className={common}
+        />
+      )}
+      {helper ? (
+        <span className="text-xs font-semibold leading-5 text-slate-500">
+          {helper}
+        </span>
+      ) : null}
+    </div>
   );
+}
+
+function prettyJson(value) {
+  return JSON.stringify(value ?? [], null, 2);
+}
+
+function parseJson(value) {
+  try {
+    const parsed = JSON.parse(value || "[]");
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return value;
+  }
 }

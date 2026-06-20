@@ -4,8 +4,13 @@ import {
   getManagedGrammarItemsForLevel,
   getManagedGrammarUnitsForLevel,
 } from "@/lib/admin/course-grammar";
+import { HSK_LEVELS } from "@/lib/data/schema";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 300;
+
+export function generateStaticParams() {
+  return HSK_LEVELS.map((level) => ({ level: String(level) }));
+}
 
 export default async function GrammarLevelPage({ params }) {
   const { level } = await params;

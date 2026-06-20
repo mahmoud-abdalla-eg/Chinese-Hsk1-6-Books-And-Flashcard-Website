@@ -39,6 +39,34 @@ export default async function AdminbaseAnalyticsPage() {
           tone="amber"
         />
       </section>
+      <div className="grid gap-6 lg:grid-cols-3">
+        <ChartPanel
+          title="Visits by day"
+          rows={analytics.visitsByDay}
+          labelKey="day"
+          valueKey="count"
+        />
+        <ChartPanel
+          title="Most studied HSK levels"
+          rows={analytics.studiedLevels.map((item) => ({
+            ...item,
+            label: `HSK ${item.level}`,
+          }))}
+          labelKey="label"
+          valueKey="count"
+        />
+        <ChartPanel
+          title="Most failed or hard words"
+          rows={analytics.hardWords.map((item) => ({
+            ...item,
+            label: item.level
+              ? `HSK ${item.level} · ${item.word}`
+              : item.word || item.wordId,
+          }))}
+          labelKey="label"
+          valueKey="count"
+        />
+      </div>
       <div className="grid gap-6 lg:grid-cols-2">
         <DataTable title="Visits by day" rows={analytics.visitsByDay} />
         <DataTable title="Top pages" rows={analytics.topPages} />
@@ -48,6 +76,36 @@ export default async function AdminbaseAnalyticsPage() {
         <DataTable title="Most difficult words" rows={analytics.hardWords} />
       </div>
     </div>
+  );
+}
+
+function ChartPanel({ labelKey, rows, title, valueKey }) {
+  const max = Math.max(1, ...rows.map((row) => Number(row[valueKey] || 0)));
+  return (
+    <Card>
+      <h2 className="text-2xl font-black text-slate-950">{title}</h2>
+      <div className="mt-5 grid gap-3">
+        {rows.length
+          ? rows.slice(0, 10).map((row) => {
+              const value = Number(row[valueKey] || 0);
+              return (
+                <div key={`${title}-${row[labelKey]}`}>
+                  <div className="mb-1 flex justify-between gap-3 text-xs font-black text-slate-600">
+                    <span className="truncate">{row[labelKey]}</span>
+                    <span>{value}</span>
+                  </div>
+                  <div className="h-3 overflow-hidden rounded-full bg-slate-100">
+                    <div
+                      className="h-full rounded-full bg-teal-700"
+                      style={{ width: `${Math.max(4, (value / max) * 100)}%` }}
+                    />
+                  </div>
+                </div>
+              );
+            })
+          : <p className="text-sm font-semibold text-slate-500">No data yet</p>}
+      </div>
+    </Card>
   );
 }
 
