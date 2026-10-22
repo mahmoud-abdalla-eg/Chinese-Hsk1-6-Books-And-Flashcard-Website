@@ -1,42 +1,48 @@
-import { getMongoDatabase } from "@/lib/db/mongodb";
+import { getSupabaseAdmin } from "@/lib/db/supabase";
 import { sanitizeProgress } from "@/lib/progress/storage";
-
-const collectionName = "user_progress";
 
 export async function getUserProgress(userId) {
   if (!isValidUserId(userId)) return null;
-  const db = await getMongoDatabase();
-  const record = await db
-    .collection(collectionName)
-    .findOne({ userId }, { projection: { _id: 0 } });
-  return record || null;
+  const supabase = getSupabaseAdmin();
+
+  const { data } = await supabase
+    .from("user_progress")
+    .select("progress")
+    .eq("user_id", userId)
+    .maybeSingle();
+
+  if (!data?.progress) return null;
+  return {
+    userId,
+    progress: data.progress,
+  };
 }
 
 export async function saveUserProgress(userId, progress) {
   if (!isValidUserId(userId)) {
     throw new Error("Invalid user id.");
   }
-  const db = await getMongoDatabase();
-  const now = new Date();
+  const supabase = getSupabaseAdmin();
+  const now = new Date().toISOString();
   const sanitized = sanitizeProgress(progress);
-  await db.collection(collectionName).updateOne(
-    { userId },
+
+  const { error } = await supabase.from("user_progress").upsert(
     {
-      $set: {
-        progress: sanitized,
-        updatedAt: now,
-      },
-      $setOnInsert: {
-        userId,
-        createdAt: now,
-      },
+      user_id: userId,
+      progress: sanitized,
+      updated_at: now,
     },
-    { upsert: true },
+    { onConflict: "user_id" },
   );
+
+  if (error) {
+    throw new Error(error.message || "Failed to save progress.");
+  }
+
   return {
     userId,
     progress: sanitized,
-    updatedAt: now.toISOString(),
+    updatedAt: now,
   };
 }
 

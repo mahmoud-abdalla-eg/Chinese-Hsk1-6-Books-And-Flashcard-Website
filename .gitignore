@@ -1,0 +1,12 @@
+# Local book resources and caches (avoid GitHub 100MB file limit)
+hsk 1/
+hsk 2/
+hsk 3/
+hsk 4/
+graphify-out/
+.agents/
+.graphifyignore
+
+# Environment files
+*.env*
+.env.local

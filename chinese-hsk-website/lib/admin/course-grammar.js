@@ -1,13 +1,7 @@
-import { ObjectId } from "mongodb";
 import { unstable_cache } from "next/cache";
 import { getGrammarPath } from "@/lib/data/grammar";
-import { getMongoDatabase } from "@/lib/db/mongodb";
+import { getSupabaseAdmin } from "@/lib/db/supabase";
 
-const grammarCollection = "course_grammar";
-const grammarUnitsCollection = "course_grammar_units";
-const stateCollection = "course_data_state";
-const GRAMMAR_UNIT_SIZE = 12;
-const GRAMMAR_SOURCE_VERSION = "hsk-1-6-pdf-674";
 const PUBLIC_CACHE_SECONDS = 300;
 
 export const getManagedGrammarPath = unstable_cache(
@@ -18,13 +12,16 @@ export const getManagedGrammarPath = unstable_cache(
 
 async function getManagedGrammarPathUncached() {
   try {
-    await ensureGrammarSeeded();
-    const db = await getMongoDatabase();
-    const items = await db
-      .collection(grammarCollection)
-      .find({})
-      .sort({ hskLevel: 1, order: 1, lessonCode: 1 })
-      .toArray();
+    const supabase = getSupabaseAdmin();
+    const { data: items, error } = await supabase
+      .from("course_grammar")
+      .select("*")
+      .order("hsk_level", { ascending: true })
+      .order("order", { ascending: true });
+
+    if (error || !items || items.length === 0) {
+      return getGrammarPath();
+    }
     return items.map(fromDbGrammar);
   } catch {
     return getGrammarPath();
@@ -50,223 +47,97 @@ async function getManagedGrammarLevelsUncached() {
     .map(([level, entries]) => ({ level, entries }));
 }
 
-export const getManagedGrammarItemsForLevel = unstable_cache(
-  async (level) => getManagedGrammarItemsForLevelUncached(level),
-  ["managed-grammar-items-level"],
-  { revalidate: PUBLIC_CACHE_SECONDS },
-);
-
-async function getManagedGrammarItemsForLevelUncached(level) {
-  const numericLevel = Number(level);
-  const items = await getManagedGrammarPath();
-  return items.filter((item) => Number(item.hskLevel) === numericLevel);
-}
-
 export const getManagedGrammarUnitsForLevel = unstable_cache(
   async (level) => getManagedGrammarUnitsForLevelUncached(level),
-  ["managed-grammar-units-level"],
+  ["managed-grammar-units"],
   { revalidate: PUBLIC_CACHE_SECONDS },
 );
 
 async function getManagedGrammarUnitsForLevelUncached(level) {
-  const items = await getManagedGrammarItemsForLevel(level);
+  const numericLevel = Number(level);
   try {
-    const db = await getMongoDatabase();
-    const manualUnits = await db
-      .collection(grammarUnitsCollection)
-      .find({ level: Number(level) })
-      .sort({ id: 1 })
-      .toArray();
-    if (manualUnits.length) {
-      return manualUnits.map((unit) => {
-        const unitItems = items.filter(
-          (item) =>
-            Number(item.order) >= Number(unit.startOrder || 1) &&
-            Number(item.order) <= Number(unit.endOrder || unit.startOrder || 1),
-        );
-        return {
-          mongoId: String(unit._id),
-          id: Number(unit.id),
-          level: Number(unit.level),
-          title: unit.title || `Unit ${unit.id}`,
-          description: unit.description || "",
-          start: Number(unit.startOrder || 1),
-          end: Number(unit.endOrder || unit.startOrder || 1),
-          startOrder: Number(unit.startOrder || 1),
-          endOrder: Number(unit.endOrder || unit.startOrder || 1),
-          itemCount: unitItems.length,
-          items: unitItems,
-        };
-      });
+    const supabase = getSupabaseAdmin();
+    const { data: units, error } = await supabase
+      .from("course_grammar_units")
+      .select("*")
+      .eq("level", numericLevel)
+      .order("id", { ascending: true });
+
+    if (!error && units && units.length > 0) {
+      return units.map(fromDbGrammarUnit);
     }
-  } catch {}
+  } catch {
+    // fallback
+  }
+
+  const items = await getManagedGrammarPath();
+  const levelItems = items.filter((item) => item.hskLevel === numericLevel);
   const units = [];
-  for (let index = 0; index < items.length; index += GRAMMAR_UNIT_SIZE) {
-    const unitItems = items.slice(index, index + GRAMMAR_UNIT_SIZE);
+  const UNIT_SIZE = 12;
+  for (let i = 0; i < levelItems.length; i += UNIT_SIZE) {
+    const unitItems = levelItems.slice(i, i + UNIT_SIZE);
     units.push({
+      level: numericLevel,
       id: units.length + 1,
-      level: Number(level),
-      start: index + 1,
-      end: index + unitItems.length,
-      itemCount: unitItems.length,
-      items: unitItems,
+      title: `Grammar Unit ${units.length + 1}`,
+      description: `Core patterns ${i + 1} to ${i + unitItems.length}`,
+      startOrder: i + 1,
+      endOrder: i + unitItems.length,
     });
   }
   return units;
 }
 
-export const getManagedGrammarUnit = unstable_cache(
-  async (level, unitId) => getManagedGrammarUnitUncached(level, unitId),
-  ["managed-grammar-unit"],
+export async function getManagedGrammarUnit(level, unitId) {
+  const units = await getManagedGrammarUnitsForLevel(level);
+  return units.find((unit) => Number(unit.id) === Number(unitId));
+}
+
+export const getManagedGrammarItem = unstable_cache(
+  async (itemId) => getManagedGrammarItemUncached(itemId),
+  ["managed-grammar-item"],
   { revalidate: PUBLIC_CACHE_SECONDS },
 );
 
-async function getManagedGrammarUnitUncached(level, unitId) {
-  const units = await getManagedGrammarUnitsForLevel(level);
-  return units.find((unit) => unit.id === Number(unitId));
+async function getManagedGrammarItemUncached(itemId) {
+  const items = await getManagedGrammarPath();
+  return items.find((item) => item.id === itemId);
 }
 
 export async function upsertManagedGrammar(payload) {
   const item = normalizeGrammar(payload);
-  await ensureGrammarSeeded();
-  const db = await getMongoDatabase();
-  const now = new Date();
-  const filter =
-    payload.mongoId && ObjectId.isValid(payload.mongoId)
-      ? { _id: new ObjectId(payload.mongoId) }
-      : { hskLevel: item.hskLevel, id: item.id };
-  const result = await db
-    .collection(grammarCollection)
-    .findOneAndUpdate(
-      filter,
-      { $set: { ...item, updatedAt: now }, $setOnInsert: { createdAt: now } },
-      { returnDocument: "after", upsert: true },
-    );
-  return fromDbGrammar(result);
-}
+  const supabase = getSupabaseAdmin();
 
-export async function deleteManagedGrammar(grammarId) {
-  if (!ObjectId.isValid(grammarId)) return false;
-  const db = await getMongoDatabase();
-  const result = await db
-    .collection(grammarCollection)
-    .deleteOne({ _id: new ObjectId(grammarId) });
-  return result.deletedCount > 0;
-}
-
-export async function getManagedGrammarUnitControls(level) {
-  const db = await getMongoDatabase();
-  const rows = await db
-    .collection(grammarUnitsCollection)
-    .find({ level: Number(level) })
-    .sort({ id: 1 })
-    .toArray();
-  return rows.map(fromDbGrammarUnit);
-}
-
-export async function upsertManagedGrammarUnit(payload) {
-  const unit = {
-    level: Number(payload.level || payload.hskLevel || 1),
-    id: Math.max(1, Number(payload.id || 1)),
-    title: String(payload.title || "").trim(),
-    description: String(payload.description || "").trim(),
-    startOrder: Math.max(1, Number(payload.startOrder || 1)),
-    endOrder: Math.max(1, Number(payload.endOrder || payload.startOrder || 1)),
+  const record = {
+    id: item.id,
+    hsk_level: item.hskLevel,
+    order: item.order,
+    lesson_code: item.lessonCode,
+    pattern: item.pattern,
+    explanation: item.explanation,
+    details: item.details,
+    example: item.example,
+    updated_at: new Date().toISOString(),
   };
-  const db = await getMongoDatabase();
-  const filter =
-    payload.mongoId && ObjectId.isValid(payload.mongoId)
-      ? { _id: new ObjectId(payload.mongoId) }
-      : { level: unit.level, id: unit.id };
-  const result = await db.collection(grammarUnitsCollection).findOneAndUpdate(
-    filter,
-    {
-      $set: { ...unit, updatedAt: new Date() },
-      $setOnInsert: { createdAt: new Date() },
-    },
-    { upsert: true, returnDocument: "after" },
-  );
-  return fromDbGrammarUnit(result);
-}
 
-export async function deleteManagedGrammarUnit(unitId) {
-  if (!ObjectId.isValid(unitId)) return false;
-  const db = await getMongoDatabase();
-  const result = await db
-    .collection(grammarUnitsCollection)
-    .deleteOne({ _id: new ObjectId(unitId) });
-  return result.deletedCount > 0;
-}
+  const { data, error } = await supabase
+    .from("course_grammar")
+    .upsert(record, { onConflict: "id" })
+    .select("*")
+    .single();
 
-async function ensureGrammarSeeded() {
-  const db = await getMongoDatabase();
-  const state = await db
-    .collection(stateCollection)
-    .findOne({ _id: "grammar" });
-  const levelOrder = new Map();
-  const source = getGrammarPath().map((item) => {
-    const hskLevel = Number(item.hskLevel || 1);
-    const order = (levelOrder.get(hskLevel) || 0) + 1;
-    levelOrder.set(hskLevel, order);
-    return {
-      ...item,
-      hskLevel,
-      order,
-      createdAt: new Date(),
-      updatedAt: new Date(),
-    };
-  });
-  if (source.length && state?.sourceVersion !== GRAMMAR_SOURCE_VERSION) {
-    await db.collection(grammarCollection).bulkWrite(
-      source.map((item) => ({
-        updateOne: {
-          filter: { hskLevel: item.hskLevel, id: item.id },
-          update: {
-            $set: {
-              ...item,
-              updatedAt: new Date(),
-            },
-            $setOnInsert: {
-              createdAt: new Date(),
-            },
-          },
-          upsert: true,
-        },
-      })),
-    );
+  if (error || !data) {
+    throw new Error(error?.message || "Failed to upsert grammar item.");
   }
-  if (state?.sourceVersion === GRAMMAR_SOURCE_VERSION && source.length) {
-    await db.collection(grammarCollection).bulkWrite(
-      source.map((item) => ({
-        updateOne: {
-          filter: { hskLevel: item.hskLevel, id: item.id },
-          update: {
-            $setOnInsert: item,
-          },
-          upsert: true,
-        },
-      })),
-    );
-  }
-  await db.collection(stateCollection).updateOne(
-    { _id: "grammar" },
-    {
-      $set: {
-        seeded: true,
-        seededAt: new Date(),
-        sourceVersion: GRAMMAR_SOURCE_VERSION,
-      },
-    },
-    { upsert: true },
-  );
+
+  return fromDbGrammar(data);
 }
 
 function normalizeGrammar(payload) {
-  const hskLevel = Math.max(1, Number(payload.hskLevel || payload.level || 1));
+  const hskLevel = Math.max(1, Math.min(6, Number(payload.hskLevel || 1)));
+  const id = String(payload.id || "").trim();
   return {
-    id: String(payload.id || `grammar-${hskLevel}-${Date.now().toString(36)}`)
-      .trim()
-      .slice(0, 140),
+    id,
     hskLevel,
     order: Math.max(1, Number(payload.order) || 1),
     lessonCode: String(payload.lessonCode || "").trim(),
@@ -284,11 +155,10 @@ function normalizeGrammar(payload) {
 
 function fromDbGrammar(item) {
   return {
-    mongoId: String(item._id || ""),
     id: item.id || "",
-    hskLevel: Number(item.hskLevel || 1),
+    hskLevel: Number(item.hsk_level || item.hskLevel || 1),
     order: Number(item.order || 1),
-    lessonCode: item.lessonCode || "",
+    lessonCode: item.lesson_code || item.lessonCode || "",
     pattern: item.pattern || "",
     explanation: item.explanation || "",
     details: item.details || "",
@@ -303,12 +173,11 @@ function fromDbGrammar(item) {
 
 function fromDbGrammarUnit(unit) {
   return {
-    mongoId: String(unit._id || ""),
     level: Number(unit.level || 1),
     id: Number(unit.id || 1),
     title: unit.title || "",
     description: unit.description || "",
-    startOrder: Number(unit.startOrder || 1),
-    endOrder: Number(unit.endOrder || unit.startOrder || 1),
+    startOrder: Number(unit.start_order || unit.startOrder || 1),
+    endOrder: Number(unit.end_order || unit.endOrder || 1),
   };
 }

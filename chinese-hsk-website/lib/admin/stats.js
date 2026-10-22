@@ -1,6 +1,6 @@
 import { getManagedHskSummary } from "@/lib/admin/course-words";
 import { getGrammarLevels, getGrammarPath } from "@/lib/data/grammar";
-import { getMongoDatabase } from "@/lib/db/mongodb";
+import { getSupabaseAdmin } from "@/lib/db/supabase";
 import {
   buildCoverageReport,
   validateAllLevels,
@@ -17,26 +17,31 @@ export async function getAdminDashboardStats() {
 
 async function getDatabaseStats() {
   try {
-    const db = await getMongoDatabase();
-    const [users, progressRecords, admins, recentProgress] = await Promise.all([
-      db.collection("users").countDocuments(),
-      db.collection("user_progress").countDocuments(),
-      db.collection("admins").countDocuments(),
-      db
-        .collection("user_progress")
-        .find({}, { projection: { _id: 0, userId: 1, updatedAt: 1 } })
-        .sort({ updatedAt: -1 })
-        .limit(5)
-        .toArray(),
+    const supabase = getSupabaseAdmin();
+    const [
+      { count: users },
+      { count: progressRecords },
+      { count: admins },
+      { data: recentProgress },
+    ] = await Promise.all([
+      supabase.from("users").select("*", { count: "exact", head: true }),
+      supabase.from("user_progress").select("*", { count: "exact", head: true }),
+      supabase.from("admins").select("*", { count: "exact", head: true }),
+      supabase
+        .from("user_progress")
+        .select("user_id, updated_at")
+        .order("updated_at", { ascending: false })
+        .limit(5),
     ]);
+
     return {
       ok: true,
-      users,
-      admins,
-      progressRecords,
-      recentProgress: recentProgress.map((item) => ({
-        userId: item.userId,
-        updatedAt: item.updatedAt?.toISOString?.() || String(item.updatedAt),
+      users: users || 0,
+      admins: admins || 0,
+      progressRecords: progressRecords || 0,
+      recentProgress: (recentProgress || []).map((item) => ({
+        userId: item.user_id,
+        updatedAt: item.updated_at || "",
       })),
     };
   } catch {
@@ -51,33 +56,31 @@ async function getDatabaseStats() {
 }
 
 async function getCourseStats() {
-  const hsk = await getManagedHskSummary();
-  const grammar = getGrammarPath();
-  const grammarLevels = getGrammarLevels();
+  const [summary, grammarPath, grammarLevels] = await Promise.all([
+    getManagedHskSummary(),
+    getGrammarPath(),
+    getGrammarLevels(),
+  ]);
+  const totalWords = summary.reduce(
+    (total, level) => total + (level.wordCount || 0),
+    0,
+  );
   return {
-    words: hsk.reduce((sum, level) => sum + level.wordCount, 0),
-    vocabularyLevels: hsk.length,
-    vocabularyUnits: hsk.reduce((sum, level) => sum + level.unitCount, 0),
-    grammarCards: grammar.length,
-    grammarLevels: grammarLevels.length,
+    totalWords,
+    totalGrammarPoints: grammarPath.length,
+    levels: summary,
+    grammarLevels,
   };
 }
 
-function getValidationStats() {
-  const validations = validateAllLevels();
-  const coverage = buildCoverageReport();
+async function getValidationStats() {
+  const [validation, coverage] = await Promise.all([
+    validateAllLevels(),
+    buildCoverageReport(),
+  ]);
   return {
-    missingFields: validations.reduce(
-      (sum, level) => sum + level.missingFields.length,
-      0,
-    ),
-    duplicateWords: validations.reduce(
-      (sum, level) => sum + level.duplicateWords.length,
-      0,
-    ),
-    uncoveredWords: coverage.levels.reduce(
-      (sum, level) => sum + level.uncoveredWords.length,
-      0,
-    ),
+    hasWarnings: validation.some((level) => level.warnings.length > 0),
+    levels: validation,
+    coverage,
   };
 }

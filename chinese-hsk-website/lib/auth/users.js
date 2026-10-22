@@ -1,53 +1,73 @@
-import { ObjectId } from "mongodb";
 import { hashPassword, verifyPassword } from "@/lib/auth/passwords";
-import { getMongoDatabase } from "@/lib/db/mongodb";
-
-const usersCollection = "users";
+import { getSupabaseAdmin } from "@/lib/db/supabase";
 
 export async function createUser({ name, email, password }) {
   const cleanEmail = normalizeEmail(email);
   const cleanName = sanitizeName(name);
   validateCredentials(cleanEmail, password);
-  const db = await getMongoDatabase();
-  const existing = await db
-    .collection(usersCollection)
-    .findOne({ email: cleanEmail });
+
+  const supabase = getSupabaseAdmin();
+  const { data: existing } = await supabase
+    .from("users")
+    .select("id")
+    .eq("email", cleanEmail)
+    .maybeSingle();
+
   if (existing) {
     throw new Error("Email already registered.");
   }
-  const now = new Date();
-  const result = await db.collection(usersCollection).insertOne({
-    name: cleanName || cleanEmail.split("@")[0],
-    email: cleanEmail,
-    passwordHash: await hashPassword(password),
-    createdAt: now,
-    updatedAt: now,
-  });
-  return userPublic({
-    _id: result.insertedId,
-    name: cleanName || cleanEmail.split("@")[0],
-    email: cleanEmail,
-  });
+
+  const now = new Date().toISOString();
+  const passwordHash = await hashPassword(password);
+
+  const { data, error } = await supabase
+    .from("users")
+    .insert([
+      {
+        name: cleanName || cleanEmail.split("@")[0],
+        email: cleanEmail,
+        password_hash: passwordHash,
+        created_at: now,
+        updated_at: now,
+      },
+    ])
+    .select("id, name, email, created_at")
+    .single();
+
+  if (error || !data) {
+    throw new Error(error?.message || "Failed to create user account.");
+  }
+
+  return userPublic(data);
 }
 
 export async function authenticateUser({ email, password }) {
   const cleanEmail = normalizeEmail(email);
-  const db = await getMongoDatabase();
-  const user = await db
-    .collection(usersCollection)
-    .findOne({ email: cleanEmail });
-  if (!user || !(await verifyPassword(password, user.passwordHash))) {
+  const supabase = getSupabaseAdmin();
+
+  const { data: user, error } = await supabase
+    .from("users")
+    .select("id, name, email, password_hash, created_at")
+    .eq("email", cleanEmail)
+    .maybeSingle();
+
+  if (error || !user || !(await verifyPassword(password, user.password_hash))) {
     throw new Error("Invalid email or password.");
   }
+
   return userPublic(user);
 }
 
 export async function getUserById(userId) {
-  if (!ObjectId.isValid(userId)) return null;
-  const db = await getMongoDatabase();
-  const user = await db
-    .collection(usersCollection)
-    .findOne({ _id: new ObjectId(userId) });
+  if (!isValidId(userId)) return null;
+  const supabase = getSupabaseAdmin();
+
+  const { data: user } = await supabase
+    .from("users")
+    .select("id, name, email, created_at")
+    .eq("id", userId)
+    .maybeSingle();
+
   return user ? userPublic(user) : null;
 }
 
@@ -56,28 +76,37 @@ export async function changeUserPassword({
   newPassword,
   userId,
 }) {
-  if (!ObjectId.isValid(userId)) {
+  if (!isValidId(userId)) {
     throw new Error("Log in again before changing your password.");
   }
   if (String(newPassword || "").length < 8) {
     throw new Error("New password must be at least 8 characters.");
   }
-  const db = await getMongoDatabase();
-  const user = await db
-    .collection(usersCollection)
-    .findOne({ _id: new ObjectId(userId) });
-  if (!user || !(await verifyPassword(currentPassword, user.passwordHash))) {
+
+  const supabase = getSupabaseAdmin();
+  const { data: user } = await supabase
+    .from("users")
+    .select("id, password_hash")
+    .eq("id", userId)
+    .maybeSingle();
+
+  if (!user || !(await verifyPassword(currentPassword, user.password_hash))) {
     throw new Error("Current password is incorrect.");
   }
-  await db.collection(usersCollection).updateOne(
-    { _id: new ObjectId(userId) },
-    {
-      $set: {
-        passwordHash: await hashPassword(newPassword),
-        updatedAt: new Date(),
-      },
-    },
-  );
+
+  const newHash = await hashPassword(newPassword);
+  const { error } = await supabase
+    .from("users")
+    .update({
+      password_hash: newHash,
+      updated_at: new Date().toISOString(),
+    })
+    .eq("id", userId);
+
+  if (error) {
+    throw new Error(error.message || "Could not update password.");
+  }
+
   return true;
 }
 
@@ -102,11 +131,15 @@ function validateCredentials(email, password) {
   }
 }
 
+function isValidId(id) {
+  return typeof id === "string" && id.trim().length >= 8;
+}
+
 function userPublic(user) {
   return {
-    id: String(user._id),
+    id: String(user.id),
     name: user.name,
     email: user.email,
-    createdAt: user.createdAt ? new Date(user.createdAt).toISOString() : null,
+    createdAt: user.created_at ? new Date(user.created_at).toISOString() : null,
   };
 }

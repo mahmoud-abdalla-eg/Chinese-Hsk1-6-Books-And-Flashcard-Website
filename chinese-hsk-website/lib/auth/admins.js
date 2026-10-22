@@ -1,50 +1,70 @@
-import { ObjectId } from "mongodb";
 import { hashPassword, verifyPassword } from "@/lib/auth/passwords";
-import { getMongoDatabase } from "@/lib/db/mongodb";
-
-const adminsCollection = "admins";
+import { getSupabaseAdmin } from "@/lib/db/supabase";
 
 export async function createAdmin({ name, email, password }) {
   const cleanEmail = normalizeEmail(email);
   validateCredentials(cleanEmail, password);
-  const db = await getMongoDatabase();
-  const existing = await db
-    .collection(adminsCollection)
-    .findOne({ email: cleanEmail });
+
+  const supabase = getSupabaseAdmin();
+  const { data: existing } = await supabase
+    .from("admins")
+    .select("id")
+    .eq("email", cleanEmail)
+    .maybeSingle();
+
   if (existing) throw new Error("Admin email already exists.");
-  const now = new Date();
-  const result = await db.collection(adminsCollection).insertOne({
-    name: sanitizeName(name) || cleanEmail.split("@")[0],
-    email: cleanEmail,
-    passwordHash: await hashPassword(password),
-    createdAt: now,
-    updatedAt: now,
-  });
-  return adminPublic({
-    _id: result.insertedId,
-    name: sanitizeName(name) || cleanEmail.split("@")[0],
-    email: cleanEmail,
-  });
+
+  const now = new Date().toISOString();
+  const passwordHash = await hashPassword(password);
+
+  const { data, error } = await supabase
+    .from("admins")
+    .insert([
+      {
+        name: sanitizeName(name) || cleanEmail.split("@")[0],
+        email: cleanEmail,
+        password_hash: passwordHash,
+        created_at: now,
+        updated_at: now,
+      },
+    ])
+    .select("id, name, email")
+    .single();
+
+  if (error || !data) {
+    throw new Error(error?.message || "Failed to create admin.");
+  }
+
+  return adminPublic(data);
 }
 
 export async function authenticateAdmin({ email, password }) {
   const cleanEmail = normalizeEmail(email);
-  const db = await getMongoDatabase();
-  const admin = await db
-    .collection(adminsCollection)
-    .findOne({ email: cleanEmail });
-  if (!admin || !(await verifyPassword(password, admin.passwordHash))) {
+  const supabase = getSupabaseAdmin();
+
+  const { data: admin, error } = await supabase
+    .from("admins")
+    .select("id, name, email, password_hash")
+    .eq("email", cleanEmail)
+    .maybeSingle();
+
+  if (error || !admin || !(await verifyPassword(password, admin.password_hash))) {
     throw new Error("Invalid admin email or password.");
   }
+
   return adminPublic(admin);
 }
 
 export async function getAdminById(adminId) {
-  if (!ObjectId.isValid(adminId)) return null;
-  const db = await getMongoDatabase();
-  const admin = await db
-    .collection(adminsCollection)
-    .findOne({ _id: new ObjectId(adminId) });
+  if (!isValidId(adminId)) return null;
+  const supabase = getSupabaseAdmin();
+
+  const { data: admin } = await supabase
+    .from("admins")
+    .select("id, name, email")
+    .eq("id", adminId)
+    .maybeSingle();
+
   return admin ? adminPublic(admin) : null;
 }
 
@@ -69,9 +89,13 @@ function validateCredentials(email, password) {
   }
 }
 
+function isValidId(id) {
+  return typeof id === "string" && id.trim().length >= 8;
+}
+
 function adminPublic(admin) {
   return {
-    id: String(admin._id),
+    id: String(admin.id),
     name: admin.name,
     email: admin.email,
   };

@@ -1,14 +1,11 @@
-import { ObjectId } from "mongodb";
 import { unstable_cache } from "next/cache";
 import {
   getAllConversations,
   getConversationsForLevel,
 } from "@/lib/data/conversations";
 import { HSK_LEVELS } from "@/lib/data/schema";
-import { getMongoDatabase } from "@/lib/db/mongodb";
+import { getSupabaseAdmin } from "@/lib/db/supabase";
 
-const conversationsCollection = "course_conversations";
-const stateCollection = "course_data_state";
 const PUBLIC_CACHE_SECONDS = 300;
 
 export const getManagedConversationsForLevel = unstable_cache(
@@ -21,13 +18,16 @@ async function getManagedConversationsForLevelUncached(level) {
   const numericLevel = Number(level);
   if (!HSK_LEVELS.includes(numericLevel)) return [];
   try {
-    await ensureConversationsSeeded();
-    const db = await getMongoDatabase();
-    const conversations = await db
-      .collection(conversationsCollection)
-      .find({ hskLevel: numericLevel })
-      .sort({ unitId: 1, id: 1 })
-      .toArray();
+    const supabase = getSupabaseAdmin();
+    const { data: conversations, error } = await supabase
+      .from("course_conversations")
+      .select("*")
+      .eq("hsk_level", numericLevel)
+      .order("unit_id", { ascending: true });
+
+    if (error || !conversations || conversations.length === 0) {
+      return getConversationsForLevel(level);
+    }
     return conversations.map(fromDbConversation);
   } catch {
     return getConversationsForLevel(level);
@@ -49,71 +49,42 @@ async function getManagedConversationForUnitUncached(level, unitId) {
 
 export async function upsertManagedConversation(payload) {
   const conversation = normalizeConversation(payload);
-  await ensureConversationsSeeded();
-  const db = await getMongoDatabase();
-  const now = new Date();
-  const result = await db.collection(conversationsCollection).findOneAndUpdate(
-    { id: conversation.id },
-    {
-      $set: { ...conversation, updatedAt: now },
-      $setOnInsert: { createdAt: now },
-    },
-    { returnDocument: "after", upsert: true },
-  );
-  return fromDbConversation(result);
-}
+  const supabase = getSupabaseAdmin();
 
-export async function deleteManagedConversation(conversationId) {
-  if (!ObjectId.isValid(conversationId)) return false;
-  const db = await getMongoDatabase();
-  const result = await db
-    .collection(conversationsCollection)
-    .deleteOne({ _id: new ObjectId(conversationId) });
-  return result.deletedCount > 0;
-}
+  const record = {
+    id: conversation.id,
+    hsk_level: conversation.hskLevel,
+    unit_id: conversation.unitId,
+    status: conversation.status,
+    title: conversation.title,
+    target_vocabulary_ids: conversation.targetVocabularyIds,
+    dialogue: conversation.dialogue,
+    grammar_notes: conversation.grammarNotes,
+    cultural_notes: conversation.culturalNotes,
+    comprehension_questions: conversation.comprehensionQuestions,
+    shadowing_practice: conversation.shadowingPractice,
+    authoring_note: conversation.authoringNote,
+    updated_at: new Date().toISOString(),
+  };
 
-async function ensureConversationsSeeded() {
-  const db = await getMongoDatabase();
-  const state = await db
-    .collection(stateCollection)
-    .findOne({ _id: "conversations" });
-  if (state?.seeded) return;
-  const source = getAllConversations().map((conversation) => ({
-    ...conversation,
-    hskLevel: Number(conversation.hskLevel || 1),
-    unitId: Number(conversation.unitId || 1),
-    createdAt: new Date(),
-    updatedAt: new Date(),
-  }));
-  if (source.length) {
-    await db.collection(conversationsCollection).bulkWrite(
-      source.map((conversation) => ({
-        updateOne: {
-          filter: { id: conversation.id },
-          update: { $setOnInsert: conversation },
-          upsert: true,
-        },
-      })),
-    );
+  const { data, error } = await supabase
+    .from("course_conversations")
+    .upsert(record, { onConflict: "id" })
+    .select("*")
+    .single();
+
+  if (error || !data) {
+    throw new Error(error?.message || "Failed to upsert conversation.");
   }
-  await db
-    .collection(stateCollection)
-    .updateOne(
-      { _id: "conversations" },
-      { $set: { seeded: true, seededAt: new Date() } },
-      { upsert: true },
-    );
+
+  return fromDbConversation(data);
 }
 
 function normalizeConversation(payload) {
-  const hskLevel = Number(payload.hskLevel || payload.level || 1);
-  const unitId = Number(payload.unitId || 1);
+  const hskLevel = Math.max(1, Math.min(6, Number(payload.hskLevel || 1)));
+  const unitId = Math.max(1, Number(payload.unitId || 1));
   return {
-    id: String(
-      payload.id || `hsk-${hskLevel}-unit-${unitId}-${Date.now().toString(36)}`,
-    )
-      .trim()
-      .slice(0, 160),
+    id: String(payload.id || `hsk-${hskLevel}-unit-${unitId}`).trim(),
     hskLevel,
     unitId,
     status: String(payload.status || "needs-authoring").trim(),
@@ -124,51 +95,46 @@ function normalizeConversation(payload) {
     },
     targetVocabularyIds: arrayOfStrings(payload.targetVocabularyIds),
     dialogue: Array.isArray(payload.dialogue) ? payload.dialogue : [],
-    grammarNotes: Array.isArray(payload.grammarNotes)
-      ? payload.grammarNotes
-      : [],
-    culturalNotes: Array.isArray(payload.culturalNotes)
-      ? payload.culturalNotes
-      : [],
+    grammarNotes: Array.isArray(payload.grammarNotes) ? payload.grammarNotes : [],
+    culturalNotes: Array.isArray(payload.culturalNotes) ? payload.culturalNotes : [],
     comprehensionQuestions: Array.isArray(payload.comprehensionQuestions)
       ? payload.comprehensionQuestions
       : [],
-    shadowingPractice:
-      payload.shadowingPractice && typeof payload.shadowingPractice === "object"
-        ? payload.shadowingPractice
-        : { enabled: true, mode: "line-by-line" },
+    shadowingPractice: payload.shadowingPractice || {
+      enabled: true,
+      mode: "line-by-line",
+    },
     authoringNote: String(payload.authoringNote || "").trim(),
   };
 }
 
 function fromDbConversation(conversation) {
   return {
-    mongoId: String(conversation._id || ""),
     id: conversation.id || "",
-    hskLevel: Number(conversation.hskLevel || 1),
-    unitId: Number(conversation.unitId || 1),
+    hskLevel: Number(conversation.hsk_level || conversation.hskLevel || 1),
+    unitId: Number(conversation.unit_id || conversation.unitId || 1),
     status: conversation.status || "needs-authoring",
     title: {
       en: conversation.title?.en || "",
       zh: conversation.title?.zh || "",
       ar: conversation.title?.ar || "",
     },
-    targetVocabularyIds: arrayOfStrings(conversation.targetVocabularyIds),
+    targetVocabularyIds: arrayOfStrings(conversation.target_vocabulary_ids || conversation.targetVocabularyIds),
     dialogue: Array.isArray(conversation.dialogue) ? conversation.dialogue : [],
-    grammarNotes: Array.isArray(conversation.grammarNotes)
-      ? conversation.grammarNotes
+    grammarNotes: Array.isArray(conversation.grammar_notes || conversation.grammarNotes)
+      ? conversation.grammar_notes || conversation.grammarNotes
       : [],
-    culturalNotes: Array.isArray(conversation.culturalNotes)
-      ? conversation.culturalNotes
+    culturalNotes: Array.isArray(conversation.cultural_notes || conversation.culturalNotes)
+      ? conversation.cultural_notes || conversation.culturalNotes
       : [],
-    comprehensionQuestions: Array.isArray(conversation.comprehensionQuestions)
-      ? conversation.comprehensionQuestions
+    comprehensionQuestions: Array.isArray(conversation.comprehension_questions || conversation.comprehensionQuestions)
+      ? conversation.comprehension_questions || conversation.comprehensionQuestions
       : [],
-    shadowingPractice: conversation.shadowingPractice || {
+    shadowingPractice: conversation.shadowing_practice || conversation.shadowingPractice || {
       enabled: true,
       mode: "line-by-line",
     },
-    authoringNote: conversation.authoringNote || "",
+    authoringNote: conversation.authoring_note || conversation.authoringNote || "",
   };
 }
 

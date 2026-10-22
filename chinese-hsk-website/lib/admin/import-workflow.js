@@ -1,27 +1,24 @@
-import { ObjectId } from "mongodb";
 import { upsertManagedConversation } from "@/lib/admin/course-conversations";
 import { upsertManagedGrammar } from "@/lib/admin/course-grammar";
 import { upsertAudioRecord } from "@/lib/admin/course-settings";
 import { upsertManagedWord } from "@/lib/admin/course-words";
-import { getMongoDatabase } from "@/lib/db/mongodb";
-
-const importsCollection = "content_import_queue";
+import { getSupabaseAdmin } from "@/lib/db/supabase";
 
 export async function getImportQueue() {
-  const db = await getMongoDatabase();
-  const rows = await db
-    .collection(importsCollection)
-    .find({})
-    .sort({ updatedAt: -1 })
-    .toArray();
-  return rows.map((row) => ({
-    mongoId: String(row._id),
+  const supabase = getSupabaseAdmin();
+  const { data: rows } = await supabase
+    .from("import_batches")
+    .select("*")
+    .order("updated_at", { ascending: false });
+
+  return (rows || []).map((row) => ({
+    id: String(row.id),
     type: row.type || "words",
     level: Number(row.level || 1),
     status: row.status || "pending-review",
     notes: row.notes || "",
     payload: row.payload || [],
-    updatedAt: row.updatedAt?.toISOString?.() || "",
+    updatedAt: row.updated_at || "",
   }));
 }
 
@@ -32,49 +29,56 @@ export async function upsertImportJob(payload) {
     status: String(payload.status || "pending-review").trim(),
     notes: String(payload.notes || "").trim(),
     payload: parsePayload(payload.payload),
+    updated_at: new Date().toISOString(),
   };
-  const db = await getMongoDatabase();
-  const filter =
-    payload.mongoId && ObjectId.isValid(payload.mongoId)
-      ? { _id: new ObjectId(payload.mongoId) }
-      : { type: job.type, level: job.level, notes: job.notes };
-  const result = await db.collection(importsCollection).findOneAndUpdate(
-    filter,
-    {
-      $set: { ...job, updatedAt: new Date() },
-      $setOnInsert: { createdAt: new Date() },
-    },
-    { upsert: true, returnDocument: "after" },
-  );
+  const supabase = getSupabaseAdmin();
+
+  let query;
+  if (payload.id) {
+    query = supabase
+      .from("import_batches")
+      .upsert({ id: payload.id, ...job }, { onConflict: "id" });
+  } else {
+    query = supabase.from("import_batches").insert([job]);
+  }
+
+  const { data, error } = await query.select("*").single();
+  if (error || !data) {
+    throw new Error(error?.message || "Failed to upsert import batch.");
+  }
+
   return {
-    mongoId: String(result._id),
-    type: result.type,
-    level: result.level,
-    status: result.status,
-    notes: result.notes,
-    payload: result.payload || [],
+    id: String(data.id),
+    type: data.type,
+    level: data.level,
+    status: data.status,
+    notes: data.notes,
+    payload: data.payload || [],
   };
 }
 
 export async function deleteImportJob(jobId) {
-  if (!ObjectId.isValid(jobId)) return false;
-  const db = await getMongoDatabase();
-  const result = await db
-    .collection(importsCollection)
-    .deleteOne({ _id: new ObjectId(jobId) });
-  return result.deletedCount > 0;
+  if (!jobId) return false;
+  const supabase = getSupabaseAdmin();
+  const { error } = await supabase.from("import_batches").delete().eq("id", jobId);
+  return !error;
 }
 
 export async function applyImportJob(jobId) {
-  if (!ObjectId.isValid(jobId)) throw new Error("Invalid import id.");
-  const db = await getMongoDatabase();
-  const job = await db
-    .collection(importsCollection)
-    .findOne({ _id: new ObjectId(jobId) });
-  if (!job) throw new Error("Import batch not found.");
+  if (!jobId) throw new Error("Invalid import id.");
+  const supabase = getSupabaseAdmin();
+
+  const { data: job, error } = await supabase
+    .from("import_batches")
+    .select("*")
+    .eq("id", jobId)
+    .single();
+
+  if (error || !job) throw new Error("Import batch not found.");
   if (!["reviewed", "approved", "ready"].includes(job.status)) {
     throw new Error("Mark this batch as reviewed before applying it.");
   }
+
   const rows = Array.isArray(job.payload) ? job.payload : [];
   const applied = [];
   for (const row of rows) {
@@ -88,17 +92,17 @@ export async function applyImportJob(jobId) {
       applied.push(await upsertAudioRecord(payload));
     else throw new Error(`Unsupported import type: ${job.type}`);
   }
-  await db.collection(importsCollection).updateOne(
-    { _id: new ObjectId(jobId) },
-    {
-      $set: {
-        status: "applied",
-        appliedCount: applied.length,
-        appliedAt: new Date(),
-        updatedAt: new Date(),
-      },
-    },
-  );
+
+  await supabase
+    .from("import_batches")
+    .update({
+      status: "applied",
+      applied_count: applied.length,
+      applied_at: new Date().toISOString(),
+      updated_at: new Date().toISOString(),
+    })
+    .eq("id", jobId);
+
   return { appliedCount: applied.length, type: job.type };
 }
 

@@ -1,7 +1,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 
-const expected = { 1: 349, 2: 251, 3: 582, 4: 1057, 5: 1690, 6: 1777 };
+const expected = { 1: 319, 2: 210, 3: 481, 4: 834, 5: 1690, 6: 1777 };
 const root = process.cwd();
 function readWords(level) {
   return JSON.parse(

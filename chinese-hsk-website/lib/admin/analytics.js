@@ -1,119 +1,129 @@
-import { getMongoDatabase } from "@/lib/db/mongodb";
-
-const eventsCollection = "analytics_events";
+import { getSupabaseAdmin } from "@/lib/db/supabase";
 
 export async function recordAnalyticsEvent(event) {
-  const db = await getMongoDatabase();
-  await db.collection(eventsCollection).insertOne({
-    type: event.type,
-    path: event.path || "/",
-    referrer: event.referrer || "",
-    userAgent: event.userAgent || "",
-    metrics: event.metrics || {},
-    createdAt: new Date(),
-  });
+  try {
+    const supabase = getSupabaseAdmin();
+    await supabase.from("analytics_events").insert([
+      {
+        type: event.type,
+        path: event.path || "/",
+        referrer: event.referrer || "",
+        user_agent: event.userAgent || "",
+        metrics: event.metrics || {},
+        created_at: new Date().toISOString(),
+      },
+    ]);
+  } catch {
+    // Analytics logging should never crash request flow
+  }
 }
 
 export async function getAnalyticsStats() {
   try {
-    const db = await getMongoDatabase();
-    const since = new Date(Date.now() - 1000 * 60 * 60 * 24 * 30);
+    const supabase = getSupabaseAdmin();
+    const since = new Date(Date.now() - 1000 * 60 * 60 * 24 * 30).toISOString();
+
     const [
-      visits,
-      performanceSamples,
-      studiedUsers,
-      activeStudyRecords,
-      visitsByDay,
-      topPages,
-      activeLearners,
-      hardWords,
-      studiedLevels,
+      { count: visits },
+      { data: performanceSamples },
+      { data: progressList },
+      { data: recentEvents },
     ] = await Promise.all([
-      db.collection(eventsCollection).countDocuments({ type: "visit" }),
-      db
-        .collection(eventsCollection)
-        .find({ type: "performance", createdAt: { $gte: since } })
-        .sort({ createdAt: -1 })
-        .limit(200)
-        .toArray(),
-      db.collection("user_progress").distinct("userId"),
-      db.collection("user_progress").countDocuments({
-        $or: [
-          { "learnedWords.0": { $exists: true } },
-          { "reviewHistory.0": { $exists: true } },
-          { "completedUnits.0": { $exists: true } },
-          { "completedConversations.0": { $exists: true } },
-        ],
-      }),
-      db
-        .collection(eventsCollection)
-        .aggregate([
-          { $match: { type: "visit", createdAt: { $gte: since } } },
-          {
-            $group: {
-              _id: {
-                $dateToString: { format: "%Y-%m-%d", date: "$createdAt" },
-              },
-              count: { $sum: 1 },
-            },
-          },
-          { $sort: { _id: 1 } },
-        ])
-        .toArray(),
-      db
-        .collection(eventsCollection)
-        .aggregate([
-          { $match: { type: "visit", createdAt: { $gte: since } } },
-          { $group: { _id: "$path", count: { $sum: 1 } } },
-          { $sort: { count: -1 } },
-          { $limit: 10 },
-        ])
-        .toArray(),
-      db
-        .collection("user_progress")
-        .find({}, { projection: { _id: 0, userId: 1, updatedAt: 1 } })
-        .sort({ updatedAt: -1 })
-        .limit(10)
-        .toArray(),
-      db
-        .collection("user_progress")
-        .aggregate([
-          { $project: { reviews: "$progress.reviewHistory" } },
-          { $unwind: "$reviews" },
-          { $match: { "reviews.quality": { $in: ["Again", "Hard"] } } },
-          {
-            $group: {
-              _id: "$reviews.wordId",
-              count: { $sum: 1 },
-              hanzi: { $first: "$reviews.hanzi" },
-              pinyin: { $first: "$reviews.pinyin" },
-              level: { $first: "$reviews.level" },
-            },
-          },
-          { $sort: { count: -1 } },
-          { $limit: 10 },
-        ])
-        .toArray(),
-      db
-        .collection("user_progress")
-        .find({}, { projection: { _id: 0, progress: 1 } })
-        .toArray(),
+      supabase
+        .from("analytics_events")
+        .select("*", { count: "exact", head: true })
+        .eq("type", "visit"),
+      supabase
+        .from("analytics_events")
+        .select("path, metrics, created_at")
+        .eq("type", "performance")
+        .gte("created_at", since)
+        .order("created_at", { ascending: false })
+        .limit(200),
+      supabase
+        .from("user_progress")
+        .select("user_id, progress, updated_at"),
+      supabase
+        .from("analytics_events")
+        .select("path, created_at")
+        .eq("type", "visit")
+        .gte("created_at", since)
+        .limit(1000),
     ]);
+
+    const progressRecords = progressList || [];
+    const studiedUsers = new Set(progressRecords.map((r) => r.user_id)).size;
+    const activeStudyRecords = progressRecords.filter((r) => {
+      const p = r.progress || {};
+      return (
+        p.learnedWords?.length > 0 ||
+        p.reviewHistory?.length > 0 ||
+        p.completedUnits?.length > 0 ||
+        p.completedConversations?.length > 0
+      );
+    }).length;
+
+    // Aggregate visits by day & path
+    const dayMap = new Map();
+    const pathMap = new Map();
+    for (const event of recentEvents || []) {
+      const day = event.created_at ? event.created_at.slice(0, 10) : "today";
+      dayMap.set(day, (dayMap.get(day) || 0) + 1);
+      const p = event.path || "/";
+      pathMap.set(p, (pathMap.get(p) || 0) + 1);
+    }
+
+    const visitsByDay = [...dayMap.entries()]
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([day, count]) => ({ day, count }));
+
+    const topPages = [...pathMap.entries()]
+      .sort(([, a], [, b]) => b - a)
+      .slice(0, 10)
+      .map(([path, count]) => ({ path, count }));
+
+    const activeLearners = progressRecords
+      .slice()
+      .sort((a, b) => (b.updated_at || "").localeCompare(a.updated_at || ""))
+      .slice(0, 10)
+      .map((item) => ({
+        userId: item.user_id,
+        updatedAt: item.updated_at || "",
+      }));
+
+    // Aggregate hard words from reviews
+    const hardWordMap = new Map();
+    for (const r of progressRecords) {
+      for (const review of r.progress?.reviewHistory || []) {
+        if (review.quality === "Again" || review.quality === "Hard") {
+          const key = review.wordId || review.hanzi;
+          const current = hardWordMap.get(key) || {
+            wordId: key,
+            word: review.hanzi || key,
+            pinyin: review.pinyin || "",
+            level: review.level || "",
+            count: 0,
+          };
+          current.count += 1;
+          hardWordMap.set(key, current);
+        }
+      }
+    }
+
+    const hardWords = [...hardWordMap.values()]
+      .sort((a, b) => b.count - a.count)
+      .slice(0, 10);
+
     return {
       ok: true,
-      visits,
-      studiedUsers: studiedUsers.length,
+      visits: visits || 0,
+      studiedUsers,
       activeStudyRecords,
-      performance: summarizePerformance(performanceSamples),
-      visitsByDay: visitsByDay.map((item) => ({
-        day: item._id,
-        count: item.count,
-      })),
-      topPages: topPages.map((item) => ({
-        path: item._id || "/",
-        count: item.count,
-      })),
-      slowPages: performanceSamples
+      performance: summarizePerformance(performanceSamples || []),
+      visitsByDay,
+      topPages,
+      slowPages: (performanceSamples || [])
+        .slice()
         .sort(
           (a, b) =>
             Number(b.metrics?.loadMs || 0) - Number(a.metrics?.loadMs || 0),
@@ -124,18 +134,9 @@ export async function getAnalyticsStats() {
           loadMs: Number(item.metrics?.loadMs || 0),
           domReadyMs: Number(item.metrics?.domReadyMs || 0),
         })),
-      activeLearners: activeLearners.map((item) => ({
-        userId: item.userId,
-        updatedAt: item.updatedAt?.toISOString?.() || String(item.updatedAt),
-      })),
-      hardWords: hardWords.map((item) => ({
-        wordId: item._id,
-        word: item.hanzi || item._id,
-        pinyin: item.pinyin || "",
-        level: item.level || "",
-        count: item.count,
-      })),
-      studiedLevels: summarizeStudiedLevels(studiedLevels).map((item) => ({
+      activeLearners,
+      hardWords,
+      studiedLevels: summarizeStudiedLevels(progressRecords).map((item) => ({
         level: item._id,
         count: item.count,
       })),

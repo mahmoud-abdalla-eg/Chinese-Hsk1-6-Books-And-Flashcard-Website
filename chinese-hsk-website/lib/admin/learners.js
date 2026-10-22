@@ -1,27 +1,27 @@
-import { ObjectId } from "mongodb";
-import { getMongoDatabase } from "@/lib/db/mongodb";
+import { getSupabaseAdmin } from "@/lib/db/supabase";
 
 export async function getLearners() {
-  const db = await getMongoDatabase();
-  const [users, progressRecords] = await Promise.all([
-    db
-      .collection("users")
-      .find({}, { projection: { passwordHash: 0 } })
-      .sort({ createdAt: -1 })
-      .toArray(),
-    db.collection("user_progress").find({}).toArray(),
+  const supabase = getSupabaseAdmin();
+  const [{ data: users }, { data: progressRecords }] = await Promise.all([
+    supabase
+      .from("users")
+      .select("id, name, email, created_at, updated_at")
+      .order("created_at", { ascending: false }),
+    supabase.from("user_progress").select("user_id, progress"),
   ]);
+
   const progressByUser = new Map(
-    progressRecords.map((record) => [record.userId, record]),
+    (progressRecords || []).map((record) => [record.user_id, record]),
   );
-  return users.map((user) => {
-    const progress = progressByUser.get(String(user._id))?.progress || {};
+
+  return (users || []).map((user) => {
+    const progress = progressByUser.get(String(user.id))?.progress || {};
     return {
-      id: String(user._id),
+      id: String(user.id),
       name: user.name || "",
       email: user.email || "",
-      createdAt: user.createdAt?.toISOString?.() || "",
-      updatedAt: user.updatedAt?.toISOString?.() || "",
+      createdAt: user.created_at || "",
+      updatedAt: user.updated_at || "",
       learnedWords: progress.learnedWords?.length || 0,
       hardWords: progress.hardWords?.length || 0,
       reviews: progress.reviewHistory?.length || 0,
@@ -32,37 +32,41 @@ export async function getLearners() {
 }
 
 export async function getLearnerExport(userId) {
-  if (!ObjectId.isValid(userId)) throw new Error("Invalid learner id.");
-  const db = await getMongoDatabase();
-  const [user, progress] = await Promise.all([
-    db
-      .collection("users")
-      .findOne(
-        { _id: new ObjectId(userId) },
-        { projection: { passwordHash: 0 } },
-      ),
-    db.collection("user_progress").findOne({ userId }),
+  if (!userId) throw new Error("Invalid learner id.");
+  const supabase = getSupabaseAdmin();
+  const [{ data: user }, { data: progressRecord }] = await Promise.all([
+    supabase
+      .from("users")
+      .select("id, name, email, created_at, updated_at")
+      .eq("id", userId)
+      .maybeSingle(),
+    supabase
+      .from("user_progress")
+      .select("user_id, progress")
+      .eq("user_id", userId)
+      .maybeSingle(),
   ]);
+
   if (!user) throw new Error("Learner not found.");
   return {
-    user: { ...user, _id: String(user._id) },
-    progress: progress || null,
+    user,
+    progress: progressRecord ? { userId: progressRecord.user_id, progress: progressRecord.progress } : null,
   };
 }
 
 export async function resetLearnerProgress(userId) {
-  if (!ObjectId.isValid(userId)) throw new Error("Invalid learner id.");
-  const db = await getMongoDatabase();
-  await db.collection("user_progress").deleteOne({ userId });
+  if (!userId) throw new Error("Invalid learner id.");
+  const supabase = getSupabaseAdmin();
+  await supabase.from("user_progress").delete().eq("user_id", userId);
   return true;
 }
 
 export async function deleteLearner(userId) {
-  if (!ObjectId.isValid(userId)) throw new Error("Invalid learner id.");
-  const db = await getMongoDatabase();
+  if (!userId) throw new Error("Invalid learner id.");
+  const supabase = getSupabaseAdmin();
   await Promise.all([
-    db.collection("users").deleteOne({ _id: new ObjectId(userId) }),
-    db.collection("user_progress").deleteOne({ userId }),
+    supabase.from("users").delete().eq("id", userId),
+    supabase.from("user_progress").delete().eq("user_id", userId),
   ]);
   return true;
 }

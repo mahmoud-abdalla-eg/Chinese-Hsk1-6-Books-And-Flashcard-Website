@@ -1,8 +1,6 @@
-import { ObjectId } from "mongodb";
 import { unstable_cache } from "next/cache";
-import { getMongoDatabase } from "@/lib/db/mongodb";
+import { getSupabaseAdmin } from "@/lib/db/supabase";
 
-const contentCollection = "site_content";
 const PUBLIC_CACHE_SECONDS = 300;
 const defaults = [
   {
@@ -23,14 +21,6 @@ const defaults = [
   },
 ];
 
-const contentMigrations = [
-  {
-    key: "home.hero.subtitle",
-    from: "A multilingual HSK 1-5 learning studio for vocabulary, long dialogue, flashcards, listening, shadowing, pronunciation recording, and saved progress.",
-    to: "A multilingual HSK 1-6 learning studio for vocabulary, long dialogue, flashcards, listening, grammar, and saved progress.",
-  },
-];
-
 export const getSiteContentMap = unstable_cache(
   async () => getSiteContentMapUncached(),
   ["site-content-map"],
@@ -40,8 +30,11 @@ export const getSiteContentMap = unstable_cache(
 async function getSiteContentMapUncached() {
   try {
     await ensureSiteContentSeeded();
-    const db = await getMongoDatabase();
-    const rows = await db.collection(contentCollection).find({}).toArray();
+    const supabase = getSupabaseAdmin();
+    const { data: rows } = await supabase.from("site_content").select("key, value");
+    if (!rows || rows.length === 0) {
+      return Object.fromEntries(defaults.map((row) => [row.key, row.value]));
+    }
     return Object.fromEntries(rows.map((row) => [row.key, row.value]));
   } catch {
     return Object.fromEntries(defaults.map((row) => [row.key, row.value]));
@@ -50,14 +43,13 @@ async function getSiteContentMapUncached() {
 
 export async function getSiteContentRows() {
   await ensureSiteContentSeeded();
-  const db = await getMongoDatabase();
-  const rows = await db
-    .collection(contentCollection)
-    .find({})
-    .sort({ key: 1 })
-    .toArray();
-  return rows.map((row) => ({
-    mongoId: String(row._id),
+  const supabase = getSupabaseAdmin();
+  const { data: rows } = await supabase
+    .from("site_content")
+    .select("key, label, value")
+    .order("key", { ascending: true });
+
+  return (rows || []).map((row) => ({
     key: row.key,
     label: row.label || row.key,
     value: row.value || "",
@@ -71,63 +63,57 @@ export async function upsertSiteContent(payload) {
     value: String(payload.value || "").trim(),
   };
   if (!row.key) throw new Error("Content key is required.");
-  const db = await getMongoDatabase();
-  const result = await db.collection(contentCollection).findOneAndUpdate(
-    { key: row.key },
-    {
-      $set: { ...row, updatedAt: new Date() },
-      $setOnInsert: { createdAt: new Date() },
-    },
-    { upsert: true, returnDocument: "after" },
-  );
+
+  const supabase = getSupabaseAdmin();
+  const { data, error } = await supabase
+    .from("site_content")
+    .upsert(
+      {
+        ...row,
+        updated_at: new Date().toISOString(),
+      },
+      { onConflict: "key" },
+    )
+    .select("key, label, value")
+    .single();
+
+  if (error || !data) {
+    throw new Error(error?.message || "Failed to update content.");
+  }
+
   return {
-    mongoId: String(result._id),
-    key: result.key,
-    label: result.label,
-    value: result.value,
+    key: data.key,
+    label: data.label,
+    value: data.value,
   };
 }
 
-export async function deleteSiteContent(contentId) {
-  if (!ObjectId.isValid(contentId)) return false;
-  const db = await getMongoDatabase();
-  const result = await db
-    .collection(contentCollection)
-    .deleteOne({ _id: new ObjectId(contentId) });
-  return result.deletedCount > 0;
+export async function deleteSiteContent(contentKey) {
+  if (!contentKey) return false;
+  const supabase = getSupabaseAdmin();
+  const { error } = await supabase
+    .from("site_content")
+    .delete()
+    .eq("key", contentKey);
+
+  return !error;
 }
 
 async function ensureSiteContentSeeded() {
-  const db = await getMongoDatabase();
-  await db.collection(contentCollection).bulkWrite(
-    defaults.map((row) => ({
-      updateOne: {
-        filter: { key: row.key },
-        update: {
-          $setOnInsert: {
-            ...row,
-            createdAt: new Date(),
-            updatedAt: new Date(),
-          },
-        },
-        upsert: true,
-      },
-    })),
-  );
-  await Promise.all(
-    contentMigrations.map((migration) =>
-      db.collection(contentCollection).updateOne(
+  try {
+    const supabase = getSupabaseAdmin();
+    for (const item of defaults) {
+      await supabase.from("site_content").upsert(
         {
-          key: migration.key,
-          value: migration.from,
+          key: item.key,
+          label: item.label,
+          value: item.value,
+          updated_at: new Date().toISOString(),
         },
-        {
-          $set: {
-            value: migration.to,
-            updatedAt: new Date(),
-          },
-        },
-      ),
-    ),
-  );
+        { onConflict: "key", ignoreDuplicates: true },
+      );
+    }
+  } catch {
+    // ignore
+  }
 }

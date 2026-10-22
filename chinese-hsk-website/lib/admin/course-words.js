@@ -1,12 +1,8 @@
-import { ObjectId } from "mongodb";
 import { unstable_cache } from "next/cache";
 import { getHskSummary, getHskWords } from "@/lib/data/hsk";
 import { HSK_LEVELS, UNIT_SIZE } from "@/lib/data/schema";
-import { getMongoDatabase } from "@/lib/db/mongodb";
+import { getSupabaseAdmin } from "@/lib/db/supabase";
 
-const wordsCollection = "course_words";
-const stateCollection = "course_data_state";
-const WORD_SOURCE_VERSION = "hsk-1-5-pdf-update-2026-06-02";
 const PUBLIC_CACHE_SECONDS = 300;
 
 export const getManagedHskWords = unstable_cache(
@@ -19,13 +15,16 @@ async function getManagedHskWordsUncached(level) {
   const numericLevel = Number(level);
   if (!HSK_LEVELS.includes(numericLevel)) return [];
   try {
-    await ensureLevelSeeded(numericLevel);
-    const db = await getMongoDatabase();
-    const words = await db
-      .collection(wordsCollection)
-      .find({ level: numericLevel })
-      .sort({ order: 1, hanzi: 1 })
-      .toArray();
+    const supabase = getSupabaseAdmin();
+    const { data: words, error } = await supabase
+      .from("course_words")
+      .select("*")
+      .eq("level", numericLevel)
+      .order("order", { ascending: true });
+
+    if (error || !words || words.length === 0) {
+      return getHskWords(numericLevel);
+    }
     return words.map(fromDbWord);
   } catch {
     return getHskWords(numericLevel);
@@ -41,18 +40,22 @@ export const getManagedHskSummary = unstable_cache(
 async function getManagedHskSummaryUncached() {
   try {
     const fallbackSummary = getHskSummary();
-    const db = await getMongoDatabase();
+    const supabase = getSupabaseAdmin();
+
     const summaries = await Promise.all(
       HSK_LEVELS.map(async (level) => {
-        await ensureLevelSeeded(level);
-        const wordCount = await db
-          .collection(wordsCollection)
-          .countDocuments({ level });
+        const { count, error } = await supabase
+          .from("course_words")
+          .select("*", { count: "exact", head: true })
+          .eq("level", level);
+
+        const fallback = fallbackSummary.find((item) => item.level === level);
+        const wordCount = error || count == null || count === 0 ? fallback?.wordCount || 0 : count;
+
         return {
           level,
           wordCount,
-          expectedCount: fallbackSummary.find((item) => item.level === level)
-            ?.expectedCount,
+          expectedCount: fallback?.expectedCount || wordCount,
           unitCount: Math.ceil(wordCount / UNIT_SIZE),
           conversationCount: Math.ceil(wordCount / UNIT_SIZE),
           progress: 0,
@@ -62,29 +65,6 @@ async function getManagedHskSummaryUncached() {
     return summaries;
   } catch {
     return getHskSummary();
-  }
-}
-
-export const getManagedHskWordIds = unstable_cache(
-  async (level) => getManagedHskWordIdsUncached(level),
-  ["managed-hsk-word-ids"],
-  { revalidate: PUBLIC_CACHE_SECONDS },
-);
-
-async function getManagedHskWordIdsUncached(level) {
-  const numericLevel = Number(level);
-  if (!HSK_LEVELS.includes(numericLevel)) return [];
-  try {
-    await ensureLevelSeeded(numericLevel);
-    const db = await getMongoDatabase();
-    const words = await db
-      .collection(wordsCollection)
-      .find({ level: numericLevel }, { projection: { _id: 0, id: 1 } })
-      .sort({ order: 1, hanzi: 1 })
-      .toArray();
-    return words.map((word) => word.id);
-  } catch {
-    return getHskWords(numericLevel).map((word) => word.id);
   }
 }
 
@@ -111,13 +91,7 @@ async function getManagedUnitsForLevelUncached(level) {
   return units;
 }
 
-export const getManagedUnit = unstable_cache(
-  async (level, unitId) => getManagedUnitUncached(level, unitId),
-  ["managed-hsk-unit"],
-  { revalidate: PUBLIC_CACHE_SECONDS },
-);
-
-async function getManagedUnitUncached(level, unitId) {
+export async function getManagedUnit(level, unitId) {
   const units = await getManagedUnitsForLevel(level);
   return units.find((unit) => unit.id === Number(unitId));
 }
@@ -135,138 +109,42 @@ async function getManagedWordUncached(level, wordId) {
 
 export async function upsertManagedWord(payload) {
   const level = Number(payload.level || payload.hskLevel || 1);
-  await ensureLevelSeeded(level);
-  const db = await getMongoDatabase();
-  const existing = await findExistingWord(db, level, payload);
-  const word = normalizeWord(mergeWordPayload(existing, { ...payload, level }));
-  const now = new Date();
-  const result = await db.collection(wordsCollection).findOneAndUpdate(
-    { level: word.level, id: word.id },
-    {
-      $set: {
-        ...word,
-        updatedAt: now,
-      },
-      $setOnInsert: {
-        createdAt: now,
-      },
-    },
-    { returnDocument: "after", upsert: true },
-  );
-  return fromDbWord(result);
-}
+  const word = normalizeWord({ ...payload, level });
+  const supabase = getSupabaseAdmin();
 
-async function findExistingWord(db, level, payload) {
-  const id = String(payload.id || "").trim();
-  const hanzi = String(payload.hanzi || "").trim();
-  const existing = await db.collection(wordsCollection).findOne({
-    level,
-    ...(id ? { id } : { hanzi }),
-  });
-  if (existing) return fromDbWord(existing);
-  const source = getHskWords(level).find(
-    (word) => (id && word.id === id) || (hanzi && word.hanzi === hanzi),
-  );
-  return source || null;
-}
-
-function mergeWordPayload(existing, payload) {
-  if (!existing) return payload;
-  return {
-    ...existing,
-    ...payload,
-    meaning: {
-      ...existing.meaning,
-      ...withoutEmpty(payload.meaning),
-    },
-    example: {
-      ...existing.example,
-      ...withoutEmpty(payload.example),
-    },
-    audio: {
-      ...existing.audio,
-      ...withoutEmpty(payload.audio),
-    },
-    examples: Array.isArray(payload.examples)
-      ? payload.examples
-      : existing.examples || [],
+  const record = {
+    id: word.id,
+    level: word.level,
+    order: word.order,
+    hanzi: word.hanzi,
+    pinyin: word.pinyin,
+    part_of_speech: word.partOfSpeech,
+    meaning: word.meaning,
+    example: word.example,
+    audio: word.audio,
+    tags: word.tags,
+    examples: word.examples,
+    book: payload.book || null,
+    lesson: payload.lesson ? String(payload.lesson) : null,
+    updated_at: new Date().toISOString(),
   };
-}
 
-function withoutEmpty(value = {}) {
-  return Object.fromEntries(
-    Object.entries(value || {}).filter(([, item]) => String(item || "").trim()),
-  );
-}
+  const { data, error } = await supabase
+    .from("course_words")
+    .upsert(record, { onConflict: "level,id" })
+    .select("*")
+    .single();
 
-export async function deleteManagedWord(wordId) {
-  if (!ObjectId.isValid(wordId)) return false;
-  const db = await getMongoDatabase();
-  const result = await db
-    .collection(wordsCollection)
-    .deleteOne({ _id: new ObjectId(wordId) });
-  return result.deletedCount > 0;
-}
-
-export async function getManagedWordsForAdmin(level) {
-  const words = await getManagedHskWordsUncached(level);
-  return words.map((word) => ({ ...word, mongoId: word.mongoId }));
-}
-
-async function ensureLevelSeeded(level) {
-  const db = await getMongoDatabase();
-  const stateId = `hsk-${level}`;
-  const state = await db.collection(stateCollection).findOne({ _id: stateId });
-  if (state?.seeded && state?.sourceVersion === WORD_SOURCE_VERSION) return;
-  const now = new Date();
-  const sourceWords = getHskWords(level).map((word, index) => ({
-    ...word,
-    level,
-    order: Number(word.order || index + 1),
-    updatedAt: now,
-  }));
-  if (sourceWords.length) {
-    const operations = sourceWords.map((word) => {
-      const { audio, ...sourceWord } = word;
-      return {
-        updateOne: {
-          filter: { level, id: word.id },
-          update: {
-            $set: sourceWord,
-            $setOnInsert: {
-              audio,
-              createdAt: now,
-            },
-          },
-          upsert: true,
-        },
-      };
-    });
-    await db.collection(wordsCollection).bulkWrite(operations);
+  if (error || !data) {
+    throw new Error(error?.message || "Failed to upsert word.");
   }
-  await db.collection(stateCollection).updateOne(
-    { _id: stateId },
-    {
-      $set: {
-        seeded: true,
-        level,
-        seededAt: state?.seededAt || now,
-        sourceVersion: WORD_SOURCE_VERSION,
-        sourceSyncedAt: now,
-      },
-    },
-    { upsert: true },
-  );
+
+  return fromDbWord(data);
 }
 
 function normalizeWord(payload) {
-  const level = Number(payload.level);
-  if (!HSK_LEVELS.includes(level)) throw new Error("Invalid HSK level.");
-  const id = String(payload.id || `hsk-${level}-${Date.now().toString(36)}`)
-    .trim()
-    .slice(0, 120);
   const hanzi = String(payload.hanzi || "").trim();
-  if (!hanzi) throw new Error("Chinese word is required.");
+  const id = String(payload.id || hanzi).trim();
   const example = {
     hanzi: String(payload.example?.hanzi || "").trim(),
     pinyin: String(payload.example?.pinyin || "").trim(),
@@ -274,13 +152,14 @@ function normalizeWord(payload) {
     ar: String(payload.example?.ar || "").trim(),
   };
   const examples = normalizeExamples(payload.examples, example);
+
   return {
-    level,
     id,
+    level: Number(payload.level || 1),
     order: Math.max(1, Number(payload.order) || 1),
     hanzi,
     pinyin: String(payload.pinyin || "").trim(),
-    partOfSpeech: String(payload.partOfSpeech || "").trim() || "word",
+    partOfSpeech: String(payload.partOfSpeech || payload.pos || "").trim() || "word",
     meaning: {
       en: String(payload.meaning?.en || payload.english || "").trim(),
       ar: String(payload.meaning?.ar || payload.arabic || "").trim(),
@@ -328,14 +207,14 @@ function fromDbWord(word) {
         ar: example.ar || "",
       }))
     : [];
+
   return {
-    mongoId: String(word._id || ""),
     id: word.id,
     level: Number(word.level),
     order: Number(word.order || 0),
     hanzi: word.hanzi || "",
     pinyin: word.pinyin || "",
-    partOfSpeech: word.partOfSpeech || "word",
+    partOfSpeech: word.part_of_speech || word.partOfSpeech || "word",
     meaning: {
       en: word.meaning?.en || "",
       ar: word.meaning?.ar || "",

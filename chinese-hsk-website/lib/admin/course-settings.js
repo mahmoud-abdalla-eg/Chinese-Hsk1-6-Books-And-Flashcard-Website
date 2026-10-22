@@ -1,12 +1,8 @@
-import { ObjectId } from "mongodb";
 import {
   getManagedHskWords,
   upsertManagedWord,
 } from "@/lib/admin/course-words";
-import { getMongoDatabase } from "@/lib/db/mongodb";
-
-const settingsCollection = "course_settings";
-const audioCollection = "audio_records";
+import { getSupabaseAdmin } from "@/lib/db/supabase";
 
 const defaultFlashcardSettings = {
   key: "flashcards",
@@ -24,15 +20,14 @@ const defaultFlashcardSettings = {
 };
 
 export async function getCourseSettings() {
-  const db = await getMongoDatabase();
-  await ensureSettingsSeeded(db);
-  const rows = await db
-    .collection(settingsCollection)
-    .find({})
-    .sort({ key: 1 })
-    .toArray();
-  return rows.map((row) => ({
-    mongoId: String(row._id),
+  await ensureSettingsSeeded();
+  const supabase = getSupabaseAdmin();
+  const { data: rows } = await supabase
+    .from("course_settings")
+    .select("key, label, settings")
+    .order("key", { ascending: true });
+
+  return (rows || []).map((row) => ({
     key: row.key,
     label: row.label,
     settings: row.settings || {},
@@ -45,31 +40,38 @@ export async function upsertCourseSetting(payload) {
     label: String(payload.label || payload.key || "Setting").trim(),
     settings: parseObject(payload.settings),
   };
-  const db = await getMongoDatabase();
-  const result = await db.collection(settingsCollection).findOneAndUpdate(
-    { key: row.key },
-    {
-      $set: { ...row, updatedAt: new Date() },
-      $setOnInsert: { createdAt: new Date() },
-    },
-    { upsert: true, returnDocument: "after" },
-  );
+  const supabase = getSupabaseAdmin();
+  const { data, error } = await supabase
+    .from("course_settings")
+    .upsert(
+      {
+        ...row,
+        updated_at: new Date().toISOString(),
+      },
+      { onConflict: "key" },
+    )
+    .select("key, label, settings")
+    .single();
+
+  if (error || !data) {
+    throw new Error(error?.message || "Failed to upsert course setting.");
+  }
+
   return {
-    mongoId: String(result._id),
-    key: result.key,
-    label: result.label,
-    settings: result.settings || {},
+    key: data.key,
+    label: data.label,
+    settings: data.settings || {},
   };
 }
 
 export async function getAudioRecords() {
-  const db = await getMongoDatabase();
-  const rows = await db
-    .collection(audioCollection)
-    .find({})
-    .sort({ updatedAt: -1 })
-    .toArray();
-  return rows.map(fromAudioRecord);
+  const supabase = getSupabaseAdmin();
+  const { data: rows } = await supabase
+    .from("audio_records")
+    .select("key, label, data")
+    .order("updated_at", { ascending: false });
+
+  return (rows || []).map(fromAudioRecord);
 }
 
 export async function upsertAudioRecord(payload) {
@@ -83,29 +85,35 @@ export async function upsertAudioRecord(payload) {
     notes: String(payload.notes || "").trim(),
   };
   if (!record.label) record.label = `${record.type} ${record.linkedId}`.trim();
-  const db = await getMongoDatabase();
-  const filter =
-    payload.mongoId && ObjectId.isValid(payload.mongoId)
-      ? { _id: new ObjectId(payload.mongoId) }
-      : { level: record.level, type: record.type, linkedId: record.linkedId };
-  const result = await db.collection(audioCollection).findOneAndUpdate(
-    filter,
-    {
-      $set: { ...record, updatedAt: new Date() },
-      $setOnInsert: { createdAt: new Date() },
-    },
-    { upsert: true, returnDocument: "after" },
-  );
-  return fromAudioRecord(result);
+  const key = `${record.level}-${record.type}-${record.linkedId}`;
+
+  const supabase = getSupabaseAdmin();
+  const { data, error } = await supabase
+    .from("audio_records")
+    .upsert(
+      {
+        key,
+        label: record.label,
+        data: record,
+        updated_at: new Date().toISOString(),
+      },
+      { onConflict: "key" },
+    )
+    .select("key, label, data")
+    .single();
+
+  if (error || !data) {
+    throw new Error(error?.message || "Failed to save audio record.");
+  }
+
+  return fromAudioRecord(data);
 }
 
-export async function deleteAudioRecord(recordId) {
-  if (!ObjectId.isValid(recordId)) return false;
-  const db = await getMongoDatabase();
-  const result = await db
-    .collection(audioCollection)
-    .deleteOne({ _id: new ObjectId(recordId) });
-  return result.deletedCount > 0;
+export async function deleteAudioRecord(key) {
+  if (!key) return false;
+  const supabase = getSupabaseAdmin();
+  const { error } = await supabase.from("audio_records").delete().eq("key", key);
+  return !error;
 }
 
 export async function bulkMatchWordAudio({
@@ -175,30 +183,34 @@ export async function bulkMatchWordAudio({
   };
 }
 
-async function ensureSettingsSeeded(db) {
-  await db.collection(settingsCollection).updateOne(
-    { key: defaultFlashcardSettings.key },
-    {
-      $setOnInsert: {
-        ...defaultFlashcardSettings,
-        createdAt: new Date(),
-        updatedAt: new Date(),
+async function ensureSettingsSeeded() {
+  try {
+    const supabase = getSupabaseAdmin();
+    await supabase.from("course_settings").upsert(
+      {
+        key: defaultFlashcardSettings.key,
+        label: defaultFlashcardSettings.label,
+        settings: defaultFlashcardSettings.settings,
+        updated_at: new Date().toISOString(),
       },
-    },
-    { upsert: true },
-  );
+      { onConflict: "key", ignoreDuplicates: true },
+    );
+  } catch {
+    // ignore
+  }
 }
 
 function fromAudioRecord(record) {
+  const data = record.data || {};
   return {
-    mongoId: String(record._id),
-    label: record.label || "",
-    level: Number(record.level || 1),
-    type: record.type || "word",
-    linkedId: record.linkedId || "",
-    path: record.path || "",
-    status: record.status || "missing",
-    notes: record.notes || "",
+    key: record.key,
+    label: record.label || data.label || "",
+    level: Number(data.level || 1),
+    type: data.type || "word",
+    linkedId: data.linkedId || "",
+    path: data.path || "",
+    status: data.status || "missing",
+    notes: data.notes || "",
   };
 }
 
