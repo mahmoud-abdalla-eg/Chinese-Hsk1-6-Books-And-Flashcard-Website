@@ -80,6 +80,16 @@ export async function upsertManagedConversation(payload) {
   return fromDbConversation(data);
 }
 
+export async function deleteManagedConversation(conversationId) {
+  if (!conversationId) return false;
+  const supabase = getSupabaseAdmin();
+  const { error } = await supabase
+    .from("course_conversations")
+    .delete()
+    .eq("id", conversationId);
+  return !error;
+}
+
 function normalizeConversation(payload) {
   const hskLevel = Math.max(1, Math.min(6, Number(payload.hskLevel || 1)));
   const unitId = Math.max(1, Number(payload.unitId || 1));

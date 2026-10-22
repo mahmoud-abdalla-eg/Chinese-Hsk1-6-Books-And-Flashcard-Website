@@ -4,12 +4,29 @@ const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
+function createFetchWithTimeout(timeoutMs = 4000) {
+  return (url, options = {}) => {
+    try {
+      return fetch(url, {
+        ...options,
+        signal: options.signal || AbortSignal.timeout(timeoutMs),
+      });
+    } catch {
+      return fetch(url, options);
+    }
+  };
+}
+
 /**
  * Public client for client-side or anon-scoped queries
  */
 export const supabase =
   supabaseUrl && supabaseAnonKey
-    ? createClient(supabaseUrl, supabaseAnonKey)
+    ? createClient(supabaseUrl, supabaseAnonKey, {
+        global: {
+          fetch: createFetchWithTimeout(4000),
+        },
+      })
     : null;
 
 /**
@@ -33,6 +50,9 @@ export function getSupabaseAdmin() {
       auth: {
         persistSession: false,
         autoRefreshToken: false,
+      },
+      global: {
+        fetch: createFetchWithTimeout(4000),
       },
     });
   }

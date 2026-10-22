@@ -9,7 +9,7 @@
     "lint": "biome check",
     "format": "biome format --write",
     "validate": "node scripts/validate-hsk-data.ts",
-    "seed:supabase": "node --use-env-proxy scripts/seed-supabase.js",
+    "seed:supabase": "node scripts/seed-supabase.js",
     "coverage": "node scripts/check-coverage.ts",
     "generate-audio": "node scripts/generate-audio.ts",
     "generate-conversations": "node scripts/generate-conversations.ts"

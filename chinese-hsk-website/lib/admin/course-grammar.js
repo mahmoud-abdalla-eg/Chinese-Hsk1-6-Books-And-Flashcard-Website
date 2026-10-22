@@ -47,6 +47,18 @@ async function getManagedGrammarLevelsUncached() {
     .map(([level, entries]) => ({ level, entries }));
 }
 
+export const getManagedGrammarItemsForLevel = unstable_cache(
+  async (level) => getManagedGrammarItemsForLevelUncached(level),
+  ["managed-grammar-items-level"],
+  { revalidate: PUBLIC_CACHE_SECONDS },
+);
+
+async function getManagedGrammarItemsForLevelUncached(level) {
+  const numericLevel = Number(level);
+  const items = await getManagedGrammarPath();
+  return items.filter((item) => Number(item.hskLevel) === numericLevel);
+}
+
 export const getManagedGrammarUnitsForLevel = unstable_cache(
   async (level) => getManagedGrammarUnitsForLevelUncached(level),
   ["managed-grammar-units"],
@@ -131,6 +143,61 @@ export async function upsertManagedGrammar(payload) {
   }
 
   return fromDbGrammar(data);
+}
+
+export async function deleteManagedGrammar(grammarId) {
+  if (!grammarId) return false;
+  const supabase = getSupabaseAdmin();
+  const { error } = await supabase
+    .from("course_grammar")
+    .delete()
+    .eq("id", grammarId);
+  return !error;
+}
+
+export async function getManagedGrammarUnitControls(level) {
+  const supabase = getSupabaseAdmin();
+  const { data: rows } = await supabase
+    .from("course_grammar_units")
+    .select("*")
+    .eq("level", Number(level))
+    .order("id", { ascending: true });
+  return (rows || []).map(fromDbGrammarUnit);
+}
+
+export async function upsertManagedGrammarUnit(payload) {
+  const unit = {
+    level: Number(payload.level || payload.hskLevel || 1),
+    id: Math.max(1, Number(payload.id || 1)),
+    title: String(payload.title || "").trim(),
+    description: String(payload.description || "").trim(),
+    start_order: Math.max(1, Number(payload.startOrder || payload.start_order || 1)),
+    end_order: Math.max(1, Number(payload.endOrder || payload.end_order || 1)),
+    updated_at: new Date().toISOString(),
+  };
+
+  const supabase = getSupabaseAdmin();
+  const { data, error } = await supabase
+    .from("course_grammar_units")
+    .upsert(unit, { onConflict: "level,id" })
+    .select("*")
+    .single();
+
+  if (error || !data) {
+    throw new Error(error?.message || "Failed to upsert grammar unit.");
+  }
+
+  return fromDbGrammarUnit(data);
+}
+
+export async function deleteManagedGrammarUnit(unitId) {
+  if (!unitId) return false;
+  const supabase = getSupabaseAdmin();
+  const { error } = await supabase
+    .from("course_grammar_units")
+    .delete()
+    .eq("id", Number(unitId));
+  return !error;
 }
 
 function normalizeGrammar(payload) {

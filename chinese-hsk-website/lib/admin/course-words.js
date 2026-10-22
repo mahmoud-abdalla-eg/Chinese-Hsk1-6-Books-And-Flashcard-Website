@@ -68,6 +68,32 @@ async function getManagedHskSummaryUncached() {
   }
 }
 
+export const getManagedHskWordIds = unstable_cache(
+  async (level) => getManagedHskWordIdsUncached(level),
+  ["managed-hsk-word-ids"],
+  { revalidate: PUBLIC_CACHE_SECONDS },
+);
+
+async function getManagedHskWordIdsUncached(level) {
+  const numericLevel = Number(level);
+  if (!HSK_LEVELS.includes(numericLevel)) return [];
+  try {
+    const supabase = getSupabaseAdmin();
+    const { data: words, error } = await supabase
+      .from("course_words")
+      .select("id")
+      .eq("level", numericLevel)
+      .order("order", { ascending: true });
+
+    if (error || !words || words.length === 0) {
+      return getHskWords(numericLevel).map((word) => word.id);
+    }
+    return words.map((word) => word.id);
+  } catch {
+    return getHskWords(numericLevel).map((word) => word.id);
+  }
+}
+
 export const getManagedUnitsForLevel = unstable_cache(
   async (level) => getManagedUnitsForLevelUncached(level),
   ["managed-hsk-units"],
@@ -140,6 +166,17 @@ export async function upsertManagedWord(payload) {
   }
 
   return fromDbWord(data);
+}
+
+export async function deleteManagedWord(wordId) {
+  if (!wordId) return false;
+  const supabase = getSupabaseAdmin();
+  const { error } = await supabase.from("course_words").delete().eq("id", wordId);
+  return !error;
+}
+
+export async function getManagedWordsForAdmin(level) {
+  return getManagedHskWordsUncached(level);
 }
 
 function normalizeWord(payload) {

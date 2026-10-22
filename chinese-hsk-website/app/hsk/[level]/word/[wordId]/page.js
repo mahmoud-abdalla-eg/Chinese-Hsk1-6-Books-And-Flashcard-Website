@@ -5,14 +5,15 @@ import { getHskWords } from "@/lib/data/hsk";
 import { HSK_LEVELS } from "@/lib/data/schema";
 
 export const revalidate = 300;
+export const dynamicParams = true;
 
 export function generateStaticParams() {
-  return HSK_LEVELS.flatMap((level) =>
-    getHskWords(level).map((word) => ({
-      level: String(level),
+  return getHskWords(1)
+    .slice(0, 30)
+    .map((word) => ({
+      level: "1",
       wordId: word.id,
-    })),
-  );
+    }));
 }
 
 export default async function WordPage({ params }) {
