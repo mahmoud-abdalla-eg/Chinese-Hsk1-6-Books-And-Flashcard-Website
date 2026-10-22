@@ -11,13 +11,26 @@ function readConversationFile(file) {
 export function getConversationsForLevel(level) {
   const numericLevel = Number(level);
   if (!HSK_LEVELS.includes(numericLevel)) return [];
-  const dir = path.join(
+  let dir = path.join(
     root,
     "source-data",
     "conversations",
     `hsk-${numericLevel}`,
   );
-  if (!fs.existsSync(dir)) return [];
+  if (!fs.existsSync(dir)) {
+    const inSubdir = path.join(
+      root,
+      "chinese-hsk-website",
+      "source-data",
+      "conversations",
+      `hsk-${numericLevel}`,
+    );
+    if (fs.existsSync(inSubdir)) {
+      dir = inSubdir;
+    } else {
+      return [];
+    }
+  }
   return fs
     .readdirSync(dir)
     .filter((file) => file.endsWith(".json"))

@@ -3,6 +3,22 @@ import { getGrammarPath } from "@/lib/data/grammar";
 import { getSupabaseAdmin } from "@/lib/db/supabase";
 
 const PUBLIC_CACHE_SECONDS = 300;
+const GRAMMAR_UNIT_SIZE = 12;
+
+function getGrammarPathWithOrder() {
+  const items = getGrammarPath();
+  const levelOrder = new Map();
+  return items.map((item) => {
+    const level = Number(item.hskLevel || 1);
+    const current = (levelOrder.get(level) || 0) + 1;
+    levelOrder.set(level, current);
+    return {
+      ...item,
+      hskLevel: level,
+      order: Number(item.order) || current,
+    };
+  });
+}
 
 export const getManagedGrammarPath = unstable_cache(
   async () => getManagedGrammarPathUncached(),
@@ -20,11 +36,11 @@ async function getManagedGrammarPathUncached() {
       .order("order", { ascending: true });
 
     if (error || !items || items.length === 0) {
-      return getGrammarPath();
+      return getGrammarPathWithOrder();
     }
     return items.map(fromDbGrammar);
   } catch {
-    return getGrammarPath();
+    return getGrammarPathWithOrder();
   }
 }
 
@@ -67,34 +83,56 @@ export const getManagedGrammarUnitsForLevel = unstable_cache(
 
 async function getManagedGrammarUnitsForLevelUncached(level) {
   const numericLevel = Number(level);
+  const items = await getManagedGrammarItemsForLevel(numericLevel);
   try {
     const supabase = getSupabaseAdmin();
-    const { data: units, error } = await supabase
+    const { data: manualUnits, error } = await supabase
       .from("course_grammar_units")
       .select("*")
       .eq("level", numericLevel)
       .order("id", { ascending: true });
 
-    if (!error && units && units.length > 0) {
-      return units.map(fromDbGrammarUnit);
+    if (!error && manualUnits && manualUnits.length > 0) {
+      return manualUnits.map((unit) => {
+        const startOrder = Number(unit.start_order || unit.startOrder || 1);
+        const endOrder = Number(unit.end_order || unit.endOrder || startOrder);
+        const unitItems = items.filter(
+          (item) =>
+            Number(item.order) >= startOrder &&
+            Number(item.order) <= endOrder,
+        );
+        return {
+          id: Number(unit.id),
+          level: numericLevel,
+          title: unit.title || `Grammar Unit ${unit.id}`,
+          description: unit.description || `Core patterns ${startOrder} to ${endOrder}`,
+          start: startOrder,
+          end: endOrder,
+          startOrder,
+          endOrder,
+          itemCount: unitItems.length,
+          items: unitItems,
+        };
+      });
     }
   } catch {
     // fallback
   }
 
-  const items = await getManagedGrammarPath();
-  const levelItems = items.filter((item) => item.hskLevel === numericLevel);
   const units = [];
-  const UNIT_SIZE = 12;
-  for (let i = 0; i < levelItems.length; i += UNIT_SIZE) {
-    const unitItems = levelItems.slice(i, i + UNIT_SIZE);
+  for (let i = 0; i < items.length; i += GRAMMAR_UNIT_SIZE) {
+    const unitItems = items.slice(i, i + GRAMMAR_UNIT_SIZE);
     units.push({
-      level: numericLevel,
       id: units.length + 1,
+      level: numericLevel,
       title: `Grammar Unit ${units.length + 1}`,
       description: `Core patterns ${i + 1} to ${i + unitItems.length}`,
+      start: i + 1,
+      end: i + unitItems.length,
       startOrder: i + 1,
       endOrder: i + unitItems.length,
+      itemCount: unitItems.length,
+      items: unitItems,
     });
   }
   return units;
@@ -102,7 +140,7 @@ async function getManagedGrammarUnitsForLevelUncached(level) {
 
 export async function getManagedGrammarUnit(level, unitId) {
   const units = await getManagedGrammarUnitsForLevel(level);
-  return units.find((unit) => Number(unit.id) === Number(unitId));
+  return units.find((unit) => Number(unit.id) === Number(unitId)) || null;
 }
 
 export const getManagedGrammarItem = unstable_cache(

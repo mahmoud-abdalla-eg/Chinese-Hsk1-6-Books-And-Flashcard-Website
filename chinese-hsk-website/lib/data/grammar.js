@@ -5,9 +5,15 @@ const root = process.cwd();
 const GRAMMAR_UNIT_SIZE = 12;
 
 function readGrammarPath() {
-  const file = path.join(root, "source-data", "grammar", "learning-path.json");
-  if (!fs.existsSync(file)) return [];
-  return JSON.parse(fs.readFileSync(file, "utf8"));
+  const direct = path.join(root, "source-data", "grammar", "learning-path.json");
+  if (fs.existsSync(direct)) {
+    return JSON.parse(fs.readFileSync(direct, "utf8"));
+  }
+  const inSubdir = path.join(root, "chinese-hsk-website", "source-data", "grammar", "learning-path.json");
+  if (fs.existsSync(inSubdir)) {
+    return JSON.parse(fs.readFileSync(inSubdir, "utf8"));
+  }
+  return [];
 }
 
 export function getGrammarPath() {

@@ -9,6 +9,7 @@ import { getGrammarUnitsForLevel } from "@/lib/data/grammar";
 import { HSK_LEVELS } from "@/lib/data/schema";
 
 export const revalidate = 300;
+export const dynamicParams = true;
 
 export function generateStaticParams() {
   return HSK_LEVELS.flatMap((level) =>
@@ -25,6 +26,8 @@ export default async function GrammarUnitPage({ params }) {
   if (!unit) return <Card>Grammar unit not found.</Card>;
   const units = await getManagedGrammarUnitsForLevel(level);
   const hasNext = Number(unitId) < units.length;
+  const items = Array.isArray(unit.items) ? unit.items : [];
+
   return (
     <div className="space-y-8 pb-8">
       <Surface className="relative overflow-hidden p-7 lg:p-10">
@@ -33,7 +36,8 @@ export default async function GrammarUnitPage({ params }) {
           HSK {level} - Grammar unit {unit.id}
         </Pill>
         <h1 className="mt-5 max-w-4xl text-5xl font-black text-slate-950 sm:text-7xl">
-          {unit.title || `Patterns ${unit.start}-${unit.end}`}
+          {unit.title ||
+            `Patterns ${unit.start || unit.startOrder || 1}-${unit.end || unit.endOrder || 1}`}
         </h1>
         <p className="mt-4 max-w-3xl text-lg font-semibold leading-8 text-slate-600">
           {unit.description ||
@@ -46,30 +50,34 @@ export default async function GrammarUnitPage({ params }) {
           >
             Back to level
           </Link>
-          {Number(unitId) > 1
-            ? <Link
-                href={`/grammar/hsk/${level}/unit/${Number(unitId) - 1}`}
-                className="rounded-full bg-slate-700 px-5 py-3 text-sm font-black text-white hover:bg-slate-800"
-              >
-                Previous unit
-              </Link>
-            : null}
-          {hasNext
-            ? <Link
-                href={`/grammar/hsk/${level}/unit/${Number(unitId) + 1}`}
-                className="rounded-full bg-teal-700 px-5 py-3 text-sm font-black text-white hover:bg-teal-800"
-              >
-                Next unit
-              </Link>
-            : null}
+          {Number(unitId) > 1 ? (
+            <Link
+              href={`/grammar/hsk/${level}/unit/${Number(unitId) - 1}`}
+              className="rounded-full bg-slate-700 px-5 py-3 text-sm font-black text-white hover:bg-slate-800"
+            >
+              Previous unit
+            </Link>
+          ) : null}
+          {hasNext ? (
+            <Link
+              href={`/grammar/hsk/${level}/unit/${Number(unitId) + 1}`}
+              className="rounded-full bg-teal-700 px-5 py-3 text-sm font-black text-white hover:bg-teal-800"
+            >
+              Next unit
+            </Link>
+          ) : null}
         </div>
       </Surface>
 
-      <div className="grid gap-4 lg:grid-cols-2">
-        {unit.items.map((item, index) => (
-          <GrammarCard key={`${item.id}-${index}`} item={item} index={index} />
-        ))}
-      </div>
+      {items.length === 0 ? (
+        <Card>No grammar patterns found for this unit.</Card>
+      ) : (
+        <div className="grid gap-4 lg:grid-cols-2">
+          {items.map((item, index) => (
+            <GrammarCard key={`${item.id}-${index}`} item={item} index={index} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

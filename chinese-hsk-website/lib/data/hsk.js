@@ -5,8 +5,15 @@ import { EXPECTED_HSK_COUNTS, HSK_LEVELS, UNIT_SIZE } from "./schema";
 const root = process.cwd();
 
 function readHskJson(level) {
-  const file = path.join(root, "source-data", "hsk", `hsk-${level}.json`);
-  return JSON.parse(fs.readFileSync(file, "utf8"));
+  const direct = path.join(root, "source-data", "hsk", `hsk-${level}.json`);
+  if (fs.existsSync(direct)) {
+    return JSON.parse(fs.readFileSync(direct, "utf8"));
+  }
+  const inSubdir = path.join(root, "chinese-hsk-website", "source-data", "hsk", `hsk-${level}.json`);
+  if (fs.existsSync(inSubdir)) {
+    return JSON.parse(fs.readFileSync(inSubdir, "utf8"));
+  }
+  return [];
 }
 
 export function getHskWords(level) {
