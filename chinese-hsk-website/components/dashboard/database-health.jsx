@@ -3,14 +3,14 @@
 import { useState } from "react";
 import { useLanguage } from "@/components/language/language-provider";
 
-export default function MongoHealth() {
+export default function DatabaseHealth() {
   const { tr } = useLanguage();
   const [status, setStatus] = useState(null);
 
   const check = async () => {
     setStatus(tr("checkingDatabase"));
     try {
-      const response = await fetch("/api/health/mongodb", {
+      const response = await fetch("/api/health/database", {
         cache: "no-store",
       });
       const data = await response.json();
@@ -35,7 +35,7 @@ export default function MongoHealth() {
         onClick={check}
         className="mt-4 rounded-full bg-slate-800 px-4 py-2 text-sm font-black text-white hover:bg-slate-900"
       >
-        {tr("checkMongoDb")}
+        {tr("checkDatabase") || tr("checkMongoDb")}
       </button>
       {status ? (
         <p className="mt-3 rounded-xl bg-slate-50 p-3 text-sm font-bold text-slate-700">

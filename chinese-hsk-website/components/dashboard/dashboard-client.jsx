@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
-import MongoHealth from "@/components/dashboard/mongo-health";
+import DatabaseHealth from "@/components/dashboard/database-health";
 import { useLanguage } from "@/components/language/language-provider";
 import { Card, Pill, ProgressBar, Surface } from "@/components/ui/card";
 import { usePersistentProgress } from "@/lib/progress/use-progress";
@@ -136,7 +136,7 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
               {progress.reviewHistory.length}.
             </p>
           </Card>
-          <MongoHealth />
+          <DatabaseHealth />
           <Card>
             <h2 className="text-2xl font-black text-slate-950">
               {tr("studyStreak")}

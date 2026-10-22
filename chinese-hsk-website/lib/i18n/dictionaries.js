@@ -305,10 +305,15 @@ export const dictionary = {
     zh: "\u68c0\u67e5\u5e94\u7528\u662f\u5426\u80fd\u8fde\u63a5\u4f60\u7684\u5b66\u4e60\u8fdb\u5ea6\u6570\u636e\u5e93\u3002",
     ar: "\u062a\u062d\u0642\u0642 \u0645\u0645\u0627 \u0625\u0630\u0627 \u0643\u0627\u0646 \u0627\u0644\u062a\u0637\u0628\u064a\u0642 \u064a\u0633\u062a\u0637\u064a\u0639 \u0627\u0644\u0648\u0635\u0648\u0644 \u0625\u0644\u0649 \u0642\u0627\u0639\u062f\u0629 \u062a\u0642\u062f\u0645\u0643.",
   },
+    checkDatabase: {
+    en: "Check Database",
+    zh: "检查数据库",
+    ar: "افحص قاعدة البيانات",
+  },
   checkMongoDb: {
-    en: "Check MongoDB",
-    zh: "\u68c0\u67e5 MongoDB",
-    ar: "\u0627\u0641\u062d\u0635 MongoDB",
+    en: "Check Database",
+    zh: "检查数据库",
+    ar: "افحص قاعدة البيانات",
   },
   checkingDatabase: {
     en: "Checking database...",
@@ -345,3 +350,4 @@ export const dictionary = {
 export function t(key, lang = "en") {
   return dictionary[key]?.[lang] || dictionary[key]?.en || key;
 }
+

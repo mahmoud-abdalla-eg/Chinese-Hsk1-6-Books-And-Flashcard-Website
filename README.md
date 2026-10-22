@@ -1,4 +1,4 @@
-﻿# Mandarin Flow HSK - HSK 1-6 Books and Flashcards
+# Mandarin Flow HSK - HSK 1-6 Books and Flashcards
 
 [![License: Source Available - Non-Commercial](https://img.shields.io/badge/License-Source%20Available--Non--Commercial-red.svg)](./LICENSE.md)
 
@@ -23,10 +23,10 @@ chinese-hsk-website
 - Word detail pages with examples, audio placeholders, favorites, and learned-word tracking.
 - Learner dashboard with saved progress, weak words, hard words, review history, daily activity, and level completion.
 - Secure account system with HTTP-only sessions.
-- Per-user study data stored in MongoDB.
+- Per-user study data stored in Supabase.
 - Account profile page with progress summary and password change.
 - Admin tools for words, grammar, conversations, audio records, learners, analytics, imports, settings, and content checks.
-- MongoDB-backed course overrides with JSON fallback data.
+- Supabase-backed course overrides with JSON fallback data.
 - English and Arabic learner-facing UI support.
 
 ## Content Coverage
@@ -46,7 +46,7 @@ Conversation source files currently exist for HSK 1-5. HSK 6 vocabulary data is 
 
 - Next.js `16.2.6`
 - React `19.2.4`
-- MongoDB
+- Supabase
 - Tailwind CSS `4`
 - Biome
 - Local JSON source data
@@ -71,8 +71,8 @@ http://localhost:3000
 Create `chinese-hsk-website/.env.local`:
 
 ```env
-MONGODB_URI="mongodb+srv://USER:PASSWORD@CLUSTER.mongodb.net/?retryWrites=true&w=majority"
-MONGODB_DB="mandarin_flow_hsk"
+Supabase_URI="Supabase+srv://USER:PASSWORD@CLUSTER.Supabase.net/?retryWrites=true&w=majority"
+Supabase_DB="mandarin_flow_hsk"
 AUTH_SECRET="replace-with-a-long-random-secret"
 ```
 
@@ -154,7 +154,7 @@ Contributions are welcome. This project needs help from developers, Chinese lear
 - Confirm HSK unit ordering stays stable after imports.
 - Make sure each user only sees and edits their own study data.
 - Check that public pages stay fast after new content is added.
-- Confirm MongoDB indexes exist in production.
+- Confirm Supabase indexes exist in production.
 - Review admin permissions before exposing admin tools publicly.
 - Test the site on mobile widths, especially flashcards, account pages, dashboards, and admin tables.
 - Check that missing audio does not break study pages.
@@ -231,3 +231,4 @@ This project is **source available for personal and educational use only**.
 Commercial use, resale, paid hosting, sublicensing, or selling modified versions is not allowed without written permission.
 
 See: [LICENSE.md](./LICENSE.md)
+

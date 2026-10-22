@@ -2,7 +2,7 @@
 
 A full-stack Mandarin learning web app for HSK 1-6 vocabulary, grammar, conversations, flashcards, progress tracking, and admin-managed course content.
 
-The app is built with Next.js App Router, React, Tailwind CSS, MongoDB, and local JSON source data. It is designed for multilingual learners and currently supports English and Arabic UI flows, with Chinese learning content throughout.
+The app is built with Next.js App Router, React, Tailwind CSS, Supabase, and local JSON source data. It is designed for multilingual learners and currently supports English and Arabic UI flows, with Chinese learning content throughout.
 
 ## Features
 
@@ -13,17 +13,17 @@ The app is built with Next.js App Router, React, Tailwind CSS, MongoDB, and loca
 - Conversation lessons for HSK 1-5 source units.
 - Learner dashboard with saved progress, weak words, hard words, review history, daily activity, and level completion.
 - Account system with secure HTTP-only sessions.
-- Per-user study data stored in MongoDB and separated by logged-in account.
+- Per-user study data stored in Supabase and separated by logged-in account.
 - Account profile page with saved study snapshot and password change.
 - Admin base for words, grammar, grammar units, conversations, audio records, learners, analytics, site content, settings, imports, and data checks.
-- MongoDB-backed course overrides with JSON fallback data.
+- Supabase-backed course overrides with JSON fallback data.
 - Public learner routes optimized with short revalidation, cached reads, and loading states.
 
 ## Tech Stack
 
 - Next.js `16.2.6`
 - React `19.2.4`
-- MongoDB Node driver `7.2.0`
+- Supabase Client (`@supabase/supabase-js`)
 - Tailwind CSS `4`
 - Biome `2.2.0`
 - React Compiler enabled
@@ -33,10 +33,10 @@ The app is built with Next.js App Router, React, Tailwind CSS, MongoDB, and loca
 ```text
 app/                         Next.js App Router pages and API routes
 components/                  UI, layout, auth, dashboard, HSK, grammar, admin components
-lib/admin/                   MongoDB-backed course/admin data access
+lib/admin/                   Supabase-backed course/admin data access
 lib/auth/                    User/admin auth, password hashing, signed sessions
 lib/data/                    Static JSON-backed course readers and schemas
-lib/db/                      MongoDB client and indexes
+lib/db/                      Supabase client and indexes
 lib/progress/                Progress model, local sync hook, user progress persistence
 lib/i18n/                    UI dictionaries and language helpers
 source-data/hsk/             HSK 1-6 vocabulary JSON
@@ -73,8 +73,8 @@ npm install
 Create `.env.local` in the project root:
 
 ```env
-MONGODB_URI="mongodb+srv://USER:PASSWORD@CLUSTER.mongodb.net/?retryWrites=true&w=majority"
-MONGODB_DB="mandarin_flow_hsk"
+Supabase_URI="Supabase+srv://USER:PASSWORD@CLUSTER.Supabase.net/?retryWrites=true&w=majority"
+Supabase_DB="mandarin_flow_hsk"
 AUTH_SECRET="replace-with-a-long-random-secret"
 ```
 
@@ -85,7 +85,7 @@ AZURE_SPEECH_KEY=""
 AZURE_SPEECH_REGION=""
 ```
 
-`AUTH_SECRET` signs user and admin session cookies. Use a strong secret in production. If it is missing, the app falls back to `MONGODB_URI` for signing, but a dedicated secret is recommended.
+`AUTH_SECRET` signs user and admin session cookies. Use a strong secret in production. If it is missing, the app falls back to `Supabase_URI` for signing, but a dedicated secret is recommended.
 
 ### 3. Run the development server
 
@@ -123,7 +123,7 @@ The app uses custom email/password authentication:
 - Passwords are hashed with Node `scrypt`.
 - Sessions are signed and stored in HTTP-only cookies.
 - User progress API access requires a valid logged-in session.
-- Each MongoDB progress record is keyed by the authenticated user ID.
+- Each Supabase progress record is keyed by the authenticated user ID.
 - Browser-side progress cache is also separated by account, so multiple users on one browser do not share study data.
 
 Learner progress includes:
@@ -159,11 +159,11 @@ The admin area manages:
 - settings
 - data coverage checks
 
-Admin users are stored in MongoDB. The authentication helpers are in `lib/auth/admins.js` and `lib/auth/admin-session.js`.
+Admin users are stored in Supabase. The authentication helpers are in `lib/auth/admins.js` and `lib/auth/admin-session.js`.
 
 ## Data Model Notes
 
-Public course pages read from MongoDB-managed collections first and fall back to `source-data` JSON if MongoDB is unavailable.
+Public course pages read from Supabase-managed collections first and fall back to `source-data` JSON if Supabase is unavailable.
 
 Important collections:
 
@@ -179,7 +179,7 @@ course_data_state
 site_content
 ```
 
-MongoDB indexes are warmed from `lib/db/mongodb.js` for common lookup paths such as user email, user progress owner, course word level/order, and site content keys.
+Supabase indexes are warmed from `lib/db/Supabase.js` for common lookup paths such as user email, user progress owner, course word level/order, and site content keys.
 
 ## Performance Notes
 
@@ -236,7 +236,7 @@ Contributions are welcome. This project needs help from developers, Chinese lear
 - Confirm HSK unit ordering stays stable after imports.
 - Make sure each user only sees and edits their own study data.
 - Check that public pages stay fast after new content is added.
-- Confirm MongoDB indexes exist in production.
+- Confirm Supabase indexes exist in production.
 - Review admin permissions before exposing admin tools publicly.
 - Test the site on mobile widths, especially flashcards, account pages, dashboards, and admin tables.
 - Check that missing audio does not break study pages.
@@ -295,23 +295,23 @@ Please include:
 
 ## Deployment
 
-This project can be deployed to any platform that supports Next.js and MongoDB connectivity.
+This project can be deployed to any platform that supports Next.js and Supabase connectivity.
 
 Required production environment variables:
 
 ```env
-MONGODB_URI=""
-MONGODB_DB="mandarin_flow_hsk"
+Supabase_URI=""
+Supabase_DB="mandarin_flow_hsk"
 AUTH_SECRET=""
 ```
 
 Recommended deployment checklist:
 
 1. Set all environment variables.
-2. Confirm MongoDB network access from the hosting platform.
+2. Confirm Supabase network access from the hosting platform.
 3. Run `npm run lint`.
 4. Run `npm run build`.
-5. Create at least one admin user in MongoDB or through your chosen seed/import flow.
+5. Create at least one admin user in Supabase or through your chosen seed/import flow.
 6. Verify `/account`, `/dashboard`, `/adminbase`, and public HSK routes.
 
 ## Repository
@@ -319,3 +319,4 @@ Recommended deployment checklist:
 GitHub:
 
 [mahmoud-abdalla-eg/Chinese-Hsk1-6-Books-And-Flashcard-Website](https://github.com/mahmoud-abdalla-eg/Chinese-Hsk1-6-Books-And-Flashcard-Website)
+
