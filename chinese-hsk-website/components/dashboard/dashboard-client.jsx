@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
+import Link from "next/link";
 import DatabaseHealth from "@/components/dashboard/database-health";
 import { useLanguage } from "@/components/language/language-provider";
 import { Card, Pill, ProgressBar, Surface } from "@/components/ui/card";
@@ -272,15 +273,16 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
           <div className="mt-4 grid gap-3">
             {weakWords.length ? (
               weakWords.map((item) => (
-                <div
+                <Link
                   key={item.wordId}
-                  className="rounded-2xl bg-rose-50 p-4 text-sm font-bold text-rose-950"
+                  href={`/hsk/${item.word?.level || 1}/word/${item.wordId}`}
+                  className="block rounded-2xl bg-rose-50 p-4 text-sm font-bold text-rose-950 transition hover:bg-rose-100 hover:shadow-2xs"
                 >
                   <strong>{formatWord(item.word, lang) || item.wordId}</strong>
-                  <p>
+                  <p className="mt-1 text-xs text-rose-800">
                     {item.hardReviews} {tr("hard")} / {item.attempts}
                   </p>
-                </div>
+                </Link>
               ))
             ) : (
               <p className="text-sm font-semibold text-slate-500">
@@ -363,12 +365,13 @@ function WordGroup({ empty, label, lang, words }) {
       <div className="grid gap-2">
         {shownWords.length ? (
           shownWords.map((word) => (
-            <span
+            <Link
               key={word.id}
-              className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-bold text-slate-700"
+              href={`/hsk/${word.level || 1}/word/${word.id}`}
+              className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-bold text-slate-700 transition hover:border-teal-400 hover:text-teal-700 hover:shadow-2xs"
             >
               {formatWord(word, lang)}
-            </span>
+            </Link>
           ))
         ) : (
           <span className="text-sm font-semibold text-slate-500">{empty}</span>

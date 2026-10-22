@@ -18,6 +18,7 @@ export default async function DashboardPage() {
         words: words.map((word) => ({
           hanzi: word.hanzi,
           id: word.id,
+          level: summary.level,
           meaning: word.meaning,
           pinyin: word.pinyin,
         })),

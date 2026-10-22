@@ -50,7 +50,7 @@ export default function ConversationLesson({ conversation, words = [] }) {
             >
               <div className="flex items-center justify-between gap-3">
                 <strong>{line.role}</strong>
-                <AudioButton src={line.audio} />
+                <AudioButton src={line.audio} text={line.hanzi} />
               </div>
               <p className="hanzi-display mt-2 text-2xl font-black text-slate-950">
                 {line.hanzi}

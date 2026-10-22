@@ -60,7 +60,7 @@ async function runSeed() {
       pinyin: w.pinyin || "",
       part_of_speech: w.partOfSpeech || w.pos || "word",
       meaning: w.meaning || w.translations || {},
-      example: w.example || (w.examples && w.examples[0]) || {},
+      example: w.example || w.examples?.[0] || {},
       audio: w.audio || {},
       tags: Array.isArray(w.tags) ? w.tags : [],
       examples: Array.isArray(w.examples) ? w.examples : [],

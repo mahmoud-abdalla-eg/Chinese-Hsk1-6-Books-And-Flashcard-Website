@@ -1,44 +1,154 @@
+"use client";
+
+import { useMemo, useState } from "react";
 import Link from "next/link";
 import AudioButton from "@/components/audio/audio-button";
+import { usePersistentProgress } from "@/lib/progress/use-progress";
 
-export default function VocabularyList({ words, level }) {
+export default function VocabularyList({ words = [], level }) {
+  const [query, setQuery] = useState("");
+  const { progress, saveProgress } = usePersistentProgress();
+
+  const favoriteSet = useMemo(
+    () => new Set(progress.favorites || []),
+    [progress.favorites],
+  );
+  const learnedSet = useMemo(
+    () => new Set(progress.learnedWords || []),
+    [progress.learnedWords],
+  );
+
+  const toggle = (key, id) => {
+    saveProgress((current) => {
+      const set = new Set(current[key] || []);
+      set.has(id) ? set.delete(id) : set.add(id);
+      return { ...current, [key]: [...set] };
+    });
+  };
+
+  const filteredWords = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (!q) return words;
+    return words.filter((w) => {
+      return (
+        w.hanzi?.toLowerCase().includes(q) ||
+        w.pinyin?.toLowerCase().includes(q) ||
+        w.meaning?.en?.toLowerCase().includes(q) ||
+        w.meaning?.ar?.toLowerCase().includes(q)
+      );
+    });
+  }, [words, query]);
+
   return (
-    <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-      <div className="grid grid-cols-[64px_1fr] gap-3 border-b border-slate-200 bg-slate-50 px-4 py-4 text-xs font-black uppercase tracking-[0.16em] text-slate-500 sm:grid-cols-[72px_1fr_1fr_140px]">
-        <span>#</span>
-        <span>Chinese</span>
-        <span className="hidden sm:block">Meaning</span>
-        <span className="hidden sm:block">Audio</span>
-      </div>
-      {words.map((word) => (
-        <div
-          key={word.id}
-          className="grid grid-cols-[64px_1fr] items-center gap-3 border-b border-slate-100 px-4 py-4 last:border-b-0 sm:grid-cols-[72px_1fr_1fr_140px]"
-        >
-          <span className="text-sm font-black text-slate-400">
-            {word.order}
-          </span>
-          <Link
-            href={`/hsk/${level}/word/${word.id}`}
-            className="group rounded-2xl transition"
-          >
-            <span className="hanzi-display block text-3xl font-black text-slate-950 group-hover:text-teal-700">
-              {word.hanzi}
-            </span>
-            <span className="block text-sm font-bold text-teal-700">
-              {word.pinyin}
-            </span>
-          </Link>
-          <span className="text-sm font-semibold leading-6 text-slate-600">
-            {word.meaning.en || "English coming soon"}
-            <br />
-            <span className="text-slate-400" dir="rtl">
-              {word.meaning.ar || "Arabic coming soon"}
-            </span>
-          </span>
-          <AudioButton src={word.audio.word} />
+    <div className="space-y-3">
+      {/* Search Input Bar */}
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <div className="relative min-w-[260px] flex-1">
+          <input
+            type="search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Search words (Hanzi, Pinyin, English, Arabic)..."
+            className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-slate-800 placeholder:text-slate-400 focus:border-teal-500 focus:outline-hidden"
+          />
+          {query ? (
+            <button
+              type="button"
+              onClick={() => setQuery("")}
+              className="absolute right-3 top-2.5 text-xs font-bold text-slate-400 hover:text-slate-600"
+            >
+              Clear
+            </button>
+          ) : null}
         </div>
-      ))}
+        <span className="rounded-full bg-slate-100 px-3 py-1.5 text-xs font-black text-slate-600">
+          {filteredWords.length} of {words.length} words
+        </span>
+      </div>
+
+      {/* Vocabulary Table */}
+      <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <div className="grid grid-cols-[56px_1fr] gap-3 border-b border-slate-200 bg-slate-50 px-4 py-3.5 text-xs font-black uppercase tracking-[0.16em] text-slate-500 sm:grid-cols-[64px_1.2fr_1fr_120px_100px]">
+          <span>#</span>
+          <span>Chinese</span>
+          <span className="hidden sm:block">Meaning</span>
+          <span className="hidden sm:block">Actions</span>
+          <span className="hidden sm:block text-right">Audio</span>
+        </div>
+
+        {filteredWords.length === 0 ? (
+          <div className="p-8 text-center text-sm font-bold text-slate-500">
+            No words matching &quot;{query}&quot;
+          </div>
+        ) : (
+          filteredWords.map((word) => {
+            const isFav = favoriteSet.has(word.id);
+            const isLearned = learnedSet.has(word.id);
+            return (
+              <div
+                key={word.id}
+                className="grid grid-cols-[56px_1fr] items-center gap-3 border-b border-slate-100 px-4 py-3.5 last:border-b-0 sm:grid-cols-[64px_1.2fr_1fr_120px_100px]"
+              >
+                <span className="text-sm font-black text-slate-400">
+                  {word.order}
+                </span>
+
+                <Link
+                  href={`/hsk/${level}/word/${word.id}`}
+                  className="group rounded-xl transition"
+                >
+                  <span className="hanzi-display block text-3xl font-black text-slate-950 group-hover:text-teal-700">
+                    {word.hanzi}
+                  </span>
+                  <span className="block text-sm font-bold text-teal-700">
+                    {word.pinyin}
+                  </span>
+                </Link>
+
+                <div className="text-sm font-semibold leading-5 text-slate-600">
+                  <span>{word.meaning?.en || "English coming soon"}</span>
+                  {word.meaning?.ar ? (
+                    <span className="mt-0.5 block text-xs text-slate-400" dir="rtl">
+                      {word.meaning.ar}
+                    </span>
+                  ) : null}
+                </div>
+
+                {/* Quick Action Badges */}
+                <div className="flex items-center gap-1.5">
+                  <button
+                    type="button"
+                    onClick={() => toggle("favorites", word.id)}
+                    className={`rounded-full p-1.5 text-sm transition hover:scale-110 ${
+                      isFav ? "text-rose-600" : "text-slate-300 hover:text-slate-500"
+                    }`}
+                    title={isFav ? "Favorited" : "Add to favorites"}
+                  >
+                    {isFav ? "❤️" : "🤍"}
+                  </button>
+
+                  <button
+                    type="button"
+                    onClick={() => toggle("learnedWords", word.id)}
+                    className={`rounded-full px-2 py-0.5 text-xs font-black transition ${
+                      isLearned
+                        ? "bg-emerald-100 text-emerald-800"
+                        : "bg-slate-100 text-slate-500 hover:bg-slate-200"
+                    }`}
+                    title={isLearned ? "Marked as learned" : "Mark learned"}
+                  >
+                    {isLearned ? "✓ Learned" : "+ Learn"}
+                  </button>
+                </div>
+
+                <div className="flex justify-end">
+                  <AudioButton src={word.audio?.word} text={word.hanzi} />
+                </div>
+              </div>
+            );
+          })
+        )}
+      </div>
     </div>
   );
 }

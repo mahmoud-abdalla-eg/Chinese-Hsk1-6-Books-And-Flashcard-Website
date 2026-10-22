@@ -14,6 +14,11 @@ export const dictionary = {
     zh: "\u9996\u9875",
     ar: "\u0627\u0644\u0631\u0626\u064a\u0633\u064a\u0629",
   },
+  vocabulary: {
+    en: "Vocabulary",
+    zh: "\u8bcd\u6c47",
+    ar: "\u0627\u0644\u0645\u0641\u0631\u062f\u0627\u062a",
+  },
   flashcards: {
     en: "Flashcards",
     zh: "\u95ea\u5361",

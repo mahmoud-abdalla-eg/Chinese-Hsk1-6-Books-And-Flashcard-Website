@@ -1,3 +1,4 @@
+import AudioButton from "@/components/audio/audio-button";
 import { Card, Pill } from "@/components/ui/card";
 
 export default function GrammarCard({ item, index }) {
@@ -21,13 +22,26 @@ export default function GrammarCard({ item, index }) {
       ) : null}
       {hasExample ? (
         <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
-          <p className="hanzi-display text-3xl font-black text-slate-950">
-            {item.example.hanzi}
-          </p>
-          <p className="mt-2 font-bold text-teal-700">{item.example.pinyin}</p>
+          <div className="flex items-start justify-between gap-3">
+            <p className="hanzi-display text-3xl font-black text-slate-950">
+              {item.example?.hanzi}
+            </p>
+            {item.example?.hanzi ? (
+              <AudioButton
+                text={item.example.hanzi}
+                label="Play example sentence"
+              />
+            ) : null}
+          </div>
+          <p className="mt-2 font-bold text-teal-700">{item.example?.pinyin}</p>
           <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
-            {item.example.en}
+            {item.example?.en}
           </p>
+          {item.example?.ar ? (
+            <p className="mt-1 text-sm font-semibold leading-6 text-slate-500" dir="rtl">
+              {item.example.ar}
+            </p>
+          ) : null}
         </div>
       ) : null}
     </Card>
