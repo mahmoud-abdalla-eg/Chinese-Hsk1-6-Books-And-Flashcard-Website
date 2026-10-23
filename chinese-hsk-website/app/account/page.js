@@ -1,4 +1,4 @@
-import AccountForm from "@/components/auth/account-form";
+import { redirect } from "next/navigation";
 import PasswordChangeForm from "@/components/auth/password-change-form";
 import { Card, Pill, ProgressBar, Surface } from "@/components/ui/card";
 import {
@@ -12,28 +12,14 @@ import { getUserProgress } from "@/lib/progress/user-progress";
 
 export const dynamic = "force-dynamic";
 
-export default async function AccountPage({ searchParams }) {
+export default async function AccountPage() {
   const userId = await getSessionUserId();
   const user = userId ? await getUserById(userId) : null;
-  if (user) return <AccountProfile user={user} userId={userId} />;
+  if (!user) {
+    redirect("/login?redirect=/account");
+  }
 
-  const params = await searchParams;
-  const error = params?.error ? decodeURIComponent(params.error) : "";
-  return (
-    <div className="space-y-8 pb-8">
-      <Surface className="p-7 lg:p-10">
-        <Pill>Account</Pill>
-        <h1 className="mt-5 max-w-4xl text-5xl font-black text-slate-950 sm:text-7xl">
-          Save your Mandarin progress.
-        </h1>
-        <p className="mt-4 max-w-3xl text-lg font-semibold leading-8 text-slate-600">
-          Create an account or log in to keep your study progress, hard words,
-          favorites, and reviews saved in your database.
-        </p>
-      </Surface>
-      <AccountForm error={error} />
-    </div>
-  );
+  return <AccountProfile user={user} userId={userId} />;
 }
 
 async function AccountProfile({ user, userId }) {

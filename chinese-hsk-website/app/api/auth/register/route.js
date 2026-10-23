@@ -17,7 +17,7 @@ export async function POST(request) {
       const message =
         error instanceof Error ? error.message : "Could not register.";
       return Response.redirect(
-        new URL(`/account?error=${encodeURIComponent(message)}`, request.url),
+        new URL(`/signup?error=${encodeURIComponent(message)}`, request.url),
         303,
       );
     }

@@ -91,7 +91,7 @@ export default function LoginPromptModal() {
             {tr("continueAsGuest")}
           </button>
           <Link
-            href="/account"
+            href="/login"
             onClick={() => closeLoginPrompt(false, false)}
             className="rounded-full bg-teal-700 px-6 py-2.5 text-center text-xs font-black text-white hover:bg-teal-800 shadow-sm transition"
           >

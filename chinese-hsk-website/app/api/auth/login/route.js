@@ -15,7 +15,7 @@ export async function POST(request) {
   } catch {
     if (isFormPost(request)) {
       return Response.redirect(
-        new URL("/account?error=Invalid%20email%20or%20password.", request.url),
+        new URL("/login?error=Invalid%20email%20or%20password.", request.url),
         303,
       );
     }
