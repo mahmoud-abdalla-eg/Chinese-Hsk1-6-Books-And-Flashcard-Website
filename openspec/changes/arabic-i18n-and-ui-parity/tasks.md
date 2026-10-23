@@ -19,9 +19,9 @@
 
 ## 4. Hub Pages, Unit Views, and Controls Parity
 
-- [ ] 4.1 Localize static hero titles, pills, descriptions, and action buttons in `app/conversations/page.js`, `app/flashcards/page.js`, and `app/grammar/page.js`. Verify by switching between English and Arabic.
-- [ ] 4.2 Localize unit batch-size controls in `components/hsk/level-units-view.jsx` and unit card progress text in `components/hsk/unit-card.jsx` and `components/hsk/unit-hero-card.jsx`. Verify all labels render in Arabic.
-- [ ] 4.3 Update `components/grammar/grammar-card.jsx` to render a localized fallback badge (`arabicExampleComingSoon`) when grammar examples lack Arabic translation. Verify grammar cards handle missing translations gracefully.
+- [x] 4.1 Localize static hero titles, pills, descriptions, and action buttons in `app/conversations/page.js`, `app/flashcards/page.js`, and `app/grammar/page.js`. Verify by switching between English and Arabic.
+- [x] 4.2 Localize unit batch-size controls in `components/hsk/level-units-view.jsx` and unit card progress text in `components/hsk/unit-card.jsx` and `components/hsk/unit-hero-card.jsx`. Verify all labels render in Arabic.
+- [x] 4.3 Update `components/grammar/grammar-card.jsx` to render a localized fallback badge (`arabicExampleComingSoon`) when grammar examples lack Arabic translation. Verify grammar cards handle missing translations gracefully.
 
 ## 5. Verification & Build Integrity
 
