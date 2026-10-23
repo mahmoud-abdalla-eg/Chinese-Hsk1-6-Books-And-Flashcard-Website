@@ -20,7 +20,49 @@ export default function FlashcardDeck({ words = [] }) {
   const [reviews, setReviews] = useState([]);
   const [showShortcuts, setShowShortcuts] = useState(false);
   const shortcutsRef = useRef(null);
+  const touchStartRef = useRef({ x: 0, y: 0, time: 0 });
   const { progress, saveProgress } = usePersistentProgress();
+
+  const handleTouchStart = (e) => {
+    const touch = e.touches[0];
+    touchStartRef.current = {
+      x: touch.clientX,
+      y: touch.clientY,
+      time: Date.now(),
+    };
+  };
+
+  const handleTouchEnd = (e) => {
+    if (!touchStartRef.current.time) return;
+    const touch = e.changedTouches[0];
+    const deltaX = touch.clientX - touchStartRef.current.x;
+    const deltaY = touch.clientY - touchStartRef.current.y;
+    const deltaTime = Date.now() - touchStartRef.current.time;
+
+    // Detect horizontal swipe: distance >= 50px within 600ms, and horizontal movement dominant
+    if (
+      deltaTime < 600 &&
+      Math.abs(deltaX) >= 50 &&
+      Math.abs(deltaX) > Math.abs(deltaY) * 1.4
+    ) {
+      if (deltaX < 0) {
+        // Swipe Left -> next card
+        setFlipped(false);
+        if (filteredWords.length) {
+          setIndex((i) => (i + 1) % filteredWords.length);
+        }
+      } else {
+        // Swipe Right -> previous card
+        setFlipped(false);
+        if (filteredWords.length) {
+          setIndex(
+            (i) => (i - 1 + filteredWords.length) % filteredWords.length,
+          );
+        }
+      }
+    }
+    touchStartRef.current = { x: 0, y: 0, time: 0 };
+  };
 
   useEffect(() => {
     function handleClickOutside(event) {
@@ -245,8 +287,8 @@ export default function FlashcardDeck({ words = [] }) {
   if (!word || filteredWords.length === 0) {
     return (
       <div className="space-y-6" data-no-static-translate>
-        <div className="flex flex-wrap items-center justify-between gap-3 text-xs font-black">
-          <div className="flex flex-wrap items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 p-1">
+        <div className="flex flex-col gap-3 text-xs font-black sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex items-center gap-1.5 overflow-x-auto rounded-2xl sm:rounded-full border border-slate-200 bg-slate-50 p-1">
             <button
               type="button"
               onClick={() => {
@@ -254,7 +296,7 @@ export default function FlashcardDeck({ words = [] }) {
                 setIndex(0);
                 setFlipped(false);
               }}
-              className={`rounded-full px-3 py-1.5 transition ${
+              className={`shrink-0 rounded-full px-3 py-1.5 transition ${
                 filterMode === "all"
                   ? "bg-teal-700 text-white shadow-xs"
                   : "text-slate-600 hover:text-slate-900"
@@ -269,7 +311,7 @@ export default function FlashcardDeck({ words = [] }) {
                 setIndex(0);
                 setFlipped(false);
               }}
-              className={`rounded-full px-3 py-1.5 transition ${
+              className={`shrink-0 rounded-full px-3 py-1.5 transition ${
                 filterMode === "hard"
                   ? "bg-amber-600 text-white shadow-xs"
                   : "text-slate-600 hover:text-slate-900"
@@ -284,7 +326,7 @@ export default function FlashcardDeck({ words = [] }) {
                 setIndex(0);
                 setFlipped(false);
               }}
-              className={`rounded-full px-3 py-1.5 transition ${
+              className={`shrink-0 rounded-full px-3 py-1.5 transition ${
                 filterMode === "favorites"
                   ? "bg-rose-600 text-white shadow-xs"
                   : "text-slate-600 hover:text-slate-900"
@@ -364,9 +406,9 @@ export default function FlashcardDeck({ words = [] }) {
   return (
     <div className="space-y-6" data-no-static-translate>
       {/* Top Filter & Deck Controls */}
-      <div className="flex flex-wrap items-center justify-between gap-3 text-xs font-black">
+      <div className="flex flex-col gap-3 text-xs font-black sm:flex-row sm:items-center sm:justify-between">
         {/* Filter Buttons */}
-        <div className="flex flex-wrap items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 p-1">
+        <div className="flex items-center gap-1.5 overflow-x-auto rounded-2xl border border-slate-200 bg-slate-50 p-1 sm:rounded-full">
           <button
             type="button"
             onClick={() => {
@@ -374,7 +416,7 @@ export default function FlashcardDeck({ words = [] }) {
               setIndex(0);
               setFlipped(false);
             }}
-            className={`rounded-full px-3 py-1.5 transition ${
+            className={`shrink-0 rounded-full px-3 py-1.5 transition ${
               filterMode === "all"
                 ? "bg-teal-700 text-white shadow-xs"
                 : "text-slate-600 hover:text-slate-900"
@@ -389,7 +431,7 @@ export default function FlashcardDeck({ words = [] }) {
               setIndex(0);
               setFlipped(false);
             }}
-            className={`rounded-full px-3 py-1.5 transition ${
+            className={`shrink-0 rounded-full px-3 py-1.5 transition ${
               filterMode === "hard"
                 ? "bg-amber-600 text-white shadow-xs"
                 : "text-slate-600 hover:text-slate-900"
@@ -404,7 +446,7 @@ export default function FlashcardDeck({ words = [] }) {
               setIndex(0);
               setFlipped(false);
             }}
-            className={`rounded-full px-3 py-1.5 transition ${
+            className={`shrink-0 rounded-full px-3 py-1.5 transition ${
               filterMode === "favorites"
                 ? "bg-rose-600 text-white shadow-xs"
                 : "text-slate-600 hover:text-slate-900"
@@ -419,7 +461,7 @@ export default function FlashcardDeck({ words = [] }) {
               setIndex(0);
               setFlipped(false);
             }}
-            className={`rounded-full px-3 py-1.5 transition ${
+            className={`shrink-0 rounded-full px-3 py-1.5 transition ${
               filterMode === "unlearned"
                 ? "bg-slate-800 text-white shadow-xs"
                 : "text-slate-600 hover:text-slate-900"
@@ -520,7 +562,7 @@ export default function FlashcardDeck({ words = [] }) {
       </div>
 
       {/* Main Flashcard Card */}
-      <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-5 text-center shadow-sm sm:p-8">
+      <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-4 text-center shadow-sm sm:p-8">
         {/* Progress bar line */}
         <div className="absolute inset-x-0 top-0 h-1.5 bg-slate-100">
           <div
@@ -605,11 +647,13 @@ export default function FlashcardDeck({ words = [] }) {
           </div>
         </div>
 
-        {/* Card Body */}
+        {/* Card Body with Swipe Gestures */}
         <button
           type="button"
           onClick={() => setFlipped((value) => !value)}
-          className="group relative mt-6 min-h-80 w-full cursor-pointer rounded-2xl border-2 border-dashed border-slate-200 bg-slate-50/80 p-8 text-center transition hover:border-teal-400 hover:bg-slate-50 focus:outline-hidden"
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+          className="group relative mt-6 min-h-80 w-full cursor-pointer rounded-2xl border-2 border-dashed border-slate-200 bg-slate-50/80 p-5 sm:p-8 text-center transition hover:border-teal-400 hover:bg-slate-50 focus:outline-hidden touch-pan-y select-none"
           title="Click to flip (Space)"
         >
           <span className="absolute top-4 right-4 text-xs font-bold text-slate-400 opacity-60 group-hover:opacity-100">
@@ -620,11 +664,11 @@ export default function FlashcardDeck({ words = [] }) {
           {studyMode === "recognition" ? (
             !flipped ? (
               <div className="flex min-h-64 flex-col items-center justify-center space-y-4">
-                <span className="hanzi-display block text-7xl font-black text-slate-950 sm:text-8xl">
+                <span className="hanzi-display block text-5xl font-black text-slate-950 sm:text-7xl lg:text-8xl break-keep max-w-full px-2">
                   {word.hanzi}
                 </span>
-                <span className="text-sm font-bold text-slate-400">
-                  (Tap or press Space to flip)
+                <span className="text-xs sm:text-sm font-bold text-slate-400">
+                  (Tap to flip · Swipe left/right)
                 </span>
               </div>
             ) : (
@@ -632,7 +676,7 @@ export default function FlashcardDeck({ words = [] }) {
                 className={`space-y-4 py-2 ${isArabic ? "text-right" : "text-left"}`}
               >
                 <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 pb-3">
-                  <span className="text-4xl font-black text-slate-950" dir="ltr">
+                  <span className="text-3xl sm:text-4xl font-black text-slate-950" dir="ltr">
                     {word.pinyin}
                   </span>
                   <span className="rounded-full bg-slate-200 px-3 py-1 text-xs font-black uppercase text-slate-700">
@@ -640,7 +684,7 @@ export default function FlashcardDeck({ words = [] }) {
                   </span>
                 </div>
                 <span
-                  className="block text-2xl font-bold text-slate-800"
+                  className="block text-xl sm:text-2xl font-bold text-slate-800"
                   dir={isArabic ? "rtl" : "ltr"}
                 >
                   {meaning}
@@ -648,7 +692,7 @@ export default function FlashcardDeck({ words = [] }) {
                 {word.example?.hanzi ? (
                   <div className="rounded-2xl bg-white p-4 shadow-2xs">
                     <span
-                      className="hanzi-display block text-2xl font-black text-slate-950"
+                      className="hanzi-display block text-xl sm:text-2xl font-black text-slate-950"
                       dir="ltr"
                     >
                       {word.example.hanzi}
@@ -672,9 +716,9 @@ export default function FlashcardDeck({ words = [] }) {
           ) : (
             /* Mode 2: RECALL (Meaning front -> Hanzi & Pinyin back) */
             !flipped ? (
-              <div className="flex min-h-64 flex-col items-center justify-center space-y-4 px-4 text-center">
+              <div className="flex min-h-64 flex-col items-center justify-center space-y-4 px-2 sm:px-4 text-center">
                 <span
-                  className="block text-3xl sm:text-4xl font-black text-slate-900 leading-tight"
+                  className="block text-2xl sm:text-4xl font-black text-slate-900 leading-tight"
                   dir={isArabic ? "rtl" : "ltr"}
                 >
                   {meaning}
@@ -682,7 +726,7 @@ export default function FlashcardDeck({ words = [] }) {
                 <span className="text-xs font-bold text-teal-700 uppercase tracking-wider">
                   {word.partOfSpeech || "word"}
                 </span>
-                <span className="text-sm font-bold text-slate-400">
+                <span className="text-xs sm:text-sm font-bold text-slate-400">
                   {tr("tapToRevealHanzi")}
                 </span>
               </div>
@@ -691,15 +735,15 @@ export default function FlashcardDeck({ words = [] }) {
                 className={`space-y-4 py-2 ${isArabic ? "text-right" : "text-left"}`}
               >
                 <div className="flex flex-col items-center justify-center gap-1 border-b border-slate-200 pb-4 text-center">
-                  <span className="hanzi-display block text-7xl font-black text-slate-950 sm:text-8xl">
+                  <span className="hanzi-display block text-5xl font-black text-slate-950 sm:text-7xl lg:text-8xl break-keep max-w-full px-2">
                     {word.hanzi}
                   </span>
-                  <span className="text-3xl font-black text-teal-700 mt-2" dir="ltr">
+                  <span className="text-2xl sm:text-3xl font-black text-teal-700 mt-2" dir="ltr">
                     {word.pinyin}
                   </span>
                 </div>
                 <span
-                  className="block text-xl font-bold text-slate-700"
+                  className="block text-lg sm:text-xl font-bold text-slate-700"
                   dir={isArabic ? "rtl" : "ltr"}
                 >
                   {meaning}
@@ -707,7 +751,7 @@ export default function FlashcardDeck({ words = [] }) {
                 {word.example?.hanzi ? (
                   <div className="rounded-2xl bg-white p-4 shadow-2xs">
                     <span
-                      className="hanzi-display block text-2xl font-black text-slate-950"
+                      className="hanzi-display block text-xl sm:text-2xl font-black text-slate-950"
                       dir="ltr"
                     >
                       {word.example.hanzi}
@@ -869,7 +913,7 @@ export default function FlashcardDeck({ words = [] }) {
       </div>
 
       {/* SRS Rating Buttons */}
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4" dir="ltr">
+      <div className="grid grid-cols-2 gap-2.5 sm:gap-3 sm:grid-cols-4" dir="ltr">
         {[
           ["Again", "bg-rose-600 hover:bg-rose-700", "1", "Repeat soon"],
           ["Hard", "bg-amber-600 hover:bg-amber-700", "2", "Difficult"],
@@ -880,12 +924,12 @@ export default function FlashcardDeck({ words = [] }) {
             key={quality}
             type="button"
             onClick={() => rate(quality)}
-            className={`group rounded-2xl px-4 py-3.5 text-center text-white shadow-md transition hover:-translate-y-0.5 active:translate-y-0 ${color}`}
+            className={`group min-h-[52px] rounded-2xl px-3 sm:px-4 py-3 sm:py-3.5 text-center text-white shadow-md transition hover:-translate-y-0.5 active:translate-y-0 ${color}`}
             dir={isArabic ? "rtl" : "ltr"}
           >
             <div className="flex items-center justify-center gap-1.5 text-sm font-black">
               <span>{tr(quality.toLowerCase())}</span>
-              <span className="rounded-md bg-white/20 px-1.5 py-0.5 text-[10px] font-bold opacity-80 group-hover:opacity-100">
+              <span className="hidden sm:inline-block rounded-md bg-white/20 px-1.5 py-0.5 text-[10px] font-bold opacity-80 group-hover:opacity-100">
                 [{keyHint}]
               </span>
             </div>

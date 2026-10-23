@@ -1,11 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import { useLanguage } from "@/components/language/language-provider";
 import CompletionToggle from "@/components/progress/completion-toggle";
 import { Card, ProgressBar } from "@/components/ui/card";
 import { usePersistentProgress } from "@/lib/progress/use-progress";
 
 export default function UnitHeroCard({ level, unit }) {
+  const { tr } = useLanguage();
   const { progress } = usePersistentProgress();
   const wordIds = unit?.words?.map((w) => w.id) || [];
   const learnedSet = new Set(progress?.learnedWords || []);
@@ -20,14 +22,14 @@ export default function UnitHeroCard({ level, unit }) {
     <Card className="flex flex-col justify-between gap-5 p-6 shadow-sm">
       <div>
         <div className="flex items-center justify-between text-xs font-black uppercase tracking-[0.16em] text-slate-500">
-          <span>Unit Progress</span>
+          <span>{tr("unitProgress")}</span>
           <span className="text-teal-700 font-bold">{progressPercent}%</span>
         </div>
         <div className="mt-3">
           <ProgressBar value={progressPercent} />
         </div>
         <p className="mt-2 text-xs font-semibold text-slate-500">
-          {learnedCount} of {unit?.words?.length || 0} words mastered
+          {learnedCount} {tr("wordsOf")} {unit?.words?.length || 0} {tr("wordsMastered")}
         </p>
       </div>
 
@@ -48,7 +50,7 @@ export default function UnitHeroCard({ level, unit }) {
             <rect width="18" height="18" x="3" y="3" rx="2" />
             <path d="m9 8 6 4-6 4Z" />
           </svg>
-          Practice Flashcards ({unit?.words?.length || 0} words)
+          {tr("practiceFlashcardsCount")} ({unit?.words?.length || 0} {tr("words")})
         </Link>
 
         <div className="grid grid-cols-2 gap-2 text-xs font-black">
@@ -56,13 +58,13 @@ export default function UnitHeroCard({ level, unit }) {
             href="#vocabulary"
             className="rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-center text-slate-700 hover:border-slate-300 hover:bg-slate-50"
           >
-            Vocabulary List
+            {tr("vocabularyList")}
           </a>
           <a
             href="#conversation"
             className="rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-center text-slate-700 hover:border-slate-300 hover:bg-slate-50"
           >
-            Conversation
+            {tr("conversation")}
           </a>
         </div>
       </div>

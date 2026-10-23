@@ -1,10 +1,18 @@
+"use client";
+
 import Link from "next/link";
-import { Localized } from "@/components/language/language-provider";
+import { Localized, useLanguage } from "@/components/language/language-provider";
 import { Card, Pill, ProgressBar } from "@/components/ui/card";
 import { levelThemes } from "@/lib/data/design";
 
 export default function LevelCard({ summary }) {
-  const theme = levelThemes[summary.level];
+  const { tr } = useLanguage();
+  const theme = levelThemes[summary.level] || {
+    accent: "from-teal-400 to-emerald-500",
+    scene: `HSK ${summary.level}`,
+    tone: "",
+  };
+
   return (
     <Card className="group relative min-h-[320px] overflow-hidden transition duration-300 hover:-translate-y-0.5 hover:border-teal-300">
       <div
@@ -23,10 +31,10 @@ export default function LevelCard({ summary }) {
           </div>
           <div>
             <h2 className="text-3xl font-black tracking-tight text-slate-950">
-              {theme.scene}
+              {tr(theme.scene)}
             </h2>
             <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
-              {theme.tone}
+              {tr(theme.tone)}
             </p>
           </div>
           <div className="grid grid-cols-2 gap-3 text-sm">

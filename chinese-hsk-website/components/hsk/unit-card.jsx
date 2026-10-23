@@ -42,14 +42,13 @@ export default function UnitCard({ unit, isCustom = false }) {
             <Localized k="words" /> {unit.start}-{unit.end}
           </h3>
           <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
-            Study the words, review flashcards, practice conversation,
-            listening, shadowing, and track your progress in one focused room.
+            <Localized k="unitCardStudyDesc" />
           </p>
         </div>
 
         <div>
           <div className="mb-2 flex items-center justify-between text-xs font-bold">
-            <span className="text-slate-500">Unit Mastery</span>
+            <span className="text-slate-500"><Localized k="unitMastery" /></span>
             <span className="text-teal-700">{learnedCount} / {totalCount} ({percent}%)</span>
           </div>
           <ProgressBar value={percent} />

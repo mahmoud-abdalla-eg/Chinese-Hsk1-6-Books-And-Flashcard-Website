@@ -7,6 +7,13 @@ import SiteFooter from "@/components/layout/site-footer";
 import SiteHeader from "@/components/layout/site-header";
 import ServiceWorkerRegister from "@/components/pwa/service-worker-register";
 
+export const viewport = {
+  themeColor: "#0f766e",
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
+
 export const metadata = {
   title: "Mandarin Flow HSK",
   description:
@@ -19,7 +26,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full bg-[#f7f8fb] text-slate-900 antialiased">
         <LanguageProvider>
           <AuthProvider>
-            <div className="min-h-screen overflow-hidden">
+            <div className="min-h-screen overflow-x-clip">
               <SiteHeader />
               <SiteAnalytics />
               <main className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8">

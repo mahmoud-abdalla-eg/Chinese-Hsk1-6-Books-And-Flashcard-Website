@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { useLanguage } from "@/components/language/language-provider";
 import UnitCard from "@/components/hsk/unit-card";
 import { Card, Pill } from "@/components/ui/card";
 import { UNIT_SIZE } from "@/lib/data/schema";
 
 export default function LevelUnitsView({ level, words = [], defaultUnits = [] }) {
+  const { tr } = useLanguage();
   const [unitSize, setUnitSize] = useState(UNIT_SIZE);
 
   // Restore user's saved preference
@@ -64,21 +66,21 @@ export default function LevelUnitsView({ level, words = [], defaultUnits = [] })
             />
           </svg>
           <span className="text-xs font-black uppercase tracking-wider text-slate-700">
-            Unit Batch Size:
+            {tr("unitBatchSize")}
           </span>
         </div>
 
-        <div className="flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 p-1 text-xs font-bold">
+        <div className="flex items-center gap-1.5 overflow-x-auto max-w-full rounded-2xl sm:rounded-full border border-slate-200 bg-slate-50 p-1 text-xs font-bold">
           {[
-            { size: 50, label: "50 words (Standard)" },
-            { size: 25, label: "25 words (Bite-sized)" },
-            { size: 100, label: "100 words (Deep Dive)" },
+            { size: 50, label: tr("batchSize50") },
+            { size: 25, label: tr("batchSize25") },
+            { size: 100, label: tr("batchSize100") },
           ].map(({ size, label }) => (
             <button
               key={size}
               type="button"
               onClick={() => handleUnitSizeChange(size)}
-              className={`rounded-full px-3 py-1.5 transition ${
+              className={`shrink-0 rounded-full px-3 py-1.5 transition ${
                 unitSize === size
                   ? "bg-teal-700 text-white shadow-xs"
                   : "text-slate-600 hover:text-slate-900"

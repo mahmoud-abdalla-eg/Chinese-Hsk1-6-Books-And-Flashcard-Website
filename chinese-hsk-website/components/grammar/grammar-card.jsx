@@ -31,8 +31,8 @@ export default function GrammarCard({ item, index }) {
       {hasExample ? (
         <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
           <div className="flex items-start justify-between gap-3">
-            <p className="hanzi-display text-3xl font-black text-slate-950">
-              {item.example?.hanzi}
+            <p className="hanzi-display text-3xl font-black text-slate-950" dir="ltr">
+              <bdi>{item.example?.hanzi}</bdi>
             </p>
             {item.example?.hanzi ? (
               <AudioButton
@@ -41,13 +41,19 @@ export default function GrammarCard({ item, index }) {
               />
             ) : null}
           </div>
-          <p className="mt-2 font-bold text-teal-700">{item.example?.pinyin}</p>
+          <p className="mt-2 font-bold text-teal-700" dir="ltr">
+            <bdi>{item.example?.pinyin}</bdi>
+          </p>
           {exampleTranslation ? (
             <p
               className="mt-2 text-sm font-semibold leading-6 text-slate-600"
               dir={isArabic ? "rtl" : "ltr"}
             >
               {exampleTranslation}
+            </p>
+          ) : isArabic ? (
+            <p className="mt-2 text-xs font-semibold text-slate-400" dir="rtl">
+              {tr("arabicExampleComingSoon")}
             </p>
           ) : null}
         </div>

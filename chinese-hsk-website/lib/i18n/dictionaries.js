@@ -1,3 +1,5 @@
+import { arabicUiReplacements } from "./ui-replacements.js";
+
 export const languages = {
   en: { label: "English", dir: "ltr" },
   ar: { label: "\u0627\u0644\u0639\u0631\u0628\u064a\u0629", dir: "rtl" },
@@ -1015,6 +1017,437 @@ export const dictionary = {
     zh: "访客",
     ar: "زائر",
   },
+
+  homeHeroBadge: {
+    en: "Conversation-first HSK 3.0",
+    zh: "以对话为主 HSK 3.0",
+    ar: "HSK 3.0 بأسلوب المحادثة",
+  },
+  homeHeroTitle: {
+    en: "Learn Chinese inside conversations that feel alive.",
+    zh: "在真实的对话中学习生动的中文。",
+    ar: "تعلّم الصينية من خلال محادثات واضحة وقريبة من الحياة اليومية.",
+  },
+  homeHeroSubtitle: {
+    en: "A multilingual HSK 1-6 learning studio for vocabulary, long dialogue, flashcards, listening, grammar, and saved progress.",
+    zh: "多语言 HSK 1-6 学习平台：词汇、长对话、闪卡、听力、语法和进度保存。",
+    ar: "منصة متعددة اللغات لمستويات HSK 1-6: مفردات، محادثات، بطاقات، استماع، قواعد، وحفظ للتقدم.",
+  },
+  startHsk1: {
+    en: "Start HSK 1",
+    zh: "开始 HSK 1",
+    ar: "ابدأ HSK 1",
+  },
+  reviewFlashcards: {
+    en: "Review flashcards",
+    zh: "复习闪卡",
+    ar: "راجع البطاقات",
+  },
+  grammarPath: {
+    en: "Grammar path",
+    zh: "语法路径",
+    ar: "مسار القواعد",
+  },
+  liveLessonPreview: {
+    en: "Live lesson preview",
+    zh: "课程预览",
+    ar: "معاينة درس مباشر",
+  },
+  shadowing: {
+    en: "Shadowing",
+    zh: "跟读练习",
+    ar: "المحاكاة الصوتية",
+  },
+  teacher: {
+    en: "Teacher",
+    zh: "老师",
+    ar: "المعلم",
+  },
+  student: {
+    en: "Student",
+    zh: "学生",
+    ar: "الطالب",
+  },
+  previewTeacherLineHanzi: {
+    en: "你今天想学什么？",
+    zh: "你今天想学什么？",
+    ar: "你今天想学什么？",
+  },
+  previewTeacherLinePinyin: {
+    en: "Nǐ jīntiān xiǎng xué shénme?",
+    zh: "Nǐ jīntiān xiǎng xué shénme?",
+    ar: "Nǐ jīntiān xiǎng xué shénme?",
+  },
+  previewTeacherLineTranslation: {
+    en: "What do you want to study today?",
+    zh: "你今天想学什么？",
+    ar: "ماذا تريد أن تدرس اليوم؟",
+  },
+  previewStudentLineHanzi: {
+    en: "我想练习对话。",
+    zh: "我想练习对话。",
+    ar: "我想练习对话。",
+  },
+  previewStudentLinePinyin: {
+    en: "Wǒ xiǎng liànxí huìhuà.",
+    zh: "Wǒ xiǎng liànxí huìhuà.",
+    ar: "Wǒ xiǎng liànxí huìhuà.",
+  },
+  previewStudentLineTranslation: {
+    en: "I want to practice conversation.",
+    zh: "我想练习对话。",
+    ar: "أريد التدرب على المحادثة.",
+  },
+  pronunciationPractice: {
+    en: "Pronunciation practice",
+    zh: "发音练习",
+    ar: "تدريب النطق",
+  },
+  pronunciationNotice: {
+    en: "Speaking practice and pronunciation scoring are not active yet.",
+    zh: "口语练习和发音打分正在开发中。",
+    ar: "تدريب التحدث وتقييم النطق غير مفعّلين حاليا.",
+  },
+  chooseYourLevel: {
+    en: "Choose your level",
+    zh: "选择你的级别",
+    ar: "اختر مستواك",
+  },
+  sixLevelsRhythm: {
+    en: "Six HSK levels, one consistent learning rhythm.",
+    zh: "六个 HSK 级别，保持一致的学习节奏。",
+    ar: "ستة مستويات HSK بإيقاع تعلم واضح وثابت.",
+  },
+  eachLevelSplit: {
+    en: "Each level is split into focused units so you can study words, examples, flashcards, grammar, and conversation practice at a comfortable pace.",
+    zh: "每个级别分为重点单元，方便你按自己的节奏学习词汇、例句、闪卡、语法和对话练习。",
+    ar: "كل مستوى مقسم إلى وحدات مركزة لتدرس الكلمات والأمثلة والبطاقات والقواعد والمحادثة براحة.",
+  },
+  naturalInput: {
+    en: "Natural input",
+    zh: "自然输入",
+    ar: "إدخال طبيعي",
+  },
+  longConversationsFirst: {
+    en: "Long conversations first",
+    zh: "先练长对话",
+    ar: "المحادثات الطويلة أولا",
+  },
+  naturalInputDesc: {
+    en: "Every unit is shaped around everyday scenes: family, school, restaurants, travel, health, plans, calls, and directions.",
+    zh: "每个单元都围绕日常场景设计：家庭、学校、餐厅、旅行、健康、计划、通话和问路。",
+    ar: "كل وحدة مبنية حول مواقف يومية: العائلة، المدرسة، المطاعم، السفر، الصحة، الخطط، المكالمات، والاتجاهات.",
+  },
+  memoryLoop: {
+    en: "Memory loop",
+    zh: "记忆循环",
+    ar: "حلقة التذكر",
+  },
+  flashcardsRepetition: {
+    en: "Flashcards plus repetition",
+    zh: "闪卡加智能间隔复习",
+    ar: "بطاقات مع تكرار ذكي",
+  },
+  memoryLoopDesc: {
+    en: "Chinese on the front, pinyin and meanings on the back, then Again, Hard, Good, and Easy scheduling.",
+    zh: "正面为汉字，背面为拼音和意思，支持重来、困难、良好、简单的智能复习排程。",
+    ar: "الصينية في الوجه الأمامي، والبينيين والمعاني في الخلف، ثم مراجعة حسب: مرة أخرى، صعب، جيد، سهل.",
+  },
+  pronunciationPracticeSoon: {
+    en: "Pronunciation Practice Soon",
+    zh: "发音练习即将推出",
+    ar: "تدريب النطق قريبا",
+  },
+  pronunciationPracticeDesc: {
+    en: "Speaking practice and pronunciation scoring are planned, but they are not active in the app yet.",
+    zh: "口语跟读与发音打分正在规划中，暂未在应用中上线。",
+    ar: "تدريب التحدث وتقييم النطق مخططان، لكنهما غير مفعّلين في التطبيق بعد.",
+  },
+  studyModesTitle: {
+    en: "Study modes",
+    zh: "学习模式",
+    ar: "طرق الدراسة",
+  },
+  studyModesSubtitle: {
+    en: "A complete practice loop, not a vocabulary dump.",
+    zh: "完整的练习闭环，而非机械的词汇罗列。",
+    ar: "حلقة تدريب كاملة، وليست مجرد قائمة مفردات.",
+  },
+  studyModesDesc: {
+    en: "Move between conversations, flashcards, grammar, listening, and translation practice without losing your place. Pronunciation practice is coming soon.",
+    zh: "在对话、闪卡、语法、听力和翻译练习间自如切换，随时掌握进度。发音练习即将推出。",
+    ar: "تنقل بين المحادثات والبطاقات والقواعد والاستماع والترجمة دون أن تفقد مكانك. تدريب النطق قادم قريبا.",
+  },
+  conversationMode: {
+    en: "Conversation Mode",
+    zh: "对话模式",
+    ar: "وضع المحادثة",
+  },
+  shadowingMode: {
+    en: "Shadowing Mode",
+    zh: "跟读模式",
+    ar: "وضع المحاكاة",
+  },
+  flashcardMode: {
+    en: "Flashcard Mode",
+    zh: "闪卡模式",
+    ar: "وضع البطاقات",
+  },
+  listeningQuiz: {
+    en: "Listening Quiz",
+    zh: "听力测验",
+    ar: "اختبار الاستماع",
+  },
+  translationQuiz: {
+    en: "Translation Quiz",
+    zh: "翻译测验",
+    ar: "اختبار الترجمة",
+  },
+  typingQuiz: {
+    en: "Typing Quiz",
+    zh: "拼写测验",
+    ar: "اختبار الكتابة",
+  },
+  dailyLifeCoverage: {
+    en: "Daily-life coverage",
+    zh: "日常场景覆盖",
+    ar: "مواقف الحياة اليومية",
+  },
+  dailyLifeCoverageDesc: {
+    en: "Conversations are organized around situations learners actually meet.",
+    zh: "对话围绕学习者实际会遇到的生活情景组织。",
+    ar: "المحادثات منظمة حول مواقف يقابلها المتعلمون فعلا.",
+  },
+  unitBatchSize: {
+    en: "Unit Batch Size:",
+    zh: "单元词数规格：",
+    ar: "حجم دفعة الوحدة:",
+  },
+  batchSize50: {
+    en: "50 words (Standard)",
+    zh: "50 词 (标准)",
+    ar: "50 كلمة (قياسي)",
+  },
+  batchSize25: {
+    en: "25 words (Bite-sized)",
+    zh: "25 词 (迷你)",
+    ar: "25 كلمة (موجز)",
+  },
+  batchSize100: {
+    en: "100 words (Deep Dive)",
+    zh: "100 词 (强化)",
+    ar: "100 كلمة (موسع)",
+  },
+  unitMastery: {
+    en: "Unit Mastery",
+    zh: "单元掌握度",
+    ar: "إتقان الوحدة",
+  },
+  wordsMastered: {
+    en: "words mastered",
+    zh: "已掌握词汇",
+    ar: "كلمات تم إتقانها",
+  },
+  practiceFlashcardsCount: {
+    en: "Practice Flashcards",
+    zh: "练习闪卡",
+    ar: "تدريب البطاقات",
+  },
+  dialogueLearning: {
+    en: "Dialogue learning",
+    zh: "情景对话学习",
+    ar: "تعلم بالحوار",
+  },
+  conversationLessonsByLevel: {
+    en: "Conversation lessons by HSK level.",
+    zh: "按 HSK 级别划分的对话课程。",
+    ar: "دروس المحادثة حسب مستوى HSK.",
+  },
+  conversationsHeroDesc: {
+    en: "Use short dialogue lessons to connect vocabulary with real situations, then practice listening, shadowing, and comprehension.",
+    zh: "通过简短的对话课程将词汇与真实情境结合，随后进行听力、跟读与理解练习。",
+    ar: "استخدم دروس الحوار القصيرة لربط المفردات بمواقف حقيقية، ثم تدرب على الاستماع والمحاكاة والفهم.",
+  },
+  conversationLibrary: {
+    en: "Conversation library",
+    zh: "对话文库",
+    ar: "مكتبة المحادثات",
+  },
+  conversationLibrarySubtitle: {
+    en: "Practice useful dialogue one unit at a time.",
+    zh: "循序渐进，逐单元练习实用对话。",
+    ar: "تدرب على حوار مفيد وحدة تلو الأخرى.",
+  },
+  conversationLibraryDesc: {
+    en: "Each level is organized into small lessons so new words are easier to hear, repeat, and remember.",
+    zh: "每个级别被划分为小课时，便于听清、复述并牢记生词。",
+    ar: "تم تنظيم كل مستوى في دروس صغيرة لتسهيل سماع الكلمات وترديدها وتذكرها.",
+  },
+  followUnitsInOrder: {
+    en: "Follow the units in order or jump to the level you are studying now.",
+    zh: "按顺序学习各个单元，或直接跳转到当前学习的级别。",
+    ar: "اتبع الوحدات بالترتيب أو انتقل إلى المستوى الذي تدرسه الآن.",
+  },
+  unitLessons: {
+    en: "unit lessons",
+    zh: "单元课程",
+    ar: "دروس الوحدات",
+  },
+  spacedRepetition: {
+    en: "Spaced repetition",
+    zh: "间隔重复记忆",
+    ar: "التكرار المتباعد",
+  },
+  flashcardsHeroTitle: {
+    en: "Flashcards that keep the conversation moving.",
+    zh: "让会话自然流淌的词汇闪卡。",
+    ar: "بطاقات تعليمية تحافظ على استمرار تعلم المحادثة.",
+  },
+  flashcardsHeroDesc: {
+    en: "Review Chinese on the front, then pinyin, English, Arabic, examples, and audio status on the back. The deck uses Again, Hard, Good, and Easy review choices.",
+    zh: "正面查看汉字，背面提供拼音、英文、阿拉伯文、例句及音频。卡片组支持重来、困难、良好和简单四级评估。",
+    ar: "راجع الصينية في الوجه الأمامي، ثم البينيين والإنجليزية والعربية والأمثلة وحالة الصوت في الخلف، مع خيارات مراجعة ذكية.",
+  },
+  pickADeck: {
+    en: "Pick a deck",
+    zh: "选择卡组",
+    ar: "اختر مجموعة",
+  },
+  studyByLevel: {
+    en: "Study by level",
+    zh: "按级别学习",
+    ar: "الدراسة حسب المستوى",
+  },
+  studyByLevelDesc: {
+    en: "Choose a deck, test yourself, and save difficult words for another round.",
+    zh: "选择一套卡组，自测掌握度，并将难词留待下一轮重点复习。",
+    ar: "اختر مجموعة، واختبر نفسك، واحفظ الكلمات الصعبة لجولة أخرى.",
+  },
+  cards: {
+    en: "cards",
+    zh: "张卡片",
+    ar: "بطاقات",
+  },
+  hskDecks: {
+    en: "HSK decks",
+    zh: "套 HSK 卡组",
+    ar: "مجموعات HSK",
+  },
+  pickLevelReviewQuick: {
+    en: "Pick a level and review words in quick, focused sessions.",
+    zh: "选择一个级别，在快节奏的专注会话中复习词汇。",
+    ar: "اختر مستوى وراجع الكلمات في جلسات سريعة ومركزة.",
+  },
+  grammarHeroTitle: {
+    en: "Learn grammar in small, clear steps.",
+    zh: "小步快跑，轻松掌握核心语法。",
+    ar: "تعلم القواعد بخطوات صغيرة وواضحة.",
+  },
+  grammarHeroDesc: {
+    en: "Choose an HSK level, open a unit, and practice sentence patterns with examples, pinyin, and short explanations.",
+    zh: "选择 HSK 级别，开启单元，结合例句、拼音与精简释义掌握句型规律。",
+    ar: "اختر مستوى HSK، وافتح وحدة، وتدرب على أنماط الجمل مع الأمثلة والبينيين وشروحات واضحة.",
+  },
+  grammarLevels: {
+    en: "Grammar levels",
+    zh: "语法分级",
+    ar: "مستويات القواعد",
+  },
+  grammarLevelsDesc: {
+    en: "Each level is split into short units so the page stays easy to scan and practice.",
+    zh: "每个级别分为短小单元，页面清晰易扫读，便于即时练习。",
+    ar: "كل مستوى مقسم إلى وحدات قصيرة لسهولة التصفح والتدريب.",
+  },
+  chooseALevel: {
+    en: "Choose a level",
+    zh: "选择级别",
+    ar: "اختر مستوى",
+  },
+  grammarPoints: {
+    en: "grammar points",
+    zh: "个语法点",
+    ar: "نقاط قواعد",
+  },
+  levels: {
+    en: "levels",
+    zh: "个级别",
+    ar: "مستويات",
+  },
+  min: {
+    en: "min",
+    zh: "分钟",
+    ar: "دقيقة",
+  },
+  openLevel: {
+    en: "Open level",
+    zh: "进入级别",
+    ar: "فتح المستوى",
+  },
+  openLibrary: {
+    en: "Open library",
+    zh: "打开文库",
+    ar: "فتح المكتبة",
+  },
+  levelMap: {
+    en: "Level map",
+    zh: "级别地图",
+    ar: "خريطة المستوى",
+  },
+  firstWordsInThisLevel: {
+    en: "First words in this level",
+    zh: "本级别初始词汇",
+    ar: "أول كلمات هذا المستوى",
+  },
+  firstWordsDesc: {
+    en: "Preview vocabulary before opening units or flashcards.",
+    zh: "在开启单元或闪卡前先浏览词汇预览。",
+    ar: "عاين المفردات قبل فتح الوحدات أو البطاقات.",
+  },
+  practiceTheseWords: {
+    en: "Practice these words",
+    zh: "练习这些词汇",
+    ar: "تدرّب على هذه الكلمات",
+  },
+  practiceModes: {
+    en: "Practice modes",
+    zh: "练习方式",
+    ar: "طرق التدريب",
+  },
+  unitCardStudyDesc: {
+    en: "Study the words, review flashcards, practice conversation, listening, shadowing, and track your progress in one focused room.",
+    zh: "在一个专属空间中学习生词、复习闪卡、演练对话、训练听力与跟读，并实时追踪学习成效。",
+    ar: "ادرس الكلمات، وراجع البطاقات، وتدرب على المحادثة والاستماع والمحاكاة، وتابع تقدمك في مكان واحد.",
+  },
+  hskLevelHeroOverview: {
+    en: "This level is divided into focused units with vocabulary pages, flashcards, conversation practice, listening, grammar, and local progress tracking.",
+    zh: "该级别被划分为多个重点单元，涵盖生词表、闪卡、对话操练、听力、语法及本地进度跟踪。",
+    ar: "هذا المستوى مقسم إلى وحدات مركزة تشمل صفحات المفردات، والبطاقات، وتدريب المحادثة، والاستماع، والقواعد، وتتبع التقدم.",
+  },
+  returnToHskLevel: {
+    en: "Return to HSK",
+    zh: "返回 HSK",
+    ar: "العودة إلى HSK",
+  },
+  unitNotFound: {
+    en: "Unit not found",
+    zh: "未找到单元",
+    ar: "الوحدة غير موجودة",
+  },
+  unitStudyAllVocab: {
+    en: "Study all vocabulary words with pronunciation, examples, translations, and dedicated flashcard recall sessions.",
+    zh: "结合标准发音、例句释义与专属闪卡召回，全面掌握单元词汇。",
+    ar: "ادرس جميع مفردات الوحدة مع النطق والأمثلة والترجمات وجلسات استرجاع البطاقات المخصصة.",
+  },
+  vocabularyList: {
+    en: "Vocabulary List",
+    zh: "词汇表",
+    ar: "قائمة المفردات",
+  },
+  conversation: {
+    en: "Conversation",
+    zh: "对话",
+    ar: "المحادثة",
+  },
 };
 
 export function getLocalizedMeaning(meaning, lang = "en") {
@@ -1036,5 +1469,66 @@ export function getLocalizedExample(example, lang = "en") {
 }
 
 export function t(key, lang = "en") {
-  return dictionary[key]?.[lang] || dictionary[key]?.en || key;
+  if (!key) return "";
+  if (dictionary[key]?.[lang]) {
+    return dictionary[key][lang];
+  }
+  if (dictionary[key]?.en) {
+    if (lang === "ar" && arabicUiReplacements[dictionary[key].en]) {
+      return arabicUiReplacements[dictionary[key].en];
+    }
+    return dictionary[key].en;
+  }
+  if (lang === "ar") {
+    if (arabicUiReplacements[key]) {
+      return arabicUiReplacements[key];
+    }
+    const trimmed = String(key).trim();
+    if (arabicUiReplacements[trimmed]) {
+      return arabicUiReplacements[trimmed];
+    }
+  }
+  return key;
+}
+
+
+export { arabicUiReplacements };
+
+export const levelThemeScenes = {
+  1: { en: "First conversations", zh: "初识会话", ar: "أول المحادثات" },
+  2: { en: "Daily confidence", zh: "日常自信", ar: "ثقة يومية" },
+  3: { en: "Real situations", zh: "真实场景", ar: "مواقف واقعية" },
+  4: { en: "Complex stories", zh: "丰富语篇", ar: "قصص أكثر تعقيدا" },
+  5: { en: "Fluent flow", zh: "流畅表达", ar: "طلاقة متدرجة" },
+  6: { en: "Advanced mastery", zh: "高级精通", ar: "إتقان متقدم" },
+};
+
+export const levelThemeTones = {
+  1: { en: "Start speaking with high-frequency words.", zh: "用高频词汇开启日常表达。", ar: "ابدأ التحدث بالكلمات الأكثر استخداما." },
+  2: { en: "Connect familiar ideas into longer exchanges.", zh: "将熟悉的观点串联成更长对话。", ar: "اربط الأفكار المألوفة في حوارات أطول." },
+  3: { en: "Handle plans, preferences, and practical needs.", zh: "应对计划、喜好与实际生活需求。", ar: "تعامل مع الخطط والتفضيلات والاحتياجات اليومية." },
+  4: { en: "Discuss work, travel, study, and opinions.", zh: "探讨工作、旅行、学术与各方见解。", ar: "ناقش العمل والسفر والدراسة والآراء." },
+  5: { en: "Grow into nuanced listening and expression.", zh: "提升对细腻语感的听辨与深层表达。", ar: "طوّر الاستماع والتعبير بتفاصيل أدق." },
+  6: { en: "Build advanced vocabulary, grammar, and reading confidence with focused practice units.", zh: "借助针对性训练单元建立高级词汇、语法及阅读自信。", ar: "ابن مفردات متقدمة وقواعد وثقة في القراءة من خلال وحدات تدريب مركزة." },
+};
+
+export const grammarLevelLabels = {
+  1: { en: "Sentence basics", zh: "基础句型", ar: "أساسيات الجملة" },
+  2: { en: "Daily patterns", zh: "日常句式", ar: "الأنماط اليومية" },
+  3: { en: "Longer ideas", zh: "复合意群", ar: "أفكار أطول" },
+  4: { en: "Connected speech", zh: "连贯语段", ar: "الكلام المتصل" },
+  5: { en: "Advanced flow", zh: "高级流畅", ar: "طلاقة متقدمة" },
+  6: { en: "Polished expression", zh: "精准润色", ar: "تعبير متقن" },
+};
+
+export function getLevelScene(level, lang = "en") {
+  return levelThemeScenes[level]?.[lang] || levelThemeScenes[level]?.en || "";
+}
+
+export function getLevelTone(level, lang = "en") {
+  return levelThemeTones[level]?.[lang] || levelThemeTones[level]?.en || "";
+}
+
+export function getGrammarLevelLabel(level, lang = "en") {
+  return grammarLevelLabels[level]?.[lang] || grammarLevelLabels[level]?.en || "";
 }

@@ -94,7 +94,7 @@ export default function LoginCard({ initialError = "" }) {
             autoComplete="email"
             disabled={submitting}
             placeholder={tr("emailPlaceholder")}
-            className="rounded-2xl border border-slate-300 px-4 py-3 text-sm text-slate-950 placeholder:text-slate-400 outline-none transition focus:border-teal-600 focus:ring-2 focus:ring-teal-100 disabled:opacity-60"
+            className="rounded-2xl border border-slate-300 px-4 py-3 text-base sm:text-sm text-slate-950 placeholder:text-slate-400 outline-none transition focus:border-teal-600 focus:ring-2 focus:ring-teal-100 disabled:opacity-60"
           />
         </div>
 
@@ -123,7 +123,7 @@ export default function LoginCard({ initialError = "" }) {
             autoComplete="current-password"
             disabled={submitting}
             placeholder={tr("passwordPlaceholder")}
-            className="rounded-2xl border border-slate-300 px-4 py-3 text-sm text-slate-950 placeholder:text-slate-400 outline-none transition focus:border-teal-600 focus:ring-2 focus:ring-teal-100 disabled:opacity-60"
+            className="rounded-2xl border border-slate-300 px-4 py-3 text-base sm:text-sm text-slate-950 placeholder:text-slate-400 outline-none transition focus:border-teal-600 focus:ring-2 focus:ring-teal-100 disabled:opacity-60"
           />
         </div>
 
