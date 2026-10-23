@@ -41,6 +41,19 @@ export default async function UnitPage({ params }) {
     );
   }
 
+  const wordMap = new Map(
+    (allWords || []).map((w) => [
+      w.id,
+      { id: w.id, hanzi: w.hanzi, pinyin: w.pinyin },
+    ]),
+  );
+
+  const conversationTargetWords = conversation
+    ? (conversation.targetVocabularyIds || [])
+        .map((id) => wordMap.get(id))
+        .filter(Boolean)
+    : [];
+
   return (
     <div className="space-y-10 pb-12">
       {/* Unit Hero Banner */}
@@ -48,20 +61,15 @@ export default async function UnitPage({ params }) {
         <div
           className={`absolute inset-x-0 top-0 h-2 bg-gradient-to-r ${theme.accent}`}
         />
-        <div className="grid gap-8 lg:grid-cols-[1fr_380px] lg:items-center">
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
           <div>
-            <div className="flex items-center gap-3">
-              <Link
-                href={`/hsk/${level}`}
-                className="text-xs font-bold text-slate-500 hover:text-teal-700"
-              >
-                ← HSK {level}
-              </Link>
-              <Pill tone="blue">
+            <div className="flex items-center gap-2">
+              <Pill>HSK {level}</Pill>
+              <span className="text-xs font-bold text-slate-600">
                 Unit {unit.id}
-              </Pill>
+              </span>
             </div>
-            <h1 className="mt-4 text-4xl font-black text-slate-950 sm:text-6xl tracking-tight">
+            <h1 className="mt-4 text-3xl font-black text-slate-950 sm:text-5xl">
               Words {unit.start}–{unit.end}
             </h1>
             <p className="mt-4 max-w-2xl text-base font-semibold leading-7 text-slate-600">
@@ -83,7 +91,7 @@ export default async function UnitPage({ params }) {
           <section id="conversation">
             <ConversationLesson
               conversation={conversation}
-              words={allWords}
+              targetWords={conversationTargetWords}
             />
           </section>
         ) : null}

@@ -5,7 +5,12 @@ import { HSK_LEVELS } from "./schema";
 const root = process.cwd();
 
 function readConversationFile(file) {
-  return JSON.parse(fs.readFileSync(file, "utf8"));
+  try {
+    return JSON.parse(fs.readFileSync(file, "utf8"));
+  } catch (err) {
+    console.error(`Error reading conversation file ${file}:`, err);
+    return null;
+  }
 }
 
 export function getConversationsForLevel(level) {
@@ -35,7 +40,8 @@ export function getConversationsForLevel(level) {
     .readdirSync(dir)
     .filter((file) => file.endsWith(".json"))
     .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
-    .map((file) => readConversationFile(path.join(dir, file)));
+    .map((file) => readConversationFile(path.join(dir, file)))
+    .filter(Boolean);
 }
 
 export function getConversationForUnit(level, unitId) {

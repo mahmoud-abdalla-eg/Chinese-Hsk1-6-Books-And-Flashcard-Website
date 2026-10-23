@@ -45,17 +45,19 @@ export default function CompletionToggle({ id, type, label }) {
           : "border border-slate-300 bg-white text-slate-800 hover:border-teal-400"
       }`}
     >
-      {completed ? `${label} done` : `Mark ${label} done`}
-      <span className="ml-2 text-xs opacity-70">
-        {syncStatusLabel(syncStatus)}
-      </span>
+      {completed ? tr("completed") : tr("markDone")}
+      {syncStatusLabel(syncStatus, tr) ? (
+        <span className="ml-2 text-xs opacity-70">
+          {syncStatusLabel(syncStatus, tr)}
+        </span>
+      ) : null}
     </button>
   );
 }
 
-function syncStatusLabel(status) {
-  if (status === "syncing") return "Saving";
-  if (status === "local") return "Offline";
-  if (status === "guest") return "Guest";
+function syncStatusLabel(status, tr) {
+  if (status === "syncing") return tr("saving");
+  if (status === "local") return tr("offline");
+  if (status === "guest") return tr("guest");
   return "";
 }

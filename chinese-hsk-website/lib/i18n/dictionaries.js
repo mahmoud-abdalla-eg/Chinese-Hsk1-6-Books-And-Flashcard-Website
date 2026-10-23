@@ -340,7 +340,7 @@ export const dictionary = {
     zh: "\u68c0\u67e5\u5e94\u7528\u662f\u5426\u80fd\u8fde\u63a5\u4f60\u7684\u5b66\u4e60\u8fdb\u5ea6\u6570\u636e\u5e93\u3002",
     ar: "\u062a\u062d\u0642\u0642 \u0645\u0645\u0627 \u0625\u0630\u0627 \u0643\u0627\u0646 \u0627\u0644\u062a\u0637\u0628\u064a\u0642 \u064a\u0633\u062a\u0637\u064a\u0639 \u0627\u0644\u0648\u0635\u0648\u0644 \u0625\u0644\u0649 \u0642\u0627\u0639\u062f\u0629 \u062a\u0642\u062f\u0645\u0643.",
   },
-    checkDatabase: {
+  checkDatabase: {
     en: "Check Database",
     zh: "检查数据库",
     ar: "افحص قاعدة البيانات",
@@ -945,27 +945,76 @@ export const dictionary = {
     zh: "正在创建账户...",
     ar: "جاري إنشاء الحساب...",
   },
+  comingSoon: {
+    en: "Coming soon",
+    zh: "即将推出",
+    ar: "قريباً",
+  },
+  ready: {
+    en: "Ready",
+    zh: "就绪",
+    ar: "جاهز",
+  },
+  targetWords: {
+    en: "target words",
+    zh: "目标词汇",
+    ar: "كلمات مستهدفة",
+  },
+  fullDialogueAudio: {
+    en: "Full Dialogue Audio",
+    zh: "完整对话音频",
+    ar: "صوت المحادثة الكاملة",
+  },
+  fullDialogueAudioDesc: {
+    en: "Listen to the complete native dialogue recording",
+    zh: "收听完整原生对话录音",
+    ar: "استمع إلى تسجيل المحادثة الأصلي الكامل",
+  },
+  playFullDialogue: {
+    en: "Play full dialogue track",
+    zh: "播放完整对话录音",
+    ar: "تشغيل تسجيل المحادثة بالكامل",
+  },
+  toggleSpeechRate: {
+    en: "Toggle dialogue speech rate (1.0x / 0.75x)",
+    zh: "切换对话语速 (1.0x / 0.75x)",
+    ar: "تغيير سرعة نطق المحادثة (1.0x / 0.75x)",
+  },
+  completed: {
+    en: "Completed",
+    zh: "已完成",
+    ar: "مكتمل",
+  },
+  markDone: {
+    en: "Mark done",
+    zh: "标记完成",
+    ar: "تحديد كمكتمل",
+  },
+  guest: {
+    en: "Guest",
+    zh: "访客",
+    ar: "زائر",
+  },
 };
 
 export function getLocalizedMeaning(meaning, lang = "en") {
   if (!meaning) return "";
   if (typeof meaning === "string") return meaning;
   if (lang === "ar") {
-    return meaning.ar || meaning.en || "";
+    return meaning.ar || "";
   }
-  return meaning.en || meaning.ar || "";
+  return meaning.en || "";
 }
 
 export function getLocalizedExample(example, lang = "en") {
   if (!example) return "";
   if (typeof example === "string") return example;
   if (lang === "ar") {
-    return example.ar || example.en || "";
+    return example.ar || "";
   }
-  return example.en || example.ar || "";
+  return example.en || "";
 }
 
 export function t(key, lang = "en") {
   return dictionary[key]?.[lang] || dictionary[key]?.en || key;
 }
-

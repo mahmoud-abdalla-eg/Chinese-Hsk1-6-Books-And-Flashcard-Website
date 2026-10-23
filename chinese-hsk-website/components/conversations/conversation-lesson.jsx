@@ -6,13 +6,24 @@ import { useLanguage } from "@/components/language/language-provider";
 import CompletionToggle from "@/components/progress/completion-toggle";
 import { Card, Pill } from "@/components/ui/card";
 
-export default function ConversationLesson({ conversation, words = [] }) {
+export default function ConversationLesson({
+  conversation,
+  words = [],
+  targetWords: propTargetWords,
+}) {
   const { lang, tr } = useLanguage();
   const [playbackRate, setPlaybackRate] = useState(1.0);
 
-  const targetWords = words.filter((word) =>
-    conversation.targetVocabularyIds?.includes(word.id),
-  );
+  const targetWords =
+    propTargetWords ||
+    words.filter((word) => conversation.targetVocabularyIds?.includes(word.id));
+
+  const isArabic = lang === "ar";
+  const title = isArabic
+    ? conversation.title?.ar || conversation.title?.zh || ""
+    : conversation.title?.en || conversation.title?.zh || "";
+  const showZhSubtitle =
+    Boolean(conversation.title?.zh) && conversation.title.zh !== title;
 
   return (
     <Card className="space-y-6 overflow-hidden">
@@ -25,8 +36,8 @@ export default function ConversationLesson({ conversation, words = [] }) {
               }
             >
               {conversation.status === "needs-authoring"
-                ? "Coming soon"
-                : "Ready"}
+                ? tr("comingSoon")
+                : tr("ready")}
             </Pill>
             <button
               type="button"
@@ -38,7 +49,7 @@ export default function ConversationLesson({ conversation, words = [] }) {
                   ? "border-teal-500 bg-teal-50 text-teal-900"
                   : "border-slate-200 bg-white text-slate-600 hover:border-slate-300"
               }`}
-              title="Toggle dialogue speech rate (1.0x / 0.75x)"
+              title={tr("toggleSpeechRate")}
             >
               <svg
                 className="h-3.5 w-3.5 text-current shrink-0"
@@ -56,16 +67,17 @@ export default function ConversationLesson({ conversation, words = [] }) {
               <span className="font-mono text-[11px]">
                 {playbackRate === 0.75 ? "0.75x" : "1.0x"}
               </span>
-              <span>{playbackRate === 0.75 ? tr("slowAudio") : tr("normalAudio")}</span>
+              <span>
+                {playbackRate === 0.75 ? tr("slowAudio") : tr("normalAudio")}
+              </span>
             </button>
           </div>
-          <h2 className="mt-3 text-3xl font-black text-slate-950">
-            {conversation.title?.en}
-          </h2>
-          <p className="mt-1 text-sm font-semibold leading-6 text-slate-600">
-            {conversation.title?.zh} -{" "}
-            <span dir="rtl">{conversation.title?.ar}</span>
-          </p>
+          <h2 className="mt-3 text-3xl font-black text-slate-950">{title}</h2>
+          {showZhSubtitle ? (
+            <p className="mt-1 text-sm font-semibold leading-6 text-slate-600">
+              {conversation.title.zh}
+            </p>
+          ) : null}
         </div>
         <div className="space-y-3">
           <div className="rounded-2xl bg-blue-50 p-4 text-center text-blue-950">
@@ -73,7 +85,7 @@ export default function ConversationLesson({ conversation, words = [] }) {
               {targetWords.length}
             </strong>
             <span className="text-xs font-black uppercase tracking-[0.16em] text-blue-700">
-              target words
+              {tr("targetWords")}
             </span>
           </div>
           <CompletionToggle
@@ -88,16 +100,16 @@ export default function ConversationLesson({ conversation, words = [] }) {
         <div className="flex items-center justify-between gap-4 rounded-2xl border border-teal-200 bg-teal-50/60 p-4">
           <div className="space-y-0.5">
             <span className="text-xs font-bold uppercase tracking-wider text-teal-800">
-              Full Dialogue Audio
+              {tr("fullDialogueAudio")}
             </span>
             <p className="text-sm font-semibold text-teal-950">
-              Listen to the complete native dialogue recording
+              {tr("fullDialogueAudioDesc")}
             </p>
           </div>
           <AudioButton
             src={conversation.audio}
             playbackRate={playbackRate}
-            label="Play full dialogue track"
+            label={tr("playFullDialogue")}
           />
         </div>
       ) : null}
@@ -105,10 +117,9 @@ export default function ConversationLesson({ conversation, words = [] }) {
       {conversation.dialogue?.length ? (
         <div className="space-y-3">
           {conversation.dialogue.map((line) => {
-            const isArabic = lang === "ar";
             const lineTranslation = isArabic
-              ? line.translation?.ar || line.translation?.en
-              : line.translation?.en || line.translation?.ar;
+              ? line.translation?.ar || ""
+              : line.translation?.en || "";
             return (
               <div
                 key={line.id}

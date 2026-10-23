@@ -4,7 +4,7 @@ const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
-function createFetchWithTimeout(timeoutMs = 4000) {
+function createFetchWithTimeout(timeoutMs = 20000) {
   return (url, options = {}) => {
     try {
       return fetch(url, {
@@ -24,7 +24,7 @@ export const supabase =
   supabaseUrl && supabaseAnonKey
     ? createClient(supabaseUrl, supabaseAnonKey, {
         global: {
-          fetch: createFetchWithTimeout(4000),
+          fetch: createFetchWithTimeout(20000),
         },
       })
     : null;
@@ -52,7 +52,7 @@ export function getSupabaseAdmin() {
         autoRefreshToken: false,
       },
       global: {
-        fetch: createFetchWithTimeout(4000),
+        fetch: createFetchWithTimeout(20000),
       },
     });
   }
