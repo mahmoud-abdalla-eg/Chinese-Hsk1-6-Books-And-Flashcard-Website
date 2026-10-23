@@ -1,5 +1,16 @@
 import { createClient } from "@supabase/supabase-js";
 
+// Ensure Node.js fetch uses proxy if proxy environment variables exist
+if (
+  typeof process !== "undefined" &&
+  (process.env?.HTTPS_PROXY || process.env?.HTTP_PROXY || process.env?.ALL_PROXY)
+) {
+  const currentOptions = process.env.NODE_OPTIONS || "";
+  if (!currentOptions.includes("--use-env-proxy")) {
+    process.env.NODE_OPTIONS = `${currentOptions} --use-env-proxy`.trim();
+  }
+}
+
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 const supabaseServiceKey =
@@ -8,14 +19,19 @@ const supabaseServiceKey =
   process.env.SUPABASE_SERVICE_KEY;
 
 function createFetchWithTimeout(timeoutMs = 20000) {
-  return (url, options = {}) => {
+  return async (url, options = {}) => {
     try {
-      return fetch(url, {
+      return await fetch(url, {
         ...options,
         signal: options.signal || AbortSignal.timeout(timeoutMs),
       });
-    } catch {
-      return fetch(url, options);
+    } catch (err) {
+      if (err.name === "TimeoutError" || err.name === "AbortError") {
+        console.warn(
+          `[Supabase Fetch Timeout] Request to ${typeof url === "string" ? url : "endpoint"} timed out after ${timeoutMs}ms.`,
+        );
+      }
+      throw err;
     }
   };
 }

@@ -1,0 +1,17 @@
+{
+  "name": "chinese-hsk-root",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "chinese-hsk-website"
+  ],
+  "scripts": {
+    "dev": "npm --prefix chinese-hsk-website run dev",
+    "build": "npm --prefix chinese-hsk-website run build",
+    "start": "npm --prefix chinese-hsk-website run start",
+    "lint": "npm --prefix chinese-hsk-website run lint",
+    "format": "npm --prefix chinese-hsk-website run format",
+    "validate": "npm --prefix chinese-hsk-website run validate",
+    "seed:supabase": "npm --prefix chinese-hsk-website run seed:supabase"
+  }
+}
