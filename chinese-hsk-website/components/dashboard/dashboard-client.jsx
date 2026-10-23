@@ -82,12 +82,20 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
               {tr("guestBannerDesc")}
             </p>
           </div>
-          <Link
-            href="/account"
-            className="shrink-0 rounded-full bg-teal-700 px-6 py-2.5 text-center text-xs font-black text-white hover:bg-teal-800 shadow-xs transition"
-          >
-            {tr("logInOrSignUp")}
-          </Link>
+          <div className="flex shrink-0 items-center gap-2">
+            <Link
+              href="/login"
+              className="rounded-full border border-teal-700 bg-white px-4 py-2 text-center text-xs font-black text-teal-800 hover:bg-teal-50 transition"
+            >
+              {tr("logIn")}
+            </Link>
+            <Link
+              href="/signup"
+              className="rounded-full bg-teal-700 px-5 py-2 text-center text-xs font-black text-white hover:bg-teal-800 shadow-xs transition"
+            >
+              {tr("signUp")}
+            </Link>
+          </div>
         </div>
       ) : null}
 
@@ -262,7 +270,7 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
             </p>
             {isGuest ? (
               <Link
-                href="/account"
+                href="/login"
                 className="mt-3 inline-flex items-center gap-1 text-xs font-black text-teal-700 hover:text-teal-800"
               >
                 {tr("logInToTrackStreak")} &rarr;

@@ -16,7 +16,7 @@ export default function LanguageSwitcher() {
 
   return (
     <details ref={detailsRef} className="group relative">
-      <summary className="inline-flex min-w-36 cursor-pointer list-none items-center justify-between gap-3 rounded-full border border-slate-300 bg-white px-4 py-2.5 text-sm font-black text-slate-800 shadow-sm transition marker:hidden hover:border-teal-400 hover:bg-slate-50 [&::-webkit-details-marker]:hidden">
+      <summary className="inline-flex min-w-24 sm:min-w-36 cursor-pointer list-none items-center justify-between gap-2 sm:gap-3 rounded-full border border-slate-300 bg-white px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-black text-slate-800 shadow-xs transition marker:hidden hover:border-teal-400 hover:bg-slate-50 [&::-webkit-details-marker]:hidden">
         <span>{active.label}</span>
         <span className="text-xs text-slate-400">v</span>
       </summary>

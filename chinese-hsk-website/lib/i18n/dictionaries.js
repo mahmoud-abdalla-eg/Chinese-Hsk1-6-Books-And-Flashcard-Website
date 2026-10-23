@@ -300,6 +300,36 @@ export const dictionary = {
     zh: "\u5b66\u4e60",
     ar: "\u0627\u0644\u062f\u0631\u0627\u0633\u0629",
   },
+  supportProject: {
+    en: "Support",
+    zh: "支持我们",
+    ar: "ادعم المشروع",
+  },
+  supportDesc: {
+    en: "Mandarin Flow is 100% free and ad-free. Help support hosting and ongoing development.",
+    zh: "Mandarin Flow 完全免费且无广告。欢迎支持服务器与持续开发。",
+    ar: "ماندرين فلو مجاني 100% وبدون إعلانات. ساعد في دعم الاستضافة والتطوير المستمر.",
+  },
+  supportAction: {
+    en: "Support the Project",
+    zh: "支持项目",
+    ar: "ادعم الموقع",
+  },
+  madeBy: {
+    en: "Made with ❤️ by",
+    zh: "由 ❤️ 制作",
+    ar: "صُنع بـ ❤️ بواسطة",
+  },
+  feedbackAndSuggestions: {
+    en: "Suggestions & Feedback",
+    zh: "建议与反馈",
+    ar: "المقترحات والملاحظات",
+  },
+  copyrightNotice: {
+    en: "Mandarin Flow HSK. All rights reserved.",
+    zh: "Mandarin Flow HSK。保留所有权利。",
+    ar: "ماندرين فلو HSK. جميع الحقوق محفوظة.",
+  },
   databaseStatus: {
     en: "Database status",
     zh: "\u6570\u636e\u5e93\u72b6\u6001",
@@ -809,6 +839,111 @@ export const dictionary = {
     en: "Offline",
     zh: "离线",
     ar: "غير متصل",
+  },
+  signUp: {
+    en: "Sign up",
+    zh: "注册",
+    ar: "إنشاء حساب",
+  },
+  welcomeBack: {
+    en: "Welcome back",
+    zh: "欢迎回来",
+    ar: "مرحباً بعودتك",
+  },
+  loginPageTitle: {
+    en: "Log in to Mandarin Flow",
+    zh: "登录 Mandarin Flow",
+    ar: "تسجيل الدخول إلى Mandarin Flow",
+  },
+  loginSubtitle: {
+    en: "Log in to keep your study streak and sync your vocabulary across devices.",
+    zh: "登录以保持您的学习连续打卡并在设备间同步词汇。",
+    ar: "سجّل الدخول للحفاظ على سلسلة دراستك ومزامنة مفرداتك عبر أجهزتك.",
+  },
+  signupPageTitle: {
+    en: "Create your account",
+    zh: "创建您的账户",
+    ar: "أنشئ حسابك",
+  },
+  signupSubtitle: {
+    en: "Create an account to save learned words, track daily streaks, and backup your progress.",
+    zh: "创建账户以保存已学词汇、记录每日打卡并备份您的学习进度。",
+    ar: "أنشئ حساباً لحفظ الكلمات المتعلمة، وتتبع أيام دراستك، والنسخ الاحتياطي لتقدمك.",
+  },
+  dontHaveAccount: {
+    en: "Don't have an account?",
+    zh: "还没有账户？",
+    ar: "ليس لديك حساب؟",
+  },
+  alreadyHaveAccount: {
+    en: "Already have an account?",
+    zh: "لديك حساب بالفعل؟",
+    ar: "هل لديك حساب بالفعل؟",
+  },
+  name: {
+    en: "Name",
+    zh: "姓名",
+    ar: "الاسم",
+  },
+  namePlaceholder: {
+    en: "Your name or nickname",
+    zh: "您的姓名或昵称",
+    ar: "اسمك أو لقبك",
+  },
+  email: {
+    en: "Email",
+    zh: "电子邮箱",
+    ar: "البريد الإلكتروني",
+  },
+  emailPlaceholder: {
+    en: "you@example.com",
+    zh: "you@example.com",
+    ar: "you@example.com",
+  },
+  password: {
+    en: "Password",
+    zh: "密码",
+    ar: "كلمة المرور",
+  },
+  passwordPlaceholder: {
+    en: "At least 8 characters",
+    zh: "至少8个字符",
+    ar: "8 أحرف على الأقل",
+  },
+  confirmPassword: {
+    en: "Confirm password",
+    zh: "确认密码",
+    ar: "تأكيد كلمة المرور",
+  },
+  confirmPasswordPlaceholder: {
+    en: "Re-enter your password",
+    zh: "再次输入您的密码",
+    ar: "أعد إدخال كلمة المرور",
+  },
+  passwordsDoNotMatch: {
+    en: "Passwords do not match.",
+    zh: "两次输入的密码不一致。",
+    ar: "كلمتا المرور غير متطابقتين.",
+  },
+  passwordTooShort: {
+    en: "Password must be at least 8 characters.",
+    zh: "密码必须至少为8个字符。",
+    ar: "يجب أن تتكون كلمة المرور من 8 أحرف على الأقل.",
+  },
+  enterValidEmail: {
+    en: "Please enter a valid email address.",
+    zh: "请输入有效的电子邮箱地址。",
+    ar: "يرجى إدخال عنوان بريد إلكتروني صالح.",
+  },
+  loggingIn: {
+    en: "Logging in...",
+    zh: "正在登录...",
+    ar: "جاري تسجيل الدخول...",
+  },
+  creatingAccount: {
+    en: "Creating account...",
+    zh: "正在创建账户...",
+    ar: "جاري إنشاء الحساب...",
   },
 };
 

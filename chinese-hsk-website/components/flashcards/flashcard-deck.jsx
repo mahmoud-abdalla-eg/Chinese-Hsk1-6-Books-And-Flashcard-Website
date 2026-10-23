@@ -307,7 +307,7 @@ export default function FlashcardDeck({ words = [] }) {
             </button>
             {isGuest ? (
               <Link
-                href="/account"
+                href="/login"
                 className="rounded-full bg-teal-700 px-5 py-2.5 text-xs font-black text-white hover:bg-teal-800 shadow-xs"
               >
                 {tr("logInOrSignUp")}
