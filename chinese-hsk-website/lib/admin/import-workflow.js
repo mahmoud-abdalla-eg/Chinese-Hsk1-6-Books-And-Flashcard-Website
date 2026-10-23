@@ -60,7 +60,10 @@ export async function upsertImportJob(payload) {
 export async function deleteImportJob(jobId) {
   if (!jobId) return false;
   const supabase = getSupabaseAdmin();
-  const { error } = await supabase.from("import_batches").delete().eq("id", jobId);
+  const { error } = await supabase
+    .from("import_batches")
+    .delete()
+    .eq("id", jobId);
   return !error;
 }
 

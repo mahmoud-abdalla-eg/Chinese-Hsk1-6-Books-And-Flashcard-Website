@@ -25,7 +25,9 @@ async function getDatabaseStats() {
       { data: recentProgress },
     ] = await Promise.all([
       supabase.from("users").select("*", { count: "exact", head: true }),
-      supabase.from("user_progress").select("*", { count: "exact", head: true }),
+      supabase
+        .from("user_progress")
+        .select("*", { count: "exact", head: true }),
       supabase.from("admins").select("*", { count: "exact", head: true }),
       supabase
         .from("user_progress")

@@ -112,7 +112,10 @@ export function AuthProvider({ children }) {
         const data = await res.json();
         if (data?.user) {
           setUser(data.user);
-          window.localStorage.setItem(AUTH_CACHE_KEY, JSON.stringify(data.user));
+          window.localStorage.setItem(
+            AUTH_CACHE_KEY,
+            JSON.stringify(data.user),
+          );
           return data.user;
         }
       }

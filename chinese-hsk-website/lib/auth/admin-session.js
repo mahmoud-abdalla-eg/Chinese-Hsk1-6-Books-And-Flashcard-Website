@@ -41,7 +41,10 @@ function parseAdminSession(value) {
 }
 
 function sign(payload) {
-  const secret = process.env.AUTH_SECRET || process.env.SUPABASE_SERVICE_ROLE_KEY || "chinese-hsk-admin-secret";
+  const secret =
+    process.env.AUTH_SECRET ||
+    process.env.SUPABASE_SERVICE_ROLE_KEY ||
+    "chinese-hsk-admin-secret";
   return createHmac("sha256", secret).update(payload).digest("hex");
 }
 

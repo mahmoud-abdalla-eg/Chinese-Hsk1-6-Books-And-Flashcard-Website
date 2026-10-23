@@ -50,7 +50,9 @@ export async function getLearnerExport(userId) {
   if (!user) throw new Error("Learner not found.");
   return {
     user,
-    progress: progressRecord ? { userId: progressRecord.user_id, progress: progressRecord.progress } : null,
+    progress: progressRecord
+      ? { userId: progressRecord.user_id, progress: progressRecord.progress }
+      : null,
   };
 }
 

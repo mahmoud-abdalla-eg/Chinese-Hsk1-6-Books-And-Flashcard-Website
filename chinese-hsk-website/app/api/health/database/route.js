@@ -13,7 +13,10 @@ export async function GET() {
   }
   try {
     const supabase = getSupabaseAdmin();
-    const { error } = await supabase.from("site_content").select("key").limit(1);
+    const { error } = await supabase
+      .from("site_content")
+      .select("key")
+      .limit(1);
     if (error && error.code !== "PGRST116" && error.code !== "PGRST205") {
       throw error;
     }

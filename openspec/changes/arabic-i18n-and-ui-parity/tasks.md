@@ -25,5 +25,5 @@
 
 ## 5. Verification & Build Integrity
 
-- [ ] 5.1 Run Biome code quality checks (`npx @biomejs/biome check`) on all modified and newly created files and verify zero errors.
-- [ ] 5.2 Execute Next.js build (`npm run build`) in `chinese-hsk-website` and verify successful compilation without SSG or hydration errors.
+- [x] 5.1 Run Biome code quality checks (`npx @biomejs/biome check`) on all modified and newly created files and verify zero errors.
+- [x] 5.2 Execute Next.js build (`npm run build`) in `chinese-hsk-website` and verify successful compilation without SSG or hydration errors.

@@ -10,7 +10,5 @@ export default async function ConversationsPage() {
     0,
   );
 
-  return (
-    <ConversationsView summaries={summaries} lessonCount={lessonCount} />
-  );
+  return <ConversationsView summaries={summaries} lessonCount={lessonCount} />;
 }

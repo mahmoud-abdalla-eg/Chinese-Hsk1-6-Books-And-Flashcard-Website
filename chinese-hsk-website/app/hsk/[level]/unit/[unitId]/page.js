@@ -90,14 +90,14 @@ export default async function UnitPage({ params }) {
           <VocabularyList words={unit.words} level={level} />
         </section>
 
-        {conversation ? (
-          <section id="conversation">
-            <ConversationLesson
-              conversation={conversation}
-              targetWords={conversationTargetWords}
-            />
-          </section>
-        ) : null}
+        {conversation
+          ? <section id="conversation">
+              <ConversationLesson
+                conversation={conversation}
+                targetWords={conversationTargetWords}
+              />
+            </section>
+          : null}
       </div>
     </div>
   );

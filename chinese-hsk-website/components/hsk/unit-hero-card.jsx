@@ -29,7 +29,8 @@ export default function UnitHeroCard({ level, unit }) {
           <ProgressBar value={progressPercent} />
         </div>
         <p className="mt-2 text-xs font-semibold text-slate-500">
-          {learnedCount} {tr("wordsOf")} {unit?.words?.length || 0} {tr("wordsMastered")}
+          {learnedCount} {tr("wordsOf")} {unit?.words?.length || 0}{" "}
+          {tr("wordsMastered")}
         </p>
       </div>
 
@@ -42,6 +43,7 @@ export default function UnitHeroCard({ level, unit }) {
             className="h-4 w-4"
             viewBox="0 0 24 24"
             fill="none"
+            aria-hidden="true"
             stroke="currentColor"
             strokeWidth="2.5"
             strokeLinecap="round"
@@ -50,7 +52,8 @@ export default function UnitHeroCard({ level, unit }) {
             <rect width="18" height="18" x="3" y="3" rx="2" />
             <path d="m9 8 6 4-6 4Z" />
           </svg>
-          {tr("practiceFlashcardsCount")} ({unit?.words?.length || 0} {tr("words")})
+          {tr("practiceFlashcardsCount")} ({unit?.words?.length || 0}{" "}
+          {tr("words")})
         </Link>
 
         <div className="grid grid-cols-2 gap-2 text-xs font-black">

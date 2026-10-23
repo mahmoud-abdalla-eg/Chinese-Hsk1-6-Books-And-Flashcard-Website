@@ -11,9 +11,6 @@ export default async function GrammarPage() {
   const levels = await getManagedGrammarLevels();
 
   return (
-    <GrammarView
-      grammarItemsCount={grammarItems.length}
-      levels={levels}
-    />
+    <GrammarView grammarItemsCount={grammarItems.length} levels={levels} />
   );
 }

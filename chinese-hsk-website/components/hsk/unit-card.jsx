@@ -48,8 +48,12 @@ export default function UnitCard({ unit, isCustom = false }) {
 
         <div>
           <div className="mb-2 flex items-center justify-between text-xs font-bold">
-            <span className="text-slate-500"><Localized k="unitMastery" /></span>
-            <span className="text-teal-700">{learnedCount} / {totalCount} ({percent}%)</span>
+            <span className="text-slate-500">
+              <Localized k="unitMastery" />
+            </span>
+            <span className="text-teal-700">
+              {learnedCount} / {totalCount} ({percent}%)
+            </span>
           </div>
           <ProgressBar value={percent} />
         </div>

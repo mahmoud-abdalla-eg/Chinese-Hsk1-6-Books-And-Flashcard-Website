@@ -1,19 +1,25 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { useLanguage } from "@/components/language/language-provider";
 import UnitCard from "@/components/hsk/unit-card";
+import { useLanguage } from "@/components/language/language-provider";
 import { Card, Pill } from "@/components/ui/card";
 import { UNIT_SIZE } from "@/lib/data/schema";
 
-export default function LevelUnitsView({ level, words = [], defaultUnits = [] }) {
+export default function LevelUnitsView({
+  level,
+  words = [],
+  defaultUnits = [],
+}) {
   const { tr } = useLanguage();
   const [unitSize, setUnitSize] = useState(UNIT_SIZE);
 
   // Restore user's saved preference
   useEffect(() => {
     try {
-      const saved = window.localStorage.getItem("mandarin_flow_unit_chunk_size");
+      const saved = window.localStorage.getItem(
+        "mandarin_flow_unit_chunk_size",
+      );
       if (saved && [25, 50, 100].includes(Number(saved))) {
         setUnitSize(Number(saved));
       }
@@ -23,7 +29,10 @@ export default function LevelUnitsView({ level, words = [], defaultUnits = [] })
   const handleUnitSizeChange = (newSize) => {
     setUnitSize(newSize);
     try {
-      window.localStorage.setItem("mandarin_flow_unit_chunk_size", String(newSize));
+      window.localStorage.setItem(
+        "mandarin_flow_unit_chunk_size",
+        String(newSize),
+      );
     } catch {}
   };
 
@@ -55,6 +64,7 @@ export default function LevelUnitsView({ level, words = [], defaultUnits = [] })
           <svg
             className="h-4 w-4 text-teal-700"
             fill="none"
+            aria-hidden="true"
             viewBox="0 0 24 24"
             stroke="currentColor"
             strokeWidth={2}

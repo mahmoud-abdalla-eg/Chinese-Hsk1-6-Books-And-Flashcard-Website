@@ -123,7 +123,9 @@ export default function VocabularyList({ words = [], level }) {
                         onClick={() => toggle("favorites", word.id)}
                         className="grid h-10 w-10 place-items-center rounded-full border border-slate-200 text-slate-400 hover:border-rose-300 hover:text-rose-600 transition"
                         title={isFav ? tr("favorited") : tr("addToFavorites")}
-                        aria-label={isFav ? tr("favorited") : tr("addToFavorites")}
+                        aria-label={
+                          isFav ? tr("favorited") : tr("addToFavorites")
+                        }
                       >
                         {isFav ? (
                           <svg
@@ -181,7 +183,9 @@ export default function VocabularyList({ words = [], level }) {
                           ? "bg-emerald-100 text-emerald-800"
                           : "border border-slate-200 bg-white text-slate-600 hover:bg-slate-50"
                       }`}
-                      title={isLearned ? tr("markedLearned") : tr("markLearned")}
+                      title={
+                        isLearned ? tr("markedLearned") : tr("markLearned")
+                      }
                     >
                       {isLearned ? tr("markedLearned") : tr("learn")}
                     </button>
@@ -281,7 +285,9 @@ export default function VocabularyList({ words = [], level }) {
                           ? "bg-emerald-100 text-emerald-800"
                           : "bg-slate-100 text-slate-500 hover:bg-slate-200"
                       }`}
-                      title={isLearned ? tr("markedLearned") : tr("markLearned")}
+                      title={
+                        isLearned ? tr("markedLearned") : tr("markLearned")
+                      }
                     >
                       {isLearned ? tr("markedLearned") : tr("learn")}
                     </button>

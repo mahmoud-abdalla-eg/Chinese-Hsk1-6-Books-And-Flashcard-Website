@@ -57,7 +57,8 @@ export default async function UnitFlashcardsPage({ params }) {
               HSK {level} · Unit {unit.id} Flashcards
             </h1>
             <p className="mt-1 text-sm font-semibold text-slate-600">
-              Practice words {unit.start}–{unit.end} ({unit.words?.length || 0} words) with active recall and spaced repetition.
+              Practice words {unit.start}–{unit.end} ({unit.words?.length || 0}{" "}
+              words) with active recall and spaced repetition.
             </p>
           </div>
 

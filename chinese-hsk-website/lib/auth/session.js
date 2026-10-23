@@ -43,7 +43,10 @@ export function parseSession(value) {
 }
 
 function sign(payload) {
-  const secret = process.env.AUTH_SECRET || process.env.SUPABASE_SERVICE_ROLE_KEY || "chinese-hsk-user-secret";
+  const secret =
+    process.env.AUTH_SECRET ||
+    process.env.SUPABASE_SERVICE_ROLE_KEY ||
+    "chinese-hsk-user-secret";
   return createHmac("sha256", secret).update(payload).digest("hex");
 }
 

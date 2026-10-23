@@ -1,7 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { Localized, useLanguage } from "@/components/language/language-provider";
+import {
+  Localized,
+  useLanguage,
+} from "@/components/language/language-provider";
 import { Card, Pill, ProgressBar } from "@/components/ui/card";
 import { levelThemes } from "@/lib/data/design";
 

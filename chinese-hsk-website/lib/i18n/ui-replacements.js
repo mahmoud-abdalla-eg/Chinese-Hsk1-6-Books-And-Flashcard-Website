@@ -172,26 +172,35 @@ export const arabicUiReplacements = {
   "100 words (Deep Dive)": "100 كلمة (موسع)",
   "Dialogue learning": "تعلم بالحوار",
   "Conversation lessons by HSK level.": "دروس المحادثة حسب مستوى HSK.",
-  "Use short dialogue lessons to connect vocabulary with real situations, then practice listening, shadowing, and comprehension.": "استخدم دروس الحوار القصيرة لربط المفردات بمواقف حقيقية، ثم تدرب على الاستماع والمحاكاة والفهم.",
+  "Use short dialogue lessons to connect vocabulary with real situations, then practice listening, shadowing, and comprehension.":
+    "استخدم دروس الحوار القصيرة لربط المفردات بمواقف حقيقية، ثم تدرب على الاستماع والمحاكاة والفهم.",
   "unit lessons": "دروس الوحدات",
-  "Follow the units in order or jump to the level you are studying now.": "اتبع الوحدات بالترتيب أو انتقل إلى المستوى الذي تدرسه الآن.",
+  "Follow the units in order or jump to the level you are studying now.":
+    "اتبع الوحدات بالترتيب أو انتقل إلى المستوى الذي تدرسه الآن.",
   "Conversation library": "مكتبة المحادثات",
-  "Practice useful dialogue one unit at a time.": "تدرب على حوار مفيد وحدة تلو الأخرى.",
-  "Each level is organized into small lessons so new words are easier to hear, repeat, and remember.": "تم تنظيم كل مستوى في دروس صغيرة لتسهيل سماع الكلمات وترديدها وتذكرها.",
+  "Practice useful dialogue one unit at a time.":
+    "تدرب على حوار مفيد وحدة تلو الأخرى.",
+  "Each level is organized into small lessons so new words are easier to hear, repeat, and remember.":
+    "تم تنظيم كل مستوى في دروس صغيرة لتسهيل سماع الكلمات وترديدها وتذكرها.",
   "Open library": "فتح المكتبة",
   "Spaced repetition": "التكرار المتباعد",
-  "Flashcards that keep the conversation moving.": "بطاقات تعليمية تحافظ على استمرار تعلم المحادثة.",
-  "Review Chinese on the front, then pinyin, English, Arabic, examples, and audio status on the back. The deck uses Again, Hard, Good, and Easy review choices.": "راجع الصينية في الوجه الأمامي، ثم البينيين والإنجليزية والعربية والأمثلة وحالة الصوت في الخلف، مع خيارات مراجعة ذكية.",
+  "Flashcards that keep the conversation moving.":
+    "بطاقات تعليمية تحافظ على استمرار تعلم المحادثة.",
+  "Review Chinese on the front, then pinyin, English, Arabic, examples, and audio status on the back. The deck uses Again, Hard, Good, and Easy review choices.":
+    "راجع الصينية في الوجه الأمامي، ثم البينيين والإنجليزية والعربية والأمثلة وحالة الصوت في الخلف، مع خيارات مراجعة ذكية.",
   "HSK decks": "مجموعات HSK",
-  "Pick a level and review words in quick, focused sessions.": "اختر مستوى وراجع الكلمات في جلسات سريعة ومركزة.",
+  "Pick a level and review words in quick, focused sessions.":
+    "اختر مستوى وراجع الكلمات في جلسات سريعة ومركزة.",
   "Pick a deck": "اختر مجموعة",
   "Study by level": "الدراسة حسب المستوى",
-  "Choose a deck, test yourself, and save difficult words for another round.": "اختر مجموعة، واختبر نفسك، واحفظ الكلمات الصعبة لجولة أخرى.",
+  "Choose a deck, test yourself, and save difficult words for another round.":
+    "اختر مجموعة، واختبر نفسك، واحفظ الكلمات الصعبة لجولة أخرى.",
   "Open deck": "فتح البطاقات",
   "Learn grammar in small, clear steps.": "تعلم القواعد بخطوات صغيرة وواضحة.",
-  "Choose an HSK level, open a unit, and practice sentence patterns with examples, pinyin, and short English explanations.": "اختر مستوى HSK، وافتح وحدة، وتدرب على أنماط الجمل مع الأمثلة والبينيين وشروحات واضحة.",
-  "levels": "مستويات",
-  "min": "دقيقة",
+  "Choose an HSK level, open a unit, and practice sentence patterns with examples, pinyin, and short English explanations.":
+    "اختر مستوى HSK، وافتح وحدة، وتدرب على أنماط الجمل مع الأمثلة والبينيين وشروحات واضحة.",
+  levels: "مستويات",
+  min: "دقيقة",
   "Choose a level": "اختر مستوى",
   "Grammar levels": "مستويات القواعد",
   "Sentence basics": "أساسيات الجملة",
@@ -202,12 +211,16 @@ export const arabicUiReplacements = {
   "Polished expression": "تعبير متقن",
   "grammar points": "نقاط قواعد",
   "Open level": "فتح المستوى",
-  "This level is divided into focused units with vocabulary pages, flashcards, conversation practice, listening, grammar, and local progress tracking.": "هذا المستوى مقسم إلى وحدات مركزة تشمل صفحات المفردات، والبطاقات، وتدريب المحادثة، والاستماع، والقواعد، وتتبع التقدم.",
-  "Preview vocabulary before opening units or flashcards.": "عاين المفردات قبل فتح الوحدات أو البطاقات.",
-  "Study the words, review flashcards, practice conversation, listening, shadowing, and track your progress in one focused room.": "ادرس الكلمات، وراجع البطاقات، وتدرب على المحادثة والاستماع والمحاكاة، وتابع تقدمك في مكان واحد.",
-  "Study all vocabulary words with pronunciation, examples, translations, and dedicated flashcard recall sessions.": "ادرس جميع مفردات الوحدة مع النطق والأمثلة والترجمات وجلسات استرجاع البطاقات المخصصة.",
+  "This level is divided into focused units with vocabulary pages, flashcards, conversation practice, listening, grammar, and local progress tracking.":
+    "هذا المستوى مقسم إلى وحدات مركزة تشمل صفحات المفردات، والبطاقات، وتدريب المحادثة، والاستماع، والقواعد، وتتبع التقدم.",
+  "Preview vocabulary before opening units or flashcards.":
+    "عاين المفردات قبل فتح الوحدات أو البطاقات.",
+  "Study the words, review flashcards, practice conversation, listening, shadowing, and track your progress in one focused room.":
+    "ادرس الكلمات، وراجع البطاقات، وتدرب على المحادثة والاستماع والمحاكاة، وتابع تقدمك في مكان واحد.",
+  "Study all vocabulary words with pronunciation, examples, translations, and dedicated flashcard recall sessions.":
+    "ادرس جميع مفردات الوحدة مع النطق والأمثلة والترجمات وجلسات استرجاع البطاقات المخصصة.",
   "Unit not found": "الوحدة غير موجودة",
   "Return to HSK": "العودة إلى HSK",
   "Vocabulary List": "قائمة المفردات",
-  "Conversation": "المحادثة",
+  Conversation: "المحادثة",
 };

@@ -8,7 +8,8 @@ export const dynamic = "force-dynamic";
 
 export const metadata = {
   title: "Log in | Mandarin Flow HSK",
-  description: "Log in to your Mandarin Flow account to keep your streak and study history synchronized.",
+  description:
+    "Log in to your Mandarin Flow account to keep your streak and study history synchronized.",
 };
 
 export default async function LoginPage({ searchParams }) {
@@ -30,11 +31,16 @@ export default async function LoginPage({ searchParams }) {
           Welcome back
         </h1>
         <p className="mx-auto mt-3 max-w-xl text-base font-semibold text-slate-600 sm:text-lg">
-          Log in to continue your daily Mandarin study streak and sync your vocabulary progress.
+          Log in to continue your daily Mandarin study streak and sync your
+          vocabulary progress.
         </p>
       </Surface>
 
-      <Suspense fallback={<div className="h-96 w-full max-w-md mx-auto animate-pulse rounded-3xl bg-slate-100" />}>
+      <Suspense
+        fallback={
+          <div className="h-96 w-full max-w-md mx-auto animate-pulse rounded-3xl bg-slate-100" />
+        }
+      >
         <LoginCard initialError={error} />
       </Suspense>
     </div>

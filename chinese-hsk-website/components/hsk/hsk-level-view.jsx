@@ -1,9 +1,15 @@
 "use client";
 
 import Link from "next/link";
-import { useLanguage } from "@/components/language/language-provider";
 import LevelUnitsView from "@/components/hsk/level-units-view";
-import { Card, Pill, ProgressBar, SectionHeading, Surface } from "@/components/ui/card";
+import { useLanguage } from "@/components/language/language-provider";
+import {
+  Card,
+  Pill,
+  ProgressBar,
+  SectionHeading,
+  Surface,
+} from "@/components/ui/card";
 import { studyModes } from "@/lib/data/design";
 
 export default function HskLevelView({
@@ -61,7 +67,9 @@ export default function HskLevelView({
             <div className="text-6xl font-black text-blue-900">
               {words.length}
             </div>
-            <p className="mt-1 font-bold text-slate-700">{tr("wordsToLearn")}</p>
+            <p className="mt-1 font-bold text-slate-700">
+              {tr("wordsToLearn")}
+            </p>
             <div className="mt-6 grid grid-cols-2 gap-3 text-sm">
               <div className="rounded-2xl bg-white p-3">
                 <strong className="block text-2xl">{units.length}</strong>
@@ -69,7 +77,9 @@ export default function HskLevelView({
               </div>
               <div className="rounded-2xl bg-white p-3">
                 <strong className="block text-2xl">6</strong>
-                <span className="text-slate-500 font-bold">{tr("waysToPractice")}</span>
+                <span className="text-slate-500 font-bold">
+                  {tr("waysToPractice")}
+                </span>
               </div>
             </div>
             <div className="mt-5">
@@ -83,7 +93,9 @@ export default function HskLevelView({
       <div className="grid gap-8 lg:grid-cols-[280px_1fr]">
         <aside className="order-last lg:order-first space-y-5 lg:sticky lg:top-28 lg:self-start">
           <Card>
-            <h2 className="text-xl font-black text-slate-950">{tr("levelMap")}</h2>
+            <h2 className="text-xl font-black text-slate-950">
+              {tr("levelMap")}
+            </h2>
             <div className="mt-4 grid gap-2">
               {units.length ? (
                 units.map((unit) => (
@@ -157,7 +169,10 @@ export default function HskLevelView({
                     href={`/hsk/${level}/word/${word.id}`}
                     className="rounded-2xl bg-slate-50 p-4 transition hover:bg-teal-700 hover:text-white"
                   >
-                    <span className="hanzi-display block text-3xl font-black" dir="ltr">
+                    <span
+                      className="hanzi-display block text-3xl font-black"
+                      dir="ltr"
+                    >
                       <bdi>{word.hanzi}</bdi>
                     </span>
                     <span className="text-sm font-bold opacity-70" dir="ltr">

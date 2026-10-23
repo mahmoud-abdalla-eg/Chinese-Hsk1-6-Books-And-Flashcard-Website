@@ -697,11 +697,6 @@ export const dictionary = {
     zh: "本级别精选词汇",
     ar: "أولى كلمات هذا المستوى",
   },
-  practiceTheseWords: {
-    en: "Practice these words",
-    zh: "练习这些单词",
-    ar: "تدرب على هذه الكلمات",
-  },
   unitDone: {
     en: "done",
     zh: "已完成",
@@ -731,26 +726,6 @@ export const dictionary = {
     en: "Use the target words as a warm-up before practicing the full dialogue.",
     zh: "在练习完整对话前，先用目标单词热身。",
     ar: "استخدم الكلمات المستهدفة كإحماء قبل التدرب على المحادثة الكاملة.",
-  },
-  unitLessons: {
-    en: "unit lessons",
-    zh: "课单元课程",
-    ar: "دروس وحدات",
-  },
-  openLibrary: {
-    en: "Open library",
-    zh: "打开曲库",
-    ar: "فتح الدروس",
-  },
-  grammarPath: {
-    en: "Grammar path",
-    zh: "语法路线",
-    ar: "مسار القواعد",
-  },
-  grammarLevels: {
-    en: "Grammar levels",
-    zh: "语法级别",
-    ar: "مستويات القواعد",
   },
   practicePattern: {
     en: "Practice pattern",
@@ -782,21 +757,7 @@ export const dictionary = {
     zh: "账户信息",
     ar: "معلومات الحساب",
   },
-  name: {
-    en: "Name",
-    zh: "姓名",
-    ar: "الاسم",
-  },
-  email: {
-    en: "Email",
-    zh: "电子邮件",
-    ar: "البريد الإلكتروني",
-  },
-  password: {
-    en: "Password",
-    zh: "密码",
-    ar: "كلمة المرور",
-  },
+
   currentPassword: {
     en: "Current password",
     zh: "当前密码",
@@ -807,7 +768,7 @@ export const dictionary = {
     zh: "新密码",
     ar: "كلمة المرور الجديدة",
   },
-  confirmPassword: {
+  confirmNewPassword: {
     en: "Confirm new password",
     zh: "确认新密码",
     ar: "تأكيد كلمة المرور الجديدة",
@@ -902,11 +863,7 @@ export const dictionary = {
     zh: "you@example.com",
     ar: "you@example.com",
   },
-  password: {
-    en: "Password",
-    zh: "密码",
-    ar: "كلمة المرور",
-  },
+
   passwordPlaceholder: {
     en: "At least 8 characters",
     zh: "至少8个字符",
@@ -1388,11 +1345,7 @@ export const dictionary = {
     zh: "打开文库",
     ar: "فتح المكتبة",
   },
-  levelMap: {
-    en: "Level map",
-    zh: "级别地图",
-    ar: "خريطة المستوى",
-  },
+
   firstWordsInThisLevel: {
     en: "First words in this level",
     zh: "本级别初始词汇",
@@ -1408,11 +1361,7 @@ export const dictionary = {
     zh: "练习这些词汇",
     ar: "تدرّب على هذه الكلمات",
   },
-  practiceModes: {
-    en: "Practice modes",
-    zh: "练习方式",
-    ar: "طرق التدريب",
-  },
+
   unitCardStudyDesc: {
     en: "Study the words, review flashcards, practice conversation, listening, shadowing, and track your progress in one focused room.",
     zh: "在一个专属空间中学习生词、复习闪卡、演练对话、训练听力与跟读，并实时追踪学习成效。",
@@ -1491,7 +1440,6 @@ export function t(key, lang = "en") {
   return key;
 }
 
-
 export { arabicUiReplacements };
 
 export const levelThemeScenes = {
@@ -1504,12 +1452,36 @@ export const levelThemeScenes = {
 };
 
 export const levelThemeTones = {
-  1: { en: "Start speaking with high-frequency words.", zh: "用高频词汇开启日常表达。", ar: "ابدأ التحدث بالكلمات الأكثر استخداما." },
-  2: { en: "Connect familiar ideas into longer exchanges.", zh: "将熟悉的观点串联成更长对话。", ar: "اربط الأفكار المألوفة في حوارات أطول." },
-  3: { en: "Handle plans, preferences, and practical needs.", zh: "应对计划、喜好与实际生活需求。", ar: "تعامل مع الخطط والتفضيلات والاحتياجات اليومية." },
-  4: { en: "Discuss work, travel, study, and opinions.", zh: "探讨工作、旅行、学术与各方见解。", ar: "ناقش العمل والسفر والدراسة والآراء." },
-  5: { en: "Grow into nuanced listening and expression.", zh: "提升对细腻语感的听辨与深层表达。", ar: "طوّر الاستماع والتعبير بتفاصيل أدق." },
-  6: { en: "Build advanced vocabulary, grammar, and reading confidence with focused practice units.", zh: "借助针对性训练单元建立高级词汇、语法及阅读自信。", ar: "ابن مفردات متقدمة وقواعد وثقة في القراءة من خلال وحدات تدريب مركزة." },
+  1: {
+    en: "Start speaking with high-frequency words.",
+    zh: "用高频词汇开启日常表达。",
+    ar: "ابدأ التحدث بالكلمات الأكثر استخداما.",
+  },
+  2: {
+    en: "Connect familiar ideas into longer exchanges.",
+    zh: "将熟悉的观点串联成更长对话。",
+    ar: "اربط الأفكار المألوفة في حوارات أطول.",
+  },
+  3: {
+    en: "Handle plans, preferences, and practical needs.",
+    zh: "应对计划、喜好与实际生活需求。",
+    ar: "تعامل مع الخطط والتفضيلات والاحتياجات اليومية.",
+  },
+  4: {
+    en: "Discuss work, travel, study, and opinions.",
+    zh: "探讨工作、旅行、学术与各方见解。",
+    ar: "ناقش العمل والسفر والدراسة والآراء.",
+  },
+  5: {
+    en: "Grow into nuanced listening and expression.",
+    zh: "提升对细腻语感的听辨与深层表达。",
+    ar: "طوّر الاستماع والتعبير بتفاصيل أدق.",
+  },
+  6: {
+    en: "Build advanced vocabulary, grammar, and reading confidence with focused practice units.",
+    zh: "借助针对性训练单元建立高级词汇、语法及阅读自信。",
+    ar: "ابن مفردات متقدمة وقواعد وثقة في القراءة من خلال وحدات تدريب مركزة.",
+  },
 };
 
 export const grammarLevelLabels = {
@@ -1530,5 +1502,7 @@ export function getLevelTone(level, lang = "en") {
 }
 
 export function getGrammarLevelLabel(level, lang = "en") {
-  return grammarLevelLabels[level]?.[lang] || grammarLevelLabels[level]?.en || "";
+  return (
+    grammarLevelLabels[level]?.[lang] || grammarLevelLabels[level]?.en || ""
+  );
 }

@@ -66,13 +66,17 @@ export default function FlashcardDeck({ words = [] }) {
 
   useEffect(() => {
     function handleClickOutside(event) {
-      if (shortcutsRef.current && !shortcutsRef.current.contains(event.target)) {
+      if (
+        shortcutsRef.current &&
+        !shortcutsRef.current.contains(event.target)
+      ) {
         setShowShortcuts(false);
       }
     }
     if (showShortcuts) {
       document.addEventListener("mousedown", handleClickOutside);
-      return () => document.removeEventListener("mousedown", handleClickOutside);
+      return () =>
+        document.removeEventListener("mousedown", handleClickOutside);
     }
   }, [showShortcuts]);
 
@@ -263,7 +267,9 @@ export default function FlashcardDeck({ words = [] }) {
         e.preventDefault();
         setFlipped(false);
         if (filteredWords.length) {
-          setIndex((i) => (i - 1 + filteredWords.length) % filteredWords.length);
+          setIndex(
+            (i) => (i - 1 + filteredWords.length) % filteredWords.length,
+          );
         }
       } else if (e.key === "1") {
         e.preventDefault();
@@ -596,7 +602,9 @@ export default function FlashcardDeck({ words = [] }) {
               </span>
             ) : null}
             <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-[10px] font-black uppercase text-slate-500">
-              {studyMode === "recall" ? tr("recallMode") : tr("recognitionMode")}
+              {studyMode === "recall"
+                ? tr("recallMode")
+                : tr("recognitionMode")}
             </span>
           </div>
 
@@ -676,7 +684,10 @@ export default function FlashcardDeck({ words = [] }) {
                 className={`space-y-4 py-2 ${isArabic ? "text-right" : "text-left"}`}
               >
                 <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 pb-3">
-                  <span className="text-3xl sm:text-4xl font-black text-slate-950" dir="ltr">
+                  <span
+                    className="text-3xl sm:text-4xl font-black text-slate-950"
+                    dir="ltr"
+                  >
                     {word.pinyin}
                   </span>
                   <span className="rounded-full bg-slate-200 px-3 py-1 text-xs font-black uppercase text-slate-700">
@@ -713,65 +724,66 @@ export default function FlashcardDeck({ words = [] }) {
                 ) : null}
               </div>
             )
+          ) : /* Mode 2: RECALL (Meaning front -> Hanzi & Pinyin back) */
+          !flipped ? (
+            <div className="flex min-h-64 flex-col items-center justify-center space-y-4 px-2 sm:px-4 text-center">
+              <span
+                className="block text-2xl sm:text-4xl font-black text-slate-900 leading-tight"
+                dir={isArabic ? "rtl" : "ltr"}
+              >
+                {meaning}
+              </span>
+              <span className="text-xs font-bold text-teal-700 uppercase tracking-wider">
+                {word.partOfSpeech || "word"}
+              </span>
+              <span className="text-xs sm:text-sm font-bold text-slate-400">
+                {tr("tapToRevealHanzi")}
+              </span>
+            </div>
           ) : (
-            /* Mode 2: RECALL (Meaning front -> Hanzi & Pinyin back) */
-            !flipped ? (
-              <div className="flex min-h-64 flex-col items-center justify-center space-y-4 px-2 sm:px-4 text-center">
+            <div
+              className={`space-y-4 py-2 ${isArabic ? "text-right" : "text-left"}`}
+            >
+              <div className="flex flex-col items-center justify-center gap-1 border-b border-slate-200 pb-4 text-center">
+                <span className="hanzi-display block text-5xl font-black text-slate-950 sm:text-7xl lg:text-8xl break-keep max-w-full px-2">
+                  {word.hanzi}
+                </span>
                 <span
-                  className="block text-2xl sm:text-4xl font-black text-slate-900 leading-tight"
-                  dir={isArabic ? "rtl" : "ltr"}
+                  className="text-2xl sm:text-3xl font-black text-teal-700 mt-2"
+                  dir="ltr"
                 >
-                  {meaning}
-                </span>
-                <span className="text-xs font-bold text-teal-700 uppercase tracking-wider">
-                  {word.partOfSpeech || "word"}
-                </span>
-                <span className="text-xs sm:text-sm font-bold text-slate-400">
-                  {tr("tapToRevealHanzi")}
+                  {word.pinyin}
                 </span>
               </div>
-            ) : (
-              <div
-                className={`space-y-4 py-2 ${isArabic ? "text-right" : "text-left"}`}
+              <span
+                className="block text-lg sm:text-xl font-bold text-slate-700"
+                dir={isArabic ? "rtl" : "ltr"}
               >
-                <div className="flex flex-col items-center justify-center gap-1 border-b border-slate-200 pb-4 text-center">
-                  <span className="hanzi-display block text-5xl font-black text-slate-950 sm:text-7xl lg:text-8xl break-keep max-w-full px-2">
-                    {word.hanzi}
+                {meaning}
+              </span>
+              {word.example?.hanzi ? (
+                <div className="rounded-2xl bg-white p-4 shadow-2xs">
+                  <span
+                    className="hanzi-display block text-xl sm:text-2xl font-black text-slate-950"
+                    dir="ltr"
+                  >
+                    {word.example.hanzi}
                   </span>
-                  <span className="text-2xl sm:text-3xl font-black text-teal-700 mt-2" dir="ltr">
-                    {word.pinyin}
+                  <span
+                    className="mt-1 block text-sm font-bold text-teal-700"
+                    dir="ltr"
+                  >
+                    {word.example.pinyin}
+                  </span>
+                  <span
+                    className="mt-2 block text-sm font-semibold text-slate-600"
+                    dir={isArabic ? "rtl" : "ltr"}
+                  >
+                    {exampleTranslation}
                   </span>
                 </div>
-                <span
-                  className="block text-lg sm:text-xl font-bold text-slate-700"
-                  dir={isArabic ? "rtl" : "ltr"}
-                >
-                  {meaning}
-                </span>
-                {word.example?.hanzi ? (
-                  <div className="rounded-2xl bg-white p-4 shadow-2xs">
-                    <span
-                      className="hanzi-display block text-xl sm:text-2xl font-black text-slate-950"
-                      dir="ltr"
-                    >
-                      {word.example.hanzi}
-                    </span>
-                    <span
-                      className="mt-1 block text-sm font-bold text-teal-700"
-                      dir="ltr"
-                    >
-                      {word.example.pinyin}
-                    </span>
-                    <span
-                      className="mt-2 block text-sm font-semibold text-slate-600"
-                      dir={isArabic ? "rtl" : "ltr"}
-                    >
-                      {exampleTranslation}
-                    </span>
-                  </div>
-                ) : null}
-              </div>
-            )
+              ) : null}
+            </div>
           )}
         </button>
 
@@ -870,13 +882,17 @@ export default function FlashcardDeck({ words = [] }) {
                 </div>
                 <dl className="mt-2.5 space-y-2 text-xs">
                   <div className="flex items-center justify-between">
-                    <span className="text-slate-500 font-medium">Flip card</span>
+                    <span className="text-slate-500 font-medium">
+                      Flip card
+                    </span>
                     <kbd className="rounded border border-slate-200 bg-slate-100 px-1.5 py-0.5 font-mono text-[11px] font-bold text-slate-700 shadow-2xs">
                       Space
                     </kbd>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-slate-500 font-medium">Previous / Next</span>
+                    <span className="text-slate-500 font-medium">
+                      Previous / Next
+                    </span>
                     <div className="flex gap-1">
                       <kbd className="rounded border border-slate-200 bg-slate-100 px-1.5 py-0.5 font-mono text-[11px] font-bold text-slate-700 shadow-2xs">
                         ←
@@ -887,7 +903,9 @@ export default function FlashcardDeck({ words = [] }) {
                     </div>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-slate-500 font-medium">Rate card</span>
+                    <span className="text-slate-500 font-medium">
+                      Rate card
+                    </span>
                     <kbd className="rounded border border-slate-200 bg-slate-100 px-1.5 py-0.5 font-mono text-[11px] font-bold text-slate-700 shadow-2xs">
                       1 – 4
                     </kbd>
@@ -913,7 +931,10 @@ export default function FlashcardDeck({ words = [] }) {
       </div>
 
       {/* SRS Rating Buttons */}
-      <div className="grid grid-cols-2 gap-2.5 sm:gap-3 sm:grid-cols-4" dir="ltr">
+      <div
+        className="grid grid-cols-2 gap-2.5 sm:gap-3 sm:grid-cols-4"
+        dir="ltr"
+      >
         {[
           ["Again", "bg-rose-600 hover:bg-rose-700", "1", "Repeat soon"],
           ["Hard", "bg-amber-600 hover:bg-amber-700", "2", "Difficult"],

@@ -36,7 +36,10 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
     [progress.reviewHistory],
   );
   const dailyGoal = progress.dailyGoal || 15;
-  const goalPercent = Math.min(100, Math.round((todayReviews / dailyGoal) * 100));
+  const goalPercent = Math.min(
+    100,
+    Math.round((todayReviews / dailyGoal) * 100),
+  );
   const isGoalReached = todayReviews >= dailyGoal;
   const remainingReviews = Math.max(0, dailyGoal - todayReviews);
   const levelProgress = levelWords.map((summary) => {

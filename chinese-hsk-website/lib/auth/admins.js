@@ -48,7 +48,11 @@ export async function authenticateAdmin({ email, password }) {
     .eq("email", cleanEmail)
     .maybeSingle();
 
-  if (error || !admin || !(await verifyPassword(password, admin.password_hash))) {
+  if (
+    error ||
+    !admin ||
+    !(await verifyPassword(password, admin.password_hash))
+  ) {
     throw new Error("Invalid admin email or password.");
   }
 

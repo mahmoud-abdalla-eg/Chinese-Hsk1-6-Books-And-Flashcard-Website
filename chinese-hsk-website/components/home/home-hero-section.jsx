@@ -73,10 +73,7 @@ export default function HomeHeroSection({ totalWords = 0, totalUnits = 0 }) {
               <p className="text-xs font-black uppercase tracking-[0.16em] text-teal-700">
                 {tr("teacher")}
               </p>
-              <p
-                className="hanzi-display mt-2 text-4xl font-black"
-                dir="ltr"
-              >
+              <p className="hanzi-display mt-2 text-4xl font-black" dir="ltr">
                 <bdi>{"\u4f60\u4eca\u5929\u60f3\u5b66\u4ec0\u4e48\uff1f"}</bdi>
               </p>
               <p className="mt-2 font-semibold text-teal-700" dir="ltr">
@@ -95,10 +92,7 @@ export default function HomeHeroSection({ totalWords = 0, totalUnits = 0 }) {
               <p className="text-xs font-black uppercase tracking-[0.16em] text-blue-800">
                 {tr("student")}
               </p>
-              <p
-                className="hanzi-display mt-2 text-4xl font-black"
-                dir="ltr"
-              >
+              <p className="hanzi-display mt-2 text-4xl font-black" dir="ltr">
                 <bdi>{"\u6211\u60f3\u7ec3\u4e60\u4f1a\u8bdd\u3002"}</bdi>
               </p>
               <p className="mt-2 font-semibold text-slate-700" dir="ltr">

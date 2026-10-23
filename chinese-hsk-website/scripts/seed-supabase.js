@@ -16,7 +16,10 @@ if (fs.existsSync(envPath)) {
     if (!trimmed || trimmed.startsWith("#")) continue;
     const [key, ...rest] = trimmed.split("=");
     if (key && rest.length > 0) {
-      const val = rest.join("=").trim().replace(/^["']|["']$/g, "");
+      const val = rest
+        .join("=")
+        .trim()
+        .replace(/^["']|["']$/g, "");
       process.env[key.trim()] = val;
     }
   }
@@ -26,7 +29,9 @@ const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
 
 if (!url || !key) {
-  console.error("❌ Error: NEXT_PUBLIC_SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY is not set in .env.local");
+  console.error(
+    "❌ Error: NEXT_PUBLIC_SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY is not set in .env.local",
+  );
   process.exit(1);
 }
 
@@ -41,19 +46,31 @@ async function runSeed() {
   console.log("🚀 Starting Supabase Database Seed...\n");
 
   // Verify connection & table existence
-  const { error: testErr } = await supabase.from("course_words").select("id").limit(1);
+  const { error: testErr } = await supabase
+    .from("course_words")
+    .select("id")
+    .limit(1);
   if (testErr) {
     console.error("⚠️ Table check error:", testErr.message);
-    console.error("👉 Please run 'supabase/schema.sql' in your Supabase SQL Editor first to create the tables!");
+    console.error(
+      "👉 Please run 'supabase/schema.sql' in your Supabase SQL Editor first to create the tables!",
+    );
     process.exit(1);
   }
 
   // 1. Seed Words (HSK 1-6)
   console.log("📦 1. Seeding HSK Words (Levels 1-6)...");
   for (let level = 1; level <= 6; level++) {
-    const filePath = path.join(projectRoot, "source-data", "hsk", `hsk-${level}.json`);
+    const filePath = path.join(
+      projectRoot,
+      "source-data",
+      "hsk",
+      `hsk-${level}.json`,
+    );
     if (!fs.existsSync(filePath)) {
-      console.warn(`   ⚠️ Warning: ${filePath} not found, skipping level ${level}.`);
+      console.warn(
+        `   ⚠️ Warning: ${filePath} not found, skipping level ${level}.`,
+      );
       continue;
     }
     const words = JSON.parse(fs.readFileSync(filePath, "utf8"));
@@ -77,9 +94,14 @@ async function runSeed() {
     const chunkSize = 200;
     for (let i = 0; i < records.length; i += chunkSize) {
       const chunk = records.slice(i, i + chunkSize);
-      const { error } = await supabase.from("course_words").upsert(chunk, { onConflict: "level,id" });
+      const { error } = await supabase
+        .from("course_words")
+        .upsert(chunk, { onConflict: "level,id" });
       if (error) {
-        console.error(`   ❌ Error seeding words for level ${level} (chunk ${i}):`, error.message);
+        console.error(
+          `   ❌ Error seeding words for level ${level} (chunk ${i}):`,
+          error.message,
+        );
         break;
       }
     }
@@ -87,7 +109,12 @@ async function runSeed() {
   }
 
   // 2. Seed Grammar Learning Path & Auto-generated Units
-  const grammarPath = path.join(projectRoot, "source-data", "grammar", "learning-path.json");
+  const grammarPath = path.join(
+    projectRoot,
+    "source-data",
+    "grammar",
+    "learning-path.json",
+  );
   if (fs.existsSync(grammarPath)) {
     console.log("\n📖 2. Seeding Grammar Learning Path & Units...");
     const grammarData = JSON.parse(fs.readFileSync(grammarPath, "utf8"));
@@ -112,7 +139,9 @@ async function runSeed() {
     const chunkSize = 200;
     for (let i = 0; i < grammarRecords.length; i += chunkSize) {
       const chunk = grammarRecords.slice(i, i + chunkSize);
-      const { error } = await supabase.from("course_grammar").upsert(chunk, { onConflict: "id" });
+      const { error } = await supabase
+        .from("course_grammar")
+        .upsert(chunk, { onConflict: "id" });
       if (error) {
         console.error("   ❌ Error seeding grammar:", error.message);
         break;
@@ -164,19 +193,32 @@ async function runSeed() {
       const files = fs.readdirSync(lvlDir).filter((f) => f.endsWith(".json"));
       for (const file of files) {
         try {
-          const conv = JSON.parse(fs.readFileSync(path.join(lvlDir, file), "utf8"));
+          const conv = JSON.parse(
+            fs.readFileSync(path.join(lvlDir, file), "utf8"),
+          );
           convRecords.push({
             id: conv.id || `hsk-${lvl}-unit-${conv.unitId || 1}`,
             hsk_level: lvl,
             unit_id: Number(conv.unitId || 1),
             status: conv.status || "ready",
             title: conv.title || {},
-            target_vocabulary_ids: Array.isArray(conv.targetVocabularyIds) ? conv.targetVocabularyIds : [],
+            target_vocabulary_ids: Array.isArray(conv.targetVocabularyIds)
+              ? conv.targetVocabularyIds
+              : [],
             dialogue: Array.isArray(conv.dialogue) ? conv.dialogue : [],
-            grammar_notes: Array.isArray(conv.grammarNotes) ? conv.grammarNotes : [],
-            cultural_notes: Array.isArray(conv.culturalNotes) ? conv.culturalNotes : [],
-            comprehension_questions: Array.isArray(conv.comprehensionQuestions) ? conv.comprehensionQuestions : [],
-            shadowing_practice: conv.shadowingPractice || { enabled: true, mode: "line-by-line" },
+            grammar_notes: Array.isArray(conv.grammarNotes)
+              ? conv.grammarNotes
+              : [],
+            cultural_notes: Array.isArray(conv.culturalNotes)
+              ? conv.culturalNotes
+              : [],
+            comprehension_questions: Array.isArray(conv.comprehensionQuestions)
+              ? conv.comprehensionQuestions
+              : [],
+            shadowing_practice: conv.shadowingPractice || {
+              enabled: true,
+              mode: "line-by-line",
+            },
             authoring_note: conv.authoringNote || "",
             updated_at: new Date().toISOString(),
           });
@@ -189,7 +231,9 @@ async function runSeed() {
       const chunkSize = 100;
       for (let i = 0; i < convRecords.length; i += chunkSize) {
         const chunk = convRecords.slice(i, i + chunkSize);
-        const { error } = await supabase.from("course_conversations").upsert(chunk, { onConflict: "id" });
+        const { error } = await supabase
+          .from("course_conversations")
+          .upsert(chunk, { onConflict: "id" });
         if (error) {
           console.error("   ❌ Error seeding conversations:", error.message);
           break;
@@ -203,13 +247,24 @@ async function runSeed() {
   // 4. Seed Default Site Content
   console.log("\n🌐 4. Seeding Site Content...");
   const siteContent = [
-    { key: "home.hero.title", value: "Master Chinese with conversation-first learning." },
-    { key: "home.hero.subtitle", value: "HSK 1-6 books, vocabulary flashcards, grammar patterns, and real dialogue practice designed for serious learners." },
+    {
+      key: "home.hero.title",
+      value: "Master Chinese with conversation-first learning.",
+    },
+    {
+      key: "home.hero.subtitle",
+      value:
+        "HSK 1-6 books, vocabulary flashcards, grammar patterns, and real dialogue practice designed for serious learners.",
+    },
     { key: "home.cta.primary", value: "Start HSK 1" },
     { key: "home.cta.secondary", value: "Explore grammar" },
   ];
-  await supabase.from("site_content").upsert(siteContent, { onConflict: "key" });
-  console.log(`   ✓ Seeded ${siteContent.length} default site content entries.`);
+  await supabase
+    .from("site_content")
+    .upsert(siteContent, { onConflict: "key" });
+  console.log(
+    `   ✓ Seeded ${siteContent.length} default site content entries.`,
+  );
 
   // 5. Mark Seed State
   await supabase.from("course_data_state").upsert([

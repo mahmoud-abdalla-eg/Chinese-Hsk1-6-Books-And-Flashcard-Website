@@ -40,9 +40,7 @@ export async function getAnalyticsStats() {
         .gte("created_at", since)
         .order("created_at", { ascending: false })
         .limit(200),
-      supabase
-        .from("user_progress")
-        .select("user_id, progress, updated_at"),
+      supabase.from("user_progress").select("user_id, progress, updated_at"),
       supabase
         .from("analytics_events")
         .select("path, created_at")

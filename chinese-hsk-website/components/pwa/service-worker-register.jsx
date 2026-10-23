@@ -12,11 +12,9 @@ export default function ServiceWorkerRegister() {
         window.location.hostname === "127.0.0.1")
     ) {
       window.addEventListener("load", () => {
-        navigator.serviceWorker
-          .register("/sw.js")
-          .catch((err) => {
-            console.debug("Service worker registration skipped or failed:", err);
-          });
+        navigator.serviceWorker.register("/sw.js").catch((err) => {
+          console.debug("Service worker registration skipped or failed:", err);
+        });
       });
     }
   }, []);

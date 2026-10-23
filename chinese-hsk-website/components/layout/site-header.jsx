@@ -11,7 +11,11 @@ const navItems = [
   { href: "/", label: "home" },
   { href: "/hsk/1", label: "vocabulary", matchPrefix: "/hsk" },
   { href: "/flashcards", label: "flashcards", matchPrefix: "/flashcards" },
-  { href: "/conversations", label: "conversations", matchPrefix: "/conversations" },
+  {
+    href: "/conversations",
+    label: "conversations",
+    matchPrefix: "/conversations",
+  },
   { href: "/grammar", label: "grammar", matchPrefix: "/grammar" },
   { href: "/dashboard", label: "dashboard", matchPrefix: "/dashboard" },
 ];
@@ -65,7 +69,11 @@ export default function SiteHeader() {
               stroke="currentColor"
               strokeWidth={2.2}
             >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
             </svg>
           </button>
 
@@ -156,7 +164,11 @@ export default function SiteHeader() {
                   stroke="currentColor"
                   strokeWidth={2.2}
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 </svg>
               </button>
             </div>

@@ -112,7 +112,10 @@ export async function upsertAudioRecord(payload) {
 export async function deleteAudioRecord(key) {
   if (!key) return false;
   const supabase = getSupabaseAdmin();
-  const { error } = await supabase.from("audio_records").delete().eq("key", key);
+  const { error } = await supabase
+    .from("audio_records")
+    .delete()
+    .eq("key", key);
   return !error;
 }
 

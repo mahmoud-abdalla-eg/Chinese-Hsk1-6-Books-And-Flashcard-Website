@@ -7,7 +7,5 @@ export default async function FlashcardsPage() {
   const summaries = await getManagedHskSummary();
   const deckCount = summaries.length;
 
-  return (
-    <FlashcardsView summaries={summaries} deckCount={deckCount} />
-  );
+  return <FlashcardsView summaries={summaries} deckCount={deckCount} />;
 }

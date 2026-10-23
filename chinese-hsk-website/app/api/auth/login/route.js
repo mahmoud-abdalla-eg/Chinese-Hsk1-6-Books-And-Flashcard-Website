@@ -6,7 +6,10 @@ export const dynamic = "force-dynamic";
 export async function POST(request) {
   const url = new URL(request.url);
   const redirectParam = url.searchParams.get("redirect");
-  const targetUrl = redirectParam && redirectParam.startsWith("/") ? redirectParam : "/dashboard";
+  const targetUrl =
+    redirectParam && redirectParam.startsWith("/")
+      ? redirectParam
+      : "/dashboard";
 
   try {
     const { body, wantsHtml } = await readAuthBody(request);
@@ -39,10 +42,7 @@ export async function POST(request) {
       if (redirectParam) loginUrl.searchParams.set("redirect", redirectParam);
       return Response.redirect(loginUrl, 303);
     }
-    return Response.json(
-      { error: message },
-      { status: isInfra ? 503 : 401 },
-    );
+    return Response.json({ error: message }, { status: isInfra ? 503 : 401 });
   }
 }
 

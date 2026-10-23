@@ -30,7 +30,9 @@ export default async function WordPage({ params }) {
   const unitId = Math.max(1, Math.ceil((word.order || 1) / 30));
 
   const rawExamples = word.examples?.length ? word.examples : [word.example];
-  const examples = rawExamples.filter((ex) => Boolean(ex?.hanzi || ex?.pinyin || ex?.en));
+  const examples = rawExamples.filter((ex) =>
+    Boolean(ex?.hanzi || ex?.pinyin || ex?.en),
+  );
 
   return (
     <WordDetailView

@@ -5,7 +5,10 @@ import AudioButton from "@/components/audio/audio-button";
 import { useLanguage } from "@/components/language/language-provider";
 import { Card, Pill, Surface } from "@/components/ui/card";
 import WordStudyPanel from "@/components/vocabulary/word-study-panel";
-import { getLocalizedExample, getLocalizedMeaning } from "@/lib/i18n/dictionaries";
+import {
+  getLocalizedExample,
+  getLocalizedMeaning,
+} from "@/lib/i18n/dictionaries";
 
 export default function WordDetailView({
   word,

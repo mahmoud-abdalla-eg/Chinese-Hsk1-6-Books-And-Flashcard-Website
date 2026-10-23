@@ -1,7 +1,7 @@
 "use client";
 
-import { useLanguage } from "@/components/language/language-provider";
 import LevelCard from "@/components/hsk/level-card";
+import { useLanguage } from "@/components/language/language-provider";
 import { Card, Pill, SectionHeading } from "@/components/ui/card";
 import { courseHighlights, dailyTopics, studyModes } from "@/lib/data/design";
 

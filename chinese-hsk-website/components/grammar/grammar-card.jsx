@@ -31,7 +31,10 @@ export default function GrammarCard({ item, index }) {
       {hasExample ? (
         <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
           <div className="flex items-start justify-between gap-3">
-            <p className="hanzi-display text-3xl font-black text-slate-950" dir="ltr">
+            <p
+              className="hanzi-display text-3xl font-black text-slate-950"
+              dir="ltr"
+            >
               <bdi>{item.example?.hanzi}</bdi>
             </p>
             {item.example?.hanzi ? (

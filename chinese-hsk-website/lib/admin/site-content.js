@@ -31,7 +31,9 @@ async function getSiteContentMapUncached() {
   try {
     await ensureSiteContentSeeded();
     const supabase = getSupabaseAdmin();
-    const { data: rows } = await supabase.from("site_content").select("key, value");
+    const { data: rows } = await supabase
+      .from("site_content")
+      .select("key, value");
     if (!rows || rows.length === 0) {
       return Object.fromEntries(defaults.map((row) => [row.key, row.value]));
     }

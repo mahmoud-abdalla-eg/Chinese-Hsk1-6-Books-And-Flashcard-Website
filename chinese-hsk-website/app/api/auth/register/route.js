@@ -3,7 +3,10 @@ import { createUser } from "@/lib/auth/users";
 
 export const dynamic = "force-dynamic";
 
-function sanitizeAuthErrorMessage(error, defaultFallback = "Registration failed. Please check your details and try again.") {
+function sanitizeAuthErrorMessage(
+  error,
+  defaultFallback = "Registration failed. Please check your details and try again.",
+) {
   const raw = error instanceof Error ? error.message : String(error || "");
   console.error("[AUTH_REGISTER_ERROR]", error);
 
@@ -37,7 +40,10 @@ function sanitizeAuthErrorMessage(error, defaultFallback = "Registration failed.
 export async function POST(request) {
   const url = new URL(request.url);
   const redirectParam = url.searchParams.get("redirect");
-  const targetUrl = redirectParam && redirectParam.startsWith("/") ? redirectParam : "/dashboard";
+  const targetUrl =
+    redirectParam && redirectParam.startsWith("/")
+      ? redirectParam
+      : "/dashboard";
 
   try {
     const { body, wantsHtml } = await readAuthBody(request);
@@ -55,10 +61,7 @@ export async function POST(request) {
       if (redirectParam) signupUrl.searchParams.set("redirect", redirectParam);
       return Response.redirect(signupUrl, 303);
     }
-    return Response.json(
-      { error: message },
-      { status: 400 },
-    );
+    return Response.json({ error: message }, { status: 400 });
   }
 }
 

@@ -50,34 +50,36 @@ export default async function GrammarUnitPage({ params }) {
           >
             Back to level
           </Link>
-          {Number(unitId) > 1 ? (
-            <Link
-              href={`/grammar/hsk/${level}/unit/${Number(unitId) - 1}`}
-              className="rounded-full bg-slate-700 px-5 py-3 text-sm font-black text-white hover:bg-slate-800"
-            >
-              Previous unit
-            </Link>
-          ) : null}
-          {hasNext ? (
-            <Link
-              href={`/grammar/hsk/${level}/unit/${Number(unitId) + 1}`}
-              className="rounded-full bg-teal-700 px-5 py-3 text-sm font-black text-white hover:bg-teal-800"
-            >
-              Next unit
-            </Link>
-          ) : null}
+          {Number(unitId) > 1
+            ? <Link
+                href={`/grammar/hsk/${level}/unit/${Number(unitId) - 1}`}
+                className="rounded-full bg-slate-700 px-5 py-3 text-sm font-black text-white hover:bg-slate-800"
+              >
+                Previous unit
+              </Link>
+            : null}
+          {hasNext
+            ? <Link
+                href={`/grammar/hsk/${level}/unit/${Number(unitId) + 1}`}
+                className="rounded-full bg-teal-700 px-5 py-3 text-sm font-black text-white hover:bg-teal-800"
+              >
+                Next unit
+              </Link>
+            : null}
         </div>
       </Surface>
 
-      {items.length === 0 ? (
-        <Card>No grammar patterns found for this unit.</Card>
-      ) : (
-        <div className="grid gap-4 lg:grid-cols-2">
-          {items.map((item, index) => (
-            <GrammarCard key={`${item.id}-${index}`} item={item} index={index} />
-          ))}
-        </div>
-      )}
+      {items.length === 0
+        ? <Card>No grammar patterns found for this unit.</Card>
+        : <div className="grid gap-4 lg:grid-cols-2">
+            {items.map((item, index) => (
+              <GrammarCard
+                key={`${item.id}-${index}`}
+                item={item}
+                index={index}
+              />
+            ))}
+          </div>}
     </div>
   );
 }
