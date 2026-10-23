@@ -21,7 +21,7 @@ function PageSkeleton() {
         <div className="mt-6 h-14 max-w-3xl rounded-2xl bg-slate-200" />
         <div className="mt-4 h-5 max-w-2xl rounded-full bg-slate-200" />
       </Surface>
-      <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {skeletonCards.map((key) => (
           <Card key={key}>
             <div className="h-4 w-20 rounded-full bg-slate-200" />

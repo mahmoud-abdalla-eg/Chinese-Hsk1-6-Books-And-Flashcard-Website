@@ -117,7 +117,7 @@ export default async function HomePage() {
           title="Six HSK levels, one consistent learning rhythm."
           text="Each level is split into focused units so you can study words, examples, flashcards, grammar, and conversation practice at a comfortable pace."
         />
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-6">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {summaries.map((summary) => (
             <LevelCard key={summary.level} summary={summary} />
           ))}

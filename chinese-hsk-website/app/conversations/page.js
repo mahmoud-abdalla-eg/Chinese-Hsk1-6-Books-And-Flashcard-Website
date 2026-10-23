@@ -38,7 +38,7 @@ export default async function ConversationsPage() {
           title="Practice useful dialogue one unit at a time."
           text="Each level is organized into small lessons so new words are easier to hear, repeat, and remember."
         />
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-6">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {summaries.map((summary) => {
             const theme = levelThemes[summary.level];
             return (

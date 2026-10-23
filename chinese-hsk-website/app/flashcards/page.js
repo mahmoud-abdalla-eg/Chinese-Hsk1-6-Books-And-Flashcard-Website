@@ -36,7 +36,7 @@ export default async function FlashcardsPage() {
           title="Study by level"
           text="Choose a deck, test yourself, and save difficult words for another round."
         />
-        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-6">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {summaries.map((summary) => {
             const theme = levelThemes[summary.level];
             return (
