@@ -1,5 +1,7 @@
 import "./globals.css";
 import SiteAnalytics from "@/components/analytics/site-analytics";
+import { AuthProvider } from "@/components/auth/auth-provider";
+import LoginPromptModal from "@/components/auth/login-prompt-modal";
 import { LanguageProvider } from "@/components/language/language-provider";
 import SiteFooter from "@/components/layout/site-footer";
 import SiteHeader from "@/components/layout/site-header";
@@ -15,14 +17,17 @@ export default function RootLayout({ children }) {
     <html lang="en" className="h-full scroll-smooth">
       <body className="min-h-full bg-[#f7f8fb] text-slate-900 antialiased">
         <LanguageProvider>
-          <div className="min-h-screen overflow-hidden">
-            <SiteHeader />
-            <SiteAnalytics />
-            <main className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-              {children}
-            </main>
-            <SiteFooter />
-          </div>
+          <AuthProvider>
+            <div className="min-h-screen overflow-hidden">
+              <SiteHeader />
+              <SiteAnalytics />
+              <main className="mx-auto w-full max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+                {children}
+              </main>
+              <SiteFooter />
+            </div>
+            <LoginPromptModal />
+          </AuthProvider>
         </LanguageProvider>
       </body>
     </html>

@@ -350,6 +350,86 @@ export const dictionary = {
     zh: "\u9000\u51fa",
     ar: "\u062a\u0633\u062c\u064a\u0644 \u0627\u0644\u062e\u0631\u0648\u062c",
   },
+  guestMode: {
+    en: "Guest Mode",
+    zh: "访客模式",
+    ar: "وضع الضيف",
+  },
+  guestBannerTitle: {
+    en: "You are studying in Guest Mode",
+    zh: "您正在以访客模式学习",
+    ar: "أنت تدرس حالياً بوضع الضيف",
+  },
+  guestBannerDesc: {
+    en: "You can freely browse words and practice flashcards. To track daily streaks, save hard/easy words, and backup progress, log in to your account.",
+    zh: "您可以自由浏览单词和练习闪卡。要记录连续打卡天数、保存难易词汇并备份学习进度，请登录您的账户。",
+    ar: "يمكنك تصفح الكلمات وممارسة البطاقات بحرية. لتسجيل أيام الدراسة المتتالية، وحفظ الكلمات الصعبة والسهلة ومزامنة تقدمك، سجّل الدخول إلى حسابك.",
+  },
+  guestStreakNotice: {
+    en: "Daily streaks are only recorded for logged-in accounts.",
+    zh: "连续学习天数仅为已登录账户记录。",
+    ar: "يتم تسجيل أيام الدراسة المتتالية فقط للحسابات المسجلة.",
+  },
+  logInToTrackStreak: {
+    en: "Log in to start your streak",
+    zh: "登录以开启连续打卡",
+    ar: "سجّل الدخول لبدء سلسلة دراستك",
+  },
+  saveProgressPromptTitle: {
+    en: "Save your study progress?",
+    zh: "保存您的学习进度？",
+    ar: "هل تريد حفظ تقدمك الدراسي؟",
+  },
+  saveProgressPromptDesc: {
+    en: "Log in or create a free account to record your study streaks, save hard and easy words, and keep progress synced across devices. You can also ignore and continue as a guest.",
+    zh: "登录或创建免费账户以记录学习连续天数、保存难词与易词，并在设备间同步进度。您也可以忽略并作为访客继续练习。",
+    ar: "سجّل الدخول أو أنشئ حساباً مجانياً لتتبع سلسلة دراستك اليومية، وحفظ الكلمات الصعبة والسهلة، ومزامنة تقدمك. يمكنك أيضاً المتابعة كضيف دون حفظ.",
+  },
+  logInOrSignUp: {
+    en: "Log In / Sign Up",
+    zh: "登录 / 注册",
+    ar: "تسجيل الدخول / إنشاء حساب",
+  },
+  continueAsGuest: {
+    en: "Continue as guest (Ignore)",
+    zh: "作为访客继续（忽略）",
+    ar: "المتابعة كضيف (تجاهل)",
+  },
+  dontAskAgainSession: {
+    en: "Don't ask again this session",
+    zh: "本次会话不再提示",
+    ar: "عدم السؤال مرة أخرى في هذه الجلسة",
+  },
+  guestWordSaveNotice: {
+    en: "Word rating skipped in guest mode. Log in to record progress.",
+    zh: "访客模式下跳过词汇记录。登录以保存进度。",
+    ar: "تم تخطي تسجيل الكلمة في وضع الضيف. سجّل الدخول لحفظ التقدم.",
+  },
+  logInToSaveWords: {
+    en: "Log in to save words",
+    zh: "登录以保存单词",
+    ar: "سجّل الدخول لحفظ الكلمات",
+  },
+  noHardWordsGuest: {
+    en: "No hard words recorded yet. Log in and rate cards as Hard or Again to build your personal weak word deck.",
+    zh: "尚未记录难词。登录并在闪卡中标记为难词或重来，以建立您的专属难词库。",
+    ar: "لم يتم حفظ أي كلمات صعبة بعد. سجّل الدخول وقيّم البطاقات كصعبة لإنشاء قائمة مراجعة مخصصة.",
+  },
+  noFavoritesGuest: {
+    en: "No favorite words saved yet. Log in to save words to your favorites.",
+    zh: "尚未收藏任何单词。登录以收藏词汇。",
+    ar: "لم يتم حفظ أي كلمات مفضلة بعد. سجّل الدخول لإضافة كلمات إلى مفضلاتك.",
+  },
+  switchToAll: {
+    en: "Show all words",
+    zh: "显示所有单词",
+    ar: "عرض جميع الكلمات",
+  },
+  guestModeLocalPreview: {
+    en: "Guest Mode - Local Preview",
+    zh: "访客模式 - 本地预览",
+    ar: "وضع الضيف - معاينة محلية",
+  },
 };
 
 export function t(key, lang = "en") {

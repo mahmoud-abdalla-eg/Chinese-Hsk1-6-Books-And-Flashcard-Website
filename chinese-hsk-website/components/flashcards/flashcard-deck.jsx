@@ -1,13 +1,16 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import AudioButton from "@/components/audio/audio-button";
+import { useAuth } from "@/components/auth/auth-provider";
 import { useLanguage } from "@/components/language/language-provider";
 import { scoreReview } from "@/lib/progress/storage";
 import { usePersistentProgress } from "@/lib/progress/use-progress";
 
 export default function FlashcardDeck({ words = [] }) {
   const { lang, tr } = useLanguage();
+  const { user, isGuest, requestAuthAction, loginPromptState } = useAuth();
   const [filterMode, setFilterMode] = useState("all");
   const [deck, setDeck] = useState(words);
   const [index, setIndex] = useState(0);
@@ -37,21 +40,21 @@ export default function FlashcardDeck({ words = [] }) {
 
   const filteredWords = useMemo(() => {
     if (filterMode === "favorites") {
-      const favs = deck.filter((w) => favoriteSet.has(w.id));
-      return favs.length ? favs : deck;
+      return deck.filter((w) => favoriteSet.has(w.id));
     }
     if (filterMode === "hard") {
-      const hards = deck.filter((w) => hardSet.has(w.id));
-      return hards.length ? hards : deck;
+      return deck.filter((w) => hardSet.has(w.id));
     }
     if (filterMode === "unlearned") {
-      const unlearned = deck.filter((w) => !learnedSet.has(w.id));
-      return unlearned.length ? unlearned : deck;
+      return deck.filter((w) => !learnedSet.has(w.id));
     }
     return deck;
   }, [deck, filterMode, favoriteSet, hardSet, learnedSet]);
 
-  const activeIndex = Math.min(index, Math.max(0, filteredWords.length - 1));
+  const activeIndex = Math.min(
+    index,
+    Math.max(0, (filteredWords.length || 1) - 1),
+  );
   const word = filteredWords[activeIndex] || null;
 
   const shuffleDeck = () => {
@@ -61,23 +64,30 @@ export default function FlashcardDeck({ words = [] }) {
   };
 
   const toggleFavorite = (wordId) => {
-    saveProgress((current) => {
-      const set = new Set(current.favorites || []);
-      set.has(wordId) ? set.delete(wordId) : set.add(wordId);
-      return { ...current, favorites: [...set] };
+    requestAuthAction({
+      title: tr("saveProgressPromptTitle"),
+      description: tr("saveProgressPromptDesc"),
+      onContinue: (isAuthenticated) => {
+        if (isAuthenticated) {
+          saveProgress((current) => {
+            const set = new Set(current.favorites || []);
+            set.has(wordId) ? set.delete(wordId) : set.add(wordId);
+            return { ...current, favorites: [...set] };
+          });
+        }
+      },
     });
   };
 
-  const rate = (quality) => {
-    if (!word) return;
+  const performAuthenticatedRating = (quality, currentWord) => {
     const reviewedAt = new Date().toISOString();
     const nextReviewAt = scoreReview(quality);
     const review = {
-      hanzi: word.hanzi,
-      level: word.level || word.hskLevel,
-      meaningEn: word.meaning?.en || "",
-      pinyin: word.pinyin,
-      wordId: word.id,
+      hanzi: currentWord.hanzi,
+      level: currentWord.level || currentWord.hskLevel,
+      meaningEn: currentWord.meaning?.en || "",
+      pinyin: currentWord.pinyin,
+      wordId: currentWord.id,
       quality,
       nextReviewAt,
       reviewedAt,
@@ -89,14 +99,14 @@ export default function FlashcardDeck({ words = [] }) {
       const hardWords = new Set(current.hardWords);
       const learnedWords = new Set(current.learnedWords);
       if (quality === "Good" || quality === "Easy") {
-        learnedWords.add(word.id);
+        learnedWords.add(currentWord.id);
       }
       if (quality === "Again" || quality === "Hard") {
-        hardWords.add(word.id);
+        hardWords.add(currentWord.id);
       } else {
-        hardWords.delete(word.id);
+        hardWords.delete(currentWord.id);
       }
-      const currentStats = current.wordStats?.[word.id] || {
+      const currentStats = current.wordStats?.[currentWord.id] || {
         attempts: 0,
         hardReviews: 0,
       };
@@ -108,7 +118,7 @@ export default function FlashcardDeck({ words = [] }) {
         reviewHistory: [...(current.reviewHistory || []), review],
         wordStats: {
           ...(current.wordStats || {}),
-          [word.id]: {
+          [currentWord.id]: {
             ...currentStats,
             attempts: currentStats.attempts + 1,
             hardReviews:
@@ -126,9 +136,30 @@ export default function FlashcardDeck({ words = [] }) {
     setIndex((current) => (current + 1) % filteredWords.length);
   };
 
+  const rate = (quality) => {
+    if (!word) return;
+
+    requestAuthAction({
+      title: tr("saveProgressPromptTitle"),
+      description: tr("saveProgressPromptDesc"),
+      onContinue: (isAuthenticated) => {
+        if (isAuthenticated) {
+          performAuthenticatedRating(quality, word);
+        } else {
+          // Guest mode: cannot save to hard or easy, cannot have a streak!
+          // Smoothly advance card so user can continue practicing freely.
+          setFlipped(false);
+          setIndex((current) => (current + 1) % filteredWords.length);
+        }
+      },
+    });
+  };
+
   // Keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e) => {
+      // Ignore if user is inside an input or if login prompt modal is currently open
+      if (loginPromptState?.isOpen) return;
       const tag = e.target?.tagName?.toLowerCase();
       if (tag === "input" || tag === "textarea") return;
 
@@ -138,11 +169,15 @@ export default function FlashcardDeck({ words = [] }) {
       } else if (e.code === "ArrowRight") {
         e.preventDefault();
         setFlipped(false);
-        setIndex((i) => (i + 1) % filteredWords.length);
+        if (filteredWords.length) {
+          setIndex((i) => (i + 1) % filteredWords.length);
+        }
       } else if (e.code === "ArrowLeft") {
         e.preventDefault();
         setFlipped(false);
-        setIndex((i) => (i - 1 + filteredWords.length) % filteredWords.length);
+        if (filteredWords.length) {
+          setIndex((i) => (i - 1 + filteredWords.length) % filteredWords.length);
+        }
       } else if (e.key === "1") {
         e.preventDefault();
         rate("Again");
@@ -159,9 +194,99 @@ export default function FlashcardDeck({ words = [] }) {
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [filteredWords.length, word]);
+  }, [filteredWords.length, word, loginPromptState?.isOpen]);
 
-  if (!word) return <p className="p-8 text-center text-slate-500">{tr("noFlashcardsFound")}</p>;
+  // Empty deck state (e.g. filtered by hard or favorites when none exist)
+  if (!word || filteredWords.length === 0) {
+    return (
+      <div className="space-y-6" data-no-static-translate>
+        {/* Top Filter Buttons */}
+        <div className="flex flex-wrap items-center justify-between gap-3 text-xs font-black">
+          <div className="flex flex-wrap items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 p-1">
+            <button
+              type="button"
+              onClick={() => {
+                setFilterMode("all");
+                setIndex(0);
+                setFlipped(false);
+              }}
+              className={`rounded-full px-3 py-1.5 transition ${
+                filterMode === "all"
+                  ? "bg-teal-700 text-white shadow-xs"
+                  : "text-slate-600 hover:text-slate-900"
+              }`}
+            >
+              All ({deck.length})
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setFilterMode("hard");
+                setIndex(0);
+                setFlipped(false);
+              }}
+              className={`rounded-full px-3 py-1.5 transition ${
+                filterMode === "hard"
+                  ? "bg-amber-600 text-white shadow-xs"
+                  : "text-slate-600 hover:text-slate-900"
+              }`}
+            >
+              Hard ({deck.filter((w) => hardSet.has(w.id)).length})
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setFilterMode("favorites");
+                setIndex(0);
+                setFlipped(false);
+              }}
+              className={`rounded-full px-3 py-1.5 transition ${
+                filterMode === "favorites"
+                  ? "bg-rose-600 text-white shadow-xs"
+                  : "text-slate-600 hover:text-slate-900"
+              }`}
+            >
+              Favorites ({deck.filter((w) => favoriteSet.has(w.id)).length})
+            </button>
+          </div>
+        </div>
+
+        {/* Empty placeholder */}
+        <div className="rounded-3xl border border-dashed border-slate-300 bg-white p-10 text-center shadow-xs">
+          <span className="text-5xl">📖</span>
+          <h3 className="mt-4 text-xl font-black text-slate-900">
+            {filterMode === "hard"
+              ? tr("noHardWordsGuest")
+              : filterMode === "favorites"
+                ? tr("noFavoritesGuest")
+                : tr("noFlashcardsFound")}
+          </h3>
+          <p className="mt-2 text-sm font-semibold text-slate-500 max-w-md mx-auto">
+            {isGuest
+              ? tr("guestBannerDesc")
+              : "Review more flashcards or mark words as hard/favorite to build your study queue."}
+          </p>
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <button
+              type="button"
+              onClick={() => setFilterMode("all")}
+              className="rounded-full border border-slate-200 bg-slate-50 px-5 py-2.5 text-xs font-black text-slate-800 hover:bg-slate-100"
+            >
+              {tr("switchToAll")}
+            </button>
+            {isGuest ? (
+              <Link
+                href="/account"
+                className="rounded-full bg-teal-700 px-5 py-2.5 text-xs font-black text-white hover:bg-teal-800 shadow-xs"
+              >
+                {tr("logInOrSignUp")}
+              </Link>
+            ) : null}
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   const isArabic = lang === "ar";
   const meaning = isArabic
@@ -175,7 +300,9 @@ export default function FlashcardDeck({ words = [] }) {
     : word.example?.en || englishExampleFallback;
   const isFav = favoriteSet.has(word.id);
   const isLearned = learnedSet.has(word.id);
-  const progressPercent = Math.round(((activeIndex + 1) / filteredWords.length) * 100);
+  const progressPercent = Math.round(
+    ((activeIndex + 1) / filteredWords.length) * 100,
+  );
 
   return (
     <div className="space-y-6" data-no-static-translate>
@@ -245,6 +372,11 @@ export default function FlashcardDeck({ words = [] }) {
         </div>
 
         <div className="flex items-center gap-2">
+          {isGuest ? (
+            <span className="rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-bold text-amber-900">
+              {tr("guestMode")}
+            </span>
+          ) : null}
           <button
             type="button"
             onClick={shuffleDeck}
@@ -284,7 +416,13 @@ export default function FlashcardDeck({ words = [] }) {
               type="button"
               onClick={() => toggleFavorite(word.id)}
               className="rounded-full p-2 text-base transition hover:scale-110"
-              title={isFav ? "Remove from favorites" : "Save to favorites"}
+              title={
+                isGuest
+                  ? tr("logInToSaveWords")
+                  : isFav
+                    ? "Remove from favorites"
+                    : "Save to favorites"
+              }
             >
               {isFav ? "❤️" : "🤍"}
             </button>
@@ -340,10 +478,16 @@ export default function FlashcardDeck({ words = [] }) {
                   >
                     {word.example.hanzi}
                   </span>
-                  <span className="mt-1 block text-sm font-bold text-teal-700" dir="ltr">
+                  <span
+                    className="mt-1 block text-sm font-bold text-teal-700"
+                    dir="ltr"
+                  >
                     {word.example.pinyin}
                   </span>
-                  <span className="mt-2 block text-sm font-semibold text-slate-600" dir={isArabic ? "rtl" : "ltr"}>
+                  <span
+                    className="mt-2 block text-sm font-semibold text-slate-600"
+                    dir={isArabic ? "rtl" : "ltr"}
+                  >
                     {exampleTranslation}
                   </span>
                 </div>
@@ -381,7 +525,9 @@ export default function FlashcardDeck({ words = [] }) {
             type="button"
             onClick={() => {
               setFlipped(false);
-              setIndex((i) => (i - 1 + filteredWords.length) % filteredWords.length);
+              setIndex(
+                (i) => (i - 1 + filteredWords.length) % filteredWords.length,
+              );
             }}
             className="inline-flex items-center gap-1 rounded-full px-3 py-1.5 hover:bg-slate-100"
           >

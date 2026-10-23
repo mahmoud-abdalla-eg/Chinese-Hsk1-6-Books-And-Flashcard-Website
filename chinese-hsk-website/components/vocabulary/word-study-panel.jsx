@@ -1,17 +1,31 @@
 "use client";
 
 import AudioButton from "@/components/audio/audio-button";
+import { useAuth } from "@/components/auth/auth-provider";
+import { useLanguage } from "@/components/language/language-provider";
 import { usePersistentProgress } from "@/lib/progress/use-progress";
 
 export default function WordStudyPanel({ word }) {
+  const { tr } = useLanguage();
+  const { requestAuthAction } = useAuth();
   const { progress, saveProgress } = usePersistentProgress();
+
   const toggle = (key, id) => {
-    saveProgress((current) => {
-      const set = new Set(current[key]);
-      set.has(id) ? set.delete(id) : set.add(id);
-      return { ...current, [key]: [...set] };
+    requestAuthAction({
+      title: tr("saveProgressPromptTitle"),
+      description: tr("saveProgressPromptDesc"),
+      onContinue: (isAuthenticated) => {
+        if (isAuthenticated) {
+          saveProgress((current) => {
+            const set = new Set(current[key] || []);
+            set.has(id) ? set.delete(id) : set.add(id);
+            return { ...current, [key]: [...set] };
+          });
+        }
+      },
     });
   };
+
   const learned = progress.learnedWords?.includes(word.id);
   const favorite = progress.favorites?.includes(word.id);
   const exampleText = word.example?.hanzi || word.examples?.[0]?.hanzi || "";

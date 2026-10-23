@@ -1,5 +1,7 @@
 "use client";
 
+import { useAuth } from "@/components/auth/auth-provider";
+import { useLanguage } from "@/components/language/language-provider";
 import { usePersistentProgress } from "@/lib/progress/use-progress";
 
 const keyByType = {
@@ -8,18 +10,28 @@ const keyByType = {
 };
 
 export default function CompletionToggle({ id, type, label }) {
+  const { tr } = useLanguage();
+  const { requestAuthAction } = useAuth();
   const { progress, saveProgress, syncStatus } = usePersistentProgress();
   const progressKey = keyByType[type];
   const completed = progress[progressKey]?.includes(id);
 
   const toggle = () => {
-    saveProgress((current) => {
-      const currentItems = new Set(current[progressKey] || []);
-      completed ? currentItems.delete(id) : currentItems.add(id);
-      return {
-        ...current,
-        [progressKey]: [...currentItems],
-      };
+    requestAuthAction({
+      title: tr("saveProgressPromptTitle"),
+      description: tr("saveProgressPromptDesc"),
+      onContinue: (isAuthenticated) => {
+        if (isAuthenticated) {
+          saveProgress((current) => {
+            const currentItems = new Set(current[progressKey] || []);
+            completed ? currentItems.delete(id) : currentItems.add(id);
+            return {
+              ...current,
+              [progressKey]: [...currentItems],
+            };
+          });
+        }
+      },
     });
   };
 
@@ -44,5 +56,6 @@ export default function CompletionToggle({ id, type, label }) {
 function syncStatusLabel(status) {
   if (status === "syncing") return "Saving";
   if (status === "local") return "Offline";
+  if (status === "guest") return "Guest";
   return "";
 }

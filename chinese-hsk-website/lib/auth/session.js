@@ -2,7 +2,7 @@ import { createHmac, randomBytes, timingSafeEqual } from "node:crypto";
 import { cookies } from "next/headers";
 
 export const sessionCookieName = "mandarin_flow_session";
-const sessionMaxAge = 60 * 60 * 24 * 30;
+const sessionMaxAge = 60 * 60 * 24 * 365; // 365 days / 1 year
 
 export async function createSession(userId) {
   const tokenId = randomBytes(16).toString("hex");
@@ -16,6 +16,7 @@ export async function createSession(userId) {
     secure: process.env.NODE_ENV === "production",
     path: "/",
     maxAge: sessionMaxAge,
+    expires: new Date(Date.now() + sessionMaxAge * 1000),
   });
 }
 

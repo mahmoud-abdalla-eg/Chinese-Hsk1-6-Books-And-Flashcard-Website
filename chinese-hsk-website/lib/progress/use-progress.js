@@ -1,40 +1,52 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import { useAuth } from "@/components/auth/auth-provider";
 import {
   defaultProgress,
   mergeProgress,
   progressKey,
-  progressUserKey,
   sanitizeProgress,
 } from "@/lib/progress/storage";
 
 export function usePersistentProgress() {
+  const { user, loading: authLoading } = useAuth();
   const [progress, setProgress] = useState(defaultProgress());
   const [syncStatus, setSyncStatus] = useState("loading");
   const [storageKey, setStorageKey] = useState(null);
 
   useEffect(() => {
     let cancelled = false;
-    async function loadRemoteProgress() {
-      try {
-        const account = await loadAccount();
-        const key = account?.user
-          ? accountProgressKey(account.user.id)
-          : anonymousProgressKey();
-        const local = loadLocalProgress(key, !account?.user);
+
+    async function loadProgress() {
+      if (authLoading) return;
+
+      if (!user) {
+        // Guest mode: no streaks, no remote cloud sync
+        const key = "mandarin-flow-guest-session";
         if (cancelled) return;
         setStorageKey(key);
-        setProgress(local);
+        // Guests start with a clean or empty progress state
+        setProgress(defaultProgress());
+        setSyncStatus("guest");
+        return;
+      }
 
-        if (!account?.user) {
-          setSyncStatus("local");
-          return;
-        }
+      // Logged in user: load from local cache + remote Supabase
+      const key = accountProgressKey(user.id);
+      const local = loadLocalProgress(key);
+      if (cancelled) return;
+      setStorageKey(key);
+      setProgress(local);
+
+      try {
         const response = await fetch("/api/progress", {
           cache: "no-store",
         });
-        if (!response.ok) throw new Error("Progress load failed.");
+        if (!response.ok) {
+          if (!cancelled) setSyncStatus("local");
+          return;
+        }
         const data = await response.json();
         const merged = mergeProgress(local, data.progress);
         if (cancelled) return;
@@ -42,28 +54,27 @@ export function usePersistentProgress() {
         setProgress(merged);
         setSyncStatus("synced");
         if (JSON.stringify(merged) !== JSON.stringify(data.progress)) {
-          await saveRemoteProgress(merged);
+          await saveRemoteProgress(user.id, merged);
         }
       } catch {
-        if (!cancelled) {
-          const key = anonymousProgressKey();
-          setStorageKey(key);
-          setProgress(loadLocalProgress(key, true));
-          setSyncStatus("local");
-        }
+        if (!cancelled) setSyncStatus("local");
       }
     }
 
-    loadRemoteProgress();
+    loadProgress();
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [user, authLoading]);
 
   const saveProgress = useCallback(
     (nextProgress) => {
-      const activeKey = storageKey || anonymousProgressKey();
-      if (!storageKey) setStorageKey(activeKey);
+      if (!user) {
+        // Guests cannot record streaks or persist words to account
+        return;
+      }
+
+      const activeKey = storageKey || accountProgressKey(user.id);
       setProgress((current) => {
         const next =
           typeof nextProgress === "function"
@@ -74,26 +85,28 @@ export function usePersistentProgress() {
           lastStudiedDate: new Date().toISOString(),
         };
         saveLocalProgress(activeKey, withDate);
-        if (storageKey) {
-          setSyncStatus("syncing");
-          saveRemoteProgress(withDate)
-            .then((synced) => setSyncStatus(synced ? "synced" : "local"))
-            .catch(() => setSyncStatus("local"));
-        }
+        setSyncStatus("syncing");
+        saveRemoteProgress(user.id, withDate)
+          .then((synced) => setSyncStatus(synced ? "synced" : "local"))
+          .catch(() => setSyncStatus("local"));
         return withDate;
       });
     },
-    [storageKey],
+    [user, storageKey],
   );
 
-  return { progress, saveProgress, syncStatus, userId: storageKey };
+  return {
+    progress,
+    saveProgress,
+    syncStatus,
+    userId: user?.id || null,
+    isGuest: !user,
+  };
 }
 
-function loadLocalProgress(key, includeLegacy = false) {
+function loadLocalProgress(key) {
   try {
-    const saved =
-      window.localStorage.getItem(key) ||
-      (includeLegacy ? window.localStorage.getItem(progressKey) : null);
+    const saved = window.localStorage.getItem(key);
     return saved ? sanitizeProgress(JSON.parse(saved)) : defaultProgress();
   } catch {
     return defaultProgress();
@@ -101,40 +114,23 @@ function loadLocalProgress(key, includeLegacy = false) {
 }
 
 function saveLocalProgress(key, progress) {
-  window.localStorage.setItem(key, JSON.stringify(progress));
-}
-
-function anonymousProgressKey() {
-  const saved = window.localStorage.getItem(progressUserKey);
-  if (saved) return `${progressKey}:${saved}`;
-  const id = `mf_${crypto.randomUUID().replaceAll("-", "")}`;
-  window.localStorage.setItem(progressUserKey, id);
-  return `${progressKey}:${id}`;
+  try {
+    window.localStorage.setItem(key, JSON.stringify(progress));
+  } catch {}
 }
 
 function accountProgressKey(userId) {
   return `${progressKey}:account:${userId}`;
 }
 
-async function saveRemoteProgress(progress) {
-  const account = await loadAccount();
-  if (!account?.user) return false;
+async function saveRemoteProgress(userId, progress) {
+  if (!userId) return false;
   const response = await fetch("/api/progress", {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ progress }),
   });
-  if (!response.ok) throw new Error("Progress save failed.");
+  if (!response.ok) return false;
   await response.json();
   return true;
-}
-
-async function loadAccount() {
-  try {
-    const response = await fetch("/api/auth/me", { cache: "no-store" });
-    if (!response.ok) return null;
-    return response.json();
-  } catch {
-    return null;
-  }
 }

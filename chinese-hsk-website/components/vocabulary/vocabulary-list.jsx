@@ -3,9 +3,13 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import AudioButton from "@/components/audio/audio-button";
+import { useAuth } from "@/components/auth/auth-provider";
+import { useLanguage } from "@/components/language/language-provider";
 import { usePersistentProgress } from "@/lib/progress/use-progress";
 
 export default function VocabularyList({ words = [], level }) {
+  const { tr } = useLanguage();
+  const { requestAuthAction } = useAuth();
   const [query, setQuery] = useState("");
   const { progress, saveProgress } = usePersistentProgress();
 
@@ -19,10 +23,18 @@ export default function VocabularyList({ words = [], level }) {
   );
 
   const toggle = (key, id) => {
-    saveProgress((current) => {
-      const set = new Set(current[key] || []);
-      set.has(id) ? set.delete(id) : set.add(id);
-      return { ...current, [key]: [...set] };
+    requestAuthAction({
+      title: tr("saveProgressPromptTitle"),
+      description: tr("saveProgressPromptDesc"),
+      onContinue: (isAuthenticated) => {
+        if (isAuthenticated) {
+          saveProgress((current) => {
+            const set = new Set(current[key] || []);
+            set.has(id) ? set.delete(id) : set.add(id);
+            return { ...current, [key]: [...set] };
+          });
+        }
+      },
     });
   };
 

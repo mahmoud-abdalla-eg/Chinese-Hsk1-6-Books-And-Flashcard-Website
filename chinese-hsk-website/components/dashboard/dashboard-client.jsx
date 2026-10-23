@@ -2,6 +2,7 @@
 
 import { useMemo } from "react";
 import Link from "next/link";
+import { useAuth } from "@/components/auth/auth-provider";
 import DatabaseHealth from "@/components/dashboard/database-health";
 import { useLanguage } from "@/components/language/language-provider";
 import { Card, Pill, ProgressBar, Surface } from "@/components/ui/card";
@@ -9,6 +10,7 @@ import { usePersistentProgress } from "@/lib/progress/use-progress";
 
 export default function DashboardClient({ summaries, levelWords = [] }) {
   const { lang, tr } = useLanguage();
+  const { user, isGuest } = useAuth();
   const { progress, syncStatus } = usePersistentProgress();
   const learnedSet = useMemo(
     () => new Set(progress.learnedWords),
@@ -27,7 +29,7 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
     : 0;
   const recent = progress.reviewHistory.slice(-5).reverse();
   const dailyActivity = buildDailyActivity(progress.reviewHistory);
-  const streak = buildStreak(dailyActivity);
+  const streak = isGuest ? 0 : buildStreak(dailyActivity);
   const levelProgress = levelWords.map((summary) => {
     const words = summary.words || [];
     const hardIds = new Set(progress.hardWords);
@@ -58,10 +60,36 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
   const maxDailyCount = Math.max(1, ...dailyActivity.map((day) => day.count));
   return (
     <div className="space-y-8 pb-8">
+      {isGuest ? (
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-3xl border border-amber-200 bg-amber-50/90 p-6 text-amber-950 shadow-xs">
+          <div className="space-y-1">
+            <div className="flex items-center gap-2">
+              <span className="text-2xl">👋</span>
+              <h3 className="text-base font-black sm:text-lg">
+                {tr("guestBannerTitle")}
+              </h3>
+            </div>
+            <p className="text-sm font-semibold text-amber-900 max-w-2xl">
+              {tr("guestBannerDesc")}
+            </p>
+          </div>
+          <Link
+            href="/account"
+            className="shrink-0 rounded-full bg-teal-700 px-6 py-2.5 text-center text-xs font-black text-white hover:bg-teal-800 shadow-xs transition"
+          >
+            {tr("logInOrSignUp")}
+          </Link>
+        </div>
+      ) : null}
+
       <Surface className="grid gap-8 p-7 lg:grid-cols-[1fr_360px] lg:items-center lg:p-10">
         <div>
-          <Pill>
-            {syncStatus === "synced" ? tr("savedProgress") : tr("progress")}
+          <Pill tone={isGuest ? "amber" : "teal"}>
+            {syncStatus === "synced"
+              ? tr("savedProgress")
+              : isGuest
+                ? tr("guestModeLocalPreview")
+                : tr("progress")}
           </Pill>
           <h1 className="mt-5 text-5xl font-black text-slate-950 sm:text-7xl">
             {tr("yourMandarinProgress")}
@@ -139,15 +167,30 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
           </Card>
           <DatabaseHealth />
           <Card>
-            <h2 className="text-2xl font-black text-slate-950">
-              {tr("studyStreak")}
-            </h2>
+            <div className="flex items-center justify-between">
+              <h2 className="text-2xl font-black text-slate-950">
+                {tr("studyStreak")}
+              </h2>
+              {isGuest ? (
+                <span className="rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-black text-amber-800">
+                  {tr("guestMode")}
+                </span>
+              ) : null}
+            </div>
             <div className="mt-3 text-5xl font-black text-teal-700">
               {streak} {tr("days")}
             </div>
             <p className="mt-2 text-sm font-semibold text-slate-600">
-              {tr("streakHelp")}
+              {isGuest ? tr("guestStreakNotice") : tr("streakHelp")}
             </p>
+            {isGuest ? (
+              <Link
+                href="/account"
+                className="mt-3 inline-flex items-center gap-1 text-xs font-black text-teal-700 hover:text-teal-800"
+              >
+                {tr("logInToTrackStreak")} &rarr;
+              </Link>
+            ) : null}
           </Card>
           <Card>
             <h2 className="text-2xl font-black text-slate-950">
