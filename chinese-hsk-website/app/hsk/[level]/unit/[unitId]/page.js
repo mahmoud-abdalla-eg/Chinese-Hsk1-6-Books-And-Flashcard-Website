@@ -1,6 +1,7 @@
 import Link from "next/link";
 import ConversationLesson from "@/components/conversations/conversation-lesson";
 import UnitHeroCard from "@/components/hsk/unit-hero-card";
+import { Localized } from "@/components/language/language-provider";
 import { Pill, Surface } from "@/components/ui/card";
 import VocabularyList from "@/components/vocabulary/vocabulary-list";
 import { getManagedConversationForUnit } from "@/lib/admin/course-conversations";
@@ -30,12 +31,14 @@ export default async function UnitPage({ params }) {
   if (!unit) {
     return (
       <div className="py-12 text-center">
-        <h2 className="text-2xl font-black text-slate-800">Unit not found</h2>
+        <h2 className="text-2xl font-black text-slate-800">
+          <Localized k="unitNotFound" />
+        </h2>
         <Link
           href={`/hsk/${level}`}
           className="mt-4 inline-block text-sm font-bold text-teal-700 hover:underline"
         >
-          Return to HSK {level}
+          <Localized k="returnToHskLevel" /> {level}
         </Link>
       </div>
     );
@@ -66,14 +69,14 @@ export default async function UnitPage({ params }) {
             <div className="flex items-center gap-2">
               <Pill>HSK {level}</Pill>
               <span className="text-xs font-bold text-slate-600">
-                Unit {unit.id}
+                <Localized k="unit" /> {unit.id}
               </span>
             </div>
             <h1 className="mt-4 text-3xl font-black text-slate-950 sm:text-5xl">
-              Words {unit.start}–{unit.end}
+              <Localized k="words" /> {unit.start}–{unit.end}
             </h1>
             <p className="mt-4 max-w-2xl text-base font-semibold leading-7 text-slate-600">
-              Study all {unit.words?.length || 0} vocabulary words with pronunciation, examples, translations, and dedicated flashcard recall sessions.
+              <Localized k="unitStudyAllVocab" />
             </p>
           </div>
 
