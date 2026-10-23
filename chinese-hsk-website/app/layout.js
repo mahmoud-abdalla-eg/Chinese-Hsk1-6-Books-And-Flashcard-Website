@@ -5,6 +5,7 @@ import LoginPromptModal from "@/components/auth/login-prompt-modal";
 import { LanguageProvider } from "@/components/language/language-provider";
 import SiteFooter from "@/components/layout/site-footer";
 import SiteHeader from "@/components/layout/site-header";
+import ServiceWorkerRegister from "@/components/pwa/service-worker-register";
 
 export const metadata = {
   title: "Mandarin Flow HSK",
@@ -27,6 +28,7 @@ export default function RootLayout({ children }) {
               <SiteFooter />
             </div>
             <LoginPromptModal />
+            <ServiceWorkerRegister />
           </AuthProvider>
         </LanguageProvider>
       </body>

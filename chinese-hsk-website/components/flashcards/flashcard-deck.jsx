@@ -12,11 +12,27 @@ export default function FlashcardDeck({ words = [] }) {
   const { lang, tr } = useLanguage();
   const { user, isGuest, requestAuthAction, loginPromptState } = useAuth();
   const [filterMode, setFilterMode] = useState("all");
+  const [studyMode, setStudyMode] = useState("recognition"); // "recognition" | "recall"
+  const [playbackRate, setPlaybackRate] = useState(1.0);
   const [deck, setDeck] = useState(words);
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [reviews, setReviews] = useState([]);
   const { progress, saveProgress } = usePersistentProgress();
+
+  // Load study mode and audio speed preferences from localStorage
+  useEffect(() => {
+    try {
+      const savedMode = window.localStorage.getItem("mandarin_flow_study_mode");
+      if (savedMode === "recall" || savedMode === "recognition") {
+        setStudyMode(savedMode);
+      }
+      const savedRate = window.localStorage.getItem("mandarin_flow_audio_rate");
+      if (savedRate === "0.75" || savedRate === "1") {
+        setPlaybackRate(Number(savedRate));
+      }
+    } catch {}
+  }, []);
 
   // Re-sync deck when words prop changes
   useEffect(() => {
@@ -61,6 +77,24 @@ export default function FlashcardDeck({ words = [] }) {
     setDeck((current) => [...current].sort(() => Math.random() - 0.5));
     setIndex(0);
     setFlipped(false);
+  };
+
+  const handleModeChange = (mode) => {
+    setStudyMode(mode);
+    setFlipped(false);
+    try {
+      window.localStorage.setItem("mandarin_flow_study_mode", mode);
+    } catch {}
+  };
+
+  const handleRateToggle = () => {
+    setPlaybackRate((prev) => {
+      const next = prev === 1.0 ? 0.75 : 1.0;
+      try {
+        window.localStorage.setItem("mandarin_flow_audio_rate", String(next));
+      } catch {}
+      return next;
+    });
   };
 
   const toggleFavorite = (wordId) => {
@@ -158,7 +192,6 @@ export default function FlashcardDeck({ words = [] }) {
   // Keyboard navigation
   useEffect(() => {
     const handleKeyDown = (e) => {
-      // Ignore if user is inside an input or if login prompt modal is currently open
       if (loginPromptState?.isOpen) return;
       const tag = e.target?.tagName?.toLowerCase();
       if (tag === "input" || tag === "textarea") return;
@@ -200,7 +233,6 @@ export default function FlashcardDeck({ words = [] }) {
   if (!word || filteredWords.length === 0) {
     return (
       <div className="space-y-6" data-no-static-translate>
-        {/* Top Filter Buttons */}
         <div className="flex flex-wrap items-center justify-between gap-3 text-xs font-black">
           <div className="flex flex-wrap items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 p-1">
             <button
@@ -251,7 +283,6 @@ export default function FlashcardDeck({ words = [] }) {
           </div>
         </div>
 
-        {/* Empty placeholder */}
         <div className="rounded-3xl border border-dashed border-slate-300 bg-white p-10 text-center shadow-xs">
           <span className="text-5xl">📖</span>
           <h3 className="mt-4 text-xl font-black text-slate-900">
@@ -308,6 +339,7 @@ export default function FlashcardDeck({ words = [] }) {
     <div className="space-y-6" data-no-static-translate>
       {/* Top Filter & Deck Controls */}
       <div className="flex flex-wrap items-center justify-between gap-3 text-xs font-black">
+        {/* Filter Buttons */}
         <div className="flex flex-wrap items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 p-1">
           <button
             type="button"
@@ -371,12 +403,57 @@ export default function FlashcardDeck({ words = [] }) {
           </button>
         </div>
 
-        <div className="flex items-center gap-2">
+        {/* Study Mode, Audio Speed & Shuffle Controls */}
+        <div className="flex flex-wrap items-center gap-2">
+          {/* Mode Switcher: Recognition vs Recall */}
+          <div className="flex items-center rounded-full border border-slate-200 bg-slate-50 p-1 text-xs font-black">
+            <button
+              type="button"
+              onClick={() => handleModeChange("recognition")}
+              className={`rounded-full px-3 py-1 transition ${
+                studyMode === "recognition"
+                  ? "bg-teal-700 text-white shadow-xs"
+                  : "text-slate-600 hover:text-slate-900"
+              }`}
+            >
+              {tr("recognitionMode")}
+            </button>
+            <button
+              type="button"
+              onClick={() => handleModeChange("recall")}
+              className={`rounded-full px-3 py-1 transition ${
+                studyMode === "recall"
+                  ? "bg-teal-700 text-white shadow-xs"
+                  : "text-slate-600 hover:text-slate-900"
+              }`}
+            >
+              {tr("recallMode")}
+            </button>
+          </div>
+
+          {/* Audio Speed Pill */}
+          <button
+            type="button"
+            onClick={handleRateToggle}
+            className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-black shadow-xs transition ${
+              playbackRate === 0.75
+                ? "border-teal-500 bg-teal-50 text-teal-900 ring-1 ring-teal-400"
+                : "border-slate-200 bg-white text-slate-700 hover:border-slate-300"
+            }`}
+            title="Toggle audio speed (1.0x / 0.75x)"
+          >
+            <span>{playbackRate === 0.75 ? "🐢" : "⚡"}</span>
+            <span>
+              {playbackRate === 0.75 ? tr("slowAudio") : tr("normalAudio")}
+            </span>
+          </button>
+
           {isGuest ? (
             <span className="rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-bold text-amber-900">
               {tr("guestMode")}
             </span>
           ) : null}
+
           <button
             type="button"
             onClick={shuffleDeck}
@@ -409,6 +486,9 @@ export default function FlashcardDeck({ words = [] }) {
                 ✓ Learned
               </span>
             ) : null}
+            <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-[10px] font-black uppercase text-slate-500">
+              {studyMode === "recall" ? tr("recallMode") : tr("recognitionMode")}
+            </span>
           </div>
 
           <div className="flex items-center gap-2">
@@ -443,56 +523,118 @@ export default function FlashcardDeck({ words = [] }) {
             {flipped ? "Click to see front" : "Click to flip ↷"}
           </span>
 
-          {!flipped ? (
-            <div className="flex min-h-64 flex-col items-center justify-center space-y-4">
-              <span className="hanzi-display block text-7xl font-black text-slate-950 sm:text-8xl">
-                {word.hanzi}
-              </span>
-              <span className="text-sm font-bold text-slate-400">
-                (Tap or press Space to flip)
-              </span>
-            </div>
-          ) : (
-            <div
-              className={`space-y-4 py-2 ${isArabic ? "text-right" : "text-left"}`}
-            >
-              <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 pb-3">
-                <span className="text-4xl font-black text-slate-950" dir="ltr">
-                  {word.pinyin}
+          {/* Mode 1: RECOGNITION (Hanzi front -> Meaning back) */}
+          {studyMode === "recognition" ? (
+            !flipped ? (
+              <div className="flex min-h-64 flex-col items-center justify-center space-y-4">
+                <span className="hanzi-display block text-7xl font-black text-slate-950 sm:text-8xl">
+                  {word.hanzi}
                 </span>
-                <span className="rounded-full bg-slate-200 px-3 py-1 text-xs font-black uppercase text-slate-700">
-                  {word.partOfSpeech || "word"}
+                <span className="text-sm font-bold text-slate-400">
+                  (Tap or press Space to flip)
                 </span>
               </div>
-              <span
-                className="block text-2xl font-bold text-slate-800"
-                dir={isArabic ? "rtl" : "ltr"}
+            ) : (
+              <div
+                className={`space-y-4 py-2 ${isArabic ? "text-right" : "text-left"}`}
               >
-                {meaning}
-              </span>
-              {word.example?.hanzi ? (
-                <div className="rounded-2xl bg-white p-4 shadow-2xs">
-                  <span
-                    className="hanzi-display block text-2xl font-black text-slate-950"
-                    dir="ltr"
-                  >
-                    {word.example.hanzi}
+                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-200 pb-3">
+                  <span className="text-4xl font-black text-slate-950" dir="ltr">
+                    {word.pinyin}
                   </span>
-                  <span
-                    className="mt-1 block text-sm font-bold text-teal-700"
-                    dir="ltr"
-                  >
-                    {word.example.pinyin}
-                  </span>
-                  <span
-                    className="mt-2 block text-sm font-semibold text-slate-600"
-                    dir={isArabic ? "rtl" : "ltr"}
-                  >
-                    {exampleTranslation}
+                  <span className="rounded-full bg-slate-200 px-3 py-1 text-xs font-black uppercase text-slate-700">
+                    {word.partOfSpeech || "word"}
                   </span>
                 </div>
-              ) : null}
-            </div>
+                <span
+                  className="block text-2xl font-bold text-slate-800"
+                  dir={isArabic ? "rtl" : "ltr"}
+                >
+                  {meaning}
+                </span>
+                {word.example?.hanzi ? (
+                  <div className="rounded-2xl bg-white p-4 shadow-2xs">
+                    <span
+                      className="hanzi-display block text-2xl font-black text-slate-950"
+                      dir="ltr"
+                    >
+                      {word.example.hanzi}
+                    </span>
+                    <span
+                      className="mt-1 block text-sm font-bold text-teal-700"
+                      dir="ltr"
+                    >
+                      {word.example.pinyin}
+                    </span>
+                    <span
+                      className="mt-2 block text-sm font-semibold text-slate-600"
+                      dir={isArabic ? "rtl" : "ltr"}
+                    >
+                      {exampleTranslation}
+                    </span>
+                  </div>
+                ) : null}
+              </div>
+            )
+          ) : (
+            /* Mode 2: RECALL (Meaning front -> Hanzi & Pinyin back) */
+            !flipped ? (
+              <div className="flex min-h-64 flex-col items-center justify-center space-y-4 px-4 text-center">
+                <span
+                  className="block text-3xl sm:text-4xl font-black text-slate-900 leading-tight"
+                  dir={isArabic ? "rtl" : "ltr"}
+                >
+                  {meaning}
+                </span>
+                <span className="text-xs font-bold text-teal-700 uppercase tracking-wider">
+                  {word.partOfSpeech || "word"}
+                </span>
+                <span className="text-sm font-bold text-slate-400">
+                  {tr("tapToRevealHanzi")}
+                </span>
+              </div>
+            ) : (
+              <div
+                className={`space-y-4 py-2 ${isArabic ? "text-right" : "text-left"}`}
+              >
+                <div className="flex flex-col items-center justify-center gap-1 border-b border-slate-200 pb-4 text-center">
+                  <span className="hanzi-display block text-7xl font-black text-slate-950 sm:text-8xl">
+                    {word.hanzi}
+                  </span>
+                  <span className="text-3xl font-black text-teal-700 mt-2" dir="ltr">
+                    {word.pinyin}
+                  </span>
+                </div>
+                <span
+                  className="block text-xl font-bold text-slate-700"
+                  dir={isArabic ? "rtl" : "ltr"}
+                >
+                  {meaning}
+                </span>
+                {word.example?.hanzi ? (
+                  <div className="rounded-2xl bg-white p-4 shadow-2xs">
+                    <span
+                      className="hanzi-display block text-2xl font-black text-slate-950"
+                      dir="ltr"
+                    >
+                      {word.example.hanzi}
+                    </span>
+                    <span
+                      className="mt-1 block text-sm font-bold text-teal-700"
+                      dir="ltr"
+                    >
+                      {word.example.pinyin}
+                    </span>
+                    <span
+                      className="mt-2 block text-sm font-semibold text-slate-600"
+                      dir={isArabic ? "rtl" : "ltr"}
+                    >
+                      {exampleTranslation}
+                    </span>
+                  </div>
+                ) : null}
+              </div>
+            )
           )}
         </button>
 
@@ -501,12 +643,14 @@ export default function FlashcardDeck({ words = [] }) {
           <AudioButton
             src={word.audio?.word}
             text={word.hanzi}
+            playbackRate={playbackRate}
             label="Play word pronunciation"
           />
           {flipped && word.example?.hanzi ? (
             <AudioButton
               src={word.audio?.example}
               text={word.example.hanzi}
+              playbackRate={playbackRate}
               label="Play example sentence"
             />
           ) : null}

@@ -3,7 +3,12 @@
 import { useState } from "react";
 import { useLanguage } from "@/components/language/language-provider";
 
-export default function AudioButton({ src, text, label = "Play audio" }) {
+export default function AudioButton({
+  src,
+  text,
+  label = "Play audio",
+  playbackRate = 1.0,
+}) {
   const { tr } = useLanguage();
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -16,7 +21,7 @@ export default function AudioButton({ src, text, label = "Play audio" }) {
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(content);
       utterance.lang = "zh-CN";
-      utterance.rate = 0.85;
+      utterance.rate = playbackRate <= 0.8 ? 0.75 : 0.88;
       const voices = window.speechSynthesis.getVoices();
       const zhVoice = voices.find(
         (v) =>
@@ -40,6 +45,7 @@ export default function AudioButton({ src, text, label = "Play audio" }) {
     if (src) {
       try {
         const audio = new Audio(src);
+        audio.playbackRate = playbackRate;
         setIsPlaying(true);
         audio.onended = () => setIsPlaying(false);
         audio.onerror = () => {

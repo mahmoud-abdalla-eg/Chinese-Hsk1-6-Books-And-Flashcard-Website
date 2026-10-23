@@ -11,6 +11,7 @@ export function defaultProgress() {
     hardWords: [],
     wordStats: {},
     lastStudiedDate: null,
+    dailyGoal: 15,
   };
 }
 
@@ -25,6 +26,10 @@ export function sanitizeProgress(progress = {}) {
     completedConversations: arrayOfStrings(progress.completedConversations),
     completedUnits: arrayOfStrings(progress.completedUnits),
     hardWords: arrayOfStrings(progress.hardWords),
+    dailyGoal:
+      typeof progress.dailyGoal === "number" && progress.dailyGoal > 0
+        ? progress.dailyGoal
+        : fallback.dailyGoal,
     wordStats:
       progress.wordStats &&
       typeof progress.wordStats === "object" &&
@@ -36,6 +41,13 @@ export function sanitizeProgress(progress = {}) {
         ? progress.lastStudiedDate
         : fallback.lastStudiedDate,
   };
+}
+
+export function getTodayReviewCount(reviewHistory = []) {
+  const today = new Date().toISOString().slice(0, 10);
+  return (Array.isArray(reviewHistory) ? reviewHistory : []).filter(
+    (review) => String(review?.reviewedAt || "").slice(0, 10) === today,
+  ).length;
 }
 
 export function mergeProgress(localProgress, remoteProgress) {
@@ -68,6 +80,7 @@ export function mergeProgress(localProgress, remoteProgress) {
       ...remote.wordStats,
       ...local.wordStats,
     },
+    dailyGoal: remote.dailyGoal || local.dailyGoal || 15,
     lastStudiedDate: latestDate(local.lastStudiedDate, remote.lastStudiedDate),
   });
 }

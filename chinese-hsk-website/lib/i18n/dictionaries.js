@@ -425,6 +425,56 @@ export const dictionary = {
     zh: "显示所有单词",
     ar: "عرض جميع الكلمات",
   },
+  recognitionMode: {
+    en: "Recognition",
+    zh: "识记模式",
+    ar: "وضع التعرف",
+  },
+  recallMode: {
+    en: "Recall",
+    zh: "回忆模式",
+    ar: "وضع التذكر",
+  },
+  slowAudio: {
+    en: "0.75x Slow",
+    zh: "0.75x 慢速",
+    ar: "0.75x بطيء",
+  },
+  normalAudio: {
+    en: "1.0x Normal",
+    zh: "1.0x 正常",
+    ar: "1.0x طبيعي",
+  },
+  dailyGoal: {
+    en: "Daily Goal",
+    zh: "每日目标",
+    ar: "الهدف اليومي",
+  },
+  cardsReviewedToday: {
+    en: "cards reviewed today",
+    zh: "今日已复习单词",
+    ar: "بطاقات روجعت اليوم",
+  },
+  goalReached: {
+    en: "Daily goal completed! 🔥",
+    zh: "今日目标已达成！🔥",
+    ar: "تم إكمال هدف اليوم! 🔥",
+  },
+  moreCardsToGo: {
+    en: "more cards to hit today's goal",
+    zh: "个词达成今日目标",
+    ar: "بطاقات متبقية لتحقيق هدف اليوم",
+  },
+  offlineReady: {
+    en: "Offline study ready",
+    zh: "离线学习已就绪",
+    ar: "الدراسة بدون اتصال جاهزة",
+  },
+  tapToRevealHanzi: {
+    en: "(Tap or press Space to reveal Hanzi)",
+    zh: "(点击或按空格揭示汉字)",
+    ar: "(اضغط أو استخدم المسافة لإظهار الرمز الصيني)",
+  },
   guestModeLocalPreview: {
     en: "Guest Mode - Local Preview",
     zh: "访客模式 - 本地预览",

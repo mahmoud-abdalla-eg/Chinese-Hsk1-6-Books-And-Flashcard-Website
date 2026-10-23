@@ -1,22 +1,49 @@
+"use client";
+
+import { useState } from "react";
 import AudioButton from "@/components/audio/audio-button";
+import { useLanguage } from "@/components/language/language-provider";
 import CompletionToggle from "@/components/progress/completion-toggle";
 import { Card, Pill } from "@/components/ui/card";
 
 export default function ConversationLesson({ conversation, words = [] }) {
+  const { tr } = useLanguage();
+  const [playbackRate, setPlaybackRate] = useState(1.0);
+
   const targetWords = words.filter((word) =>
     conversation.targetVocabularyIds?.includes(word.id),
   );
+
   return (
     <Card className="space-y-6 overflow-hidden">
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div>
-          <Pill
-            tone={conversation.status === "needs-authoring" ? "amber" : "green"}
-          >
-            {conversation.status === "needs-authoring"
-              ? "Coming soon"
-              : "Ready"}
-          </Pill>
+          <div className="flex items-center gap-2">
+            <Pill
+              tone={
+                conversation.status === "needs-authoring" ? "amber" : "green"
+              }
+            >
+              {conversation.status === "needs-authoring"
+                ? "Coming soon"
+                : "Ready"}
+            </Pill>
+            <button
+              type="button"
+              onClick={() =>
+                setPlaybackRate((prev) => (prev === 1.0 ? 0.75 : 1.0))
+              }
+              className={`inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-xs font-bold transition ${
+                playbackRate === 0.75
+                  ? "border-teal-500 bg-teal-50 text-teal-900"
+                  : "border-slate-200 bg-white text-slate-600 hover:border-slate-300"
+              }`}
+              title="Toggle dialogue speech rate"
+            >
+              <span>{playbackRate === 0.75 ? "🐢" : "⚡"}</span>
+              <span>{playbackRate === 0.75 ? tr("slowAudio") : tr("normalAudio")}</span>
+            </button>
+          </div>
           <h2 className="mt-3 text-3xl font-black text-slate-950">
             {conversation.title?.en}
           </h2>
@@ -41,23 +68,50 @@ export default function ConversationLesson({ conversation, words = [] }) {
           />
         </div>
       </div>
+
+      {conversation.audio ? (
+        <div className="flex items-center justify-between gap-4 rounded-2xl border border-teal-200 bg-teal-50/60 p-4">
+          <div className="space-y-0.5">
+            <span className="text-xs font-bold uppercase tracking-wider text-teal-800">
+              Full Dialogue Audio
+            </span>
+            <p className="text-sm font-semibold text-teal-950">
+              Listen to the complete native dialogue recording
+            </p>
+          </div>
+          <AudioButton
+            src={conversation.audio}
+            playbackRate={playbackRate}
+            label="Play full dialogue track"
+          />
+        </div>
+      ) : null}
+
       {conversation.dialogue?.length ? (
         <div className="space-y-3">
           {conversation.dialogue.map((line) => (
             <div
               key={line.id}
-              className="rounded-2xl border border-slate-200 bg-white p-4"
+              className="rounded-2xl border border-slate-200 bg-white p-4 transition hover:border-teal-200"
             >
               <div className="flex items-center justify-between gap-3">
-                <strong>{line.role}</strong>
-                <AudioButton src={line.audio} text={line.hanzi} />
+                <strong className="rounded-md bg-slate-100 px-2 py-0.5 text-xs text-slate-700">
+                  {line.role}
+                </strong>
+                <AudioButton
+                  src={line.audio}
+                  text={line.hanzi}
+                  playbackRate={playbackRate}
+                />
               </div>
               <p className="hanzi-display mt-2 text-2xl font-black text-slate-950">
                 {line.hanzi}
               </p>
-              <p className="text-teal-700">{line.pinyin}</p>
-              <p>{line.translation?.en}</p>
-              <p dir="rtl">{line.translation?.ar}</p>
+              <p className="font-semibold text-teal-700">{line.pinyin}</p>
+              <p className="text-sm text-slate-700">{line.translation?.en}</p>
+              <p className="text-sm text-slate-700" dir="rtl">
+                {line.translation?.ar}
+              </p>
             </div>
           ))}
         </div>
@@ -76,6 +130,7 @@ export default function ConversationLesson({ conversation, words = [] }) {
           </div>
         </div>
       )}
+
       <div>
         <h3 className="text-lg font-black text-slate-950">Target vocabulary</h3>
         <div className="mt-3 flex flex-wrap gap-2">

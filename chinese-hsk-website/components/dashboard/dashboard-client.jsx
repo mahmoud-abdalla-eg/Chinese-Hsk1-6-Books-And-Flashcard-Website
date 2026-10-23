@@ -6,6 +6,7 @@ import { useAuth } from "@/components/auth/auth-provider";
 import DatabaseHealth from "@/components/dashboard/database-health";
 import { useLanguage } from "@/components/language/language-provider";
 import { Card, Pill, ProgressBar, Surface } from "@/components/ui/card";
+import { getTodayReviewCount } from "@/lib/progress/storage";
 import { usePersistentProgress } from "@/lib/progress/use-progress";
 
 export default function DashboardClient({ summaries, levelWords = [] }) {
@@ -30,6 +31,14 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
   const recent = progress.reviewHistory.slice(-5).reverse();
   const dailyActivity = buildDailyActivity(progress.reviewHistory);
   const streak = isGuest ? 0 : buildStreak(dailyActivity);
+  const todayReviews = useMemo(
+    () => getTodayReviewCount(progress.reviewHistory),
+    [progress.reviewHistory],
+  );
+  const dailyGoal = progress.dailyGoal || 15;
+  const goalPercent = Math.min(100, Math.round((todayReviews / dailyGoal) * 100));
+  const isGoalReached = todayReviews >= dailyGoal;
+  const remainingReviews = Math.max(0, dailyGoal - todayReviews);
   const levelProgress = levelWords.map((summary) => {
     const words = summary.words || [];
     const hardIds = new Set(progress.hardWords);
@@ -154,6 +163,74 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
           </div>
         </Card>
         <div className="space-y-6">
+          <Card className="border-teal-100 bg-gradient-to-br from-teal-50/50 via-white to-teal-50/30">
+            <div className="flex items-center justify-between">
+              <h2 className="text-2xl font-black text-slate-950">
+                {tr("dailyGoal")}
+              </h2>
+              {isGoalReached ? (
+                <span className="rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-black text-emerald-800">
+                  {tr("goalReached")}
+                </span>
+              ) : (
+                <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-bold text-slate-600">
+                  {remainingReviews} {tr("moreCardsToGo")}
+                </span>
+              )}
+            </div>
+            <div className="mt-4 flex items-center gap-5">
+              <div className="relative h-24 w-24 shrink-0">
+                <svg
+                  className="h-full w-full -rotate-90 origin-center"
+                  viewBox="0 0 100 100"
+                >
+                  <circle
+                    cx="50"
+                    cy="50"
+                    r="40"
+                    stroke="currentColor"
+                    strokeWidth="8"
+                    className="text-slate-200"
+                    fill="transparent"
+                  />
+                  <circle
+                    cx="50"
+                    cy="50"
+                    r="40"
+                    stroke="currentColor"
+                    strokeWidth="8"
+                    strokeDasharray={251.327}
+                    strokeDashoffset={251.327 - (251.327 * goalPercent) / 100}
+                    strokeLinecap="round"
+                    className="text-teal-600 transition-all duration-700 ease-out"
+                    fill="transparent"
+                  />
+                </svg>
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+                  <span className="text-base font-black text-slate-900">
+                    {goalPercent}%
+                  </span>
+                </div>
+              </div>
+              <div className="space-y-1">
+                <div className="text-3xl font-black text-teal-800">
+                  {todayReviews}{" "}
+                  <span className="text-base font-bold text-slate-400">
+                    / {dailyGoal}
+                  </span>
+                </div>
+                <p className="text-xs font-bold text-slate-600">
+                  {tr("cardsReviewedToday")}
+                </p>
+                <Link
+                  href="/flashcards"
+                  className="inline-flex items-center gap-1 pt-1 text-xs font-black text-teal-700 hover:text-teal-800"
+                >
+                  {tr("flashcards")} &rarr;
+                </Link>
+              </div>
+            </div>
+          </Card>
           <Card>
             <h2 className="text-2xl font-black text-slate-950">
               {tr("studySnapshot")}
