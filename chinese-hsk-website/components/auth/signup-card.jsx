@@ -84,7 +84,13 @@ export default function SignupCard({ initialError = "" }) {
           role="alert"
           className="mb-5 rounded-2xl border border-rose-200 bg-rose-50 p-4 text-xs font-bold text-rose-800 leading-normal"
         >
-          {errorMessage}
+          {errorMessage === "Account service is temporarily unavailable. Please try again shortly or continue learning as a guest."
+            ? tr("accountServiceUnavailable")
+            : errorMessage === "This email is already registered."
+              ? tr("emailAlreadyRegistered")
+              : errorMessage === "Invalid email or password."
+                ? tr("invalidCredentials")
+                : errorMessage}
         </div>
       ) : null}
 

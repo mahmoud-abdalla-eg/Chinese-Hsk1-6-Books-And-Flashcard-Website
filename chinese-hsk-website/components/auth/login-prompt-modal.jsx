@@ -1,12 +1,13 @@
 "use client";
 
-import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useAuth } from "@/components/auth/auth-provider";
 import { useLanguage } from "@/components/language/language-provider";
 
 export default function LoginPromptModal() {
   const { tr } = useLanguage();
+  const router = useRouter();
   const { loginPromptState, closeLoginPrompt } = useAuth();
   const [rememberChoice, setRememberChoice] = useState(false);
 
@@ -29,6 +30,16 @@ export default function LoginPromptModal() {
   const title = loginPromptState.title || tr("saveProgressPromptTitle");
   const description =
     loginPromptState.description || tr("saveProgressPromptDesc");
+
+  const handleNavigate = (path) => {
+    const currentPath =
+      typeof window !== "undefined"
+        ? window.location.pathname + window.location.search
+        : "/dashboard";
+    const targetUrl = `${path}?redirect=${encodeURIComponent(currentPath)}`;
+    closeLoginPrompt(false, false);
+    router.push(targetUrl);
+  };
 
   return (
     <div
@@ -106,21 +117,28 @@ export default function LoginPromptModal() {
         </label>
 
         {/* Action Buttons */}
-        <div className="mt-6 flex flex-col-reverse gap-2.5 sm:flex-row sm:items-center sm:justify-end">
+        <div className="mt-6 flex flex-wrap items-center justify-end gap-2">
           <button
             type="button"
             onClick={() => closeLoginPrompt(true, rememberChoice)}
-            className="rounded-full border border-slate-200 bg-slate-50 px-5 py-2.5 text-xs font-black text-slate-700 hover:border-slate-300 hover:bg-slate-100 transition"
+            className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-xs font-black text-slate-700 hover:border-slate-300 hover:bg-slate-100 transition"
           >
             {tr("continueAsGuest")}
           </button>
-          <Link
-            href="/login"
-            onClick={() => closeLoginPrompt(false, false)}
-            className="rounded-full bg-teal-700 px-6 py-2.5 text-center text-xs font-black text-white hover:bg-teal-800 shadow-sm transition"
+          <button
+            type="button"
+            onClick={() => handleNavigate("/login")}
+            className="rounded-full border border-teal-700 bg-white px-4 py-2 text-center text-xs font-black text-teal-800 hover:bg-teal-50 transition"
           >
-            {tr("logInOrSignUp")}
-          </Link>
+            {tr("logIn")}
+          </button>
+          <button
+            type="button"
+            onClick={() => handleNavigate("/signup")}
+            className="rounded-full bg-teal-700 px-5 py-2 text-center text-xs font-black text-white hover:bg-teal-800 shadow-sm transition"
+          >
+            {tr("signUp")}
+          </button>
         </div>
       </div>
     </div>

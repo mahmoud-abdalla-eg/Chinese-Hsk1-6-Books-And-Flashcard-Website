@@ -4,24 +4,44 @@ import { authenticateUser } from "@/lib/auth/users";
 export const dynamic = "force-dynamic";
 
 export async function POST(request) {
+  const url = new URL(request.url);
+  const redirectParam = url.searchParams.get("redirect");
+  const targetUrl = redirectParam && redirectParam.startsWith("/") ? redirectParam : "/dashboard";
+
   try {
     const { body, wantsHtml } = await readAuthBody(request);
     const user = await authenticateUser(body);
     await createSession(user.id);
     if (wantsHtml) {
-      return Response.redirect(new URL("/dashboard", request.url), 303);
+      return Response.redirect(new URL(targetUrl, request.url), 303);
     }
     return Response.json({ user });
-  } catch {
+  } catch (error) {
+    console.error("[AUTH_LOGIN_ERROR]", error);
+    const raw = error instanceof Error ? error.message : "";
+    const lower = raw.toLowerCase();
+    const isInfra =
+      lower.includes("supabase") ||
+      lower.includes("connection") ||
+      lower.includes("database") ||
+      lower.includes("etimedout") ||
+      lower.includes("econnrefused") ||
+      lower.includes("fetch failed") ||
+      lower.includes("key in .env");
+
+    const message = isInfra
+      ? "Account service is temporarily unavailable. Please try again shortly or continue learning as a guest."
+      : "Invalid email or password.";
+
     if (isFormPost(request)) {
-      return Response.redirect(
-        new URL("/login?error=Invalid%20email%20or%20password.", request.url),
-        303,
-      );
+      const loginUrl = new URL("/login", request.url);
+      loginUrl.searchParams.set("error", message);
+      if (redirectParam) loginUrl.searchParams.set("redirect", redirectParam);
+      return Response.redirect(loginUrl, 303);
     }
     return Response.json(
-      { error: "Invalid email or password." },
-      { status: 401 },
+      { error: message },
+      { status: isInfra ? 503 : 401 },
     );
   }
 }

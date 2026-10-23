@@ -20,17 +20,15 @@ export default function CompletionToggle({ id, type, label }) {
     requestAuthAction({
       title: tr("saveProgressPromptTitle"),
       description: tr("saveProgressPromptDesc"),
-      onContinue: (isAuthenticated) => {
-        if (isAuthenticated) {
-          saveProgress((current) => {
-            const currentItems = new Set(current[progressKey] || []);
-            completed ? currentItems.delete(id) : currentItems.add(id);
-            return {
-              ...current,
-              [progressKey]: [...currentItems],
-            };
-          });
-        }
+      onContinue: () => {
+        saveProgress((current) => {
+          const currentItems = new Set(current[progressKey] || []);
+          completed ? currentItems.delete(id) : currentItems.add(id);
+          return {
+            ...current,
+            [progressKey]: [...currentItems],
+          };
+        });
       },
     });
   };

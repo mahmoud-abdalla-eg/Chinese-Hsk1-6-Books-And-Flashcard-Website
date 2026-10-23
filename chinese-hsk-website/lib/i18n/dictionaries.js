@@ -945,6 +945,26 @@ export const dictionary = {
     zh: "正在创建账户...",
     ar: "جاري إنشاء الحساب...",
   },
+  accountServiceUnavailable: {
+    en: "Account service is temporarily unavailable. Please try again shortly or continue learning as a guest.",
+    zh: "账户服务暂时不可用。请稍后重试，或以访客身份继续学习。",
+    ar: "خدمة الحساب غير متوفرة مؤقتاً. يرجى المحاولة مرة أخرى قريباً أو المتابعة كزائر.",
+  },
+  emailAlreadyRegistered: {
+    en: "This email is already registered.",
+    zh: "该电子邮箱已被注册。",
+    ar: "هذا البريد الإلكتروني مسجل بالفعل.",
+  },
+  invalidCredentials: {
+    en: "Invalid email or password.",
+    zh: "电子邮箱或密码错误。",
+    ar: "البريد الإلكتروني أو كلمة المرور غير صحيحة.",
+  },
+  registrationFailed: {
+    en: "Registration failed. Please check your details and try again.",
+    zh: "注册失败。请检查您的信息并重试。",
+    ar: "فشل إنشاء الحساب. يرجى التحقق من بياناتك والمحاولة مرة أخرى.",
+  },
   comingSoon: {
     en: "Coming soon",
     zh: "即将推出",

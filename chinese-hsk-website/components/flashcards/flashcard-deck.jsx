@@ -115,14 +115,12 @@ export default function FlashcardDeck({ words = [] }) {
     requestAuthAction({
       title: tr("saveProgressPromptTitle"),
       description: tr("saveProgressPromptDesc"),
-      onContinue: (isAuthenticated) => {
-        if (isAuthenticated) {
-          saveProgress((current) => {
-            const set = new Set(current.favorites || []);
-            set.has(wordId) ? set.delete(wordId) : set.add(wordId);
-            return { ...current, favorites: [...set] };
-          });
-        }
+      onContinue: () => {
+        saveProgress((current) => {
+          const set = new Set(current.favorites || []);
+          set.has(wordId) ? set.delete(wordId) : set.add(wordId);
+          return { ...current, favorites: [...set] };
+        });
       },
     });
   };

@@ -22,12 +22,12 @@ export function usePersistentProgress() {
       if (authLoading) return;
 
       if (!user) {
-        // Guest mode: no streaks, no remote cloud sync
+        // Guest mode: local storage only, no remote cloud sync
         const key = "mandarin-flow-guest-session";
         if (cancelled) return;
         setStorageKey(key);
-        // Guests start with a clean or empty progress state
-        setProgress(defaultProgress());
+        const local = loadLocalProgress(key);
+        setProgress(local);
         setSyncStatus("guest");
         return;
       }
@@ -69,12 +69,10 @@ export function usePersistentProgress() {
 
   const saveProgress = useCallback(
     (nextProgress) => {
-      if (!user) {
-        // Guests cannot record streaks or persist words to account
-        return;
-      }
+      const activeKey =
+        storageKey ||
+        (user ? accountProgressKey(user.id) : "mandarin-flow-guest-session");
 
-      const activeKey = storageKey || accountProgressKey(user.id);
       setProgress((current) => {
         const next =
           typeof nextProgress === "function"
@@ -85,10 +83,14 @@ export function usePersistentProgress() {
           lastStudiedDate: new Date().toISOString(),
         };
         saveLocalProgress(activeKey, withDate);
-        setSyncStatus("syncing");
-        saveRemoteProgress(user.id, withDate)
-          .then((synced) => setSyncStatus(synced ? "synced" : "local"))
-          .catch(() => setSyncStatus("local"));
+        if (user) {
+          setSyncStatus("syncing");
+          saveRemoteProgress(user.id, withDate)
+            .then((synced) => setSyncStatus(synced ? "synced" : "local"))
+            .catch(() => setSyncStatus("local"));
+        } else {
+          setSyncStatus("guest");
+        }
         return withDate;
       });
     },

@@ -27,14 +27,12 @@ export default function VocabularyList({ words = [], level }) {
     requestAuthAction({
       title: tr("saveProgressPromptTitle"),
       description: tr("saveProgressPromptDesc"),
-      onContinue: (isAuthenticated) => {
-        if (isAuthenticated) {
-          saveProgress((current) => {
-            const set = new Set(current[key] || []);
-            set.has(id) ? set.delete(id) : set.add(id);
-            return { ...current, [key]: [...set] };
-          });
-        }
+      onContinue: () => {
+        saveProgress((current) => {
+          const set = new Set(current[key] || []);
+          set.has(id) ? set.delete(id) : set.add(id);
+          return { ...current, [key]: [...set] };
+        });
       },
     });
   };
