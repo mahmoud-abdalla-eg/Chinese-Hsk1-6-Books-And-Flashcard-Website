@@ -24070,5 +24070,2285 @@
       "arabic": "human-curated HSK 3.0",
       "examples": "human-curated HSK 3.0"
     }
+  },
+  {
+    "id": "shàngyī",
+    "hskLevel": 3,
+    "order": 482,
+    "hanzi": "上衣",
+    "traditional": "上衣",
+    "pinyin": "shàngyī",
+    "meaning": {
+      "en": "jacket; upper garment; coat",
+      "ar": "سترة؛ قميص علوي"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "这件上衣的颜色很好看。",
+      "pinyin": "Zhè jiàn shàngyī de yánsè hěn hǎokàn.",
+      "en": "The color of this jacket looks very nice.",
+      "ar": "لون هذه السترة جميل جداً."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "这件上衣的颜色很好看。",
+        "pinyin": "Zhè jiàn shàngyī de yánsè hěn hǎokàn.",
+        "en": "The color of this jacket looks very nice.",
+        "ar": "لون هذه السترة جميل جداً."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "bùxíng",
+    "hskLevel": 3,
+    "order": 483,
+    "hanzi": "不行",
+    "traditional": "不行",
+    "pinyin": "bùxíng",
+    "meaning": {
+      "en": "not okay; won't do; cannot",
+      "ar": "غير ممكن؛ لا يصلح"
+    },
+    "partOfSpeech": "adjective",
+    "example": {
+      "hanzi": "今天下大雨，出去踢球不行。",
+      "pinyin": "Jīntiān xià dàyǔ, chūqù tīqiú bùxíng.",
+      "en": "It is raining heavily today, going out to play soccer won't do.",
+      "ar": "تمطر بغزارة اليوم، الخروج للعب كرة القدم لا يصلح."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "今天下大雨，出去踢球不行。",
+        "pinyin": "Jīntiān xià dàyǔ, chūqù tīqiú bùxíng.",
+        "en": "It is raining heavily today, going out to play soccer won't do.",
+        "ar": "تمطر بغزارة اليوم، الخروج للعب كرة القدم لا يصلح."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "dōng",
+    "hskLevel": 3,
+    "order": 484,
+    "hanzi": "东",
+    "traditional": "东",
+    "pinyin": "dōng",
+    "meaning": {
+      "en": "east",
+      "ar": "شرق"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "太阳从东边升起。",
+      "pinyin": "Tàiyáng cóng dōngbian shēngqǐ.",
+      "en": "The sun rises from the east.",
+      "ar": "تشرق الشمس من الشرق."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "太阳从东边升起。",
+        "pinyin": "Tàiyáng cóng dōngbian shēngqǐ.",
+        "en": "The sun rises from the east.",
+        "ar": "تشرق الشمس من الشرق."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "dōngběi",
+    "hskLevel": 3,
+    "order": 485,
+    "hanzi": "东北",
+    "traditional": "东北",
+    "pinyin": "dōngběi",
+    "meaning": {
+      "en": "northeast",
+      "ar": "شمال شرق"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "中国东北的冬天下很多雪。",
+      "pinyin": "Zhōngguó dōngběi de dōngtiān xià hěn duō xuě.",
+      "en": "It snows a lot during winter in Northeast China.",
+      "ar": "تتساقط ثلوج كثيرة شتاءً في شمال شرق الصين."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "中国东北的冬天下很多雪。",
+        "pinyin": "Zhōngguó dōngběi de dōngtiān xià hěn duō xuě.",
+        "en": "It snows a lot during winter in Northeast China.",
+        "ar": "تتساقط ثلوج كثيرة شتاءً في شمال شرق الصين."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "dōngnán",
+    "hskLevel": 3,
+    "order": 486,
+    "hanzi": "东南",
+    "traditional": "东南",
+    "pinyin": "dōngnán",
+    "meaning": {
+      "en": "southeast",
+      "ar": "جنوب شرق"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "上海在中国东南部。",
+      "pinyin": "Shànghǎi zài Zhōngguó dōngnán bù.",
+      "en": "Shanghai is in the southeastern part of China.",
+      "ar": "تقع شانغهاي في الجزء الجنوبي الشرقي من الصين."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "上海在中国东南部。",
+        "pinyin": "Shànghǎi zài Zhōngguó dōngnán bù.",
+        "en": "Shanghai is in the southeastern part of China.",
+        "ar": "تقع شانغهاي في الجزء الجنوبي الشرقي من الصين."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "zhōng",
+    "hskLevel": 3,
+    "order": 487,
+    "hanzi": "中",
+    "traditional": "中",
+    "pinyin": "zhōng",
+    "meaning": {
+      "en": "middle; center; among",
+      "ar": "وسط؛ مركز؛ خلال"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "他在人群中向我招手。",
+      "pinyin": "Tā zài rénqún zhōng xiàng wǒ zhāoshǒu.",
+      "en": "He waved at me from among the crowd.",
+      "ar": "لوّح لي من بين الحشد."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "他在人群中向我招手。",
+        "pinyin": "Tā zài rénqún zhōng xiàng wǒ zhāoshǒu.",
+        "en": "He waved at me from among the crowd.",
+        "ar": "لوّح لي من بين الحشد."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "yǐxià",
+    "hskLevel": 3,
+    "order": 488,
+    "hanzi": "以下",
+    "traditional": "以下",
+    "pinyin": "yǐxià",
+    "meaning": {
+      "en": "below; under; following",
+      "ar": "أدنى من؛ أقل من؛ الآتي"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "十八岁以下的孩子不能独自进场。",
+      "pinyin": "Shíbā suì yǐxià de háizi bù néng dúzì jìnchǎng.",
+      "en": "Children under 18 cannot enter alone.",
+      "ar": "لا يمكن للأطفال دون سن الثامنة عشرة الدخول بمفردهم."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "十八岁以下的孩子不能独自进场。",
+        "pinyin": "Shíbā suì yǐxià de háizi bù néng dúzì jìnchǎng.",
+        "en": "Children under 18 cannot enter alone.",
+        "ar": "لا يمكن للأطفال دون سن الثامنة عشرة الدخول بمفردهم."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "xìn",
+    "hskLevel": 3,
+    "order": 489,
+    "hanzi": "信",
+    "traditional": "信",
+    "pinyin": "xìn",
+    "meaning": {
+      "en": "letter; mail; trust",
+      "ar": "رسالة؛ خطاب؛ يثق"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "我收到了一封远方朋友的信。",
+      "pinyin": "Wǒ shōudàole yì fēng yuǎnfāng péngyou de xìn.",
+      "en": "I received a letter from a distant friend.",
+      "ar": "تلقيت رسالة من صديق بعيد."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "我收到了一封远方朋友的信。",
+        "pinyin": "Wǒ shōudàole yì fēng yuǎnfāng péngyou de xìn.",
+        "en": "I received a letter from a distant friend.",
+        "ar": "تلقيت رسالة من صديق بعيد."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "bīngjīlíng",
+    "hskLevel": 3,
+    "order": 490,
+    "hanzi": "冰激凌",
+    "traditional": "冰激凌",
+    "pinyin": "bīngjīlíng",
+    "meaning": {
+      "en": "ice cream",
+      "ar": "آيس كريم؛ مثلجات"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "夏天的下午吃冰激凌真舒服。",
+      "pinyin": "Xiàtiān de xiàwǔ chī bīngjīlíng zhēn shūfu.",
+      "en": "Eating ice cream on a summer afternoon is so refreshing.",
+      "ar": "تناول الآيس كريم في بعد ظهر الصيف ممتع للغاية."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "夏天的下午吃冰激凌真舒服。",
+        "pinyin": "Xiàtiān de xiàwǔ chī bīngjīlíng zhēn shūfu.",
+        "en": "Eating ice cream on a summer afternoon is so refreshing.",
+        "ar": "تناول الآيس كريم في بعد ظهر الصيف ممتع للغاية."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "fēn",
+    "hskLevel": 3,
+    "order": 491,
+    "hanzi": "分",
+    "traditional": "分",
+    "pinyin": "fēn",
+    "meaning": {
+      "en": "minute; point; to divide",
+      "ar": "دقيقة؛ علامة؛ يقسم"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "考试只剩下五分钟了。",
+      "pinyin": "Kǎoshì zhǐ shèng xià wǔ fēnzhōng le.",
+      "en": "There are only five minutes left in the exam.",
+      "ar": "لم يتبق سوى خمس دقائق على نهاية الامتحان."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "考试只剩下五分钟了。",
+        "pinyin": "Kǎoshì zhǐ shèng xià wǔ fēnzhōng le.",
+        "en": "There are only five minutes left in the exam.",
+        "ar": "لم يتبق سوى خمس دقائق على نهاية الامتحان."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "qiánnián",
+    "hskLevel": 3,
+    "order": 492,
+    "hanzi": "前年",
+    "traditional": "前年",
+    "pinyin": "qiánnián",
+    "meaning": {
+      "en": "the year before last",
+      "ar": "العام قبل الماضي"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "我是前年夏天来到北京的。",
+      "pinyin": "Wǒ shì qiánnián xiàtiān lái dào Běijīng de.",
+      "en": "I came to Beijing the summer before last.",
+      "ar": "جئت إلى بكين في صيف العام قبل الماضي."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "我是前年夏天来到北京的。",
+        "pinyin": "Wǒ shì qiánnián xiàtiān lái dào Běijīng de.",
+        "en": "I came to Beijing the summer before last.",
+        "ar": "جئت إلى بكين في صيف العام قبل الماضي."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "běi",
+    "hskLevel": 3,
+    "order": 493,
+    "hanzi": "北",
+    "traditional": "北",
+    "pinyin": "běi",
+    "meaning": {
+      "en": "north",
+      "ar": "شمال"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "北方冬天的天气比较干燥。",
+      "pinyin": "Běifāng dōngtiān de tiānqì bǐjiào gānzào.",
+      "en": "Winter weather in the north is relatively dry.",
+      "ar": "طقس الشتاء في الشمال جاف نسبياً."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "北方冬天的天气比较干燥。",
+        "pinyin": "Běifāng dōngtiān de tiānqì bǐjiào gānzào.",
+        "en": "Winter weather in the north is relatively dry.",
+        "ar": "طقس الشتاء في الشمال جاف نسبياً."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "nán",
+    "hskLevel": 3,
+    "order": 494,
+    "hanzi": "南",
+    "traditional": "南",
+    "pinyin": "nán",
+    "meaning": {
+      "en": "south",
+      "ar": "جنوب"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "我家住在学校南边。",
+      "pinyin": "Wǒ jiā zhù zài xuéxiào nánbian.",
+      "en": "My home is on the south side of the school.",
+      "ar": "منزلي يقع في الجانب الجنوبي من المدرسة."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "我家住在学校南边。",
+        "pinyin": "Wǒ jiā zhù zài xuéxiào nánbian.",
+        "en": "My home is on the south side of the school.",
+        "ar": "منزلي يقع في الجانب الجنوبي من المدرسة."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "shòu",
+    "hskLevel": 3,
+    "order": 495,
+    "hanzi": "受",
+    "traditional": "受",
+    "pinyin": "shòu",
+    "meaning": {
+      "en": "to receive; to accept; to bear",
+      "ar": "يستقبل؛ يتحمل؛ يتلقى"
+    },
+    "partOfSpeech": "verb",
+    "example": {
+      "hanzi": "这种设计受到了大家的欢迎。",
+      "pinyin": "Zhè zhǒng shèjì shòudàole dàjiā de huānyíng.",
+      "en": "This design received everyone's welcome.",
+      "ar": "حظي هذا التصميم بترحيب الجميع."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "这种设计受到了大家的欢迎。",
+        "pinyin": "Zhè zhǒng shèjì shòudàole dàjiā de huānyíng.",
+        "en": "This design received everyone's welcome.",
+        "ar": "حظي هذا التصميم بترحيب الجميع."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "míngdān",
+    "hskLevel": 3,
+    "order": 496,
+    "hanzi": "名单",
+    "traditional": "名单",
+    "pinyin": "míngdān",
+    "meaning": {
+      "en": "list of names; roster",
+      "ar": "قائمة أسماء"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "获奖名单已经在网站上公布了。",
+      "pinyin": "Huòjiǎng míngdān yǐjīng zài wǎngzhàn shang gōngbù le.",
+      "en": "The list of winners has been published on the website.",
+      "ar": "نُشرت قائمة الفائزين على الموقع الإلكتروني."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "获奖名单已经在网站上公布了。",
+        "pinyin": "Huòjiǎng míngdān yǐjīng zài wǎngzhàn shang gōngbù le.",
+        "en": "The list of winners has been published on the website.",
+        "ar": "نُشرت قائمة الفائزين على الموقع الإلكتروني."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "yuán",
+    "hskLevel": 3,
+    "order": 497,
+    "hanzi": "员",
+    "traditional": "员",
+    "pinyin": "yuán",
+    "meaning": {
+      "en": "member; personnel",
+      "ar": "عضو؛ موظف"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "他是我们团队的重要成员。",
+      "pinyin": "Tā shì wǒmen tuánduì de zhòngyào chéngyuán.",
+      "en": "He is an important member of our team.",
+      "ar": "إنه عضو مهم في فريقنا."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "他是我们团队的重要成员。",
+        "pinyin": "Tā shì wǒmen tuánduì de zhòngyào chéngyuán.",
+        "en": "He is an important member of our team.",
+        "ar": "إنه عضو مهم في فريقنا."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "kū",
+    "hskLevel": 3,
+    "order": 498,
+    "hanzi": "哭",
+    "traditional": "哭",
+    "pinyin": "kū",
+    "meaning": {
+      "en": "to cry; to weep",
+      "ar": "يبكي"
+    },
+    "partOfSpeech": "verb",
+    "example": {
+      "hanzi": "小孩子听到雷声就哭了。",
+      "pinyin": "Xiǎoháizi tīng dào léishēng jiù kū le.",
+      "en": "The child cried upon hearing the thunder.",
+      "ar": "بكى الطفل عندما سمع صوت الرعد."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "小孩子听到雷声就哭了。",
+        "pinyin": "Xiǎoháizi tīng dào léishēng jiù kū le.",
+        "en": "The child cried upon hearing the thunder.",
+        "ar": "بكى الطفل عندما سمع صوت الرعد."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "yuán-hsk3",
+    "hskLevel": 3,
+    "order": 499,
+    "hanzi": "园",
+    "traditional": "园",
+    "pinyin": "yuán",
+    "meaning": {
+      "en": "garden; park",
+      "ar": "حديقة؛ روضة"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "周末很多家长带孩子去动物园。",
+      "pinyin": "Zhōumò hěn duō jiāzhǎng dài háizi qù dòngwùyuán.",
+      "en": "Many parents take their children to the zoo on weekends.",
+      "ar": "يأخذ العديد من الآباء أطفالهم إلى حديقة الحيوان في عطلة نهاية الأسبوع."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "周末很多家长带孩子去动物园。",
+        "pinyin": "Zhōumò hěn duō jiāzhǎng dài háizi qù dòngwùyuán.",
+        "en": "Many parents take their children to the zoo on weekends.",
+        "ar": "يأخذ العديد من الآباء أطفالهم إلى حديقة الحيوان في عطلة نهاية الأسبوع."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "de",
+    "hskLevel": 3,
+    "order": 500,
+    "hanzi": "地",
+    "traditional": "地",
+    "pinyin": "de",
+    "meaning": {
+      "en": "structural particle connecting adverbial to verb",
+      "ar": "أداة ربط بين الحال والفعل (-ly)"
+    },
+    "partOfSpeech": "particle",
+    "example": {
+      "hanzi": "大家认真地听老师讲课。",
+      "pinyin": "Dàjiā rènzhēn de tīng lǎoshī jiǎngkè.",
+      "en": "Everyone listened carefully to the teacher's lecture.",
+      "ar": "استمع الجميع بانتباه لشرح المعلم."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "大家认真地听老师讲课。",
+        "pinyin": "Dàjiā rènzhēn de tīng lǎoshī jiǎngkè.",
+        "en": "Everyone listened carefully to the teacher's lecture.",
+        "ar": "استمع الجميع بانتباه لشرح المعلم."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "tóu",
+    "hskLevel": 3,
+    "order": 501,
+    "hanzi": "头",
+    "traditional": "头",
+    "pinyin": "tóu",
+    "meaning": {
+      "en": "head; hair; chief; first",
+      "ar": "رأس؛ أول"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "他感觉头有点儿疼，想休息一下。",
+      "pinyin": "Tā gǎnjué tóu yǒudiǎnr téng, xiǎng xiūxi yíxià.",
+      "en": "He feels a slight headache and wants to take a rest.",
+      "ar": "يشعر بصداع خفيف في رأسه ويريد أن يستريح قليلاً."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "他感觉头有点儿疼，想休息一下。",
+        "pinyin": "Tā gǎnjué tóu yǒudiǎnr téng, xiǎng xiūxi yíxià.",
+        "en": "He feels a slight headache and wants to take a rest.",
+        "ar": "يشعر بصداع خفيف في رأسه ويريد أن يستريح قليلاً."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "nǚrén",
+    "hskLevel": 3,
+    "order": 502,
+    "hanzi": "女人",
+    "traditional": "女人",
+    "pinyin": "nǚrén",
+    "meaning": {
+      "en": "woman",
+      "ar": "امرأة"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "那位穿红色衣服的女人是我的姑姑。",
+      "pinyin": "Nà wèi chuān hóngsè yīfu de nǚrén shì wǒ de gūgu.",
+      "en": "That woman in red is my aunt.",
+      "ar": "تلك المرأة التي ترتدي ثوباً أحمر هي عمتي."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "那位穿红色衣服的女人是我的姑姑。",
+        "pinyin": "Nà wèi chuān hóngsè yīfu de nǚrén shì wǒ de gūgu.",
+        "en": "That woman in red is my aunt.",
+        "ar": "تلك المرأة التي ترتدي ثوباً أحمر هي عمتي."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "jiěmèi",
+    "hskLevel": 3,
+    "order": 503,
+    "hanzi": "姐妹",
+    "traditional": "姐妹",
+    "pinyin": "jiěmèi",
+    "meaning": {
+      "en": "sisters; female friends",
+      "ar": "أخوات"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "她们是一对感情很好的亲姐妹。",
+      "pinyin": "Tāmen shì yí duì gǎnqíng hěn hǎo de qīn jiěmèi.",
+      "en": "They are sisters with a very close bond.",
+      "ar": "هما أختان تربطهما علاقة طيبة جداً."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "她们是一对感情很好的亲姐妹。",
+        "pinyin": "Tāmen shì yí duì gǎnqíng hěn hǎo de qīn jiěmèi.",
+        "en": "They are sisters with a very close bond.",
+        "ar": "هما أختان تربطهما علاقة طيبة جداً."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "zi",
+    "hskLevel": 3,
+    "order": 504,
+    "hanzi": "子",
+    "traditional": "子",
+    "pinyin": "zi",
+    "meaning": {
+      "en": "noun suffix (nominalizer)",
+      "ar": "لاحقة اسمية"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "桌子上面放着几本书。",
+      "pinyin": "Zhuōzi shàngmiàn fàngzhe jǐ běn shū.",
+      "en": "There are several books on the table.",
+      "ar": "توجد عدة كتب موضوعة على الطاولة."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "桌子上面放着几本书。",
+        "pinyin": "Zhuōzi shàngmiàn fàngzhe jǐ běn shū.",
+        "en": "There are several books on the table.",
+        "ar": "توجد عدة كتب موضوعة على الطاولة."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "zìdiǎn",
+    "hskLevel": 3,
+    "order": 505,
+    "hanzi": "字典",
+    "traditional": "字典",
+    "pinyin": "zìdiǎn",
+    "meaning": {
+      "en": "character dictionary",
+      "ar": "معجم؛ قاموس"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "遇到生字时可以查字典。",
+      "pinyin": "Yù dào shēngzì shí kěyǐ chá zìdiǎn.",
+      "en": "You can look up the character dictionary when encountering new characters.",
+      "ar": "يمكنك البحث في المعجم عند مواجهة أحرف جديدة."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "遇到生字时可以查字典。",
+        "pinyin": "Yù dào shēngzì shí kěyǐ chá zìdiǎn.",
+        "en": "You can look up the character dictionary when encountering new characters.",
+        "ar": "يمكنك البحث في المعجم عند مواجهة أحرف جديدة."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "jì",
+    "hskLevel": 3,
+    "order": 506,
+    "hanzi": "季",
+    "traditional": "季",
+    "pinyin": "jì",
+    "meaning": {
+      "en": "season; quarter",
+      "ar": "فصل (من فصول السنة)؛ موسم"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "北京的秋季是最舒适的时光。",
+      "pinyin": "Běijīng de qiūjì shì zuì shūshì de shíguāng.",
+      "en": "Autumn in Beijing is the most pleasant season.",
+      "ar": "فصل الخريف في بكين هو ألطف الأوقات."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "北京的秋季是最舒适的时光。",
+        "pinyin": "Běijīng de qiūjì shì zuì shūshì de shíguāng.",
+        "en": "Autumn in Beijing is the most pleasant season.",
+        "ar": "فصل الخريف في بكين هو ألطف الأوقات."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "ānquán",
+    "hskLevel": 3,
+    "order": 507,
+    "hanzi": "安全",
+    "traditional": "安全",
+    "pinyin": "ānquán",
+    "meaning": {
+      "en": "safe; secure; safety",
+      "ar": "آمن؛ سلامة"
+    },
+    "partOfSpeech": "adjective",
+    "example": {
+      "hanzi": "骑自行车要戴头盔确保安全。",
+      "pinyin": "Qí zìxíngchē yào dài tóukuī quèbǎo ānquán.",
+      "en": "Wear a helmet when riding a bicycle to ensure safety.",
+      "ar": "ارتدِ خوذة عند ركوب الدراجة لضمان السلامة."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "骑自行车要戴头盔确保安全。",
+        "pinyin": "Qí zìxíngchē yào dài tóukuī quèbǎo ānquán.",
+        "en": "Wear a helmet when riding a bicycle to ensure safety.",
+        "ar": "ارتدِ خوذة عند ركوب الدراجة لضمان السلامة."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "ānjìng",
+    "hskLevel": 3,
+    "order": 508,
+    "hanzi": "安静",
+    "traditional": "安静",
+    "pinyin": "ānjìng",
+    "meaning": {
+      "en": "quiet; peaceful; silent",
+      "ar": "هادئ؛ سكينة"
+    },
+    "partOfSpeech": "adjective",
+    "example": {
+      "hanzi": "图书馆里非常安静，适合阅读。",
+      "pinyin": "Túshūguǎn lǐ fēicháng ānjìng, shìhé yuèdú.",
+      "en": "It is very quiet in the library, suitable for reading.",
+      "ar": "المكتبة هادئة جداً ومناسبة للقراءة."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "图书馆里非常安静，适合阅读。",
+        "pinyin": "Túshūguǎn lǐ fēicháng ānjìng, shìhé yuèdú.",
+        "en": "It is very quiet in the library, suitable for reading.",
+        "ar": "المكتبة هادئة جداً ومناسبة للقراءة."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "jiā",
+    "hskLevel": 3,
+    "order": 509,
+    "hanzi": "家",
+    "traditional": "家",
+    "pinyin": "jiā",
+    "meaning": {
+      "en": "home; family; measure word for businesses",
+      "ar": "بيت؛ عائلة؛ شركة"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "晚上我们一家人一起吃晚餐。",
+      "pinyin": "Wǎnshang wǒmen yì jiā rén yìqǐ chī wǎncān.",
+      "en": "In the evening our whole family eats dinner together.",
+      "ar": "في المساء تتناول عائلتنا العشاء معاً."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "晚上我们一家人一起吃晚餐。",
+        "pinyin": "Wǎnshang wǒmen yì jiā rén yìqǐ chī wǎncān.",
+        "en": "In the evening our whole family eats dinner together.",
+        "ar": "في المساء تتناول عائلتنا العشاء معاً."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "shì",
+    "hskLevel": 3,
+    "order": 510,
+    "hanzi": "市",
+    "traditional": "市",
+    "pinyin": "shì",
+    "meaning": {
+      "en": "city; market",
+      "ar": "مدينة؛ سوق"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "这是一个风景优美的海滨城市。",
+      "pinyin": "Zhè shì yí gè fēngjǐng yōuměi de hǎibīn chéngshì.",
+      "en": "This is a coastal city with beautiful scenery.",
+      "ar": "هذه مدينة ساحلية ذات مناظر طبيعية جميلة."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "这是一个风景优美的海滨城市。",
+        "pinyin": "Zhè shì yí gè fēngjǐng yōuměi de hǎibīn chéngshì.",
+        "en": "This is a coastal city with beautiful scenery.",
+        "ar": "هذه مدينة ساحلية ذات مناظر طبيعية جميلة."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "sǎo",
+    "hskLevel": 3,
+    "order": 511,
+    "hanzi": "扫",
+    "traditional": "扫",
+    "pinyin": "sǎo",
+    "meaning": {
+      "en": "to sweep; to clean",
+      "ar": "يكنس؛ ينظف"
+    },
+    "partOfSpeech": "verb",
+    "example": {
+      "hanzi": "周末大家一起把院子扫干净了。",
+      "pinyin": "Zhōumò dàjiā yìqǐ bǎ yuànzi sǎo gānjìng le.",
+      "en": "Everyone swept the yard clean together on the weekend.",
+      "ar": "كنس الجميع الفناء ونظفوه معاً في عطلة نهاية الأسبوع."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "周末大家一起把院子扫干净了。",
+        "pinyin": "Zhōumò dàjiā yìqǐ bǎ yuànzi sǎo gānjìng le.",
+        "en": "Everyone swept the yard clean together on the weekend.",
+        "ar": "كنس الجميع الفناء ونظفوه معاً في عطلة نهاية الأسبوع."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "bǎ",
+    "hskLevel": 3,
+    "order": 512,
+    "hanzi": "把",
+    "traditional": "把",
+    "pinyin": "bǎ",
+    "meaning": {
+      "en": "disposal marker; measure word for objects with handles",
+      "ar": "أداة الإمساك / التقديم (把)؛ مقبض"
+    },
+    "partOfSpeech": "preposition",
+    "example": {
+      "hanzi": "请把窗户关上，外面风很大。",
+      "pinyin": "Qǐng bǎ chuānghu guānshang, wàimiàn fēng hěn dà.",
+      "en": "Please close the window; the wind outside is strong.",
+      "ar": "يرجى إغلاق النافذة، فالرياح قوية بالخارج."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "请把窗户关上，外面风很大。",
+        "pinyin": "Qǐng bǎ chuānghu guānshang, wàimiàn fēng hěn dà.",
+        "en": "Please close the window; the wind outside is strong.",
+        "ar": "يرجى إغلاق النافذة، فالرياح قوية بالخارج."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "bān",
+    "hskLevel": 3,
+    "order": 513,
+    "hanzi": "搬",
+    "traditional": "搬",
+    "pinyin": "bān",
+    "meaning": {
+      "en": "to move; to shift; to relocate",
+      "ar": "ينقل؛ ينتقل"
+    },
+    "partOfSpeech": "verb",
+    "example": {
+      "hanzi": "他上个月刚搬到新公寓。",
+      "pinyin": "Tā shàng gè yuè gāng bān dào xīn gōngyù.",
+      "en": "He just moved to a new apartment last month.",
+      "ar": "لقد انتقل للتو إلى شقة جديدة الشهر الماضي."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "他上个月刚搬到新公寓。",
+        "pinyin": "Tā shàng gè yuè gāng bān dào xīn gōngyù.",
+        "en": "He just moved to a new apartment last month.",
+        "ar": "لقد انتقل للتو إلى شقة جديدة الشهر الماضي."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "qìchē",
+    "hskLevel": 3,
+    "order": 514,
+    "hanzi": "汽车",
+    "traditional": "汽车",
+    "pinyin": "qìchē",
+    "meaning": {
+      "en": "car; automobile",
+      "ar": "سيارة؛ مركبة"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "大街上来来往往有很多汽车。",
+      "pinyin": "Dàjiē shang láiláiwǎngwǎng yǒu hěn duō qìchē.",
+      "en": "There are many cars coming and going on the avenue.",
+      "ar": "هناك العديد من السيارات تروح وتجيء في الشارع الرئيسي."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "大街上来来往往有很多汽车。",
+        "pinyin": "Dàjiē shang láiláiwǎngwǎng yǒu hěn duō qìchē.",
+        "en": "There are many cars coming and going on the avenue.",
+        "ar": "هناك العديد من السيارات تروح وتجيء في الشارع الرئيسي."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "xǐzǎo",
+    "hskLevel": 3,
+    "order": 515,
+    "hanzi": "洗澡",
+    "traditional": "洗澡",
+    "pinyin": "xǐzǎo",
+    "meaning": {
+      "en": "to take a bath / shower",
+      "ar": "يستحم"
+    },
+    "partOfSpeech": "verb",
+    "example": {
+      "hanzi": "运动完之后洗个热水澡很舒服。",
+      "pinyin": "Yùndòng wán zhīhòu xǐ gè rèshuǐ zǎo hěn shūfu.",
+      "en": "Taking a hot shower after exercising feels very relaxing.",
+      "ar": "الاستحمام بماء دافئ بعد ممارسة الرياضة مريح للغاية."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "运动完之后洗个热水澡很舒服。",
+        "pinyin": "Yùndòng wán zhīhòu xǐ gè rèshuǐ zǎo hěn shūfu.",
+        "en": "Taking a hot shower after exercising feels very relaxing.",
+        "ar": "الاستحمام بماء دافئ بعد ممارسة الرياضة مريح للغاية."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "àiren",
+    "hskLevel": 3,
+    "order": 516,
+    "hanzi": "爱人",
+    "traditional": "爱人",
+    "pinyin": "àiren",
+    "meaning": {
+      "en": "spouse; husband / wife",
+      "ar": "زوج / زوجة؛ شريك الحياة"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "他和爱人一起开了一家书店。",
+      "pinyin": "Tā hé àiren yìqǐ kāile yì jiā shūdiàn.",
+      "en": "He and his spouse opened a bookstore together.",
+      "ar": "افتتح مع زوجته متجر كتب معاً."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "他和爱人一起开了一家书店。",
+        "pinyin": "Tā hé àiren yìqǐ kāile yì jiā shūdiàn.",
+        "en": "He and his spouse opened a bookstore together.",
+        "ar": "افتتح مع زوجته متجر كتب معاً."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "yá",
+    "hskLevel": 3,
+    "order": 517,
+    "hanzi": "牙",
+    "traditional": "牙",
+    "pinyin": "yá",
+    "meaning": {
+      "en": "tooth",
+      "ar": "سن؛ أسنان"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "早晚都要刷牙保护牙齿健康。",
+      "pinyin": "Zǎowǎn dōu yào shuāyá bǎohù yáchǐ jiànkāng.",
+      "en": "Brush your teeth morning and night to protect dental health.",
+      "ar": "نظّف أسنانك صباحاً ومساءً للحفاظ على صحة الأسنان."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "早晚都要刷牙保护牙齿健康。",
+        "pinyin": "Zǎowǎn dōu yào shuāyá bǎohù yáchǐ jiànkāng.",
+        "en": "Brush your teeth morning and night to protect dental health.",
+        "ar": "نظّف أسنانك صباحاً ومساءً للحفاظ على صحة الأسنان."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "yáshuā",
+    "hskLevel": 3,
+    "order": 518,
+    "hanzi": "牙刷",
+    "traditional": "牙刷",
+    "pinyin": "yáshuā",
+    "meaning": {
+      "en": "toothbrush",
+      "ar": "فرشاة أسنان"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "旅行时记得带上牙刷和牙膏。",
+      "pinyin": "Lǚxíng shí jìde dài shàng yáshuā hé yágāo.",
+      "en": "Remember to bring a toothbrush and toothpaste when traveling.",
+      "ar": "تذكر أن تحضر فرشاة ومعجون الأسنان عند السفر."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "旅行时记得带上牙刷和牙膏。",
+        "pinyin": "Lǚxíng shí jìde dài shàng yáshuā hé yágāo.",
+        "en": "Remember to bring a toothbrush and toothpaste when traveling.",
+        "ar": "تذكر أن تحضر فرشاة ومعجون الأسنان عند السفر."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "bānjí",
+    "hskLevel": 3,
+    "order": 519,
+    "hanzi": "班级",
+    "traditional": "班级",
+    "pinyin": "bānjí",
+    "meaning": {
+      "en": "class (group of students)",
+      "ar": "فصل دراسي؛ صف"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "我们班级一共有二十位同学。",
+      "pinyin": "Wǒmen bānjí yígòng yǒu èrshí wèi tóngxué.",
+      "en": "There are twenty students in our class in total.",
+      "ar": "يوجد عشرون طالباً في فصلنا الدراسي إجمالاً."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "我们班级一共有二十位同学。",
+        "pinyin": "Wǒmen bānjí yígòng yǒu èrshí wèi tóngxué.",
+        "en": "There are twenty students in our class in total.",
+        "ar": "يوجد عشرون طالباً في فصلنا الدراسي إجمالاً."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "píngzi",
+    "hskLevel": 3,
+    "order": 520,
+    "hanzi": "瓶子",
+    "traditional": "瓶子",
+    "pinyin": "píngzi",
+    "meaning": {
+      "en": "bottle; flask; jar",
+      "ar": "زجاجة؛ قارورة"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "桌上放着一个装满水的新瓶子。",
+      "pinyin": "Zhuō shàng fàngzhe yí gè zhuāng mǎn shuǐ de xīn píngzi.",
+      "en": "There is a new bottle filled with water on the table.",
+      "ar": "هناك زجاجة جديدة مليئة بالماء موضوعة على الطاولة."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "桌上放着一个装满水的新瓶子。",
+        "pinyin": "Zhuō shàng fàngzhe yí gè zhuāng mǎn shuǐ de xīn píngzi.",
+        "en": "There is a new bottle filled with water on the table.",
+        "ar": "هناك زجاجة جديدة مليئة بالماء موضوعة على الطاولة."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "nánrén",
+    "hskLevel": 3,
+    "order": 521,
+    "hanzi": "男人",
+    "traditional": "男人",
+    "pinyin": "nánrén",
+    "meaning": {
+      "en": "man",
+      "ar": "رجل"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "那个正在跑步的男人是我们的体育老师。",
+      "pinyin": "Nà gè zhèngzài pǎobù de nánrén shì wǒmen de tǐyù lǎoshī.",
+      "en": "That man running right now is our PE teacher.",
+      "ar": "ذلك الرجل الذي يركض الآن هو معلم الرياضة البدنية لدينا."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "那个正在跑步的男人是我们的体育老师。",
+        "pinyin": "Nà gè zhèngzài pǎobù de nánrén shì wǒmen de tǐyù lǎoshī.",
+        "en": "That man running right now is our PE teacher.",
+        "ar": "ذلك الرجل الذي يركض الآن هو معلم الرياضة البدنية لدينا."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "ǎi",
+    "hskLevel": 3,
+    "order": 522,
+    "hanzi": "矮",
+    "traditional": "矮",
+    "pinyin": "ǎi",
+    "meaning": {
+      "en": "short (in height); low",
+      "ar": "قصير القامة"
+    },
+    "partOfSpeech": "adjective",
+    "example": {
+      "hanzi": "弟弟比哥哥矮一点儿。",
+      "pinyin": "Dìdi bǐ gēge ǎi yìdiǎnr.",
+      "en": "The younger brother is a little shorter than the older brother.",
+      "ar": "الأخ الأصغر أقصر قليلاً من الأخ الأكبر."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "弟弟比哥哥矮一点儿。",
+        "pinyin": "Dìdi bǐ gēge ǎi yìdiǎnr.",
+        "en": "The younger brother is a little shorter than the older brother.",
+        "ar": "الأخ الأصغر أقصر قليلاً من الأخ الأكبر."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "táng",
+    "hskLevel": 3,
+    "order": 523,
+    "hanzi": "糖",
+    "traditional": "糖",
+    "pinyin": "táng",
+    "meaning": {
+      "en": "sugar; candy; sweets",
+      "ar": "سكر؛ حلوى"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "喝咖啡时可以放一点儿糖。",
+      "pinyin": "Hē kāfēi shí kěyǐ fàng yìdiǎnr táng.",
+      "en": "You can add a little sugar when drinking coffee.",
+      "ar": "يمكنك وضع القليل من السكر عند شرب القهوة."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "喝咖啡时可以放一点儿糖。",
+        "pinyin": "Hē kāfēi shí kěyǐ fàng yìdiǎnr táng.",
+        "en": "You can add a little sugar when drinking coffee.",
+        "ar": "يمكنك وضع القليل من السكر عند شرب القهوة."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "lǎo",
+    "hskLevel": 3,
+    "order": 524,
+    "hanzi": "老",
+    "traditional": "老",
+    "pinyin": "lǎo",
+    "meaning": {
+      "en": "old; elderly; experienced",
+      "ar": "قديم؛ متقدم في السن"
+    },
+    "partOfSpeech": "adjective",
+    "example": {
+      "hanzi": "这位老医生有丰富的临床经验。",
+      "pinyin": "Zhè wèi lǎo yīshēng yǒu fēngfù de línchuáng jīngyàn.",
+      "en": "This senior doctor has rich clinical experience.",
+      "ar": "هذا الطبيب المتمرس يملك خبرة إكلينيكية واسعة."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "这位老医生有丰富的临床经验。",
+        "pinyin": "Zhè wèi lǎo yīshēng yǒu fēngfù de línchuáng jīngyàn.",
+        "en": "This senior doctor has rich clinical experience.",
+        "ar": "هذا الطبيب المتمرس يملك خبرة إكلينيكية واسعة."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "cǎo",
+    "hskLevel": 3,
+    "order": 525,
+    "hanzi": "草",
+    "traditional": "草",
+    "pinyin": "cǎo",
+    "meaning": {
+      "en": "grass; straw",
+      "ar": "عشب؛ حشائش"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "公园的草坪绿油油的，很美丽。",
+      "pinyin": "Gōngyuán de cǎopíng lǜyóuyóu de, hěn měilì.",
+      "en": "The lawn in the park is lush green and beautiful.",
+      "ar": "عشب الحديقة أخضر يانع وجميل جداً."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "公园的草坪绿油油的，很美丽。",
+        "pinyin": "Gōngyuán de cǎopíng lǜyóuyóu de, hěn měilì.",
+        "en": "The lawn in the park is lush green and beautiful.",
+        "ar": "عشب الحديقة أخضر يانع وجميل جداً."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "chènshān",
+    "hskLevel": 3,
+    "order": 526,
+    "hanzi": "衬衫",
+    "traditional": "衬衫",
+    "pinyin": "chènshān",
+    "meaning": {
+      "en": "shirt; blouse",
+      "ar": "قميص"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "他今天穿了一件白色的衬衫。",
+      "pinyin": "Tā jīntiān chuānle yí jiàn báisè de chènshān.",
+      "en": "He wore a white shirt today.",
+      "ar": "ارتدى قميصاً أبيض اليوم."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "他今天穿了一件白色的衬衫。",
+        "pinyin": "Tā jīntiān chuānle yí jiàn báisè de chènshān.",
+        "en": "He wore a white shirt today.",
+        "ar": "ارتدى قميصاً أبيض اليوم."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "xī",
+    "hskLevel": 3,
+    "order": 527,
+    "hanzi": "西",
+    "traditional": "西",
+    "pinyin": "xī",
+    "meaning": {
+      "en": "west",
+      "ar": "غرب"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "太阳每天傍晚在西方落下。",
+      "pinyin": "Tàiyáng měitiān bàngwǎn zài xīfāng luòxià.",
+      "en": "The sun sets in the west every evening.",
+      "ar": "تغرب الشمس في جهة الغرب كل مساء."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "太阳每天傍晚在西方落下。",
+        "pinyin": "Tàiyáng měitiān bàngwǎn zài xīfāng luòxià.",
+        "en": "The sun sets in the west every evening.",
+        "ar": "تغرب الشمس في جهة الغرب كل مساء."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "xīnán",
+    "hskLevel": 3,
+    "order": 528,
+    "hanzi": "西南",
+    "traditional": "西南",
+    "pinyin": "xīnán",
+    "meaning": {
+      "en": "southwest",
+      "ar": "جنوب غرب"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "云南位于中国的西南部。",
+      "pinyin": "Yúnnán wèiyú Zhōngguó de xīnán bù.",
+      "en": "Yunnan is located in the southwestern part of China.",
+      "ar": "تقع يوننان في الجزء الجنوبي الغربي من الصين."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "云南位于中国的西南部。",
+        "pinyin": "Yúnnán wèiyú Zhōngguó de xīnán bù.",
+        "en": "Yunnan is located in the southwestern part of China.",
+        "ar": "تقع يوننان في الجزء الجنوبي الغربي من الصين."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "xīfāng",
+    "hskLevel": 3,
+    "order": 529,
+    "hanzi": "西方",
+    "traditional": "西方",
+    "pinyin": "xīfāng",
+    "meaning": {
+      "en": "the West; western countries",
+      "ar": "الغرب؛ الجهة الغربية"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "他很喜欢研究西方历史与文化。",
+      "pinyin": "Tā hěn xǐhuan yánjiū xīfāng lìshǐ yǔ wénhuà.",
+      "en": "He really likes studying Western history and culture.",
+      "ar": "يحب دراسة التاريخ والثقافة الغربية كثيراً."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "他很喜欢研究西方历史与文化。",
+        "pinyin": "Tā hěn xǐhuan yánjiū xīfāng lìshǐ yǔ wénhuà.",
+        "en": "He really likes studying Western history and culture.",
+        "ar": "يحب دراسة التاريخ والثقافة الغربية كثيراً."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "jiǎo",
+    "hskLevel": 3,
+    "order": 530,
+    "hanzi": "角",
+    "traditional": "角",
+    "pinyin": "jiǎo",
+    "meaning": {
+      "en": "corner; horn; angle; tenth of a yuan",
+      "ar": "زاوية؛ ركن؛ قرن؛ جياو (عُشر يوان)"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "书桌放在房间的一角。",
+      "pinyin": "Shūzhuō fàng zài fángjiān de yì jiǎo.",
+      "en": "The desk is placed in a corner of the room.",
+      "ar": "المكتب موضوع في إحدى زوايا الغرفة."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "书桌放在房间的一角。",
+        "pinyin": "Shūzhuō fàng zài fángjiān de yì jiǎo.",
+        "en": "The desk is placed in a corner of the room.",
+        "ar": "المكتب موضوع في إحدى زوايا الغرفة."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "yǔyán",
+    "hskLevel": 3,
+    "order": 531,
+    "hanzi": "语言",
+    "traditional": "语言",
+    "pinyin": "yǔyán",
+    "meaning": {
+      "en": "language",
+      "ar": "لغة"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "学习一门新语言能开拓视野。",
+      "pinyin": "Xuéxí yì mén xīn yǔyán néng kāituò shìyě.",
+      "en": "Learning a new language expands one's horizons.",
+      "ar": "تعلم لغة جديدة يوسع الآفاق."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "学习一门新语言能开拓视野。",
+        "pinyin": "Xuéxí yì mén xīn yǔyán néng kāituò shìyě.",
+        "en": "Learning a new language expands one's horizons.",
+        "ar": "تعلم لغة جديدة يوسع الآفاق."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "kèwén",
+    "hskLevel": 3,
+    "order": 532,
+    "hanzi": "课文",
+    "traditional": "课文",
+    "pinyin": "kèwén",
+    "meaning": {
+      "en": "textbook text; lesson passage",
+      "ar": "نص الدرس"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "我们每天课前都要预习这篇课文。",
+      "pinyin": "Wǒmen měitiān kè qián dōu yào yùxí zhè piān kèwén.",
+      "en": "We preview this lesson text before class every day.",
+      "ar": "نحضر هذا النص الدراسي قبل الحصة كل يوم."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "我们每天课前都要预习这篇课文。",
+        "pinyin": "Wǒmen měitiān kè qián dōu yào yùxí zhè piān kèwén.",
+        "en": "We preview this lesson text before class every day.",
+        "ar": "نحضر هذا النص الدراسي قبل الحصة كل يوم."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "kèběn",
+    "hskLevel": 3,
+    "order": 533,
+    "hanzi": "课本",
+    "traditional": "课本",
+    "pinyin": "kèběn",
+    "meaning": {
+      "en": "textbook",
+      "ar": "كتاب مدرسي؛ مقرر"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "请大家翻开中文课本第二十页。",
+      "pinyin": "Qǐng dàjiā fānkāi Zhōngwén kèběn dì èrshí yè.",
+      "en": "Please open your Chinese textbook to page 20.",
+      "ar": "يرجى من الجميع فتح كتاب اللغة الصينية على الصفحة العشرين."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "请大家翻开中文课本第二十页。",
+        "pinyin": "Qǐng dàjiā fānkāi Zhōngwén kèběn dì èrshí yè.",
+        "en": "Please open your Chinese textbook to page 20.",
+        "ar": "يرجى من الجميع فتح كتاب اللغة الصينية على الصفحة العشرين."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "lùbiān",
+    "hskLevel": 3,
+    "order": 534,
+    "hanzi": "路边",
+    "traditional": "路边",
+    "pinyin": "lùbiān",
+    "meaning": {
+      "en": "roadside; curbside",
+      "ar": "جانب الطريق؛ رصيف"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "路边开满了鲜艳的花朵。",
+      "pinyin": "Lùbiān kāi mǎnle xiānyàn de huāduǒ.",
+      "en": "Bright flowers bloom all along the roadside.",
+      "ar": "تتفتح زهور زاهية على طول جانب الطريق."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "路边开满了鲜艳的花朵。",
+        "pinyin": "Lùbiān kāi mǎnle xiānyàn de huāduǒ.",
+        "en": "Bright flowers bloom all along the roadside.",
+        "ar": "تتفتح زهور زاهية على طول جانب الطريق."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "qiānbǐ",
+    "hskLevel": 3,
+    "order": 535,
+    "hanzi": "铅笔",
+    "traditional": "铅笔",
+    "pinyin": "qiānbǐ",
+    "meaning": {
+      "en": "pencil",
+      "ar": "قلم رصاص"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "考试时可以用这支黑色的铅笔填涂。",
+      "pinyin": "Kǎoshì shí kěyǐ yòng zhè zhī hēisè de qiānbǐ tiántú.",
+      "en": "You can use this black pencil to fill in bubbles during the exam.",
+      "ar": "يمكنك استخدام هذا القلم الرصاص الأسود للتظليل أثناء الامتحان."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "考试时可以用这支黑色的铅笔填涂。",
+        "pinyin": "Kǎoshì shí kěyǐ yòng zhè zhī hēisè de qiānbǐ tiántú.",
+        "en": "You can use this black pencil to fill in bubbles during the exam.",
+        "ar": "يمكنك استخدام هذا القلم الرصاص الأسود للتظليل أثناء الامتحان."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "yínhángkǎ",
+    "hskLevel": 3,
+    "order": 536,
+    "hanzi": "银行卡",
+    "traditional": "银行卡",
+    "pinyin": "yínhángkǎ",
+    "meaning": {
+      "en": "bank card; debit/credit card",
+      "ar": "بطاقة مصرفية؛ بطاقة بنكية"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "在手机上可以方便地绑定银行卡。",
+      "pinyin": "Zài shǒujī shang kěyǐ fāngbiàn de bǎngdìng yínhángkǎ.",
+      "en": "It is convenient to link a bank card on your mobile phone.",
+      "ar": "من السهل ربط البطاقة المصرفية على الهاتف المحمول."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "在手机上可以方便地绑定银行卡。",
+        "pinyin": "Zài shǒujī shang kěyǐ fāngbiàn de bǎngdìng yínhángkǎ.",
+        "en": "It is convenient to link a bank card on your mobile phone.",
+        "ar": "من السهل ربط البطاقة المصرفية على الهاتف المحمول."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "āyí",
+    "hskLevel": 3,
+    "order": 537,
+    "hanzi": "阿姨",
+    "traditional": "阿姨",
+    "pinyin": "āyí",
+    "meaning": {
+      "en": "maternal aunt; auntie; domestic helper",
+      "ar": "خالة؛ سيدة"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "王阿姨经常做美味的点心给我们吃。",
+      "pinyin": "Wáng āyí jīngcháng zuò měiwèi de diǎnxīn gěi wǒmen chī.",
+      "en": "Aunt Wang often makes delicious snacks for us to eat.",
+      "ar": "غالباً ما تعد الخالة وانغ وجبات خفيفة ولذيذة لنأكلها."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "王阿姨经常做美味的点心给我们吃。",
+        "pinyin": "Wáng āyí jīngcháng zuò měiwèi de diǎnxīn gěi wǒmen chī.",
+        "en": "Aunt Wang often makes delicious snacks for us to eat.",
+        "ar": "غالباً ما تعد الخالة وانغ وجبات خفيفة ولذيذة لنأكلها."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "nántīng",
+    "hskLevel": 3,
+    "order": 538,
+    "hanzi": "难听",
+    "traditional": "难听",
+    "pinyin": "nántīng",
+    "meaning": {
+      "en": "unpleasant to hear; cacophonous",
+      "ar": "قبيح الصوت؛ نشاز"
+    },
+    "partOfSpeech": "adjective",
+    "example": {
+      "hanzi": "这首歌的音调有点儿难听。",
+      "pinyin": "Zhè shǒu gē de yīndiào yǒudiǎnr nántīng.",
+      "en": "The tune of this song sounds a bit unpleasant.",
+      "ar": "لحن هذه الأغنية يبدو نشازاً بعض الشيء."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-3",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "这首歌的音调有点儿难听。",
+        "pinyin": "Zhè shǒu gē de yīndiào yǒudiǎnr nántīng.",
+        "en": "The tune of this song sounds a bit unpleasant.",
+        "ar": "لحن هذه الأغنية يبدو نشازاً بعض الشيء."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
   }
 ]

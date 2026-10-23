@@ -316,9 +316,9 @@ export const dictionary = {
     ar: "ادعم الموقع",
   },
   madeBy: {
-    en: "Made with ❤️ by",
-    zh: "由 ❤️ 制作",
-    ar: "صُنع بـ ❤️ بواسطة",
+    en: "Crafted by",
+    zh: "设计制作：",
+    ar: "صُنع بواسطة",
   },
   feedbackAndSuggestions: {
     en: "Suggestions & Feedback",

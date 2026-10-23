@@ -73,7 +73,21 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-3xl border border-amber-200 bg-amber-50/90 p-6 text-amber-950 shadow-xs">
           <div className="space-y-1">
             <div className="flex items-center gap-2">
-              <span className="text-2xl">👋</span>
+              <div className="grid h-8 w-8 place-items-center rounded-xl bg-amber-100 text-amber-900 shrink-0">
+                <svg
+                  className="h-4 w-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
               <h3 className="text-base font-black sm:text-lg">
                 {tr("guestBannerTitle")}
               </h3>

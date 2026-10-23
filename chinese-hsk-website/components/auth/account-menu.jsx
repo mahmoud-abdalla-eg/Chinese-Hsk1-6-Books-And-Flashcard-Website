@@ -12,9 +12,21 @@ export default function AccountMenu() {
     <div className="flex items-center gap-2">
       <Link
         href="/account"
-        className="hidden rounded-full border border-teal-200 bg-teal-50/70 px-4 py-2 text-sm font-black text-teal-900 transition hover:bg-teal-100 sm:inline-flex"
+        className="hidden items-center rounded-full border border-teal-200 bg-teal-50/70 px-4 py-2 text-sm font-black text-teal-900 transition hover:bg-teal-100 sm:inline-flex"
       >
-        <span className="mr-1.5 text-xs text-teal-600">👤</span>
+        <svg
+          className="mr-1.5 h-4 w-4 text-teal-700 shrink-0"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+          />
+        </svg>
         {user.name}
       </Link>
       <button

@@ -33,14 +33,29 @@ export default function ConversationLesson({ conversation, words = [] }) {
               onClick={() =>
                 setPlaybackRate((prev) => (prev === 1.0 ? 0.75 : 1.0))
               }
-              className={`inline-flex items-center gap-1 rounded-full border px-2.5 py-0.5 text-xs font-bold transition ${
+              className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-xs font-bold transition ${
                 playbackRate === 0.75
                   ? "border-teal-500 bg-teal-50 text-teal-900"
                   : "border-slate-200 bg-white text-slate-600 hover:border-slate-300"
               }`}
-              title="Toggle dialogue speech rate"
+              title="Toggle dialogue speech rate (1.0x / 0.75x)"
             >
-              <span>{playbackRate === 0.75 ? "🐢" : "⚡"}</span>
+              <svg
+                className="h-3.5 w-3.5 text-current shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15.536 8.464a5 5 0 010 7.072M18.364 5.636a9 9 0 010 12.728M11 5L6 9H2v6h4l5 4V5z"
+                />
+              </svg>
+              <span className="font-mono text-[11px]">
+                {playbackRate === 0.75 ? "0.75x" : "1.0x"}
+              </span>
               <span>{playbackRate === 0.75 ? tr("slowAudio") : tr("normalAudio")}</span>
             </button>
           </div>

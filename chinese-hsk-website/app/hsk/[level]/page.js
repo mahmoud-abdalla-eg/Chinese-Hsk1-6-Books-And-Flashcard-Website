@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import LevelUnitsView from "@/components/hsk/level-units-view";
 import UnitCard from "@/components/hsk/unit-card";
 import {
   Card,
@@ -140,29 +141,7 @@ export default async function HskLevelPage({ params }) {
             title={`HSK ${level} units`}
             text="Each unit keeps the vocabulary load manageable while linking into flashcards, conversations, and listening practice."
           />
-          {units.length
-            ? <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
-                {units.map((unit) => (
-                  <UnitCard key={unit.id} unit={unit} />
-                ))}
-              </div>
-            : <Card>
-                <Pill tone="blue">Vocabulary pending</Pill>
-                <h2 className="mt-4 text-2xl font-black text-slate-950">
-                  HSK {level} vocabulary is ready for admin import.
-                </h2>
-                <p className="mt-3 text-sm font-semibold leading-7 text-slate-600">
-                  No fake words were added. Add reviewed HSK {level} words from
-                  the admin word manager when the real vocabulary source is
-                  ready.
-                </p>
-                <Link
-                  href={`/grammar/hsk/${level}`}
-                  className="mt-5 inline-flex rounded-full bg-teal-700 px-5 py-3 text-sm font-black text-white hover:bg-teal-800"
-                >
-                  Study HSK {level} grammar
-                </Link>
-              </Card>}
+          <LevelUnitsView level={level} words={words} defaultUnits={units} />
           <Card>
             <div className="flex flex-wrap items-center justify-between gap-4">
               <div>

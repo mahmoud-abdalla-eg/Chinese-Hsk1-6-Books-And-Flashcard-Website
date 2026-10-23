@@ -1,8 +1,10 @@
-const fs = require("node:fs");
-const path = require("node:path");
+import fs from "node:fs";
+import path from "node:path";
+import { EXPECTED_HSK_COUNTS } from "../lib/data/schema.js";
 
-const expected = { 1: 319, 2: 210, 3: 481, 4: 834, 5: 1690, 6: 1777 };
+const expected = EXPECTED_HSK_COUNTS;
 const root = process.cwd();
+
 function readWords(level) {
   return JSON.parse(
     fs.readFileSync(
@@ -11,6 +13,7 @@ function readWords(level) {
     ),
   );
 }
+
 function audioExists(audioPath) {
   if (!audioPath) return false;
   const normalized = audioPath.startsWith("/") ? audioPath.slice(1) : audioPath;
@@ -18,6 +21,7 @@ function audioExists(audioPath) {
     path.join(root, "public", normalized.replace(/^public[/]/, "")),
   );
 }
+
 function validateLevel(level) {
   const words = readWords(level);
   const duplicateMap = new Map();
@@ -47,6 +51,7 @@ function validateLevel(level) {
     missingFields,
   };
 }
+
 let hasWarnings = false;
 for (let level = 1; level <= 6; level += 1) {
   const result = validateLevel(level);

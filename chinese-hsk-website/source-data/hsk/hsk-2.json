@@ -8415,5 +8415,285 @@
       "arabic": "human-curated HSK 3.0",
       "examples": "human-curated HSK 3.0"
     }
+  },
+  {
+    "id": "chu",
+    "hskLevel": 2,
+    "order": 211,
+    "hanzi": "出",
+    "traditional": "出",
+    "pinyin": "chū",
+    "meaning": {
+      "en": "to go out; to exit; to produce",
+      "ar": "يخرج؛ يصدر"
+    },
+    "partOfSpeech": "verb",
+    "example": {
+      "hanzi": "他从房间走出来了。",
+      "pinyin": "Tā cóng fángjiān zǒu chūlai le.",
+      "en": "He walked out of the room.",
+      "ar": "خرج من الغرفة."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-2",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "他从房间走出来了。",
+        "pinyin": "Tā cóng fángjiān zǒu chūlai le.",
+        "en": "He walked out of the room.",
+        "ar": "خرج من الغرفة."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "chulai",
+    "hskLevel": 2,
+    "order": 212,
+    "hanzi": "出来",
+    "traditional": "出來",
+    "pinyin": "chūlai",
+    "meaning": {
+      "en": "to come out; to emerge",
+      "ar": "يخرج؛ يظهر"
+    },
+    "partOfSpeech": "verb",
+    "example": {
+      "hanzi": "太阳从东边出来了。",
+      "pinyin": "Tàiyáng cóng dōngbian chūlai le.",
+      "en": "The sun came out from the east.",
+      "ar": "خرجت الشمس من الشرق."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-2",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "太阳从东边出来了。",
+        "pinyin": "Tàiyáng cóng dōngbian chūlai le.",
+        "en": "The sun came out from the east.",
+        "ar": "خرجت الشمس من الشرق."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "duo-hsk2",
+    "hskLevel": 2,
+    "order": 213,
+    "hanzi": "多",
+    "traditional": "多",
+    "pinyin": "duō",
+    "meaning": {
+      "en": "much; many; more than",
+      "ar": "كثير؛ أكثر من"
+    },
+    "partOfSpeech": "adjective",
+    "example": {
+      "hanzi": "他学中文三年多了。",
+      "pinyin": "Tā xué Zhōngwén sān nián duō le.",
+      "en": "He has been studying Chinese for more than three years.",
+      "ar": "يتعلم الصينية منذ أكثر من ثلاث سنوات."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-2",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "他学中文三年多了。",
+        "pinyin": "Tā xué Zhōngwén sān nián duō le.",
+        "en": "He has been studying Chinese for more than three years.",
+        "ar": "يتعلم الصينية منذ أكثر من ثلاث سنوات."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "youshihou",
+    "hskLevel": 2,
+    "order": 214,
+    "hanzi": "有时候",
+    "traditional": "有時候",
+    "pinyin": "yǒu shíhou",
+    "meaning": {
+      "en": "sometimes; at times",
+      "ar": "أحيانًا؛ في بعض الأوقات"
+    },
+    "partOfSpeech": "adverb",
+    "example": {
+      "hanzi": "我周末有时候去爬山。",
+      "pinyin": "Wǒ zhōumò yǒu shíhou qù páshān.",
+      "en": "I sometimes go mountain climbing on weekends.",
+      "ar": "أحيانًا أذهب لتسلق الجبال في عطلة نهاية الأسبوع."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-2",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "我周末有时候去爬山。",
+        "pinyin": "Wǒ zhōumò yǒu shíhou qù páshān.",
+        "en": "I sometimes go mountain climbing on weekends.",
+        "ar": "أحيانًا أذهب لتسلق الجبال في عطلة نهاية الأسبوع."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "hongcha",
+    "hskLevel": 2,
+    "order": 215,
+    "hanzi": "红茶",
+    "traditional": "紅茶",
+    "pinyin": "hóngchá",
+    "meaning": {
+      "en": "black tea",
+      "ar": "شاي أحمر (أسود)"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "你喜欢喝红茶还是绿茶？",
+      "pinyin": "Nǐ xǐhuan hē hóngchá háishi lǜchá?",
+      "en": "Do you prefer black tea or green tea?",
+      "ar": "هل تفضل شرب الشاي الأحمر أم الشاي الأخضر؟"
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-2",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "你喜欢喝红茶还是绿茶？",
+        "pinyin": "Nǐ xǐhuan hē hóngchá háishi lǜchá?",
+        "en": "Do you prefer black tea or green tea?",
+        "ar": "هل تفضل شرب الشاي الأحمر أم الشاي الأخضر؟"
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "lvcha",
+    "hskLevel": 2,
+    "order": 216,
+    "hanzi": "绿茶",
+    "traditional": "綠茶",
+    "pinyin": "lǜchá",
+    "meaning": {
+      "en": "green tea",
+      "ar": "شاي أخضر"
+    },
+    "partOfSpeech": "noun",
+    "example": {
+      "hanzi": "中国绿茶非常有名。",
+      "pinyin": "Zhōngguó lǜchá fēicháng yǒumíng.",
+      "en": "Chinese green tea is very famous.",
+      "ar": "الشاي الأخضر الصيني مشهور جدًا."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-2",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "中国绿茶非常有名。",
+        "pinyin": "Zhōngguó lǜchá fēicháng yǒumíng.",
+        "en": "Chinese green tea is very famous.",
+        "ar": "الشاي الأخضر الصيني مشهور جدًا."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
+  },
+  {
+    "id": "qilai",
+    "hskLevel": 2,
+    "order": 217,
+    "hanzi": "起来",
+    "traditional": "起來",
+    "pinyin": "qǐlai",
+    "meaning": {
+      "en": "to stand up; to get up; to start to",
+      "ar": "ينهض؛ يبدأ في"
+    },
+    "partOfSpeech": "verb",
+    "example": {
+      "hanzi": "天冷了，大家穿起厚衣服来。",
+      "pinyin": "Tiān lěng le, dàjiā chuān qǐ hòu yīfu lai.",
+      "en": "It has gotten cold, and everyone has started wearing thick clothes.",
+      "ar": "أصبح الجو بارداً، وبدأ الجميع بارتداء ملابس ثقيلة."
+    },
+    "audio": {
+      "word": null,
+      "example": null
+    },
+    "tags": [
+      "hsk3.0",
+      "level-2",
+      "official-syllabus"
+    ],
+    "examples": [
+      {
+        "hanzi": "天冷了，大家穿起厚衣服来。",
+        "pinyin": "Tiān lěng le, dàjiā chuān qǐ hòu yīfu lai.",
+        "en": "It has gotten cold, and everyone has started wearing thick clothes.",
+        "ar": "أصبح الجو بارداً، وبدأ الجميع بارتداء ملابس ثقيلة."
+      }
+    ],
+    "generatedContent": {
+      "arabic": "human-curated HSK 3.0",
+      "examples": "human-curated HSK 3.0"
+    }
   }
 ]

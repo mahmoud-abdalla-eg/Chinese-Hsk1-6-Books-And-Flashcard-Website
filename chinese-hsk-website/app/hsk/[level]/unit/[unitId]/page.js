@@ -1,7 +1,7 @@
+import Link from "next/link";
 import ConversationLesson from "@/components/conversations/conversation-lesson";
-import FlashcardDeck from "@/components/flashcards/flashcard-deck";
-import CompletionToggle from "@/components/progress/completion-toggle";
-import { Card, Pill, ProgressBar, Surface } from "@/components/ui/card";
+import UnitHeroCard from "@/components/hsk/unit-hero-card";
+import { Pill, Surface } from "@/components/ui/card";
 import VocabularyList from "@/components/vocabulary/vocabulary-list";
 import { getManagedConversationForUnit } from "@/lib/admin/course-conversations";
 import { getManagedHskWords, getManagedUnit } from "@/lib/admin/course-words";
@@ -26,76 +26,68 @@ export default async function UnitPage({ params }) {
   const allWords = await getManagedHskWords(level);
   const conversation = await getManagedConversationForUnit(level, unitId);
   const theme = levelThemes[Number(level)];
-  if (!unit) return <Card>Unit not found.</Card>;
+
+  if (!unit) {
+    return (
+      <div className="py-12 text-center">
+        <h2 className="text-2xl font-black text-slate-800">Unit not found</h2>
+        <Link
+          href={`/hsk/${level}`}
+          className="mt-4 inline-block text-sm font-bold text-teal-700 hover:underline"
+        >
+          Return to HSK {level}
+        </Link>
+      </div>
+    );
+  }
+
   return (
-    <div className="space-y-8 pb-8">
-      <Surface className="relative overflow-hidden p-7 lg:p-10">
+    <div className="space-y-10 pb-12">
+      {/* Unit Hero Banner */}
+      <Surface className="relative overflow-hidden p-7 lg:p-10 shadow-sm">
         <div
           className={`absolute inset-x-0 top-0 h-2 bg-gradient-to-r ${theme.accent}`}
         />
-        <div className="grid gap-8 lg:grid-cols-[1fr_360px] lg:items-center">
+        <div className="grid gap-8 lg:grid-cols-[1fr_380px] lg:items-center">
           <div>
-            <Pill tone="blue">
-              HSK {level} - Unit {unit.id}
-            </Pill>
-            <h1 className="mt-5 text-5xl font-black text-slate-950 sm:text-7xl">
-              Words {unit.start}-{unit.end}
+            <div className="flex items-center gap-3">
+              <Link
+                href={`/hsk/${level}`}
+                className="text-xs font-bold text-slate-500 hover:text-teal-700"
+              >
+                ← HSK {level}
+              </Link>
+              <Pill tone="blue">
+                Unit {unit.id}
+              </Pill>
+            </div>
+            <h1 className="mt-4 text-4xl font-black text-slate-950 sm:text-6xl tracking-tight">
+              Words {unit.start}–{unit.end}
             </h1>
-            <p className="mt-4 max-w-3xl text-lg font-semibold leading-8 text-slate-600">
-              A complete study room with vocabulary, flashcards, conversation
-              coverage, listening practice, and local progress.
+            <p className="mt-4 max-w-2xl text-base font-semibold leading-7 text-slate-600">
+              Study all {unit.words?.length || 0} vocabulary words with pronunciation, examples, translations, and dedicated flashcard recall sessions.
             </p>
           </div>
-          <Card>
-            <div className="flex justify-between text-sm font-black uppercase tracking-[0.16em] text-slate-500">
-              <span>Unit progress</span>
-              <span>0%</span>
-            </div>
-            <div className="mt-4">
-              <ProgressBar value={0} />
-            </div>
-            <div className="mt-5 grid grid-cols-2 gap-3 text-sm">
-              <a
-                href="#vocabulary"
-                className="rounded-2xl bg-teal-700 px-4 py-3 text-center font-black text-white hover:bg-teal-800"
-              >
-                Vocabulary
-              </a>
-              <a
-                href="#conversation"
-                className="rounded-2xl bg-blue-50 px-4 py-3 text-center font-black text-blue-950 hover:bg-blue-100"
-              >
-                Conversation
-              </a>
-            </div>
-            <div className="mt-5">
-              <CompletionToggle
-                id={`hsk-${level}-unit-${unit.id}`}
-                label="unit"
-                type="unit"
-              />
-            </div>
-          </Card>
+
+          <UnitHeroCard level={level} unit={unit} />
         </div>
       </Surface>
-      <section className="grid gap-8 xl:grid-cols-[1fr_430px]">
-        <div className="space-y-8">
-          <div id="vocabulary">
-            <VocabularyList words={unit.words} level={level} />
-          </div>
-          <div id="conversation">
-            {conversation
-              ? <ConversationLesson
-                  conversation={conversation}
-                  words={allWords}
-                />
-              : null}
-          </div>
-        </div>
-        <div className="xl:sticky xl:top-28 xl:self-start">
-          <FlashcardDeck words={unit.words} />
-        </div>
-      </section>
+
+      {/* Full-width Learning Content */}
+      <div className="space-y-12">
+        <section id="vocabulary">
+          <VocabularyList words={unit.words} level={level} />
+        </section>
+
+        {conversation ? (
+          <section id="conversation">
+            <ConversationLesson
+              conversation={conversation}
+              words={allWords}
+            />
+          </section>
+        ) : null}
+      </div>
     </div>
   );
 }
