@@ -5,11 +5,25 @@ import { getSupabaseAdmin } from "@/lib/db/supabase";
 
 const PUBLIC_CACHE_SECONDS = 300;
 
-export const getManagedHskWords = unstable_cache(
+const memoryWordCache = new Map();
+
+const getManagedHskWordsCached = unstable_cache(
   async (level) => getManagedHskWordsUncached(level),
   ["managed-hsk-words"],
   { revalidate: PUBLIC_CACHE_SECONDS },
 );
+
+export async function getManagedHskWords(level) {
+  const numericLevel = Number(level);
+  if (memoryWordCache.has(numericLevel)) {
+    return memoryWordCache.get(numericLevel);
+  }
+  const words = await getManagedHskWordsCached(numericLevel);
+  if (words && words.length > 0) {
+    memoryWordCache.set(numericLevel, words);
+  }
+  return words;
+}
 
 async function getManagedHskWordsUncached(level) {
   const numericLevel = Number(level);
@@ -50,7 +64,10 @@ async function getManagedHskSummaryUncached() {
           .eq("level", level);
 
         const fallback = fallbackSummary.find((item) => item.level === level);
-        const wordCount = error || count == null || count === 0 ? fallback?.wordCount || 0 : count;
+        const wordCount =
+          error || count == null || count === 0
+            ? fallback?.wordCount || 0
+            : count;
 
         return {
           level,
@@ -94,13 +111,7 @@ async function getManagedHskWordIdsUncached(level) {
   }
 }
 
-export const getManagedUnitsForLevel = unstable_cache(
-  async (level) => getManagedUnitsForLevelUncached(level),
-  ["managed-hsk-units"],
-  { revalidate: PUBLIC_CACHE_SECONDS },
-);
-
-async function getManagedUnitsForLevelUncached(level) {
+export async function getManagedUnitsForLevel(level) {
   const words = await getManagedHskWords(level);
   const units = [];
   for (let i = 0; i < words.length; i += UNIT_SIZE) {
@@ -118,19 +129,24 @@ async function getManagedUnitsForLevelUncached(level) {
 }
 
 export async function getManagedUnit(level, unitId) {
-  const units = await getManagedUnitsForLevel(level);
-  return units.find((unit) => unit.id === Number(unitId));
+  const words = await getManagedHskWords(level);
+  const numericUnitId = Number(unitId);
+  const startIdx = (numericUnitId - 1) * UNIT_SIZE;
+  if (startIdx < 0 || startIdx >= words.length) return null;
+  const unitWords = words.slice(startIdx, startIdx + UNIT_SIZE);
+  return {
+    id: numericUnitId,
+    level: Number(level),
+    start: startIdx + 1,
+    end: startIdx + unitWords.length,
+    words: unitWords,
+    wordCount: unitWords.length,
+  };
 }
 
-export const getManagedWord = unstable_cache(
-  async (level, wordId) => getManagedWordUncached(level, wordId),
-  ["managed-hsk-word"],
-  { revalidate: PUBLIC_CACHE_SECONDS },
-);
-
-async function getManagedWordUncached(level, wordId) {
+export async function getManagedWord(level, wordId) {
   const words = await getManagedHskWords(level);
-  return words.find((word) => word.id === wordId);
+  return words.find((word) => word.id === wordId) || null;
 }
 
 export async function upsertManagedWord(payload) {
@@ -165,13 +181,20 @@ export async function upsertManagedWord(payload) {
     throw new Error(error?.message || "Failed to upsert word.");
   }
 
+  memoryWordCache.clear();
   return fromDbWord(data);
 }
 
 export async function deleteManagedWord(wordId) {
   if (!wordId) return false;
   const supabase = getSupabaseAdmin();
-  const { error } = await supabase.from("course_words").delete().eq("id", wordId);
+  const { error } = await supabase
+    .from("course_words")
+    .delete()
+    .eq("id", wordId);
+  if (!error) {
+    memoryWordCache.clear();
+  }
   return !error;
 }
 
@@ -196,7 +219,8 @@ function normalizeWord(payload) {
     order: Math.max(1, Number(payload.order) || 1),
     hanzi,
     pinyin: String(payload.pinyin || "").trim(),
-    partOfSpeech: String(payload.partOfSpeech || payload.pos || "").trim() || "word",
+    partOfSpeech:
+      String(payload.partOfSpeech || payload.pos || "").trim() || "word",
     meaning: {
       en: String(payload.meaning?.en || payload.english || "").trim(),
       ar: String(payload.meaning?.ar || payload.arabic || "").trim(),

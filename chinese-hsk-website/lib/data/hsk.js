@@ -4,15 +4,30 @@ import { EXPECTED_HSK_COUNTS, HSK_LEVELS, UNIT_SIZE } from "./schema";
 
 const root = process.cwd();
 
+const hskJsonCache = new Map();
+
 function readHskJson(level) {
+  if (hskJsonCache.has(level)) {
+    return hskJsonCache.get(level);
+  }
   try {
     const direct = path.join(root, "source-data", "hsk", `hsk-${level}.json`);
     if (fs.existsSync(direct)) {
-      return JSON.parse(fs.readFileSync(direct, "utf8"));
+      const data = JSON.parse(fs.readFileSync(direct, "utf8"));
+      hskJsonCache.set(level, data);
+      return data;
     }
-    const inSubdir = path.join(root, "chinese-hsk-website", "source-data", "hsk", `hsk-${level}.json`);
+    const inSubdir = path.join(
+      root,
+      "chinese-hsk-website",
+      "source-data",
+      "hsk",
+      `hsk-${level}.json`,
+    );
     if (fs.existsSync(inSubdir)) {
-      return JSON.parse(fs.readFileSync(inSubdir, "utf8"));
+      const data = JSON.parse(fs.readFileSync(inSubdir, "utf8"));
+      hskJsonCache.set(level, data);
+      return data;
     }
   } catch (err) {
     console.error(`Error parsing HSK ${level} JSON:`, err);
@@ -61,7 +76,9 @@ export function getUnitsForLevel(level) {
 }
 
 export function getUnitForLevel(level, unitId) {
-  return getUnitsForLevel(level).find((unit) => Number(unit.id) === Number(unitId));
+  return getUnitsForLevel(level).find(
+    (unit) => Number(unit.id) === Number(unitId),
+  );
 }
 
 export function getWordById(level, wordId) {

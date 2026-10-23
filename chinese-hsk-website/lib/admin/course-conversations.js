@@ -31,16 +31,12 @@ async function getManagedConversationsForLevelUncached(level) {
   }
 }
 
-export const getManagedConversationForUnit = unstable_cache(
-  async (level, unitId) => getManagedConversationForUnitUncached(level, unitId),
-  ["managed-conversation-unit"],
-  { revalidate: PUBLIC_CACHE_SECONDS },
-);
-
-async function getManagedConversationForUnitUncached(level, unitId) {
+export async function getManagedConversationForUnit(level, unitId) {
   const conversations = await getManagedConversationsForLevel(level);
-  return conversations.find(
-    (conversation) => Number(conversation.unitId) === Number(unitId),
+  return (
+    conversations.find(
+      (conversation) => Number(conversation.unitId) === Number(unitId),
+    ) || null
   );
 }
 
@@ -102,8 +98,12 @@ function normalizeConversation(payload) {
     },
     targetVocabularyIds: arrayOfStrings(payload.targetVocabularyIds),
     dialogue: Array.isArray(payload.dialogue) ? payload.dialogue : [],
-    grammarNotes: Array.isArray(payload.grammarNotes) ? payload.grammarNotes : [],
-    culturalNotes: Array.isArray(payload.culturalNotes) ? payload.culturalNotes : [],
+    grammarNotes: Array.isArray(payload.grammarNotes)
+      ? payload.grammarNotes
+      : [],
+    culturalNotes: Array.isArray(payload.culturalNotes)
+      ? payload.culturalNotes
+      : [],
     comprehensionQuestions: Array.isArray(payload.comprehensionQuestions)
       ? payload.comprehensionQuestions
       : [],
@@ -126,22 +126,34 @@ function fromDbConversation(conversation) {
       zh: conversation.title?.zh || "",
       ar: conversation.title?.ar || "",
     },
-    targetVocabularyIds: arrayOfStrings(conversation.target_vocabulary_ids || conversation.targetVocabularyIds),
+    targetVocabularyIds: arrayOfStrings(
+      conversation.target_vocabulary_ids || conversation.targetVocabularyIds,
+    ),
     dialogue: Array.isArray(conversation.dialogue) ? conversation.dialogue : [],
-    grammarNotes: Array.isArray(conversation.grammar_notes || conversation.grammarNotes)
+    grammarNotes: Array.isArray(
+      conversation.grammar_notes || conversation.grammarNotes,
+    )
       ? conversation.grammar_notes || conversation.grammarNotes
       : [],
-    culturalNotes: Array.isArray(conversation.cultural_notes || conversation.culturalNotes)
+    culturalNotes: Array.isArray(
+      conversation.cultural_notes || conversation.culturalNotes,
+    )
       ? conversation.cultural_notes || conversation.culturalNotes
       : [],
-    comprehensionQuestions: Array.isArray(conversation.comprehension_questions || conversation.comprehensionQuestions)
-      ? conversation.comprehension_questions || conversation.comprehensionQuestions
+    comprehensionQuestions: Array.isArray(
+      conversation.comprehension_questions ||
+        conversation.comprehensionQuestions,
+    )
+      ? conversation.comprehension_questions ||
+        conversation.comprehensionQuestions
       : [],
-    shadowingPractice: conversation.shadowing_practice || conversation.shadowingPractice || {
-      enabled: true,
-      mode: "line-by-line",
-    },
-    authoringNote: conversation.authoring_note || conversation.authoringNote || "",
+    shadowingPractice: conversation.shadowing_practice ||
+      conversation.shadowingPractice || {
+        enabled: true,
+        mode: "line-by-line",
+      },
+    authoringNote:
+      conversation.authoring_note || conversation.authoringNote || "",
   };
 }
 

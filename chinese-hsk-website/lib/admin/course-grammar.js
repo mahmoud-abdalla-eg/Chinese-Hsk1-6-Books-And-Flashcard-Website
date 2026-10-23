@@ -75,11 +75,9 @@ async function getManagedGrammarItemsForLevelUncached(level) {
   return items.filter((item) => Number(item.hskLevel) === numericLevel);
 }
 
-export const getManagedGrammarUnitsForLevel = unstable_cache(
-  async (level) => getManagedGrammarUnitsForLevelUncached(level),
-  ["managed-grammar-units"],
-  { revalidate: PUBLIC_CACHE_SECONDS },
-);
+export async function getManagedGrammarUnitsForLevel(level) {
+  return getManagedGrammarUnitsForLevelUncached(level);
+}
 
 async function getManagedGrammarUnitsForLevelUncached(level) {
   const numericLevel = Number(level);
@@ -98,14 +96,14 @@ async function getManagedGrammarUnitsForLevelUncached(level) {
         const endOrder = Number(unit.end_order || unit.endOrder || startOrder);
         const unitItems = items.filter(
           (item) =>
-            Number(item.order) >= startOrder &&
-            Number(item.order) <= endOrder,
+            Number(item.order) >= startOrder && Number(item.order) <= endOrder,
         );
         return {
           id: Number(unit.id),
           level: numericLevel,
           title: unit.title || `Grammar Unit ${unit.id}`,
-          description: unit.description || `Core patterns ${startOrder} to ${endOrder}`,
+          description:
+            unit.description || `Core patterns ${startOrder} to ${endOrder}`,
           start: startOrder,
           end: endOrder,
           startOrder,
@@ -209,7 +207,10 @@ export async function upsertManagedGrammarUnit(payload) {
     id: Math.max(1, Number(payload.id || 1)),
     title: String(payload.title || "").trim(),
     description: String(payload.description || "").trim(),
-    start_order: Math.max(1, Number(payload.startOrder || payload.start_order || 1)),
+    start_order: Math.max(
+      1,
+      Number(payload.startOrder || payload.start_order || 1),
+    ),
     end_order: Math.max(1, Number(payload.endOrder || payload.end_order || 1)),
     updated_at: new Date().toISOString(),
   };

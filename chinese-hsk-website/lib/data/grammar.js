@@ -4,14 +4,32 @@ import path from "node:path";
 const root = process.cwd();
 const GRAMMAR_UNIT_SIZE = 12;
 
+let grammarPathCache = null;
+
 function readGrammarPath() {
-  const direct = path.join(root, "source-data", "grammar", "learning-path.json");
-  if (fs.existsSync(direct)) {
-    return JSON.parse(fs.readFileSync(direct, "utf8"));
+  if (grammarPathCache) {
+    return grammarPathCache;
   }
-  const inSubdir = path.join(root, "chinese-hsk-website", "source-data", "grammar", "learning-path.json");
+  const direct = path.join(
+    root,
+    "source-data",
+    "grammar",
+    "learning-path.json",
+  );
+  if (fs.existsSync(direct)) {
+    grammarPathCache = JSON.parse(fs.readFileSync(direct, "utf8"));
+    return grammarPathCache;
+  }
+  const inSubdir = path.join(
+    root,
+    "chinese-hsk-website",
+    "source-data",
+    "grammar",
+    "learning-path.json",
+  );
   if (fs.existsSync(inSubdir)) {
-    return JSON.parse(fs.readFileSync(inSubdir, "utf8"));
+    grammarPathCache = JSON.parse(fs.readFileSync(inSubdir, "utf8"));
+    return grammarPathCache;
   }
   return [];
 }
