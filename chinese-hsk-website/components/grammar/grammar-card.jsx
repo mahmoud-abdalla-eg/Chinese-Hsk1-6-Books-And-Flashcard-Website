@@ -1,9 +1,17 @@
+"use client";
+
 import AudioButton from "@/components/audio/audio-button";
+import { useLanguage } from "@/components/language/language-provider";
 import { Card, Pill } from "@/components/ui/card";
+import { getLocalizedExample } from "@/lib/i18n/dictionaries";
 
 export default function GrammarCard({ item, index }) {
+  const { lang, tr } = useLanguage();
+  const isArabic = lang === "ar";
   const hasExample =
     item.example?.hanzi || item.example?.pinyin || item.example?.en;
+  const exampleTranslation = getLocalizedExample(item.example, lang);
+
   return (
     <Card className="space-y-4">
       <div className="flex flex-wrap items-center justify-between gap-3">
@@ -13,7 +21,7 @@ export default function GrammarCard({ item, index }) {
         </span>
       </div>
       <h2 className="text-2xl font-black text-slate-950">
-        {item.pattern || "Practice pattern"}
+        {item.pattern || tr("practicePattern")}
       </h2>
       {item.explanation || item.details ? (
         <p className="text-sm font-semibold leading-7 text-slate-600">
@@ -29,17 +37,17 @@ export default function GrammarCard({ item, index }) {
             {item.example?.hanzi ? (
               <AudioButton
                 text={item.example.hanzi}
-                label="Play example sentence"
+                label={tr("playExampleAudio")}
               />
             ) : null}
           </div>
           <p className="mt-2 font-bold text-teal-700">{item.example?.pinyin}</p>
-          <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
-            {item.example?.en}
-          </p>
-          {item.example?.ar ? (
-            <p className="mt-1 text-sm font-semibold leading-6 text-slate-500" dir="rtl">
-              {item.example.ar}
+          {exampleTranslation ? (
+            <p
+              className="mt-2 text-sm font-semibold leading-6 text-slate-600"
+              dir={isArabic ? "rtl" : "ltr"}
+            >
+              {exampleTranslation}
             </p>
           ) : null}
         </div>

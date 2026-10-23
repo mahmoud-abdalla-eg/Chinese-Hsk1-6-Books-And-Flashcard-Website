@@ -5,10 +5,11 @@ import Link from "next/link";
 import AudioButton from "@/components/audio/audio-button";
 import { useAuth } from "@/components/auth/auth-provider";
 import { useLanguage } from "@/components/language/language-provider";
+import { getLocalizedMeaning } from "@/lib/i18n/dictionaries";
 import { usePersistentProgress } from "@/lib/progress/use-progress";
 
 export default function VocabularyList({ words = [], level }) {
-  const { tr } = useLanguage();
+  const { lang, tr } = useLanguage();
   const { requestAuthAction } = useAuth();
   const [query, setQuery] = useState("");
   const { progress, saveProgress } = usePersistentProgress();
@@ -60,7 +61,7 @@ export default function VocabularyList({ words = [], level }) {
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search words (Hanzi, Pinyin, English, Arabic)..."
+            placeholder={tr("searchWordsPlaceholder")}
             className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-slate-800 placeholder:text-slate-400 focus:border-teal-500 focus:outline-hidden"
           />
           {query ? (
@@ -69,12 +70,12 @@ export default function VocabularyList({ words = [], level }) {
               onClick={() => setQuery("")}
               className="absolute right-3 top-2.5 text-xs font-bold text-slate-400 hover:text-slate-600"
             >
-              Clear
+              {tr("clear")}
             </button>
           ) : null}
         </div>
         <span className="rounded-full bg-slate-100 px-3 py-1.5 text-xs font-black text-slate-600">
-          {filteredWords.length} of {words.length} words
+          {filteredWords.length} {tr("wordsOf")} {words.length} {tr("words")}
         </span>
       </div>
 
@@ -82,20 +83,25 @@ export default function VocabularyList({ words = [], level }) {
       <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
         <div className="grid grid-cols-[56px_1fr] gap-3 border-b border-slate-200 bg-slate-50 px-4 py-3.5 text-xs font-black uppercase tracking-[0.16em] text-slate-500 sm:grid-cols-[64px_1.2fr_1fr_120px_100px]">
           <span>#</span>
-          <span>Chinese</span>
-          <span className="hidden sm:block">Meaning</span>
-          <span className="hidden sm:block">Actions</span>
-          <span className="hidden sm:block text-right">Audio</span>
+          <span>{tr("chinese")}</span>
+          <span className="hidden sm:block">{tr("meaning")}</span>
+          <span className="hidden sm:block">{tr("actions")}</span>
+          <span className="hidden sm:block text-right">{tr("audio")}</span>
         </div>
 
         {filteredWords.length === 0 ? (
           <div className="p-8 text-center text-sm font-bold text-slate-500">
-            No words matching &quot;{query}&quot;
+            {tr("noWordsMatching")} &quot;{query}&quot;
           </div>
         ) : (
           filteredWords.map((word) => {
             const isFav = favoriteSet.has(word.id);
             const isLearned = learnedSet.has(word.id);
+            const localizedMeaning =
+              getLocalizedMeaning(word.meaning, lang) ||
+              (lang === "ar"
+                ? tr("arabicTranslationComingSoon")
+                : tr("englishTranslationComingSoon"));
             return (
               <div
                 key={word.id}
@@ -118,12 +124,9 @@ export default function VocabularyList({ words = [], level }) {
                 </Link>
 
                 <div className="text-sm font-semibold leading-5 text-slate-600">
-                  <span>{word.meaning?.en || "English coming soon"}</span>
-                  {word.meaning?.ar ? (
-                    <span className="mt-0.5 block text-xs text-slate-400" dir="rtl">
-                      {word.meaning.ar}
-                    </span>
-                  ) : null}
+                  <span dir={lang === "ar" ? "rtl" : "ltr"} className="block">
+                    {localizedMeaning}
+                  </span>
                 </div>
 
                 {/* Quick Action Badges */}
@@ -134,7 +137,7 @@ export default function VocabularyList({ words = [], level }) {
                     className={`rounded-full p-1.5 text-sm transition hover:scale-110 ${
                       isFav ? "text-rose-600" : "text-slate-300 hover:text-slate-500"
                     }`}
-                    title={isFav ? "Favorited" : "Add to favorites"}
+                    title={isFav ? tr("favorited") : tr("addToFavorites")}
                   >
                     {isFav ? "❤️" : "🤍"}
                   </button>
@@ -147,9 +150,9 @@ export default function VocabularyList({ words = [], level }) {
                         ? "bg-emerald-100 text-emerald-800"
                         : "bg-slate-100 text-slate-500 hover:bg-slate-200"
                     }`}
-                    title={isLearned ? "Marked as learned" : "Mark learned"}
+                    title={isLearned ? tr("markedLearned") : tr("markLearned")}
                   >
-                    {isLearned ? "✓ Learned" : "+ Learn"}
+                    {isLearned ? tr("markedLearned") : tr("learn")}
                   </button>
                 </div>
 

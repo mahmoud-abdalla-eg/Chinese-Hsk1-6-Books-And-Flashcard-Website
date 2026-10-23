@@ -7,7 +7,7 @@ import CompletionToggle from "@/components/progress/completion-toggle";
 import { Card, Pill } from "@/components/ui/card";
 
 export default function ConversationLesson({ conversation, words = [] }) {
-  const { tr } = useLanguage();
+  const { lang, tr } = useLanguage();
   const [playbackRate, setPlaybackRate] = useState(1.0);
 
   const targetWords = words.filter((word) =>
@@ -89,50 +89,60 @@ export default function ConversationLesson({ conversation, words = [] }) {
 
       {conversation.dialogue?.length ? (
         <div className="space-y-3">
-          {conversation.dialogue.map((line) => (
-            <div
-              key={line.id}
-              className="rounded-2xl border border-slate-200 bg-white p-4 transition hover:border-teal-200"
-            >
-              <div className="flex items-center justify-between gap-3">
-                <strong className="rounded-md bg-slate-100 px-2 py-0.5 text-xs text-slate-700">
-                  {line.role}
-                </strong>
-                <AudioButton
-                  src={line.audio}
-                  text={line.hanzi}
-                  playbackRate={playbackRate}
-                />
+          {conversation.dialogue.map((line) => {
+            const isArabic = lang === "ar";
+            const lineTranslation = isArabic
+              ? line.translation?.ar || line.translation?.en
+              : line.translation?.en || line.translation?.ar;
+            return (
+              <div
+                key={line.id}
+                className="rounded-2xl border border-slate-200 bg-white p-4 transition hover:border-teal-200"
+              >
+                <div className="flex items-center justify-between gap-3">
+                  <strong className="rounded-md bg-slate-100 px-2 py-0.5 text-xs text-slate-700">
+                    {line.role}
+                  </strong>
+                  <AudioButton
+                    src={line.audio}
+                    text={line.hanzi}
+                    playbackRate={playbackRate}
+                  />
+                </div>
+                <p className="hanzi-display mt-2 text-2xl font-black text-slate-950">
+                  {line.hanzi}
+                </p>
+                <p className="font-semibold text-teal-700">{line.pinyin}</p>
+                {lineTranslation ? (
+                  <p
+                    className="text-sm text-slate-700"
+                    dir={isArabic ? "rtl" : "ltr"}
+                  >
+                    {lineTranslation}
+                  </p>
+                ) : null}
               </div>
-              <p className="hanzi-display mt-2 text-2xl font-black text-slate-950">
-                {line.hanzi}
-              </p>
-              <p className="font-semibold text-teal-700">{line.pinyin}</p>
-              <p className="text-sm text-slate-700">{line.translation?.en}</p>
-              <p className="text-sm text-slate-700" dir="rtl">
-                {line.translation?.ar}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       ) : (
         <div className="grid gap-4 rounded-2xl border border-dashed border-slate-300 bg-slate-50 p-5 text-slate-800 md:grid-cols-[1fr_260px]">
           <div>
-            <strong className="text-lg">Dialogue coming soon.</strong>
+            <strong className="text-lg">{tr("dialogueComingSoon")}</strong>
             <p className="mt-2 text-sm font-semibold leading-7">
-              This lesson is being prepared. You can still preview the target
-              vocabulary below and review those words with flashcards.
+              {tr("dialogueComingSoonDesc")}
             </p>
           </div>
           <div className="rounded-2xl bg-white p-4 text-sm font-bold text-slate-700">
-            Use the target words as a warm-up before practicing the full
-            dialogue.
+            {tr("dialogueWarmup")}
           </div>
         </div>
       )}
 
       <div>
-        <h3 className="text-lg font-black text-slate-950">Target vocabulary</h3>
+        <h3 className="text-lg font-black text-slate-950">
+          {tr("targetVocabulary")}
+        </h3>
         <div className="mt-3 flex flex-wrap gap-2">
           {targetWords.slice(0, 100).map((word) => (
             <span

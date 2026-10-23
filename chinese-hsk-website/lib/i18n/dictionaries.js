@@ -480,7 +480,355 @@ export const dictionary = {
     zh: "访客模式 - 本地预览",
     ar: "وضع الضيف - معاينة محلية",
   },
+  chinese: {
+    en: "Chinese",
+    zh: "中文",
+    ar: "الصينية",
+  },
+  meaning: {
+    en: "Meaning",
+    zh: "词义",
+    ar: "المعنى",
+  },
+  actions: {
+    en: "Actions",
+    zh: "操作",
+    ar: "الإجراءات",
+  },
+  audio: {
+    en: "Audio",
+    zh: "音频",
+    ar: "الصوت",
+  },
+  learn: {
+    en: "+ Learn",
+    zh: "+ 学习",
+    ar: "+ تعلم",
+  },
+  markLearned: {
+    en: "Mark as learned",
+    zh: "标记为已学",
+    ar: "تحديد كمكتمل",
+  },
+  markedLearned: {
+    en: "✓ Learned",
+    zh: "✓ 已学",
+    ar: "✓ تم التعلم",
+  },
+  favorite: {
+    en: "Favorite",
+    zh: "收藏",
+    ar: "المفضلة",
+  },
+  favorited: {
+    en: "Favorited",
+    zh: "已收藏",
+    ar: "في المفضلة",
+  },
+  addToFavorites: {
+    en: "Add to favorites",
+    zh: "加入收藏",
+    ar: "إضافة إلى المفضلة",
+  },
+  searchWordsPlaceholder: {
+    en: "Search words (Hanzi, Pinyin, Meaning)...",
+    zh: "搜索单词（汉字、拼音、词义）...",
+    ar: "ابحث عن الكلمات (رمز، بينيين، المعنى)...",
+  },
+  clear: {
+    en: "Clear",
+    zh: "清除",
+    ar: "مسح",
+  },
+  wordsOf: {
+    en: "of",
+    zh: "/",
+    ar: "من أصل",
+  },
+  words: {
+    en: "words",
+    zh: "词",
+    ar: "كلمات",
+  },
+  noWordsMatching: {
+    en: "No words matching",
+    zh: "没有匹配的单词",
+    ar: "لا توجد كلمات مطابقة لـ",
+  },
+  exampleSentences: {
+    en: "Example sentences",
+    zh: "例句",
+    ar: "الجمل التوضيحية",
+  },
+  example: {
+    en: "Example",
+    zh: "例句",
+    ar: "مثال",
+  },
+  listenAndSave: {
+    en: "Listen and save",
+    zh: "听音与保存",
+    ar: "استمع واحفظ",
+  },
+  listenAndSaveDesc: {
+    en: "Listen to native pronunciation. Save words as learned or add them to favorites for quick review.",
+    zh: "聆听纯正发音。将单词标记为已学或加入收藏以便随时复习。",
+    ar: "استمع للنطق الأصلي. احفظ الكلمات كمكتملة أو أضفها إلى المفضلة للمراجعة السريعة.",
+  },
+  coreWord: {
+    en: "Core word",
+    zh: "核心词汇",
+    ar: "كلمة أساسية",
+  },
+  pronounceWord: {
+    en: "Pronounce word",
+    zh: "发音",
+    ar: "نطق الكلمة",
+  },
+  playWordAudio: {
+    en: "Play word audio",
+    zh: "播放单词音频",
+    ar: "تشغيل نطق الكلمة",
+  },
+  playExampleAudio: {
+    en: "Play example sentence",
+    zh: "播放例句音频",
+    ar: "تشغيل نطق الجملة",
+  },
+  exampleComingSoon: {
+    en: "Example sentence coming soon for this word.",
+    zh: "该词的例句即将推出。",
+    ar: "الجملة التوضيحية ستتوفر قريبًا لهذه الكلمة.",
+  },
+  unit: {
+    en: "Unit",
+    zh: "单元",
+    ar: "الوحدة",
+  },
+  units: {
+    en: "units",
+    zh: "个单元",
+    ar: "وحدات",
+  },
+  startUnit: {
+    en: "Start unit",
+    zh: "开始单元",
+    ar: "ابدأ الوحدة",
+  },
+  openUnit: {
+    en: "Open unit",
+    zh: "打开单元",
+    ar: "فتح الوحدة",
+  },
+  openDeck: {
+    en: "Open deck",
+    zh: "打开卡组",
+    ar: "فتح البطاقات",
+  },
+  unitProgress: {
+    en: "Unit progress",
+    zh: "单元进度",
+    ar: "تقدم الوحدة",
+  },
+  wordsToLearn: {
+    en: "words to learn",
+    zh: "个待学单词",
+    ar: "كلمات للتعلم",
+  },
+  waysToPractice: {
+    en: "ways to practice",
+    zh: "种练习方式",
+    ar: "طرق للتدريب",
+  },
+  levelMap: {
+    en: "Level map",
+    zh: "等级地图",
+    ar: "خريطة المستوى",
+  },
+  practiceModes: {
+    en: "Practice modes",
+    zh: "练习模式",
+    ar: "أوضاع التدريب",
+  },
+  studyUnits: {
+    en: "Study units",
+    zh: "学习单元",
+    ar: "وحدات الدراسة",
+  },
+  vocabularyPreview: {
+    en: "Vocabulary preview",
+    zh: "词汇预览",
+    ar: "معاينة المفردات",
+  },
+  firstWordsInLevel: {
+    en: "First words in this level",
+    zh: "本级别精选词汇",
+    ar: "أولى كلمات هذا المستوى",
+  },
+  practiceTheseWords: {
+    en: "Practice these words",
+    zh: "练习这些单词",
+    ar: "تدرب على هذه الكلمات",
+  },
+  unitDone: {
+    en: "done",
+    zh: "已完成",
+    ar: "مكتمل",
+  },
+  markUnitDone: {
+    en: "Mark done",
+    zh: "标记完成",
+    ar: "تحديد كمكتمل",
+  },
+  targetVocabulary: {
+    en: "Target vocabulary",
+    zh: "目标词汇",
+    ar: "المفردات المستهدفة",
+  },
+  dialogueComingSoon: {
+    en: "Dialogue coming soon.",
+    zh: "对话即将推出。",
+    ar: "المحادثة ستتوفر قريبًا.",
+  },
+  dialogueComingSoonDesc: {
+    en: "This lesson is being prepared. You can still preview the target vocabulary below and review those words with flashcards.",
+    zh: "本课内容正在准备中。您可以在下方预习目标词汇并通过闪卡进行复习。",
+    ar: "هذا الدرس قيد الإعداد. يمكنك معاينة المفردات المستهدفة أدناه ومراجعتها بالبطاقات التعليمية.",
+  },
+  dialogueWarmup: {
+    en: "Use the target words as a warm-up before practicing the full dialogue.",
+    zh: "在练习完整对话前，先用目标单词热身。",
+    ar: "استخدم الكلمات المستهدفة كإحماء قبل التدرب على المحادثة الكاملة.",
+  },
+  unitLessons: {
+    en: "unit lessons",
+    zh: "课单元课程",
+    ar: "دروس وحدات",
+  },
+  openLibrary: {
+    en: "Open library",
+    zh: "打开曲库",
+    ar: "فتح الدروس",
+  },
+  grammarPath: {
+    en: "Grammar path",
+    zh: "语法路线",
+    ar: "مسار القواعد",
+  },
+  grammarLevels: {
+    en: "Grammar levels",
+    zh: "语法级别",
+    ar: "مستويات القواعد",
+  },
+  practicePattern: {
+    en: "Practice pattern",
+    zh: "练习句型",
+    ar: "نمط التدريب",
+  },
+  learnGrammarSteps: {
+    en: "Learn grammar in small, clear steps.",
+    zh: "循序渐进掌握汉语语法。",
+    ar: "تعلم القواعد بخطوات مبسطة وواضحة.",
+  },
+  profile: {
+    en: "Profile",
+    zh: "个人资料",
+    ar: "الملف الشخصي",
+  },
+  saveMandarinProgress: {
+    en: "Save your Mandarin progress.",
+    zh: "保存您的中文学习进度。",
+    ar: "احفظ تقدمك في تعلم الصينية.",
+  },
+  accountIntro: {
+    en: "Create an account or log in to keep your study progress, hard words, favorites, and reviews saved in your database.",
+    zh: "创建账户或登录以将您的学习进度、难词、收藏和复习记录保存在数据库中。",
+    ar: "أنشئ حسابًا أو سجل الدخول لحفظ تقدم دراستك والكلمات الصعبة والمفضلة في قاعدة البيانات.",
+  },
+  accountInformation: {
+    en: "Account information",
+    zh: "账户信息",
+    ar: "معلومات الحساب",
+  },
+  name: {
+    en: "Name",
+    zh: "姓名",
+    ar: "الاسم",
+  },
+  email: {
+    en: "Email",
+    zh: "电子邮件",
+    ar: "البريد الإلكتروني",
+  },
+  password: {
+    en: "Password",
+    zh: "密码",
+    ar: "كلمة المرور",
+  },
+  currentPassword: {
+    en: "Current password",
+    zh: "当前密码",
+    ar: "كلمة المرور الحالية",
+  },
+  newPassword: {
+    en: "New password",
+    zh: "新密码",
+    ar: "كلمة المرور الجديدة",
+  },
+  confirmPassword: {
+    en: "Confirm new password",
+    zh: "确认新密码",
+    ar: "تأكيد كلمة المرور الجديدة",
+  },
+  changePassword: {
+    en: "Change password",
+    zh: "更改密码",
+    ar: "تغيير كلمة المرور",
+  },
+  whatGetsSaved: {
+    en: "What gets saved",
+    zh: "保存的内容",
+    ar: "ما يتم حفظه",
+  },
+  logIn: {
+    en: "Log in",
+    zh: "登录",
+    ar: "تسجيل الدخول",
+  },
+  createAccount: {
+    en: "Create account",
+    zh: "创建账户",
+    ar: "إنشاء حساب",
+  },
+  saving: {
+    en: "Saving...",
+    zh: "正在保存...",
+    ar: "جاري الحفظ...",
+  },
+  offline: {
+    en: "Offline",
+    zh: "离线",
+    ar: "غير متصل",
+  },
 };
+
+export function getLocalizedMeaning(meaning, lang = "en") {
+  if (!meaning) return "";
+  if (typeof meaning === "string") return meaning;
+  if (lang === "ar") {
+    return meaning.ar || meaning.en || "";
+  }
+  return meaning.en || meaning.ar || "";
+}
+
+export function getLocalizedExample(example, lang = "en") {
+  if (!example) return "";
+  if (typeof example === "string") return example;
+  if (lang === "ar") {
+    return example.ar || example.en || "";
+  }
+  return example.en || example.ar || "";
+}
 
 export function t(key, lang = "en") {
   return dictionary[key]?.[lang] || dictionary[key]?.en || key;

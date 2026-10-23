@@ -36,13 +36,13 @@ export default function WordStudyPanel({ word }) {
         <AudioButton
           src={word.audio?.word}
           text={word.hanzi}
-          label="Play word audio"
+          label={tr("playWordAudio")}
         />
         {exampleText ? (
           <AudioButton
             src={word.audio?.example}
             text={exampleText}
-            label="Play example sentence"
+            label={tr("playExampleAudio")}
           />
         ) : null}
         <button
@@ -55,7 +55,7 @@ export default function WordStudyPanel({ word }) {
           }`}
         >
           <span>{favorite ? "❤️" : "🤍"}</span>
-          <span>{favorite ? "Favorited" : "Favorite"}</span>
+          <span>{favorite ? tr("favorited") : tr("favorite")}</span>
         </button>
         <button
           type="button"
@@ -67,7 +67,7 @@ export default function WordStudyPanel({ word }) {
           }`}
         >
           <span>{learned ? "✓" : "○"}</span>
-          <span>{learned ? "Learned" : "Mark as learned"}</span>
+          <span>{learned ? tr("markedLearned") : tr("markLearned")}</span>
         </button>
       </div>
     </div>

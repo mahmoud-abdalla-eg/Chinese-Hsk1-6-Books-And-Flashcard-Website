@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import { useAuth } from "@/components/auth/auth-provider";
+import { useLanguage } from "@/components/language/language-provider";
 
 export default function AccountForm({ error = "" }) {
+  const { tr } = useLanguage();
   return (
     <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
       <div className="grid gap-6">
@@ -14,22 +16,22 @@ export default function AccountForm({ error = "" }) {
         ) : null}
         <AccountPanel
           action="/api/auth/login"
-          buttonLabel="Log in"
-          title="Log in"
+          buttonLabel={tr("logIn")}
+          title={tr("logIn")}
         />
         <AccountPanel
           action="/api/auth/register"
-          buttonLabel="Create account"
+          buttonLabel={tr("createAccount")}
           showName
-          title="Create account"
+          title={tr("createAccount")}
         />
       </div>
       <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
-        <h2 className="text-2xl font-black text-slate-950">What gets saved</h2>
+        <h2 className="text-2xl font-black text-slate-950">
+          {tr("whatGetsSaved")}
+        </h2>
         <div className="mt-4 grid gap-3 text-sm font-semibold leading-6 text-slate-600">
-          <p>Learned words, favorites, hard words, and review history.</p>
-          <p>Completed units and completed conversation lessons.</p>
-          <p>Daily study streaks and cloud synchronization across devices.</p>
+          <p>{tr("accountIntro")}</p>
         </div>
       </div>
     </div>
@@ -37,6 +39,7 @@ export default function AccountForm({ error = "" }) {
 }
 
 function AccountPanel({ action, buttonLabel, showName = false, title }) {
+  const { tr } = useLanguage();
   const { login } = useAuth();
   const [submitting, setSubmitting] = useState(false);
   const [panelError, setPanelError] = useState("");
@@ -84,17 +87,17 @@ function AccountPanel({ action, buttonLabel, showName = false, title }) {
       ) : null}
       {showName ? (
         <label className="grid gap-2 text-sm font-bold text-slate-700">
-          Name
+          {tr("name")}
           <input
             name="name"
             className="rounded-xl border border-slate-300 px-4 py-3 text-slate-950 outline-none focus:border-teal-500"
-            placeholder="Your name"
+            placeholder={tr("name")}
             disabled={submitting}
           />
         </label>
       ) : null}
       <label className="grid gap-2 text-sm font-bold text-slate-700">
-        Email
+        {tr("email")}
         <input
           required
           name="email"
@@ -105,14 +108,14 @@ function AccountPanel({ action, buttonLabel, showName = false, title }) {
         />
       </label>
       <label className="grid gap-2 text-sm font-bold text-slate-700">
-        Password
+        {tr("password")}
         <input
           required
           name="password"
           type="password"
           minLength={8}
           className="rounded-xl border border-slate-300 px-4 py-3 text-slate-950 outline-none focus:border-teal-500"
-          placeholder="At least 8 characters"
+          placeholder="••••••••"
           disabled={submitting}
         />
       </label>
@@ -121,7 +124,7 @@ function AccountPanel({ action, buttonLabel, showName = false, title }) {
         disabled={submitting}
         className="rounded-full bg-teal-700 px-5 py-3 text-sm font-black text-white hover:bg-teal-800 disabled:opacity-60 transition"
       >
-        {submitting ? "Please wait..." : buttonLabel}
+        {submitting ? tr("saving") : buttonLabel}
       </button>
     </form>
   );

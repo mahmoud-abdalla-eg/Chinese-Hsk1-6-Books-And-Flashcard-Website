@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Localized } from "@/components/language/language-provider";
 import { Card, Pill, ProgressBar } from "@/components/ui/card";
 import { levelThemes } from "@/lib/data/design";
 
@@ -33,13 +34,17 @@ export default function LevelCard({ summary }) {
               <strong className="block text-2xl text-slate-950">
                 {summary.wordCount}
               </strong>
-              <span className="font-bold text-slate-500">words</span>
+              <span className="font-bold text-slate-500">
+                <Localized k="words" />
+              </span>
             </div>
             <div className="rounded-2xl bg-slate-950/[0.04] p-3">
               <strong className="block text-2xl text-slate-950">
                 {summary.unitCount}
               </strong>
-              <span className="font-bold text-slate-500">units</span>
+              <span className="font-bold text-slate-500">
+                <Localized k="units" />
+              </span>
             </div>
           </div>
         </div>
@@ -49,7 +54,7 @@ export default function LevelCard({ summary }) {
             href={`/hsk/${summary.level}`}
             className="inline-flex w-full justify-center rounded-full bg-teal-700 px-5 py-3 text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-teal-800"
           >
-            Start HSK {summary.level}
+            <Localized k="startLearning" /> HSK {summary.level}
           </Link>
         </div>
       </div>
