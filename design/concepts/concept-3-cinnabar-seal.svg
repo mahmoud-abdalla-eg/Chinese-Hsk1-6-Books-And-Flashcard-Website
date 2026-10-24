@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <title>Concept 3 - Cinnabar Seal</title>
+  <defs>
+    <linearGradient id="c_3_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="50%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#c_3_bg)"/>
+  <rect x="16" y="16" width="96" height="96" rx="20" fill="none" stroke="#fee2e2" stroke-width="3" stroke-opacity="0.85"/>
+  <text x="64" y="90" font-family="'PingFang SC', 'Microsoft YaHei', 'SimHei', 'Noto Sans SC', system-ui, sans-serif" font-weight="900" font-size="72" fill="#ffffff" text-anchor="middle">汉</text>
+</svg>

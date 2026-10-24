@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json.schemastore.org/design-tokens.json",
+  "name": "Mandarin Flow HSK Design System",
+  "version": "1.0.0",
+  "description": "Brand colors, typography, icon geometry, and asset tokens for Mandarin Flow HSK",
+  "color": {
+    "primary": {
+      "imperial-scarlet-light": {
+        "value": "#ef4444",
+        "type": "color",
+        "description": "Top-left gradient highlight, vibrant scarlet"
+      },
+      "imperial-scarlet": {
+        "value": "#dc2626",
+        "type": "color",
+        "description": "Midpoint brand red, classic Chinese vermilion seal"
+      },
+      "imperial-scarlet-dark": {
+        "value": "#991b1b",
+        "type": "color",
+        "description": "Bottom-right shadow gradient, deep lacquer red"
+      }
+    },
+    "accent": {
+      "gold-spark": {
+        "value": "#facc15",
+        "type": "color",
+        "description": "Flow spark dot, imperial gold accent"
+      },
+      "gold-spark-glow": {
+        "value": "#fef08a",
+        "type": "color",
+        "description": "Gold spark outer glow border"
+      },
+      "coral-border": {
+        "value": "#fee2e2",
+        "type": "color",
+        "description": "Delicate inner seal border, 50% opacity"
+      }
+    },
+    "secondary": {
+      "platform-teal": {
+        "value": "#0f766e",
+        "type": "color",
+        "description": "Platform UI teal for study badges and interactive navigation"
+      },
+      "platform-teal-light": {
+        "value": "#14b8a6",
+        "type": "color",
+        "description": "Secondary UI accent"
+      }
+    },
+    "neutral": {
+      "slate-950": { "value": "#020617", "type": "color" },
+      "slate-900": { "value": "#0f172a", "type": "color" },
+      "slate-700": { "value": "#334155", "type": "color" },
+      "slate-500": { "value": "#64748b", "type": "color" },
+      "slate-200": { "value": "#e2e8f0", "type": "color" },
+      "slate-50":  { "value": "#f8fafc", "type": "color" },
+      "white":     { "value": "#ffffff", "type": "color" }
+    }
+  },
+  "typography": {
+    "brandFontLatin": {
+      "value": "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif",
+      "type": "fontFamilies"
+    },
+    "brandFontChinese": {
+      "value": "'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', 'Source Han Sans CN', sans-serif",
+      "type": "fontFamilies"
+    },
+    "weights": {
+      "black": 900,
+      "bold": 700,
+      "semibold": 600,
+      "regular": 400
+    }
+  },
+  "logo": {
+    "mark": {
+      "aspectRatio": "1:1",
+      "squircleRadius": "22%",
+      "innerBorderInset": "2.5%",
+      "character": "汉",
+      "characterUnicode": "\\u6C49",
+      "characterScale": "58%",
+      "sparkPosition": { "x": "78%", "y": "22%" }
+    },
+    "minimumSizes": {
+      "favicon": "16px",
+      "headerBadge": "32px",
+      "appIcon": "48px",
+      "printMin": "10mm"
+    },
+    "clearspace": "0.5x where x is mark width"
+  }
+}

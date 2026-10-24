@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <title>Mandarin Flow HSK - Brand Mark</title>
+  <desc>Mandarin Flow primary logo mark featuring Chinese character Han in Imperial Scarlet squircle with gold flow spark.</desc>
+  <defs>
+    <!-- Imperial Scarlet Background Gradient -->
+    <linearGradient id="imperial_scarlet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="45%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+
+    <!-- Subtle Upper Glass Sheen -->
+    <linearGradient id="glass_sheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Drop Shadow for Illustrator / High-Res Viewers -->
+    <filter id="mark_shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#450a0a" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g id="Layer_Background">
+    <!-- Main Rounded Squircle (45% corner radius for superellipse feel) -->
+    <rect x="32" y="32" width="448" height="448" rx="112" ry="112" fill="url(#imperial_scarlet)" filter="url(#mark_shadow)"/>
+
+    <!-- Delicate Inner Coral Frame -->
+    <rect x="36" y="36" width="440" height="440" rx="108" ry="108" fill="none" stroke="#fee2e2" stroke-width="10" stroke-opacity="0.5"/>
+
+    <!-- Gloss Sheen Overlay Arc -->
+    <path d="M 48 136 C 48 80 88 40 144 40 L 368 40 C 424 40 464 80 464 136 L 464 208 C 320 192 192 224 48 256 Z" fill="url(#glass_sheen)"/>
+  </g>
+
+  <g id="Layer_Glyph">
+    <!-- Centered Chinese Hanzi: 汉 (Han) -->
+    <text x="256" y="356" 
+          font-family="'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', 'Source Han Sans CN', 'Segoe UI', system-ui, sans-serif" 
+          font-weight="900" 
+          font-size="296" 
+          fill="#ffffff" 
+          text-anchor="middle"
+          dominant-baseline="alphabetic">汉</text>
+  </g>
+
+  <g id="Layer_Flow_Spark">
+    <!-- Imperial Gold Flow Spark -->
+    <circle cx="400" cy="112" r="22" fill="#facc15" stroke="#ffffff" stroke-width="4" stroke-opacity="0.75"/>
+  </g>
+</svg>

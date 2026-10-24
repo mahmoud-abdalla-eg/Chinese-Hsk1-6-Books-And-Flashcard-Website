@@ -18,6 +18,13 @@ export const metadata = {
   title: "Mandarin Flow HSK",
   description:
     "Conversation-based HSK 3.0 Chinese learning for English, Chinese, and Arabic learners.",
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({ children }) {

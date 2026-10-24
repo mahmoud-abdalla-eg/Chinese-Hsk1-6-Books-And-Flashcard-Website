@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <title>Concept Teal Original - Signature Teal</title>
+  <defs>
+    <linearGradient id="c_t_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14b8a6"/>
+      <stop offset="45%" stop-color="#0d9488"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="c_t_glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.32"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#c_t_bg)"/>
+  <rect x="9" y="9" width="110" height="110" rx="27" fill="none" stroke="#5eead4" stroke-width="2.5" stroke-opacity="0.5"/>
+  <path d="M 12 34 C 12 20 22 10 36 10 L 92 10 C 106 10 116 20 116 34 L 116 52 C 80 48 48 56 12 64 Z" fill="url(#c_t_glow)"/>
+  <text x="64" y="89" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', system-ui, sans-serif" font-weight="900" font-size="74" fill="#ffffff" text-anchor="middle">汉</text>
+  <circle cx="100" cy="28" r="5" fill="#facc15"/>
+</svg>

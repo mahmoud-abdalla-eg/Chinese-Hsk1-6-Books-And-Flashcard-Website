@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 600" width="512" height="600">
+  <title>Mandarin Flow HSK - Stacked Logo</title>
+  <defs>
+    <linearGradient id="s_scarlet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="45%" stop-color="#dc2626"/>
+      <stop offset="100%" stop-color="#991b1b"/>
+    </linearGradient>
+    <linearGradient id="s_sheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Centered Icon Mark -->
+  <g id="Logo_Mark" transform="translate(136, 40)">
+    <rect x="0" y="0" width="240" height="240" rx="60" fill="url(#s_scarlet)"/>
+    <rect x="2" y="2" width="236" height="236" rx="58" fill="none" stroke="#fee2e2" stroke-width="5" stroke-opacity="0.5"/>
+    <path d="M 8 72 C 8 42 28 22 58 22 L 182 22 C 212 22 232 42 232 72 L 232 110 C 156 102 104 118 8 135 Z" fill="url(#s_sheen)"/>
+    <text x="120" y="174" font-family="'PingFang SC', 'Noto Sans SC', 'Microsoft YaHei', sans-serif" font-weight="900" font-size="158" fill="#ffffff" text-anchor="middle">汉</text>
+    <circle cx="192" cy="55" r="12" fill="#facc15" stroke="#ffffff" stroke-width="2.5" stroke-opacity="0.75"/>
+  </g>
+
+  <!-- Wordmark Below -->
+  <g id="Wordmark" transform="translate(256, 360)">
+    <text x="0" y="50" 
+          font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+          font-weight="900" 
+          font-size="54" 
+          fill="#0f172a" 
+          letter-spacing="-0.03em"
+          text-anchor="middle">
+      Mandarin<tspan fill="#dc2626">Flow</tspan>
+    </text>
+
+    <text x="0" y="96" 
+          font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+          font-weight="700" 
+          font-size="18" 
+          fill="#64748b" 
+          letter-spacing="0.26em"
+          text-anchor="middle">
+      HSK 3.0 CHINESE LEARNING
+    </text>
+
+    <g transform="translate(-40, 118)">
+      <rect x="0" y="0" width="80" height="30" rx="8" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+      <text x="40" y="21" 
+            font-family="'PingFang SC', 'Microsoft YaHei', sans-serif" 
+            font-weight="800" 
+            font-size="16" 
+            fill="#dc2626" 
+            text-anchor="middle">
+        汉语
+      </text>
+    </g>
+  </g>
+</svg>

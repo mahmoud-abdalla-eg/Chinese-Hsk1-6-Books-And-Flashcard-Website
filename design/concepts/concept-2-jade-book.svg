@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <title>Concept 2 - Jade Book and Flow</title>
+  <defs>
+    <linearGradient id="c_2_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#115e59"/>
+      <stop offset="50%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#042f2e"/>
+    </linearGradient>
+    <linearGradient id="c_2_book" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="50%" stop-color="#5eead4"/>
+      <stop offset="100%" stop-color="#2dd4bf"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="112" height="112" rx="28" fill="url(#c_2_bg)"/>
+  <rect x="9" y="9" width="110" height="110" rx="27" fill="none" stroke="#2dd4bf" stroke-width="2" stroke-opacity="0.35"/>
+  <path d="M 26 102 C 42 94 56 94 64 98 C 72 94 86 94 102 102 C 102 96 88 90 64 94 C 40 90 26 96 26 102 Z" fill="url(#c_2_book)"/>
+  <text x="64" y="81" font-family="'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', system-ui, sans-serif" font-weight="900" font-size="64" fill="#ffffff" text-anchor="middle">汉</text>
+  <path d="M 36 26 C 46 22 56 25 64 23" stroke="#facc15" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <circle cx="72" cy="23" r="3" fill="#facc15"/>
+</svg>
