@@ -41,6 +41,36 @@ export const dictionary = {
     zh: "\u5b66\u4e60\u9762\u677f",
     ar: "\u0644\u0648\u062d\u0629 \u0627\u0644\u062a\u0642\u062f\u0645",
   },
+  navLearn: {
+    en: "Learn",
+    zh: "\u5b66\u4e60",
+    ar: "\u062a\u0639\u0644\u0645",
+  },
+  accountSettings: {
+    en: "Account Settings",
+    zh: "\u8d26\u6237\u8bbe\u7f6e",
+    ar: "\u0625\u0639\u062f\u0627\u062f\u0627\u062a \u0627\u0644\u062d\u0633\u0627\u0628",
+  },
+  vocabularyDesc: {
+    en: "HSK 1-6 word lists & audio",
+    zh: "HSK 1-6 \u8bcd\u6c47\u4e0e\u97f3\u9891",
+    ar: "\u0642\u0648\u0627\u0626\u0645 \u0643\u0644\u0645\u0627\u062a HSK 1-6 \u0645\u0639 \u0627\u0644\u0635\u0648\u062a",
+  },
+  flashcardsDesc: {
+    en: "Spaced-repetition review deck",
+    zh: "\u95f4\u9694\u91cd\u590d\u8bb0\u5fc6\u95ea\u5361",
+    ar: "\u0645\u0631\u0627\u062c\u0639\u0629 \u0627\u0644\u0628\u0637\u0627\u0642\u0627\u062a \u0628\u0627\u0644\u062a\u0643\u0631\u0627\u0631 \u0627\u0644\u0645\u062a\u0628\u0627\u0639\u062f",
+  },
+  conversationsDesc: {
+    en: "Situational dialogue practice",
+    zh: "\u573a\u666f\u5bf9\u8bdd\u4e0e\u542c\u8bf4\u6f14\u7ec3",
+    ar: "\u0645\u062d\u0627\u062f\u062b\u0627\u062a \u0648\u0627\u0642\u0639\u064a\u0629 \u0648\u062a\u062f\u0631\u064a\u0628 \u0635\u0648\u062a\u064a",
+  },
+  grammarDesc: {
+    en: "Sentence patterns & structures",
+    zh: "\u53e5\u578b\u7ed3\u6784\u4e0e\u8bed\u6cd5\u8981\u70b9",
+    ar: "\u0623\u0646\u0645\u0627\u0637 \u0627\u0644\u062c\u0645\u0644 \u0648\u0642\u0648\u0627\u0639\u062f \u0627\u0644\u0644\u063a\u0629",
+  },
   startLearning: {
     en: "Start learning",
     zh: "\u5f00\u59cb\u5b66\u4e60",

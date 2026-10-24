@@ -3,7 +3,6 @@
 import { useMemo } from "react";
 import Link from "next/link";
 import { useAuth } from "@/components/auth/auth-provider";
-import DatabaseHealth from "@/components/dashboard/database-health";
 import { useLanguage } from "@/components/language/language-provider";
 import { Card, Pill, ProgressBar, Surface } from "@/components/ui/card";
 import { getTodayReviewCount } from "@/lib/progress/storage";
@@ -267,7 +266,6 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
               {progress.reviewHistory.length}.
             </p>
           </Card>
-          <DatabaseHealth />
           <Card>
             <div className="flex items-center justify-between">
               <h2 className="text-2xl font-black text-slate-950">
