@@ -72,7 +72,7 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
   return (
     <div className="space-y-8 pb-8">
       {isGuest ? (
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-3xl border border-amber-200 bg-amber-50/90 p-6 text-amber-950 shadow-xs">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 rounded-2xl sm:rounded-3xl border border-amber-200 bg-amber-50/90 p-4 sm:p-6 text-amber-950 shadow-xs">
           <div className="space-y-1">
             <div className="flex items-center gap-2">
               <div className="grid h-8 w-8 place-items-center rounded-xl bg-amber-100 text-amber-900 shrink-0">
@@ -94,20 +94,20 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
                 {tr("guestBannerTitle")}
               </h3>
             </div>
-            <p className="text-sm font-semibold text-amber-900 max-w-2xl">
+            <p className="text-xs sm:text-sm font-semibold text-amber-900 max-w-2xl leading-relaxed">
               {tr("guestBannerDesc")}
             </p>
           </div>
           <div className="flex shrink-0 items-center gap-2">
             <Link
               href="/login"
-              className="rounded-full border border-teal-700 bg-white px-4 py-2 text-center text-xs font-black text-teal-800 hover:bg-teal-50 transition"
+              className="flex-1 sm:flex-initial rounded-full border border-teal-700 bg-white px-4 py-2 text-center text-xs font-black text-teal-800 hover:bg-teal-50 transition"
             >
               {tr("logIn")}
             </Link>
             <Link
               href="/signup"
-              className="rounded-full bg-teal-700 px-5 py-2 text-center text-xs font-black text-white hover:bg-teal-800 shadow-xs transition"
+              className="flex-1 sm:flex-initial rounded-full bg-teal-700 px-5 py-2 text-center text-xs font-black text-white hover:bg-teal-800 shadow-xs transition"
             >
               {tr("signUp")}
             </Link>
@@ -115,7 +115,7 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
         </div>
       ) : null}
 
-      <Surface className="grid gap-8 p-7 lg:grid-cols-[1fr_360px] lg:items-center lg:p-10">
+      <Surface className="grid gap-6 sm:gap-8 p-4 sm:p-7 lg:grid-cols-[1fr_360px] lg:items-center lg:p-10">
         <div>
           <Pill tone={isGuest ? "amber" : "teal"}>
             {syncStatus === "synced"
@@ -124,19 +124,21 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
                 ? tr("guestModeLocalPreview")
                 : tr("progress")}
           </Pill>
-          <h1 className="mt-5 text-5xl font-black text-slate-950 sm:text-7xl">
+          <h1 className="mt-3.5 sm:mt-5 text-3xl sm:text-5xl lg:text-7xl font-black text-slate-950 break-words tracking-tight">
             {tr("yourMandarinProgress")}
           </h1>
-          <p className="mt-4 max-w-3xl text-lg font-semibold leading-8 text-slate-600">
+          <p className="mt-3 sm:mt-4 max-w-3xl text-sm sm:text-lg font-semibold leading-relaxed sm:leading-8 text-slate-600">
             {tr("dashboardIntro")}
           </p>
         </div>
-        <Card className="bg-blue-50 text-slate-950">
-          <div className="text-6xl font-black text-blue-900">{percent}%</div>
-          <p className="mt-1 font-bold text-slate-700">
+        <Card className="bg-blue-50 text-slate-950 p-4 sm:p-6">
+          <div className="text-4xl sm:text-6xl font-black text-blue-900">
+            {percent}%
+          </div>
+          <p className="mt-0.5 sm:mt-1 text-xs sm:text-base font-bold text-slate-700">
             {tr("overallCourseProgress")}
           </p>
-          <div className="mt-5">
+          <div className="mt-4 sm:mt-5">
             <ProgressBar value={percent} />
           </div>
         </Card>

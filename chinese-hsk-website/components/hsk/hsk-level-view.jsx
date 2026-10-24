@@ -23,66 +23,92 @@ export default function HskLevelView({
   const { tr } = useLanguage();
 
   return (
-    <div className="space-y-10 pb-8">
+    <div className="space-y-8 sm:space-y-10 pb-8">
       {/* Level Hero */}
-      <Surface className="relative overflow-hidden p-7 lg:p-10">
+      <Surface className="relative overflow-hidden p-4 sm:p-7 lg:p-10">
         <div
           className={`absolute inset-x-0 top-0 h-2 bg-gradient-to-r ${theme.accent}`}
         />
-        <div className="relative grid gap-8 lg:grid-cols-[1fr_360px] lg:items-end">
+        <div className="relative grid gap-6 sm:gap-8 lg:grid-cols-[1fr_360px] lg:items-end">
           <div>
             <Pill>HSK {level}</Pill>
-            <h1 className="mt-5 text-5xl font-black text-slate-950 sm:text-7xl">
+            <h1 className="mt-3.5 sm:mt-5 text-3xl sm:text-5xl lg:text-7xl font-black text-slate-950 break-words tracking-tight">
               {tr(theme.scene)}
             </h1>
-            <p className="mt-4 max-w-3xl text-lg font-semibold leading-8 text-slate-600">
+            <p className="mt-3 sm:mt-4 max-w-3xl text-sm sm:text-lg font-semibold leading-relaxed sm:leading-8 text-slate-600">
               {tr(theme.tone)} {tr("hskLevelHeroOverview")}
             </p>
-            <div className="mt-6 flex flex-wrap gap-3">
+            <div className="mt-5 sm:mt-6 flex flex-wrap gap-2.5 sm:gap-3">
               {units.length ? (
                 <Link
                   href={`/hsk/${level}/unit/1`}
-                  className="rounded-full bg-teal-700 px-6 py-3 text-sm font-black text-white shadow-sm hover:bg-teal-800"
+                  className="rounded-full bg-teal-700 px-5 py-2.5 sm:px-6 sm:py-3 text-xs sm:text-sm font-black text-white shadow-sm hover:bg-teal-800"
                 >
                   {tr("startUnit1")}
                 </Link>
               ) : (
                 <Link
                   href={`/grammar/hsk/${level}`}
-                  className="rounded-full bg-teal-700 px-6 py-3 text-sm font-black text-white shadow-sm hover:bg-teal-800"
+                  className="rounded-full bg-teal-700 px-5 py-2.5 sm:px-6 sm:py-3 text-xs sm:text-sm font-black text-white shadow-sm hover:bg-teal-800"
                 >
                   {tr("grammarPath")} HSK {level}
                 </Link>
               )}
               <Link
                 href={`/flashcards/hsk/${level}`}
-                className="rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-black text-slate-900 hover:border-slate-400"
+                className="rounded-full border border-slate-300 bg-white px-5 py-2.5 sm:px-6 sm:py-3 text-xs sm:text-sm font-black text-slate-900 hover:border-slate-400"
               >
                 {tr("reviewFlashcards")}
               </Link>
             </div>
           </div>
 
-          <Card className="bg-blue-50 text-slate-950">
-            <div className="text-6xl font-black text-blue-900">
-              {words.length}
+          <Card className="bg-blue-50 text-slate-950 p-4 sm:p-6">
+            <div className="flex items-baseline justify-between lg:block">
+              <div>
+                <div className="text-4xl sm:text-6xl font-black text-blue-900">
+                  {words.length}
+                </div>
+                <p className="mt-0.5 sm:mt-1 text-xs sm:text-base font-bold text-slate-700">
+                  {tr("wordsToLearn")}
+                </p>
+              </div>
+              <div className="flex gap-2 lg:hidden">
+                <div className="rounded-xl bg-white px-3 py-1.5 text-center shadow-2xs">
+                  <strong className="block text-base font-black text-slate-900">
+                    {units.length}
+                  </strong>
+                  <span className="text-[10px] font-bold text-slate-500">
+                    {tr("units")}
+                  </span>
+                </div>
+                <div className="rounded-xl bg-white px-3 py-1.5 text-center shadow-2xs">
+                  <strong className="block text-base font-black text-slate-900">
+                    6
+                  </strong>
+                  <span className="text-[10px] font-bold text-slate-500">
+                    {tr("waysToPractice")}
+                  </span>
+                </div>
+              </div>
             </div>
-            <p className="mt-1 font-bold text-slate-700">
-              {tr("wordsToLearn")}
-            </p>
-            <div className="mt-6 grid grid-cols-2 gap-3 text-sm">
+            <div className="hidden lg:grid mt-6 grid-cols-2 gap-3 text-sm">
               <div className="rounded-2xl bg-white p-3">
-                <strong className="block text-2xl">{units.length}</strong>
+                <strong className="block text-2xl font-black text-slate-900">
+                  {units.length}
+                </strong>
                 <span className="text-slate-500 font-bold">{tr("units")}</span>
               </div>
               <div className="rounded-2xl bg-white p-3">
-                <strong className="block text-2xl">6</strong>
+                <strong className="block text-2xl font-black text-slate-900">
+                  6
+                </strong>
                 <span className="text-slate-500 font-bold">
                   {tr("waysToPractice")}
                 </span>
               </div>
             </div>
-            <div className="mt-5">
+            <div className="mt-4 sm:mt-5">
               <ProgressBar value={0} />
             </div>
           </Card>

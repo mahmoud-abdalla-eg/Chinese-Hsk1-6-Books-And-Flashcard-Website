@@ -63,5 +63,10 @@ The flashcard interface SHALL adapt typography, toolbar controls, and review act
 - **THEN** the Hanzi font size MUST scale responsively (down to `text-5xl`) to prevent horizontal text overflow outside card padding.
 
 #### Scenario: Mobile controls toolbar
-- **WHEN** the deck is displayed on mobile viewports
-- **THEN** the deck filters, mode toggles, and audio rate controls MUST fit into a compact, scrollable or wrap-optimized toolbar that keeps the flashcard visible above the fold.
+- **WHEN** the deck is displayed on mobile viewports (< 640px)
+- **THEN** the deck filters, mode toggles, and audio rate controls MUST fit into a clean horizontal scrollable rail (`overflow-x-auto`)
+- **AND** the controls MUST NOT stack into more than two rows or push the flashcard below the initial mobile fold.
+
+#### Scenario: Mobile thumb-reach review buttons
+- **WHEN** a flashcard is flipped to reveal its answer on a phone viewport
+- **THEN** rating buttons (Again, Hard, Good, Easy) MUST render as a full-width grid or 2x2 touch matrix with minimum 44px tap targets.

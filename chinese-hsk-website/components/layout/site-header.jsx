@@ -5,11 +5,13 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import AccountMenu from "@/components/auth/account-menu";
+import { useAuth } from "@/components/auth/auth-provider";
 import {
   Localized,
   useLanguage,
 } from "@/components/language/language-provider";
 import LanguageSwitcher from "@/components/language/language-switcher";
+import { languages } from "@/lib/i18n/dictionaries";
 
 const studyModes = [
   {
@@ -100,7 +102,8 @@ const studyModes = [
 
 export default function SiteHeader() {
   const pathname = usePathname();
-  const { tr } = useLanguage();
+  const { tr, lang, setLang } = useLanguage();
+  const { user, logout } = useAuth();
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [learnDropdownOpen, setLearnDropdownOpen] = useState(false);
   const learnMenuRef = useRef(null);
@@ -160,14 +163,14 @@ export default function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur-xs">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-2.5 px-3 py-3 sm:gap-4 sm:px-6 sm:py-3.5 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-1.5 sm:gap-4 px-2.5 py-2.5 sm:px-6 sm:py-3.5 lg:px-8">
         {/* Left: Mobile Hamburger & Brand Logo */}
-        <div className="flex items-center gap-2.5 sm:gap-3">
+        <div className="flex min-w-0 items-center gap-1.5 sm:gap-3">
           {/* Mobile Hamburger Button (hidden on lg: >= 1024px) */}
           <button
             type="button"
             onClick={() => setDrawerOpen(true)}
-            className="grid h-10 w-10 place-items-center rounded-xl border border-slate-200 bg-slate-50 text-slate-700 transition hover:border-teal-400 hover:bg-slate-100 hover:text-slate-950 lg:hidden shrink-0"
+            className="grid h-9 w-9 sm:h-10 sm:w-10 place-items-center rounded-xl border border-slate-200 bg-slate-50 text-slate-700 transition hover:border-teal-400 hover:bg-slate-100 hover:text-slate-950 lg:hidden shrink-0"
             aria-label="Open navigation menu"
             aria-expanded={drawerOpen}
           >
@@ -187,23 +190,26 @@ export default function SiteHeader() {
           </button>
 
           {/* Logo & Brand Title (links to Home /) */}
-          <Link href="/" className="group flex items-center gap-2.5 sm:gap-3">
+          <Link
+            href="/"
+            className="group flex min-w-0 items-center gap-2 sm:gap-3 shrink-0"
+          >
             <Image
               src="/logo.png"
               alt="Mandarin Flow HSK"
-              width={44}
-              height={44}
+              width={40}
+              height={40}
               priority
-              className="h-10 w-10 sm:h-11 sm:w-11 rounded-xl shadow-xs transition group-hover:scale-105 shrink-0 object-contain"
+              className="h-9 w-9 sm:h-11 sm:w-11 rounded-xl shadow-xs transition group-hover:scale-105 shrink-0 object-contain"
             />
-            <span className="min-w-0">
-              <span className="block text-sm sm:text-base font-black tracking-tight text-slate-950 truncate">
+            <div className="flex flex-col justify-center min-w-0">
+              <span className="block text-sm sm:text-base font-black tracking-tight text-slate-950 leading-tight">
                 <Localized k="appName" />
               </span>
-              <span className="hidden sm:block text-[10px] sm:text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+              <span className="hidden sm:block text-[10px] sm:text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 leading-tight mt-0.5">
                 <Localized k="brandSubtitle" />
               </span>
-            </span>
+            </div>
           </Link>
         </div>
 
@@ -323,7 +329,7 @@ export default function SiteHeader() {
         </nav>
 
         {/* Right: Language Switcher & Unified Account Menu */}
-        <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
+        <div className="flex shrink-0 items-center gap-1 sm:gap-2">
           <LanguageSwitcher />
           <AccountMenu />
         </div>
@@ -345,9 +351,9 @@ export default function SiteHeader() {
           />
 
           {/* Drawer Content Panel (start-0 ensures left in LTR, right in RTL) */}
-          <div className="fixed inset-y-0 start-0 z-50 flex w-full max-w-[290px] sm:max-w-xs flex-col bg-white p-5 shadow-2xl transition-transform duration-300 ease-out">
+          <div className="fixed inset-y-0 start-0 z-50 flex w-full max-w-[300px] sm:max-w-xs flex-col bg-white p-4 sm:p-5 shadow-2xl transition-transform duration-300 ease-out">
             {/* Drawer Header */}
-            <div className="flex items-center justify-between border-b border-slate-100 pb-4">
+            <div className="flex items-center justify-between border-b border-slate-100 pb-4 shrink-0">
               <Link
                 href="/"
                 onClick={() => setDrawerOpen(false)}
@@ -387,7 +393,7 @@ export default function SiteHeader() {
             </div>
 
             {/* Nav Destination Links */}
-            <nav className="mt-5 flex-1 space-y-4 overflow-y-auto">
+            <nav className="my-4 flex-1 space-y-4 overflow-y-auto">
               {/* Dashboard Link */}
               <Link
                 href="/dashboard"
@@ -538,7 +544,102 @@ export default function SiteHeader() {
                   ))}
                 </div>
               </div>
+
+              {/* Language selection in drawer */}
+              <div className="border-t border-slate-100 pt-4">
+                <span className="block px-2 text-[11px] font-black uppercase tracking-[0.16em] text-slate-400">
+                  {tr("language") || "Language"}
+                </span>
+                <div className="mt-2 grid grid-cols-2 gap-1.5">
+                  {Object.entries(languages).map(([code, language]) => (
+                    <button
+                      key={code}
+                      type="button"
+                      onClick={() => setLang(code)}
+                      className={`flex items-center justify-between rounded-xl px-3 py-2 text-xs font-bold transition ${
+                        code === lang
+                          ? "bg-teal-700 text-white shadow-xs"
+                          : "border border-slate-200 bg-slate-50 text-slate-700 hover:bg-white"
+                      }`}
+                      dir={language.dir}
+                    >
+                      <span>{language.label}</span>
+                      <span
+                        className={`text-[10px] uppercase font-bold ${
+                          code === lang ? "text-teal-200" : "text-slate-400"
+                        }`}
+                      >
+                        {code}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              </div>
             </nav>
+
+            {/* Drawer Footer with Account & Auth Actions */}
+            <div className="border-t border-slate-100 pt-4 mt-auto shrink-0">
+              {user ? (
+                <div className="space-y-2.5">
+                  <div className="flex items-center gap-2.5 px-1">
+                    <span className="grid h-8 w-8 place-items-center rounded-full bg-teal-700 text-xs font-black text-white shrink-0">
+                      {(user.name || "U").charAt(0).toUpperCase()}
+                    </span>
+                    <div className="min-w-0 flex-1">
+                      <p className="text-sm font-black text-slate-900 truncate">
+                        {user.name}
+                      </p>
+                      {user.email ? (
+                        <p className="text-xs text-slate-500 truncate">
+                          {user.email}
+                        </p>
+                      ) : null}
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      logout();
+                      setDrawerOpen(false);
+                    }}
+                    className="flex w-full items-center justify-center gap-2 rounded-xl border border-rose-200 bg-rose-50/50 py-2.5 text-xs font-black text-rose-700 hover:bg-rose-100 transition"
+                  >
+                    <svg
+                      className="h-4 w-4 text-rose-600 shrink-0"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                      aria-hidden="true"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+                      />
+                    </svg>
+                    <span>{tr("logOut")}</span>
+                  </button>
+                </div>
+              ) : (
+                <div className="grid grid-cols-2 gap-2">
+                  <Link
+                    href="/login"
+                    onClick={() => setDrawerOpen(false)}
+                    className="flex items-center justify-center rounded-xl border border-slate-200 bg-slate-50 py-2.5 text-xs font-black text-slate-700 hover:border-teal-400 hover:bg-white transition"
+                  >
+                    {tr("logIn")}
+                  </Link>
+                  <Link
+                    href="/signup"
+                    onClick={() => setDrawerOpen(false)}
+                    className="flex items-center justify-center rounded-xl bg-teal-700 py-2.5 text-xs font-black text-white hover:bg-teal-800 shadow-xs transition"
+                  >
+                    {tr("signUp")}
+                  </Link>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       )}

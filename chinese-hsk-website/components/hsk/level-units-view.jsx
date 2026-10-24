@@ -59,7 +59,7 @@ export default function LevelUnitsView({
   return (
     <div className="space-y-6">
       {/* Unit Size Customization Bar */}
-      <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-2xs">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 rounded-2xl border border-slate-200 bg-white p-3.5 sm:p-4 shadow-2xs">
         <div className="flex items-center gap-2">
           <svg
             className="h-4 w-4 text-teal-700"
@@ -80,7 +80,7 @@ export default function LevelUnitsView({
           </span>
         </div>
 
-        <div className="flex items-center gap-1.5 overflow-x-auto max-w-full rounded-2xl sm:rounded-full border border-slate-200 bg-slate-50 p-1 text-xs font-bold">
+        <div className="grid grid-cols-3 gap-1.5 w-full sm:w-auto sm:flex sm:items-center rounded-xl sm:rounded-full border border-slate-200 bg-slate-50 p-1 text-xs font-bold">
           {[
             { size: 50, label: tr("batchSize50") },
             { size: 25, label: tr("batchSize25") },
@@ -90,9 +90,9 @@ export default function LevelUnitsView({
               key={size}
               type="button"
               onClick={() => handleUnitSizeChange(size)}
-              className={`shrink-0 rounded-full px-3 py-1.5 transition ${
+              className={`rounded-lg sm:rounded-full px-2.5 sm:px-3 py-1.5 text-center text-xs transition ${
                 unitSize === size
-                  ? "bg-teal-700 text-white shadow-xs"
+                  ? "bg-teal-700 text-white shadow-xs font-black"
                   : "text-slate-600 hover:text-slate-900"
               }`}
             >

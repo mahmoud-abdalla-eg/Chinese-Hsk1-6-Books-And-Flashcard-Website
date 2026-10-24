@@ -58,9 +58,9 @@ export default async function UnitPage({ params }) {
     : [];
 
   return (
-    <div className="space-y-10 pb-12">
+    <div className="space-y-8 sm:space-y-10 pb-12">
       {/* Unit Hero Banner */}
-      <Surface className="relative overflow-hidden p-7 lg:p-10 shadow-sm">
+      <Surface className="relative overflow-hidden p-4 sm:p-7 lg:p-10 shadow-sm">
         <div
           className={`absolute inset-x-0 top-0 h-2 bg-gradient-to-r ${theme.accent}`}
         />
@@ -72,10 +72,10 @@ export default async function UnitPage({ params }) {
                 <Localized k="unit" /> {unit.id}
               </span>
             </div>
-            <h1 className="mt-4 text-3xl font-black text-slate-950 sm:text-5xl">
+            <h1 className="mt-3.5 sm:mt-4 text-2xl sm:text-4xl lg:text-5xl font-black text-slate-950 break-words tracking-tight">
               <Localized k="words" /> {unit.start}–{unit.end}
             </h1>
-            <p className="mt-4 max-w-2xl text-base font-semibold leading-7 text-slate-600">
+            <p className="mt-3 sm:mt-4 max-w-2xl text-sm sm:text-base font-semibold leading-relaxed sm:leading-7 text-slate-600">
               <Localized k="unitStudyAllVocab" />
             </p>
           </div>

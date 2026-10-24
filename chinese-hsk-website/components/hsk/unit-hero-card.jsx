@@ -19,7 +19,7 @@ export default function UnitHeroCard({ level, unit }) {
   );
 
   return (
-    <Card className="flex flex-col justify-between gap-5 p-6 shadow-sm">
+    <Card className="flex flex-col justify-between gap-4 sm:gap-5 p-4 sm:p-6 shadow-sm">
       <div>
         <div className="flex items-center justify-between text-xs font-black uppercase tracking-[0.16em] text-slate-500">
           <span>{tr("unitProgress")}</span>
@@ -37,7 +37,7 @@ export default function UnitHeroCard({ level, unit }) {
       <div className="space-y-3">
         <Link
           href={`/flashcards/hsk/${level}/unit/${unit.id}`}
-          className="flex w-full items-center justify-center gap-2 rounded-2xl bg-teal-700 px-5 py-3.5 text-center text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-teal-800"
+          className="flex w-full items-center justify-center gap-2 rounded-xl sm:rounded-2xl bg-teal-700 px-4 py-3 sm:px-5 sm:py-3.5 text-center text-xs sm:text-sm font-black text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-teal-800"
         >
           <svg
             className="h-4 w-4"

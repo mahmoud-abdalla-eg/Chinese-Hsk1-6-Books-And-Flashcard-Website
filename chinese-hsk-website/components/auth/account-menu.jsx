@@ -34,16 +34,16 @@ export default function AccountMenu() {
 
   if (!user) {
     return (
-      <div className="flex items-center gap-1.5 sm:gap-2">
+      <div className="flex items-center gap-1 sm:gap-2">
         <Link
           href="/login"
-          className="rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-black text-slate-700 hover:border-teal-400 hover:bg-slate-50 sm:px-4 sm:py-2 sm:text-sm transition"
+          className="rounded-full border border-slate-200 bg-white px-2.5 py-1.5 text-xs font-black text-slate-700 hover:border-teal-400 hover:bg-slate-50 sm:px-4 sm:py-2 sm:text-sm transition shrink-0"
         >
           {tr("logIn")}
         </Link>
         <Link
           href="/signup"
-          className="rounded-full bg-teal-700 px-3 py-1.5 text-xs font-black text-white hover:bg-teal-800 shadow-xs sm:px-4 sm:py-2 sm:text-sm transition"
+          className="hidden sm:inline-flex rounded-full bg-teal-700 px-3 py-1.5 text-xs font-black text-white hover:bg-teal-800 shadow-xs sm:px-4 sm:py-2 sm:text-sm transition shrink-0"
         >
           {tr("signUp")}
         </Link>
@@ -58,7 +58,7 @@ export default function AccountMenu() {
       <button
         type="button"
         onClick={() => setMenuOpen((prev) => !prev)}
-        className="inline-flex items-center gap-2 rounded-full border border-teal-200 bg-teal-50/70 px-2.5 py-1 sm:px-3 sm:py-1.5 text-xs sm:text-sm font-black text-teal-950 transition hover:bg-teal-100 hover:border-teal-300 focus:outline-hidden focus:ring-2 focus:ring-teal-500/20"
+        className="inline-flex items-center gap-1.5 sm:gap-2 rounded-full border border-teal-200 bg-teal-50/70 px-2 py-1 sm:px-3 sm:py-1.5 text-xs sm:text-sm font-black text-teal-950 transition hover:bg-teal-100 hover:border-teal-300 focus:outline-hidden focus:ring-2 focus:ring-teal-500/20"
         aria-expanded={menuOpen}
         aria-haspopup="menu"
         aria-label="User account menu"
@@ -66,7 +66,7 @@ export default function AccountMenu() {
         <span className="grid h-6 w-6 place-items-center rounded-full bg-teal-700 text-[11px] font-black text-white shrink-0">
           {initial}
         </span>
-        <span className="max-w-[80px] sm:max-w-[110px] truncate text-slate-900">
+        <span className="max-w-[65px] xs:max-w-[90px] sm:max-w-[120px] truncate text-slate-900">
           {user.name}
         </span>
         <svg
@@ -78,7 +78,11 @@ export default function AccountMenu() {
           stroke="currentColor"
           strokeWidth={2.5}
         >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M19 9l-7 7-7-7"
+          />
         </svg>
       </button>
 

@@ -24,12 +24,12 @@ export default function UnitCard({ unit, isCustom = false }) {
     : `/flashcards/hsk/${unit.level}/unit/${unit.id}`;
 
   return (
-    <Card className="group relative overflow-hidden transition duration-300 hover:-translate-y-1 shadow-xs">
+    <Card className="group relative overflow-hidden transition duration-300 hover:-translate-y-1 shadow-xs p-4 sm:p-6">
       <div
         className={`absolute inset-y-0 left-0 w-1.5 bg-gradient-to-b ${theme.accent}`}
       />
-      <div className="space-y-5 pl-2">
-        <div className="flex items-center justify-between gap-3">
+      <div className="space-y-4 sm:space-y-5 pl-1.5 sm:pl-2">
+        <div className="flex items-center justify-between gap-2 sm:gap-3">
           <Pill tone="blue">
             <Localized k="unit" /> {unit.id}
           </Pill>
@@ -38,10 +38,10 @@ export default function UnitCard({ unit, isCustom = false }) {
           </span>
         </div>
         <div>
-          <h3 className="text-2xl font-black text-slate-950">
+          <h3 className="text-xl sm:text-2xl font-black text-slate-950">
             <Localized k="words" /> {unit.start}-{unit.end}
           </h3>
-          <p className="mt-2 text-sm font-semibold leading-6 text-slate-600">
+          <p className="mt-1.5 sm:mt-2 text-xs sm:text-sm font-semibold leading-relaxed sm:leading-6 text-slate-600">
             <Localized k="unitCardStudyDesc" />
           </p>
         </div>
@@ -58,20 +58,20 @@ export default function UnitCard({ unit, isCustom = false }) {
           <ProgressBar value={percent} />
         </div>
 
-        <div className="flex flex-wrap gap-2.5">
+        <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:gap-2.5">
           {!isCustom ? (
             <Link
               href={unitHref}
-              className="rounded-full bg-teal-700 px-4 py-2 text-sm font-black text-white hover:bg-teal-800 transition"
+              className="rounded-xl sm:rounded-full bg-teal-700 px-3.5 py-2 text-center text-xs sm:text-sm font-black text-white hover:bg-teal-800 transition"
             >
               <Localized k="openUnit" />
             </Link>
           ) : null}
           <Link
             href={flashcardsHref}
-            className={`rounded-full px-4 py-2 text-sm font-black transition ${
+            className={`rounded-xl sm:rounded-full px-3.5 py-2 text-center text-xs sm:text-sm font-black transition ${
               isCustom
-                ? "bg-teal-700 text-white hover:bg-teal-800"
+                ? "col-span-2 bg-teal-700 text-white hover:bg-teal-800"
                 : "border border-slate-200 bg-white text-slate-800 hover:border-slate-300 hover:bg-slate-50"
             }`}
           >

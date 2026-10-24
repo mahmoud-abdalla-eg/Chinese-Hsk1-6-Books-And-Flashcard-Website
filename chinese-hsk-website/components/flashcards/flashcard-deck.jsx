@@ -293,53 +293,70 @@ export default function FlashcardDeck({ words = [] }) {
   if (!word || filteredWords.length === 0) {
     return (
       <div className="space-y-6" data-no-static-translate>
-        <div className="flex flex-col gap-3 text-xs font-black sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex items-center gap-1.5 overflow-x-auto rounded-2xl sm:rounded-full border border-slate-200 bg-slate-50 p-1">
-            <button
-              type="button"
-              onClick={() => {
-                setFilterMode("all");
-                setIndex(0);
-                setFlipped(false);
-              }}
-              className={`shrink-0 rounded-full px-3 py-1.5 transition ${
-                filterMode === "all"
-                  ? "bg-teal-700 text-white shadow-xs"
-                  : "text-slate-600 hover:text-slate-900"
-              }`}
-            >
-              All ({deck.length})
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setFilterMode("hard");
-                setIndex(0);
-                setFlipped(false);
-              }}
-              className={`shrink-0 rounded-full px-3 py-1.5 transition ${
-                filterMode === "hard"
-                  ? "bg-amber-600 text-white shadow-xs"
-                  : "text-slate-600 hover:text-slate-900"
-              }`}
-            >
-              Hard ({deck.filter((w) => hardSet.has(w.id)).length})
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                setFilterMode("favorites");
-                setIndex(0);
-                setFlipped(false);
-              }}
-              className={`shrink-0 rounded-full px-3 py-1.5 transition ${
-                filterMode === "favorites"
-                  ? "bg-rose-600 text-white shadow-xs"
-                  : "text-slate-600 hover:text-slate-900"
-              }`}
-            >
-              Favorites ({deck.filter((w) => favoriteSet.has(w.id)).length})
-            </button>
+        <div className="flex flex-col gap-2.5 text-xs font-black">
+          <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
+            <div className="flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 p-1 shrink-0">
+              <button
+                type="button"
+                onClick={() => {
+                  setFilterMode("all");
+                  setIndex(0);
+                  setFlipped(false);
+                }}
+                className={`shrink-0 rounded-full px-3 py-1.5 transition ${
+                  filterMode === "all"
+                    ? "bg-teal-700 text-white shadow-xs"
+                    : "text-slate-600 hover:text-slate-900"
+                }`}
+              >
+                All ({deck.length})
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setFilterMode("hard");
+                  setIndex(0);
+                  setFlipped(false);
+                }}
+                className={`shrink-0 rounded-full px-3 py-1.5 transition ${
+                  filterMode === "hard"
+                    ? "bg-amber-600 text-white shadow-xs"
+                    : "text-slate-600 hover:text-slate-900"
+                }`}
+              >
+                Hard ({deck.filter((w) => hardSet.has(w.id)).length})
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setFilterMode("favorites");
+                  setIndex(0);
+                  setFlipped(false);
+                }}
+                className={`shrink-0 rounded-full px-3 py-1.5 transition ${
+                  filterMode === "favorites"
+                    ? "bg-rose-600 text-white shadow-xs"
+                    : "text-slate-600 hover:text-slate-900"
+                }`}
+              >
+                Favorites ({deck.filter((w) => favoriteSet.has(w.id)).length})
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setFilterMode("unlearned");
+                  setIndex(0);
+                  setFlipped(false);
+                }}
+                className={`shrink-0 rounded-full px-3 py-1.5 transition ${
+                  filterMode === "unlearned"
+                    ? "bg-slate-800 text-white shadow-xs"
+                    : "text-slate-600 hover:text-slate-900"
+                }`}
+              >
+                Unlearned ({deck.filter((w) => !learnedSet.has(w.id)).length})
+              </button>
+            </div>
           </div>
         </div>
 
@@ -412,79 +429,81 @@ export default function FlashcardDeck({ words = [] }) {
   return (
     <div className="space-y-6" data-no-static-translate>
       {/* Top Filter & Deck Controls */}
-      <div className="flex flex-col gap-3 text-xs font-black sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-col gap-2.5 text-xs font-black">
         {/* Filter Buttons */}
-        <div className="flex items-center gap-1.5 overflow-x-auto rounded-2xl border border-slate-200 bg-slate-50 p-1 sm:rounded-full">
-          <button
-            type="button"
-            onClick={() => {
-              setFilterMode("all");
-              setIndex(0);
-              setFlipped(false);
-            }}
-            className={`shrink-0 rounded-full px-3 py-1.5 transition ${
-              filterMode === "all"
-                ? "bg-teal-700 text-white shadow-xs"
-                : "text-slate-600 hover:text-slate-900"
-            }`}
-          >
-            All ({deck.length})
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              setFilterMode("hard");
-              setIndex(0);
-              setFlipped(false);
-            }}
-            className={`shrink-0 rounded-full px-3 py-1.5 transition ${
-              filterMode === "hard"
-                ? "bg-amber-600 text-white shadow-xs"
-                : "text-slate-600 hover:text-slate-900"
-            }`}
-          >
-            Hard ({deck.filter((w) => hardSet.has(w.id)).length})
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              setFilterMode("favorites");
-              setIndex(0);
-              setFlipped(false);
-            }}
-            className={`shrink-0 rounded-full px-3 py-1.5 transition ${
-              filterMode === "favorites"
-                ? "bg-rose-600 text-white shadow-xs"
-                : "text-slate-600 hover:text-slate-900"
-            }`}
-          >
-            Favorites ({deck.filter((w) => favoriteSet.has(w.id)).length})
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              setFilterMode("unlearned");
-              setIndex(0);
-              setFlipped(false);
-            }}
-            className={`shrink-0 rounded-full px-3 py-1.5 transition ${
-              filterMode === "unlearned"
-                ? "bg-slate-800 text-white shadow-xs"
-                : "text-slate-600 hover:text-slate-900"
-            }`}
-          >
-            Unlearned ({deck.filter((w) => !learnedSet.has(w.id)).length})
-          </button>
+        <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5">
+          <div className="flex items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 p-1 shrink-0">
+            <button
+              type="button"
+              onClick={() => {
+                setFilterMode("all");
+                setIndex(0);
+                setFlipped(false);
+              }}
+              className={`shrink-0 rounded-full px-3 py-1.5 transition ${
+                filterMode === "all"
+                  ? "bg-teal-700 text-white shadow-xs"
+                  : "text-slate-600 hover:text-slate-900"
+              }`}
+            >
+              All ({deck.length})
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setFilterMode("hard");
+                setIndex(0);
+                setFlipped(false);
+              }}
+              className={`shrink-0 rounded-full px-3 py-1.5 transition ${
+                filterMode === "hard"
+                  ? "bg-amber-600 text-white shadow-xs"
+                  : "text-slate-600 hover:text-slate-900"
+              }`}
+            >
+              Hard ({deck.filter((w) => hardSet.has(w.id)).length})
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setFilterMode("favorites");
+                setIndex(0);
+                setFlipped(false);
+              }}
+              className={`shrink-0 rounded-full px-3 py-1.5 transition ${
+                filterMode === "favorites"
+                  ? "bg-rose-600 text-white shadow-xs"
+                  : "text-slate-600 hover:text-slate-900"
+              }`}
+            >
+              Favorites ({deck.filter((w) => favoriteSet.has(w.id)).length})
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setFilterMode("unlearned");
+                setIndex(0);
+                setFlipped(false);
+              }}
+              className={`shrink-0 rounded-full px-3 py-1.5 transition ${
+                filterMode === "unlearned"
+                  ? "bg-slate-800 text-white shadow-xs"
+                  : "text-slate-600 hover:text-slate-900"
+              }`}
+            >
+              Unlearned ({deck.filter((w) => !learnedSet.has(w.id)).length})
+            </button>
+          </div>
         </div>
 
         {/* Study Mode, Audio Speed & Shuffle Controls */}
-        <div className="flex flex-wrap items-center gap-2">
+        <div className="flex items-center justify-between gap-2 overflow-x-auto no-scrollbar py-0.5">
           {/* Mode Switcher: Recognition vs Recall */}
-          <div className="flex items-center rounded-full border border-slate-200 bg-slate-50 p-1 text-xs font-black">
+          <div className="flex items-center rounded-full border border-slate-200 bg-slate-50 p-1 text-xs font-black shrink-0">
             <button
               type="button"
               onClick={() => handleModeChange("recognition")}
-              className={`rounded-full px-3 py-1 transition ${
+              className={`rounded-full px-2.5 sm:px-3 py-1 transition ${
                 studyMode === "recognition"
                   ? "bg-teal-700 text-white shadow-xs"
                   : "text-slate-600 hover:text-slate-900"
@@ -495,7 +514,7 @@ export default function FlashcardDeck({ words = [] }) {
             <button
               type="button"
               onClick={() => handleModeChange("recall")}
-              className={`rounded-full px-3 py-1 transition ${
+              className={`rounded-full px-2.5 sm:px-3 py-1 transition ${
                 studyMode === "recall"
                   ? "bg-teal-700 text-white shadow-xs"
                   : "text-slate-600 hover:text-slate-900"
@@ -505,65 +524,66 @@ export default function FlashcardDeck({ words = [] }) {
             </button>
           </div>
 
-          {/* Audio Speed Pill */}
-          <button
-            type="button"
-            onClick={handleRateToggle}
-            className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-black shadow-xs transition ${
-              playbackRate === 0.75
-                ? "border-teal-500 bg-teal-50 text-teal-900 ring-1 ring-teal-400"
-                : "border-slate-200 bg-white text-slate-700 hover:border-slate-300"
-            }`}
-            title="Toggle audio speed (1.0x / 0.75x)"
-          >
-            <svg
-              className="h-3.5 w-3.5 text-current shrink-0"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
+          <div className="flex items-center gap-1.5 shrink-0">
+            {/* Audio Speed Pill */}
+            <button
+              type="button"
+              onClick={handleRateToggle}
+              className={`inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-xs font-black shadow-xs transition ${
+                playbackRate === 0.75
+                  ? "border-teal-500 bg-teal-50 text-teal-900 ring-1 ring-teal-400"
+                  : "border-slate-200 bg-white text-slate-700 hover:border-slate-300"
+              }`}
+              title="Toggle audio speed (1.0x / 0.75x)"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M15.536 8.464a5 5 0 010 7.072M18.364 5.636a9 9 0 010 12.728M11 5L6 9H2v6h4l5 4V5z"
-              />
-            </svg>
-            <span className="font-mono text-[11px]">
-              {playbackRate === 0.75 ? "0.75x" : "1.0x"}
-            </span>
-            <span>
-              {playbackRate === 0.75 ? tr("slowAudio") : tr("normalAudio")}
-            </span>
-          </button>
+              <svg
+                className="h-3.5 w-3.5 text-current shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M15.536 8.464a5 5 0 010 7.072M18.364 5.636a9 9 0 010 12.728M11 5L6 9H2v6h4l5 4V5z"
+                />
+              </svg>
+              <span className="font-mono text-[11px]">
+                {playbackRate === 0.75 ? "0.75x" : "1.0x"}
+              </span>
+            </button>
 
-          {isGuest ? (
-            <span className="rounded-full border border-amber-200 bg-amber-50 px-3 py-1 text-xs font-bold text-amber-900">
-              {tr("guestMode")}
-            </span>
-          ) : null}
+            {isGuest ? (
+              <span className="hidden sm:inline-block rounded-full border border-amber-200 bg-amber-50 px-2.5 py-0.5 text-[11px] font-bold text-amber-900">
+                {tr("guestMode")}
+              </span>
+            ) : null}
 
-          <button
-            type="button"
-            onClick={shuffleDeck}
-            className="inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-3.5 py-1.5 text-xs font-black text-slate-700 shadow-xs hover:border-slate-300"
-            title="Shuffle deck order"
-          >
-            <svg
-              className="h-3.5 w-3.5 text-current shrink-0"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
+            <button
+              type="button"
+              onClick={shuffleDeck}
+              className="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white px-2.5 py-1 text-xs font-black text-slate-700 shadow-xs hover:border-slate-300"
+              title="Shuffle deck order"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M16 3h5v5M4 20L21 3M21 16v5h-5M15 15l6 6M4 4l5 5"
-              />
-            </svg>
-            <span>Shuffle</span>
-          </button>
+              <svg
+                className="h-3.5 w-3.5 text-current shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M16 3h5v5M4 20L21 3M21 16v5h-5M15 15l6 6M4 4l5 5"
+                />
+              </svg>
+              <span className="hidden xs:inline">Shuffle</span>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -931,10 +951,7 @@ export default function FlashcardDeck({ words = [] }) {
       </div>
 
       {/* SRS Rating Buttons */}
-      <div
-        className="grid grid-cols-2 gap-2.5 sm:gap-3 sm:grid-cols-4"
-        dir="ltr"
-      >
+      <div className="grid grid-cols-2 gap-2 sm:gap-3 sm:grid-cols-4" dir="ltr">
         {[
           ["Again", "bg-rose-600 hover:bg-rose-700", "1", "Repeat soon"],
           ["Hard", "bg-amber-600 hover:bg-amber-700", "2", "Difficult"],
@@ -945,16 +962,16 @@ export default function FlashcardDeck({ words = [] }) {
             key={quality}
             type="button"
             onClick={() => rate(quality)}
-            className={`group min-h-[52px] rounded-2xl px-3 sm:px-4 py-3 sm:py-3.5 text-center text-white shadow-md transition hover:-translate-y-0.5 active:translate-y-0 ${color}`}
+            className={`group min-h-[48px] sm:min-h-[52px] rounded-xl sm:rounded-2xl px-2.5 sm:px-4 py-2.5 sm:py-3.5 text-center text-white shadow-md transition hover:-translate-y-0.5 active:translate-y-0 ${color}`}
             dir={isArabic ? "rtl" : "ltr"}
           >
-            <div className="flex items-center justify-center gap-1.5 text-sm font-black">
+            <div className="flex items-center justify-center gap-1.5 text-xs sm:text-sm font-black">
               <span>{tr(quality.toLowerCase())}</span>
               <span className="hidden sm:inline-block rounded-md bg-white/20 px-1.5 py-0.5 text-[10px] font-bold opacity-80 group-hover:opacity-100">
                 [{keyHint}]
               </span>
             </div>
-            <span className="block text-[11px] font-medium opacity-80">
+            <span className="block text-[10px] sm:text-[11px] font-medium opacity-80 mt-0.5">
               {subtext}
             </span>
           </button>
