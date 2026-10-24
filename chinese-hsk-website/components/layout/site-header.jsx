@@ -196,6 +196,14 @@ export default function SiteHeader() {
               priority
               className="h-10 w-10 sm:h-11 sm:w-11 rounded-xl shadow-xs transition group-hover:scale-105 shrink-0 object-contain"
             />
+            <span className="min-w-0">
+              <span className="block text-sm sm:text-base font-black tracking-tight text-slate-950 truncate">
+                <Localized k="appName" />
+              </span>
+              <span className="hidden sm:block text-[10px] sm:text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+                <Localized k="brandSubtitle" />
+              </span>
+            </span>
           </Link>
         </div>
 
@@ -345,13 +353,13 @@ export default function SiteHeader() {
                 onClick={() => setDrawerOpen(false)}
                 className="flex items-center gap-2.5"
               >
-                <span className="relative grid h-10 w-10 place-items-center rounded-xl overflow-hidden bg-gradient-to-br from-red-500 via-red-600 to-red-800 shadow-xs shrink-0 border border-red-300/40">
-                  <span className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/30 to-transparent" />
-                  <span className="relative font-black text-lg text-white select-none">
-                    {"\u6C49"}
-                  </span>
-                  <span className="absolute top-1 right-1 h-2 w-2 rounded-full bg-amber-400 ring-1 ring-white/70 shadow-xs" />
-                </span>
+                <Image
+                  src="/logo.png"
+                  alt="Mandarin Flow HSK"
+                  width={40}
+                  height={40}
+                  className="h-10 w-10 rounded-xl shadow-xs shrink-0 object-contain"
+                />
                 <span className="text-base font-black tracking-tight text-slate-950">
                   <Localized k="appName" />
                 </span>
