@@ -1547,6 +1547,161 @@ export const dictionary = {
     zh: "对话",
     ar: "المحادثة",
   },
+  contactNav: {
+    en: "Contact",
+    zh: "联系我们",
+    ar: "اتصل بنا",
+  },
+  contactTitle: {
+    en: "Contact & Suggestions",
+    zh: "联系与建议反馈",
+    ar: "التواصل والمقترحات",
+  },
+  contactSubtitle: {
+    en: "Have a suggestion, found an issue or typo, or want to request learning materials? Send us a message directly from your browser.",
+    zh: "有改进建议、发现了错误或错别字，或是想要新的学习资料？可直接在浏览器中发送留言。",
+    ar: "هل لديك مقترح، أو اكتشفت خطأً، أو ترغب في طلب مواد تعليمية؟ أرسل لنا رسالتك مباشرة من متصفحك.",
+  },
+  contactFormName: {
+    en: "Your Name",
+    zh: "您的姓名",
+    ar: "الاسم",
+  },
+  contactNamePlaceholder: {
+    en: "e.g. Alex",
+    zh: "例如：张明",
+    ar: "مثال: أحمد",
+  },
+  contactFormEmail: {
+    en: "Email Address",
+    zh: "电子邮箱",
+    ar: "البريد الإلكتروني",
+  },
+  contactEmailPlaceholder: {
+    en: "you@example.com",
+    zh: "you@example.com",
+    ar: "you@example.com",
+  },
+  contactFormTopic: {
+    en: "Topic",
+    zh: "主题类别",
+    ar: "موضوع الرسالة",
+  },
+  contactTopicGeneral: {
+    en: "General Feedback",
+    zh: "通用反馈",
+    ar: "ملاحظات عامة",
+  },
+  contactTopicSuggestion: {
+    en: "Suggestion / Feature Request",
+    zh: "功能建议 / 新特性",
+    ar: "اقتراح ميزة أو تحسين",
+  },
+  contactTopicBug: {
+    en: "Report a Bug or Typo",
+    zh: "报告问题或错别字",
+    ar: "الإبلاغ عن خطأ أو مطبعي",
+  },
+  contactTopicMaterial: {
+    en: "Learning Material Request",
+    zh: "学习资料需求",
+    ar: "طلب مواد تعليمية",
+  },
+  contactTopicSupport: {
+    en: "Project Support & Appreciation",
+    zh: "项目支持与致意",
+    ar: "دعم المشروع والتقدير",
+  },
+  contactFormMessage: {
+    en: "Your Message",
+    zh: "您的留言",
+    ar: "نص الرسالة",
+  },
+  contactMessagePlaceholder: {
+    en: "Type your feedback, bug details, or material suggestions here...",
+    zh: "请在此处输入您的建议、遇到的问题详情或资料需求...",
+    ar: "اكتب مقترحك أو تفاصيل المشكلة أو طلب المواد هنا...",
+  },
+  contactSubmitButton: {
+    en: "Send Message",
+    zh: "发送留言",
+    ar: "إرسال الرسالة",
+  },
+  contactSending: {
+    en: "Sending...",
+    zh: "正在发送...",
+    ar: "جاري الإرسال...",
+  },
+  contactSuccessTitle: {
+    en: "Message Sent Successfully!",
+    zh: "留言已成功发送！",
+    ar: "تم إرسال رسالتك بنجاح!",
+  },
+  contactSuccessMessage: {
+    en: "Thank you for reaching out. Your feedback helps make Mandarin Flow HSK better for learners worldwide.",
+    zh: "感谢您的宝贵留言！您的建议帮助我们为全球学习者打造更好的 Mandarin Flow HSK。",
+    ar: "شكراً لتواصلك معنا. ملاحظاتك تساعد في تحسين ماندرين فلو HSK لجميع المتعلمين.",
+  },
+  contactSendAnother: {
+    en: "Send another message",
+    zh: "发送另一条留言",
+    ar: "إرسال رسالة أخرى",
+  },
+  contactErrorMessage: {
+    en: "Something went wrong while sending. Please verify your details or use our direct email below.",
+    zh: "发送留言时出错。请检查输入内容或使用下方的直达邮箱。",
+    ar: "حدث خطأ أثناء الإرسال. يرجى التأكد من البيانات أو استخدام بريدنا المباشر أدناه.",
+  },
+  contactDirectOptionTitle: {
+    en: "Prefer Direct Email?",
+    zh: "更喜欢直接发送邮件？",
+    ar: "هل تفضل البريد المباشر؟",
+  },
+  contactDirectOptionDesc: {
+    en: "If your browser cannot open mail links automatically, click below to copy our email address to your clipboard.",
+    zh: "如果您的浏览器无法直接调用邮件客户端，可点击下方一键复制我们的联系邮箱。",
+    ar: "إذا كان متصفحك لا يفتح روابط البريد تلقائياً، يمكنك نسخ عنوان بريدنا بنقرة واحدة.",
+  },
+  copyEmail: {
+    en: "Copy Email Address",
+    zh: "复制电子邮箱",
+    ar: "نسخ عنوان البريد",
+  },
+  copiedEmail: {
+    en: "Copied to Clipboard!",
+    zh: "已复制到剪贴板！",
+    ar: "تم النسخ إلى الحافظة!",
+  },
+  contactCharCount: {
+    en: "characters",
+    zh: "字符",
+    ar: "حرف",
+  },
+  contactRequiredNotice: {
+    en: "Fields marked with * are required.",
+    zh: "标有 * 的项目为必填项。",
+    ar: "الحقول التي تحمل علامة * مطلوبة.",
+  },
+  contactHelpTitle: {
+    en: "What Can You Share?",
+    zh: "您可以分享什么？",
+    ar: "ماذا يمكنك أن تشاركنا؟",
+  },
+  contactHelpList1: {
+    en: "Report any typo, audio mismatch, or incorrect pinyin",
+    zh: "反馈错别字、音频不符或拼音有误",
+    ar: "الإبلاغ عن أي خطأ مطبعي أو عدم تطابق بالصوت أو بينيين غير دقيق",
+  },
+  contactHelpList2: {
+    en: "Suggest new vocabulary, dialogue topics, or learning tools",
+    zh: "建议新增词汇、对话场景或辅助学习工具",
+    ar: "اقتراح مفردات جديدة أو مواضيع محادثة أو أدوات تعلم",
+  },
+  contactHelpList3: {
+    en: "Request specific HSK textbook editions or audio tracks",
+    zh: "索取或补充特定 HSK 教材版本与音频",
+    ar: "طلب إصدارات كتب HSK معينة أو ملفات صوتية",
+  },
 };
 
 export function getLocalizedMeaning(meaning, lang = "en") {

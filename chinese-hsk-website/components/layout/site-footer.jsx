@@ -49,7 +49,12 @@ export default function SiteFooter() {
             <Link href="/dashboard" className="transition hover:text-teal-700">
               {tr("dashboard")}
             </Link>
-            <span>{tr("savedProgress")}</span>
+            <Link href="/books" className="transition hover:text-teal-700">
+              {tr("navBooks")}
+            </Link>
+            <Link href="/contact" className="transition hover:text-teal-700">
+              {tr("contactNav")}
+            </Link>
           </div>
         </div>
 
@@ -61,8 +66,8 @@ export default function SiteFooter() {
             {tr("supportDesc")}
           </p>
           <div className="mt-4">
-            <a
-              href="mailto:mahmouddesign01@gmail.com?subject=Supporting%20Mandarin%20Flow%20HSK"
+            <Link
+              href="/contact?topic=support"
               className="inline-flex items-center gap-2 rounded-xl bg-teal-600 px-4 py-2.5 text-xs font-black text-white shadow-sm transition hover:bg-teal-700 hover:shadow active:scale-95"
             >
               <svg
@@ -78,7 +83,7 @@ export default function SiteFooter() {
                 />
               </svg>
               <span>{tr("supportAction")}</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -97,12 +102,12 @@ export default function SiteFooter() {
             </a>
           </div>
           <div className="flex flex-wrap items-center gap-4">
-            <a
-              href="mailto:mahmouddesign01@gmail.com?subject=Mandarin%20Flow%20HSK%20Suggestions%20%26%20Feedback"
+            <Link
+              href="/contact"
               className="underline decoration-slate-300 underline-offset-2 transition hover:text-teal-700 hover:decoration-teal-700"
             >
               {tr("feedbackAndSuggestions")}
-            </a>
+            </Link>
             <span className="hidden text-slate-300 sm:inline">•</span>
             <span>© 2026 {tr("copyrightNotice")}</span>
           </div>

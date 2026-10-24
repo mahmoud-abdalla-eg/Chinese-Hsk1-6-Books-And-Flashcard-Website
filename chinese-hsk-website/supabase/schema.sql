@@ -160,8 +160,20 @@ create table if not exists import_batches (
   updated_at timestamptz default now()
 );
 
+-- 14. Contact Submissions Table (User Feedback & Inquiries)
+create table if not exists contact_submissions (
+  id uuid primary key default gen_random_uuid(),
+  name text,
+  email text not null,
+  topic text not null default 'general',
+  message text not null,
+  metadata jsonb default '{}'::jsonb,
+  status text default 'new',
+  created_at timestamptz default now()
+);
+
 -- ==============================================================================
--- 14. Row Level Security (RLS) & Policies
+-- 15. Row Level Security (RLS) & Policies
 -- ==============================================================================
 
 alter table if exists users enable row level security;
@@ -177,6 +189,7 @@ alter table if exists site_content enable row level security;
 alter table if exists analytics_events enable row level security;
 alter table if exists course_data_state enable row level security;
 alter table if exists import_batches enable row level security;
+alter table if exists contact_submissions enable row level security;
 
 -- Public Read-Only Policies for Content Tables (Accessible to anon and authenticated clients)
 create policy "Public read-only course_words" on course_words for select to anon, authenticated using (true);
@@ -185,3 +198,6 @@ create policy "Public read-only course_grammar_units" on course_grammar_units fo
 create policy "Public read-only course_conversations" on course_conversations for select to anon, authenticated using (true);
 create policy "Public read-only site_content" on site_content for select to anon, authenticated using (true);
 create policy "Public read-only course_data_state" on course_data_state for select to anon, authenticated using (true);
+
+-- Contact Submissions Policies
+create policy "Anon can insert contact submissions" on contact_submissions for insert to anon, authenticated with check (true);
