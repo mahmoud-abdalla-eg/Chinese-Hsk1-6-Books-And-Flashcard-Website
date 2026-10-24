@@ -6,7 +6,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4-38bdf8?logo=tailwindcss)](https://tailwindcss.com/)
 [![Supabase](https://img.shields.io/badge/Database-Supabase-3ecf8e?logo=supabase)](https://supabase.com/)
 
-A modern, mobile-friendly, multilingual Chinese learning platform for HSK 1-6 vocabulary, grammar, realistic dialogues, spaced-repetition flashcards, textbooks & learning materials, learner progress analytics, and admin-managed course content.
+A modern, mobile-friendly, multilingual Chinese learning platform for HSK 1-6 vocabulary, grammar, dialogues, spaced-repetition flashcards, textbooks & learning materials, learner progress analytics, and admin-managed course content.
 
 The main web application lives in:
 
@@ -18,19 +18,14 @@ chinese-hsk-website
 
 ## Features
 
-- **HSK 1-6 Vocabulary Library**: Comprehensive vocabulary organized by level, customizable batch sizing (25, 50, or 100 words per unit), part-of-speech categorization, and word detail views.
-- **Interactive Flashcards**: Spaced study deck with pinyin, audio pronunciation, English and Arabic translations, horizontal filter rails (All, Hard, Favorites, Unlearned), touch swipe gestures, and SRS review ratings (*Again*, *Hard*, *Good*, *Easy*).
-- **Books & Materials Hub (`/books`)**: Curated library of official HSK 2.0 and HSK 3.0 standardized textbooks, workbooks, grammar guides, and vocabulary reference materials with edition filtering and bilingual metadata.
-- **Structured Grammar Paths (`/grammar`)**: Level-by-level grammar progression with authentic examples, clear explanations, and targeted exercises.
-- **Conversational Lessons (`/conversations`)**: Realistic dialogue-based learning organized around situational daily Chinese scenarios (greetings, dining, travel, shopping, etc.).
-- **Word Detail Pages**: Deep dive into individual words with stroke/hanzi displays, audio pronunciation, and example sentences.
-- **Learner Dashboard & Progress (`/dashboard`)**: Saved progress, streak tracking, learned words, review history, daily activity heatmaps, weak words, and level completion analytics.
-- **Authentication & Guest Mode**: Dedicated `/login` and `/signup` pages with session-cookie authentication, plus complete guest mode support storing progress locally in the browser.
-- **Mobile-First Responsive Design**: Optimized for phone viewports (down to 360px), featuring a streamlined top bar, fluid typography, compact surface padding, and a slide-out navigation drawer with quick HSK levels, native language switching, and complete auth actions.
-- **Bilingual Interface Parity**: Full native UI support for English and Arabic with automated right-to-left (RTL) layout switching and translated study directions.
-- **Contact & Feedback (`/contact`)**: Learner feedback form with topic selection (General, Suggestion, Translation, Bug, Other) and rate-limited backend API.
-- **Admin Management Studio (`/adminbase`)**: Comprehensive administrative control over vocabulary, grammar, dialogues, audio records, learners, analytics, imports, and system settings.
-- **OWASP 2025 Security Hardening**: Strict Content Security Policy (CSP), HTTP security headers, rate limiting, and Supabase Row-Level Security (RLS) policies.
+- **HSK 1-6 Vocabulary**: Complete word library with customizable 25, 50, and 100-word unit batches.
+- **Spaced Flashcards**: Spaced-repetition deck with audio pronunciation, pinyin, and SRS rating system (*Again*, *Hard*, *Good*, *Easy*).
+- **Conversation Lessons**: Situational dialogue lessons covering practical, daily-life communication scenarios.
+- **Grammar Paths**: Step-by-step grammar units with clear rules and authentic example sentences.
+- **Books & Materials Hub**: Standardized HSK 2.0 & 3.0 textbooks, workbooks, and study references.
+- **Learner Dashboard**: Cloud & local progress tracking, daily streaks, review history, and weak-word analytics.
+- **Multilingual Support**: Complete native English and Arabic interface with automated RTL layout.
+- **Mobile-First Design**: Fully responsive down to 360px with slide-out drawer, quick levels, and full auth.
 
 ---
 
@@ -54,8 +49,8 @@ The project features a dedicated design system located in [`design/`](./design):
 | **HSK 3** | 582 | Ready | Ready |
 | **HSK 4** | 1,057 | Ready | Ready |
 | **HSK 5** | 1,690 | Ready | Ready |
-| **HSK 6** | 1,777 | Ready | In Development |
-| **Total** | **5,706** | Complete | Ongoing |
+| **HSK 6** | 1,777 | Ready | Ready |
+| **Total** | **5,706** | Ready | Ready |
 
 ---
 

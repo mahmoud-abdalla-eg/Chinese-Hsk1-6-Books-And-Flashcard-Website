@@ -8,19 +8,14 @@ Built with Next.js App Router, React, Tailwind CSS 4, Supabase, and local JSON s
 
 ## Features
 
-- **HSK 1-6 Vocabulary**: Unit-based study paths with customizable batch sizing (25, 50, 100 words).
-- **Interactive Flashcards**: Spaced-repetition study deck with pinyin, audio pronunciation, English and Arabic translations, touch swipe gestures, and SRS review ratings (*Again*, *Hard*, *Good*, *Easy*).
-- **Books & Materials Hub (`/books`)**: Curated library of official HSK 2.0 and HSK 3.0 standardized textbooks, workbooks, grammar guides, and vocabulary reference materials.
-- **Word Detail Pages**: Deep dive into individual words with stroke/hanzi displays, audio pronunciation, and example sentences.
-- **Grammar Paths (`/grammar`)**: Level-by-level progression with authentic examples and explanations.
-- **Conversation Lessons (`/conversations`)**: Realistic dialogue-based learning organized around situational daily Chinese scenarios.
-- **Learner Dashboard (`/dashboard`)**: Saved progress, streak tracking, learned words, review history, weak words, and level completion analytics.
-- **Authentication & Guest Mode**: Dedicated `/login` and `/signup` pages with session-cookie authentication, plus complete local guest mode.
-- **Mobile-First Responsive Design**: Fluid typography, compact surfaces, and a slide-out navigation drawer with quick HSK levels, native language switching, and complete auth actions.
-- **Bilingual Interface Parity**: Full native UI support for English and Arabic with automated RTL alignment.
-- **Contact & Feedback (`/contact`)**: Form with topic categorization and rate-limited backend API.
-- **Admin Studio (`/adminbase`)**: Administrative control over vocabulary, grammar, dialogues, audio records, learners, analytics, imports, and system settings.
-- **OWASP 2025 Security**: Content Security Policy (CSP), HTTP security headers, rate limiting, and Supabase Row-Level Security (RLS).
+- **HSK 1-6 Vocabulary**: Complete word library with customizable 25, 50, and 100-word unit batches.
+- **Spaced Flashcards**: Spaced-repetition deck with audio pronunciation, pinyin, and SRS rating system (*Again*, *Hard*, *Good*, *Easy*).
+- **Conversation Lessons**: Situational dialogue lessons covering practical, daily-life communication scenarios.
+- **Grammar Paths**: Step-by-step grammar units with clear rules and authentic example sentences.
+- **Books & Materials Hub**: Standardized HSK 2.0 & 3.0 textbooks, workbooks, and study references.
+- **Learner Dashboard**: Cloud & local progress tracking, daily streaks, review history, and weak-word analytics.
+- **Multilingual Support**: Complete native English and Arabic interface with automated RTL layout.
+- **Mobile-First Design**: Fully responsive down to 360px with slide-out drawer, quick levels, and full auth.
 
 ---
 
