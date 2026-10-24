@@ -20,7 +20,7 @@ chinese-hsk-website
 
 - **HSK 1-6 Vocabulary**: Complete word library with customizable 25, 50, and 100-word unit batches.
 - **Spaced Flashcards**: Spaced-repetition deck with audio pronunciation, pinyin, and SRS rating system (*Again*, *Hard*, *Good*, *Easy*).
-- **Conversation Lessons**: Situational dialogue lessons covering practical, daily-life communication scenarios.
+- **Conversation Lessons**: Situational dialogue lessons covering practical, daily-life communication scenarios (Coming Soon).
 - **Grammar Paths**: Step-by-step grammar units with clear rules and authentic example sentences.
 - **Books & Materials Hub**: Standardized HSK 2.0 & 3.0 textbooks, workbooks, and study references.
 - **Learner Dashboard**: Cloud & local progress tracking, daily streaks, review history, and weak-word analytics.
@@ -29,28 +29,17 @@ chinese-hsk-website
 
 ---
 
-## Design System & Branding
-
-The project features a dedicated design system located in [`design/`](./design):
-
-- **Brand Identity**: Imperial Scarlet Red (`#c92a2a`) seal-inspired Hanzi badge (`[ 汉 ]`) with a celestial gold spark (`#fcc419`) and deep teal accents (`#0f766e`).
-- **Brand Assets**: Production-ready vector SVGs for Adobe Illustrator, web logos, app icons, and red favicons (`design/logo/`, `design/favicon/`).
-- **Design Tokens**: Standardized color palettes, typography scales, radius, and shadows in [`design/brand-tokens.json`](./design/brand-tokens.json).
-- **Brand Guidelines**: Comprehensive styling and typography manual in [`design/BRAND_GUIDELINES.md`](./design/BRAND_GUIDELINES.md).
-
----
-
 ## Content Coverage
 
 | Level | Expected Words | Vocabulary Status | Conversation Lessons |
 | :--- | ---: | :---: | :---: |
-| **HSK 1** | 349 | Ready | Ready |
-| **HSK 2** | 251 | Ready | Ready |
-| **HSK 3** | 582 | Ready | Ready |
-| **HSK 4** | 1,057 | Ready | Ready |
-| **HSK 5** | 1,690 | Ready | Ready |
-| **HSK 6** | 1,777 | Ready | Ready |
-| **Total** | **5,706** | Ready | Ready |
+| **HSK 1** | 349 | Ready | - |
+| **HSK 2** | 251 | Ready | - |
+| **HSK 3** | 582 | Ready | - |
+| **HSK 4** | 1,057 | Ready | - |
+| **HSK 5** | 1,690 | Ready | - |
+| **HSK 6** | 1,777 | Ready | - |
+| **Total** | **5,706** | Ready | Coming Soon |
 
 ---
 
@@ -153,12 +142,6 @@ chinese-hsk-website/
 ├── public/                   # Static assets, branding logo, audio files, icons
 ├── scripts/                  # Data seeding, validation, and generation tools
 └── source-data/              # Local JSON datasets (HSK words, grammar, dialogues)
-
-design/                       # Branding & Design System
-├── BRAND_GUIDELINES.md       # Color palettes, typography, and logo usage rules
-├── brand-tokens.json         # Design token definitions
-├── logo/                     # SVG master logo files for Illustrator & web
-└── favicon/                  # Vector favicon concepts and exports
 ```
 
 ---
