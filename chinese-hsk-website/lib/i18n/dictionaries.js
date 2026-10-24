@@ -11,6 +11,31 @@ export const dictionary = {
     zh: "\u4e2d\u6587\u4f1a\u8bdd HSK",
     ar: "\u0645\u0627\u0646\u062f\u0631\u064a\u0646 \u0641\u0644\u0648 HSK",
   },
+  notFoundTitle: {
+    en: "迷路了吗？(Lost your way?)",
+    zh: "迷路了吗？",
+    ar: "هل ضللت الطريق؟ (迷路了吗？)",
+  },
+  notFoundDescription: {
+    en: "The page you are looking for doesn't exist or has moved. Let's get your learning back on track.",
+    zh: "您访问的页面不存在或已被移除。让我们继续您的中文学习之旅吧。",
+    ar: "الصفحة التي تبحث عنها غير موجودة أو تم نقلها. فلنعد إلى متابعة تعلمك.",
+  },
+  returnHome: {
+    en: "Return to Home",
+    zh: "返回首页",
+    ar: "العودة للرئيسية",
+  },
+  openDashboard: {
+    en: "Open Dashboard",
+    zh: "打开学习面板",
+    ar: "فتح لوحة التقدم",
+  },
+  jumpToLevel: {
+    en: "Or jump directly to your HSK level",
+    zh: "或直接跳转至您的 HSK 等级",
+    ar: "أو انتقل مباشرة إلى مستوى HSK الخاص بك",
+  },
   home: {
     en: "Home",
     zh: "\u9996\u9875",
