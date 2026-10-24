@@ -103,6 +103,8 @@ export default function SiteHeader() {
 
   const isDashboardActive = pathname === "/dashboard";
   const isBooksActive = pathname === "/books" || pathname?.startsWith("/books");
+  const isContactActive =
+    pathname === "/contact" || pathname?.startsWith("/contact");
   const isLearnActive =
     pathname?.startsWith("/hsk") ||
     pathname?.startsWith("/flashcards") ||
@@ -300,6 +302,18 @@ export default function SiteHeader() {
           >
             <span>{tr("navBooks")}</span>
           </Link>
+
+          {/* 4. Contact Pill */}
+          <Link
+            href="/contact"
+            className={`rounded-full px-4 py-1.5 transition ${
+              isContactActive
+                ? "bg-teal-700 text-white shadow-2xs"
+                : "text-slate-700 hover:text-teal-700"
+            }`}
+          >
+            <span>{tr("contactNav")}</span>
+          </Link>
         </nav>
 
         {/* Right: Language Switcher & Unified Account Menu */}
@@ -421,6 +435,42 @@ export default function SiteHeader() {
                 </span>
               </Link>
 
+              {/* Contact Link */}
+              <Link
+                href="/contact"
+                onClick={() => setDrawerOpen(false)}
+                className={`flex items-center justify-between rounded-xl px-4 py-3 text-sm font-black transition ${
+                  isContactActive
+                    ? "bg-teal-700 text-white shadow-xs"
+                    : "text-slate-700 hover:bg-slate-100 hover:text-slate-950"
+                }`}
+              >
+                <div className="flex items-center gap-2.5">
+                  <svg
+                    className={`h-5 w-5 ${isContactActive ? "text-white" : "text-slate-500"}`}
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"
+                    />
+                  </svg>
+                  <span>{tr("contactNav")}</span>
+                </div>
+                <span
+                  className={`text-xs ${
+                    isContactActive ? "text-teal-200" : "text-slate-400"
+                  }`}
+                  aria-hidden="true"
+                >
+                  →
+                </span>
+              </Link>
+
               {/* Study Modes Group */}
               <div>
                 <span className="block px-2 text-[11px] font-black uppercase tracking-[0.16em] text-slate-400">
@@ -477,39 +527,6 @@ export default function SiteHeader() {
                     </Link>
                   ))}
                 </div>
-              </div>
-
-              {/* Contact Link */}
-              <div className="border-t border-slate-100 pt-3">
-                <Link
-                  href="/contact"
-                  onClick={() => setDrawerOpen(false)}
-                  className={`flex items-center justify-between rounded-xl px-4 py-2.5 text-xs font-black transition ${
-                    pathname === "/contact"
-                      ? "bg-teal-50 text-teal-800"
-                      : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
-                  }`}
-                >
-                  <div className="flex items-center gap-2.5">
-                    <svg
-                      className="h-4 w-4 text-slate-500"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"
-                      />
-                    </svg>
-                    <span>{tr("contactTitle")}</span>
-                  </div>
-                  <span className="text-xs text-slate-400" aria-hidden="true">
-                    →
-                  </span>
-                </Link>
               </div>
             </nav>
           </div>
