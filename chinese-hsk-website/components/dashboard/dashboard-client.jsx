@@ -1,7 +1,7 @@
 "use client";
 
-import { useMemo } from "react";
 import Link from "next/link";
+import { useMemo } from "react";
 import { useAuth } from "@/components/auth/auth-provider";
 import { useLanguage } from "@/components/language/language-provider";
 import { Card, Pill, ProgressBar, Surface } from "@/components/ui/card";
@@ -10,7 +10,7 @@ import { usePersistentProgress } from "@/lib/progress/use-progress";
 
 export default function DashboardClient({ summaries, levelWords = [] }) {
   const { lang, tr } = useLanguage();
-  const { user, isGuest } = useAuth();
+  const { isGuest } = useAuth();
   const { progress, syncStatus } = usePersistentProgress();
   const learnedSet = useMemo(
     () => new Set(progress.learnedWords),
@@ -147,26 +147,38 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
       <div className="grid gap-6 lg:grid-cols-[1fr_360px]">
         <Card>
           <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-            <div className="rounded-2xl bg-slate-50 p-5 text-slate-950">
+            <Link
+              href="/dashboard/words"
+              className="rounded-2xl bg-slate-50 p-5 text-slate-950 transition hover:bg-slate-100 hover:shadow-2xs block"
+            >
               <span className="text-4xl font-black">{learnedSet.size}</span>
               <p className="font-bold">{tr("wordsLearned")}</p>
-            </div>
-            <div className="rounded-2xl bg-blue-50 p-5 text-blue-950">
+            </Link>
+            <Link
+              href="/dashboard/words?filter=favorites"
+              className="rounded-2xl bg-blue-50 p-5 text-blue-950 transition hover:bg-blue-100 hover:shadow-2xs block"
+            >
               <span className="text-4xl font-black">
                 {progress.favorites.length}
               </span>
               <p className="font-bold">{tr("favorites")}</p>
-            </div>
-            <div className="rounded-2xl bg-teal-50 p-5 text-teal-950">
+            </Link>
+            <Link
+              href="/dashboard/words"
+              className="rounded-2xl bg-teal-50 p-5 text-teal-950 transition hover:bg-teal-100 hover:shadow-2xs block"
+            >
               <span className="text-4xl font-black">{totalWords}</span>
               <p className="font-bold">{tr("courseWords")}</p>
-            </div>
-            <div className="rounded-2xl bg-rose-50 p-5 text-rose-950">
+            </Link>
+            <Link
+              href="/dashboard/words?difficulty=hard"
+              className="rounded-2xl bg-rose-50 p-5 text-rose-950 transition hover:bg-rose-100 hover:shadow-2xs block"
+            >
               <span className="text-4xl font-black">
                 {progress.hardWords.length}
               </span>
               <p className="font-bold">{tr("hardWords")}</p>
-            </div>
+            </Link>
           </div>
           <div className="mt-8 space-y-5">
             {levelProgress.map((summary) => {
@@ -371,10 +383,42 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
           </div>
         </Card>
       </div>
+      {/* Mixed Flashcard Builder CTA Banner */}
+      <div className="rounded-3xl border border-teal-200 bg-gradient-to-r from-teal-50 via-white to-emerald-50/60 p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 shadow-xs">
+        <div className="space-y-1.5">
+          <div className="flex items-center gap-2">
+            <span className="text-xl">🎴</span>
+            <span className="text-xs font-black uppercase tracking-wider text-teal-800">
+              {tr("deckMixerTitle")}
+            </span>
+          </div>
+          <h2 className="text-xl sm:text-2xl font-black text-slate-950">
+            {tr("mixedDeckBannerTitle")}
+          </h2>
+          <p className="text-xs sm:text-sm font-semibold text-slate-600 max-w-2xl">
+            {tr("mixedDeckBannerDesc")}
+          </p>
+        </div>
+        <Link
+          href="/dashboard/words"
+          className="rounded-full bg-teal-700 px-6 py-3 text-center text-xs sm:text-sm font-black text-white hover:bg-teal-800 shadow-xs transition shrink-0"
+        >
+          {tr("openMixedDeckBuilder")} &rarr;
+        </Link>
+      </div>
+
       <Card>
-        <h2 className="text-2xl font-black text-slate-950">
-          {tr("wordsByLevel")}
-        </h2>
+        <div className="flex flex-wrap items-center justify-between gap-4">
+          <h2 className="text-2xl font-black text-slate-950">
+            {tr("wordsByLevel")}
+          </h2>
+          <Link
+            href="/dashboard/words"
+            className="text-xs font-black text-teal-700 hover:text-teal-800 hover:underline"
+          >
+            {tr("viewAllWords")} &rarr;
+          </Link>
+        </div>
         <div className="mt-5 grid gap-5">
           {levelProgress.map((level) => (
             <div key={level.level} className="rounded-2xl bg-slate-50 p-5">
@@ -390,18 +434,24 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
                 <WordGroup
                   lang={lang}
                   label={tr("learned")}
+                  level={level.level}
+                  diffKey="learned"
                   words={level.learnedWords}
                   empty={tr("noWordsYet")}
                 />
                 <WordGroup
                   lang={lang}
                   label={tr("hardWords")}
+                  level={level.level}
+                  diffKey="hard"
                   words={level.hardWords}
                   empty={tr("noWordsYet")}
                 />
                 <WordGroup
                   lang={lang}
                   label={tr("easyWords")}
+                  level={level.level}
+                  diffKey="easy"
                   words={level.easyWords}
                   empty={tr("noWordsYet")}
                 />
@@ -437,22 +487,43 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
           </div>
         </Card>
         <Card>
-          <h2 className="text-2xl font-black text-slate-950">
-            {tr("hardCategories")}
-          </h2>
+          <div className="flex items-center justify-between">
+            <h2 className="text-2xl font-black text-slate-950">
+              {tr("hardCategories")}
+            </h2>
+            <Link
+              href="/dashboard/words"
+              className="text-xs font-black text-teal-700 hover:text-teal-800 hover:underline"
+            >
+              {tr("viewAllWords")} &rarr;
+            </Link>
+          </div>
           <div className="mt-4 grid gap-3">
             {[
-              [tr("hardWords"), progress.hardWords.length],
-              [tr("favorites"), progress.favorites.length],
-              [tr("dueReviews"), dueReviewCount(progress.wordStats)],
-            ].map(([label, value]) => (
-              <div
+              [
+                tr("hardWords"),
+                progress.hardWords.length,
+                "/dashboard/words?difficulty=hard",
+              ],
+              [
+                tr("favorites"),
+                progress.favorites.length,
+                "/dashboard/words?filter=favorites",
+              ],
+              [
+                tr("dueReviews"),
+                dueReviewCount(progress.wordStats),
+                "/dashboard/words?difficulty=due",
+              ],
+            ].map(([label, value, href]) => (
+              <Link
                 key={label}
-                className="flex justify-between rounded-2xl bg-slate-50 p-4 text-sm font-black"
+                href={href}
+                className="flex justify-between rounded-2xl bg-slate-50 p-4 text-sm font-black text-slate-900 transition hover:bg-teal-50 hover:text-teal-900"
               >
                 <span>{label}</span>
-                <span>{value}</span>
-              </div>
+                <span>{value} &rarr;</span>
+              </Link>
             ))}
           </div>
         </Card>
@@ -495,7 +566,7 @@ function BarRow({ detail, label, max, value }) {
   );
 }
 
-function WordGroup({ empty, label, lang, words }) {
+function WordGroup({ diffKey, empty, label, lang, level, words }) {
   const shownWords = words.slice(0, 10);
   return (
     <div className="rounded-2xl bg-white p-4">
@@ -522,9 +593,12 @@ function WordGroup({ empty, label, lang, words }) {
           <span className="text-sm font-semibold text-slate-500">{empty}</span>
         )}
         {words.length > shownWords.length ? (
-          <span className="text-xs font-black text-slate-500">
-            +{words.length - shownWords.length}
-          </span>
+          <Link
+            href={`/dashboard/words?level=${level || 1}${diffKey ? `&difficulty=${diffKey}` : ""}`}
+            className="text-xs font-black text-teal-700 hover:text-teal-800 hover:underline pt-1 inline-block"
+          >
+            +{words.length - shownWords.length} more &rarr;
+          </Link>
         ) : null}
       </div>
     </div>

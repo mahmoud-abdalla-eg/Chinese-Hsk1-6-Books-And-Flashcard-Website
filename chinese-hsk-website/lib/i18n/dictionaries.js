@@ -1727,6 +1727,136 @@ export const dictionary = {
     zh: "索取或补充特定 HSK 教材版本与音频",
     ar: "طلب إصدارات كتب HSK معينة أو ملفات صوتية",
   },
+  vocabularyStudioTitle: {
+    en: "Vocabulary & Difficulty Studio",
+    zh: "词汇与难度练习",
+    ar: "استوديو المفردات ومستويات الصعوبة",
+  },
+  vocabularyStudioDesc: {
+    en: "Inspect words by difficulty, listen to pronunciation, and generate custom mixed flashcard sessions.",
+    zh: "按难度浏览词汇，收听发音，并组建定制混合抽认卡进行针对性复习。",
+    ar: "تصفح الكلمات حسب مستوى الصعوبة، استمع إلى النطق، وأنشئ جلسات بطاقات استذكار مخصصة.",
+  },
+  browseMode: {
+    en: "Browse & Mix",
+    zh: "浏览与定制",
+    ar: "تصفح ودمج",
+  },
+  practiceMode: {
+    en: "Flashcard Practice",
+    zh: "抽认卡练习",
+    ar: "ممارسة البطاقات",
+  },
+  deckMixerTitle: {
+    en: "Mixed Flashcard Builder",
+    zh: "混合抽认卡构建器",
+    ar: "منشئ البطاقات المختلطة",
+  },
+  deckMixerDesc: {
+    en: "Combine word difficulties and HSK levels into a custom study session.",
+    zh: "将不同难度与 HSK 等级组合为定制学习会话。",
+    ar: "ادمج مستويات الصعوبة ومستويات HSK في جلسة دراسة مخصصة.",
+  },
+  includeDifficulties: {
+    en: "1. Select Difficulties",
+    zh: "1. 选择难度与分类",
+    ar: "1. اختر الصعوبة والتصنيف",
+  },
+  includeLevels: {
+    en: "2. Select HSK Levels",
+    zh: "2. 选择 HSK 等级",
+    ar: "2. اختر مستويات HSK",
+  },
+  sessionOptions: {
+    en: "3. Session Options",
+    zh: "3. خيارات الجلسة",
+    ar: "3. خيارات الجلسة",
+  },
+  cardLimit: {
+    en: "Card Limit",
+    zh: "卡片上限",
+    ar: "حد البطاقات",
+  },
+  allMatchingCards: {
+    en: "All Matching",
+    zh: "全部符合的单词",
+    ar: "جميع الكلمات المطابقة",
+  },
+  cardsSelected: {
+    en: "cards selected",
+    zh: "张卡片已选",
+    ar: "بطاقة محددة",
+  },
+  startMixedSession: {
+    en: "Start Mixed Flashcards",
+    zh: "开始混合抽认卡练习",
+    ar: "بدء ممارسة البطاقات المختلطة",
+  },
+  backToWordList: {
+    en: "Back to Word List",
+    zh: "返回词汇列表",
+    ar: "العودة لقائمة الكلمات",
+  },
+  noWordsInSelection: {
+    en: "No words match your selected criteria. Try adjusting the difficulty or level filters.",
+    zh: "没有符合所选条件的词汇，请尝试调整难度或等级筛选。",
+    ar: "لا توجد كلمات تطابق المعايير المحددة. جرب تعديل فلاتر الصعوبة أو المستويات.",
+  },
+  categoryAll: {
+    en: "All Words",
+    zh: "全部词汇",
+    ar: "جميع الكلمات",
+  },
+  categoryHard: {
+    en: "Hard Words",
+    zh: "难记词汇",
+    ar: "الكلمات الصعبة",
+  },
+  categoryMid: {
+    en: "Mid / Good",
+    zh: "中等 / 良好",
+    ar: "متوسط / جيد",
+  },
+  categoryEasy: {
+    en: "Easy Words",
+    zh: "简单掌握",
+    ar: "الكلمات السهلة",
+  },
+  categoryFavorites: {
+    en: "Favorites",
+    zh: "我的收藏",
+    ar: "المفضلة",
+  },
+  categoryDue: {
+    en: "Due for Review",
+    zh: "待复习",
+    ar: "حان وقت مراجعتها",
+  },
+  practiceCheckedWords: {
+    en: "Practice Selected Words",
+    zh: "练习已选词汇",
+    ar: "ممارسة الكلمات المحددة",
+  },
+  mixedDeckBannerTitle: {
+    en: "Target Weak Spots & Custom Decks",
+    zh: "针对薄弱点与定制卡片组",
+    ar: "ركز على نقاط الضعف وبطاقاتك المخصصة",
+  },
+  mixedDeckBannerDesc: {
+    en: "Drill words marked hard, review favorites, or mix multiple HSK levels into a single flashcard session.",
+    zh: "集中突击难点单词、复习收藏词汇，或将多个 HSK 等级混合在一起练习。",
+    ar: "تدرب على الكلمات الصعبة، راجع المفضلة، أو ادمج مستويات HSK متعددة في جلسة بطاقات واحدة.",
+  },
+  openMixedDeckBuilder: {
+    en: "Open Mixed Flashcard Hub",
+    zh: "打开混合抽认卡工作台",
+    ar: "فتح منصة البطاقات المختلطة",
+  },
+  viewAllWords: {
+    en: "View All Words",
+    zh: "查看全部词汇",
+    ar: "عرض جميع الكلمات",
+  },
 };
 
 export function getLocalizedMeaning(meaning, lang = "en") {

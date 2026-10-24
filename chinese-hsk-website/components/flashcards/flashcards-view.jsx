@@ -28,6 +28,31 @@ export default function FlashcardsView({ summaries = [], deckCount = 0 }) {
           </p>
         </Card>
       </Surface>
+
+      {/* Mixed Flashcard Builder Callout */}
+      <div className="rounded-3xl border border-teal-200 bg-gradient-to-r from-teal-50 via-white to-emerald-50/60 p-6 sm:p-8 flex flex-col md:flex-row md:items-center justify-between gap-6 shadow-xs">
+        <div className="space-y-1.5">
+          <div className="flex items-center gap-2">
+            <span className="text-xl">🎴</span>
+            <span className="text-xs font-black uppercase tracking-wider text-teal-800">
+              {tr("deckMixerTitle")}
+            </span>
+          </div>
+          <h2 className="text-xl sm:text-2xl font-black text-slate-950">
+            {tr("mixedDeckBannerTitle")}
+          </h2>
+          <p className="text-xs sm:text-sm font-semibold text-slate-600 max-w-2xl">
+            {tr("mixedDeckBannerDesc")}
+          </p>
+        </div>
+        <Link
+          href="/dashboard/words"
+          className="rounded-full bg-teal-700 px-6 py-3 text-center text-xs sm:text-sm font-black text-white hover:bg-teal-800 shadow-xs transition shrink-0"
+        >
+          {tr("openMixedDeckBuilder")} &rarr;
+        </Link>
+      </div>
+
       <section className="space-y-6">
         <SectionHeading
           eyebrow={tr("pickADeck")}
