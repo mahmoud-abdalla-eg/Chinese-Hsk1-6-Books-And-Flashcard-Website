@@ -33,13 +33,13 @@ chinese-hsk-website
 
 | Level | Expected Words | Vocabulary Status | Conversation Lessons |
 | :--- | ---: | :---: | :---: |
-| **HSK 1** | 349 | Ready | - |
-| **HSK 2** | 251 | Ready | - |
-| **HSK 3** | 582 | Ready | - |
-| **HSK 4** | 1,057 | Ready | - |
+| **HSK 1** | 319 | Ready | - |
+| **HSK 2** | 217 | Ready | - |
+| **HSK 3** | 538 | Ready | - |
+| **HSK 4** | 1,139 | Ready | - |
 | **HSK 5** | 1,690 | Ready | - |
 | **HSK 6** | 1,777 | Ready | - |
-| **Total** | **5,706** | Ready | Coming Soon |
+| **Total** | **5,680** | Ready | Coming Soon |
 
 ---
 
