@@ -102,6 +102,7 @@ export default function SiteHeader() {
   const learnMenuRef = useRef(null);
 
   const isDashboardActive = pathname === "/dashboard";
+  const isBooksActive = pathname === "/books" || pathname?.startsWith("/books");
   const isLearnActive =
     pathname?.startsWith("/hsk") ||
     pathname?.startsWith("/flashcards") ||
@@ -287,6 +288,18 @@ export default function SiteHeader() {
               </div>
             )}
           </div>
+
+          {/* 3. Books Pill */}
+          <Link
+            href="/books"
+            className={`rounded-full px-4 py-1.5 transition ${
+              isBooksActive
+                ? "bg-teal-700 text-white shadow-2xs"
+                : "text-slate-700 hover:text-teal-700"
+            }`}
+          >
+            <span>{tr("navBooks")}</span>
+          </Link>
         </nav>
 
         {/* Right: Language Switcher & Unified Account Menu */}
@@ -365,6 +378,42 @@ export default function SiteHeader() {
                 <span
                   className={`text-xs ${
                     isDashboardActive ? "text-teal-200" : "text-slate-400"
+                  }`}
+                  aria-hidden="true"
+                >
+                  →
+                </span>
+              </Link>
+
+              {/* Books & Materials Link */}
+              <Link
+                href="/books"
+                onClick={() => setDrawerOpen(false)}
+                className={`flex items-center justify-between rounded-xl px-4 py-3 text-sm font-black transition ${
+                  isBooksActive
+                    ? "bg-teal-700 text-white shadow-xs"
+                    : "text-slate-700 hover:bg-slate-100 hover:text-slate-950"
+                }`}
+              >
+                <div className="flex items-center gap-2.5">
+                  <svg
+                    className={`h-5 w-5 ${isBooksActive ? "text-white" : "text-slate-500"}`}
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                    />
+                  </svg>
+                  <span>{tr("navBooks")}</span>
+                </div>
+                <span
+                  className={`text-xs ${
+                    isBooksActive ? "text-teal-200" : "text-slate-400"
                   }`}
                   aria-hidden="true"
                 >
