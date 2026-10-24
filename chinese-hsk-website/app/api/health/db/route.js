@@ -17,7 +17,7 @@ export async function GET() {
           status: "error",
           online: false,
           latencyMs,
-          message: error.message || "Database query failed.",
+          message: "Database service check failed.",
         },
         { status: 503 },
       );
@@ -27,9 +27,6 @@ export async function GET() {
       status: "ok",
       online: true,
       latencyMs,
-      proxyConfigured: Boolean(
-        process.env.HTTPS_PROXY || process.env.HTTP_PROXY || process.env.ALL_PROXY,
-      ),
     });
   } catch (err) {
     const latencyMs = Date.now() - startedAt;

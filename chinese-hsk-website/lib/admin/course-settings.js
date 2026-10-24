@@ -84,6 +84,9 @@ export async function upsertAudioRecord(payload) {
     status: String(payload.status || "missing").trim(),
     notes: String(payload.notes || "").trim(),
   };
+  if (payload.path) {
+    record.path = resolveAudioPath(payload.path);
+  }
   if (!record.label) record.label = `${record.type} ${record.linkedId}`.trim();
   const key = `${record.level}-${record.type}-${record.linkedId}`;
 
@@ -282,14 +285,31 @@ function normalizeKey(value) {
     .replace(/\s+/g, " ");
 }
 
-function resolveAudioPath(rawPath, basePath) {
-  const cleanPath = String(rawPath || "")
-    .trim()
-    .replaceAll("\\", "/");
-  if (cleanPath.startsWith("/")) return cleanPath;
-  const cleanBase = String(basePath || "")
-    .trim()
-    .replaceAll("\\", "/");
-  if (!cleanBase) return cleanPath;
-  return `${cleanBase.replace(/\/$/, "")}/${cleanPath.replace(/^\//, "")}`;
+export function resolveAudioPath(rawPath, basePath = "") {
+  const cleanRaw = String(rawPath || "").trim().replaceAll("\\", "/");
+  const cleanBase = String(basePath || "").trim().replaceAll("\\", "/");
+
+  if (cleanRaw.includes("..") || cleanBase.includes("..")) {
+    throw new Error("Invalid audio path: Directory traversal ('..') is not allowed.");
+  }
+
+  let combined = cleanRaw.startsWith("/")
+    ? cleanRaw
+    : cleanBase
+      ? `${cleanBase.replace(/\/$/, "")}/${cleanRaw.replace(/^\//, "")}`
+      : cleanRaw;
+
+  // Normalize duplicate slashes
+  combined = combined.replace(/\/+/g, "/");
+
+  // Reject external protocols
+  if (/^[a-zA-Z0-9+.-]+:/.test(combined)) {
+    throw new Error("Invalid audio path: External protocols are not allowed.");
+  }
+
+  if (!combined.startsWith("/")) {
+    combined = `/${combined}`;
+  }
+
+  return combined;
 }

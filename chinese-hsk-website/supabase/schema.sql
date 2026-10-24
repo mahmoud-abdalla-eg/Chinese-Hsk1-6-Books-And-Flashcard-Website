@@ -10,6 +10,7 @@ create table if not exists users (
   name text,
   email text unique not null,
   password_hash text not null,
+  token_version integer not null default 1,
   created_at timestamptz default now(),
   updated_at timestamptz default now()
 );
@@ -158,3 +159,29 @@ create table if not exists import_batches (
   created_at timestamptz default now(),
   updated_at timestamptz default now()
 );
+
+-- ==============================================================================
+-- 14. Row Level Security (RLS) & Policies
+-- ==============================================================================
+
+alter table if exists users enable row level security;
+alter table if exists admins enable row level security;
+alter table if exists user_progress enable row level security;
+alter table if exists course_words enable row level security;
+alter table if exists course_grammar enable row level security;
+alter table if exists course_grammar_units enable row level security;
+alter table if exists course_conversations enable row level security;
+alter table if exists course_settings enable row level security;
+alter table if exists audio_records enable row level security;
+alter table if exists site_content enable row level security;
+alter table if exists analytics_events enable row level security;
+alter table if exists course_data_state enable row level security;
+alter table if exists import_batches enable row level security;
+
+-- Public Read-Only Policies for Content Tables (Accessible to anon and authenticated clients)
+create policy "Public read-only course_words" on course_words for select to anon, authenticated using (true);
+create policy "Public read-only course_grammar" on course_grammar for select to anon, authenticated using (true);
+create policy "Public read-only course_grammar_units" on course_grammar_units for select to anon, authenticated using (true);
+create policy "Public read-only course_conversations" on course_conversations for select to anon, authenticated using (true);
+create policy "Public read-only site_content" on site_content for select to anon, authenticated using (true);
+create policy "Public read-only course_data_state" on course_data_state for select to anon, authenticated using (true);

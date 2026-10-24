@@ -27,11 +27,12 @@ export async function createUser({ name, email, password }) {
         name: cleanName || cleanEmail.split("@")[0],
         email: cleanEmail,
         password_hash: passwordHash,
+        token_version: 1,
         created_at: now,
         updated_at: now,
       },
     ])
-    .select("id, name, email, created_at")
+    .select("id, name, email, token_version, created_at")
     .single();
 
   if (error || !data) {
@@ -47,7 +48,7 @@ export async function authenticateUser({ email, password }) {
 
   const { data: user, error } = await supabase
     .from("users")
-    .select("id, name, email, password_hash, created_at")
+    .select("id, name, email, password_hash, token_version, created_at")
     .eq("email", cleanEmail)
     .maybeSingle();
 
@@ -64,7 +65,7 @@ export async function getUserById(userId) {
 
   const { data: user } = await supabase
     .from("users")
-    .select("id, name, email, created_at")
+    .select("id, name, email, token_version, created_at")
     .eq("id", userId)
     .maybeSingle();
 
@@ -86,7 +87,7 @@ export async function changeUserPassword({
   const supabase = getSupabaseAdmin();
   const { data: user } = await supabase
     .from("users")
-    .select("id, password_hash")
+    .select("id, password_hash, token_version")
     .eq("id", userId)
     .maybeSingle();
 
@@ -94,11 +95,13 @@ export async function changeUserPassword({
     throw new Error("Current password is incorrect.");
   }
 
+  const nextVersion = Number(user.token_version || 1) + 1;
   const newHash = await hashPassword(newPassword);
   const { error } = await supabase
     .from("users")
     .update({
       password_hash: newHash,
+      token_version: nextVersion,
       updated_at: new Date().toISOString(),
     })
     .eq("id", userId);
@@ -140,6 +143,7 @@ function userPublic(user) {
     id: String(user.id),
     name: user.name,
     email: user.email,
+    tokenVersion: Number(user.token_version || 1),
     createdAt: user.created_at ? new Date(user.created_at).toISOString() : null,
   };
 }

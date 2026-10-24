@@ -2,7 +2,7 @@ import { createHmac, randomBytes, timingSafeEqual } from "node:crypto";
 import { cookies } from "next/headers";
 
 export const adminSessionCookieName = "mandarin_flow_admin_session";
-const adminSessionMaxAge = 60 * 60 * 8;
+const adminSessionMaxAge = 60 * 60 * 8; // 8 hours
 
 export async function createAdminSession(adminId) {
   const tokenId = randomBytes(16).toString("hex");
@@ -40,11 +40,18 @@ function parseAdminSession(value) {
   return { adminId };
 }
 
+function getAuthSecret() {
+  const secret = process.env.AUTH_SECRET;
+  if (!secret || typeof secret !== "string" || secret.trim().length === 0) {
+    throw new Error(
+      "AUTH_SECRET environment variable is missing or empty. Please set a secure random string in .env.local",
+    );
+  }
+  return secret.trim();
+}
+
 function sign(payload) {
-  const secret =
-    process.env.AUTH_SECRET ||
-    process.env.SUPABASE_SERVICE_ROLE_KEY ||
-    "chinese-hsk-admin-secret";
+  const secret = getAuthSecret();
   return createHmac("sha256", secret).update(payload).digest("hex");
 }
 

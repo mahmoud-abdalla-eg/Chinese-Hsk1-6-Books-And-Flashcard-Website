@@ -1,3 +1,4 @@
+import { getSafeRedirectPath } from "@/lib/auth/redirect";
 import { createSession } from "@/lib/auth/session";
 import { createUser } from "@/lib/auth/users";
 
@@ -19,6 +20,7 @@ function sanitizeAuthErrorMessage(
     lower.includes("econnrefused") ||
     lower.includes("fetch failed") ||
     lower.includes("key in .env") ||
+    lower.includes("auth_secret") ||
     lower.includes("environment")
   ) {
     return "Account service is temporarily unavailable. Please try again shortly or continue learning as a guest.";
@@ -34,21 +36,19 @@ function sanitizeAuthErrorMessage(
     return "Please enter a valid email address.";
   }
 
-  return raw && raw.length < 120 ? raw : defaultFallback;
+  // Strict masking: never reflect arbitrary database error strings
+  return defaultFallback;
 }
 
 export async function POST(request) {
   const url = new URL(request.url);
   const redirectParam = url.searchParams.get("redirect");
-  const targetUrl =
-    redirectParam && redirectParam.startsWith("/")
-      ? redirectParam
-      : "/dashboard";
+  const targetUrl = getSafeRedirectPath(redirectParam, "/dashboard");
 
   try {
     const { body, wantsHtml } = await readAuthBody(request);
     const user = await createUser(body);
-    await createSession(user.id);
+    await createSession(user.id, user.tokenVersion || 1);
     if (wantsHtml) {
       return Response.redirect(new URL(targetUrl, request.url), 303);
     }
@@ -58,7 +58,9 @@ export async function POST(request) {
     if (isFormPost(request)) {
       const signupUrl = new URL("/signup", request.url);
       signupUrl.searchParams.set("error", message);
-      if (redirectParam) signupUrl.searchParams.set("redirect", redirectParam);
+      if (redirectParam && targetUrl !== "/dashboard") {
+        signupUrl.searchParams.set("redirect", targetUrl);
+      }
       return Response.redirect(signupUrl, 303);
     }
     return Response.json({ error: message }, { status: 400 });
