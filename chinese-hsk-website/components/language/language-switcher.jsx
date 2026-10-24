@@ -42,7 +42,7 @@ export default function LanguageSwitcher() {
   return (
     <details ref={detailsRef} className="group relative">
       <summary
-        className="inline-flex cursor-pointer list-none items-center gap-1.5 sm:gap-2 rounded-full border border-slate-200 bg-white px-2.5 py-1.5 sm:px-3 sm:py-2 text-xs sm:text-sm font-black text-slate-800 shadow-2xs transition marker:hidden hover:border-teal-400 hover:bg-slate-50 focus:outline-hidden [&::-webkit-details-marker]:hidden"
+        className="inline-flex cursor-pointer list-none items-center gap-1 sm:gap-2 rounded-full border border-slate-200 bg-white px-2 py-1 sm:px-3 sm:py-2 text-xs sm:text-sm font-black text-slate-800 shadow-2xs transition marker:hidden hover:border-teal-400 hover:bg-slate-50 focus:outline-hidden [&::-webkit-details-marker]:hidden"
         aria-label="Select language"
       >
         <svg

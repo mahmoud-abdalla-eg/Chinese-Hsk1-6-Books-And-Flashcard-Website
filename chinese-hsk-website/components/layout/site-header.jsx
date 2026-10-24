@@ -163,7 +163,7 @@ export default function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur-xs">
-      <div className="mx-auto flex max-w-7xl items-center justify-between gap-1.5 sm:gap-4 px-2.5 py-2.5 sm:px-6 sm:py-3.5 lg:px-8">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-1 sm:gap-4 px-2 py-2 sm:px-6 sm:py-3.5 lg:px-8">
         {/* Left: Mobile Hamburger & Brand Logo */}
         <div className="flex min-w-0 items-center gap-1.5 sm:gap-3">
           {/* Mobile Hamburger Button (hidden on lg: >= 1024px) */}
@@ -192,7 +192,7 @@ export default function SiteHeader() {
           {/* Logo & Brand Title (links to Home /) */}
           <Link
             href="/"
-            className="group flex min-w-0 items-center gap-2 sm:gap-3 shrink-0"
+            className="group flex min-w-0 items-center gap-1.5 sm:gap-3"
           >
             <Image
               src="/logo.png"
@@ -200,10 +200,10 @@ export default function SiteHeader() {
               width={40}
               height={40}
               priority
-              className="h-9 w-9 sm:h-11 sm:w-11 rounded-xl shadow-xs transition group-hover:scale-105 shrink-0 object-contain"
+              className="h-8 w-8 sm:h-11 sm:w-11 rounded-xl shadow-xs transition group-hover:scale-105 shrink-0 object-contain"
             />
             <div className="flex flex-col justify-center min-w-0">
-              <span className="block text-sm sm:text-base font-black tracking-tight text-slate-950 leading-tight">
+              <span className="block text-xs sm:text-base font-black tracking-tight text-slate-950 leading-tight truncate max-w-[105px] xs:max-w-[145px] sm:max-w-none">
                 <Localized k="appName" />
               </span>
               <span className="hidden sm:block text-[10px] sm:text-xs font-semibold uppercase tracking-[0.18em] text-slate-500 leading-tight mt-0.5">
@@ -345,13 +345,13 @@ export default function SiteHeader() {
         >
           {/* Dimmed Backdrop */}
           <div
-            className="fixed inset-0 bg-slate-950/60 backdrop-blur-xs transition-opacity duration-200"
+            className="fixed inset-0 z-40 bg-slate-950/60 backdrop-blur-xs transition-opacity duration-200"
             onClick={() => setDrawerOpen(false)}
             aria-hidden="true"
           />
 
           {/* Drawer Content Panel (start-0 ensures left in LTR, right in RTL) */}
-          <div className="fixed inset-y-0 start-0 z-50 flex w-full max-w-[300px] sm:max-w-xs flex-col bg-white p-4 sm:p-5 shadow-2xl transition-transform duration-300 ease-out">
+          <div className="fixed inset-y-0 start-0 z-50 flex h-full h-screen h-dvh max-h-screen w-[86vw] max-w-[320px] flex-col bg-white p-4 sm:p-5 shadow-2xl overflow-hidden transition-transform duration-300 ease-out">
             {/* Drawer Header */}
             <div className="flex items-center justify-between border-b border-slate-100 pb-4 shrink-0">
               <Link
@@ -393,7 +393,7 @@ export default function SiteHeader() {
             </div>
 
             {/* Nav Destination Links */}
-            <nav className="my-4 flex-1 space-y-4 overflow-y-auto">
+            <nav className="my-3 flex-1 min-h-0 space-y-4 overflow-y-auto overscroll-contain pr-1">
               {/* Dashboard Link */}
               <Link
                 href="/dashboard"

@@ -37,7 +37,7 @@ export default function AccountMenu() {
       <div className="flex items-center gap-1 sm:gap-2">
         <Link
           href="/login"
-          className="rounded-full border border-slate-200 bg-white px-2.5 py-1.5 text-xs font-black text-slate-700 hover:border-teal-400 hover:bg-slate-50 sm:px-4 sm:py-2 sm:text-sm transition shrink-0"
+          className="rounded-full border border-slate-200 bg-white px-2 py-1 text-xs font-black text-slate-700 hover:border-teal-400 hover:bg-slate-50 sm:px-4 sm:py-2 sm:text-sm transition shrink-0"
         >
           {tr("logIn")}
         </Link>
