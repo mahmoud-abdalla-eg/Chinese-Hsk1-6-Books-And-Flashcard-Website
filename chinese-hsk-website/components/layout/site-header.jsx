@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -187,21 +188,14 @@ export default function SiteHeader() {
 
           {/* Logo & Brand Title (links to Home /) */}
           <Link href="/" className="group flex items-center gap-2.5 sm:gap-3">
-            <span className="relative grid h-10 w-10 sm:h-11 sm:w-11 place-items-center rounded-xl overflow-hidden bg-gradient-to-br from-red-500 via-red-600 to-red-800 shadow-xs transition group-hover:scale-105 shrink-0 border border-red-300/40">
-              <span className="pointer-events-none absolute inset-x-0 top-0 h-1/2 bg-gradient-to-b from-white/30 to-transparent" />
-              <span className="relative font-black text-lg sm:text-xl text-white select-none">
-                {"\u6C49"}
-              </span>
-              <span className="absolute top-1 right-1 sm:top-1.5 sm:right-1.5 h-2 w-2 rounded-full bg-amber-400 ring-1 ring-white/70 shadow-xs" />
-            </span>
-            <span className="min-w-0">
-              <span className="block text-sm sm:text-base font-black tracking-tight text-slate-950 truncate">
-                <Localized k="appName" />
-              </span>
-              <span className="hidden sm:block text-[10px] sm:text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
-                <Localized k="brandSubtitle" />
-              </span>
-            </span>
+            <Image
+              src="/logo.png"
+              alt="Mandarin Flow HSK"
+              width={44}
+              height={44}
+              priority
+              className="h-10 w-10 sm:h-11 sm:w-11 rounded-xl shadow-xs transition group-hover:scale-105 shrink-0 object-contain"
+            />
           </Link>
         </div>
 
