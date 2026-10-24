@@ -67,7 +67,7 @@ async function getManagedHskSummaryUncached() {
         const wordCount =
           error || count == null || count === 0
             ? fallback?.wordCount || 0
-            : count;
+            : Math.max(count, fallback?.wordCount || 0);
 
         return {
           level,
@@ -181,7 +181,7 @@ export async function upsertManagedWord(payload) {
     throw new Error(error?.message || "Failed to upsert word.");
   }
 
-  memoryWordCache.clear();
+  await invalidateWordCaches();
   return fromDbWord(data);
 }
 
@@ -193,9 +193,21 @@ export async function deleteManagedWord(wordId) {
     .delete()
     .eq("id", wordId);
   if (!error) {
-    memoryWordCache.clear();
+    await invalidateWordCaches();
   }
   return !error;
+}
+
+async function invalidateWordCaches() {
+  memoryWordCache.clear();
+  try {
+    const { revalidateTag } = await import("next/cache");
+    revalidateTag("managed-hsk-summary");
+    revalidateTag("managed-hsk-words");
+    revalidateTag("managed-hsk-word-ids");
+  } catch {
+    // Ignore in non-request contexts
+  }
 }
 
 export async function getManagedWordsForAdmin(level) {
