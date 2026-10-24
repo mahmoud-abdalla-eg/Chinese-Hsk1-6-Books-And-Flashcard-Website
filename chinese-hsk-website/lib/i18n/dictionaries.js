@@ -124,7 +124,42 @@ export const dictionary = {
   practiceGrids: {
     en: "Writing Grids",
     zh: "\u7ec3\u5b57\u7c73\u5b57\u683c",
-    ar: "\u0634\u0628\u0643\u0627\u062a \u0627\u0644\u062a\u062f\u0631\u064a\u0628",
+    ar: "\u0634\u0628\u0643\u0627\u062a \u062a\u062f\u0631\u064a\u0628 \u0627\u0644\u0643\u062a\u0627\u0628\u0629",
+  },
+  editionNewHsk30: {
+    en: "New HSK 3.0 (2026)",
+    zh: "新 HSK 3.0 (2026版)",
+    ar: "HSK 3.0 الجديد (2026)",
+  },
+  editionClassicHsk20: {
+    en: "Classic HSK 2.0",
+    zh: "经典 HSK 2.0",
+    ar: "HSK 2.0 الكلاسيكي",
+  },
+  writingBook: {
+    en: "Character Writing Book",
+    zh: "汉字书写练习本",
+    ar: "دفتر تدريب كتابة المقاطع",
+  },
+  hskGrammarBook: {
+    en: "HSK 1-6 Comprehensive Grammar Guide",
+    zh: "HSK 1-6 级实用语法全解手册",
+    ar: "دليل قواعد HSK 1-6 الشامل",
+  },
+  editionBadgeNew: {
+    en: "2026 Edition",
+    zh: "2026 新版",
+    ar: "إصدار 2026",
+  },
+  editionBadgeClassic: {
+    en: "Classic Edition",
+    zh: "经典原版",
+    ar: "الإصدار الكلاسيكي",
+  },
+  audioHub2026: {
+    en: "New 2026 Audios",
+    zh: "2026 新版听力库",
+    ar: "صوتيات 2026 الجديدة",
   },
   wordLists: {
     en: "Word Lists",
