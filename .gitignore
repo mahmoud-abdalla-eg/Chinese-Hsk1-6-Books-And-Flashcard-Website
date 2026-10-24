@@ -1,11 +1,18 @@
 # Dependencies
 node_modules/
 
-# Local book resources and caches (avoid GitHub 100MB file limit)
+# Local book resources, audio, and large materials (stored in Google Drive)
 hsk 1/
 hsk 2/
 hsk 3/
 hsk 4/
+hsk 5/
+hsk 6/
+Hsk Words For Each Level/
+Writing Grids/
+*.pdf
+*.mp3
+*.url
 graphify-out/
 .agents/
 .graphifyignore
