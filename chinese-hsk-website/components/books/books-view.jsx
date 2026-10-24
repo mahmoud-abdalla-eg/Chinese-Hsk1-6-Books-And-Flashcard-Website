@@ -223,7 +223,8 @@ export default function BooksView() {
                 material.editions?.new;
               const hasNew = Boolean(material.editions?.new);
               const hasClassic = Boolean(material.editions?.classic);
-              const hasDual = hasNew && hasClassic;
+              const hasDual = Boolean(material.hasDualEdition && hasNew && hasClassic);
+              const activeWordsCount = currentEdition?.wordsCount;
               const examsOpen = Boolean(expandedExams[material.level]);
 
               return (
@@ -248,16 +249,18 @@ export default function BooksView() {
                         </p>
                       </div>
 
-                      {/* Right Word Count Pill */}
-                      <div className="shrink-0 whitespace-nowrap rounded-full border border-slate-200/80 bg-white/95 px-3 py-1 shadow-2xs">
-                        <span className="text-xs font-black text-slate-700">
-                          {material.wordsCount} {language === "ar" ? "كلمة" : language === "zh" ? "核心词" : "Words"}
-                        </span>
-                      </div>
+                      {/* Right Word Count Pill (Strictly accurate for active curriculum edition) */}
+                      {activeWordsCount && (
+                        <div className="shrink-0 whitespace-nowrap rounded-full border border-slate-200/80 bg-white/95 px-3 py-1 shadow-2xs">
+                          <span className="text-xs font-black text-slate-700">
+                            {activeWordsCount} {language === "ar" ? "كلمة" : language === "zh" ? "词" : "Words"}
+                          </span>
+                        </div>
+                      )}
                     </div>
 
-                    {/* In-Card Edition Switcher (Option A: Instant interactive toggle) */}
-                    {hasDual && (
+                    {/* In-Card Edition Switcher for HSK 1-4 (Option A: Instant interactive toggle) */}
+                    {hasDual ? (
                       <div className="mt-3.5 flex items-center gap-1.5 rounded-xl border border-slate-200/80 bg-white/70 p-1">
                         <button
                           type="button"
@@ -289,6 +292,11 @@ export default function BooksView() {
                             ? "经典 HSK 2.0"
                             : "Classic HSK 2.0"}
                         </button>
+                      </div>
+                    ) : (
+                      <div className="mt-3.5 inline-flex items-center gap-1.5 rounded-lg border border-slate-200/70 bg-white/60 px-2.5 py-1 text-[11px] font-bold text-slate-600">
+                        <span className="h-1.5 w-1.5 rounded-full bg-slate-400"></span>
+                        <span>{language === "ar" ? "الدورة القياسية الرسمية (HSK 2.0)" : language === "zh" ? "官方标准教程 (HSK 2.0)" : "Official Standard Course (HSK 2.0)"}</span>
                       </div>
                     )}
                   </div>

@@ -1,8 +1,8 @@
 /**
  * HSK Standard Course Books & Learning Materials Catalog
- * Provides structured dual-edition metadata (New HSK 3.0 2026 vs Classic HSK 2.0)
- * and verified cloud links for HSK Levels 1 through 6,
- * plus dedicated resource packages (Writing Grids, Vocabulary Lists, and Comprehensive Grammar Guide).
+ * Provides structured dual-edition metadata for HSK 1 to 4 (New HSK 3.0 2026 & Classic HSK 2.0),
+ * and official Standard Course materials for HSK 5 and 6 (Classic HSK 2.0 only, as HSK 3.0 books are only published for levels 1-4).
+ * Accurate word counts per official curriculum standard.
  */
 
 export const HSK_DRIVE_ROOT = "https://drive.google.com/drive/folders/1BP51tgLPS4GKJ6JC4tYsdL8wYjg_sckZ";
@@ -30,7 +30,6 @@ export const hskMaterials = [
     levelNameEn: "Beginner",
     levelNameZh: "入门基础",
     levelNameAr: "مبتدئ أساسي",
-    wordsCount: 150,
     accent: "emerald",
     theme: {
       border: "border-emerald-500/20 hover:border-emerald-500/40",
@@ -41,6 +40,7 @@ export const hskMaterials = [
     },
     driveFolderUrl: "https://drive.google.com/drive/folders/1NiyDEs7nw0OZm4tr7V0Ojv3u0p4ZBk8W",
     defaultEdition: "new",
+    hasDualEdition: true,
     editions: {
       new: {
         key: "new",
@@ -48,6 +48,7 @@ export const hskMaterials = [
         editionLabelZh: "新 HSK 3.0 (2026版)",
         editionLabelAr: "HSK 3.0 الجديد (2026)",
         badge: "2026 Edition",
+        wordsCount: "500",
         folderUrl: "https://drive.google.com/drive/folders/1hy9aozysBWSngkTkQt9_wQ5xv39Hw0ae",
         downloadAllUrl: "https://drive.google.com/drive/folders/1hy9aozysBWSngkTkQt9_wQ5xv39Hw0ae",
         audioStreamUrl: BAUL_CHINO_AUDIOS_2026,
@@ -104,6 +105,7 @@ export const hskMaterials = [
         editionLabelZh: "经典 HSK 2.0",
         editionLabelAr: "HSK 2.0 الكلاسيكي",
         badge: "Classic Edition",
+        wordsCount: "150",
         folderUrl: "https://drive.google.com/drive/folders/1mALLz2qtOJ0HdxbgQgAIZXTUoag9DJhL",
         downloadAllUrl: "https://drive.google.com/drive/folders/1mALLz2qtOJ0HdxbgQgAIZXTUoag9DJhL",
         audioStreamUrl: BAUL_CHINO_AUDIOS,
@@ -165,7 +167,6 @@ export const hskMaterials = [
     levelNameEn: "Elementary",
     levelNameZh: "初级进阶",
     levelNameAr: "ابتدائي متقدم",
-    wordsCount: 300,
     accent: "sky",
     theme: {
       border: "border-sky-500/20 hover:border-sky-500/40",
@@ -176,6 +177,7 @@ export const hskMaterials = [
     },
     driveFolderUrl: "https://drive.google.com/drive/folders/19IW6BsDkAcctumqd3v559TsNtZgq9kqb",
     defaultEdition: "new",
+    hasDualEdition: true,
     editions: {
       new: {
         key: "new",
@@ -183,6 +185,7 @@ export const hskMaterials = [
         editionLabelZh: "新 HSK 3.0 (2026版)",
         editionLabelAr: "HSK 3.0 الجديد (2026)",
         badge: "2026 Edition",
+        wordsCount: "1,272",
         folderUrl: "https://drive.google.com/drive/folders/1s18Ddw3aWFhOy8NRq5RPxfI4Ox7D6MV7",
         downloadAllUrl: "https://drive.google.com/drive/folders/1s18Ddw3aWFhOy8NRq5RPxfI4Ox7D6MV7",
         audioStreamUrl: BAUL_CHINO_AUDIOS_2026,
@@ -239,6 +242,7 @@ export const hskMaterials = [
         editionLabelZh: "经典 HSK 2.0",
         editionLabelAr: "HSK 2.0 الكلاسيكي",
         badge: "Classic Edition",
+        wordsCount: "300",
         folderUrl: "https://drive.google.com/drive/folders/1BB5L7DdhOBzuRmBpyrgGRh7hGORs-wKa",
         downloadAllUrl: "https://drive.google.com/drive/folders/1BB5L7DdhOBzuRmBpyrgGRh7hGORs-wKa",
         audioStreamUrl: BAUL_CHINO_AUDIOS,
@@ -301,7 +305,6 @@ export const hskMaterials = [
     levelNameEn: "Intermediate",
     levelNameZh: "中级起步",
     levelNameAr: "متوسط",
-    wordsCount: 600,
     accent: "amber",
     theme: {
       border: "border-amber-500/20 hover:border-amber-500/40",
@@ -312,6 +315,7 @@ export const hskMaterials = [
     },
     driveFolderUrl: "https://drive.google.com/drive/folders/1cfdY4ABs2nakFxGtQDJ5q4dwcCVRhIWV",
     defaultEdition: "new",
+    hasDualEdition: true,
     editions: {
       new: {
         key: "new",
@@ -319,6 +323,7 @@ export const hskMaterials = [
         editionLabelZh: "新 HSK 3.0 (2026版)",
         editionLabelAr: "HSK 3.0 الجديد (2026)",
         badge: "2026 Edition",
+        wordsCount: "2,245",
         folderUrl: "https://drive.google.com/drive/folders/1C6TZoT8_eJRrjp7j497LJx0Xmhzklzo5",
         downloadAllUrl: "https://drive.google.com/drive/folders/1C6TZoT8_eJRrjp7j497LJx0Xmhzklzo5",
         audioStreamUrl: BAUL_CHINO_AUDIOS_2026,
@@ -364,6 +369,7 @@ export const hskMaterials = [
         editionLabelZh: "经典 HSK 2.0",
         editionLabelAr: "HSK 2.0 الكلاسيكي",
         badge: "Classic Edition",
+        wordsCount: "600",
         folderUrl: "https://drive.google.com/drive/folders/1-Mgy_hL0VWHT7yV1hWvorf0NOMg2FaAK",
         downloadAllUrl: "https://drive.google.com/drive/folders/1-Mgy_hL0VWHT7yV1hWvorf0NOMg2FaAK",
         audioStreamUrl: BAUL_CHINO_AUDIOS,
@@ -429,7 +435,6 @@ export const hskMaterials = [
     levelNameEn: "Upper Intermediate",
     levelNameZh: "中高级突破",
     levelNameAr: "فوق المتوسط",
-    wordsCount: 1200,
     accent: "violet",
     theme: {
       border: "border-violet-500/20 hover:border-violet-500/40",
@@ -440,6 +445,7 @@ export const hskMaterials = [
     },
     driveFolderUrl: "https://drive.google.com/drive/folders/14KzcsYsHjCzefj77Uh3bUxoLWxOYXpTl",
     defaultEdition: "new",
+    hasDualEdition: true,
     editions: {
       new: {
         key: "new",
@@ -447,6 +453,7 @@ export const hskMaterials = [
         editionLabelZh: "新 HSK 3.0 (2026版)",
         editionLabelAr: "HSK 3.0 الجديد (2026)",
         badge: "2026 Edition",
+        wordsCount: "3,245",
         folderUrl: "https://drive.google.com/drive/folders/1F8Gfs86h2Mkv3E1sloc_X1RhmyhWhNLr",
         downloadAllUrl: "https://drive.google.com/drive/folders/1F8Gfs86h2Mkv3E1sloc_X1RhmyhWhNLr",
         audioStreamUrl: BAUL_CHINO_AUDIOS_2026,
@@ -492,6 +499,7 @@ export const hskMaterials = [
         editionLabelZh: "经典 HSK 2.0",
         editionLabelAr: "HSK 2.0 الكلاسيكي",
         badge: "Classic Edition",
+        wordsCount: "1,200",
         folderUrl: "https://drive.google.com/drive/folders/1dIkBMiob9AZWAycj1t8IvXghBeMUVXyE",
         downloadAllUrl: "https://drive.google.com/drive/folders/1dIkBMiob9AZWAycj1t8IvXghBeMUVXyE",
         audioStreamUrl: BAUL_CHINO_AUDIOS,
@@ -557,7 +565,6 @@ export const hskMaterials = [
     levelNameEn: "Advanced",
     levelNameZh: "高级流利",
     levelNameAr: "متقدم طليق",
-    wordsCount: 2500,
     accent: "rose",
     theme: {
       border: "border-rose-500/20 hover:border-rose-500/40",
@@ -567,24 +574,26 @@ export const hskMaterials = [
       buttonOutline: "border-rose-500/30 hover:bg-rose-500/10 text-rose-300"
     },
     driveFolderUrl: "https://drive.google.com/drive/folders/1O91ofsfWqkivhwl7nzRCJmHi2ly-Kfhp",
-    defaultEdition: "new",
+    defaultEdition: "classic",
+    hasDualEdition: false,
     editions: {
-      new: {
-        key: "new",
-        editionLabelEn: "New HSK 3.0 (2026)",
-        editionLabelZh: "新 HSK 3.0 (2026版)",
-        editionLabelAr: "HSK 3.0 الجديد (2026)",
-        badge: "2026 Edition",
-        folderUrl: "https://drive.google.com/drive/folders/1nTg2Ra1jyv5NckLaZtGJb-xenUzJZK4D",
-        downloadAllUrl: "https://drive.google.com/drive/folders/1nTg2Ra1jyv5NckLaZtGJb-xenUzJZK4D",
-        audioStreamUrl: BAUL_CHINO_AUDIOS_2026,
+      classic: {
+        key: "classic",
+        editionLabelEn: "Standard Course 5",
+        editionLabelZh: "标准教程 5 级",
+        editionLabelAr: "الدورة القياسية HSK 5",
+        badge: "Standard Course",
+        wordsCount: "2,500",
+        folderUrl: "https://drive.google.com/drive/folders/1O91ofsfWqkivhwl7nzRCJmHi2ly-Kfhp",
+        downloadAllUrl: "https://drive.google.com/drive/folders/1O91ofsfWqkivhwl7nzRCJmHi2ly-Kfhp",
+        audioStreamUrl: BAUL_CHINO_AUDIOS,
         items: [
           {
             id: "textbook_5a",
             kind: "textbook",
-            titleEn: "New HSK Course 5 Volume A Textbook",
-            titleZh: "《新HSK教程5》上册教材 (3.0版)",
-            titleAr: "كتاب دورة HSK 5 الجديد (الجزء الأول)",
+            titleEn: "HSK Standard Course 5 Volume A Textbook",
+            titleZh: "《HSK标准教程5》上册教材",
+            titleAr: "كتاب دورة HSK 5 القياسية (الجزء الأول)",
             type: "PDF",
             size: "26.4 MB",
             previewUrl: "https://drive.google.com/file/d/1qkraakFKX7xBmuADSPcmVYD161lkQbfT/view",
@@ -593,8 +602,8 @@ export const hskMaterials = [
           {
             id: "workbook_5a",
             kind: "workbook",
-            titleEn: "New HSK Course 5 Volume A Workbook",
-            titleZh: "《新HSK教程5》上册练习册",
+            titleEn: "HSK Standard Course 5 Volume A Workbook",
+            titleZh: "《HSK标准教程5》上册练习册",
             titleAr: "دفتر تمارين دورة HSK 5 (الجزء الأول)",
             type: "PDF",
             size: "31.1 MB",
@@ -604,9 +613,9 @@ export const hskMaterials = [
           {
             id: "textbook_5b",
             kind: "textbook",
-            titleEn: "New HSK Course 5 Volume B Textbook",
-            titleZh: "《新HSK教程5》下册教材 (3.0版)",
-            titleAr: "كتاب دورة HSK 5 الجديد (الجزء الثاني)",
+            titleEn: "HSK Standard Course 5 Volume B Textbook",
+            titleZh: "《HSK标准教程5》下册教材",
+            titleAr: "كتاب دورة HSK 5 القياسية (الجزء الثاني)",
             type: "PDF",
             size: "25.3 MB",
             previewUrl: "https://drive.google.com/file/d/1CfdE4WmNAQjB0CX37nPI0KL8JK8mcPTp/view",
@@ -615,58 +624,13 @@ export const hskMaterials = [
           {
             id: "workbook_5b",
             kind: "workbook",
-            titleEn: "New HSK Course 5 Volume B Workbook",
-            titleZh: "《新HSK教程5》下册练习册",
+            titleEn: "HSK Standard Course 5 Volume B Workbook",
+            titleZh: "《HSK标准教程5》下册练习册",
             titleAr: "دفتر تمارين دورة HSK 5 (الجزء الثاني)",
             type: "PDF",
             size: "49.2 MB",
             previewUrl: "https://drive.google.com/file/d/1Qpc6LvJFmg4vrSvV0Ef3tD2XppY292Es/view",
             downloadUrl: "https://drive.google.com/file/d/1Qpc6LvJFmg4vrSvV0Ef3tD2XppY292Es/view"
-          },
-          {
-            id: "audio",
-            kind: "audio",
-            titleEn: "New HSK 5 Textbook Audio Tracks (MP3)",
-            titleZh: "新HSK 5 级全套课文与高阶精听 (MP3)",
-            titleAr: "صوتيات دورة HSK 5 الجديدة كاملة (MP3)",
-            type: "AUDIO",
-            count: "Full 2026 Audio Set",
-            streamUrl: BAUL_CHINO_AUDIOS_2026,
-            downloadUrl: "https://drive.google.com/drive/folders/1nTg2Ra1jyv5NckLaZtGJb-xenUzJZK4D"
-          }
-        ]
-      },
-      classic: {
-        key: "classic",
-        editionLabelEn: "Classic HSK 2.0",
-        editionLabelZh: "经典 HSK 2.0",
-        editionLabelAr: "HSK 2.0 الكلاسيكي",
-        badge: "Classic Edition",
-        folderUrl: "https://drive.google.com/drive/folders/1xjuDvSBI7oLg97zo7nkvBP_hPve4RsUB",
-        downloadAllUrl: "https://drive.google.com/drive/folders/1xjuDvSBI7oLg97zo7nkvBP_hPve4RsUB",
-        audioStreamUrl: BAUL_CHINO_AUDIOS,
-        items: [
-          {
-            id: "textbook",
-            kind: "textbook",
-            titleEn: "HSK Standard Course 5 Vocabulary Handbook",
-            titleZh: "《HSK标准教程5》教材与词汇指南",
-            titleAr: "كتاب دورة HSK 5 القياسية ودليل المفردات",
-            type: "PDF",
-            size: "1.9 MB",
-            previewUrl: "https://drive.google.com/file/d/1rGu09ZSUqhAgcVgoZDxoNJYd3enY6qTj/view",
-            downloadUrl: "https://drive.google.com/file/d/1rGu09ZSUqhAgcVgoZDxoNJYd3enY6qTj/view"
-          },
-          {
-            id: "workbook",
-            kind: "workbook",
-            titleEn: "Standard Course 5 Comprehensive Lexicon List",
-            titleZh: "《HSK标准教程5》全套核心词汇解析",
-            titleAr: "دفتر المفردات والتمارين المتقدمة HSK 5",
-            type: "PDF",
-            size: "5.0 MB",
-            previewUrl: "https://drive.google.com/file/d/1GVB_xezoKvjWw1ROc7cz0Y2gHxEjCh-t/view",
-            downloadUrl: "https://drive.google.com/file/d/1GVB_xezoKvjWw1ROc7cz0Y2gHxEjCh-t/view"
           },
           {
             id: "audio",
@@ -708,7 +672,6 @@ export const hskMaterials = [
     levelNameEn: "Mastery",
     levelNameZh: "最高精通",
     levelNameAr: "إتقان واحتراف",
-    wordsCount: 5000,
     accent: "indigo",
     theme: {
       border: "border-indigo-500/20 hover:border-indigo-500/40",
@@ -719,13 +682,15 @@ export const hskMaterials = [
     },
     driveFolderUrl: "https://drive.google.com/drive/folders/1-t__G2zFIHLZjsOWxZmyRYZtuV0FO4_9",
     defaultEdition: "classic",
+    hasDualEdition: false,
     editions: {
       classic: {
         key: "classic",
         editionLabelEn: "Standard Course 6",
         editionLabelZh: "标准教程 6 级",
         editionLabelAr: "الدورة القياسية HSK 6",
-        badge: "Official Package",
+        badge: "Standard Course",
+        wordsCount: "5,000",
         folderUrl: "https://drive.google.com/drive/folders/1-t__G2zFIHLZjsOWxZmyRYZtuV0FO4_9",
         downloadAllUrl: "https://drive.google.com/drive/folders/1-t__G2zFIHLZjsOWxZmyRYZtuV0FO4_9",
         audioStreamUrl: BAUL_CHINO_AUDIOS,
