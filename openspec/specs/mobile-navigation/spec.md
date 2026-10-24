@@ -25,7 +25,7 @@ The system SHALL provide an accessible slide-out navigation drawer containing al
 
 #### Scenario: Categorized mobile navigation hierarchy
 - **WHEN** the drawer is opened
-- **THEN** the drawer MUST display a direct link to "Dashboard", followed by a "Learn" section containing Vocabulary, Flashcards, Conversations, and Grammar, followed by quick HSK level filters and user account actions.
+- **THEN** the drawer MUST display direct links to "Dashboard" and "Books", followed by a "Learn" section containing Vocabulary, Flashcards, Conversations, and Grammar, followed by quick HSK level filters and user account actions.
 
 #### Scenario: Closing the drawer
 - **WHEN** the user clicks the close button, clicks the backdrop, presses the Escape key, or selects a navigation link
