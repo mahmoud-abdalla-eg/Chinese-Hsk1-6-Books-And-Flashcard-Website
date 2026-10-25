@@ -1,0 +1,336 @@
+{
+  "id": "hsk-2-hsk3-unit-11",
+  "curriculum": "hsk3",
+  "hskLevel": 2,
+  "unitId": 11,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第11课：我最喜欢吃中国菜",
+    "en": "Lesson 11: I like Chinese food the most",
+    "ar": "الدرس 11: أنا أفضل تناول الطعام الصيني أكثر من أي شيء آخر"
+  },
+  "dialogue": [
+    {
+      "id": "11-1-1",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "家月，都下课了，你怎么还不回家？",
+      "pinyin": "Jiāyuè, dōu xiàkè le, nǐ zěnme hái bù huí jiā?",
+      "translation": {
+        "en": "Jiayue, class is already over; why haven't you gone home yet?",
+        "ar": "جيايوي، لقد انتهت الحصة بالفعل، لماذا لم تعودي إلى البيت بعد؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-1-2",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "我头疼，不太舒服。",
+      "pinyin": "Wǒ tóuténg, bú tài shūfu.",
+      "translation": {
+        "en": "I have a headache, not feeling very well.",
+        "ar": "أعاني من صداع في رأسي، ولست على ما يرام."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-1-3",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "你这几天经常头疼，去医院看看吧。",
+      "pinyin": "Nǐ zhè jǐ tiān jīngcháng tóuténg, qù yīyuàn kànkan ba.",
+      "translation": {
+        "en": "You've been getting headaches often these past few days; you should go to the hospital to see a doctor.",
+        "ar": "لقد تكرر شعورك بالصداع هذه الأيام الأخيرة، عليكِ الذهاب إلى المستشفى للفحص."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-1-4",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "我想休息一下，现在不能动。",
+      "pinyin": "Wǒ xiǎng xiūxi yíxià, xiànzài bù néng dòng.",
+      "translation": {
+        "en": "I want to rest for a bit; I can't move right now.",
+        "ar": "أود أخذ قسط من الراحة، لا أستطيع الحركة الآن."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-1-5",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "那你在这儿坐着，我开车送你去医院。",
+      "pinyin": "Nà nǐ zài zhèr zuòzhe, wǒ kāichē sòng nǐ qù yīyuàn.",
+      "translation": {
+        "en": "Then stay seated right here; I'll drive you to the hospital.",
+        "ar": "إذاً ابقي جالسة هنا، وسأقود السيارة لأوصلكِ إلى المستشفى."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-1-6",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "谢谢王老师。",
+      "pinyin": "Xièxie Wáng lǎoshī.",
+      "translation": {
+        "en": "Thank you, Teacher Wang.",
+        "ar": "شكراً جزيلاً لكِ يا أستاذة وانغ."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-2-1",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "现在路上车多，还下着雪，我开慢一点儿。",
+      "pinyin": "Xiànzài lùshang chē duō, hái xiàzhe xuě, wǒ kāi màn yìdiǎnr.",
+      "translation": {
+        "en": "There's heavy traffic right now and it's still snowing, so I'll drive a little slower.",
+        "ar": "حركة المرور كثيفة الآن والثلوج تتساقط، لذا سأقود ببطء أكثر."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-2-2",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "没问题，现在头没那么疼了。",
+      "pinyin": "Méi wèntí, xiànzài tóu méi nàme téng le.",
+      "translation": {
+        "en": "No problem; my headache isn't as severe now.",
+        "ar": "لا بأس، الصداع لم يعد شديداً كما كان."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-2-3",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "好。李文来电话了，你帮我接一下。",
+      "pinyin": "Hǎo. Lǐ Wén lái diànhuà le, nǐ bāng wǒ jiē yíxià.",
+      "translation": {
+        "en": "Good. Li Wen is calling; could you please answer it for me?",
+        "ar": "حسناً. لي ون يتصل، هل يمكنكِ الرد عليه نيابة عني؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-2-4",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "喂，李文，王老师开着车呢，你找她有事吗？",
+      "pinyin": "Wéi, Lǐ Wén, Wáng lǎoshī kāizhe chē ne, nǐ zhǎo tā yǒu shì ma?",
+      "translation": {
+        "en": "Hello, Li Wen! Teacher Wang is driving right now; do you need her for something?",
+        "ar": "مرحباً يا لي ون! الأستاذة وانغ تقود السيارة حالياً، هل تحتاجها في أمر ما؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-2-5",
+      "role": "李文 (Li Wen)",
+      "hanzi": "没什么事。今天雪这么大，你们开车去哪儿啊？",
+      "pinyin": "Méi shénme shì. Jīntiān xuě zhème dà, nǐmen kāichē qù nǎr a?",
+      "translation": {
+        "en": "Nothing urgent. With such heavy snow today, where are you two driving?",
+        "ar": "لا شيء طارئ. الثلوج كثيفة جداً اليوم، إلى أين أنتما ذاهبتان بالسيارة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-2-6",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "去医院，我头有点儿疼。",
+      "pinyin": "Qù yīyuàn, wǒ tóu yǒudiǎnr téng.",
+      "translation": {
+        "en": "To the hospital; my head hurts a bit.",
+        "ar": "إلى المستشفى، فرأسي يؤلمني قليلاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-2-7",
+      "role": "李文 (Li Wen)",
+      "hanzi": "那你们慢点儿开，我一会儿去看你。",
+      "pinyin": "Nà nǐmen màn diǎnr kāi, wǒ yíhuìr qù kàn nǐ.",
+      "translation": {
+        "en": "Drive carefully then; I'll come over to visit you in a little while.",
+        "ar": "قودا بحذر إذاً، وسآتي لزيارتكِ بعد قليل."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-2-8",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "好的，一会儿见。",
+      "pinyin": "Hǎo de, yíhuìr jiàn.",
+      "translation": {
+        "en": "Okay, see you soon.",
+        "ar": "حسناً، أراك بعد قليل."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-1",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "李文，快请进！",
+      "pinyin": "Lǐ Wén, kuài qǐng jìn!",
+      "translation": {
+        "en": "Li Wen, come in quickly!",
+        "ar": "لي ون، تفضل بالدخول سريعاً!"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-2",
+      "role": "李文 (Li Wen)",
+      "hanzi": "家月，你怎么样了？头还疼吗？",
+      "pinyin": "Jiāyuè, nǐ zěnmeyàng le? Tóu hái téng ma?",
+      "translation": {
+        "en": "Jiayue, how are you feeling? Does your head still hurt?",
+        "ar": "جيايوي، كيف حالك الآن؟ هل ما زال رأسك يؤلمك؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-3",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "不那么疼了。医生开了一些药，吃完就好多了。",
+      "pinyin": "Bú nàme téng le. Yīshēng kāile yìxiē yào, chīwán jiù hǎoduō le.",
+      "translation": {
+        "en": "It doesn't hurt as much. The doctor prescribed some medicine; I feel much better after taking it.",
+        "ar": "لم يعد يؤلمني كثيراً. لقد وصف الطبيب بعض الدواء، وأشعر بتحسن كبير بعد تناوله."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-4",
+      "role": "李文 (Li Wen)",
+      "hanzi": "那就好！",
+      "pinyin": "Nà jiù hǎo!",
+      "translation": {
+        "en": "That's good to hear!",
+        "ar": "الحمد لله، هذا رائع!"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-5",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "家月，你想不想吃点儿东西？",
+      "pinyin": "Jiāyuè, nǐ xiǎng bu xiǎng chī diǎnr dōngxi?",
+      "translation": {
+        "en": "Jiayue, would you like to eat something?",
+        "ar": "جيايوي، هل ترغبين في تناول شيء ما؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-6",
+      "role": "李文 (Li Wen)",
+      "hanzi": "吃点儿吧，身体不舒服时更要好好吃饭。",
+      "pinyin": "Chī diǎnr ba, shēntǐ bù shūfu shí gèng yào hǎohāo chī fàn.",
+      "translation": {
+        "en": "Have a little bite; when you're not feeling well, it's even more important to eat well.",
+        "ar": "تناولي شيئاً، فعندما يكون المرء متوعكاً يجب أن يتغذى بشكل أفضل."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-7",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "吃点儿什么呢？",
+      "pinyin": "Chī diǎnr shénme ne?",
+      "translation": {
+        "en": "What should we eat?",
+        "ar": "ماذا نأكل إذاً؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-8",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "你最喜欢吃中国菜，我做几个中国菜吧。",
+      "pinyin": "Nǐ zuì xǐhuan chī Zhōngguó cài, wǒ zuò jǐ ge Zhōngguó cài ba.",
+      "translation": {
+        "en": "You love Chinese food the most; I'll cook a few Chinese dishes.",
+        "ar": "أنتِ تفضلين الطعام الصيني أكثر من أي شيء آخر، سأطهو لكِ بعض الأطباق الصينية."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-9",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "好的，谢谢王老师！",
+      "pinyin": "Hǎo de, xièxie Wáng lǎoshī!",
+      "translation": {
+        "en": "Alright, thank you so much, Teacher Wang!",
+        "ar": "حسناً، شكراً جزيلاً لكِ يا أستاذة وانغ!"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-4-1",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "我这几天经常头疼，从药店买了点儿药，没去医院。今天下课后，王老师看我不舒服，就送我去医院了。从医院回来，李文也来看我了。现在他们都回去了，我也要睡觉了。",
+      "pinyin": "Wǒ zhè jǐ tiān jīngcháng tóuténg, cóng yàodiàn mǎile diǎnr yào, méi qù yīyuàn. Jīntiān xiàkè hòu, Wáng lǎoshī kàn wǒ bù shūfu, jiù sòng wǒ qù yīyuàn le. Cóng yīyuàn huílái, Lǐ Wén yě lái kàn wǒ le. Xiànzài tāmen dōu huíqù le, wǒ yě yào shuìjiào le.",
+      "translation": {
+        "en": "I've had frequent headaches these past few days. I bought some medicine from the pharmacy and hadn't gone to the hospital. After class today, Teacher Wang saw that I wasn't feeling well and took me to the hospital. After returning from the hospital, Li Wen also came to visit me. Now they have both returned, and I'm going to sleep too.",
+        "ar": "عانيت من الصداع المتكرر في هذه الأيام الأخيرة، واكتفيت بشراء بعض الدواء من الصيدلية دون الذهاب إلى المستشفى. واليوم بعد انتهاء الحصة، رأت الأستاذة وانغ أنني متوعكة فأخذتني إلى المستشفى. وبعد العودة من المستشفى، جاء لي ون لعيادتي أيضاً. والآن عاد كلاهما إلى البيت، وأنا على وشك الخلود إلى النوم."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Aspect Particle '着' (zhe) for Action/State Continuation",
+      "explanation": "Follows a verb to indicate ongoing continuation of a state or action: 那你在这儿坐着 (stay seated here); 还下着雪 (it's still snowing); 王老师开着车呢 (Teacher Wang is driving). The object is placed after '着'.",
+      "arExplanation": "تأتي أداة المظهر '着' بعد الفعل لتدل على استمرار حالة أو فعل دون انقطاع: '坐着' (جالس)، '还下着雪' (الثلج لا يزال يتساقط)، '开着车呢' (يقود السيارة حالياً)."
+    },
+    {
+      "point": "Adverb of Degree '最' (zuì - Most / Superlative)",
+      "explanation": "Placed before adjectives or psychological verbs to express the highest superlative degree among a group: 你最喜欢吃中国菜 (You like Chinese food the most); 在我们家，爸爸最高 (In our family, Dad is the tallest).",
+      "arExplanation": "يُستخدم ظرف الدرجة '最' قبل الصفات أو الأفعال الشعورية لإفادة صيغة التفضيل القصوى: '你最喜欢吃中国菜' (أنتِ تفضلين الطعام الصيني أكثر من أي شيء آخر)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Caring for the Sick and Healing Food (探病关怀与食补)",
+      "detail": "In China, when a friend or student falls ill, teachers and friends often personally accompany them to the clinic and prepare fresh, nourishing home-cooked meals (如鸡汤、热粥). Eating wholesome food (好好吃饭) is viewed as fundamental to rapid recovery.",
+      "arDetail": "في الثقافة الصينية، عندما يمرض صديق أو طالب، يبادر المعلمون والزملاء باصطحابه للمستشفى وطهي وجبات منزلية مغذية ودافئة له، فالغذاء الصحي المتوازن (好好吃饭) يُعد ركيزة أساسية للتعافي السريع واستعادة العافية."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q11-1",
+      "question": "Why did Teacher Wang drive Bai Jiayue to the hospital?",
+      "arQuestion": "لماذا قامت الأستاذة وانغ بإيصال باي جيايوي إلى المستشفى بالسيارة؟",
+      "options": [
+        "因为白家月头疼，身体不舒服 (Because Bai Jiayue had a headache and felt unwell)",
+        "因为白家月要在医院上班 (Because Bai Jiayue works at the hospital)",
+        "因为李文在医院 (Because Li Wen was at the hospital)",
+        "因为下雪天没有公共汽车 (Because there were no buses on the snowy day)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q11-2",
+      "question": "What did Teacher Wang offer to cook for Bai Jiayue?",
+      "arQuestion": "ماذا اقترحت الأستاذة وانغ أن تطهو لباي جيايوي؟",
+      "options": [
+        "做几个中国菜 (Cook a few Chinese dishes)",
+        "买一些面包 (Buy some bread)",
+        "烤一只烤鸭 (Roast a duck)",
+        "煮一碗方便面 (Cook a bowl of instant noodles)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q11-3",
+      "question": "What did Bai Jiayue do before going to the hospital with Teacher Wang?",
+      "arQuestion": "ماذا فعلت باي جيايوي قبل أن تذهب إلى المستشفى مع الأستاذة وانغ؟",
+      "options": [
+        "从药店买了点儿药 (Bought some medicine from a pharmacy)",
+        "去外面跑步 (Went outside for a run)",
+        "给李文买礼物 (Bought a gift for Li Wen)",
+        "去商场看电影 (Went to the mall to watch a movie)"
+      ],
+      "answerIndex": 0
+    }
+  ]
+}

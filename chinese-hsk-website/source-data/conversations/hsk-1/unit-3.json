@@ -1,72 +1,130 @@
 {
-  "id": "hsk-1-unit-3-conversation-1",
+  "id": "hsk-1-unit-3",
   "hskLevel": 1,
   "unitId": 3,
-  "status": "needs-authoring",
+  "contentType": "dialogue",
+  "status": "ready",
   "title": {
-    "en": "Unit 3 conversation authoring brief",
-    "zh": "第3单元会话编写说明",
-    "ar": "موجز تأليف محادثة الوحدة 3"
+    "zh": "第3课：你叫什么名字",
+    "en": "Lesson 3: What Is Your Name",
+    "ar": "الدرس 3: ما اسمك"
   },
   "targetVocabularyIds": [
-    "kan-jian",
-    "ke",
-    "ke-yi",
-    "kou",
-    "kuai",
-    "lai",
-    "laoshi",
-    "le",
-    "leng",
-    "li",
-    "liang",
-    "ling",
-    "liu",
-    "ma",
-    "mai",
-    "mai-2",
-    "ma-ma",
-    "mang",
-    "mao",
-    "mei-guanxi",
-    "meimei",
-    "mei-shi",
-    "meiyou",
-    "men",
-    "mianbao",
-    "miantiaor",
-    "mifan",
-    "mingnian",
-    "mingtian",
+    "jiao",
+    "shenme",
     "mingzi",
-    "na",
-    "na-2",
-    "nabian",
-    "na-ge",
-    "na-ge-2",
-    "nali",
-    "nali-2",
-    "nan",
-    "nan-peng-you",
-    "nar",
-    "nar-2",
-    "naxie",
-    "naxie-2",
-    "ne",
-    "neng",
-    "ni",
-    "ni-hao",
-    "nian",
-    "nimen",
-    "nin"
+    "wo",
+    "shi-3",
+    "laoshi",
+    "ma",
+    "xuesheng",
+    "ren",
+    "zhongguo"
   ],
-  "dialogue": [],
-  "grammarNotes": [],
-  "culturalNotes": [],
-  "comprehensionQuestions": [],
+  "dialogue": [
+    {
+      "id": "3-1-1",
+      "role": "Speaker A",
+      "hanzi": "你叫什么名字？",
+      "pinyin": "Nǐ jiào shénme míngzi?",
+      "translation": {
+        "en": "What is your name?",
+        "ar": "ما اسمك؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "3-1-2",
+      "role": "Speaker B",
+      "hanzi": "我叫李月。",
+      "pinyin": "Wǒ jiào Lǐ Yuè.",
+      "translation": {
+        "en": "My name is Li Yue.",
+        "ar": "اسمي لي يوي."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-2-1",
+      "role": "Speaker A",
+      "hanzi": "你是老师吗？",
+      "pinyin": "Nǐ shì lǎoshī ma?",
+      "translation": {
+        "en": "Are you a teacher?",
+        "ar": "هل أنتَ معلّم؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "3-2-2",
+      "role": "Speaker B",
+      "hanzi": "我不是老师，我是学生。",
+      "pinyin": "Wǒ bú shì lǎoshī, wǒ shì xuésheng.",
+      "translation": {
+        "en": "I am not a teacher, I am a student.",
+        "ar": "أنا لستُ معلماً، أنا طالب."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-3-1",
+      "role": "Speaker A",
+      "hanzi": "你是中国人吗？",
+      "pinyin": "Nǐ shì Zhōngguó rén ma?",
+      "translation": {
+        "en": "Are you Chinese?",
+        "ar": "هل أنتَ صيني؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "3-3-2",
+      "role": "Speaker B",
+      "hanzi": "我不是中国人，我是美国人。",
+      "pinyin": "Wǒ bú shì Zhōngguó rén, wǒ shì Měiguó rén.",
+      "translation": {
+        "en": "I am not Chinese, I am American.",
+        "ar": "أنا لستُ صينياً، أنا أمريكي."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Question word 什么 (shénme)",
+      "explanation": "Chinese question sentences maintain the same word order as declarative sentences: Subject + Verb + Object/Question word.",
+      "arExplanation": "يحافظ السؤال باللغة الصينية على نفس ترتيب الجملة الخبرية العادية."
+    },
+    {
+      "point": "Question particle 吗 (ma)",
+      "explanation": "Appending 吗 to the end of a statement forms a yes-no question without changing verb order.",
+      "arExplanation": "إضافة أداة الاستفهام 吗 في نهاية الجملة يحولها إلى سؤال بنعم أو لا."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Chinese Names Order",
+      "detail": "In Chinese names, the family surname comes first, followed by the personal given name (e.g., Li Yue).",
+      "arDetail": "في الأسماء الصينية، يسبق اسم العائلة (اللقب) الاسم الشخصي."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q3-1",
+      "question": "Is Li Yue a teacher or a student?",
+      "arQuestion": "هل لي يوي معلمة أم طالبة؟",
+      "options": [
+        "学生 (Student)",
+        "老师 (Teacher)",
+        "医生 (Doctor)",
+        "工人 (Worker)"
+      ],
+      "answerIndex": 0
+    }
+  ],
   "shadowingPractice": {
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "This scaffold intentionally contains no invented dialogue. Add reviewed Chinese, pinyin, English, Arabic, and real audio paths before marking complete."
+  "authoringNote": "Official HSK 1 Standard Course Lesson 3 dialogues."
 }

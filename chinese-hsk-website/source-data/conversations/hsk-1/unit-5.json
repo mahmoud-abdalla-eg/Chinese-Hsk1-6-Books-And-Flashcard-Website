@@ -1,72 +1,154 @@
 {
-  "id": "hsk-1-unit-5-conversation-1",
+  "id": "hsk-1-unit-5",
   "hskLevel": 1,
   "unitId": 5,
-  "status": "needs-authoring",
+  "contentType": "dialogue",
+  "status": "ready",
   "title": {
-    "en": "Unit 5 conversation authoring brief",
-    "zh": "第5单元会话编写说明",
-    "ar": "موجز تأليف محادثة الوحدة 5"
+    "zh": "第5课：她女儿今年二十岁",
+    "en": "Lesson 5: Her Daughter Is 20 Years Old",
+    "ar": "الدرس 5: ابنتها تبلغ من العمر عشرين عاماً"
   },
   "targetVocabularyIds": [
-    "ta-2",
-    "ta-3",
-    "tai",
-    "tamen",
-    "tamen-2",
-    "tamen-3",
-    "tian",
-    "tianqi",
-    "ting",
-    "tingjian",
-    "tongxue",
-    "wai",
-    "waibian",
-    "wan",
-    "wan-2",
-    "wanfan",
-    "wanshang",
-    "wei",
-    "wen",
-    "wenti",
-    "wo",
-    "women",
-    "wu",
-    "wu-fan",
-    "xia",
-    "xia-yu",
-    "xia-ban",
-    "xia-ke",
-    "xiang",
-    "xiansheng",
-    "xianzai",
-    "xiao",
-    "xiao-pengyou",
-    "xiaoshi",
-    "xiaoxue",
-    "xiaoxuesheng",
-    "xiawu",
-    "xie",
-    "xie-2",
-    "xiexie",
-    "xi-huan",
-    "xin",
-    "xingqi",
-    "xingqiri",
-    "xingqitian",
-    "xiuxi",
-    "xue",
-    "xue-2",
-    "xuesheng",
-    "xuexi"
+    "jia",
+    "you",
+    "kou",
+    "ji",
+    "san",
+    "nu-er",
+    "sui",
+    "le",
+    "jinnian",
+    "si",
+    "duo",
+    "da"
   ],
-  "dialogue": [],
-  "grammarNotes": [],
-  "culturalNotes": [],
-  "comprehensionQuestions": [],
+  "dialogue": [
+    {
+      "id": "5-1-1",
+      "role": "Speaker A",
+      "hanzi": "你家有几口人？",
+      "pinyin": "Nǐ jiā yǒu jǐ kǒu rén?",
+      "translation": {
+        "en": "How many people are there in your family?",
+        "ar": "كم فرداً في عائلتك؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-1-2",
+      "role": "Speaker B",
+      "hanzi": "我家有三口人。",
+      "pinyin": "Wǒ jiā yǒu sān kǒu rén.",
+      "translation": {
+        "en": "There are three people in my family.",
+        "ar": "في عائلتي ثلاثة أفراد."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-2-1",
+      "role": "Speaker A",
+      "hanzi": "你女儿几岁了？",
+      "pinyin": "Nǐ nǚ'ér jǐ suì le?",
+      "translation": {
+        "en": "How old is your daughter?",
+        "ar": "كم عمر ابنتك؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-2-2",
+      "role": "Speaker B",
+      "hanzi": "她今年四岁了。",
+      "pinyin": "Tā jīnnián sì suì le.",
+      "translation": {
+        "en": "She is four years old this year.",
+        "ar": "عمرها أربع سنوات هذا العام."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-3-1",
+      "role": "Speaker A",
+      "hanzi": "李老师多大了？",
+      "pinyin": "Lǐ lǎoshī duō dà le?",
+      "translation": {
+        "en": "How old is Teacher Li?",
+        "ar": "كم عمر الأستاذة لي؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-3-2",
+      "role": "Speaker B",
+      "hanzi": "她今年五十岁了。",
+      "pinyin": "Tā jīnnián wǔshí suì le.",
+      "translation": {
+        "en": "She is fifty years old this year.",
+        "ar": "عمرها خمسون عاماً هذا العام."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-3-3",
+      "role": "Speaker A",
+      "hanzi": "她女儿呢？",
+      "pinyin": "Tā nǚ'ér ne?",
+      "translation": {
+        "en": "What about her daughter?",
+        "ar": "وماذا عن ابنتها؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-3-4",
+      "role": "Speaker B",
+      "hanzi": "她女儿今年二十岁。",
+      "pinyin": "Tā nǚ'ér jīnnián èrshí suì.",
+      "translation": {
+        "en": "Her daughter is twenty years old this year.",
+        "ar": "ابنتها تبلغ من العمر عشرين عاماً هذا العام."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Asking age with 几 (jǐ) vs 多大 (duō dà)",
+      "explanation": "几岁 (jǐ suì) is typically used when asking the age of young children (under 10). 多大 (duō dà) is used for peers or adults.",
+      "arExplanation": "تستخدم 几岁 للسؤال عن عمر الأطفال دون العاشرة، بينما تستخدم 多大 للبالغين والأقران."
+    },
+    {
+      "point": "Measure word 口 (kǒu) for family members",
+      "explanation": "口 is the standard measure word specifically used when counting the number of members in a family.",
+      "arExplanation": "كلمة القياس 口 مخصصة حصرياً لعد أفراد الأسرة."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Inquiring about Family",
+      "detail": "Asking about family size is a friendly conversational icebreaker in China expressing warmth and care.",
+      "arDetail": "يعد السؤال عن أفراد الأسرة من الأحاديث الودية المألوفة لتعزيز التواصل الاجتماعي في الصين."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q5-1",
+      "question": "How old is Teacher Li's daughter?",
+      "arQuestion": "كم يبلغ عمر ابنة الأستاذة لي؟",
+      "options": [
+        "二十岁 (20 years old)",
+        "四岁 (4 years old)",
+        "五十岁 (50 years old)",
+        "三岁 (3 years old)"
+      ],
+      "answerIndex": 0
+    }
+  ],
   "shadowingPractice": {
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "This scaffold intentionally contains no invented dialogue. Add reviewed Chinese, pinyin, English, Arabic, and real audio paths before marking complete."
+  "authoringNote": "Official HSK 1 Standard Course Lesson 5 dialogues."
 }

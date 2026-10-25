@@ -1,0 +1,275 @@
+{
+  "id": "hsk-2-hsk3-unit-7",
+  "curriculum": "hsk3",
+  "hskLevel": 2,
+  "unitId": 7,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第7课：他篮球打得很好",
+    "en": "Lesson 7: He plays basketball very well",
+    "ar": "الدرس 7: هو يلعب كرة السلة بشكل ممتاز"
+  },
+  "dialogue": [
+    {
+      "id": "7-1-1",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "安妮，你是什么时候从北京回来的？",
+      "pinyin": "Ānnī, nǐ shì shénme shíhou cóng Běijīng huílái de?",
+      "translation": {
+        "en": "Annie, when did you get back from Beijing?",
+        "ar": "آني، متى عدتِ من بكين؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-1-2",
+      "role": "安妮 (Annie)",
+      "hanzi": "昨天下午。天中，你怎么一下课就往外跑？",
+      "pinyin": "Zuótiān xiàwǔ. Tiānzhōng, nǐ zěnme yí xiàkè jiù wǎng wài pǎo?",
+      "translation": {
+        "en": "Yesterday afternoon. Tianzhong, why do you rush outside as soon as class ends?",
+        "ar": "بعد ظهر أمس. يا تيانتشونغ، لماذا تهرع إلى الخارج بمجرد انتهاء الحصة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-1-3",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "我跟同学说好了，一起去打篮球。",
+      "pinyin": "Wǒ gēn tóngxué shuōhǎo le, yìqǐ qù dǎ lánqiú.",
+      "translation": {
+        "en": "I made plans with my classmates to go play basketball together.",
+        "ar": "اتفقت مع زملائي على الذهاب للعب كرة السلة معاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-1-4",
+      "role": "安妮 (Annie)",
+      "hanzi": "我也想跟你们一起玩。",
+      "pinyin": "Wǒ yě xiǎng gēn nǐmen yìqǐ wán.",
+      "translation": {
+        "en": "I'd like to join and play with you guys too.",
+        "ar": "أود اللعب معتكم أيضاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-1-5",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "没问题，走吧。",
+      "pinyin": "Méi wèntí, zǒu ba.",
+      "translation": {
+        "en": "No problem! Let's go.",
+        "ar": "لا مشكلة على الإطلاق، هيا بنا."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-2-1",
+      "role": "安妮 (Annie)",
+      "hanzi": "天中，你是不是很喜欢打篮球？",
+      "pinyin": "Tiānzhōng, nǐ shì bu shì hěn xǐhuan dǎ lánqiú?",
+      "translation": {
+        "en": "Tianzhong, do you really like playing basketball?",
+        "ar": "تيانتشونغ، هل تحب حقاً لعب كرة السلة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-2-2",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "是啊。",
+      "pinyin": "Shì a.",
+      "translation": {
+        "en": "Yes, I do.",
+        "ar": "نعم بالتأكيد."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-2-3",
+      "role": "安妮 (Annie)",
+      "hanzi": "你还喜欢什么运动？",
+      "pinyin": "Nǐ hái xǐhuan shénme yùndòng?",
+      "translation": {
+        "en": "What other sports do you like?",
+        "ar": "ما الرياضات الأخرى التي تفضلها أيضاً؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-2-4",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "我还喜欢踢足球，一到星期天就跟朋友们去踢球。",
+      "pinyin": "Wǒ hái xǐhuan tī zúqiú, yí dào xīngqītiān jiù gēn péngyoumen qù tī qiú.",
+      "translation": {
+        "en": "I also love playing soccer. Whenever Sunday comes, I go play ball with friends.",
+        "ar": "أحب أيضاً لعب كرة القدم، وبمجرد حلول يوم الأحد أذهب للعب الكرة مع الأصدقاء."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-2-5",
+      "role": "安妮 (Annie)",
+      "hanzi": "你踢得怎么样？",
+      "pinyin": "Nǐ tī de zěnmeyàng?",
+      "translation": {
+        "en": "How well do you play?",
+        "ar": "كيف هو مستواك في اللعب؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-2-6",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "我踢得还可以。",
+      "pinyin": "Wǒ tī de hái kěyǐ.",
+      "translation": {
+        "en": "I play pretty decently.",
+        "ar": "ألعب بشكل لا بأس به."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-3-1",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "你篮球打得怎么样？",
+      "pinyin": "Nǐ lánqiú dǎ de zěnmeyàng?",
+      "translation": {
+        "en": "How are your basketball skills?",
+        "ar": "كيف هو مستواكِ في كرة السلة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-3-2",
+      "role": "安妮 (Annie)",
+      "hanzi": "还行吧。",
+      "pinyin": "Hái xíng ba.",
+      "translation": {
+        "en": "It's alright, I guess.",
+        "ar": "مستواي مقبول نوعاً ما."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-3-3",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "跑步呢？你跑得快不快？",
+      "pinyin": "Pǎobù ne? Nǐ pǎo de kuài bu kuài?",
+      "translation": {
+        "en": "What about running? Do you run fast?",
+        "ar": "وماذا عن الجري؟ هل تجرين بسرعة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-3-4",
+      "role": "安妮 (Annie)",
+      "hanzi": "我跑得不快，也不太喜欢跑步。",
+      "pinyin": "Wǒ pǎo de bú kuài, yě bú tài xǐhuan pǎobù.",
+      "translation": {
+        "en": "I don't run fast, and I don't really like running either.",
+        "ar": "لا أجري بسرعة، ولا أحب الجري كثيراً في الواقع."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-3-5",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "那你喜欢游泳吗？",
+      "pinyin": "Nà nǐ xǐhuan yóuyǒng ma?",
+      "translation": {
+        "en": "Then do you like swimming?",
+        "ar": "إذاً هل تحبين السباحة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-3-6",
+      "role": "安妮 (Annie)",
+      "hanzi": "喜欢，但我游泳游得不快。",
+      "pinyin": "Xǐhuan, dàn wǒ yóuyǒng yóu de bú kuài.",
+      "translation": {
+        "en": "I do, but I don't swim very fast.",
+        "ar": "أحبها، لكنني لا أسبح بسرعة."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-4-1",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "我的爱好是运动。从上小学开始，我每天都跟爸爸去运动。现在我篮球打得很好，足球踢得不错，游泳游得也很快。我一有时间就去运动。",
+      "pinyin": "Wǒ de àihào shì yùndòng. Cóng shàng xiǎoxué kāishǐ, wǒ měi tiān dōu gēn bàba qù yùndòng. Xiànzài wǒ lánqiú dǎ de hěn hǎo, zúqiú tī de búcuò, yóuyǒng yóu de yě hěn kuài. Wǒ yì yǒu shíjiān jiù qù yùndòng.",
+      "translation": {
+        "en": "My hobby is doing sports. Ever since primary school, I have exercised with my dad every day. Now I play basketball very well, play soccer quite well, and swim very fast too. Whenever I have free time, I go play sports.",
+        "ar": "هوايتي هي ممارسة الرياضة. منذ بدأت المرحلة الابتدائية، وأنا أمارس الرياضة مع والدي كل يوم. والآن أنا ألعب كرة السلة ببراعة، وألعب كرة القدم بشكل جيد، وأسبح بسرعة فائقة أيضاً. وبمجرد أن يتوفر لدي أي وقت، أذهب لممارسة الرياضة."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Complement of State (状态补语: Verb + 得 + Adj)",
+      "explanation": "Follows a verb with structural particle '得' to describe the manner, outcome, or quality of an action: 踢得还可以 (plays decently); 玩得很高兴 (played happily); 跑得不快 (doesn't run fast). Negation places '不' directly before the adjective.",
+      "arExplanation": "يأتي متمم الحالة بعد الفعل مسبوقاً بأداة '得' لبيان كيفية أو نتيجة أو جودة حدوث الفعل: '踢得还可以' (يلعب بشكل لا بأس به)، '跑得不快' (لا يجري بسرعة). وللنفي نضع '不' قبل الصفة مباشرة."
+    },
+    {
+      "point": "Complement of State with Separable Verbs & Objects",
+      "explanation": "When the verb takes an object or is a separable compound (离合词), the verbal morpheme must be repeated, or the object brought forward: 篮球打得怎么样 (object first); 游泳游得不快 (verb repeated: yóuyǒng yóu de bú kuài); 跑步跑得不快 (pǎobù pǎo de bú kuài).",
+      "arExplanation": "إذا كان الفعل متعدياً لمفعول أو فعلاً انفصالياً (离合词)، يجب تكرار المقطع الفعلي أو تقديم المفعول أولاً: '游泳游得不快' (يكرر الفعل 游)، '篮球打得怎么样' (يقدم المفعول 篮球 أولاً)."
+    },
+    {
+      "point": "Tight Complex Sentence '一……就……' (As soon as... then...)",
+      "explanation": "Indicates that the second event immediately follows the first in time or condition: 一下课就往外跑 (rushes out as soon as class ends); 一到星期天就去踢球 (plays soccer as soon as Sunday arrives); 一有时间就去运动 (exercises whenever there is time).",
+      "arExplanation": "تفيد جملة الربط '一……就……' أن الفعل الثاني يعقب الأول مباشرة في الزمان أو الشرط: '一下课就往外跑' (بمجرد انتهاء الحصة يهرع للخارج)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Sports and Fitness in Chinese Universities and Schools",
+      "detail": "Sports like basketball, soccer, badminton (羽毛球), and table tennis (乒乓球) are extraordinarily popular on Chinese campuses. Every evening after class, university courts and running tracks are bustling with students engaging in physical fitness (全民健身).",
+      "arDetail": "تحظى الرياضات مثل كرة السلة، وكرة القدم، وتنس الريشة، وكرة الطاولة بشعبية جارفة في المدارس والجامعات الصينية. ففي كل مساء بعد انتهاء المحاضرات، تمتلئ الملاعب والمسارات بالطلاب الممارسين للنشاط البدني في إطار تعزيز اللياقة البدنية الوطنية."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q7-1",
+      "question": "What sport was Chen Tianzhong in a hurry to play as soon as class finished?",
+      "arQuestion": "ما الرياضة التي كان تشين تيانتشونغ في عجلة للذهاب لممارستها فور انتهاء الحصة؟",
+      "options": [
+        "打篮球 (Play basketball)",
+        "去游泳 (Go swimming)",
+        "去跑步 (Go running)",
+        "踢足球 (Play soccer)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q7-2",
+      "question": "How did Annie describe her own running and swimming abilities?",
+      "arQuestion": "كيف وصفت آني قدراتها في الجري والسباحة؟",
+      "options": [
+        "跑得不快，游泳也游得不快 (Runs slowly, and doesn't swim fast either)",
+        "跑得很快，游泳也游得很快 (Runs very fast and swims very fast)",
+        "她不会游泳 (She doesn't know how to swim)",
+        "她是学校的跑步第一名 (She is the top runner in the school)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q7-3",
+      "question": "Since when has Chen Tianzhong been exercising every day with his father?",
+      "arQuestion": "منذ متى وتشين تيانتشونغ يمارس الرياضة كل يوم مع والده؟",
+      "options": [
+        "从上小学开始 (Since primary school)",
+        "从上大学开始 (Since university)",
+        "从昨天开始 (Since yesterday)",
+        "从上个月开始 (Since last month)"
+      ],
+      "answerIndex": 0
+    }
+  ]
+}

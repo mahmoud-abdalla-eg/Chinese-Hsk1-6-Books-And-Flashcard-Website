@@ -1,0 +1,251 @@
+{
+  "id": "hsk-2-unit-13",
+  "hskLevel": 2,
+  "unitId": 13,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第13课：门开着呢",
+    "en": "Lesson 13: The door is open",
+    "ar": "الدرس 13: الباب مفتوح"
+  },
+  "targetVocabularyIds": [
+    "zhe",
+    "men",
+    "jin",
+    "jinlai",
+    "na",
+    "xiao",
+    "pangbian",
+    "zhang-fu",
+    "baise"
+  ],
+  "dialogue": [
+    {
+      "id": "13-1-1",
+      "role": "Speaker A",
+      "hanzi": "门开着呢，请进。",
+      "pinyin": "Mén kāi zhe ne, qǐng jìn.",
+      "translation": {
+        "en": "The door is open; please come in.",
+        "ar": "الباب مفتوح، تفضل بالدخول."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-1-2",
+      "role": "Speaker B",
+      "hanzi": "张老师在吗？",
+      "pinyin": "Zhāng lǎoshī zài ma?",
+      "translation": {
+        "en": "Is Teacher Zhang here?",
+        "ar": "هل المعلم تشانغ موجود؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-1-3",
+      "role": "Speaker A",
+      "hanzi": "他出去了，你坐在椅子上等他一会儿吧。",
+      "pinyin": "Tā chūqù le, nǐ zuò zài yǐzi shang děng tā yíhuìr ba.",
+      "translation": {
+        "en": "He stepped out; please sit on the chair and wait for him a moment.",
+        "ar": "لقد خرج قليلاً، تفضل بالجلوس على الكرسي وانتظاره للحظات."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-1-4",
+      "role": "Speaker B",
+      "hanzi": "好的，谢谢您。",
+      "pinyin": "Hǎo de, xièxie nín.",
+      "translation": {
+        "en": "All right, thank you.",
+        "ar": "حسناً، شكراً جزيلاً لحضرتك."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-2-1",
+      "role": "Speaker A",
+      "hanzi": "那个笑着说话的人是谁？",
+      "pinyin": "Nàge xiào zhe shuōhuà de rén shì shéi?",
+      "translation": {
+        "en": "Who is that person speaking with a smile?",
+        "ar": "من ذلك الشخص الذي يتحدث مبتسماً؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-2-2",
+      "role": "Speaker B",
+      "hanzi": "那个穿着白衬衫的人吗？他是王经理。",
+      "pinyin": "Nàge chuān zhe bái chènshān de rén ma? Tā shì Wáng jīnglǐ.",
+      "translation": {
+        "en": "The one wearing a white shirt? That's Manager Wang.",
+        "ar": "هل تقصد ذلك الذي يرتدي قميصاً أبيض؟ إنه المدير وانغ."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-2-3",
+      "role": "Speaker A",
+      "hanzi": "他旁边那个人呢？",
+      "pinyin": "Tā pángbiān nàge rén ne?",
+      "translation": {
+        "en": "And who is that person next to him?",
+        "ar": "ومن الشخص الذي بجواره؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-2-4",
+      "role": "Speaker B",
+      "hanzi": "那是他爱人。",
+      "pinyin": "Nà shì tā àiren.",
+      "translation": {
+        "en": "That's his spouse.",
+        "ar": "تلك زوجته."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-3-1",
+      "role": "Speaker A",
+      "hanzi": "外面下着雨呢，你带着伞吗？",
+      "pinyin": "Wàimiàn xià zhe yǔ ne, nǐ dài zhe sǎn ma?",
+      "translation": {
+        "en": "It's raining outside; did you bring an umbrella?",
+        "ar": "السماء تمطر في الخارج، هل معك مظلة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-3-2",
+      "role": "Speaker B",
+      "hanzi": "没带伞，我等雨停了再走。",
+      "pinyin": "Méi dài sǎn, wǒ děng yǔ tíng le zài zǒu.",
+      "translation": {
+        "en": "I didn't bring one; I'll wait until the rain stops before leaving.",
+        "ar": "لم أحضر مظلة، سأنتظر حتى يتوقف المطر ثم أنصرف."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-3-3",
+      "role": "Speaker A",
+      "hanzi": "拿着我的伞吧，别淋湿了。",
+      "pinyin": "Ná zhe wǒ de sǎn ba, bié línshī le.",
+      "translation": {
+        "en": "Take my umbrella; don't get drenched.",
+        "ar": "خذ مظلتي هذه، حتى لا تتبلل في المطر."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-3-4",
+      "role": "Speaker B",
+      "hanzi": "太感谢你了，我明天还给你。",
+      "pinyin": "Tài gǎnxiè nǐ le, wǒ míngtiān huán gěi nǐ.",
+      "translation": {
+        "en": "Thank you so much! I'll return it to you tomorrow.",
+        "ar": "أشكرك جزيل الشكر! سأعيدها لك غداً بإذن الله."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-4-1",
+      "role": "Speaker A",
+      "hanzi": "那个手里拿着书的女孩子是谁？",
+      "pinyin": "Nàge shǒulǐ ná zhe shū de nǚháizi shì shéi?",
+      "translation": {
+        "en": "Who is that girl holding a book in her hand?",
+        "ar": "من تلك الفتاة التي تمسك كتاباً بيدها؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-4-2",
+      "role": "Speaker B",
+      "hanzi": "她是新来的留学生，叫玛丽。",
+      "pinyin": "Tā shì xīn lái de liúxuéshēng, jiào Mǎlì.",
+      "translation": {
+        "en": "She is a newly arrived international student named Mary.",
+        "ar": "إنها طالبة وافدة جديدة تدعى ماري."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-4-3",
+      "role": "Speaker A",
+      "hanzi": "她长得真漂亮。",
+      "pinyin": "Tā zhǎng de zhēn piàoliang.",
+      "translation": {
+        "en": "She looks truly beautiful.",
+        "ar": "ملامحها جميلة وجذابة حقاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-4-4",
+      "role": "Speaker B",
+      "hanzi": "是啊，而且学习也很努力。",
+      "pinyin": "Shì a, érqiě xuéxí yě hěn nǔlì.",
+      "translation": {
+        "en": "Yes, and she studies very diligently too.",
+        "ar": "أجل، وهي أيضاً مجتهدة جداً في دراستها."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "The Aspect Particle 着 (zhe) Indicating Continuous State",
+      "explanation": "Indicates the ongoing state of an action or existence: Verb + 着 (e.g., 门开着呢 = The door is open, 手里拿着书 = holding a book in hand).",
+      "arExplanation": "أداة المظهر الاستمراري 着: تُوضع بعد الفعل لتدل على ثبات واستمرار حالة الفعل أو الوضعية (مثل: الباب مفتوح، يحمل كتاباً بيده)."
+    },
+    {
+      "point": "Two Simultaneous Actions: Verb 1 + 着 + Verb 2",
+      "explanation": "The first verb with 着 describes the condition or manner while performing the second action (e.g., 笑着说话 = speak smilingly).",
+      "arExplanation": "تركيب الفعلين المتزامنين: فعل 1 + 着 + فعل 2، حيث يوضح الفعل الأول هيئة أو طريقة أداء الفعل الثاني (مثل: يتحدث وهو مبتسم)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Mutual Kindness and Sharing Umbrellas (同舟共济)",
+      "detail": "Offering an umbrella during a sudden downpour is a classic Chinese gesture of kindness and neighborly warmth.",
+      "arDetail": "تُعد إعارة المظلة للآخرين في الأيام الممطرة من أروع علامات الشهامة والتعاون الإنساني النبيل في المجتمع الصيني."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q13-1",
+      "question": "What is the state of the office door in dialogue 1?",
+      "arQuestion": "ما هي حالة باب المكتب في الحوار الأول؟",
+      "options": [
+        "开着呢 (It is open)",
+        "关着呢 (It is closed)",
+        "锁着呢 (It is locked)",
+        "坏了 (It is broken)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q13-2",
+      "question": "Who is the person wearing the white shirt in dialogue 2?",
+      "arQuestion": "من هو الشخص الذي يرتدي قميصاً أبيض في الحوار الثاني؟",
+      "options": [
+        "王经理 (Manager Wang)",
+        "张老师 (Teacher Zhang)",
+        "大卫 (David)",
+        "李先生 (Mr. Li)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official HSK 2 Standard Course Lesson 13 dialogues."
+}

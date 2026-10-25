@@ -1,0 +1,319 @@
+{
+  "id": "hsk-2-hsk3-unit-6",
+  "curriculum": "hsk3",
+  "hskLevel": 2,
+  "unitId": 6,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第6课：小雪，生日快乐！",
+    "en": "Lesson 6: Happy birthday, Xiaoxue!",
+    "ar": "الدرس 6: عيد ميلاد سعيد يا شياوشيويه!"
+  },
+  "dialogue": [
+    {
+      "id": "6-1-1",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "明天就是女儿的生日了。",
+      "pinyin": "Míngtiān jiù shì nǚ'ér de shēngrì le.",
+      "translation": {
+        "en": "Tomorrow is our daughter's birthday.",
+        "ar": "غداً هو يوم ميلاد ابنتنا."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-1-2",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "你不说，我还真忘了。我们给她准备个什么礼物呢？",
+      "pinyin": "Nǐ bù shuō, wǒ hái zhēn wàng le. Wǒmen gěi tā zhǔnbèi ge shénme lǐwù ne?",
+      "translation": {
+        "en": "If you hadn't mentioned it, I would have completely forgotten. What gift should we prepare for her?",
+        "ar": "لو لم تذكري ذلك لكنت نسيت حقاً. ما الهدية التي يجب أن نعدها لها؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-1-3",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "她喜欢画画，你觉得画笔怎么样？",
+      "pinyin": "Tā xǐhuan huà huà, nǐ juéde huàbǐ zěnmeyàng?",
+      "translation": {
+        "en": "She loves drawing. What do you think about color pens?",
+        "ar": "هي تحب الرسم، ما رأيك في أقلام الرسم والتلوين؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-1-4",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "就送画笔吧！",
+      "pinyin": "Jiù sòng huàbǐ ba!",
+      "translation": {
+        "en": "Let's give her color pens then!",
+        "ar": "فلنهدها أقلام التلوين إذاً!"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-1-5",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "那我明天上午就去买。",
+      "pinyin": "Nà wǒ míngtiān shàngwǔ jiù qù mǎi.",
+      "translation": {
+        "en": "Then I'll go buy them tomorrow morning.",
+        "ar": "سأذهب لشرائها صباح الغد إذاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-1-6",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "好的！我再给她买个大大的生日蛋糕。",
+      "pinyin": "Hǎo de! Wǒ zài gěi tā mǎi ge dàdà de shēngrì dàngāo.",
+      "translation": {
+        "en": "Great! I'll also buy her a big birthday cake.",
+        "ar": "حسناً! وسأشتري لها أيضاً كعكة عيد ميلاد كبيرة جداً."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-2-1",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "小雪，生日快乐！",
+      "pinyin": "Xiǎoxuě, shēngrì kuàilè!",
+      "translation": {
+        "en": "Xiaoxue, happy birthday!",
+        "ar": "شياوشيويه، عيد ميلاد سعيد!"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-2-2",
+      "role": "刘小明 (Liu Xiaoming)",
+      "hanzi": "姐姐，生日快乐！",
+      "pinyin": "Jiějie, shēngrì kuàilè!",
+      "translation": {
+        "en": "Sister, happy birthday!",
+        "ar": "أختي الكبرى، عيد ميلاد سعيد!"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-2-3",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "小雪，这是爸爸、妈妈送你的礼物。",
+      "pinyin": "Xiǎoxuě, zhè shì bàba, māma sòng nǐ de lǐwù.",
+      "translation": {
+        "en": "Xiaoxue, here is the gift from Dad and Mom.",
+        "ar": "شياوشيويه، هذه هدية من والدكِ ووالدتكِ."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-2-4",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "你打开看看喜欢不喜欢。",
+      "pinyin": "Nǐ dǎkāi kànkan xǐhuan bù xǐhuan.",
+      "translation": {
+        "en": "Open it and see if you like it.",
+        "ar": "افتحيها وانظري إن كانت تعجبكِ."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-2-5",
+      "role": "刘小雪 (Liu Xiaoxue)",
+      "hanzi": "画笔！我很喜欢！",
+      "pinyin": "Huàbǐ! Wǒ hěn xǐhuan!",
+      "translation": {
+        "en": "Color pens! I love them so much!",
+        "ar": "أقلام تلوين! أحببتها كثيراً!"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-2-6",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "那你想画点儿什么？",
+      "pinyin": "Nà nǐ xiǎng huà diǎnr shénme?",
+      "translation": {
+        "en": "So what would you like to draw?",
+        "ar": "إذاً ماذا تودين أن ترسمي؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-2-7",
+      "role": "刘小雪 (Liu Xiaoxue)",
+      "hanzi": "画我们的家！有爸爸、妈妈、弟弟，还有黑色的狗、白色的猫什么的。",
+      "pinyin": "Huà wǒmen de jiā! Yǒu bàba, māma, dìdi, hái yǒu hēisè de gǒu, báisè de māo shénmede.",
+      "translation": {
+        "en": "Draw our home! With Dad, Mom, little brother, and our black dog, white cat, and all the rest.",
+        "ar": "سأرسم بيتنا! فيه أبي، وأمي، وأخي الصغير، والكلب الأسود، والقطة البيضاء، وغيرها!"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-2-8",
+      "role": "刘小明 (Liu Xiaoming)",
+      "hanzi": "那我要画一个穿白色衣服的姐姐。",
+      "pinyin": "Nà wǒ yào huà yí ge chuān báisè yīfu de jiějie.",
+      "translation": {
+        "en": "Then I want to draw an older sister wearing white clothes.",
+        "ar": "إذاً أريد أنا أن أرسم أختي وهي ترتدي ملابس بيضاء."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-3-1",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "小雪，看看今天有什么好吃的。",
+      "pinyin": "Xiǎoxuě, kànkan jīntiān yǒu shénme hǎochī de.",
+      "translation": {
+        "en": "Xiaoxue, take a look at all the delicious food we have today.",
+        "ar": "شياوشيويه، انظري إلى ما لدينا من طعام شهي اليوم."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-3-2",
+      "role": "刘小雪 (Liu Xiaoxue)",
+      "hanzi": "长长的面条儿，大大的蛋糕！",
+      "pinyin": "Chángcháng de miàntiáor, dàdà de dàngāo!",
+      "translation": {
+        "en": "Long longevity noodles and a big cake!",
+        "ar": "نودلز طويلة وكعكة كبيرة جداً!"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-3-3",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "看，还有鱼啊肉啊什么的，都是你最喜欢的。",
+      "pinyin": "Kàn, hái yǒu yú a ròu a shénmede, dōu shì nǐ zuì xǐhuan de.",
+      "translation": {
+        "en": "Look, there's also fish, meat, and so on—all of your favorites.",
+        "ar": "انظري، هناك سمك ولحم وغير ذلك، وكلها من أطباقكِ المفضلة."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-3-4",
+      "role": "刘小雪 (Liu Xiaoxue)",
+      "hanzi": "谢谢爸爸、妈妈！",
+      "pinyin": "Xièxie bàba, māma!",
+      "translation": {
+        "en": "Thank you, Dad and Mom!",
+        "ar": "شكراً لكما يا أبي وأمي!"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-3-5",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "快去叫弟弟过来吃饭吧，吃完饭我们还要出去玩呢。",
+      "pinyin": "Kuài qù jiào dìdi guòlai chī fàn ba, chīwán fàn wǒmen hái yào chūqu wán ne.",
+      "translation": {
+        "en": "Hurry and call your little brother over to eat. After dinner, we're also going out to play!",
+        "ar": "أسرعي ونادي أخاكِ الصغير ليتناول الطعام، فبعد العشاء سنخرج للمرح والتنزه!"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-3-6",
+      "role": "刘小雪 (Liu Xiaoxue)",
+      "hanzi": "过生日真好啊！",
+      "pinyin": "Guò shēngrì zhēn hǎo a!",
+      "translation": {
+        "en": "Celebrating birthdays is so wonderful!",
+        "ar": "كم هو رائع الاحتفال بعيد الميلاد!"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-3-7",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "是的，过生日就要吃好吃的，还要高高兴兴地玩。",
+      "pinyin": "Shì de, guò shēngrì jiù yào chī hǎochī de, hái yào gāogāoxìngxìng de wán.",
+      "translation": {
+        "en": "That's right! On your birthday, you should eat delicious treats and have lots of fun joyfully.",
+        "ar": "نعم، في عيد الميلاد يجب أن نتناول الطعام اللذيذ ونستمتع بمرح وسرور."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-4-1",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "今天是女儿的生日。我们买了蛋糕，做了面条儿，还做了鱼啊肉啊什么的。吃完晚饭，全家人去看了个电影。回家后，孩子们早早地就上床了。明天不上学，他们说要舒舒服服地睡一觉，让我们晚点儿叫他们起床。这是很忙、很累，但很快乐的一天。",
+      "pinyin": "Jīntiān shì nǚ'ér de shēngrì. Wǒmen mǎile dàngāo, zuòle miàntiáor, hái zuòle yú a ròu a shénmede. Chīwán wǎnfàn, quán jiā rén qù kànle ge diànyǐng. Huí jiā hòu, háizimen zǎozǎo de jiù shàng chuáng le. Míngtiān bù shàngxué, tāmen shuō yào shūshūfúfú de shuì yí jiào, ràng wǒmen wǎndiǎnr jiào tāmen qǐchuáng. Zhè shì hěn máng, hěn lèi, dàn hěn kuàilè de yì tiān.",
+      "translation": {
+        "en": "Today was our daughter's birthday. We bought a cake, made noodles, and cooked fish, meat, and other dishes. After dinner, the whole family went to watch a movie. When we got home, the children went to bed early. Since there is no school tomorrow, they said they wanted to have a sound, comfortable sleep and asked us to wake them up a bit later. It was a busy, tiring, yet very happy day.",
+        "ar": "اليوم كان عيد ميلاد ابنتنا. اشترينا كعكة، وصنعنا النودلز، وطهونا السمك واللحم وما شابه. بعد العشاء، ذهبت العائلة بأكملها لمشاهدة فيلم سينمائي. وبعد العودة للبيت، أوى الأطفال إلى الفراش مبكراً. وبما أنه لا توجد مدرسة غداً، فقد قالوا إنهم يريدون النوم براحة تامة وطلبوا منا إيقاظهم في وقت متأخر قليلاً. لقد كان يوماً حافلاً ومتعباً، لكنه مليء بالسعادة والبهجة."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Adjective Reduplication (形容词重叠: AA / AABB)",
+      "explanation": "Monosyllabic adjectives reduplicate as 'AA' (大大, 长长, 早早) and disyllabic adjectives as 'AABB' (高高兴兴, 舒舒服服, 漂漂亮亮). Reduplication conveys vividness, deep degree, or affectionate warmth.",
+      "arExplanation": "تكرار الصفات الأحادية على وزن 'AA' (مثل: 大大 كبير جداً، 长长 طويل)، والصفات الثنائية على وزن 'AABB' (مثل: 高高兴兴 بفرح وسرور، 舒舒服服 براحة تامة). يفيد التكرار التوكيد وزيادة درجة الوصف والتعبير عن الود والمحبة."
+    },
+    {
+      "point": "The Set Phrase '什么的' (And So On / And The Like)",
+      "explanation": "Attached at the end of an enumerated list to indicate 'and so forth' or 'and things like that': 鱼啊肉啊什么的 (fish, meat, and the like); 狗、猫什么的 (dogs, cats, and so on).",
+      "arExplanation": "يُضاف التعبير '什么的' في نهاية سرد عناصر للدلالة على 'وما شابه ذلك' أو 'وغيرها': '鱼啊肉啊什么的' (سمك ولحم وما شابه)."
+    },
+    {
+      "point": "Structural Particle '地' (de) for Manner Adverbials",
+      "explanation": "Placed between an adjective/adverbial modifier and a verb to describe the manner or state of the action: 高高兴兴地玩 (play joyfully); 早早地就上床了 (went to bed early); 舒舒服服地睡一觉 (sleep soundly and comfortably).",
+      "arExplanation": "تُوضع أداة الربط التركيبية '地' بين الصفة أو الظرف والفعل لوصف هيئة أو كيفية أداء الفعل: '高高兴兴地玩' (يمرح بفرح)، '早早地就上床了' (ذهب إلى الفراش مبكراً)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Longevity Noodles (长寿面) & Chinese Birthday Traditions",
+      "detail": "In Chinese culture, eating long noodles on one's birthday is an essential tradition. Because noodles are unbroken and long, they symbolize long life, good health, and longevity (长寿). Today, Chinese families combine this ancient tradition with Western-style birthday cakes and family cinema outings.",
+      "arDetail": "في الثقافة الصينية، يُعد تناول نودلز طول العمر (长寿面) تقليداً أساسياً في أعياد الميلاد؛ فطول خيوط النودلز يرمز إلى العمر المديد والصحة والبركة. واليوم، تدمج العائلات الصينية بين هذا التقليد الأصيل وكعكة عيد الميلاد والخروج في نزهة عائلية."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q6-1",
+      "question": "What gift did Liu Ming and Wang Yixue prepare for their daughter Xiaoxue?",
+      "arQuestion": "ما الهدية التي أعدها ليو مينغ ووانغ ييشيويه لابنتهما شياوشيويه؟",
+      "options": [
+        "画笔和蛋糕 (Color pens and a cake)",
+        "新衣服和鞋子 (New clothes and shoes)",
+        "一只小狗 (A puppy)",
+        "一块新书包 (A new schoolbag)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q6-2",
+      "question": "Why do Chinese people traditionally eat noodles on birthdays?",
+      "arQuestion": "لماذا يتناول الصينيون النودلز تقليدياً في أعياد الميلاد؟",
+      "options": [
+        "因为面条长长的，寓意长寿 (Because long noodles symbolize longevity)",
+        "因为做面条最便宜 (Because noodles are cheapest to make)",
+        "因为面条是甜的 (Because noodles are sweet)",
+        "因为大家都不会做米饭 (Because no one knows how to cook rice)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q6-3",
+      "question": "What did the whole family do after dinner on Xiaoxue's birthday?",
+      "arQuestion": "ماذا فعلت العائلة بأكملها بعد العشاء في يوم ميلاد شياوشيويه؟",
+      "options": [
+        "全家人去看了个电影 (The whole family went to watch a movie)",
+        "去公园踢足球 (Went to the park to play soccer)",
+        "在家里打篮球 (Played basketball at home)",
+        "去商场买手表 (Went to the mall to buy watches)"
+      ],
+      "answerIndex": 0
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "id": "hsk-2-unit-7",
+  "hskLevel": 2,
+  "unitId": 7,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第7课：你家离公司远吗",
+    "en": "Lesson 7: Do you live far from your company?",
+    "ar": "الدرس 7: هل بيتك بعيد عن الشركة؟"
+  },
+  "targetVocabularyIds": [
+    "li",
+    "yuan",
+    "jin-2",
+    "kaoshi",
+    "kaishi",
+    "zoulu",
+    "ditie",
+    "gong-jiao-che",
+    "jichang",
+    "kuai",
+    "man"
+  ],
+  "dialogue": [
+    {
+      "id": "7-1-1",
+      "role": "Speaker A",
+      "hanzi": "大卫，你今天起得真早。",
+      "pinyin": "Dàwèi, nǐ jīntiān qǐ de zhēn zǎo.",
+      "translation": {
+        "en": "David, you woke up really early today.",
+        "ar": "ديفيد، لقد استيقظت باكراً جداً اليوم."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-1-2",
+      "role": "Speaker B",
+      "hanzi": "是啊，今天有考试。",
+      "pinyin": "Shì a, jīntiān yǒu kǎoshì.",
+      "translation": {
+        "en": "Yes, there is an exam today.",
+        "ar": "أجل، لدي امتحان اليوم."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-1-3",
+      "role": "Speaker A",
+      "hanzi": "考试几点开始？",
+      "pinyin": "Kǎoshì jǐ diǎn kāishǐ?",
+      "translation": {
+        "en": "What time does the exam start?",
+        "ar": "في أي وقت يبدأ الامتحان؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-1-4",
+      "role": "Speaker B",
+      "hanzi": "八点半，还有半个小时呢。",
+      "pinyin": "Bā diǎn bàn, hái yǒu bàn ge xiǎoshí ne.",
+      "translation": {
+        "en": "At eight-thirty; there's still half an hour left.",
+        "ar": "في الثامنة والنصف، ما زال هناك نصف ساعة."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-2-1",
+      "role": "Speaker A",
+      "hanzi": "你家离学校远吗？",
+      "pinyin": "Nǐ jiā lí xuéxiào yuǎn ma?",
+      "translation": {
+        "en": "Is your home far from school?",
+        "ar": "هل منزلك بعيد عن المدرسة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-2-2",
+      "role": "Speaker B",
+      "hanzi": "不远，坐公共汽车二十分钟就到了。",
+      "pinyin": "Bù yuǎn, zuò gōnggòng qìchē èrshí fēnzhōng jiù dào le.",
+      "translation": {
+        "en": "Not far; it takes just twenty minutes by bus.",
+        "ar": "ليس بعيداً، عشرون دقيقة بالحافلة وأصل."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-2-3",
+      "role": "Speaker A",
+      "hanzi": "走路要多长时间？",
+      "pinyin": "Zǒulù yào duō cháng shíjiān?",
+      "translation": {
+        "en": "How long does it take walking?",
+        "ar": "كم يستغرق المشي على الأقدام؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-2-4",
+      "role": "Speaker B",
+      "hanzi": "走路得走四十分钟。",
+      "pinyin": "Zǒulù děi zǒu sìshí fēnzhōng.",
+      "translation": {
+        "en": "Walking takes forty minutes.",
+        "ar": "المشي يستغرق أربعين دقيقة."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-3-1",
+      "role": "Speaker A",
+      "hanzi": "你家离公司远吗？",
+      "pinyin": "Nǐ jiā lí gōngsī yuǎn ma?",
+      "translation": {
+        "en": "Do you live far from the company?",
+        "ar": "هل بيتك بعيد عن مقر الشركة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-3-2",
+      "role": "Speaker B",
+      "hanzi": "很远，坐地铁要一个小时。",
+      "pinyin": "Hěn yuǎn, zuò dìtiě yào yí ge xiǎoshí.",
+      "translation": {
+        "en": "Very far; it takes an hour by subway.",
+        "ar": "بعيد جداً، يستغرق الأمر ساعة واحدة بالمترو."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-3-3",
+      "role": "Speaker A",
+      "hanzi": "开车呢？",
+      "pinyin": "Kāi chē ne?",
+      "translation": {
+        "en": "What about driving?",
+        "ar": "وماذا عن قيادة السيارة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-3-4",
+      "role": "Speaker B",
+      "hanzi": "开车更慢，路上车太多了。",
+      "pinyin": "Kāi chē gèng màn, lùshang chē tài duō le.",
+      "translation": {
+        "en": "Driving is even slower; there is too much traffic on the roads.",
+        "ar": "السيارة أبطأ حتى، فالازدحام المروري شديد على الطرقات."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-4-1",
+      "role": "Speaker A",
+      "hanzi": "飞机起飞了吗？",
+      "pinyin": "Fēijī qǐfēi le ma?",
+      "translation": {
+        "en": "Has the plane taken off?",
+        "ar": "هل أقلعت الطائرة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-4-2",
+      "role": "Speaker B",
+      "hanzi": "还没有，还有十五分钟。",
+      "pinyin": "Hái méiyǒu, hái yǒu shíwǔ fēnzhōng.",
+      "translation": {
+        "en": "Not yet; there are still fifteen minutes.",
+        "ar": "ليس بعد، ما زال هناك خمس عشرة دقيقة."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-4-3",
+      "role": "Speaker A",
+      "hanzi": "我们快点儿进去吧。",
+      "pinyin": "Wǒmen kuài diǎnr jìnqu ba.",
+      "translation": {
+        "en": "Let's hurry up and head inside.",
+        "ar": "دعنا نسرع في الدخول إلى الداخل."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-4-4",
+      "role": "Speaker B",
+      "hanzi": "好，走吧。",
+      "pinyin": "Hǎo, zǒu ba.",
+      "translation": {
+        "en": "Okay, let's go.",
+        "ar": "حسناً، هيا بنا."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "The Preposition 离 (lí) Indicating Distance",
+      "explanation": "Indicates spatial or temporal distance: Place A + 离 + Place B + 远 / 近 (e.g., 我家离学校不远 = My home is not far from school).",
+      "arExplanation": "حرف الجر 离 يُستعمل لبيان المسافة المكانية أو الزمنية بين نقطتين (المكان أ + 离 + المكان ب + بعيد/قريب)."
+    },
+    {
+      "point": "The Particle 呢 (ne) for Ongoing State or Remaining Time",
+      "explanation": "When placed at the end of a sentence with 还 (still), 呢 emphasizes the ongoing situation or time left (e.g., 还有半个小时呢).",
+      "arExplanation": "تُستخدم الأداة 呢 في نهاية الجمل مع 还 لتأكيد بقاء الوقت أو استمرار الحالة الحالية."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Commuting via China's Public Transit",
+      "detail": "With punctuality and safety, China's vast subway (地铁) networks are the most reliable way to beat peak rush hour traffic in major cities.",
+      "arDetail": "تُعتبر شبكات مترو الأنفاق في المدن الصينية الوسيلة الأكثر سرعة وانضباطاً لتفادي الزحام المروري الخانق في ساعات الذروة."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q7-1",
+      "question": "How long does it take Speaker B to reach school by bus?",
+      "arQuestion": "كم يستغرق وصول المتحدث B إلى المدرسة بالحافلة؟",
+      "options": [
+        "二十分钟 (20 minutes)",
+        "四十分钟 (40 minutes)",
+        "一个小时 (One hour)",
+        "十分钟 (10 minutes)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q7-2",
+      "question": "Why is driving to the company slower than taking the subway?",
+      "arQuestion": "لماذا القيادة إلى الشركة أبطأ من ركوب المترو؟",
+      "options": [
+        "路上车太多 (Too many cars on the road)",
+        "路太远 (The road is too far)",
+        "地铁更快 (The subway is free)",
+        "天气不好 (Bad weather)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official HSK 2 Standard Course Lesson 7 dialogues."
+}

@@ -48,6 +48,7 @@ export async function upsertManagedConversation(payload) {
     id: conversation.id,
     hsk_level: conversation.hskLevel,
     unit_id: conversation.unitId,
+    curriculum: conversation.curriculum || "standard",
     status: conversation.status,
     title: conversation.title,
     target_vocabulary_ids: conversation.targetVocabularyIds,
@@ -86,10 +87,17 @@ export async function deleteManagedConversation(conversationId) {
 function normalizeConversation(payload) {
   const hskLevel = Math.max(1, Math.min(6, Number(payload.hskLevel || 1)));
   const unitId = Math.max(1, Number(payload.unitId || 1));
+  const contentType = String(payload.contentType || "dialogue").trim();
+  const curriculum = String(
+    payload.curriculum ||
+      (payload.id && payload.id.includes("hsk3") ? "hsk3" : "standard"),
+  ).trim();
   return {
     id: String(payload.id || `hsk-${hskLevel}-unit-${unitId}`).trim(),
     hskLevel,
     unitId,
+    curriculum,
+    contentType,
     status: String(payload.status || "needs-authoring").trim(),
     title: {
       en: String(payload.title?.en || "").trim(),
@@ -116,10 +124,15 @@ function normalizeConversation(payload) {
 }
 
 function fromDbConversation(conversation) {
+  const id = conversation.id || "";
+  const curriculum =
+    conversation.curriculum || (id.includes("hsk3") ? "hsk3" : "standard");
   return {
-    id: conversation.id || "",
+    id,
     hskLevel: Number(conversation.hsk_level || conversation.hskLevel || 1),
     unitId: Number(conversation.unit_id || conversation.unitId || 1),
+    curriculum,
+    contentType: conversation.content_type || conversation.contentType || "dialogue",
     status: conversation.status || "needs-authoring",
     title: {
       en: conversation.title?.en || "",

@@ -1,72 +1,119 @@
 {
-  "id": "hsk-1-unit-2-conversation-1",
+  "id": "hsk-1-unit-2",
   "hskLevel": 1,
   "unitId": 2,
-  "status": "needs-authoring",
+  "contentType": "dialogue",
+  "status": "ready",
   "title": {
-    "en": "Unit 2 conversation authoring brief",
-    "zh": "第2单元会话编写说明",
-    "ar": "موجز تأليف محادثة الوحدة 2"
+    "zh": "第2课：谢谢你",
+    "en": "Lesson 2: Thank You",
+    "ar": "الدرس 2: شكراً لك"
   },
   "targetVocabularyIds": [
-    "fandian",
-    "fangjian",
-    "fei-chang",
-    "fei-ji",
-    "fen",
-    "fen-zhong",
-    "gaoxing",
-    "ge",
-    "ge-2",
-    "gege",
-    "gei",
-    "gongsi",
-    "gongzuo",
-    "gou",
-    "gui",
-    "guo",
-    "hai",
-    "haizi",
-    "hanyu",
-    "hanzi",
-    "hao",
-    "hao-2",
-    "haochi",
-    "haokan",
-    "haoting",
-    "haowanr",
-    "he",
-    "he-2",
-    "hen",
-    "hou",
-    "hui",
-    "hui-2",
-    "huoche",
-    "ji",
-    "jia",
-    "jian",
-    "jian-2",
-    "jiao",
-    "jiaozi",
-    "jia-ren",
-    "jidan",
-    "jiejie",
-    "jinnian",
-    "jintian",
-    "jiu",
-    "jue-de",
-    "kai",
-    "kai-che",
-    "kan",
-    "kan-bing"
+    "xiexie",
+    "bu-keqi",
+    "bu",
+    "zaijian"
   ],
-  "dialogue": [],
-  "grammarNotes": [],
-  "culturalNotes": [],
-  "comprehensionQuestions": [],
+  "dialogue": [
+    {
+      "id": "2-1-1",
+      "role": "Speaker A",
+      "hanzi": "谢谢！",
+      "pinyin": "Xièxie!",
+      "translation": {
+        "en": "Thank you!",
+        "ar": "شكراً!"
+      },
+      "audio": null
+    },
+    {
+      "id": "2-1-2",
+      "role": "Speaker B",
+      "hanzi": "不客气！",
+      "pinyin": "Bú kèqi!",
+      "translation": {
+        "en": "You are welcome!",
+        "ar": "على الرحب والسعة!"
+      },
+      "audio": null
+    },
+    {
+      "id": "2-2-1",
+      "role": "Speaker A",
+      "hanzi": "谢谢你！",
+      "pinyin": "Xièxie nǐ!",
+      "translation": {
+        "en": "Thank you!",
+        "ar": "شكراً لكَ!"
+      },
+      "audio": null
+    },
+    {
+      "id": "2-2-2",
+      "role": "Speaker B",
+      "hanzi": "不谢！",
+      "pinyin": "Bú xiè!",
+      "translation": {
+        "en": "Don't mention it!",
+        "ar": "لا داعي للشكر!"
+      },
+      "audio": null
+    },
+    {
+      "id": "2-3-1",
+      "role": "Speaker A",
+      "hanzi": "再见！",
+      "pinyin": "Zàijiàn!",
+      "translation": {
+        "en": "Goodbye!",
+        "ar": "إلى اللقاء!"
+      },
+      "audio": null
+    },
+    {
+      "id": "2-3-2",
+      "role": "Speaker B",
+      "hanzi": "再见！",
+      "pinyin": "Zàijiàn!",
+      "translation": {
+        "en": "Goodbye!",
+        "ar": "إلى اللقاء!"
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Tone variation of 不 (Bù)",
+      "explanation": "不 is a 4th tone word, but changes to 2nd tone (bú) when followed by another 4th tone syllable, such as in bú kèqi and bú xiè.",
+      "arExplanation": "تتحول نغمة 不 إلى النغمة الثانية عندما يتبعها مقطع يحمل النغمة الرابعة."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Meaning of 不客气 (Bú kèqi)",
+      "detail": "不客气 translates literally to 'no need to be polite', establishing a welcoming, friendly relationship.",
+      "arDetail": "تعني حرفياً 'لا داعي للمجاملة أو التكلف'، دلالة على الألفة والمودة."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q2-1",
+      "question": "What is the polite reply to 谢谢 (Xièxie)?",
+      "arQuestion": "ما هو الرد المناسب على 谢谢؟",
+      "options": [
+        "不客气 (Bú kèqi)",
+        "没关系 (Méi guānxi)",
+        "您好 (Nín hǎo)",
+        "再见 (Zàijiàn)"
+      ],
+      "answerIndex": 0
+    }
+  ],
   "shadowingPractice": {
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "This scaffold intentionally contains no invented dialogue. Add reviewed Chinese, pinyin, English, Arabic, and real audio paths before marking complete."
+  "authoringNote": "Official HSK 1 Standard Course Lesson 2 dialogues."
 }

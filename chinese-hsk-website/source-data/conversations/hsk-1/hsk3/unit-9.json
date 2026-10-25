@@ -1,0 +1,224 @@
+{
+  "id": "hsk-1-hsk3-unit-9",
+  "curriculum": "hsk3",
+  "hskLevel": 1,
+  "unitId": 9,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第9课：我明天上午在学校学习",
+    "en": "Lesson 9: I'll be studying at school tomorrow morning",
+    "ar": "الدرس 9: سأدرس في المدرسة صباح الغد"
+  },
+  "dialogue": [
+    {
+      "id": "9-1-1",
+      "role": "李文 (Li Wen)",
+      "hanzi": "学校前边有一家电影院。",
+      "pinyin": "Xuéxiào qiánbian yǒu yì jiā diànyǐngyuàn.",
+      "translation": {
+        "en": "There is a cinema in front of the school.",
+        "ar": "توجد دار سينما أمام المدرسة."
+      },
+      "audio": null
+    },
+    {
+      "id": "9-1-2",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "对。我们晚上去那个电影院看电影吧。",
+      "pinyin": "Duì. Wǒmen wǎnshang qù nàge diànyǐngyuàn kàn diànyǐng ba.",
+      "translation": {
+        "en": "Yes. Let's go to that cinema to watch a movie tonight.",
+        "ar": "صحيح. دعينا نذهب إلى تلك السينما الليلة لمشاهدة فيلم."
+      },
+      "audio": null
+    },
+    {
+      "id": "9-1-3",
+      "role": "李文 (Li Wen)",
+      "hanzi": "好！我们七点在电影院外边见，好吗？",
+      "pinyin": "Hǎo! Wǒmen qī diǎn zài diànyǐngyuàn wàibian jiàn, hǎo ma?",
+      "translation": {
+        "en": "Great! Let's meet outside the cinema at 7:00, okay?",
+        "ar": "رائع! لنلتقِ خارج السينما في السابعة، حسناً؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "9-1-4",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "好的，晚上七点见！",
+      "pinyin": "Hǎo de, wǎnshang qī diǎn jiàn!",
+      "translation": {
+        "en": "Okay, see you at 7:00 in the evening!",
+        "ar": "حسناً، أراكِ في السابعة مساءً!"
+      },
+      "audio": null
+    },
+    {
+      "id": "9-2-1",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "椅子上有一本中文书，那是谁的书？",
+      "pinyin": "Yǐzi shang yǒu yì běn Zhōngwén shū, nà shì shéi de shū?",
+      "translation": {
+        "en": "There is a Chinese book on the chair. Whose book is that?",
+        "ar": "يوجد كتاب لغة صينية على الكرسي، كتاب مَن هذا؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "9-2-2",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "是我的书，谢谢。这是我的第二本中文书。",
+      "pinyin": "Shì wǒ de shū, xièxie. Zhè shì wǒ de dì-èr běn Zhōngwén shū.",
+      "translation": {
+        "en": "It's my book, thank you. This is my second Chinese book.",
+        "ar": "إنه كتابي، شكراً لكِ. هذا هو كتابي الصيني الثاني."
+      },
+      "audio": null
+    },
+    {
+      "id": "9-2-3",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "不客气。你明天上午在哪儿？",
+      "pinyin": "Bú kèqi. Nǐ míngtiān shàngwǔ zài nǎr?",
+      "translation": {
+        "en": "You're welcome. Where will you be tomorrow morning?",
+        "ar": "على الرحب والسعة. أين ستكون صباح الغد؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "9-2-4",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "我明天上午在学校学习。",
+      "pinyin": "Wǒ míngtiān shàngwǔ zài xuéxiào xuéxí.",
+      "translation": {
+        "en": "I'll be studying at school tomorrow morning.",
+        "ar": "سأكون أدرس في المدرسة صباح الغد."
+      },
+      "audio": null
+    },
+    {
+      "id": "9-3-1",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "明天星期六，你做什么？",
+      "pinyin": "Míngtiān Xīngqīliù, nǐ zuò shénme?",
+      "translation": {
+        "en": "Tomorrow is Saturday. What are you going to do?",
+        "ar": "غداً يوم السبت، ماذا ستفعل؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "9-3-2",
+      "role": "杨同乐 (Yang Tongle)",
+      "hanzi": "我白天在家里读书，晚上和朋友们去外边唱歌。",
+      "pinyin": "Wǒ báitiān zài jiā li dúshū, wǎnshang hé péngyoumen qù wàibian chàng gē.",
+      "translation": {
+        "en": "I will read at home during the day and go out to sing with friends in the evening.",
+        "ar": "سأقرأ في المنزل نهاراً، وفي المساء سأذهب مع أصدقائي للغناء بالخارج."
+      },
+      "audio": null
+    },
+    {
+      "id": "9-3-3",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "你唱歌很好听。",
+      "pinyin": "Nǐ chàng gē hěn hǎotīng.",
+      "translation": {
+        "en": "You sing very nicely.",
+        "ar": "غناؤك عذب وجميل جداً."
+      },
+      "audio": null
+    },
+    {
+      "id": "9-3-4",
+      "role": "杨同乐 (Yang Tongle)",
+      "hanzi": "谢谢！您星期六做什么？",
+      "pinyin": "Xièxie! Nín Xīngqīliù zuò shénme?",
+      "translation": {
+        "en": "Thank you! What will you do on Saturday?",
+        "ar": "شكراً لكِ! وماذا ستفعلين حضرتكِ يوم السبت؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "9-3-5",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "我在家里做饭、看电视，和孩子们、小狗玩。",
+      "pinyin": "Wǒ zài jiā li zuò fàn, kàn diànshì, hé háizimen, xiǎogǒu wán.",
+      "translation": {
+        "en": "I'll cook at home, watch TV, and play with my children and little dog.",
+        "ar": "سأطبخ في المنزل وأشاهد التلفاز وألعب مع أطفالي وكلبي الصغير."
+      },
+      "audio": null
+    },
+    {
+      "id": "9-3-6",
+      "role": "杨同乐 (Yang Tongle)",
+      "hanzi": "我也有一只小狗。",
+      "pinyin": "Wǒ yě yǒu yì zhī xiǎogǒu.",
+      "translation": {
+        "en": "I have a little dog too.",
+        "ar": "أنا لدي كلب صغير أيضاً."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Existential Sentences (存现句)",
+      "explanation": "Indicates existence using the structure: [Location word] + 有 + [Noun phrase]. E.g., 学校前边有一家电影院 (There is a cinema in front of the school), 椅子上有一本书 (There is a book on the chair).",
+      "arExplanation": "تُستخدم جمل الوجود (存现句) بالتركيب: [اسم المكان] + 有 + [الاسم الموجود]: 'أمام المدرسة توجد دار سينما'."
+    },
+    {
+      "point": "Word Order for Time and Location Adverbials",
+      "explanation": "When time and location co-occur as adverbials, the temporal phrase precedes the locational phrase: [Subject] + [Time] + [Location] + [Verb]. E.g., 我明天上午在学校学习 (I study at school tomorrow morning).",
+      "arExplanation": "عند اجتماع الظرف الزماني والظرف المكاني في الجملة الصينية، يسبق ظرف الزمان ظرف المكان وجوباً: [الفاعل] + [الزمان] + [المكان] + [الفعل]."
+    },
+    {
+      "point": "Ordinal Numbers with 第 (dì)",
+      "explanation": "‘第’ precedes a numeral to form an ordinal number: 第一 (first), 第二 (second), 第二本中文书 (the second Chinese book).",
+      "arExplanation": "تُوضع البادئة '第' قبل الأعداد لصياغة الأعداد الترتيبية: 第一 (الأول)، 第二 (الثاني)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Weekend Activities in Modern China: KTV and Leisure",
+      "detail": "Going out to sing (去外边唱歌 - KTV) with friends is one of the most popular and ubiquitous social bonding activities among youth and young professionals across China.",
+      "arDetail": "يُعد الذهاب للغناء مع الأصدقاء (KTV) من أشهر وأحب الأنشطة الترفيهية والاجتماعية لقضاء عطلة نهاية الأسبوع بين الشباب في الصين."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q9-1",
+      "question": "Whose Chinese book was left on the chair?",
+      "arQuestion": "كتاب مَن للغة الصينية كان متروكاً على الكرسي؟",
+      "options": [
+        "陈天中的 (Chen Tianzhong's)",
+        "白家月的 (Bai Jiayue's)",
+        "李文的 (Li Wen's)",
+        "杨同乐的 (Yang Tongle's)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q9-2",
+      "question": "What will Yang Tongle do on Saturday evening?",
+      "arQuestion": "ماذا سيفعل يانغ تونغله مساء يوم السبت؟",
+      "options": [
+        "和朋友们去外边唱歌 (Go out to sing with friends)",
+        "在家里看电视 (Watch TV at home)",
+        "去学校学习 (Study at school)",
+        "去超市买东西 (Go shopping at the supermarket)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 9."
+}

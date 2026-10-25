@@ -1,0 +1,249 @@
+{
+  "id": "hsk-2-unit-12",
+  "hskLevel": 2,
+  "unitId": 12,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第12课：你穿得太少了",
+    "en": "Lesson 12: You are wearing too little",
+    "ar": "الدرس 12: ملابسك خفيفة جداً"
+  },
+  "targetVocabularyIds": [
+    "de",
+    "chuan",
+    "shenti",
+    "pao-bu",
+    "kuai",
+    "baise",
+    "fanguan"
+  ],
+  "dialogue": [
+    {
+      "id": "12-1-1",
+      "role": "Speaker A",
+      "hanzi": "今天怎么这么冷？",
+      "pinyin": "Jīntiān zěnme zhème lěng?",
+      "translation": {
+        "en": "Why is it so cold today?",
+        "ar": "لماذا الجو بارد للغاية اليوم؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "12-1-2",
+      "role": "Speaker B",
+      "hanzi": "今天降温了，外面零下五度。",
+      "pinyin": "Jīntiān jiàngwēn le, wàimiàn líng xià wǔ dù.",
+      "translation": {
+        "en": "The temperature dropped today; it's five below zero outside.",
+        "ar": "انخفضت درجات الحرارة اليوم، الجو في الخارج خمس درجات تحت الصفر."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-1-3",
+      "role": "Speaker A",
+      "hanzi": "你穿得太少了，容易感冒。",
+      "pinyin": "Nǐ chuān de tài shǎo le, róngyì gǎnmào.",
+      "translation": {
+        "en": "You are wearing too little; it's easy to catch a cold.",
+        "ar": "ملابسك خفيفة وقليلة جداً، من السهل أن تصاب بنزلة برد."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-1-4",
+      "role": "Speaker B",
+      "hanzi": "没关系，我身体很好。",
+      "pinyin": "Méi guānxi, wǒ shēntǐ hěn hǎo.",
+      "translation": {
+        "en": "No worries, I have a strong body.",
+        "ar": "لا تقلق، صحتي قوية ومناعتي جيدة."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-2-1",
+      "role": "Speaker A",
+      "hanzi": "你怎么跑得这么快？",
+      "pinyin": "Nǐ zěnme pǎo de zhème kuài?",
+      "translation": {
+        "en": "How do you run so fast?",
+        "ar": "كيف تجري بهذه السرعة الكبيرة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "12-2-2",
+      "role": "Speaker B",
+      "hanzi": "我每天都练习跑步。",
+      "pinyin": "Wǒ měi tiān dōu liànxí pǎobù.",
+      "translation": {
+        "en": "I practice running every day.",
+        "ar": "أمارس تمرين الجري يومياً."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-2-3",
+      "role": "Speaker A",
+      "hanzi": "你跑得真好，比我快多了。",
+      "pinyin": "Nǐ pǎo de zhēn hǎo, bǐ wǒ kuài duō le.",
+      "translation": {
+        "en": "You run really well, much faster than me.",
+        "ar": "أنت تجري بروعة وتفوق، وأسرع مني بكثير."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-2-4",
+      "role": "Speaker B",
+      "hanzi": "只要坚持练习，你也可以的。",
+      "pinyin": "Zhǐyào jiānchí liànxí, nǐ yě kěyǐ de.",
+      "translation": {
+        "en": "As long as you persist in practicing, you can do it too.",
+        "ar": "طالما أنك تداوم على التدريب، ستستطيع أنت أيضاً تحقيق ذلك."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-3-1",
+      "role": "Speaker A",
+      "hanzi": "你做饭做得真好吃！",
+      "pinyin": "Nǐ zuò fàn zuò de zhēn hǎochī!",
+      "translation": {
+        "en": "You cook so deliciously!",
+        "ar": "طهيك للطعام لذيذ وشهي للغاية!"
+      },
+      "audio": null
+    },
+    {
+      "id": "12-3-2",
+      "role": "Speaker B",
+      "hanzi": "谢谢，我妈妈做饭比我做得更好。",
+      "pinyin": "Xièxie, wǒ māma zuò fàn bǐ wǒ zuò de gèng hǎo.",
+      "translation": {
+        "en": "Thank you, my mother cooks even better than I do.",
+        "ar": "شكراً لك، أمي تطهو أفضل مني بكثير."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-3-3",
+      "role": "Speaker A",
+      "hanzi": "什么时候能尝尝你妈妈做的菜？",
+      "pinyin": "Shénme shíhou néng chángchang nǐ māma zuò de cài?",
+      "translation": {
+        "en": "When can I taste the dishes your mother makes?",
+        "ar": "متى يمكنني تذوق الأطباق التي تعدها والدتك؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "12-3-4",
+      "role": "Speaker B",
+      "hanzi": "下个星期来我家做客吧。",
+      "pinyin": "Xià ge xīngqī lái wǒ jiā zuòkè ba.",
+      "translation": {
+        "en": "Come be a guest at my home next week.",
+        "ar": "تفضل بزيارتنا في بيتنا ضيفاً عزيزاً في الأسبوع القادم."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-4-1",
+      "role": "Speaker A",
+      "hanzi": "昨天晚上下雪了吗？",
+      "pinyin": "Zuótiān wǎnshang xià xuě le ma?",
+      "translation": {
+        "en": "Did it snow last night?",
+        "ar": "هل تساقطت الثلوج الليلة الماضية؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "12-4-2",
+      "role": "Speaker B",
+      "hanzi": "下了，下得很大，地上都是白的。",
+      "pinyin": "Xià le, xià de hěn dà, dìshang dōu shì bái de.",
+      "translation": {
+        "en": "Yes, it snowed heavily; the ground is completely white.",
+        "ar": "نعم، تساقطت بغزارة شديدة، حتى غطى البياض الأرض كلها."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-4-3",
+      "role": "Speaker A",
+      "hanzi": "那我们今天穿暖和一点儿出去走走。",
+      "pinyin": "Nà wǒmen jīntiān chuān nuǎnhuo yìdiǎnr chūqù zǒuzhou.",
+      "translation": {
+        "en": "Then let's dress warmly and go for a walk outside today.",
+        "ar": "إذاً فلنرتدِ ملابس دافئة ونخرج للتنزه اليوم."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-4-4",
+      "role": "Speaker B",
+      "hanzi": "好主意！",
+      "pinyin": "Hǎo zhǔyi!",
+      "translation": {
+        "en": "Great idea!",
+        "ar": "فكرة ممتازة!"
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Complement of State with 得 (de)",
+      "explanation": "Describes the manner or degree of an action: Verb + 得 + Degree Adjective (e.g., 穿得太少 = dress too lightly, 跑得很快 = run very fast).",
+      "arExplanation": "متمم الحال بأداة 得: يأتي بعد الفعل ليوضح كيفية حدوثه أو درجته (مثل: يرتدي ملابس خفيفة، يجري بسرعة)."
+    },
+    {
+      "point": "Combining 比 and Manner Complement",
+      "explanation": "To compare manner: A 比 B + Verb + 得 + Adj (e.g., 你跑得真好，比我快多了 = You run so well, much faster than me).",
+      "arExplanation": "المقارنة مع متمم الحال: الطرف أ + 比 + الطرف ب + الفعل + 得 + الصفة (مثل: يجري أسرع مني بكثير)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Dressing for Winter Warmth in Northern China",
+      "detail": "Northern winters can reach below zero; staying warmly bundled (保暖) is deeply ingrained in family care and daily health advice.",
+      "arDetail": "تصل درجات الحرارة شتاءً في شمال الصين إلى ما تحت الصفر، لذا تحرص الأسر دائماً على التذكير بارتداء الملابس الثقيلة والدافئة."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q12-1",
+      "question": "What is the outdoor temperature in dialogue 1?",
+      "arQuestion": "كم تبلغ درجة الحرارة في الخارج في الحوار الأول؟",
+      "options": [
+        "零下五度 (Minus 5 degrees)",
+        "零下十度 (Minus 10 degrees)",
+        "零度 (Zero degrees)",
+        "五度 (5 degrees above zero)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q12-2",
+      "question": "Who cooks even better according to Speaker B in dialogue 3?",
+      "arQuestion": "من يطهو أفضل في نظر المتحدث B في الحوار الثالث؟",
+      "options": [
+        "妈妈 (Mother)",
+        "爸爸 (Father)",
+        "姐姐 (Older sister)",
+        "朋友 (Friend)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official HSK 2 Standard Course Lesson 12 dialogues."
+}

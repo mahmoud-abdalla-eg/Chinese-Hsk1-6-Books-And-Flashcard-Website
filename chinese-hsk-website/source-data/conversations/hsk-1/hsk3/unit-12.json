@@ -1,0 +1,224 @@
+{
+  "id": "hsk-1-hsk3-unit-12",
+  "curriculum": "hsk3",
+  "hskLevel": 1,
+  "unitId": 12,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第12课：昨天下雪了",
+    "en": "Lesson 12: It snowed yesterday",
+    "ar": "الدرس 12: تساقطت الثلوج أمس"
+  },
+  "dialogue": [
+    {
+      "id": "12-1-1",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "今天天气怎么样？",
+      "pinyin": "Jīntiān tiānqì zěnmeyàng?",
+      "translation": {
+        "en": "How's the weather today?",
+        "ar": "كيف حال الطقس اليوم؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "12-1-2",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "这里的天下不太好，下雨了。",
+      "pinyin": "Zhèlǐ de tiān bú tài hǎo, xià yǔ le.",
+      "translation": {
+        "en": "The weather here isn't very good; it's raining.",
+        "ar": "الطقس هنا ليس جيداً جداً، إنها تمطر."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-1-3",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "雨大吗？",
+      "pinyin": "Yǔ dà ma?",
+      "translation": {
+        "en": "Is it raining heavily?",
+        "ar": "هل المطر غزير؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "12-1-4",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "有点儿大，我觉得很冷。",
+      "pinyin": "Yǒudiǎnr dà, wǒ juéde hěn lěng.",
+      "translation": {
+        "en": "A bit heavy, and I feel really cold.",
+        "ar": "غزير نوعاً ما، وأشعر بالبرد الشديد."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-2-1",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "昨天下雪了。",
+      "pinyin": "Zuótiān xià xuě le.",
+      "translation": {
+        "en": "It snowed yesterday.",
+        "ar": "تساقطت الثلوج بالأمس."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-2-2",
+      "role": "杨同乐 (Yang Tongle)",
+      "hanzi": "是的，太冷了。",
+      "pinyin": "Shì de, tài lěng le.",
+      "translation": {
+        "en": "Yes, it was so cold.",
+        "ar": "نعم، كان الجو بارداً للغاية."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-2-3",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "你昨天没来公司，生病了？",
+      "pinyin": "Nǐ zuótiān méi lái gōngsī, shēngbìng le?",
+      "translation": {
+        "en": "You didn't come to the office yesterday; were you sick?",
+        "ar": "لم تأتِ إلى الشركة أمس، هل كنت مريضاً؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "12-2-4",
+      "role": "杨同乐 (Yang Tongle)",
+      "hanzi": "对，我昨天去医院看病了。",
+      "pinyin": "Duì, wǒ zuótiān qù yīyuàn kànbìng le.",
+      "translation": {
+        "en": "Yes, I went to the hospital to see a doctor yesterday.",
+        "ar": "نعم، ذهبت إلى المستشفى لمراجعة الطبيب أمس."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-3-1",
+      "role": "杨同乐 (Yang Tongle)",
+      "hanzi": "医生，我病了。",
+      "pinyin": "Yīshēng, wǒ bìng le.",
+      "translation": {
+        "en": "Doctor, I'm not feeling well (I've fallen ill).",
+        "ar": "يا دكتور، لقد مرضت."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-3-2",
+      "role": "胡医生 (Doctor Hu)",
+      "hanzi": "我看看。你觉得怎么样？",
+      "pinyin": "Wǒ kànkan. Nǐ juéde zěnmeyàng?",
+      "translation": {
+        "en": "Let me take a look. How are you feeling?",
+        "ar": "دعني ألقي نظرة. بماذا تشعر؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "12-3-3",
+      "role": "杨同乐 (Yang Tongle)",
+      "hanzi": "我很冷。",
+      "pinyin": "Wǒ hěn lěng.",
+      "translation": {
+        "en": "I feel very cold.",
+        "ar": "أشعر ببرودة شديدة."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-3-4",
+      "role": "胡医生 (Doctor Hu)",
+      "hanzi": "好的，吃一点儿药，今天休息半天吧。",
+      "pinyin": "Hǎo de, chī yìdiǎnr yào, jīntiān xiūxi bàn tiān ba.",
+      "translation": {
+        "en": "Alright. Take some medicine and rest for half a day today.",
+        "ar": "حسناً، تناول بعض الدواء واسترح نصف يوم اليوم."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-3-5",
+      "role": "杨同乐 (Yang Tongle)",
+      "hanzi": "好的。",
+      "pinyin": "Hǎo de.",
+      "translation": {
+        "en": "Okay.",
+        "ar": "حسناً."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-3-6",
+      "role": "胡医生 (Doctor Hu)",
+      "hanzi": "回家后再喝些热水。",
+      "pinyin": "Huí jiā hòu zài hē xiē rè shuǐ.",
+      "translation": {
+        "en": "Make sure to drink some warm water after you get home.",
+        "ar": "واشرب بعض الماء الساخن بعد عودتك إلى المنزل."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Change of State with Modal Particle 了 (le)",
+      "explanation": "‘了’ at the end of a clause indicates a change of situation, a new state, or an occurrence: 下雪了 (it started snowing / it snowed), 我病了 (I have fallen ill).",
+      "arExplanation": "تُستخدم الأداة '了' في نهاية الجملة للدلالة على حدوث تغيير في الحالة أو بدء وضع جديد: '下雪了' (تساقطت الثلوج)، '我病了' (أصبحت مريضاً)."
+    },
+    {
+      "point": "Adverb 有点儿 (yǒudiǎnr) vs Quantifier 一点儿 (yìdiǎnr)",
+      "explanation": "‘有点儿’ is placed before adjectives to express a slight, often unfavorable degree: 有点儿大 (a bit heavy/big), 有点儿冷 (a bit cold). In contrast, ‘一点儿’ follows verbs or precedes nouns: 吃一点儿药 (take a bit of medicine).",
+      "arExplanation": "الظرف '有点儿' يوضع قبل الصفات للتعبير عن درجة طفيفة غالباً ما تكون غير مرغوبة: '有点儿冷' (بارد بعض الشيء). أما '一点儿' فتأتي بعد الفعل أو قبل الاسم: '吃一点儿药' (تناول القليل من الدواء)."
+    },
+    {
+      "point": "Verb Reduplication (动词重叠)",
+      "explanation": "Reduplicating monosyllabic verbs (e.g. 看看 kànkan) denotes that an action is brief, casual, or an attempt: 我看看 (Let me take a quick look).",
+      "arExplanation": "تكرار الفعل أحادي المقطع (مثل 看看) يشير إلى أن الفعل يستغرق وقتاً قصيراً أو يتم على سبيل التجربة والاستكشاف: 'دعني ألقِ نظرة سريعة'."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Drinking Hot/Warm Water (喝热水)",
+      "detail": "In China, drinking warm or boiled water is believed to promote digestion, circulation, and health recovery. When people fall ill or catch a cold, the most customary warm advice is '多喝热水' (Drink more hot water).",
+      "arDetail": "يُعتبر شرب الماء الدافئ أو المغلي عادة صحية متجذرة في الثقافة الصينية لتعزيز الدورة الدموية ومقاومة الأمراض. وتُعد نصيحة '多喝热水' (أكثر من شرب الماء الساخن) من أكثر العبارات شيوعاً عند المرض."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q12-1",
+      "question": "Why didn't Yang Tongle go to work yesterday?",
+      "arQuestion": "لماذا لم يذهب يانغ تونغله إلى العمل بالأمس؟",
+      "options": [
+        "他去医院看病了 (He went to hospital to see a doctor)",
+        "天太冷下大雪了 (It was snowing too heavily)",
+        "他在家睡觉 (He was sleeping at home)",
+        "他去买东西了 (He went shopping)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q12-2",
+      "question": "What did Doctor Hu advise Yang Tongle to do after returning home?",
+      "arQuestion": "ماذا نصح الطبيب هو يانغ تونغله أن يفعل بعد عودته للمنزل؟",
+      "options": [
+        "再喝些热水 (Drink some warm water)",
+        "去公司上班 (Go to work at the office)",
+        "喝冰水 (Drink cold ice water)",
+        "去超市买菜 (Go grocery shopping)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 12."
+}

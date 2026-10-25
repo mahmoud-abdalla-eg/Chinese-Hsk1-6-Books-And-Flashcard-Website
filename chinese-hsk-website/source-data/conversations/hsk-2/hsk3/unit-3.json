@@ -1,0 +1,252 @@
+{
+  "id": "hsk-2-hsk3-unit-3",
+  "curriculum": "hsk3",
+  "hskLevel": 2,
+  "unitId": 3,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第3课：我想去西安旅游",
+    "en": "Lesson 3: I want to visit Xi'an",
+    "ar": "الدرس 3: أود السفر لزيارة شيآن"
+  },
+  "dialogue": [
+    {
+      "id": "3-1-1",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "今天回来这么晚啊！",
+      "pinyin": "Jīntiān huílái zhème wǎn a!",
+      "translation": {
+        "en": "You're back so late today!",
+        "ar": "لقد عدت متأخراً جداً اليوم!"
+      },
+      "audio": null
+    },
+    {
+      "id": "3-1-2",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "工作太多了，下班的时候没做完。",
+      "pinyin": "Gōngzuò tài duō le, xiàbān de shíhou méi zuòwán.",
+      "translation": {
+        "en": "There was too much work; I hadn't finished it when the workday ended.",
+        "ar": "كان هناك الكثير من العمل، ولم أنتهِ منه عند وقت انتهاء الدوام."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-1-3",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "菜都做好了，过来吃饭吧。",
+      "pinyin": "Cài dōu zuòhǎo le, guòlái chīfàn ba.",
+      "translation": {
+        "en": "The food is all ready; come and have dinner.",
+        "ar": "لقد أعددت الطعام كله، تعال وتناول العشاء."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-1-4",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "我想休息一下，喝杯水。",
+      "pinyin": "Wǒ xiǎng xiūxi yíxià, hē bēi shuǐ.",
+      "translation": {
+        "en": "I'd like to rest for a moment and have a glass of water.",
+        "ar": "أود أن أستريح قليلاً وأشرب كوباً من الماء."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-1-5",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "好的。",
+      "pinyin": "Hǎo de.",
+      "translation": {
+        "en": "Alright.",
+        "ar": "حسناً."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-2-1",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "我们找个时间去旅游，怎么样？",
+      "pinyin": "Wǒmen zhǎo ge shíjiān qù lǚyóu, zěnmeyàng?",
+      "translation": {
+        "en": "How about we find some time to go on a trip?",
+        "ar": "ما رأيك أن نجد وقتاً مناسباً للذهاب في رحلة سياحية؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "3-2-2",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "好啊，我也很想一起出去玩。",
+      "pinyin": "Hǎo a, wǒ yě hěn xiǎng yìqǐ chūqù wán.",
+      "translation": {
+        "en": "Wonderful! I really want to go out and travel together too.",
+        "ar": "رائع! أنا أيضاً أرغب بشدة في الخروج والتنزه معاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-2-3",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "你想去哪儿？",
+      "pinyin": "Nǐ xiǎng qù nǎr?",
+      "translation": {
+        "en": "Where would you like to go?",
+        "ar": "إلى أين ترغبين في الذهاب؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "3-2-4",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "我还没想好呢。",
+      "pinyin": "Wǒ hái méi xiǎnghǎo ne.",
+      "translation": {
+        "en": "I haven't decided yet.",
+        "ar": "لم أحسم قراري بعد."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-2-5",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "那你再想一想，你想好了，我来买票。",
+      "pinyin": "Nà nǐ zài xiǎng yi xiǎng, nǐ xiǎnghǎo le, wǒ lái mǎi piào.",
+      "translation": {
+        "en": "Then think it over a bit more. Once you decide, I'll buy the tickets.",
+        "ar": "إذاً فكري في الأمر أكثر، وحين تقررين سأتولى شراء التذاكر."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-3-1",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "吃个苹果吧，我都洗好了。",
+      "pinyin": "Chī ge píngguǒ ba, wǒ dōu xǐhǎo le.",
+      "translation": {
+        "en": "Have an apple; I've already washed them.",
+        "ar": "تناول تفاحة، لقد غسلتها كلها."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-3-2",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "好的。",
+      "pinyin": "Hǎo de.",
+      "translation": {
+        "en": "Thanks.",
+        "ar": "شكراً."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-3-3",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "就在桌子上，你自己拿。",
+      "pinyin": "Jiù zài zhuōzi shang, nǐ zìjǐ ná.",
+      "translation": {
+        "en": "They're on the table, just help yourself.",
+        "ar": "إنها على الطاولة، خذ بنفسك."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-3-4",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "我去洗洗手。对了，我们去西安旅游，怎么样？",
+      "pinyin": "Wǒ qù xǐxi shǒu. Duìle, wǒmen qù Xī'ān lǚyóu, zěnmeyàng?",
+      "translation": {
+        "en": "I'll go wash my hands. By the way, what do you think about traveling to Xi'an?",
+        "ar": "سأغسل يدي أولاً. بالمناسبة، ما رأيك لو سافرنا إلى شيآن؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "3-3-5",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "为什么想去西安？",
+      "pinyin": "Wèi shénme xiǎng qù Xī'ān?",
+      "translation": {
+        "en": "Why do you want to go to Xi'an?",
+        "ar": "لماذا ترغب في الذهاب إلى شيآن؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "3-3-6",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "我看了看网上的介绍，这个时候去西安很不错！",
+      "pinyin": "Wǒ kànle kan wǎngshang de jièshào, zhège shíhou qù Xī'ān hěn búcuò!",
+      "translation": {
+        "en": "I looked over the travel guides online; visiting Xi'an around this time is fantastic!",
+        "ar": "ألقيت نظرة على التعريفات السياحية على الإنترنت، وزيارة شيآن في هذا التوقيت ممتازة جداً!"
+      },
+      "audio": null
+    },
+    {
+      "id": "3-4-1",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "早上，刘明开车送孩子去学校，送完孩子回家后，医院就来电话了，让他回去上班。我觉得他这个月每天都很累，真想让他休息休息。",
+      "pinyin": "Zǎoshang, Liú Míng kāichē sòng háizi qù xuéxiào, sòngwán háizi huíjiā hòu, yīyuàn jiù lái diànhuà le, ràng tā huíqù shàngbān. Wǒ juéde tā zhège yuè měitiān dōu hěn lèi, zhēn xiǎng ràng tā xiūxi xiūxi.",
+      "translation": {
+        "en": "This morning, Liu Ming drove the child to school. Right after he returned home, the hospital phoned and asked him to return to duty. I feel he has been exhausted every single day this month; I really wish he could get some rest.",
+        "ar": "في الصباح، قاد ليو مينغ السيارة لتوصيل الطفل إلى المدرسة، وفور عودته إلى البيت اتصل به المستشفى وطلبوا منه العودة إلى العمل. أشعر أنه مرهق جداً كل يوم طوال هذا الشهر، وأتمنى حقاً لو ينال قسطاً كافياً من الراحة."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Complement of Result (结果补语)",
+      "explanation": "Verbs or adjectives placed directly after a verb denote the outcome or result of an action: 没做完 (didn't finish), 菜都做好了 (food is finished and ready), 我都洗好了 (I've washed them all), 送完孩子 (after finishing sending the child).",
+      "arExplanation": "تُضاف مكملات النتيجة بعد الفعل مباشرة لبيان اكتمال الفعل أو النتيجة المترتبة عليه: '没做完' (لم ينتهِ من العمل)، '都做好了' (أُنجز وصار جاهزاً)."
+    },
+    {
+      "point": "Verb Reduplication for Ongoing & Past Actions",
+      "explanation": "Monosyllabic verbs can be reduplicated as A(一)A (想一想, 洗洗手) for casual brief action. For past actions, monosyllabic becomes A了A: 看了看 (took a brief look); disyllabic verbs use AB了一下: 休息了一下 (rested a bit); separable words use A了AB: 帮了帮忙.",
+      "arExplanation": "تكرار الأفعال (动词重叠) يعبر عن قصر مدة الفعل وخفته: '想一想' (فكّر قليلاً)، '看了看' (ألقى نظرة سريعة)، '休息了一下' (استراح برهة)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Xi'an (西安) - Ancient Capital & Cultural Hub",
+      "detail": "Xi'an, the eastern starting point of the ancient Silk Road, was the capital of 13 Chinese dynasties including the Zhou, Qin, Han, and Tang. World-famous attractions include the Terracotta Warriors (兵马俑), Big Wild Goose Pagoda, and the ancient city walls.",
+      "arDetail": "تعتبر مدينة شيآن نقطة انطلاق طريق الحرير التاريخي وكانت عاصمة لـ 13 سلالة حاكمة في الصين (بما فيها تشين وهان وتانغ). وتشتهر عالمياً بجيش محاربي التيراكوتا وسور المدينة الأثري وتراثها الثقافي الغني."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q3-1",
+      "question": "Why did Liu Ming come home late from work?",
+      "arQuestion": "لماذا عاد ليو مينغ إلى المنزل متأخراً بعد العمل؟",
+      "options": [
+        "工作没做完 (Work was not finished)",
+        "去外面吃饭了 (Ate out with friends)",
+        "迷路了 (Got lost)",
+        "去买票了 (Went to buy tickets)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q3-2",
+      "question": "Where does Liu Ming propose going on vacation?",
+      "arQuestion": "إلى أين اقترح ليو مينغ الذهاب في رحلة سياحية؟",
+      "options": [
+        "西安 (Xi'an)",
+        "上海 (Shanghai)",
+        "广州 (Guangzhou)",
+        "成都 (Chengdu)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 3."
+}

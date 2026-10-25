@@ -1,72 +1,163 @@
 {
-  "id": "hsk-1-unit-4-conversation-1",
+  "id": "hsk-1-unit-4",
   "hskLevel": 1,
   "unitId": 4,
-  "status": "needs-authoring",
+  "contentType": "dialogue",
+  "status": "ready",
   "title": {
-    "en": "Unit 4 conversation authoring brief",
-    "zh": "第4单元会话编写说明",
-    "ar": "موجز تأليف محادثة الوحدة 4"
+    "zh": "第4课：她是我的汉语老师",
+    "en": "Lesson 4: She Is My Chinese Teacher",
+    "ar": "الدرس 4: هي معلمتي للغة الصينية"
   },
   "targetVocabularyIds": [
-    "niunai",
-    "nu",
-    "nu-er",
-    "nu-pengyou",
-    "nushi",
-    "pengyou",
-    "pian-yi",
-    "piao-liang",
-    "ping-guo",
-    "qi",
-    "qian",
-    "qian-2",
-    "qian-3",
-    "qichuang",
-    "qing",
-    "qingwen",
-    "qu",
-    "qu-nian",
-    "re",
-    "ren",
-    "ren-shi",
-    "ri",
-    "san",
-    "shang",
-    "shangban",
-    "shangdian",
-    "shang-ke",
-    "shangwu",
-    "shangxue",
-    "shao",
+    "ta-3",
     "shei",
-    "shengbing",
-    "shenme",
-    "shi",
-    "shi-2",
-    "shi-3",
-    "shihou",
-    "shijian",
-    "shouji",
-    "shu",
-    "shu-dian",
-    "shui",
-    "shui-2",
-    "shui-guo",
-    "shui-jiao",
-    "shuo",
-    "shuo-hua",
-    "si",
-    "sui",
-    "ta"
+    "de",
+    "hanyu",
+    "na-2",
+    "guo",
+    "ne",
+    "ta",
+    "tongxue",
+    "pengyou"
   ],
-  "dialogue": [],
-  "grammarNotes": [],
-  "culturalNotes": [],
-  "comprehensionQuestions": [],
+  "dialogue": [
+    {
+      "id": "4-1-1",
+      "role": "Speaker A",
+      "hanzi": "她是谁？",
+      "pinyin": "Tā shì shéi?",
+      "translation": {
+        "en": "Who is she?",
+        "ar": "من هي؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "4-1-2",
+      "role": "Speaker B",
+      "hanzi": "她是我的汉语老师，她叫李月。",
+      "pinyin": "Tā shì wǒ de Hànyǔ lǎoshī, tā jiào Lǐ Yuè.",
+      "translation": {
+        "en": "She is my Chinese teacher, her name is Li Yue.",
+        "ar": "هي معلمتي للغة الصينية، اسمها لي يوي."
+      },
+      "audio": null
+    },
+    {
+      "id": "4-2-1",
+      "role": "Speaker A",
+      "hanzi": "你是哪国人？",
+      "pinyin": "Nǐ shì nǎ guó rén?",
+      "translation": {
+        "en": "Which country are you from?",
+        "ar": "من أي بلد أنت؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "4-2-2",
+      "role": "Speaker B",
+      "hanzi": "我是美国人。你呢？",
+      "pinyin": "Wǒ shì Měiguó rén. Nǐ ne?",
+      "translation": {
+        "en": "I am American. What about you?",
+        "ar": "أنا أمريكي. وأنتَ؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "4-2-3",
+      "role": "Speaker A",
+      "hanzi": "我是中国人。",
+      "pinyin": "Wǒ shì Zhōngguó rén.",
+      "translation": {
+        "en": "I am Chinese.",
+        "ar": "أنا صيني."
+      },
+      "audio": null
+    },
+    {
+      "id": "4-3-1",
+      "role": "Speaker A",
+      "hanzi": "他是谁？",
+      "pinyin": "Tā shì shéi?",
+      "translation": {
+        "en": "Who is he?",
+        "ar": "من هو؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "4-3-2",
+      "role": "Speaker B",
+      "hanzi": "他是我同学。",
+      "pinyin": "Tā shì wǒ tóngxué.",
+      "translation": {
+        "en": "He is my classmate.",
+        "ar": "هو زميلي في الدراسة."
+      },
+      "audio": null
+    },
+    {
+      "id": "4-3-3",
+      "role": "Speaker A",
+      "hanzi": "她呢？她是你的同学吗？",
+      "pinyin": "Tā ne? Tā shì nǐ de tóngxué ma?",
+      "translation": {
+        "en": "What about her? Is she your classmate?",
+        "ar": "وماذا عنها؟ هل هي زميلتك أيضاً؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "4-3-4",
+      "role": "Speaker B",
+      "hanzi": "她不是我同学，她是我朋友。",
+      "pinyin": "Tā bú shì wǒ tóngxué, tā shì wǒ péngyou.",
+      "translation": {
+        "en": "She is not my classmate, she is my friend.",
+        "ar": "هي ليست زميلتي، هي صديقتي."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Possessive particle 的 (de)",
+      "explanation": "Noun/Pronoun + 的 + Noun indicates possession (e.g., 我的老师 = my teacher). For close personal relations, 的 can be omitted (e.g., 我同学).",
+      "arExplanation": "أداة الملكية 的 تدل على النسبة والملكية. يمكن حذفها أحياناً مع الأقارب المقربين والزملاء."
+    },
+    {
+      "point": "Elliptical questions with 呢 (ne)",
+      "explanation": "A noun or pronoun followed by 呢 asks 'what about...?' based on the previous context.",
+      "arExplanation": "تستخدم 呢 للسؤال المختصر المستند إلى السياق السابق، مثل 'وماذا عنك؟' (你呢؟)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Distinct Pronouns with Shared Sound",
+      "detail": "In spoken Chinese, 他 (he), 她 (she), and 它 (it) are all pronounced 'tā', but have distinct written character radicals.",
+      "arDetail": "تشترك ضمائر الغائب (هو، هي، هو/هي لغير العاقل) في نفس النطق الصوتي tā، مع اختلاف جذور المقاطع المكتوبة."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q4-1",
+      "question": "Who is Li Yue in the dialogue?",
+      "arQuestion": "من هي لي يوي في الحوار؟",
+      "options": [
+        "汉语老师 (Chinese Teacher)",
+        "美国学生 (American Student)",
+        "医生 (Doctor)",
+        "出租车司机 (Taxi Driver)"
+      ],
+      "answerIndex": 0
+    }
+  ],
   "shadowingPractice": {
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "This scaffold intentionally contains no invented dialogue. Add reviewed Chinese, pinyin, English, Arabic, and real audio paths before marking complete."
+  "authoringNote": "Official HSK 1 Standard Course Lesson 4 dialogues."
 }

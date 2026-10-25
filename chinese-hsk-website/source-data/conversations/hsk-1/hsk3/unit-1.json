@@ -1,0 +1,175 @@
+{
+  "id": "hsk-1-hsk3-unit-1",
+  "curriculum": "hsk3",
+  "hskLevel": 1,
+  "unitId": 1,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第1课：AI小语，你好！",
+    "en": "Lesson 1: Hello, AI Xiaoyu!",
+    "ar": "الدرس 1: مرحباً يا ذكاء اصطناعي شياويو!"
+  },
+  "dialogue": [
+    {
+      "id": "1-1-1",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "AI小语，你好！",
+      "pinyin": "AI Xiǎoyǔ, nǐ hǎo!",
+      "translation": {
+        "en": "Hello, AI Xiaoyu!",
+        "ar": "مرحباً يا ذكاء اصطناعي شياويو!"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-1-2",
+      "role": "小语 (Xiaoyu)",
+      "hanzi": "王老师，你好！",
+      "pinyin": "Wáng lǎoshī, nǐ hǎo!",
+      "translation": {
+        "en": "Hello, Ms. Wang!",
+        "ar": "مرحباً يا أستاذة وانغ!"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-2-1",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "大家好！",
+      "pinyin": "Dàjiā hǎo!",
+      "translation": {
+        "en": "Hello, everyone!",
+        "ar": "مرحباً بالجميع!"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-2-2",
+      "role": "学生们 (Students)",
+      "hanzi": "老师，您好！",
+      "pinyin": "Lǎoshī, nín hǎo!",
+      "translation": {
+        "en": "Hello, teacher!",
+        "ar": "أهلاً وسهلاً بكِ يا معلمتنا!"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-2-3",
+      "role": "小语 (Xiaoyu)",
+      "hanzi": "你们好！",
+      "pinyin": "Nǐmen hǎo!",
+      "translation": {
+        "en": "Hello, all of you!",
+        "ar": "مرحباً بكم جميعاً!"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-2-4",
+      "role": "学生们 (Students)",
+      "hanzi": "你好，小语！",
+      "pinyin": "Nǐ hǎo, Xiǎoyǔ!",
+      "translation": {
+        "en": "Hello, Xiaoyu!",
+        "ar": "مرحباً يا شياويو!"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-3-1",
+      "role": "学生们 (Students)",
+      "hanzi": "谢谢！",
+      "pinyin": "Xièxie!",
+      "translation": {
+        "en": "Thank you!",
+        "ar": "شكراً لكِ!"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-3-2",
+      "role": "小语 (Xiaoyu)",
+      "hanzi": "不客气！",
+      "pinyin": "Bú kèqi!",
+      "translation": {
+        "en": "You're welcome!",
+        "ar": "على الرحب والسعة!"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-3-3",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "同学们，再见！",
+      "pinyin": "Tóngxuémen, zàijiàn!",
+      "translation": {
+        "en": "Goodbye, class!",
+        "ar": "إلى اللقاء يا طلابي!"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-3-4",
+      "role": "学生们 (Students)",
+      "hanzi": "老师，再见！",
+      "pinyin": "Lǎoshī, zàijiàn!",
+      "translation": {
+        "en": "Goodbye, teacher!",
+        "ar": "إلى اللقاء يا معلمتنا!"
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Honorific Pronoun 您 (Nín)",
+      "explanation": "‘您’ is the respectful second-person singular pronoun in Chinese, used when speaking to teachers, elders, superiors, or esteemed guests.",
+      "arExplanation": "الضمير '您' هو صيغة التبجيل والاحترام لضمير المخاطب المفرد، ويُستخدم لمخاطبة المعلمين، كبار السن، والضيوف."
+    },
+    {
+      "point": "Plural Suffix 们 (men)",
+      "explanation": "‘们’ is suffixed to personal pronouns and person nouns to indicate plurality: 你们 (you all), 同学们 (classmates), 学生们 (students).",
+      "arExplanation": "اللاحقة '们' تلحق بضمائر وأسماء الأشخاص للدلالة على الجمع مثل: 你们 (أنتم)، 同学们 (أيها الزملاء والطلاب)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Respecting Teachers in Chinese Culture (尊师重道)",
+      "detail": "Addressing teachers as '老师' (Lǎoshī) followed by '您好' (Nín hǎo) is a fundamental courtesy deeply rooted in Chinese social etiquette.",
+      "arDetail": "مناداة المعلم بلقب '老师' متبوعة بـ '您好' تُعد من أهم قواعد الأدب والاحترام المتجذرة في الثقافة الصينية."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q1-1",
+      "question": "What is the respectful greeting students use to address Teacher Wang?",
+      "arQuestion": "ما هي التحية المليئة بالاحترام التي استخدمها الطلاب لمخاطبة المعلمة وانغ؟",
+      "options": [
+        "老师，您好！ (Lǎoshī, nín hǎo!)",
+        "王老师，你好！ (Wáng lǎoshī, nǐ hǎo!)",
+        "AI小语，你好！ (AI Xiǎoyǔ, nǐ hǎo!)",
+        "大家好！ (Dàjiā hǎo!)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q1-2",
+      "question": "How does Xiaoyu respond when students say '谢谢' (Xièxie)?",
+      "arQuestion": "بماذا تجيب شياويو عندما يقول الطلاب '谢谢' (شكراً)؟",
+      "options": [
+        "不客气！ (Bú kèqi!)",
+        "再见！ (Zàijiàn!)",
+        "你好！ (Nǐ hǎo!)",
+        "没关系！ (Méi guānxi!)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 1."
+}

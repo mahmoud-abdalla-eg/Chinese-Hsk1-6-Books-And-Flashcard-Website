@@ -1,0 +1,235 @@
+{
+  "id": "hsk-1-hsk3-unit-14",
+  "curriculum": "hsk3",
+  "hskLevel": 1,
+  "unitId": 14,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第14课：我看了一个电影",
+    "en": "Lesson 14: I watched a movie",
+    "ar": "الدرس 14: شاهدت فيلماً"
+  },
+  "dialogue": [
+    {
+      "id": "14-1-1",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "你们上火车后看见王老师了吗？",
+      "pinyin": "Nǐmen shàng huǒchē hòu kànjiàn Wáng lǎoshī le ma?",
+      "translation": {
+        "en": "Did you see Teacher Wang after getting on the train?",
+        "ar": "هل رأيتم الأستاذة وانغ بعد ركوبكم القطار؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "14-1-2",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "没看见。中午车开后，有些人看书，有些人睡觉了。",
+      "pinyin": "Méi kànjiàn. Zhōngwǔ chē kāi hòu, yǒuxiē rén kàn shū, yǒuxiē rén shuìjiào le.",
+      "translation": {
+        "en": "No, we didn't. After the train departed at noon, some people read books, and some fell asleep.",
+        "ar": "لم نرها. بعد تحرك القطار ظهراً، كان بعض الأشخاص يقرأون وبعضهم نام."
+      },
+      "audio": null
+    },
+    {
+      "id": "14-1-3",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "你呢？",
+      "pinyin": "Nǐ ne?",
+      "translation": {
+        "en": "How about you?",
+        "ar": "وأنت ماذا عنك؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "14-1-4",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "我看了一个电影。",
+      "pinyin": "Wǒ kànle yí gè diànyǐng.",
+      "translation": {
+        "en": "I watched a movie.",
+        "ar": "شاهدت فيلماً."
+      },
+      "audio": null
+    },
+    {
+      "id": "14-2-1",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "你们会说汉语了，也会写汉字了吗？",
+      "pinyin": "Nǐmen huì shuō Hànyǔ le, yě huì xiě Hànzì le ma?",
+      "translation": {
+        "en": "Now that you can speak Chinese, can you also write Chinese characters?",
+        "ar": "صرتم تجيدون التحدث بالصينية، فهل صرتم تجيدون كتابة المقاطع الصينية أيضاً؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "14-2-2",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "我们都会写了。",
+      "pinyin": "Wǒmen dōu huì xiě le.",
+      "translation": {
+        "en": "We can all write them now.",
+        "ar": "أصبحنا جميعاً نعرف كيف نكتبها."
+      },
+      "audio": null
+    },
+    {
+      "id": "14-2-3",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "老师，我听不见。",
+      "pinyin": "Lǎoshī, wǒ tīng bú jiàn.",
+      "translation": {
+        "en": "Teacher, I cannot hear you.",
+        "ar": "يا أستاذ، لا أستطيع سماعك."
+      },
+      "audio": null
+    },
+    {
+      "id": "14-2-4",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "请大家不要说话！请听老师的问题：你们都会写哪些汉字了？",
+      "pinyin": "Qǐng dàjiā búyào shuōhuà! Qǐng tīng lǎoshī de wèntí: Nǐmen dōu huì xiě nǎxiē Hànzì le?",
+      "translation": {
+        "en": "Everyone, please don't talk! Please listen to my question: Which Chinese characters can you all write now?",
+        "ar": "رجاءً من الجميع التوقف عن الكلام! اسمعوا سؤال المعلم: ما هي المقاطع الصينية التي يمكنكم كتابتها الآن؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "14-2-5",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "我会写这些字了，您看！",
+      "pinyin": "Wǒ huì xiě zhèxiē zì le, nín kàn!",
+      "translation": {
+        "en": "I know how to write these characters now, look!",
+        "ar": "صرت أعرف كتابة هذه الحروف، انظر حضرتك!"
+      },
+      "audio": null
+    },
+    {
+      "id": "14-3-1",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "明年女儿上中学。",
+      "pinyin": "Míngnián nǚ'ér shàng zhōngxué.",
+      "translation": {
+        "en": "Next year our daughter starts middle school.",
+        "ar": "في العام القادم ستدخل ابنتنا المدرسة الإعدادية."
+      },
+      "audio": null
+    },
+    {
+      "id": "14-3-2",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "对。儿子也上小学了。",
+      "pinyin": "Duì. Érzi yě shàng xiǎoxué le.",
+      "translation": {
+        "en": "Right. Our son will also start primary school.",
+        "ar": "صحيح. وابننا أيضاً سيبدأ المدرسة الابتدائية."
+      },
+      "audio": null
+    },
+    {
+      "id": "14-3-3",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "我们家有了一个中学生。",
+      "pinyin": "Wǒmen jiā yǒu le yí gè zhōngxuéshēng.",
+      "translation": {
+        "en": "Our home will have a middle schooler.",
+        "ar": "سيكون في عائلتنا طالب مرحلة إعدادية."
+      },
+      "audio": null
+    },
+    {
+      "id": "14-3-4",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "还有了一个小学生。",
+      "pinyin": "Hái yǒu le yí gè xiǎoxuéshēng.",
+      "translation": {
+        "en": "And also a primary schooler.",
+        "ar": "وطالب مدرسة ابتدائية أيضاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "14-3-5",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "上学后，他们都忙了。",
+      "pinyin": "Shàngxué hòu, tāmen dōu máng le.",
+      "translation": {
+        "en": "Once school starts, they will both be busy.",
+        "ar": "بعد بدء الدراسة، سيصبح كلاهما مشغولاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "14-3-6",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "是的。太晚了，睡觉吧。",
+      "pinyin": "Shì de. Tài wǎn le, shuìjiào ba.",
+      "translation": {
+        "en": "Yes. It's late now, let's go to sleep.",
+        "ar": "أجل. الوقت تأخر جداً، فلننم الآن."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Aspect Particle 了 (le) for Completed Action",
+      "explanation": "‘了’ placed immediately after a verb indicates the completion or realization of an action: 我看了一个电影 (I watched a movie), 儿子也上小学了 (Son has entered primary school).",
+      "arExplanation": "توضع أداة الإنجاز '了' بعد الفعل مباشرة للإشارة إلى اكتمال الفعل أو تحققه: '我看了一个电影' (شاهدت فيلماً)."
+    },
+    {
+      "point": "Separable Verbs (离合词)",
+      "explanation": "Verbs consisting of a verb and an object morpheme (e.g. 说话 shuōhuà, 睡觉 shuìjiào, 上课 shàngkè) can be separated by particles or modifiers: 睡了觉 (slept a sleep), 说了话 (spoke).",
+      "arExplanation": "الأفعال القابلة للانفصال (离合词) تتكون من فعل ومفعول به، ويمكن إدخال أدوات أو كلمات بينهما: مثل '睡了觉' أو '说了话'."
+    },
+    {
+      "point": "Scope Adverb 都 (dōu)",
+      "explanation": "‘都’ means 'all' or 'both' and refers to the plural subject or topic preceding it: 我们都会写了 (We can all write them now), 他们都忙了 (They will both be busy).",
+      "arExplanation": "الظرف الشامل '都' يعني 'جميعاً' أو 'كلاهما' ويشير إلى الفاعل الجمع المتقدم عليه: '我们都会写了' (كلنا نعرف كيف نكتبها)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Chinese Schooling Stages (小学、中学、大学)",
+      "detail": "The Chinese education system generally divides schooling into 小学 (Primary School, grades 1-6), 初中 (Junior Middle School, grades 7-9), 高中 (Senior High School, grades 10-12), and 大学 (University).",
+      "arDetail": "ينقسم نظام التعليم المدرسي في الصين عادة إلى المدرسة الابتدائية (小学، 6 سنوات)، والإعدادية (初中، 3 سنوات)، والثانوية (高中، 3 سنوات)، ثم المرحلة الجامعية (大学)."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q14-1",
+      "question": "What did Chen Tianzhong do on the train?",
+      "arQuestion": "ماذا فعل تشن تيانتشونغ على متن القطار؟",
+      "options": [
+        "看了一个电影 (Watched a movie)",
+        "看了书 (Read a book)",
+        "睡觉了 (Slept)",
+        "和王老师说话 (Talked to Teacher Wang)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q14-2",
+      "question": "Which schools will Liu Ming's daughter and son attend next year?",
+      "arQuestion": "إلى أي مدرسة سينتقل ابنا ليو مينغ العام المقبل؟",
+      "options": [
+        "女儿上中学，儿子上小学 (Daughter middle school, son primary school)",
+        "女儿上大学，儿子上高中 (Daughter university, son high school)",
+        "都上小学 (Both primary school)",
+        "都上中学 (Both middle school)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 14."
+}

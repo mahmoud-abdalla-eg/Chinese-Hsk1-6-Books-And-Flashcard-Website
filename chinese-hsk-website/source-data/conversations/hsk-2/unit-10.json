@@ -1,0 +1,252 @@
+{
+  "id": "hsk-2-unit-10",
+  "hskLevel": 2,
+  "unitId": 10,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第10课：别找了，手机在桌子上呢",
+    "en": "Lesson 10: Stop looking, the mobile phone is on the table",
+    "ar": "الدرس 10: لا تبحث أكثر، الهاتف على الطاولة"
+  },
+  "targetVocabularyIds": [
+    "bie",
+    "shouji",
+    "bang",
+    "na",
+    "bao",
+    "pangbian",
+    "shangchang",
+    "chumen",
+    "yanjing",
+    "lei"
+  ],
+  "dialogue": [
+    {
+      "id": "10-1-1",
+      "role": "Speaker A",
+      "hanzi": "别找了，手机在桌子上呢，电脑旁边。",
+      "pinyin": "Bié zhǎo le, shǒujī zài zhuōzi shang ne, diànnǎo pángbiān.",
+      "translation": {
+        "en": "Stop looking, the mobile phone is on the table, right next to the computer.",
+        "ar": "كفاك بحثاً، الهاتف موضوع على الطاولة بجانب الحاسوب."
+      },
+      "audio": null
+    },
+    {
+      "id": "10-1-2",
+      "role": "Speaker B",
+      "hanzi": "看见了，谢谢！我正找它呢。",
+      "pinyin": "Kànjiàn le, xièxie! Wǒ zhèng zhǎo tā ne.",
+      "translation": {
+        "en": "Found it, thanks! I was just looking for it.",
+        "ar": "رأيته، شكراً جزيلاً! كنت أبحث عنه في هذه اللحظة."
+      },
+      "audio": null
+    },
+    {
+      "id": "10-1-3",
+      "role": "Speaker A",
+      "hanzi": "你要出门吗？",
+      "pinyin": "Nǐ yào chūmén ma?",
+      "translation": {
+        "en": "Are you heading out?",
+        "ar": "هل أنت خارج من البيت؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "10-1-4",
+      "role": "Speaker B",
+      "hanzi": "对，我去超市买点儿水果。",
+      "pinyin": "Duì, wǒ qù chāoshì mǎi diǎnr shuǐguǒ.",
+      "translation": {
+        "en": "Yes, I'm going to the supermarket to buy some fruit.",
+        "ar": "نعم، أنا ذاهب إلى السوبرماركت لشراء بعض الفاكهة."
+      },
+      "audio": null
+    },
+    {
+      "id": "10-2-1",
+      "role": "Speaker A",
+      "hanzi": "别看报纸了，医生说你要多休息眼睛。",
+      "pinyin": "Bié kàn bàozhǐ le, yīshēng shuō nǐ yào duō xiūxi yǎnjing.",
+      "translation": {
+        "en": "Stop reading the newspaper; the doctor told you to rest your eyes more.",
+        "ar": "توقف عن قراءة الصحف، الطبيب أوصاك بإراحة عينيك أكثر."
+      },
+      "audio": null
+    },
+    {
+      "id": "10-2-2",
+      "role": "Speaker B",
+      "hanzi": "好，那我听听音乐。",
+      "pinyin": "Hǎo, nà wǒ tīngting yīnyuè.",
+      "translation": {
+        "en": "Okay, then I'll listen to some music.",
+        "ar": "حسناً، سأستمع إلى بعض الموسيقى إذاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "10-2-3",
+      "role": "Speaker A",
+      "hanzi": "听音乐挺好的，放松一下。",
+      "pinyin": "Tīng yīnyuè tǐng hǎo de, fàngsōng yíxià.",
+      "translation": {
+        "en": "Listening to music is great; relax a bit.",
+        "ar": "الاستماع للموسيقى فكرة رائعة للاسترخاء قليلاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "10-2-4",
+      "role": "Speaker B",
+      "hanzi": "好的。",
+      "pinyin": "Hǎo de.",
+      "translation": {
+        "en": "All right.",
+        "ar": "حسناً."
+      },
+      "audio": null
+    },
+    {
+      "id": "10-3-1",
+      "role": "Speaker A",
+      "hanzi": "帮我拿一下包，好吗？",
+      "pinyin": "Bāng wǒ ná yíxià bāo, hǎo ma?",
+      "translation": {
+        "en": "Could you help me hold the bag for a moment?",
+        "ar": "هلّا ساعدتني وحملت هذه الحقيبة للحظة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "10-3-2",
+      "role": "Speaker B",
+      "hanzi": "好的。怎么买了这么多东西？",
+      "pinyin": "Hǎo de. Zěnme mǎi le zhème duō dōngxi?",
+      "translation": {
+        "en": "Sure. How did you buy so many things?",
+        "ar": "بكل سرور. ولكن كيف اشتريت كل هذه الأغراض الكثيرة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "10-3-3",
+      "role": "Speaker A",
+      "hanzi": "今天超市很多东西都打折，很便宜。",
+      "pinyin": "Jīntiān chāoshì hěn duō dōngxi dōu dǎzhé, hěn piányi.",
+      "translation": {
+        "en": "Many items in the supermarket had discounts today; very cheap.",
+        "ar": "كانت هناك تخفيضات على أشياء كثيرة في المتجر اليوم، والأسعار رخيصة جداً."
+      },
+      "audio": null
+    },
+    {
+      "id": "10-3-4",
+      "role": "Speaker B",
+      "hanzi": "难怪你买这么多。",
+      "pinyin": "Nánguài nǐ mǎi zhème duō.",
+      "translation": {
+        "en": "No wonder you bought so much.",
+        "ar": "لا عجب إذاً أنك اشتريت كل هذا."
+      },
+      "audio": null
+    },
+    {
+      "id": "10-4-1",
+      "role": "Speaker A",
+      "hanzi": "别工作了，已经十点了，该休息了。",
+      "pinyin": "Bié gōngzuò le, yǐjīng shí diǎn le, gāi xiūxi le.",
+      "translation": {
+        "en": "Stop working; it's already ten o'clock, time to rest.",
+        "ar": "كفاك عملاً، لقد أصبحت الساعة العاشرة، حان وقت الراحة."
+      },
+      "audio": null
+    },
+    {
+      "id": "10-4-2",
+      "role": "Speaker B",
+      "hanzi": "等我十分钟，我把这个做完。",
+      "pinyin": "Děng wǒ shí fēnzhōng, wǒ bǎ zhè ge zuò wán.",
+      "translation": {
+        "en": "Give me ten minutes; let me finish this.",
+        "ar": "أمهلني عشر دقائق، سأنهي هذا العمل فقط."
+      },
+      "audio": null
+    },
+    {
+      "id": "10-4-3",
+      "role": "Speaker A",
+      "hanzi": "别太累了，身体最重要。",
+      "pinyin": "Bié tài lèi le, shēntǐ zuì zhòngyào.",
+      "translation": {
+        "en": "Don't get too exhausted; health is most important.",
+        "ar": "لا ترهق نفسك كثيراً، الصحة هي الأهم دائماً."
+      },
+      "audio": null
+    },
+    {
+      "id": "10-4-4",
+      "role": "Speaker B",
+      "hanzi": "好的，我马上就好。",
+      "pinyin": "Hǎo de, wǒ mǎshàng jiù hǎo.",
+      "translation": {
+        "en": "All right, I'll be done right away.",
+        "ar": "حسناً، سأنتهي في الحال."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Negative Imperative with 别……了 (bié...le)",
+      "explanation": "Indicates 'stop doing' something that is currently underway: 别 + Verb + 了 (e.g., 别找了 = stop looking, 别工作了 = stop working).",
+      "arExplanation": "صيغة النهي عن الاستمرار في الفعل: 别 + الفعل + 了، وتعني 'كُفّ عن فعل كذا' أو 'توقف عن ذلك'."
+    },
+    {
+      "point": "Progressive Aspect with 正……呢 (zhèng...ne)",
+      "explanation": "Emphasizes that an action is in progress at the very moment: 正 + Verb + 呢 (e.g., 我正找它呢 = I was just looking for it).",
+      "arExplanation": "صيغة الاستمرار الحركي: 正 + الفعل + 呢، للدلالة على أن الفعل يحدث في ذات لحظة الكلام."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Mobile Convenience in Everyday Chinese Life",
+      "detail": "Smartphones (手机) are indispensable in China for mobile pay, bike-sharing, grocery delivery, and ticketing, making keeping track of one's phone vital.",
+      "arDetail": "يُعد الهاتف المحمول ركيزة الحياة اليومية في الصين للدفع الإلكتروني والمواصلات والتسوق والخدمات الذكية الشاملة."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q10-1",
+      "question": "Where was the mobile phone found in dialogue 1?",
+      "arQuestion": "أين وُجد الهاتف في الحوار الأول؟",
+      "options": [
+        "桌子上电脑旁边 (On the table beside the computer)",
+        "在包里 (In the bag)",
+        "在床下面 (Under the bed)",
+        "在沙发上 (On the sofa)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q10-2",
+      "question": "Why did Speaker A buy so many items at the supermarket?",
+      "arQuestion": "لماذا اشترى المتحدث أغراضاً كثيرة من المتجر؟",
+      "options": [
+        "很多东西打折很便宜 (Many discounted items were very cheap)",
+        "明天家里来客人 (Guests coming tomorrow)",
+        "超市快关门了 (Store closing soon)",
+        "给朋友买礼物 (Buying gifts for friends)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official HSK 2 Standard Course Lesson 10 dialogues."
+}

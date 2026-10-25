@@ -1,0 +1,201 @@
+{
+  "id": "hsk-1-unit-8",
+  "hskLevel": 1,
+  "unitId": 8,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第8课：我想喝茶",
+    "en": "Lesson 8: I'd Like Some Tea",
+    "ar": "الدرس 8: أود شرب الشاي"
+  },
+  "targetVocabularyIds": [
+    "xiang",
+    "he-2",
+    "cha",
+    "chi",
+    "mifan",
+    "xiawu",
+    "shangdian",
+    "mai-2",
+    "ge",
+    "beizi",
+    "zhe",
+    "duoshao",
+    "qian-2",
+    "kuai",
+    "na"
+  ],
+  "dialogue": [
+    {
+      "id": "8-1-1",
+      "role": "Speaker A",
+      "hanzi": "你想喝什么？",
+      "pinyin": "Nǐ xiǎng hē shénme?",
+      "translation": {
+        "en": "What would you like to drink?",
+        "ar": "ماذا تحب أن تشرب؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "8-1-2",
+      "role": "Speaker B",
+      "hanzi": "我想喝茶。",
+      "pinyin": "Wǒ xiǎng hē chá.",
+      "translation": {
+        "en": "I would like some tea.",
+        "ar": "أود شرب الشاي."
+      },
+      "audio": null
+    },
+    {
+      "id": "8-1-3",
+      "role": "Speaker A",
+      "hanzi": "你想吃什么？",
+      "pinyin": "Nǐ xiǎng chī shénme?",
+      "translation": {
+        "en": "What would you like to eat?",
+        "ar": "ماذا تحب أن تأكل؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "8-1-4",
+      "role": "Speaker B",
+      "hanzi": "我想吃米饭。",
+      "pinyin": "Wǒ xiǎng chī mǐfàn.",
+      "translation": {
+        "en": "I would like some rice.",
+        "ar": "أود تناول الأرز."
+      },
+      "audio": null
+    },
+    {
+      "id": "8-2-1",
+      "role": "Speaker A",
+      "hanzi": "下午你想做什么？",
+      "pinyin": "Xiàwǔ nǐ xiǎng zuò shénme?",
+      "translation": {
+        "en": "What would you like to do this afternoon?",
+        "ar": "ماذا تريد أن تفعل بعد الظهر؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "8-2-2",
+      "role": "Speaker B",
+      "hanzi": "下午我想去商店。",
+      "pinyin": "Xiàwǔ wǒ xiǎng qù shāngdiàn.",
+      "translation": {
+        "en": "This afternoon I want to go to the store.",
+        "ar": "بعد الظهر أريد الذهاب إلى المتجر."
+      },
+      "audio": null
+    },
+    {
+      "id": "8-2-3",
+      "role": "Speaker A",
+      "hanzi": "你想买什么？",
+      "pinyin": "Nǐ xiǎng mǎi shénme?",
+      "translation": {
+        "en": "What do you want to buy?",
+        "ar": "ماذا تريد أن تشتري؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "8-2-4",
+      "role": "Speaker B",
+      "hanzi": "我想买一个杯子。",
+      "pinyin": "Wǒ xiǎng mǎi yí ge bēizi.",
+      "translation": {
+        "en": "I want to buy a cup.",
+        "ar": "أريد شراء كوب."
+      },
+      "audio": null
+    },
+    {
+      "id": "8-3-1",
+      "role": "Speaker A",
+      "hanzi": "你好！这个杯子多少钱？",
+      "pinyin": "Nǐ hǎo! Zhège bēizi duōshao qián?",
+      "translation": {
+        "en": "Hello! How much is this cup?",
+        "ar": "مرحباً! بكم هذا الكوب؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "8-3-2",
+      "role": "Speaker B",
+      "hanzi": "二十八块。",
+      "pinyin": "Èrshíbā kuài.",
+      "translation": {
+        "en": "28 yuan.",
+        "ar": "ثمانية وعشرون يواناً."
+      },
+      "audio": null
+    },
+    {
+      "id": "8-3-3",
+      "role": "Speaker A",
+      "hanzi": "那个杯子多少钱？",
+      "pinyin": "Nàge bēizi duōshao qián?",
+      "translation": {
+        "en": "How much is that cup?",
+        "ar": "وبكم ذلك الكوب الآخر؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "8-3-4",
+      "role": "Speaker B",
+      "hanzi": "那个杯子十八块钱。",
+      "pinyin": "Nàge bēizi shíbā kuài qián.",
+      "translation": {
+        "en": "That cup is 18 yuan.",
+        "ar": "ذلك الكوب بثمانية عشر يواناً."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Auxiliary verb 想 (xiǎng)",
+      "explanation": "想 + Verb indicates a desire, intention, or wish to do something (e.g., 我想喝茶 = I'd like to drink tea).",
+      "arExplanation": "الفعل المساعد 想 متبوعاً بفعل يعبر عن الرغبة أو النية في فعل شيء ما."
+    },
+    {
+      "point": "Asking prices with 多少钱 (duōshao qián)",
+      "explanation": "多少 is used to inquire about quantities over 10 or price amounts. 块 (kuài) is the colloquial unit for Chinese Yuan.",
+      "arExplanation": "يستخدم 多少钱 للسؤال عن الأسعار. وكلمة 块 هي الوحدة العامية الشائعة لليوان الصيني."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Chinese Tea Culture (茶文化)",
+      "detail": "Offering warm tea to guests is a signature of hospitality in traditional and contemporary Chinese culture.",
+      "arDetail": "تقديم الشاي الساخن للضيوف هو رمز الضيافة والترحيب المتوارث في الثقافة الصينية."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q8-1",
+      "question": "How much is the first cup (这个杯子)?",
+      "arQuestion": "كم سعر الكوب الأول (这个杯子)؟",
+      "options": [
+        "二十八块 (28 kuai)",
+        "十八块 (18 kuai)",
+        "三十八块 (38 kuai)",
+        "八块 (8 kuai)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official HSK 1 Standard Course Lesson 8 dialogues."
+}

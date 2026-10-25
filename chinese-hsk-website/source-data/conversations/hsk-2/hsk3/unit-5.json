@@ -1,0 +1,285 @@
+{
+  "id": "hsk-2-hsk3-unit-5",
+  "curriculum": "hsk3",
+  "hskLevel": 2,
+  "unitId": 5,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第5课：第一次去中国朋友家",
+    "en": "Lesson 5: Visiting a Chinese friend's home for the first time",
+    "ar": "الدرس 5: أول زيارة لمنزل صديق صيني"
+  },
+  "dialogue": [
+    {
+      "id": "5-1-1",
+      "role": "安妮 (Annie)",
+      "hanzi": "家月，快下来吧，第一次去中国朋友家，别晚了。",
+      "pinyin": "Jiāyuè, kuài xiàlai ba, dì-yī cì qù Zhōngguó péngyou jiā, bié wǎn le.",
+      "translation": {
+        "en": "Jiayue, come downstairs quickly! It's our first time visiting a Chinese friend's home, don't be late.",
+        "ar": "جيايوي، انزلي بسرعة! إنها أول زيارة لنا لمنزل صديق صيني، فلا نتأخر."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-1-2",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "还有时间，你上来吧。",
+      "pinyin": "Hái yǒu shíjiān, nǐ shànglai ba.",
+      "translation": {
+        "en": "There's still time, why don't you come up?",
+        "ar": "ما زال لدينا وقت، اصعدي إليّ."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-1-3",
+      "role": "安妮 (Annie)",
+      "hanzi": "我不上去了，就在下面等你。",
+      "pinyin": "Wǒ bù shàngqu le, jiù zài xiàmian děng nǐ.",
+      "translation": {
+        "en": "I'm not coming up; I'll just wait for you down here.",
+        "ar": "لن أصعد، سأنتظركِ هنا في الأسفل."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-1-4",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "那我一会儿就下去。",
+      "pinyin": "Nà wǒ yíhuìr jiù xiàqu.",
+      "translation": {
+        "en": "Alright, I'll be right down in a moment.",
+        "ar": "حسناً، سأنزل إليكِ بعد قليل."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-1-5",
+      "role": "安妮 (Annie)",
+      "hanzi": "你快点儿吧。",
+      "pinyin": "Nǐ kuài diǎnr ba.",
+      "translation": {
+        "en": "Hurry up please.",
+        "ar": "أسرعي قليلاً من فضلك."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-1-6",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "没事，一雪姐说11点前到就可以。",
+      "pinyin": "Méishì, Yīxuě jiě shuō shíyī diǎn qián dào jiù kěyǐ.",
+      "translation": {
+        "en": "Don't worry; Sister Yixue said arriving before 11 o'clock is fine.",
+        "ar": "لا تقلقي، قالت الأخت ييشيويه إن الوصول قبل الساعة 11 مناسب تماماً."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-2-1",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "家月、安妮，快进来！我给你们介绍一下，这是孩子们的爷爷、奶奶。",
+      "pinyin": "Jiāyuè, Ānnī, kuài jìnlái! Wǒ gěi nǐmen jièshào yíxià, zhè shì háizimen de yéye, nǎinai.",
+      "translation": {
+        "en": "Jiayue, Annie, come right in! Let me introduce you: this is the children's grandfather and grandmother.",
+        "ar": "جيايوي، آني، تفضلا بالدخول سريعاً! دعوني أعرفكم ببعض: هذا جد الأطفال وهذه جدتهم."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-2-2",
+      "role": "白家月和安妮 (Bai Jiayue & Annie)",
+      "hanzi": "爷爷、奶奶，你们好！",
+      "pinyin": "Yéye, nǎinai, nǐmen hǎo!",
+      "translation": {
+        "en": "Grandpa, Grandma, hello!",
+        "ar": "أهلاً بكما يا جدي ويا جدتي!"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-2-3",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "爸妈，这是白家月，这是安妮。她们都是一飞的学生。",
+      "pinyin": "Bà mā, zhè shì Bái Jiāyuè, zhè shì Ānnī. Tāmen dōu shì Yīfēi de xuésheng.",
+      "translation": {
+        "en": "Mom and Dad, this is Bai Jiayue, and this is Annie. They are both Yifei's students.",
+        "ar": "أمي وأبي، هذه باي جيايوي، وهذه آني. كلتاهما من طالبات ييفي."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-2-4",
+      "role": "爷爷和奶奶 (Grandpa & Grandma)",
+      "hanzi": "家月、安妮，你们好！快坐吧！",
+      "pinyin": "Jiāyuè, Ānnī, nǐmen hǎo! Kuài zuò ba!",
+      "translation": {
+        "en": "Jiayue, Annie, welcome! Please sit down!",
+        "ar": "أهلاً وسهلاً بكما يا جيايوي ويا آني! تفضلا بالجلوس سريعاً!"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-2-5",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "一雪姐，这是给孩子们准备的礼物。",
+      "pinyin": "Yīxuě jiě, zhè shì gěi háizimen zhǔnbèi de lǐwù.",
+      "translation": {
+        "en": "Sister Yixue, these are gifts we prepared for the children.",
+        "ar": "أختي ييشيويه، هذه هدايا أعددناها للأطفال."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-2-6",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "你们太客气了，还拿这么多礼物来！谢谢！你们别客气，快坐吧！",
+      "pinyin": "Nǐmen tài kèqi le, hái ná zhème duō lǐwù lái! Xièxie! Nǐmen bié kèqi, kuài zuò ba!",
+      "translation": {
+        "en": "You're both far too kind, bringing so many gifts! Thank you! Please make yourselves at home and have a seat!",
+        "ar": "أنتما لطيفتان وخلوقتان جداً، لم يكن هناك داعٍ لإحضار كل هذه الهدايا! شكراً لكما! لا تكلفا على أنفسكما وتفضلا بالجلوس!"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-3-1",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "都12点了，我们吃饭吧。",
+      "pinyin": "Dōu shí'èr diǎn le, wǒmen chīfàn ba.",
+      "translation": {
+        "en": "It's already 12 o'clock; let's have our meal.",
+        "ar": "لقد أصبحت الساعة 12 بالفعل، فلنتناول الطعام."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-3-2",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "这么多好吃的，您太客气了！",
+      "pinyin": "Zhème duō hǎochī de, nín tài kèqi le!",
+      "translation": {
+        "en": "So many delicious dishes; you really shouldn't have gone to all this trouble!",
+        "ar": "ما كل هذه الأطباق الشهية اللذيذة! كرمكم يفوق الوصف!"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-3-3",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "都是我自己做的，你们多吃点儿。",
+      "pinyin": "Dōu shì wǒ zìjǐ zuò de, nǐmen duō chī diǎnr.",
+      "translation": {
+        "en": "I cooked everything myself; please eat heartily!",
+        "ar": "لقد أعددتها كلها بنفسي، كلوا واستمتعوا بالطعام."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-3-4",
+      "role": "安妮 (Annie)",
+      "hanzi": "奶茶也很好喝，是您做的吗？",
+      "pinyin": "Nǎichá yě hěn hǎohē, shì nín zuò de ma?",
+      "translation": {
+        "en": "The milk tea is also delicious; did you make it too?",
+        "ar": "شاي الحليب لذيذ جداً أيضاً، هل أعددتِه أنتِ كذلك؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-3-5",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "不是，奶茶是爷爷买的。",
+      "pinyin": "Bú shì, nǎichá shì yéye mǎi de.",
+      "translation": {
+        "en": "No, Grandpa bought the milk tea.",
+        "ar": "كلا، شاي الحليب اشتراه الجد."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-3-6",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "在哪儿买的？我还没喝过这么好喝的奶茶。",
+      "pinyin": "Zài nǎr mǎi de? Wǒ hái méi hēguo zhème hǎohē de nǎichá.",
+      "translation": {
+        "en": "Where was it bought? I have never tasted such delicious milk tea before.",
+        "ar": "من أين اشتراه؟ لم يسبق لي أن شربت شاي حليب بهذه اللذة."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-3-7",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "就在前边的商场，吃完饭你们可以跟我去看看。",
+      "pinyin": "Jiù zài qiánbian de shāngchǎng, chīwán fàn nǐmen kěyǐ gēn wǒ qù kànkan.",
+      "translation": {
+        "en": "Right at the shopping mall up ahead. After finishing the meal, you can come with me to check it out.",
+        "ar": "في المجمع التجاري القريب هنا، وبعد أن ننتهي من تناول الطعام يمكنكما مرافقتي لنلقي نظرة عليه."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-4-1",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "回国前一天，我们去一雪姐家了。到她家的时候，饭菜都做好了。刘爷爷还准备了奶茶。因为吃了太多东西，我们吃完饭是走回酒店的。",
+      "pinyin": "Huí guó qián yì tiān, wǒmen qù Yīxuě jiě jiā le. Dào tā jiā de shíhou, fàncài dōu zuòhǎo le. Liú yéye hái zhǔnbèile nǎichá. Yīnwèi chīle tài duō dōngxi, wǒmen chīwán fàn shì zǒuhuí jiǔdiàn de.",
+      "translation": {
+        "en": "The day before returning to our home countries, we visited Sister Yixue's home. When we arrived, the food was already cooked and ready. Grandpa Liu had also prepared milk tea. Because we ate so much, we walked all the way back to the hotel after dinner.",
+        "ar": "في اليوم السابق لعودتنا إلى بلادنا، ذهبنا لزيارة منزل الأخت ييشيويه. وحين وصلنا، كان الطعام جاهزاً ومعداً بالكامل، وكان الجد ليو قد جهز شاي الحليب أيضاً. ولأننا أكلنا الكثير من الطعام، عدنا سيراً على الأقدام إلى الفندق بعد العشاء."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Simple Complements of Direction (简单趋向补语: 来 / 去)",
+      "explanation": "‘来’ indicates movement toward the speaker (下来吧 come down here; 快进来 come in), while ‘去’ indicates movement away from the speaker (不上去了 not going up; 一会儿就下去 I'll go down shortly).",
+      "arExplanation": "تُستخدم مكملات الاتجاه البسيطة مع الأفعال: '来' تدل على حركة متجهة نحو المتكلم ('下来吧' انزل نحوي)، بينما '去' تدل على حركة مبتعدة عن المتكلم ('下去' سأنزل بعيداً عن موضعي الحالي)."
+    },
+    {
+      "point": "Fixed Pattern 都……了 (dōu ... le)",
+      "explanation": "Expresses 'already' or reaching a noteworthy extent with emphasis: 都12点了，我们吃饭吧 (It's already 12 o'clock, let's eat).",
+      "arExplanation": "تدل الصيغة '都……了' على معنى 'بالفعل' أو بلوغ حد معين مع نبرة توكيد أو تنبيه: '都12点了' (لقد أصبحت الساعة 12 بالفعل)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Hospitality & Visiting Chinese Homes (到中国人家做客)",
+      "detail": "When invited to a Chinese home, it is customary courtesy to bring modest gifts (礼物) such as fruit, tea, or snacks for children. Guests are greeted warmly by family elders (爷爷、奶奶), treated with generous home-cooked feasts, and encouraged to eat plentifully ('多吃点儿').",
+      "arDetail": "من آداب زيارة البيوت الصينية تقديم هدايا رمزية كالفاكهة والشاي أو حلويات للأطفال، ويُحيَّى كبار السن (الجد والجدة) باحترام وتقدير، كما يحرص أهل البيت على إعداد ولائم منزلية حافلة وحث الضيوف بلطف على الأكل والشبع."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q5-1",
+      "question": "What did Bai Jiayue and Annie bring when visiting Wang Yixue's home?",
+      "arQuestion": "ماذا أحضرت باي جيايوي وآني معهما عند زيارة منزل وانغ ييشيويه؟",
+      "options": [
+        "给孩子们的礼物 (Gifts for the children)",
+        "一斤饺子 (A jin of dumplings)",
+        "书包 (Schoolbags)",
+        "电脑 (Computers)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q5-2",
+      "question": "How did Bai Jiayue and Annie return to their hotel after dinner?",
+      "arQuestion": "كيف عادت باي جيايوي وآني إلى الفندق بعد العشاء؟",
+      "options": [
+        "走回酒店 (Walked back)",
+        "打车回去 (Took a taxi)",
+        "坐公交车 (Took a bus)",
+        "刘明开车送 (Liu Ming drove them)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 5."
+}

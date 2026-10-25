@@ -1,4 +1,4 @@
-import ConversationLesson from "@/components/conversations/conversation-lesson";
+import ConversationCurriculumFilter from "@/components/conversations/conversation-curriculum-filter";
 import ConversationLevelHero from "@/components/conversations/conversation-level-hero";
 import { Card, Pill } from "@/components/ui/card";
 import { getManagedConversationsForLevel } from "@/lib/admin/course-conversations";
@@ -19,7 +19,7 @@ export default async function LevelConversationsPage({ params }) {
   const theme = levelThemes[Number(level)];
 
   // Create lightweight lookup to avoid serializing large word datasets across all conversation components
-  const wordMap = new Map(
+  const wordMap = Object.fromEntries(
     (words || []).map((w) => [
       w.id,
       { id: w.id, hanzi: w.hanzi, pinyin: w.pinyin },
@@ -33,32 +33,25 @@ export default async function LevelConversationsPage({ params }) {
         level={level}
         conversationCount={conversations.length}
       />
-      <div className="grid gap-6">
-        {conversations.length
-          ? conversations.map((conversation) => {
-              const targetWords = (conversation.targetVocabularyIds || [])
-                .map((id) => wordMap.get(id))
-                .filter(Boolean);
-
-              return (
-                <ConversationLesson
-                  key={conversation.id}
-                  conversation={conversation}
-                  targetWords={targetWords}
-                />
-              );
-            })
-          : <Card>
-              <Pill tone="blue">Conversation pending</Pill>
-              <h2 className="mt-4 text-2xl font-black text-slate-950">
-                HSK {level} conversation units can be added from adminbase.
-              </h2>
-              <p className="mt-3 text-sm font-semibold leading-7 text-slate-600">
-                No placeholder dialogue was added for this level. Add reviewed
-                lessons from the conversation manager when the content is ready.
-              </p>
-            </Card>}
-      </div>
+      {conversations.length ? (
+        <ConversationCurriculumFilter
+          conversations={conversations}
+          wordMap={wordMap}
+          accent={theme.accent}
+          level={level}
+        />
+      ) : (
+        <Card>
+          <Pill tone="blue">Conversation pending</Pill>
+          <h2 className="mt-4 text-2xl font-black text-slate-950">
+            HSK {level} conversation units can be added from adminbase.
+          </h2>
+          <p className="mt-3 text-sm font-semibold leading-7 text-slate-600">
+            No placeholder dialogue was added for this level. Add reviewed
+            lessons from the conversation manager when the content is ready.
+          </p>
+        </Card>
+      )}
     </div>
   );
 }

@@ -1,0 +1,175 @@
+{
+  "id": "hsk-1-hsk3-unit-2",
+  "curriculum": "hsk3",
+  "hskLevel": 1,
+  "unitId": 2,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第2课：我叫李文",
+    "en": "Lesson 2: My Name Is Li Wen",
+    "ar": "الدرس 2: اسمي لي ون"
+  },
+  "dialogue": [
+    {
+      "id": "2-1-1",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "请问，你叫什么名字？",
+      "pinyin": "Qǐngwèn, nǐ jiào shénme míngzi?",
+      "translation": {
+        "en": "Excuse me, what is your name?",
+        "ar": "من فضلك، ما اسمك؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "2-1-2",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "我叫陈天中。",
+      "pinyin": "Wǒ jiào Chén Tiānzhōng.",
+      "translation": {
+        "en": "My name is Chen Tianzhong.",
+        "ar": "اسمي تشن تيانتشونغ."
+      },
+      "audio": null
+    },
+    {
+      "id": "2-2-1",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "你好，安妮！",
+      "pinyin": "Nǐ hǎo, Ānnī!",
+      "translation": {
+        "en": "Hello, Annie!",
+        "ar": "مرحباً يا آني!"
+      },
+      "audio": null
+    },
+    {
+      "id": "2-2-2",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "你好，陈天中！我不是安妮，我是白家月。",
+      "pinyin": "Nǐ hǎo, Chén Tiānzhōng! Wǒ bú shì Ānnī, wǒ shì Bái Jiāyuè.",
+      "translation": {
+        "en": "Hello, Chen Tianzhong! I am not Annie, I am Bai Jiayue.",
+        "ar": "مرحباً تشن تيانتشونغ! أنا لست آني، أنا باي جيايويه."
+      },
+      "audio": null
+    },
+    {
+      "id": "2-2-3",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "对不起！",
+      "pinyin": "Duìbuqǐ!",
+      "translation": {
+        "en": "I am sorry!",
+        "ar": "أنا آسف جداً!"
+      },
+      "audio": null
+    },
+    {
+      "id": "2-2-4",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "没关系！",
+      "pinyin": "Méi guānxi!",
+      "translation": {
+        "en": "That's all right! (No worries)",
+        "ar": "لا بأس! (لا عليك)"
+      },
+      "audio": null
+    },
+    {
+      "id": "2-3-1",
+      "role": "李文 (Li Wen)",
+      "hanzi": "你好！我叫李文。",
+      "pinyin": "Nǐ hǎo! Wǒ jiào Lǐ Wén.",
+      "translation": {
+        "en": "Hello! My name is Li Wen.",
+        "ar": "مرحباً! اسمي لي ون."
+      },
+      "audio": null
+    },
+    {
+      "id": "2-3-2",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "你好！我叫白家月。",
+      "pinyin": "Nǐ hǎo! Wǒ jiào Bái Jiāyuè.",
+      "translation": {
+        "en": "Hello! My name is Bai Jiayue.",
+        "ar": "مرحباً! اسمي باي جيايويه."
+      },
+      "audio": null
+    },
+    {
+      "id": "2-3-3",
+      "role": "李文 (Li Wen)",
+      "hanzi": "很高兴认识你。",
+      "pinyin": "Hěn gāoxìng rènshi nǐ.",
+      "translation": {
+        "en": "Nice to meet you.",
+        "ar": "سررت جداً بمعرفتك."
+      },
+      "audio": null
+    },
+    {
+      "id": "2-3-4",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "认识你我也很高兴。",
+      "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng.",
+      "translation": {
+        "en": "Nice to meet you too.",
+        "ar": "وأنا أيضاً مسرورة بمعرفتك."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Basic Word Order in Chinese (主谓宾)",
+      "explanation": "Chinese follows Subject + Verb (Predicate) + Object order: 我 (Subject) 叫 (Verb) 陈天中 (Object).",
+      "arExplanation": "ترتيب الجملة البسيطة في اللغة الصينية: الفاعل + الفعل + المفعول به، مثل: 我 (أنا) 叫 (أُدعى) 陈天中."
+    },
+    {
+      "point": "The Adverb 也 (yě - also)",
+      "explanation": "‘也’ is placed before verbs or adjectives to mean 'also/too': 认识你我也很高兴 (Meeting you, I am also very glad).",
+      "arExplanation": "الظرف '也' يأتي قبل الأفعال والصفات ليفيد معنى 'أيضاً'."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Chinese Name Structure (姓 + 名)",
+      "detail": "In Chinese names, the family surname comes first, followed by the given name. For example, in 陈天中, 陈 (Chen) is the surname and 天中 (Tianzhong) is the given name.",
+      "arDetail": "في الأسماء الصينية، يأتي اسم العائلة (اللقب) أولاً، يليه الاسم الشخصي؛ مثل 陈天中، حيث 陈 هو اللقب و 天中 هو الاسم الشخصي."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q2-1",
+      "question": "Whom did Chen Tianzhong mistake Bai Jiayue for?",
+      "arQuestion": "من هي الفتاة التي ظن تشن تيانتشونغ بالخطأ أن باي جيايويه هي إياها؟",
+      "options": [
+        "安妮 (Annie)",
+        "王老师 (Teacher Wang)",
+        "小语 (Xiaoyu)",
+        "李文 (Li Wen)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q2-2",
+      "question": "How do you say 'Nice to meet you too' in Chinese?",
+      "arQuestion": "كيف تقول 'وأنا أيضاً مسرور بلقائك' بالصينية؟",
+      "options": [
+        "认识你我也很高兴。 (Rènshi nǐ wǒ yě hěn gāoxìng.)",
+        "对不起，没关系。 (Duìbuqǐ, méi guānxi.)",
+        "请问，你叫什么名字？ (Qǐngwèn, nǐ jiào shénme míngzi?)",
+        "老师，再见！ (Lǎoshī, zàijiàn!)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 2."
+}

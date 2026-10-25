@@ -1,0 +1,270 @@
+{
+  "id": "hsk-2-hsk3-unit-12",
+  "curriculum": "hsk3",
+  "hskLevel": 2,
+  "unitId": 12,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第12课：这里比北京冷多了",
+    "en": "Lesson 12: It's much colder here than in Beijing",
+    "ar": "الدرس 12: الجو هنا أبرد بكثير مما هو عليه في بكين"
+  },
+  "dialogue": [
+    {
+      "id": "12-1-1",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "喂，家月，是你啊！有什么事情吗？",
+      "pinyin": "Wéi, Jiāyuè, shì nǐ a! Yǒu shénme shìqing ma?",
+      "translation": {
+        "en": "Hello, Jiayue, it's you! Is anything the matter?",
+        "ar": "أهلاً يا جيايوي، هذه أنتِ! هل من أمر طارئ؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "12-1-2",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "没什么事，就想跟您说说话。",
+      "pinyin": "Méi shénme shì, jiù xiǎng gēn nín shuōshuo huà.",
+      "translation": {
+        "en": "Nothing special; I just wanted to chat with you.",
+        "ar": "لا شيء خاص، أردت فقط التحدث معكِ والاطمئنان عليكِ."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-1-3",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "好啊。你今天没课吗？",
+      "pinyin": "Hǎo a. Nǐ jīntiān méi kè ma?",
+      "translation": {
+        "en": "Wonderful. Don't you have classes today?",
+        "ar": "جميل جداً. أليس لديكِ دروس اليوم؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "12-1-4",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "下午有课。您那里天气怎么样？",
+      "pinyin": "Xiàwǔ yǒu kè. Nín nàli tiānqì zěnmeyàng?",
+      "translation": {
+        "en": "I have classes in the afternoon. How is the weather where you are?",
+        "ar": "لدي حصص بعد الظهر. كيف هو الطقس عندكم هناك؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "12-1-5",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "这里比北京冷多了，今天还刮大风呢。",
+      "pinyin": "Zhèlǐ bǐ Běijīng lěng duō le, jīntiān hái guā dà fēng ne.",
+      "translation": {
+        "en": "It's much colder here than in Beijing, and strong winds are blowing today too.",
+        "ar": "الجو هنا أبرد بكثير مما هو عليه في بكين، والرياح تهب بقوة اليوم أيضاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-1-6",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "那您出门要多穿点儿衣服。",
+      "pinyin": "Nà nín chūmén yào duō chuān diǎnr yīfu.",
+      "translation": {
+        "en": "Then make sure to wear more warm clothes when going outside.",
+        "ar": "عليكِ إذاً ارتداء ملابس دافئة وثقيلة عند الخروج من المنزل."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-2-1",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "喂，一飞，听家月说你那边下雪了，下得大不大？",
+      "pinyin": "Wéi, Yīfēi, tīng Jiāyuè shuō nǐ nàbian xià xuě le, xià de dà bu dà?",
+      "translation": {
+        "en": "Hello, Yifei! I heard from Jiayue that it's snowing over there. Is it snowing heavily?",
+        "ar": "أهلاً يا ييفي! سمعت من جيايوي أن الثلج يتساقط عندكم، هل يتساقط بكثافة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "12-2-2",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "昨天比今天下得大。今天不大了。",
+      "pinyin": "Zuótiān bǐ jīntiān xià de dà. Jīntiān bú dà le.",
+      "translation": {
+        "en": "It snowed heavier yesterday than today. Today it's not very heavy.",
+        "ar": "تساقط الثلج أمس كان أغزر من اليوم، واليوم خف تساقطه."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-2-3",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "天气不好，你去外面的时候多穿点儿衣服。",
+      "pinyin": "Tiānqì bù hǎo, nǐ qù wàimiàn de shíhou duō chuān diǎnr yīfu.",
+      "translation": {
+        "en": "The weather is rough; put on more warm clothing when you step outside.",
+        "ar": "الطقس سيئ، ارتدي ملابس إضافية عند خروجك."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-2-4",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "知道了，姐。这几天学校让我们上网课，我不出门。",
+      "pinyin": "Zhīdào le, jiě. Zhè jǐ tiān xuéxiào ràng wǒmen shàng wǎngkè, wǒ bù chūmén.",
+      "translation": {
+        "en": "Got it, sister. These days the school arranged online classes for us, so I'm not going out.",
+        "ar": "حسناً يا أختي. جعلتنا الجامعة نأخذ الدروس عبر الإنترنت هذه الأيام، لذلك لن أخرج."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-2-5",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "那就好，多买点儿吃的放在家里。",
+      "pinyin": "Nà jiù hǎo, duō mǎi diǎnr chī de fàng zài jiā lǐ.",
+      "translation": {
+        "en": "That's good; buy plenty of groceries and food to keep at home.",
+        "ar": "هذا مطمئن، اشتري ما يكفي من الأطعمة وخزنيها في البيت."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-3-1",
+      "role": "李文 (Li Wen)",
+      "hanzi": "喂，家月，今天天气不错，我们去跑步吧！",
+      "pinyin": "Wéi, Jiāyuè, jīntiān tiānqì búcuò, wǒmen qù pǎobù ba!",
+      "translation": {
+        "en": "Hello, Jiayue! The weather is lovely today; let's go for a run!",
+        "ar": "مرحباً يا جيايوي! الطقس رائع اليوم، هيا نذهب للجري!"
+      },
+      "audio": null
+    },
+    {
+      "id": "12-3-2",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "你跑步跑得比我快，我们能一起跑吗？",
+      "pinyin": "Nǐ pǎobù pǎo de bǐ wǒ kuài, wǒmen néng yìqǐ pǎo ma?",
+      "translation": {
+        "en": "You run faster than me; can we really run together?",
+        "ar": "أنت تجري أسرع مني، فهل يمكننا الركض معاً؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "12-3-3",
+      "role": "李文 (Li Wen)",
+      "hanzi": "可以的，我慢慢跑，等着你。",
+      "pinyin": "Kěyǐ de, wǒ mànmàn pǎo, děngzhe nǐ.",
+      "translation": {
+        "en": "Of course! I'll jog slowly and wait for you.",
+        "ar": "بالتأكيد! سأركض ببطء وأنتظركِ."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-3-4",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "好吧。你真爱跑步啊！",
+      "pinyin": "Hǎo ba. Nǐ zhēn ài pǎobù a!",
+      "translation": {
+        "en": "Alright then. You really do love running!",
+        "ar": "حسناً إذاً. أنت تعشق الجري حقاً!"
+      },
+      "audio": null
+    },
+    {
+      "id": "12-3-5",
+      "role": "李文 (Li Wen)",
+      "hanzi": "是啊，我从小就喜欢运动。我在你楼下等你。",
+      "pinyin": "Shì a, wǒ cóngxiǎo jiù xǐhuan yùndòng. Wǒ zài nǐ lóu xià děng nǐ.",
+      "translation": {
+        "en": "Indeed, I've loved sports ever since I was a kid. I'll wait for you downstairs.",
+        "ar": "نعم، لقد أحببت الرياضة منذ صغري. سأنتظركِ أسفل بنايتكِ."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-3-6",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "好的，我马上下来。",
+      "pinyin": "Hǎo de, wǒ mǎshàng xiàlai.",
+      "translation": {
+        "en": "Great, I'll be right down.",
+        "ar": "حسناً، سأنزل في الحال."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-4-1",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "这几天天气不好，我没有走路去学校，每天坐两站地铁去学校。今天是个晴天，李文叫我跟他一起去外面跑步。他小时候经常跑步。他跑得比我快，但是他等着我。跟李文一起跑步让我好高兴！",
+      "pinyin": "Zhè jǐ tiān tiānqì bù hǎo, wǒ méiyǒu zǒulù qù xuéxiào, měitiān zuò liǎng zhàn dìtiě qù xuéxiào. Jīntiān shì ge qíngtiān, Lǐ Wén jiào wǒ gēn tā yìqǐ qù wàimiàn pǎobù. Tā xiǎoshíhou jīngcháng pǎobù. Tā pǎo de bǐ wǒ kuài, dànshì tā děngzhe wǒ. Gēn Lǐ Wén yìqǐ pǎobù ràng wǒ hǎo gāoxìng!",
+      "translation": {
+        "en": "The weather had been bad over the past few days, so I didn't walk to school; I took the subway for two stops to school every day. Today was a sunny day, and Li Wen asked me to go running outside with him. He often ran when he was a child. He ran faster than me, but he waited for me. Running with Li Wen made me so happy!",
+        "ar": "كان الطقس رديئاً في الأيام القليلة الماضية، لذا لم أذهب مشياً إلى الجامعة، بل ركبت المترو لمحطتين يومياً. واليوم كان الجو مشمساً وصافياً، فدعاني لي ون للجري معه في الهواء الطلق. كان يمارس الجري كثيراً في طفولته. إنه يركض أسرع مني بكثير، لكنه كان يتمهل وينتظرني. لقد جعلني الجري مع لي ون سعيدة للغاية!"
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Comparative Sentences with '多了' / '得多' (Much More / Far More)",
+      "explanation": "Placed after the adjective in a '比' sentence to indicate a substantial difference: 这里比北京冷多了 (It's much colder here than in Beijing); 坐飞机比坐火车快得多 (Flying is much faster than taking the train).",
+      "arExplanation": "تُوضع العبارتان '多了' أو '得多' بعد الصفة في جملة المقارنة '比' للدلالة على فارق كبير وشاسع: '这里比北京冷多了' (الجو هنا أبرد بكثير مما هو في بكين)."
+    },
+    {
+      "point": "Comparative Sentences Combined with Complement of State",
+      "explanation": "When comparing how well or to what degree an action is performed: 昨天比今天下得大 (It snowed heavier yesterday than today); 李文跑得比白家月快 (Li Wen runs faster than Bai Jiayue). For separable verbs: 你跑步跑得比我快 (repeat verb '跑').",
+      "arExplanation": "عند المقارنة في كيفية أو درجة وقوع الفعل: '昨天比今天下得大' (تساقط الثلج أمس كان أغزر من اليوم). وإذا كان الفعل انفصالياً يتكرر الفعل: '你跑步跑得比我快' (أنت تجري أسرع مني)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Winter Climates and Heating in Northern vs. Southern China",
+      "detail": "Northern and Southern China experience starkly different winters. Northern cities like Beijing feature robust indoor central heating (集中供暖), whereas southern cities can feel quite cold and damp indoors despite higher thermometer readings.",
+      "arDetail": "تختلف فصول الشتاء اختلافاً كبيراً بين شمال وجنوب الصين؛ فمدن الشمال مثل بكين تحظى بنظام تدفئة مركزية منزلية قوي وشامل (集中供暖)، بينما تشهد بعض المناطق الأخرى طقساً رطباً وبارداً في الأماكن المغلقة."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q12-1",
+      "question": "How did Bai Jiayue commute to school during the recent bad weather days?",
+      "arQuestion": "كيف كانت باي جيايوي تذهب إلى الجامعة خلال الأيام السابقة ذات الطقس الرديء؟",
+      "options": [
+        "坐两站地铁 (Took the subway for two stops)",
+        "走路 (Walked)",
+        "骑自行车 (Rode a bicycle)",
+        "开汽车 (Drove a car)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q12-2",
+      "question": "Why didn't Teacher Wang Yifei need to leave home during the snow?",
+      "arQuestion": "لماذا لم تكن الأستاذة وانغ ييفي بحاجة للخروج من المنزل أثناء تساقط الثلوج؟",
+      "options": [
+        "因为学校安排上网课 (Because the school arranged online classes)",
+        "因为她生病住院了 (Because she was hospitalized)",
+        "因为学校放假一个月 (Because the school was on a one-month holiday)",
+        "因为汽车坏了 (Because her car broke down)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q12-3",
+      "question": "What did Li Wen do while running with Bai Jiayue?",
+      "arQuestion": "ماذا فعل لي ون أثناء الجري مع باي جيايوي؟",
+      "options": [
+        "他慢慢跑，等着她 (He jogged slowly and waited for her)",
+        "他跑得太快，把她甩在后面 (He ran too fast and left her behind)",
+        "他坐地铁走了 (He took the subway and left)",
+        "他跑去打篮球了 (He went to play basketball instead)"
+      ],
+      "answerIndex": 0
+    }
+  ]
+}

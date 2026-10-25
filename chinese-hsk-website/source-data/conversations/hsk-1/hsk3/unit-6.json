@@ -1,0 +1,224 @@
+{
+  "id": "hsk-1-hsk3-unit-6",
+  "curriculum": "hsk3",
+  "hskLevel": 1,
+  "unitId": 6,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第6课：你的手机号是多少？",
+    "en": "Lesson 6: What's your cell phone number?",
+    "ar": "الدرس 6: ما هو رقم هاتفك المحمول؟"
+  },
+  "dialogue": [
+    {
+      "id": "6-1-1",
+      "role": "李文 (Li Wen)",
+      "hanzi": "家月，你的手机号是多少？",
+      "pinyin": "Jiāyuè, nǐ de shǒujīhào shì duōshao?",
+      "translation": {
+        "en": "Jiayue, what's your cell phone number?",
+        "ar": "جيايوي، ما هو رقم هاتفك المحمول؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-1-2",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "我的手机号是+33 601493190。",
+      "pinyin": "Wǒ de shǒujīhào shì +33 601493190.",
+      "translation": {
+        "en": "My cell phone number is +33 601493190.",
+        "ar": "رقم هاتفي المحمول هو +33 601493190."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-1-3",
+      "role": "李文 (Li Wen)",
+      "hanzi": "我的手机号是+86 13552721160。",
+      "pinyin": "Wǒ de shǒujīhào shì +86 13552721160.",
+      "translation": {
+        "en": "My cell phone number is +86 13552721160.",
+        "ar": "رقم هاتفي المحمول هو +86 13552721160."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-1-4",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "好的。",
+      "pinyin": "Hǎo de.",
+      "translation": {
+        "en": "Alright.",
+        "ar": "حسناً."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-2-1",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "家月，明天你去哪儿？",
+      "pinyin": "Jiāyuè, míngtiān nǐ qù nǎr?",
+      "translation": {
+        "en": "Jiayue, where are you going tomorrow?",
+        "ar": "جيايوي، إلى أين ستذهبين غداً؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-2-2",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "我想去超市买东西。",
+      "pinyin": "Wǒ xiǎng qù chāoshì mǎi dōngxi.",
+      "translation": {
+        "en": "I want to go to the supermarket to buy groceries.",
+        "ar": "أريد الذهاب إلى السوبرماركت لشراء بعض الأشياء."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-2-3",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "你去超市买什么？",
+      "pinyin": "Nǐ qù chāoshì mǎi shénme?",
+      "translation": {
+        "en": "What are you going to buy at the supermarket?",
+        "ar": "ماذا ستشترين من السوبرماركت؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-2-4",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "我想买些牛奶。",
+      "pinyin": "Wǒ xiǎng mǎi xiē niúnǎi.",
+      "translation": {
+        "en": "I want to buy some milk.",
+        "ar": "أريد شراء بعض الحليب."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-3-1",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "星期天我们去哪儿吃晚饭？",
+      "pinyin": "Xīngqītiān wǒmen qù nǎr chī wǎnfàn?",
+      "translation": {
+        "en": "Where are we going for dinner on Sunday?",
+        "ar": "إلى أين سنذهب لتناول العشاء يوم الأحد؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-3-2",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "我还想去西安饭店。",
+      "pinyin": "Wǒ hái xiǎng qù Xī'ān Fàndiàn.",
+      "translation": {
+        "en": "I'd like to go to Xi'an Restaurant again.",
+        "ar": "أود الذهاب إلى مطعم شيآن مجدداً."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-3-3",
+      "role": "刘小雪 (Liu Xiaoxue)",
+      "hanzi": "那边的包子非常好吃，我想吃包子。",
+      "pinyin": "Nàbian de bāozi fēicháng hǎochī, wǒ xiǎng chī bāozi.",
+      "translation": {
+        "en": "The steamed stuffed buns there are very delicious—I want to eat buns.",
+        "ar": "الكعك المحشو على البخار هناك لذيذ جداً، أريد أن آكل الكعك المحشو."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-3-4",
+      "role": "刘小明 (Liu Xiaoming)",
+      "hanzi": "妈妈，我想吃米饭，不想吃包子。",
+      "pinyin": "Māma, wǒ xiǎng chī mǐfàn, bù xiǎng chī bāozi.",
+      "translation": {
+        "en": "Mom, I want to eat rice—not steamed stuffed buns.",
+        "ar": "أمي، أريد أن آكل الأرز، لا أريد الكعك المحشو."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-3-5",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "好的。我们怎么去？",
+      "pinyin": "Hǎo de. Wǒmen zěnme qù?",
+      "translation": {
+        "en": "Alright. How shall we get there?",
+        "ar": "حسناً. كيف سنذهب؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-3-6",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "坐出租车去。",
+      "pinyin": "Zuò chūzūchē qù.",
+      "translation": {
+        "en": "Let's take a taxi.",
+        "ar": "لنذهب بسيارة الأجرة."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Modal Verb 想 (xiǎng)",
+      "explanation": "‘想’ is placed before a verb to express an intention, wish, or desire: 我想去超市 (I want to go to the supermarket). The negative form is ‘不想’ (bù xiǎng).",
+      "arExplanation": "الفعل المساعد '想' يوضع قبل الفعل للتعبير عن الرغبة أو النية أو التخطيط، ونفيه يكون باستخدام '不想'."
+    },
+    {
+      "point": "Serial Verb Sentences (连动句)",
+      "explanation": "Two or more verbal expressions occur in succession without a conjunction to express a sequence of actions or an action and its purpose: 去超市买东西 (go to the supermarket to buy things).",
+      "arExplanation": "الجمل ذات الأفعال المتسلسلة (连动句) تأتي فيها جملتان فعليتان أو أكثر متتابعتين للدلالة على الهدف والغاية: 'ذهب إلى السوبرماركت لشراء الأغراض'."
+    },
+    {
+      "point": "Interrogative Pronoun 怎么 (zěnme)",
+      "explanation": "‘怎么’ is used before a verb to enquire about the method, manner, or vehicle used: 我们怎么去？ (How shall we go?) -> 坐出租车去 (Go by taxi).",
+      "arExplanation": "اسم الاستفهام '怎么' يُستعمل قبل الفعل للسؤال عن الوسيلة أو الكيفية أو طريقة الانتقال: 'كيف سنذهب؟'."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Pronunciation of Digit '1' in Phone Numbers (幺 yāo)",
+      "detail": "When reciting phone numbers, room numbers, or bus lines, the digit '1' (yī) is conventionally pronounced 'yāo' to avoid acoustic confusion with '7' (qī).",
+      "arDetail": "عند نطق أرقام الهواتف أو أرقام الغرف، يُنطق الرقم '1' بصوت 'yāo' بدلاً من 'yī' لتجنب الالتباس الصوتي مع الرقم '7' (qī)."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q6-1",
+      "question": "What does Bai Jiayue plan to buy at the supermarket?",
+      "arQuestion": "ماذا تخطط باي جيايوي لشرائه من السوبرماركت؟",
+      "options": [
+        "牛奶 (Niúnǎi - Milk)",
+        "包子 (Bāozi - Steamed buns)",
+        "米饭 (Mǐfàn - Rice)",
+        "苹果 (Píngguǒ - Apples)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q6-2",
+      "question": "How will Wang Yixue's family travel to Xi'an Restaurant?",
+      "arQuestion": "كيف ستتوجه عائلة وانغ ييشيويه إلى مطعم شيآن؟",
+      "options": [
+        "坐出租车 (By taxi)",
+        "走路 (On foot)",
+        "坐地铁 (By subway)",
+        "骑自行车 (By bicycle)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 6."
+}

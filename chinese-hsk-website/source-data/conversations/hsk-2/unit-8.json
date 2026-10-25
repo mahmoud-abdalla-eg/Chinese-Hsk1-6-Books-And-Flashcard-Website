@@ -1,0 +1,251 @@
+{
+  "id": "hsk-2-unit-8",
+  "hskLevel": 2,
+  "unitId": 8,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第8课：让我想想再告诉你",
+    "en": "Lesson 8: Let me think about it and tell you later",
+    "ar": "الدرس 8: دعني أفكر في الأمر ثم أخبرك لاحقاً"
+  },
+  "targetVocabularyIds": [
+    "rang",
+    "gaosu",
+    "deng",
+    "shi-qing",
+    "hei-se",
+    "baise",
+    "beijing-kaoya",
+    "fanguan",
+    "yanse"
+  ],
+  "dialogue": [
+    {
+      "id": "8-1-1",
+      "role": "Speaker A",
+      "hanzi": "我们周末去爬山，你想去吗？",
+      "pinyin": "Wǒmen zhōumò qù páshān, nǐ xiǎng qù ma?",
+      "translation": {
+        "en": "We are going hiking this weekend, do you want to join?",
+        "ar": "سنذهب لتسلق الجبال في عطلة نهاية الأسبوع، هل تود الذهاب؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "8-1-2",
+      "role": "Speaker B",
+      "hanzi": "让我想想再告诉你。",
+      "pinyin": "Ràng wǒ xiǎngxiang zài gàosu nǐ.",
+      "translation": {
+        "en": "Let me think about it and tell you later.",
+        "ar": "دعني أفكر بالأمر ثم أخبرك."
+      },
+      "audio": null
+    },
+    {
+      "id": "8-1-3",
+      "role": "Speaker A",
+      "hanzi": "好，明天告诉我吧。",
+      "pinyin": "Hǎo, míngtiān gàosu wǒ ba.",
+      "translation": {
+        "en": "Okay, just tell me tomorrow.",
+        "ar": "حسناً، أخبرني غداً إذاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "8-1-4",
+      "role": "Speaker B",
+      "hanzi": "没问题。",
+      "pinyin": "Méi wèntí.",
+      "translation": {
+        "en": "No problem.",
+        "ar": "لا مشكلة."
+      },
+      "audio": null
+    },
+    {
+      "id": "8-2-1",
+      "role": "Speaker A",
+      "hanzi": "你找我有事吗？",
+      "pinyin": "Nǐ zhǎo wǒ yǒu shì ma?",
+      "translation": {
+        "en": "Are you looking for me for something?",
+        "ar": "هل تبحث عني لأمر ما؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "8-2-2",
+      "role": "Speaker B",
+      "hanzi": "经理让我告诉你，明天上午九点开会。",
+      "pinyin": "Jīnglǐ ràng wǒ gàosu nǐ, míngtiān shàngwǔ jiǔ diǎn kāihuì.",
+      "translation": {
+        "en": "The manager asked me to tell you that there is a meeting at 9:00 AM tomorrow.",
+        "ar": "طلب مني المدير إخبارك بأن هناك اجتماعاً غداً في التاسعة صباحاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "8-2-3",
+      "role": "Speaker A",
+      "hanzi": "好的，我知道了。在哪个会议室？",
+      "pinyin": "Hǎo de, wǒ zhīdào le. Zài nǎge huìyìshì?",
+      "translation": {
+        "en": "Got it, thank you. Which meeting room?",
+        "ar": "حسناً، فهمت. في أي قاعة اجتماعات؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "8-2-4",
+      "role": "Speaker B",
+      "hanzi": "在三楼大会议室。",
+      "pinyin": "Zài sān lóu dà huìyìshì.",
+      "translation": {
+        "en": "In the large meeting room on the third floor.",
+        "ar": "في قاعة الاجتماعات الكبرى بالطابق الثالث."
+      },
+      "audio": null
+    },
+    {
+      "id": "8-3-1",
+      "role": "Speaker A",
+      "hanzi": "你觉得这件黑色的怎么样？",
+      "pinyin": "Nǐ juéde zhè jiàn hēisè de zěnmeyàng?",
+      "translation": {
+        "en": "What do you think of this black one?",
+        "ar": "ما رأيك في هذه القطعة السوداء؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "8-3-2",
+      "role": "Speaker B",
+      "hanzi": "我觉得这件颜色有点儿深，那件白色的更好看。",
+      "pinyin": "Wǒ juéde zhè jiàn yánsè yǒudiǎnr shēn, nà jiàn báisè de gèng hǎokàn.",
+      "translation": {
+        "en": "I think its color is a bit dark; the white one looks better.",
+        "ar": "أرى أن لونها داكن قليلاً، القطعة البيضاء هناك تبدو أجمل بكثير."
+      },
+      "audio": null
+    },
+    {
+      "id": "8-3-3",
+      "role": "Speaker A",
+      "hanzi": "那就买白色的吧。",
+      "pinyin": "Nà jiù mǎi báisè de ba.",
+      "translation": {
+        "en": "Then let's buy the white one.",
+        "ar": "فلنشترِ البيضاء إذاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "8-3-4",
+      "role": "Speaker B",
+      "hanzi": "好。",
+      "pinyin": "Hǎo.",
+      "translation": {
+        "en": "Okay.",
+        "ar": "حسناً."
+      },
+      "audio": null
+    },
+    {
+      "id": "8-4-1",
+      "role": "Speaker A",
+      "hanzi": "今天晚上吃什么？",
+      "pinyin": "Jīntiān wǎnshang chī shénme?",
+      "translation": {
+        "en": "What are we eating tonight?",
+        "ar": "ماذا سنأكل في العشاء الليلة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "8-4-2",
+      "role": "Speaker B",
+      "hanzi": "我们去吃火锅吧，或者去吃烤鸭。",
+      "pinyin": "Wǒmen qù chī huǒguō ba, huòzhě qù chī kǎoyā.",
+      "translation": {
+        "en": "Let's go have hot pot, or maybe roast duck.",
+        "ar": "لنذهب لتناول القدر الساخن (الـ Hotpot)، أو ربما البط المشوي."
+      },
+      "audio": null
+    },
+    {
+      "id": "8-4-3",
+      "role": "Speaker A",
+      "hanzi": "让我想想，还是吃烤鸭吧。",
+      "pinyin": "Ràng wǒ xiǎngxiang, háishi chī kǎoyā ba.",
+      "translation": {
+        "en": "Let me think... let's go for roast duck after all.",
+        "ar": "دعني أفكر... من الأفضل تناول البط المشوي."
+      },
+      "audio": null
+    },
+    {
+      "id": "8-4-4",
+      "role": "Speaker B",
+      "hanzi": "好，我给饭馆打电话订位子。",
+      "pinyin": "Hǎo, wǒ gěi fànguǎn dǎ diànhuà dìng wèizi.",
+      "translation": {
+        "en": "Great, I'll call the restaurant to reserve a table.",
+        "ar": "ممتاز، سأتصل بالمطعم لحجز طاولة."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Pivotal Sentence with 让 (ràng)",
+      "explanation": "In a pivotal sentence, the object of 让 acts as the subject of the next verb: Subject + 让 + Object + Action (e.g., 经理让我告诉你 = The manager asked me to tell you).",
+      "arExplanation": "الجملة المحورية مع 让: يأتي مفعول الفعل 让 ليكون في الوقت ذاته فاعلاً للفعل التالي (المدير جعلني/طلب مني أن أخبرك)."
+    },
+    {
+      "point": "Adverb 再 (zài) Indicating Sequence",
+      "explanation": "Used before a verb to signify doing an action after something else concludes (e.g., 想想再告诉你 = think it over and then tell you).",
+      "arExplanation": "يُستعمل الظرف 再 ليدل على تأجيل الفعل ليحدث بعد اكتمال أمر آخر أو في المستقبل."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Face-Saving and Thoughtful Deferrals in Chinese Conversation",
+      "detail": "Phrases like '让我想想' (Let me think) offer polite breathing room to deliberate options or gently decline without abrupt awkwardness.",
+      "arDetail": "تعد عبارة 'دعني أفكر' وسيلة لبقة وراقية في الثقافة الصينية لدراسة الخيارات بتمهل أو إعطاء رد غير مباشر لتجنب الإحراج."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q8-1",
+      "question": "When does the manager want the meeting to take place?",
+      "arQuestion": "متى يريد المدير عقد الاجتماع غداً؟",
+      "options": [
+        "上午九点 (Tomorrow at 9:00 AM)",
+        "下午两点 (Tomorrow at 2:00 PM)",
+        "明天中午 (Tomorrow noon)",
+        "下周一 (Next Monday)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q8-2",
+      "question": "Which color garment do they decide to buy?",
+      "arQuestion": "أي لون قررا شراءه للملابس؟",
+      "options": [
+        "白色的 (White)",
+        "黑色的 (Black)",
+        "红色的 (Red)",
+        "黄色的 (Yellow)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official HSK 2 Standard Course Lesson 8 dialogues."
+}

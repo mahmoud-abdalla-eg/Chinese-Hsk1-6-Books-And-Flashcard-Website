@@ -1,0 +1,197 @@
+{
+  "id": "hsk-1-hsk3-unit-3",
+  "curriculum": "hsk3",
+  "hskLevel": 1,
+  "unitId": 3,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第3课：我是中国人",
+    "en": "Lesson 3: I Am Chinese",
+    "ar": "الدرس 3: أنا صيني"
+  },
+  "dialogue": [
+    {
+      "id": "3-1-1",
+      "role": "李文 (Li Wen)",
+      "hanzi": "我是中国人。",
+      "pinyin": "Wǒ shì Zhōngguó rén.",
+      "translation": {
+        "en": "I am Chinese.",
+        "ar": "أنا صيني."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-1-2",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "我是法国人。我的中文老师也是中国人。",
+      "pinyin": "Wǒ shì Fǎguó rén. Wǒ de Zhōngwén lǎoshī yě shì Zhōngguó rén.",
+      "translation": {
+        "en": "I am French. My Chinese language teacher is also Chinese.",
+        "ar": "أنا فرنسية. ومعلمتي للغة الصينية صينية أيضاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-2-1",
+      "role": "安妮 (Annie)",
+      "hanzi": "这是谁？",
+      "pinyin": "Zhè shì shéi?",
+      "translation": {
+        "en": "Who is this?",
+        "ar": "من هذا؟ (أو من هذه؟)"
+      },
+      "audio": null
+    },
+    {
+      "id": "3-2-2",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "这是我女朋友。",
+      "pinyin": "Zhè shì wǒ nǚpéngyou.",
+      "translation": {
+        "en": "This is my girlfriend.",
+        "ar": "هذه صديقتي (حبيبتي)."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-2-3",
+      "role": "安妮 (Annie)",
+      "hanzi": "你女朋友是哪国人？",
+      "pinyin": "Nǐ nǚpéngyou shì nǎ guó rén?",
+      "translation": {
+        "en": "What nationality is your girlfriend?",
+        "ar": "ما جنسية صديقتك؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "3-2-4",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "她也是泰国人。",
+      "pinyin": "Tā yě shì Tàiguó rén.",
+      "translation": {
+        "en": "She is also Thai.",
+        "ar": "هي أيضاً تايلاندية."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-3-1",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "喂，一飞！",
+      "pinyin": "Wèi, Yīfēi!",
+      "translation": {
+        "en": "Hello, Yifei!",
+        "ar": "أهلاً يا ييفي!"
+      },
+      "audio": null
+    },
+    {
+      "id": "3-3-2",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "姐姐！",
+      "pinyin": "Jiějie!",
+      "translation": {
+        "en": "Elder sister!",
+        "ar": "أختي الكبرى!"
+      },
+      "audio": null
+    },
+    {
+      "id": "3-3-3",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "你工作还忙吗？",
+      "pinyin": "Nǐ gōngzuò hái máng ma?",
+      "translation": {
+        "en": "Are you still busy with work?",
+        "ar": "هل ما زلتِ مشغولة في العمل؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "3-3-4",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "对，还很忙。你也很忙吗？",
+      "pinyin": "Duì, hái hěn máng. Nǐ yě hěn máng ma?",
+      "translation": {
+        "en": "Yes, still very busy. Are you also very busy?",
+        "ar": "نعم، ما زلت مشغولة جداً. هل أنتِ أيضاً مشغولة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "3-3-5",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "我不太忙。我们很想你。",
+      "pinyin": "Wǒ bú tài máng. Wǒmen hěn xiǎng nǐ.",
+      "translation": {
+        "en": "I'm not too busy. We miss you a lot.",
+        "ar": "لست مشغولة كثيراً. نحن نشتاق إليكِ كثيراً."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-3-6",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "我也想你们。",
+      "pinyin": "Wǒ yě xiǎng nǐmen.",
+      "translation": {
+        "en": "I miss you all too.",
+        "ar": "وأنا أيضاً أشتاق إليكم جميعاً."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "The '是' Sentence (是字句)",
+      "explanation": "‘是’ (shì) acts as the copula 'to be' linking subject and nominal predicate: 我是中国人 (I am Chinese). Negation is '不是' (bú shì).",
+      "arExplanation": "فعل الكينونة '是' يربط بين المبتدأ والخبر الاسمي: 我是中国人 (أنا صيني). وصيغة النفي هي '不是'."
+    },
+    {
+      "point": "Yes-No Questions with 吗 (ma)",
+      "explanation": "Adding '吗' at the end of a declarative statement turns it into a yes/no question without changing word order: 你很忙吗？ (Are you busy?).",
+      "arExplanation": "إضافة أداة الاستفهام '吗' في نهاية الجملة الخبرية يحولها إلى سؤال بنعم أو لا دون تغيير ترتيب الكلمات."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Country Names and Nationalities in Chinese",
+      "detail": "Nationalities in Chinese are formed logically by combining the country name with '人' (rén, person): 中国 (China) -> 中国人 (Chinese), 法国 (France) -> 法国人 (French).",
+      "arDetail": "تتكون الجنسيات في اللغة الصينية بتركيبة قياسية سهلة: اسم الدولة + 人 (شخص)؛ مثل: 中国 + 人 = صيني، 法国 + 人 = فرنسي."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q3-1",
+      "question": "What is Bai Jiayue's nationality?",
+      "arQuestion": "ما هي جنسية باي جيايويه؟",
+      "options": [
+        "法国人 (French)",
+        "中国人 (Chinese)",
+        "泰国人 (Thai)",
+        "美国人 (American)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q3-2",
+      "question": "Who called Wang Yifei to ask about her work?",
+      "arQuestion": "من التي اتصلت بـ وانغ ييفي للاطمئنان على عملها؟",
+      "options": [
+        "王一雪 (Her elder sister Wang Yixue)",
+        "白家月 (Bai Jiayue)",
+        "安妮 (Annie)",
+        "小语 (Xiaoyu)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 3."
+}

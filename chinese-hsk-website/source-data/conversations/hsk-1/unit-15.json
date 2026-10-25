@@ -1,0 +1,194 @@
+{
+  "id": "hsk-1-unit-15",
+  "hskLevel": 1,
+  "unitId": 15,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第15课：我是坐飞机来的",
+    "en": "Lesson 15: I Came Here by Plane",
+    "ar": "الدرس 15: لقد جئتُ بالطائرة"
+  },
+  "targetVocabularyIds": [
+    "ren-shi",
+    "nian",
+    "daxue",
+    "fanguan",
+    "chuzuche",
+    "gaoxing",
+    "ting",
+    "fei-ji"
+  ],
+  "dialogue": [
+    {
+      "id": "15-1-1",
+      "role": "Speaker A",
+      "hanzi": "你和李小姐是什么时候认识的？",
+      "pinyin": "Nǐ hé Lǐ xiǎojiě shì shénme shíhou rènshi de?",
+      "translation": {
+        "en": "When did you and Miss Li get to know each other?",
+        "ar": "متى تعرفتَ على الآنسة لي؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "15-1-2",
+      "role": "Speaker B",
+      "hanzi": "我们是2011年9月认识的。",
+      "pinyin": "Wǒmen shì èr líng yī yī nián jiǔ yuè rènshi de.",
+      "translation": {
+        "en": "We met in September 2011.",
+        "ar": "تعرفنا في سبتمبر عام 2011."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-1-3",
+      "role": "Speaker A",
+      "hanzi": "你们在哪儿认识的？",
+      "pinyin": "Nǐmen zài nǎr rènshi de?",
+      "translation": {
+        "en": "Where did you meet?",
+        "ar": "أين التقيتما؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "15-1-4",
+      "role": "Speaker B",
+      "hanzi": "我们是在学校认识的，她是我大学同学。",
+      "pinyin": "Wǒmen shì zài xuéxiào rènshi de, tā shì wǒ dàxué tóngxué.",
+      "translation": {
+        "en": "We met at school; she was my university classmate.",
+        "ar": "التقينا في الجامعة، كانت زميلتي في دراستي الجامعية."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-2-1",
+      "role": "Speaker A",
+      "hanzi": "你们是怎么来饭馆的？",
+      "pinyin": "Nǐmen shì zěnme lái fànguǎn de?",
+      "translation": {
+        "en": "How did you get to the restaurant?",
+        "ar": "كيف جئتم إلى المطعم؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "15-2-2",
+      "role": "Speaker B",
+      "hanzi": "我们是坐出租车来的。",
+      "pinyin": "Wǒmen shì zuò chūzūchē lái de.",
+      "translation": {
+        "en": "We came by taxi.",
+        "ar": "جئنا بسيارة الأجرة (التاكسي)."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-2-3",
+      "role": "Speaker A",
+      "hanzi": "李先生呢？",
+      "pinyin": "Lǐ xiānsheng ne?",
+      "translation": {
+        "en": "What about Mr. Li?",
+        "ar": "وماذا عن السيد لي؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "15-2-4",
+      "role": "Speaker B",
+      "hanzi": "他是和朋友一起开车来的。",
+      "pinyin": "Tā shì hé péngyou yìqǐ kāi chē lái de.",
+      "translation": {
+        "en": "He drove here together with a friend.",
+        "ar": "لقد جاء بالسيارة برفقة صديق له."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-3-1",
+      "role": "Speaker A",
+      "hanzi": "很高兴认识您！李小姐。",
+      "pinyin": "Hěn gāoxìng rènshi nín! Lǐ xiǎojiě.",
+      "translation": {
+        "en": "Very pleased to meet you, Miss Li!",
+        "ar": "سررتُ جداً بلقائك يا آنسة لي!"
+      },
+      "audio": null
+    },
+    {
+      "id": "15-3-2",
+      "role": "Speaker B",
+      "hanzi": "认识你我也很高兴！",
+      "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng!",
+      "translation": {
+        "en": "Nice to meet you too!",
+        "ar": "وأنا مسرورة جداً بالتعرف عليك أيضاً!"
+      },
+      "audio": null
+    },
+    {
+      "id": "15-3-3",
+      "role": "Speaker A",
+      "hanzi": "听张先生说，您是坐飞机来北京的？",
+      "pinyin": "Tīng Zhāng xiānsheng shuō, nín shì zuò fēijī lái Běijīng de?",
+      "translation": {
+        "en": "I heard from Mr. Zhang that you came to Beijing by plane?",
+        "ar": "سمعتُ من السيد تشانغ أنكِ جئتِ إلى بكين بالطائرة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "15-3-4",
+      "role": "Speaker B",
+      "hanzi": "是的。",
+      "pinyin": "Shì de.",
+      "translation": {
+        "en": "Yes, that's right.",
+        "ar": "نعم، هذا صحيح."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "The 是...的 (shì...de) construction",
+      "explanation": "When an action has already occurred, 是...的 is used to emphasize the time, location, manner, or agent: 我们是坐出租车来的 (emphasizing manner: by taxi).",
+      "arExplanation": "صيغة 是...的 تُستخدم للتأكيد على زمان أو مكان أو وسيلة أو طريقة حدوث فعل ماضٍ مؤكد."
+    },
+    {
+      "point": "Expression 很高兴认识你 (Hěn gāoxìng rènshi nǐ)",
+      "explanation": "The standard social expression for 'pleased to meet you' upon introduction.",
+      "arExplanation": "العبارة الرسمية والودية المعتمدة لـ 'سررت بلقائك' عند التعارف."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Transportation in Beijing",
+      "detail": "Taxis (出租车), subways (地铁), and airport express routes form the backbone of modern Beijing urban commuting.",
+      "arDetail": "تشكل سيارات الأجرة وشبكات المترو والقطارات السريعة عصب التنقل العصري في العاصمة بكين."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q15-1",
+      "question": "How did Speaker B come to the restaurant in Dialogue 2?",
+      "arQuestion": "كيف جاء المتحدث B إلى المطعم في الحوار الثاني؟",
+      "options": [
+        "坐出租车 (By taxi)",
+        "坐飞机 (By plane)",
+        "开车 (Driving)",
+        "走路 (Walking)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official HSK 1 Standard Course Lesson 15 dialogues."
+}

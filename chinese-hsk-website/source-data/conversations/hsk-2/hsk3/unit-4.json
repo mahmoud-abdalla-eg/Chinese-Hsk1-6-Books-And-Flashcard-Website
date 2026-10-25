@@ -1,0 +1,279 @@
+{
+  "id": "hsk-2-hsk3-unit-4",
+  "curriculum": "hsk3",
+  "hskLevel": 2,
+  "unitId": 4,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第4课：你穿红色的很好看",
+    "en": "Lesson 4: You look pretty good in red",
+    "ar": "الدرس 4: يبدو اللون الأحمر عليكِ جميلاً جداً"
+  },
+  "dialogue": [
+    {
+      "id": "4-1-1",
+      "role": "刘小雪 (Liu Xiaoxue)",
+      "hanzi": "妈妈，我们来过这家商场吗？",
+      "pinyin": "Māma, wǒmen láiguo zhè jiā shāngchǎng ma?",
+      "translation": {
+        "en": "Mom, have we been to this shopping mall before?",
+        "ar": "أمي، هل جئنا إلى هذا المجمع التجاري من قبل؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "4-1-2",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "没来过，这是新开的。",
+      "pinyin": "Méi láiguo, zhè shì xīn kāi de.",
+      "translation": {
+        "en": "No, we haven't. It just opened recently.",
+        "ar": "لم نأتِ من قبل، لقد افتُتح حديثاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "4-1-3",
+      "role": "刘小雪 (Liu Xiaoxue)",
+      "hanzi": "我们进去看看吧。",
+      "pinyin": "Wǒmen jìnqù kànkan ba.",
+      "translation": {
+        "en": "Let's go inside and have a look.",
+        "ar": "فلندخل ونلقِ نظرة."
+      },
+      "audio": null
+    },
+    {
+      "id": "4-1-4",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "好啊！你想买点儿什么？",
+      "pinyin": "Hǎo a! Nǐ xiǎng mǎi diǎnr shénme?",
+      "translation": {
+        "en": "Sure! What would you like to buy?",
+        "ar": "حسناً! ماذا ترغبين في شرائه؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "4-1-5",
+      "role": "刘小雪 (Liu Xiaoxue)",
+      "hanzi": "我想买条裤子。",
+      "pinyin": "Wǒ xiǎng mǎi tiáo kùzi.",
+      "translation": {
+        "en": "I'd like to buy a pair of pants.",
+        "ar": "أريد شراء بنطال."
+      },
+      "audio": null
+    },
+    {
+      "id": "4-1-6",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "没问题。",
+      "pinyin": "Méi wèntí.",
+      "translation": {
+        "en": "No problem.",
+        "ar": "لا مانع إطلاقاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "4-2-1",
+      "role": "刘小雪 (Liu Xiaoxue)",
+      "hanzi": "妈妈，我想买这条白色的裤子。",
+      "pinyin": "Māma, wǒ xiǎng mǎi zhè tiáo báisè de kùzi.",
+      "translation": {
+        "en": "Mom, I want to buy this pair of white pants.",
+        "ar": "أمي، أريد شراء هذا البنطال الأبيض."
+      },
+      "audio": null
+    },
+    {
+      "id": "4-2-2",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "你有很多白色的衣服，为什么还买白色的？",
+      "pinyin": "Nǐ yǒu hěn duō báisè de yīfu, wèi shénme hái mǎi báisè de?",
+      "translation": {
+        "en": "You have plenty of white clothes; why buy white again?",
+        "ar": "لديكِ الكثير من الملابس البيضاء، فلماذا تشترين باللون الأبيض مجدداً؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "4-2-3",
+      "role": "刘小雪 (Liu Xiaoxue)",
+      "hanzi": "因为我喜欢白色啊！",
+      "pinyin": "Yīnwèi wǒ xǐhuan báisè a!",
+      "translation": {
+        "en": "Because I love white!",
+        "ar": "لأنني أحب اللون الأبيض!"
+      },
+      "audio": null
+    },
+    {
+      "id": "4-2-4",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "我觉得这条白色的不太好看，你试试那条红色的吧。",
+      "pinyin": "Wǒ juéde zhè tiáo báisè de bú tài hǎokàn, nǐ shìshi nà tiáo hóngsè de ba.",
+      "translation": {
+        "en": "I think this white pair doesn't look that great; why don't you try on that red pair?",
+        "ar": "أرى أن هذا البنطال الأبيض ليس جميلاً جداً، جربي ذلك البنطال الأحمر."
+      },
+      "audio": null
+    },
+    {
+      "id": "4-2-5",
+      "role": "刘小雪 (Liu Xiaoxue)",
+      "hanzi": "我没穿过红色的，红色的好看吗？",
+      "pinyin": "Wǒ méi chuānguo hóngsè de, hóngsè de hǎokàn ma?",
+      "translation": {
+        "en": "I've never worn red before; does red look good?",
+        "ar": "لم أرتدِ اللون الأحمر من قبل، هل اللون الأحمر جميل؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "4-2-6",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "就是因为没穿过，所以要试试嘛！",
+      "pinyin": "Jiù shì yīnwèi méi chuānguo, suǒyǐ yào shìshi ma!",
+      "translation": {
+        "en": "Precisely because you haven't, that's why you should try it!",
+        "ar": "لهذا السبب تحديداً، لأنك لم تجربيه من قبل فعليكِ تجربته الآن!"
+      },
+      "audio": null
+    },
+    {
+      "id": "4-3-1",
+      "role": "刘小雪 (Liu Xiaoxue)",
+      "hanzi": "妈妈，我想买个新书包。",
+      "pinyin": "Māma, wǒ xiǎng mǎi ge xīn shūbāo.",
+      "translation": {
+        "en": "Mom, I want to buy a new schoolbag.",
+        "ar": "أمي، أريد أن أشتري حقيبة مدرسية جديدة."
+      },
+      "audio": null
+    },
+    {
+      "id": "4-3-2",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "好，那边卖书包，我们过去看看吧。",
+      "pinyin": "Hǎo, nàbian mài shūbāo, wǒmen guòqu kànkan ba.",
+      "translation": {
+        "en": "Alright, they sell schoolbags over there; let's head over and look.",
+        "ar": "حسناً، يبيعون الحقائب هناك، فلنذهب لنرى."
+      },
+      "audio": null
+    },
+    {
+      "id": "4-3-3",
+      "role": "刘小雪 (Liu Xiaoxue)",
+      "hanzi": "这么多漂亮的书包！",
+      "pinyin": "Zhème duō piàoliang de shūbāo!",
+      "translation": {
+        "en": "So many beautiful schoolbags!",
+        "ar": "ما أجمل كل هذه الحقائب الكثيرة!"
+      },
+      "audio": null
+    },
+    {
+      "id": "4-3-4",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "红色的、绿色的、黑色的，你想买哪个？",
+      "pinyin": "Hóngsè de, lǜsè de, hēisè de, nǐ xiǎng mǎi nǎge?",
+      "translation": {
+        "en": "Red ones, green ones, black ones—which one do you want to get?",
+        "ar": "حمراء، وخضراء، وسوداء—أي واحدة تريدين شراءها؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "4-3-5",
+      "role": "刘小雪 (Liu Xiaoxue)",
+      "hanzi": "绿色的吧。",
+      "pinyin": "Lǜsè de ba.",
+      "translation": {
+        "en": "The green one, please.",
+        "ar": "الحقيبة الخضراء."
+      },
+      "audio": null
+    },
+    {
+      "id": "4-3-6",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "不错，我也觉得绿色的更好看。",
+      "pinyin": "Búcuò, wǒ yě juéde lǜsè de gèng hǎokàn.",
+      "translation": {
+        "en": "Nice pick! I think the green one looks prettier too.",
+        "ar": "اختيار ممتاز، وأنا أيضاً أرى أن اللون الأخضر أجمل بكثير."
+      },
+      "audio": null
+    },
+    {
+      "id": "4-4-1",
+      "role": "刘小雪 (Liu Xiaoxue)",
+      "hanzi": "我和妈妈去了一家商场。因为是新开的，所以这几天东西很便宜。商场里的衣服颜色很多。我没穿过红色的裤子，妈妈让我试了试，我觉得我穿红色的也很好看。",
+      "pinyin": "Wǒ hé māma qùle yì jiā shāngchǎng. Yīnwèi shì xīn kāi de, suǒyǐ zhè jǐ tiān dōngxi hěn piányi. Shāngchǎng lǐ de yīfu yánsè hěn duō. Wǒ méi chuānguo hóngsè de kùzi, māma ràng wǒ shìle shi, wǒ juéde wǒ chuān hóngsè de yě hěn hǎokàn.",
+      "translation": {
+        "en": "I went to a shopping mall with Mom. Because it just opened, goods have been very affordable these days. The clothes come in lots of colors. I had never worn red pants before; Mom encouraged me to try them on, and I think I look really good in red too.",
+        "ar": "ذهبت مع أمي إلى مجمع تجاري. ولأنه مفتتح حديثاً، كانت البضائع رخيصة جداً هذه الأيام. كانت ألوان الملابس متنوعة وكثيرة. لم يسبق لي أن ارتديت بنطالاً أحمر، لكن أمي شجعتني على تجربته، وشعرت أن اللون الأحمر ناسبني وبدا جميلاً جداً عليّ."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Aspect Particle 过 (guò) for Past Experience",
+      "explanation": "‘过’ following a verb indicates that an action occurred as a past experience (at least once before): 我们来过这家商场吗？ (Have we visited this mall before?); 我没穿过红色的 (I've never worn red). Negative form: 没 + V + 过.",
+      "arExplanation": "توضع أداة الخبرة '过' بعد الفعل للدلالة على أن الفعل قد حدث كتجربة في الماضي: '我们来过吗？' (هل زرنا هذا المكان من قبل؟). والنفي يكون باستخدام '没' قبل الفعل دون استخدام '了'."
+    },
+    {
+      "point": "Causal Complex Sentence: 因为……，所以…… (yīnwèi ..., suǒyǐ ...)",
+      "explanation": "Denotes cause and effect ('because ..., therefore ...'): 因为是新开的，所以这几天东西很便宜 (Because it's newly opened, goods are cheap these days). Either conjunction can also be used independently.",
+      "arExplanation": "تُستخدم الجملة السببية المركبة '因为……，所以……' للربط بين السبب والنتيجة (لأن كذا...، لذا كذا...)."
+    },
+    {
+      "point": "The 的-Phrase (的字短语)",
+      "explanation": "Adding ‘的’ to adjectives, verbs, or pronouns turns them into nominal phrases: 红色的 (the red one), 白色的 (the white one), 绿色的 (the green one).",
+      "arExplanation": "تُلحق '的' بالصفات أو الأفعال أو الضمائر لتتحول إلى عبارة اسمية تغني عن تكرار الاسم الموصوف: '红色的' (الأحمر)، '绿色的' (الأخضر)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "The Meaning of Red (红色) in Chinese Culture",
+      "detail": "In China, red (红色 hóngsè) is the most auspicious color, symbolizing joy, prosperity, vitality, and good fortune. People wear red during the Spring Festival, weddings, and zodiac birth years (本命年) to ward off misfortune and welcome success.",
+      "arDetail": "يُعد اللون الأحمر (红色) في الثقافة الصينية لون البركة والبهجة والازدهار. يرتديه الناس في عيد الربيع والأعراس والمناسبات السعيدة لجلب الحظ وطرد الطاقات السلبية."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q4-1",
+      "question": "Had Liu Xiaoxue ever visited this shopping mall before?",
+      "arQuestion": "هل زارت ليو شياوشيويه هذا المجمع التجاري من قبل؟",
+      "options": [
+        "没来过 (Never before)",
+        "来过一次 (Visited once)",
+        "经常来 (Visits often)",
+        "昨天来过 (Visited yesterday)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q4-2",
+      "question": "Which color schoolbag did Liu Xiaoxue and her mother choose?",
+      "arQuestion": "أي لون حقيبة مدرسية اختارته ليو شياوشيويه وأمها؟",
+      "options": [
+        "绿色的 (Green)",
+        "红色的 (Red)",
+        "黑色的 (Black)",
+        "白色的 (White)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 4."
+}

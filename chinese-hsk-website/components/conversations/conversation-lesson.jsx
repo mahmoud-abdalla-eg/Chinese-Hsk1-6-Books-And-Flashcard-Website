@@ -39,6 +39,11 @@ export default function ConversationLesson({
                 ? tr("comingSoon")
                 : tr("ready")}
             </Pill>
+            {conversation.curriculum === "hsk3" || conversation.id?.includes("hsk3") ? (
+              <Pill tone="blue">HSK 3.0</Pill>
+            ) : (
+              <Pill tone="purple">Standard</Pill>
+            )}
             <button
               type="button"
               onClick={() =>

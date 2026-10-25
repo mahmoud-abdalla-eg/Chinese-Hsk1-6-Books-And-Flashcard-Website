@@ -1,0 +1,196 @@
+{
+  "id": "hsk-1-unit-13",
+  "hskLevel": 1,
+  "unitId": 13,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第13课：他在学做中国菜呢",
+    "en": "Lesson 13: He Is Learning to Cook Chinese Food",
+    "ar": "الدرس 13: إنه يتعلم طبخ الطعام الصيني"
+  },
+  "targetVocabularyIds": [
+    "wei",
+    "ye",
+    "xue",
+    "shangwu",
+    "shui-jiao",
+    "dianshi",
+    "xi-huan",
+    "dianhua",
+    "gei",
+    "ba"
+  ],
+  "dialogue": [
+    {
+      "id": "13-1-1",
+      "role": "Speaker A",
+      "hanzi": "喂，你在做什么呢？",
+      "pinyin": "Wèi, nǐ zài zuò shénme ne?",
+      "translation": {
+        "en": "Hello, what are you doing?",
+        "ar": "ألو، ماذا تفعل؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-1-2",
+      "role": "Speaker B",
+      "hanzi": "我在看书呢。",
+      "pinyin": "Wǒ zài kàn shū ne.",
+      "translation": {
+        "en": "I am reading a book.",
+        "ar": "أنا أقرأ كتاباً."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-1-3",
+      "role": "Speaker A",
+      "hanzi": "大卫也在看书吗？",
+      "pinyin": "Dàwèi yě zài kàn shū ma?",
+      "translation": {
+        "en": "Is David reading too?",
+        "ar": "هل ديفيد يقرأ كتاباً أيضاً؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-1-4",
+      "role": "Speaker B",
+      "hanzi": "他没看书，他在学做中国菜呢。",
+      "pinyin": "Tā méi kàn shū, tā zài xué zuò Zhōngguó cài ne.",
+      "translation": {
+        "en": "He is not reading; he is learning to cook Chinese food.",
+        "ar": "هو لا يقرأ؛ إنه يتعلم طبخ الطعام الصيني."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-2-1",
+      "role": "Speaker A",
+      "hanzi": "昨天上午你在做什么呢？",
+      "pinyin": "Zuótiān shàngwǔ nǐ zài zuò shénme ne?",
+      "translation": {
+        "en": "What were you doing yesterday morning?",
+        "ar": "ماذا كنت تفعل صباح أمس؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-2-2",
+      "role": "Speaker B",
+      "hanzi": "我在睡觉呢。你呢？",
+      "pinyin": "Wǒ zài shuìjiào ne. Nǐ ne?",
+      "translation": {
+        "en": "I was sleeping. What about you?",
+        "ar": "كنت نائماً. وأنتَ؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-2-3",
+      "role": "Speaker A",
+      "hanzi": "我在家看电视呢。你喜欢看电视吗？",
+      "pinyin": "Wǒ zài jiā kàn diànshì ne. Nǐ xǐhuan kàn diànshì ma?",
+      "translation": {
+        "en": "I was watching TV at home. Do you like watching TV?",
+        "ar": "كنت في المنزل أشاهد التلفاز. هل تحب مشاهدة التلفاز؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-2-4",
+      "role": "Speaker B",
+      "hanzi": "我不喜欢看电视，我喜欢看电影。",
+      "pinyin": "Wǒ bù xǐhuan kàn diànshì, wǒ xǐhuan kàn diànyǐng.",
+      "translation": {
+        "en": "I don't like watching TV; I like watching movies.",
+        "ar": "أنا لا أحب مشاهدة التلفاز، أفضل مشاهدة الأفلام."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-3-1",
+      "role": "Speaker A",
+      "hanzi": "83016789，这是张先生的电话吗？",
+      "pinyin": "Bā sān líng yāo liù qī bā jiǔ, zhè shì Zhāng xiānsheng de diànhuà ma?",
+      "translation": {
+        "en": "83016789, is this Mr. Zhang's phone number?",
+        "ar": "83016789، هل هذا رقم هاتف السيد تشانغ؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-3-2",
+      "role": "Speaker B",
+      "hanzi": "不是。他的电话是82304156。",
+      "pinyin": "Bú shì. Tā de diànhuà shì bā èr sān líng sì yāo wǔ liù.",
+      "translation": {
+        "en": "No. His phone number is 82304156.",
+        "ar": "كلا. رقم هاتفه هو 82304156."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-3-3",
+      "role": "Speaker A",
+      "hanzi": "好，我现在给他打电话。",
+      "pinyin": "Hǎo, wǒ xiànzài gěi tā dǎ diànhuà.",
+      "translation": {
+        "en": "Okay, I will call him right now.",
+        "ar": "حسناً، سأتصل به هاتفياً الآن."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-3-4",
+      "role": "Speaker B",
+      "hanzi": "他在工作呢，你下午打吧。",
+      "pinyin": "Tā zài gōngzuò ne, nǐ xiàwǔ dǎ ba.",
+      "translation": {
+        "en": "He is working now; please call this afternoon.",
+        "ar": "إنه منشغل بالعمل الآن، من الأفضل أن تتصل به بعد الظهر."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Continuous action with 在...呢 (zài...ne)",
+      "explanation": "在 + Verb + 呢 indicates an action in progress at the moment: 我在看书呢 (I am reading right now). Negative uses 没在 or 没.",
+      "arExplanation": "صيغة المضارع المستمر: 在 + الفعل + 呢 تدل على استمرار حدوث الفعل في الوقت الراهن."
+    },
+    {
+      "point": "Reading number 1 as 'yāo' in phone numbers",
+      "explanation": "In phone numbers and addresses, the digit 1 is read as 'yāo' rather than 'yī' to prevent acoustic confusion with 7 (qī).",
+      "arExplanation": "في أرقام الهواتف، يُنطق الرقم 1 بلفظ yāo تفادياً للالتباس الصوتي مع الرقم 7 (qī)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Telephone Greeting: 喂 (Wèi)",
+      "detail": "When answering the phone in China, people customarily say '喂' (Wèi) with a rising tone, equivalent to 'Hello'.",
+      "arDetail": "الرد على الهاتف في الصين يبدأ دائماً بكلمة 喂 (Wèi) بنغمة صاعدة وتعني 'ألو'."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q13-1",
+      "question": "What is David doing in Dialogue 1?",
+      "arQuestion": "ماذا يفعل ديفيد في الحوار الأول؟",
+      "options": [
+        "学做中国菜 (Learning to cook Chinese food)",
+        "睡觉 (Sleeping)",
+        "看电影 (Watching a movie)",
+        "给张先生打电话 (Calling Mr. Zhang)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official HSK 1 Standard Course Lesson 13 dialogues."
+}

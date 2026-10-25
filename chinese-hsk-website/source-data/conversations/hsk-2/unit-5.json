@@ -1,0 +1,252 @@
+{
+  "id": "hsk-2-unit-5",
+  "hskLevel": 2,
+  "unitId": 5,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第5课：就买这件吧",
+    "en": "Lesson 5: Take this one",
+    "ar": "الدرس 5: لنشترِ هذه القطعة"
+  },
+  "targetVocabularyIds": [
+    "yu",
+    "fanguan",
+    "bu-cuo",
+    "keneng",
+    "yin",
+    "waimian",
+    "jian-2",
+    "yi-fu",
+    "hongcha",
+    "lvcha"
+  ],
+  "dialogue": [
+    {
+      "id": "5-1-1",
+      "role": "Speaker A",
+      "hanzi": "晚上我们吃什么？",
+      "pinyin": "Wǎnshang wǒmen chī shénme?",
+      "translation": {
+        "en": "What shall we eat tonight?",
+        "ar": "ماذا سنأكل في وجبة العشاء الليلة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-1-2",
+      "role": "Speaker B",
+      "hanzi": "我们去外面吃吧。",
+      "pinyin": "Wǒmen qù wàimiàn chī ba.",
+      "translation": {
+        "en": "Let's eat out.",
+        "ar": "دعنا نأكل في الخارج."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-1-3",
+      "role": "Speaker A",
+      "hanzi": "想吃什么？",
+      "pinyin": "Xiǎng chī shénme?",
+      "translation": {
+        "en": "What do you want to eat?",
+        "ar": "ماذا تحب أن تأكل؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-1-4",
+      "role": "Speaker B",
+      "hanzi": "我们去吃鱼吧，那家饭馆的鱼做得很好。",
+      "pinyin": "Wǒmen qù chī yú ba, nà jiā fànguǎn de yú zuò de hěn hǎo.",
+      "translation": {
+        "en": "Let's go eat fish; that restaurant prepares fish very well.",
+        "ar": "لنذهب لتناول السمك، ذلك المطعم يطهو السمك بشكل ممتاز."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-2-1",
+      "role": "Speaker A",
+      "hanzi": "你看这件衣服怎么样？",
+      "pinyin": "Nǐ kàn zhè jiàn yīfu zěnmeyàng?",
+      "translation": {
+        "en": "What do you think of this piece of clothing?",
+        "ar": "ما رأيك في قطعة الملابس هذه؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-2-2",
+      "role": "Speaker B",
+      "hanzi": "颜色还可以，就是有点儿大。",
+      "pinyin": "Yánsè hái kěyǐ, jiù shì yǒudiǎnr dà.",
+      "translation": {
+        "en": "The color is fine, but it's a bit too big.",
+        "ar": "لونها مقبول، لكنها واسعة بعض الشيء."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-2-3",
+      "role": "Speaker A",
+      "hanzi": "这件小的怎么样？",
+      "pinyin": "Zhè jiàn xiǎo de zěnmeyàng?",
+      "translation": {
+        "en": "How about this smaller one?",
+        "ar": "ما رأيك في هذه الأصغر حجماً؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-2-4",
+      "role": "Speaker B",
+      "hanzi": "这件不错，就买这件吧。",
+      "pinyin": "Zhè jiàn búcuò, jiù mǎi zhè jiàn ba.",
+      "translation": {
+        "en": "This one is nice; let's buy this one.",
+        "ar": "هذه جيدة جداً، فلنشترِ هذه إذاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-3-1",
+      "role": "Speaker A",
+      "hanzi": "今天好一点儿了吗？",
+      "pinyin": "Jīntiān hǎo yìdiǎnr le ma?",
+      "translation": {
+        "en": "Are you feeling a bit better today?",
+        "ar": "هل تشعر بتحسن قليل اليوم؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-3-2",
+      "role": "Speaker B",
+      "hanzi": "好多了。医生让我多喝水，多休息。",
+      "pinyin": "Hǎo duō le. Yīshēng ràng wǒ duō hē shuǐ, duō xiūxi.",
+      "translation": {
+        "en": "Much better. The doctor told me to drink plenty of water and rest more.",
+        "ar": "أفضل بكثير. نصحني الطبيب بالإكثار من شرب الماء والراحة."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-3-3",
+      "role": "Speaker A",
+      "hanzi": "喝点儿茶吧。",
+      "pinyin": "Hē diǎnr chá ba.",
+      "translation": {
+        "en": "Have some tea.",
+        "ar": "اشرب بعض الشاي."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-3-4",
+      "role": "Speaker B",
+      "hanzi": "谢谢，我不喝茶，医生说喝水最好。",
+      "pinyin": "Xièxie, wǒ bù hē chá, yīshēng shuō hē shuǐ zuì hǎo.",
+      "translation": {
+        "en": "Thank you, I don't drink tea; the doctor said drinking water is best.",
+        "ar": "شكراً لك، أنا لا أشرب الشاي، فالطبيب قال إن شرب الماء النقي هو الأفضل."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-4-1",
+      "role": "Speaker A",
+      "hanzi": "外面天气怎么样？",
+      "pinyin": "Wàimiàn tiānqì zěnmeyàng?",
+      "translation": {
+        "en": "How is the weather outside?",
+        "ar": "كيف حال الطقس في الخارج؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-4-2",
+      "role": "Speaker B",
+      "hanzi": "阴天，可能要下雨。",
+      "pinyin": "Yīntiān, kěnéng yào xiàyǔ.",
+      "translation": {
+        "en": "It's overcast, it might rain.",
+        "ar": "إنه غائم، ربما ستمطر."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-4-3",
+      "role": "Speaker A",
+      "hanzi": "那我们今天不去踢足球了。",
+      "pinyin": "Nà wǒmen jīntiān bú qù tī zúqiú le.",
+      "translation": {
+        "en": "Then we won't go play football today.",
+        "ar": "إذاً لن نذهب للعب كرة القدم اليوم."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-4-4",
+      "role": "Speaker B",
+      "hanzi": "好，在家里看电视吧。",
+      "pinyin": "Hǎo, zài jiālǐ kàn diànshì ba.",
+      "translation": {
+        "en": "Okay, let's watch TV at home.",
+        "ar": "حسناً، فلنشاهد التلفاز في المنزل."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Adverb 就 (jiù) Indicating Decision",
+      "explanation": "Used before a verb to express prompt determination or settlement upon an option (e.g., 就买这件吧 = Let's just buy this one).",
+      "arExplanation": "يُستعمل الظرف 就 للدلالة على الحسم السريع للقرار أو اختيار بديل محدد دون تردد."
+    },
+    {
+      "point": "Adverb 有点儿 (yǒudiǎnr) with Negative Nuance",
+      "explanation": "Placed before adjectives to signify 'a little bit' or 'somewhat', usually implying dissatisfaction (e.g., 有点儿大 = slightly too big).",
+      "arExplanation": "تأتي 有点儿 قبل الصفات لتعني 'قليلاً' وتحمل عادة دلالة عدم الرضا التام."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Chinese Tea Culture and Healthy Drinking",
+      "detail": "While green tea (绿茶) and black tea (红茶) are national treasures, plain warm water (温开水) is universally advised by doctors for healing.",
+      "arDetail": "رغم شهرة الشاي الصيني عالمياً، إلا أن شرب الماء الفاتر يُعد النصيحة الطبية الأولى للصحة والتعافي في الصين."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q5-1",
+      "question": "What do the speakers decide to eat tonight?",
+      "arQuestion": "ماذا قرر المتحدثان أن يتناولا في العشاء الليلة؟",
+      "options": [
+        "吃鱼 (Eat fish)",
+        "吃牛肉 (Eat beef)",
+        "吃包子 (Eat buns)",
+        "吃米饭 (Eat rice)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q5-2",
+      "question": "Why didn't they choose the first piece of clothing?",
+      "arQuestion": "لماذا لم يختارا قطعة الملابس الأولى؟",
+      "options": [
+        "有点儿大 (It's slightly too big)",
+        "有点儿贵 (It's slightly too expensive)",
+        "颜色不好 (Color is not good)",
+        "太短了 (Too short)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official HSK 2 Standard Course Lesson 5 dialogues."
+}

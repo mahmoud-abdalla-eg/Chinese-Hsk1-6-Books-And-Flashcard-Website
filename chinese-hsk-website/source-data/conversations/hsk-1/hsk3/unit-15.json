@@ -1,0 +1,224 @@
+{
+  "id": "hsk-1-hsk3-unit-15",
+  "curriculum": "hsk3",
+  "hskLevel": 1,
+  "unitId": 15,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第15课：大兴机场见！",
+    "en": "Lesson 15: See you at Daxing Airport!",
+    "ar": "الدرس 15: نلتقي في مطار داشينغ!"
+  },
+  "dialogue": [
+    {
+      "id": "15-1-1",
+      "role": "李文 (Li Wen)",
+      "hanzi": "你们爱吃哪个菜？",
+      "pinyin": "Nǐmen ài chī nǎge cài?",
+      "translation": {
+        "en": "Which dish do you love eating?",
+        "ar": "أي طبق تفضلون وتستمتعون بأكله؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "15-1-2",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "我喜欢这个，也喜欢那个。",
+      "pinyin": "Wǒ xǐhuan zhège, yě xǐhuan nàge.",
+      "translation": {
+        "en": "I like this one, and I like that one too.",
+        "ar": "يعجبني هذا الطبق، وذلك الطبق أيضاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-1-3",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "这些菜都好吃，还很好看。",
+      "pinyin": "Zhèxiē cài dōu hǎochī, hái hěn hǎokàn.",
+      "translation": {
+        "en": "These dishes are all delicious, and they look great too.",
+        "ar": "كل هذه الأطباق لذيذة، ومظهرها جميل جداً أيضاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-1-4",
+      "role": "李文 (Li Wen)",
+      "hanzi": "我爱吃中国菜，也喜欢做。大家多吃点儿。",
+      "pinyin": "Wǒ ài chī Zhōngguó cài, yě xǐhuan zuò. Dàjiā duō chī diǎnr.",
+      "translation": {
+        "en": "I love eating Chinese food, and I enjoy cooking it too. Everyone, please eat more!",
+        "ar": "أنا أحب الطعام الصيني وأحب طبخه أيضاً. كلوا المزيد يا رفاق، بالهناء والشفاء."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-2-1",
+      "role": "李文 (Li Wen)",
+      "hanzi": "你们都想去哪儿？",
+      "pinyin": "Nǐmen dōu xiǎng qù nǎr?",
+      "translation": {
+        "en": "Where do you all want to visit?",
+        "ar": "إلى أين ترغبون جميعاً في السفر والزيارة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "15-2-2",
+      "role": "安妮 (Annie)",
+      "hanzi": "去年我和男朋友去了西安，今年我想去北京。",
+      "pinyin": "Qùnián wǒ hé nánpéngyou qùle Xī'ān, jīnnián wǒ xiǎng qù Běijīng.",
+      "translation": {
+        "en": "Last year my boyfriend and I went to Xi'an; this year I want to visit Beijing.",
+        "ar": "في العام الماضي ذهبت أنا وصديقي إلى شيآن، وهذا العام أريد زيارة بكين."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-2-3",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "前几年我去了西安，非常非常好玩儿。今年我也想去北京。",
+      "pinyin": "Qián jǐ nián wǒ qùle Xī'ān, fēicháng hǎowánr. Jīnnián wǒ yě xiǎng qù Běijīng.",
+      "translation": {
+        "en": "A few years ago I went to Xi'an, and it was so much fun. This year I want to visit Beijing too.",
+        "ar": "قبل عدة سنوات ذهبت إلى شيآن وكانت ممتعة للغاية. وهذا العام أود الذهاب إلى بكين أيضاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-2-4",
+      "role": "李文 (Li Wen)",
+      "hanzi": "我和王老师都是北京人，北京非常漂亮。",
+      "pinyin": "Wǒ hé Wáng lǎoshī dōu shì Běijīng rén, Běijīng fēicháng piàoliang.",
+      "translation": {
+        "en": "Ms. Wang and I are both from Beijing. Beijing is very beautiful.",
+        "ar": "أنا والأستاذة وانغ من أهل بكين، وبكين مدينة فائقة الجمال."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-3-1",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "你们的飞机到北京要几个小时？",
+      "pinyin": "Nǐmen de fēijī dào Běijīng yào jǐ gè xiǎoshí?",
+      "translation": {
+        "en": "How many hours will your flight take to reach Beijing?",
+        "ar": "كم ساعة تستغرق رحلتكم الجوية للوصول إلى بكين؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "15-3-2",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "九个小时。",
+      "pinyin": "Jiǔ gè xiǎoshí.",
+      "translation": {
+        "en": "Nine hours.",
+        "ar": "تسع ساعات."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-3-3",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "我家人都在北京，星期天我姐姐也有时间，她可以去机场接你们，你们也可以住我家。",
+      "pinyin": "Wǒ jiārén dōu zài Běijīng, xīngqītiān wǒ jiějie yě yǒu shíjiān, tā kěyǐ qù jīchǎng jiē nǐmen, nǐmen yě kěyǐ zhù wǒ jiā.",
+      "translation": {
+        "en": "My whole family is in Beijing, and my older sister has free time on Sunday. She can pick you up at the airport, and you can stay at my home.",
+        "ar": "كل أفراد عائلتي في بكين، ولدى أختي الكبرى وقت فراغ يوم الأحد، يمكنها استقبالكم في المطار، كما يمكنكم الإقامة في بيتي."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-3-4",
+      "role": "安妮 (Annie)",
+      "hanzi": "我们星期日早上八点到大兴机场，早不早？",
+      "pinyin": "Wǒmen xīngqīrì zǎoshang bā diǎn dào Dàxīng Jīchǎng, zǎo bu zǎo?",
+      "translation": {
+        "en": "We'll arrive at Daxing Airport at 8:00 on Sunday morning; is that too early?",
+        "ar": "سنصل إلى مطار داشينغ صباح الأحد عند الساعة الثامنة، أليس ذلك مبكراً جداً؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "15-3-5",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "不早。",
+      "pinyin": "Bù zǎo.",
+      "translation": {
+        "en": "Not too early.",
+        "ar": "ليس مبكراً أبداً."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-3-6",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "谢谢老师！那我们和您姐姐在大兴机场见！",
+      "pinyin": "Xièxie lǎoshī! Nà wǒmen hé nín jiějie zài Dàxīng Jīchǎng jiàn!",
+      "translation": {
+        "en": "Thank you, Teacher! We'll meet your sister at Daxing Airport then!",
+        "ar": "شكراً جزيلاً يا معلمتنا! إذاً سنلتقي مع أختكِ في مطار داشينغ!"
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Compound Sentences with 也/还 (……，也/还……)",
+      "explanation": "Connects coordinate clauses denoting related or progressive aspects: 我爱吃中国菜，也喜欢做 (I love eating Chinese food, and also like making it); 这些菜都好吃，还很好看 (These dishes are all delicious, and furthermore look attractive).",
+      "arExplanation": "تُستخدم الجمل المركبة المتوازية المقترنة بـ '也' (أيضاً) أو '还' (علاوة على ذلك) للربط بين صفتين أو جملتين فعليتين متناسقتين."
+    },
+    {
+      "point": "Verb 要 (yào) Indicating Required Time",
+      "explanation": "‘要’ followed by a time duration expresses the amount of time needed: 要几个小时？ (How many hours does it take?) -> 九个小时 (Nine hours).",
+      "arExplanation": "يُستخدم الفعل '要' متبوعاً بالمدة الزمنية للدلالة على الوقت اللازم أو المستغرق لإتمام الأمر: '要几个小时？' (كم ساعة يستغرق الأمر؟)."
+    },
+    {
+      "point": "Meeting Expression: 地点 + 见 (jiàn)",
+      "explanation": "‘[Place] + 见’ is a common colloquial farewell pattern meaning 'See you at [Place]': 大兴机场见！ (See you at Daxing Airport!).",
+      "arExplanation": "الصيغة الاصطلاحية '[المكان] + 见' تعني 'أراك في [المكان]' وهي شائعة جداً في الوداع والاتفاق: '大兴机场见！' (نلتقي في مطار داشينغ!)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Hospitality Culture & Daxing Airport (大兴国际机场)",
+      "detail": "Chinese dining culture emphasizes warm hospitality, with hosts frequently urging guests to eat more ('大家多吃点儿') and offering accommodation to visiting friends. Beijing Daxing International Airport (PKX) is one of the world's largest single-building airport terminals, opened in 2019.",
+      "arDetail": "تتميز الثقافة الصينية بكرم الضيافة البالغ وحث الضيوف بلطف على الإكثار من الأكل ('多吃点儿') والترحيب باستضافتهم في المنازل. ويُعد مطار بكين داشينغ الدولي (PKX) من أكبر وأحدث مطارات العالم، وتم افتتاحه عام 2019 بتصميم معماري فريد."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q15-1",
+      "question": "How long will the flight to Beijing take for Annie and Bai Jiayue?",
+      "arQuestion": "كم من الوقت ستستغرق الرحلة الجوية إلى بكين؟",
+      "options": [
+        "九个小时 (9 hours)",
+        "八个小时 (8 hours)",
+        "七个小时 (7 hours)",
+        "十个小时 (10 hours)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q15-2",
+      "question": "Who will meet them at Daxing Airport?",
+      "arQuestion": "من سيستقبلهم في مطار داشينغ؟",
+      "options": [
+        "王老师的姐姐 (Teacher Wang's older sister)",
+        "李文的姐姐 (Li Wen's older sister)",
+        "安妮的男朋友 (Annie's boyfriend)",
+        "刘明 (Liu Ming)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 15."
+}

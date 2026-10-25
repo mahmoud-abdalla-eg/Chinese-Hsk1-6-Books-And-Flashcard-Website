@@ -1,0 +1,292 @@
+{
+  "id": "hsk-2-hsk3-unit-13",
+  "curriculum": "hsk3",
+  "hskLevel": 2,
+  "unitId": 13,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第13课：我们爱上中文课",
+    "en": "Lesson 13: We love attending Chinese class",
+    "ar": "الدرس 13: نحن نعشق حضور دروس اللغة الصينية"
+  },
+  "dialogue": [
+    {
+      "id": "13-1-1",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "时间过得真快啊！新年就要到了。",
+      "pinyin": "Shíjiān guò de zhēn kuài a! Xīnnián jiù yào dào le.",
+      "translation": {
+        "en": "Time truly flies! The New Year is coming so soon.",
+        "ar": "الوقت يمضي بسرعة عجيبة! رأس السنة على وشك القدوم."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-1-2",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "这半年王老师教我们中文，每天都那么认真。",
+      "pinyin": "Zhè bàn nián Wáng lǎoshī jiāo wǒmen Zhōngwén, měitiān dōu nàme rènzhēn.",
+      "translation": {
+        "en": "Teacher Wang has been teaching us Chinese for the past six months, always so dedicated every single day.",
+        "ar": "خلال هذا النصف عام علمتنا الأستاذة وانغ الصينية بكل تفانٍ وإخلاص كل يوم."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-1-3",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "我们送王老师一些花，好不好？",
+      "pinyin": "Wǒmen sòng Wáng lǎoshī yìxiē huā, hǎo bu hǎo?",
+      "translation": {
+        "en": "How about we give Teacher Wang some flowers?",
+        "ar": "ما رأيك أن نهدي الأستاذة وانغ بعض الزهور؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-1-4",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "太好了！我知道附近有一家花店，里面的花特别漂亮。",
+      "pinyin": "Tài hǎo le! Wǒ zhīdào fùjìn yǒu yì jiā huādiàn, lǐmiàn de huā tèbié piàoliang.",
+      "translation": {
+        "en": "Wonderful! I know a flower shop nearby where the flowers are exceptionally beautiful.",
+        "ar": "فكرة رائعة! أعرف متجر زهور قريباً هنا، والورود فيه غاية في الجمال."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-1-5",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "那下课后我们一起去看看吧。",
+      "pinyin": "Nà xiàkè hòu wǒmen yìqǐ qù kànkan ba.",
+      "translation": {
+        "en": "Then let's go check it out together after class.",
+        "ar": "فلنذهب معاً لإلقاء نظرة بعد انتهاء الحصة إذاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-1-6",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "好的！",
+      "pinyin": "Hǎo de!",
+      "translation": {
+        "en": "Great!",
+        "ar": "حسناً، اتفقنا!"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-2-1",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "王老师，今天的词比昨天多了十个。",
+      "pinyin": "Wáng lǎoshī, jīntiān de cí bǐ zuótiān duōle shí ge.",
+      "translation": {
+        "en": "Teacher Wang, today's vocabulary has ten more words than yesterday's.",
+        "ar": "أستاذة وانغ، مفردات اليوم تزيد بعشر كلمات عن الأمس."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-2-2",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "是啊！你们都学会了吗？",
+      "pinyin": "Shì a! Nǐmen dōu xuéhuì le ma?",
+      "translation": {
+        "en": "Yes! Have you all mastered them?",
+        "ar": "نعم بالفعل! هل أتقنتموها جميعاً؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-2-3",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "学会了，没有问题。",
+      "pinyin": "Xuéhuì le, méi yǒu wèntí.",
+      "translation": {
+        "en": "We've mastered them, no problem at all.",
+        "ar": "تعلمناها وأتقناها، ولا توجد مشكلة."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-2-4",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "好。现在我来说，你们在本子上面写。",
+      "pinyin": "Hǎo. Xiànzài wǒ lái shuō, nǐmen zài běnzi shàngmian xiě.",
+      "translation": {
+        "en": "Good. Now I'll dictate, and you write on your notebooks.",
+        "ar": "ممتاز. سأملي عليكم الآن، وأنتم اكتبوا على دفاتركم."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-2-5",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "同学们，“洗手间”的“洗”有几笔？",
+      "pinyin": "Tóngxuémen, \"xǐshǒujiān\" de \"xǐ\" yǒu jǐ bǐ?",
+      "translation": {
+        "en": "Students, how many strokes are there in the character \"xǐ\" (wash) of \"xǐshǒujiān\"?",
+        "ar": "يا طلاب، كم عدد الخطوط والضربات (الضربات القلمية) في حرف 'xǐ' من كلمة 'xǐshǒujiān' (دورة المياه)؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-2-6",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "九笔！",
+      "pinyin": "Jiǔ bǐ!",
+      "translation": {
+        "en": "Nine strokes!",
+        "ar": "تسع ضربات!"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-2-7",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "写得真好！",
+      "pinyin": "Xiě de zhēn hǎo!",
+      "translation": {
+        "en": "Written so well!",
+        "ar": "خطكِ جميل ورائع جداً!"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-3-1",
+      "role": "安妮 (Annie)",
+      "hanzi": "家月，你觉得这个本子怎么样？",
+      "pinyin": "Jiāyuè, nǐ juéde zhège běnzi zěnmeyàng?",
+      "translation": {
+        "en": "Jiayue, what do you think of this notebook?",
+        "ar": "جيايوي، ما رأيك في هذا الدفتر؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-3-2",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "很漂亮，多少钱一个？",
+      "pinyin": "Hěn piàoliang, duōshao qián yí ge?",
+      "translation": {
+        "en": "Very pretty! How much did it cost?",
+        "ar": "جميل جداً، كم يبلغ سعره للواحد؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-3-3",
+      "role": "安妮 (Annie)",
+      "hanzi": "比我们一起买的那个本子贵一点儿。",
+      "pinyin": "Bǐ wǒmen yìqǐ mǎi de nàge běnzi guì yìdiǎnr.",
+      "translation": {
+        "en": "It's a little bit more expensive than the one we bought together.",
+        "ar": "أغلى بقليل من ذلك الدفتر الذي اشتريناه معاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-3-4",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "这么漂亮的本子，不可能只贵一点儿吧？",
+      "pinyin": "Zhème piàoliang de běnzi, bù kěnéng zhǐ guì yìdiǎnr ba?",
+      "translation": {
+        "en": "Such a beautiful notebook can't just be slightly more expensive, can it?",
+        "ar": "دفتر بكل هذا الجمال لا يعقل أن يكون أغلى بقليل فقط، أليس كذلك؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-3-5",
+      "role": "安妮 (Annie)",
+      "hanzi": "我是在网上买的，上网买比在商店买便宜，所以能便宜一些。",
+      "pinyin": "Wǒ shì zài wǎngshang mǎi de, shàngwǎng mǎi bǐ zài shāngdiàn mǎi piányi, suǒyǐ néng piányi yìxiē.",
+      "translation": {
+        "en": "I bought it online; buying online is cheaper than in regular stores, so it's a bit less expensive.",
+        "ar": "اشتريته عبر الإنترنت، والشراء عبر الإنترنت أرخص من الشراء في المتاجر، لذلك وفرت فيه."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-3-6",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "那样真好！我也想上网买一个。",
+      "pinyin": "Nàyàng zhēn hǎo! Wǒ yě xiǎng shàngwǎng mǎi yí ge.",
+      "translation": {
+        "en": "That's wonderful! I'd like to buy one online too.",
+        "ar": "هذا رائع حقاً! أود أنا أيضاً أن أشتري واحداً عبر الإنترنت."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-4-1",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "新年就要到了，安妮送给我一个新本子。她告诉我是在网上买的，比我的本子贵一点儿。我们班同学也送了王老师漂亮的花，希望她高高兴兴地过个新年。",
+      "pinyin": "Xīnnián jiù yào dào le, Ānnī sòng gěi wǒ yí ge xīn běnzi. Tā gàosu wǒ shì zài wǎngshang mǎi de, bǐ wǒ de běnzi guì yìdiǎnr. Wǒmen bān tóngxué yě sòngle Wáng lǎoshī piàoliang de huā, xīwàng tā gāogāoxìngxìng de guò ge xīnnián.",
+      "translation": {
+        "en": "The New Year is almost here. Annie gave me a new notebook as a gift. She told me she bought it online and that it was slightly more expensive than mine. Our classmates also gave Teacher Wang beautiful flowers, wishing her a joyful celebration for the New Year.",
+        "ar": "رأس السنة على وشك القدوم، وقد أهدتني آني دفتراً جديداً. وأخبرتني أنها اشترته عبر الإنترنت، وأنه أغلى من دفتري بقليل. كما قدم طلاب فصلنا للأستاذة وانغ باقة زهور جميلة، متمنين لها قضاء رأس سنة مفعمة بالفرح والسعادة."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Double-Object Sentences with '给' (送给 / 拿给 / 卖给)",
+      "explanation": "In double-object sentences, verbs like 送, 拿, or 卖 attach 给; the indirect object (person) precedes the direct object (thing): 安妮送给我一个新本子 (Annie gave me a new notebook); 送给王老师一些花 (give Teacher Wang flowers).",
+      "arExplanation": "في جمل المفعولين مع حرف '给' مثل (送给 يهدي، 拿给 يناول، 卖给 يبيع)، يأتي المفعول به الأول (الشخص) قبل المفعول به الثاني (الشيء): '安妮送给我一个新本子' (أهدتني آني دفتراً جديداً)."
+    },
+    {
+      "point": "Comparative Sentences with Numeral-Measure Phrases or '一点儿' / '一些'",
+      "explanation": "To indicate the exact or slight numerical difference, place the phrase after the adjective: 今天的词比昨天多了十个 (10 more words than yesterday); 比我的本子贵一点儿 (a little bit more expensive than mine); 姐姐比我大三岁 (older by three years).",
+      "arExplanation": "للتعبير عن المقدار المحدد للفارق أو الفارق الطفيف في جملة '比'، يُوضع المقدار العددي أو '一点儿/一些' بعد الصفة مباشرة: '今天的词比昨天多了十个' (أكثر بعشر كلمات)، '比我的本子贵一点儿' (أغلى بقليل)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Respecting Teachers and Chinese Classroom Etiquette (尊师重道)",
+      "detail": "In Chinese culture, teachers are deeply revered (尊师重道). When semesters conclude or New Year approaches, students frequently gift teachers potted plants, fresh flowers, or handwritten gratitude cards to acknowledge their patience and guidance.",
+      "arDetail": "تحظى مهنة التعليم بمكانة رفيعة وقدسية خاصة في الثقافة الصينية انطلاقاً من مبدأ 'تبجيل المعلم وإكرام العلم' (尊师重道). ومع اقتراب العام الجديد أو انتهاء الفصول الدراسية، يحرص الطلاب على إهداء معلميهم الورود وبطاقات الشكر المكتوبة بخط اليد تعبيراً عن التقدير والامتنان."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q13-1",
+      "question": "What gift did the classmates decide to buy for Teacher Wang?",
+      "arQuestion": "ما الهدية التي قرر زملاء الصف شراؤها للأستاذة وانغ؟",
+      "options": [
+        "漂亮的花 (Beautiful flowers)",
+        "一个新书包 (A new schoolbag)",
+        "一块手表 (A wristwatch)",
+        "一本中文书 (A Chinese book)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q13-2",
+      "question": "Where did Annie purchase the beautiful notebook?",
+      "arQuestion": "من أين اشترت آني ذلك الدفتر الجميل؟",
+      "options": [
+        "在网上买的 (Bought it online)",
+        "在学校商店买的 (Bought it at the school store)",
+        "在花店买的 (Bought it at the flower shop)",
+        "在医院买的 (Bought it at the hospital)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q13-3",
+      "question": "How many words more were there in today's lesson compared to yesterday?",
+      "arQuestion": "بكم كلمة زادت مفردات درس اليوم مقارنة بالأمس؟",
+      "options": [
+        "多了十个词 (Ten words more)",
+        "多了五个词 (Five words more)",
+        "多了二十个词 (Twenty words more)",
+        "多了一个词 (One word more)"
+      ],
+      "answerIndex": 0
+    }
+  ]
+}

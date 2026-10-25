@@ -15,6 +15,21 @@ function readConversationFile(file) {
   }
 }
 
+function getJsonFilesRecursively(dir) {
+  let results = [];
+  if (!fs.existsSync(dir)) return results;
+  const list = fs.readdirSync(dir, { withFileTypes: true });
+  for (const entry of list) {
+    const fullPath = path.join(dir, entry.name);
+    if (entry.isDirectory()) {
+      results = results.concat(getJsonFilesRecursively(fullPath));
+    } else if (entry.isFile() && entry.name.endsWith(".json")) {
+      results.push(fullPath);
+    }
+  }
+  return results;
+}
+
 export function getConversationsForLevel(level) {
   const numericLevel = Number(level);
   if (!HSK_LEVELS.includes(numericLevel)) return [];
@@ -41,12 +56,23 @@ export function getConversationsForLevel(level) {
       return [];
     }
   }
-  const result = fs
-    .readdirSync(dir)
-    .filter((file) => file.endsWith(".json"))
-    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }))
-    .map((file) => readConversationFile(path.join(dir, file)))
-    .filter(Boolean);
+  const result = getJsonFilesRecursively(dir)
+    .map((file) => readConversationFile(file))
+    .filter(Boolean)
+    .map((item) => ({
+      ...item,
+      curriculum:
+        item.curriculum ||
+        (item.id && item.id.includes("hsk3") ? "hsk3" : "standard"),
+    }))
+    .sort((a, b) => {
+      // Sort by unitId, then standard before hsk3
+      if (a.unitId !== b.unitId) {
+        return Number(a.unitId || 0) - Number(b.unitId || 0);
+      }
+      return (a.curriculum || "").localeCompare(b.curriculum || "");
+    });
+
   conversationsCache.set(numericLevel, result);
   return result;
 }

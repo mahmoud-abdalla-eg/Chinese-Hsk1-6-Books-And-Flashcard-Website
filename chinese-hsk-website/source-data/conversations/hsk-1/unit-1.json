@@ -1,72 +1,126 @@
 {
-  "id": "hsk-1-unit-1-conversation-1",
+  "id": "hsk-1-unit-1",
   "hskLevel": 1,
   "unitId": 1,
-  "status": "needs-authoring",
+  "contentType": "dialogue",
+  "status": "ready",
   "title": {
-    "en": "Unit 1 conversation authoring brief",
-    "zh": "第1单元会话编写说明",
-    "ar": "موجز تأليف محادثة الوحدة 1"
+    "zh": "第1课：你好",
+    "en": "Lesson 1: Hello",
+    "ar": "الدرس 1: مرحباً"
   },
   "targetVocabularyIds": [
-    "ai",
-    "ba",
-    "ba-2",
-    "baba",
-    "bai",
-    "baitian",
-    "ban",
-    "baozi",
-    "beizi",
-    "ben",
-    "bian",
-    "bing",
-    "bu",
-    "bu-keqi",
-    "bu-yao",
-    "cai",
-    "cha",
-    "chang",
-    "chao-shi",
-    "che",
-    "chi",
-    "chuan",
-    "chuzuche",
-    "da",
-    "da-dianhua",
-    "dajia",
-    "dao",
-    "daxue",
-    "daxuesheng",
-    "de",
-    "di",
-    "dian",
-    "dian-2",
-    "dianhua",
-    "diannao",
-    "dianshi",
-    "dianying",
-    "dianyingyuan",
-    "didi",
-    "dongxi",
-    "dou",
-    "du",
-    "dui",
+    "ni",
+    "hao-2",
+    "nin",
+    "nimen",
     "duibuqi",
-    "duo",
-    "duoshao",
-    "dushu",
-    "er",
-    "erzi",
-    "fan"
+    "mei-guanxi"
   ],
-  "dialogue": [],
-  "grammarNotes": [],
-  "culturalNotes": [],
-  "comprehensionQuestions": [],
+  "dialogue": [
+    {
+      "id": "1-1-1",
+      "role": "Speaker A",
+      "hanzi": "你好！",
+      "pinyin": "Nǐ hǎo!",
+      "translation": {
+        "en": "Hello!",
+        "ar": "مرحباً!"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-1-2",
+      "role": "Speaker B",
+      "hanzi": "你好！",
+      "pinyin": "Nǐ hǎo!",
+      "translation": {
+        "en": "Hello!",
+        "ar": "مرحباً!"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-2-1",
+      "role": "Speaker A",
+      "hanzi": "您好！",
+      "pinyin": "Nín hǎo!",
+      "translation": {
+        "en": "Hello (respectful)!",
+        "ar": "أهلاً وسهلاً بكَ (بصيغة الاحترام)!"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-2-2",
+      "role": "Speaker B",
+      "hanzi": "你们好！",
+      "pinyin": "Nǐmen hǎo!",
+      "translation": {
+        "en": "Hello everyone!",
+        "ar": "مرحباً بكم جميعاً!"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-3-1",
+      "role": "Speaker A",
+      "hanzi": "对不起！",
+      "pinyin": "Duìbuqǐ!",
+      "translation": {
+        "en": "I am sorry!",
+        "ar": "أنا آسف!"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-3-2",
+      "role": "Speaker B",
+      "hanzi": "没关系！",
+      "pinyin": "Méi guānxi!",
+      "translation": {
+        "en": "That is all right!",
+        "ar": "لا بأس! (لا عليك!)"
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "The greeting 你好 (Nǐ hǎo)",
+      "explanation": "The standard everyday Chinese greeting for one person. For respectful greeting to elders or superiors, use 您好 (Nín hǎo).",
+      "arExplanation": "التحية الأساسية في اللغة الصينية. لمخاطبة الأكبر سناً أو المعلمين باحترام، نستخدم 您好."
+    },
+    {
+      "point": "Third tone sandhi (3 + 3 -> 2 + 3)",
+      "explanation": "When two third tones occur consecutively (nǐ + hǎo), the first tone changes into a second tone (ní hǎo).",
+      "arExplanation": "عند التقاء نغمتين ثالثتين، تتحول النغمة الأولى صوتياً إلى نغمة ثانية."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Polite Address: 您 (Nín)",
+      "detail": "In Chinese etiquette, using 您 shows high regard for elders, teachers, and clients.",
+      "arDetail": "يعبر استخدام ضمير الاحترام 您 عن التقدير الرفيع لكبار السن والمعلمين."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q1-1",
+      "question": "How do you respond when someone says 对不起 (Duìbuqǐ)?",
+      "arQuestion": "كيف ترد عندما يعتذر لك أحدهم بـ 对不起؟",
+      "options": [
+        "没关系 (Méi guānxi)",
+        "你好 (Nǐ hǎo)",
+        "不客气 (Bú kèqi)",
+        "再见 (Zàijiàn)"
+      ],
+      "answerIndex": 0
+    }
+  ],
   "shadowingPractice": {
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "This scaffold intentionally contains no invented dialogue. Add reviewed Chinese, pinyin, English, Arabic, and real audio paths before marking complete."
+  "authoringNote": "Official HSK 1 Standard Course Lesson 1 dialogues."
 }

@@ -1,0 +1,198 @@
+{
+  "id": "hsk-1-unit-7",
+  "hskLevel": 1,
+  "unitId": 7,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第7课：今天几号",
+    "en": "Lesson 7: What's the Date Today",
+    "ar": "الدرس 7: ما تاريخ اليوم"
+  },
+  "targetVocabularyIds": [
+    "qing",
+    "wen",
+    "jintian",
+    "hao",
+    "yue",
+    "xingqi",
+    "zuotian",
+    "mingtian",
+    "qu",
+    "xuexiao",
+    "kan",
+    "shu"
+  ],
+  "dialogue": [
+    {
+      "id": "7-1-1",
+      "role": "Speaker A",
+      "hanzi": "请问，今天几号？",
+      "pinyin": "Qǐngwèn, jīntiān jǐ hào?",
+      "translation": {
+        "en": "Excuse me, what is the date today?",
+        "ar": "من فضلك، ما تاريخ اليوم؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-1-2",
+      "role": "Speaker B",
+      "hanzi": "今天九月一号。",
+      "pinyin": "Jīntiān jiǔ yuè yī hào.",
+      "translation": {
+        "en": "Today is September 1st.",
+        "ar": "اليوم هو الأول من سبتمبر."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-1-3",
+      "role": "Speaker A",
+      "hanzi": "今天星期几？",
+      "pinyin": "Jīntiān xīngqī jǐ?",
+      "translation": {
+        "en": "What day of the week is it today?",
+        "ar": "أي يوم من أيام الأسبوع اليوم؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-1-4",
+      "role": "Speaker B",
+      "hanzi": "星期三。",
+      "pinyin": "Xīngqīsān.",
+      "translation": {
+        "en": "Wednesday.",
+        "ar": "يوم الأربعاء."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-2-1",
+      "role": "Speaker A",
+      "hanzi": "昨天是几月几号？",
+      "pinyin": "Zuótiān shì jǐ yuè jǐ hào?",
+      "translation": {
+        "en": "What was the date yesterday?",
+        "ar": "ما كان تاريخ يوم أمس؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-2-2",
+      "role": "Speaker B",
+      "hanzi": "昨天是八月三十一号，星期二。",
+      "pinyin": "Zuótiān shì bā yuè sānshíyī hào, xīngqī'èr.",
+      "translation": {
+        "en": "Yesterday was August 31st, Tuesday.",
+        "ar": "أمس كان الحادي والثلاثين من أغسطس، يوم الثلاثاء."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-2-3",
+      "role": "Speaker A",
+      "hanzi": "明天呢？",
+      "pinyin": "Míngtiān ne?",
+      "translation": {
+        "en": "What about tomorrow?",
+        "ar": "وماذا عن الغد؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-2-4",
+      "role": "Speaker B",
+      "hanzi": "明天是九月二号，星期四。",
+      "pinyin": "Míngtiān shì jiǔ yuè èr hào, xīngqīsì.",
+      "translation": {
+        "en": "Tomorrow is September 2nd, Thursday.",
+        "ar": "غداً هو الثاني من سبتمبر، يوم الخميس."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-3-1",
+      "role": "Speaker A",
+      "hanzi": "明天是星期六，你去学校吗？",
+      "pinyin": "Míngtiān shì xīngqīliù, nǐ qù xuéxiào ma?",
+      "translation": {
+        "en": "Tomorrow is Saturday, are you going to school?",
+        "ar": "غداً السبت، هل ستذهب إلى المدرسة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-3-2",
+      "role": "Speaker B",
+      "hanzi": "我去学校。",
+      "pinyin": "Wǒ qù xuéxiào.",
+      "translation": {
+        "en": "Yes, I am going to school.",
+        "ar": "نعم، سأذهب إلى المدرسة."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-3-3",
+      "role": "Speaker A",
+      "hanzi": "你去学校做什么？",
+      "pinyin": "Nǐ qù xuéxiào zuò shénme?",
+      "translation": {
+        "en": "What are you going to do at school?",
+        "ar": "ماذا ستفعل في المدرسة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-3-4",
+      "role": "Speaker B",
+      "hanzi": "我去学校看书。",
+      "pinyin": "Wǒ qù xuéxiào kàn shū.",
+      "translation": {
+        "en": "I am going to school to read books.",
+        "ar": "سأذهب إلى المدرسة للقراءة والمطالعة."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Expression of Dates (Year -> Month -> Day -> Day of week)",
+      "explanation": "Chinese dates strictly follow the principle of largest time unit first: ...年 ...月 ...号 星期...",
+      "arExplanation": "ترتيب التاريخ في الصينية يبدأ دائماً من الوحدة الأكبر إلى الأصغر: السنة ثم الشهر ثم اليوم ثم يوم الأسبوع."
+    },
+    {
+      "point": "Sentences with Serial Verb Constructions",
+      "explanation": "Subject + Verb 1 + (Object 1) + Verb 2 + (Object 2) expresses purpose of going somewhere: 我去学校看书 (I go to school to read).",
+      "arExplanation": "الجمل ذات الأفعال المتسلسلة تعبر عن الذهاب لمكان لغرض محدد: الفاعل + الفعل الأول + المكان + الفعل الثاني."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Counting Days of the Week",
+      "detail": "Days of the week in Chinese simply use 星期 (xīngqī) plus numbers 1 to 6 (Monday to Saturday). Sunday is 星期日 or 星期天.",
+      "arDetail": "أيام الأسبوع في الصينية تتبع الأرقام من 1 إلى 6 (الإثنين هو 1، والسبت 6)، أما الأحد فيسمى 星期天 أو 星期日."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q7-1",
+      "question": "What is Speaker B going to do at school on Saturday?",
+      "arQuestion": "ماذا سيفعل المتحدث B في المدرسة يوم السبت؟",
+      "options": [
+        "看书 (Read books)",
+        "做中国菜 (Cook food)",
+        "找李老师 (Find Teacher Li)",
+        "买杯子 (Buy a cup)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official HSK 1 Standard Course Lesson 7 dialogues."
+}

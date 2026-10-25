@@ -1,0 +1,291 @@
+{
+  "id": "hsk-2-hsk3-unit-1",
+  "curriculum": "hsk3",
+  "hskLevel": 2,
+  "unitId": 1,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第1课：她请我们吃了北京烤鸭",
+    "en": "Lesson 1: She treated us to Peking Duck",
+    "ar": "الدرس 1: لقد عزمتنا على بط بكين المشوي"
+  },
+  "dialogue": [
+    {
+      "id": "1-1-1",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "请问，您是王一飞老师的姐姐吗？",
+      "pinyin": "Qǐngwèn, nín shì Wáng Yīfēi lǎoshī de jiějie ma?",
+      "translation": {
+        "en": "Excuse me, are you Ms. Wang Yifei's older sister?",
+        "ar": "لو سمحتِ، هل حضرتكِ الأخت الكبرى للأستاذة وانغ ييفي؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-1-2",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "是的，你们就是她的学生吧？",
+      "pinyin": "Shì de, nǐmen jiù shì tā de xuésheng ba?",
+      "translation": {
+        "en": "Yes, I am. You two must be her students, right?",
+        "ar": "نعم، أنتما طالباها بلا شك، أليس كذلك؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-1-3",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "对。我是白家月，她是安妮。",
+      "pinyin": "Duì. Wǒ shì Bái Jiāyuè, tā shì Ānnī.",
+      "translation": {
+        "en": "Exactly. I'm Bai Jiayue, and this is Annie.",
+        "ar": "صحيح. أنا باي جيايوي، وهذه آني."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-1-4",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "你们好，我叫王一雪。一飞给我打电话了，让我来接你们。",
+      "pinyin": "Nǐmen hǎo, wǒ jiào Wáng Yīxuě. Yīfēi gěi wǒ dǎ diànhuà le, ràng wǒ lái jiē nǐmen.",
+      "translation": {
+        "en": "Hello! I'm Wang Yixue. Yifei called me and asked me to pick you up.",
+        "ar": "مرحباً بكما! اسمي وانغ ييشيويه. اتصلت بي ييفي وطلبت مني القدوم لاستقبالكما."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-1-5",
+      "role": "白家月和安妮 (Bai Jiayue & Annie)",
+      "hanzi": "谢谢您。",
+      "pinyin": "Xièxie nín.",
+      "translation": {
+        "en": "Thank you very much.",
+        "ar": "شكراً جزيلاً لحضرتكِ."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-1-6",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "不客气。",
+      "pinyin": "Bú kèqi.",
+      "translation": {
+        "en": "You're welcome.",
+        "ar": "على الرحب والسعة."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-2-1",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "你们是第一次来北京吗？",
+      "pinyin": "Nǐmen shì dì-yī cì lái Běijīng ma?",
+      "translation": {
+        "en": "Is this your first time visiting Beijing?",
+        "ar": "هل هذه هي المرة الأولى التي تأتيان فيها إلى بكين؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-2-2",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "是的，我们都是第一次来。",
+      "pinyin": "Shì de, wǒmen dōu shì dì-yī cì lái.",
+      "translation": {
+        "en": "Yes, it is the first time for both of us.",
+        "ar": "نعم، كلتانا نزورها لأول مرة."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-2-3",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "你们是来学中文的吗？",
+      "pinyin": "Nǐmen shì lái xué Zhōngwén de ma?",
+      "translation": {
+        "en": "Did you come here to study Chinese?",
+        "ar": "هل جئتما لتعلم اللغة الصينية؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-2-4",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "不是，我们是来旅游的。",
+      "pinyin": "Bú shì, wǒmen shì lái lǚyóu de.",
+      "translation": {
+        "en": "No, we came for tourism and travel.",
+        "ar": "كلا، لقد جئنا من أجل السياحة والسفر."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-2-5",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "我这几天都不忙，你们有事就找我。",
+      "pinyin": "Wǒ zhè jǐ tiān dōu bù máng, nǐmen yǒu shì jiù zhǎo wǒ.",
+      "translation": {
+        "en": "I'm not busy these days; whenever you need anything, just reach out to me.",
+        "ar": "أنا لست مشغولة هذه الأيام، إذا احتجتما لأي شيء فتواصلا معي فوراً."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-2-6",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "好的，谢谢您。",
+      "pinyin": "Hǎo de, xièxie nín.",
+      "translation": {
+        "en": "Great, thank you so much.",
+        "ar": "حسناً، شكراً جزيلاً لحضرتكِ."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-3-1",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "喂，家月，你明天有时间吗？我想请你帮个忙。",
+      "pinyin": "Wèi, Jiāyuè, nǐ míngtiān yǒu shíjiān ma? Wǒ xiǎng qǐng nǐ bāng ge máng.",
+      "translation": {
+        "en": "Hello, Jiayue! Do you have time tomorrow? I'd like to ask you for a favor.",
+        "ar": "مرحباً جيايوي! هل لديكِ متسع من الوقت غداً؟ أود أن أطلب منكِ معروفاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-3-2",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "不好意思，天中，我已经到北京了。",
+      "pinyin": "Bù hǎoyìsi, Tiānzhōng, wǒ yǐjīng dào Běijīng le.",
+      "translation": {
+        "en": "I'm sorry, Tianzhong, I have already arrived in Beijing.",
+        "ar": "أعتذر منك يا تيانتشونغ، لقد وصلت إلى بكين بالفعل."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-3-3",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "你是什么时候到的？",
+      "pinyin": "Nǐ shì shénme shíhou dào de?",
+      "translation": {
+        "en": "When did you arrive?",
+        "ar": "متى وصلتِ؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-3-4",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "我是今天早上到的。你有事可以叫李文帮忙，他还在学校呢。",
+      "pinyin": "Wǒ shì jīntiān zǎoshang dào de. Nǐ yǒu shì kěyǐ jiào Lǐ Wén bāngmáng, tā hái zài xuéxiào ne.",
+      "translation": {
+        "en": "I arrived this morning. If you need anything, you can ask Li Wen for help—he's still at school.",
+        "ar": "وصلت صباح اليوم. إذا كان لديك أمر ما فيمكنك طلب المساعدة من لي ون، فهو لا يزال في الجامعة."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-3-5",
+      "role": "陈天中 (Chen Tianzhong)",
+      "hanzi": "好的，那我给他打个电话。",
+      "pinyin": "Hǎo de, nà wǒ gěi tā dǎ ge diànhuà.",
+      "translation": {
+        "en": "Alright, then I'll give him a call.",
+        "ar": "حسناً، سأتصل به هاتفياً إذاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-3-6",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "好的，再见！",
+      "pinyin": "Hǎo de, zàijiàn!",
+      "translation": {
+        "en": "Alright, goodbye!",
+        "ar": "حسناً، مع السلامة!"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-4-1",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "王老师，我们已经到北京了，是您姐姐来接的我们。她请我们吃了北京烤鸭，还给我们介绍了很多东西。我们的中文不太好，有时不太懂她的意思。",
+      "pinyin": "Wáng lǎoshī, wǒmen yǐjīng dào Běijīng le, shì nín jiějie lái jiē de wǒmen. Tā qǐng wǒmen chīle Běijīng kǎoyā, hái gěi wǒmen jièshàole hěn duō dōngxi. Wǒmen de Zhōngwén bú tài hǎo, yǒushí bú tài dǒng tā de yìsi.",
+      "translation": {
+        "en": "Teacher Wang, we have already arrived in Beijing. Your older sister came to pick us up. She treated us to Peking Duck and introduced so many things to us. Our Chinese isn't very proficient yet, so sometimes we don't quite catch her meaning.",
+        "ar": "أستاذة وانغ، لقد وصلنا إلى بكين، وقد جاءت أختكِ الكبرى لاستقبالنا. لقد عزمتنا على بط بكين المشوي وشرحت لنا الكثير من الأمور. لغتنا الصينية ليست قوية بعد، لذا أحياناً لا نفهم قصدها تماماً."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Modal Particle 吧 (2) for Speculation (揣测/估计)",
+      "explanation": "‘吧’ placed at the end of an interrogative statement expresses tentative estimation or polite confirmation: 你们就是她的学生吧？ (You two must be her students, right?).",
+      "arExplanation": "تُستخدم الأداة النبرية '吧' في نهاية الجملة الاستفهامية للتعبير عن التخمين أو التقدير أو التأكيد المؤدب: 'أنتما طالباها بلا شك، أليس كذلك؟'."
+    },
+    {
+      "point": "The 是……的 Construction for Emphasizing Details",
+      "explanation": "Used to emphasize the time, location, manner, or agent of a completed past action: 我们是来旅游的 (We came for tourism - emphasizing purpose); 我是今天早上到的 (I arrived this morning - emphasizing time).",
+      "arExplanation": "تُستخدم بنية '是……的' للتوكيد على زمان أو مكان أو طريقة أو غرض حدوث فعل وقع في الماضي: '我是今天早上到的' (وصلتُ صباح اليوم)."
+    },
+    {
+      "point": "Pivotal Sentences (兼语句) with 请 / 让 / 叫",
+      "explanation": "The object of the first causative verb functions simultaneously as the subject of the second verb: 让我来接你们 (asked me to pick you up); 她请我们吃了北京烤鸭 (she treated us to Peking Duck).",
+      "arExplanation": "الجمل المحورية (兼语句) مع أفعال الطلب والأمر (请/让/叫) يكون فيها مفعول الفعل الأول هو فاعل الفعل الثاني في الوقت نفسه: '让 我 来接你们' (طلبت مني أن أستقبلكم)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Peking Duck (北京烤鸭) Dining Etiquette",
+      "detail": "Peking Roast Duck is Beijing's most celebrated signature dish, famous for its crisp skin and succulent meat. It is traditionally sliced thinly in front of diners and eaten rolled in thin pancakes (春饼) with sweet bean sauce (甜面酱), scallion strips, and cucumber slices.",
+      "arDetail": "يُعد بط بكين المشوي (北京烤鸭) أشهر أطباق بكين التقليدية، ويتميز بجلده المقرمش ولحمه الطري. يُقطع عادةً إلى شرائح رقيقة أمام الضيوف، ويُؤكل بلفه داخل رقائق عجين رقيقة مع صلصة الفاصوليا الحلوة وشرائح البصل الأخضر والخيار."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q1-1",
+      "question": "Who came to pick up Bai Jiayue and Annie at the airport?",
+      "arQuestion": "من جاء لاستقبال باي جيايوي وآني في المطار؟",
+      "options": [
+        "王一雪 (Teacher Wang's sister)",
+        "王一飞 (Teacher Wang)",
+        "陈天中 (Chen Tianzhong)",
+        "李文 (Li Wen)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q1-2",
+      "question": "Why did Bai Jiayue and Annie come to Beijing?",
+      "arQuestion": "لماذا جاءت باي جيايوي وآني إلى بكين؟",
+      "options": [
+        "来旅游 (For sightseeing and travel)",
+        "来学中文 (To study Chinese)",
+        "来找工作 (To find a job)",
+        "来看医生 (To see a doctor)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q1-3",
+      "question": "What famous specialty did Wang Yixue treat them to?",
+      "arQuestion": "ما الوجبة الشهيرة التي عزمتهم عليها وانغ ييشيويه؟",
+      "options": [
+        "北京烤鸭 (Peking Duck)",
+        "饺子 (Dumplings)",
+        "包子 (Steamed buns)",
+        "面条 (Noodles)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 1."
+}

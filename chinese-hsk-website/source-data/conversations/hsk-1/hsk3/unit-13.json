@@ -1,0 +1,224 @@
+{
+  "id": "hsk-1-hsk3-unit-13",
+  "curriculum": "hsk3",
+  "hskLevel": 1,
+  "unitId": 13,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第13课：请给我一杯茶",
+    "en": "Lesson 13: I'll have a cup of tea, please",
+    "ar": "الدرس 13: من فضلك أعطني كوباً من الشاي"
+  },
+  "dialogue": [
+    {
+      "id": "13-1-1",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "王老师，我可以再问您一个问题吗？",
+      "pinyin": "Wáng lǎoshī, wǒ kěyǐ zài wèn nín yí gè wèntí ma?",
+      "translation": {
+        "en": "Teacher Wang, may I ask you one more question?",
+        "ar": "أستاذة وانغ، هل يمكنني أن أطرح عليكِ سؤالاً آخر؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-1-2",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "可以。你有什么问题？",
+      "pinyin": "Kěyǐ. Nǐ yǒu shénme wèntí?",
+      "translation": {
+        "en": "Of course. What is your question?",
+        "ar": "بالتأكيد. ما هو سؤالك؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-1-3",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "那个小店卖不卖手机？",
+      "pinyin": "Nàge xiǎodiàn mài bu mài shǒujī?",
+      "translation": {
+        "en": "Does that small shop sell mobile phones?",
+        "ar": "هل يبيع ذلك المتجر الصغير الهواتف المحمولة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-1-4",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "我不知道。你可以打电话问一下。",
+      "pinyin": "Wǒ bù zhīdào. Nǐ kěyǐ dǎ diànhuà wèn yíxià.",
+      "translation": {
+        "en": "I'm not sure. You can call and ask them.",
+        "ar": "لا أعرف. يمكنك الاتصال هاتفياً للاستفسار."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-2-1",
+      "role": "服务员 (Waitress)",
+      "hanzi": "女士，请坐！您喝什么？",
+      "pinyin": "Nǚshì, qǐng zuò! Nín hē shénme?",
+      "translation": {
+        "en": "Madam, please take a seat! What would you like to drink?",
+        "ar": "سيدتي، تفضلي بالجلوس! ماذا تحبين أن تشربي؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-2-2",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "我看一下。请给我一杯牛奶。",
+      "pinyin": "Wǒ kàn yíxià. Qǐng gěi wǒ yì bēi niúnǎi.",
+      "translation": {
+        "en": "Let me see. Please give me a glass of milk.",
+        "ar": "دعيني ألقي نظرة. من فضلك أعطني كوباً من الحليب."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-2-3",
+      "role": "服务员 (Waitress)",
+      "hanzi": "好的。您还要什么？",
+      "pinyin": "Hǎo de. Nín hái yào shénme?",
+      "translation": {
+        "en": "Alright. Would you like anything else?",
+        "ar": "حسناً. هل تريدين شيئاً آخر؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-2-4",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "我还没吃早饭，再要这个面包和鸡蛋吧。",
+      "pinyin": "Wǒ hái méi chī zǎofàn, zài yào zhège miànbāo hé jīdàn ba.",
+      "translation": {
+        "en": "I haven't had breakfast yet; I'll also have this bread and eggs.",
+        "ar": "لم أتناول الإفطار بعد، سآخذ أيضاً هذا الخبز مع البيض."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-3-1",
+      "role": "服务员 (Waiter)",
+      "hanzi": "先生，请坐！您要什么？",
+      "pinyin": "Xiānsheng, qǐng zuò! Nín yào shénme?",
+      "translation": {
+        "en": "Sir, please take a seat! What would you like to order?",
+        "ar": "سيدي، تفضل بالجلوس! ماذا تطلب؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-3-2",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "我要一斤饺子。",
+      "pinyin": "Wǒ yào yì jīn jiǎozi.",
+      "translation": {
+        "en": "I'd like one jin (500g) of dumplings.",
+        "ar": "أريد جين (نصف كيلوغرام) من الزلابية (الدمبلينغ)."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-3-3",
+      "role": "服务员 (Waiter)",
+      "hanzi": "好的。一斤饺子40个。",
+      "pinyin": "Hǎo de. Yì jīn jiǎozi sìshí gè.",
+      "translation": {
+        "en": "Alright. One jin is forty dumplings.",
+        "ar": "حسناً. نصف الكيلو يحتوي على 40 حبة زلابية."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-3-4",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "40个太多了，我要一半吧。",
+      "pinyin": "Sìshí gè tài duō le, wǒ yào yíbàn ba.",
+      "translation": {
+        "en": "Forty is too many; I'll take half (half a jin).",
+        "ar": "40 حبة كثيرة جداً، سآخذ النصف فقط."
+      },
+      "audio": null
+    },
+    {
+      "id": "13-3-5",
+      "role": "服务员 (Waiter)",
+      "hanzi": "半斤20个。您想喝什么？",
+      "pinyin": "Bàn jīn èrshí gè. Nín xiǎng hē shénme?",
+      "translation": {
+        "en": "Half a jin is twenty. What would you like to drink?",
+        "ar": "نصف جين يعادل 20 حبة. ماذا تحب أن تشرب؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "13-3-6",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "请给我一杯茶吧。",
+      "pinyin": "Qǐng gěi wǒ yì bēi chá ba.",
+      "translation": {
+        "en": "Please give me a cup of tea.",
+        "ar": "من فضلك أعطني كوباً من الشاي."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Double Object Construction (双宾语句)",
+      "explanation": "Verbs like ‘给’ (give) and ‘问’ (ask) take two objects: indirect object (person) followed by direct object (thing): 请给我一杯茶 (Please give me a cup of tea), 问您一个问题 (ask you a question).",
+      "arExplanation": "تأخذ بعض الأفعال مثل '给' (يعطي) و '问' (يسأل) مفعولين متتاليين: المفعول الأول غير المباشر (الشخص)، يليه المفعول الثاني المباشر (الشيء): '给我一杯茶' (أعطني كوب شاي)."
+    },
+    {
+      "point": "Modal Verb 可以 (kěyǐ)",
+      "explanation": "‘可以’ expresses permission or polite capability: 我可以问您一个问题吗？ (May I ask you a question?) -> 可以 (Yes, you may).",
+      "arExplanation": "الفعل المساعد '可以' يُستخدم لطلب الإذن أو بيان الإمكانية بأدب: 'هل يمكنني أن أسألك سؤالاً؟'."
+    },
+    {
+      "point": "Verb + 一下 (yíxià)",
+      "explanation": "‘一下’ placed after a verb softens the tone and denotes doing an action briefly: 看一下 (have a quick look), 问一下 (ask briefly).",
+      "arExplanation": "تُضاف '一下' بعد الفعل لتلطيف نبرة الحديث والإشارة إلى أن الفعل يُنفَّذ لفترة قصيرة أو على عجل: '看一下' (أنظر قليلاً)، '问一下' (أسأل سريعاً)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Chinese Weight Unit 斤 (Jīn) & Ordering Dumplings",
+      "detail": "In China, market goods and restaurant dumplings are traditionally measured in '斤' (jīn, 1 jin = 500 grams). In northern China, dumplings are routinely ordered by weight (e.g. 半斤 = 20 dumplings). Tea (茶) is customarily served with meals.",
+      "arDetail": "تُقاس الأطعمة في الأسواق والمطاعم الصينية التقليدية بوحدة الوزن الصينية '斤' (جين، يعادل 500 غرام). وغالباً ما يُطلب طبق الزلابية بالوزن (نصف جين = 20 حبة تقريباً)، ويُقدم الشاي كمشروب أساسي مع الوجبات."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q13-1",
+      "question": "How many dumplings did Liu Ming end up ordering?",
+      "arQuestion": "كم حبة زلابية طلب ليو مينغ في النهاية؟",
+      "options": [
+        "20个 (半斤 - 20 pieces)",
+        "40个 (一斤 - 40 pieces)",
+        "10个 (10 pieces)",
+        "30个 (30 pieces)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q13-2",
+      "question": "What drink did Liu Ming request with his meal?",
+      "arQuestion": "ما المشروب الذي طلبه ليو مينغ مع وجبته؟",
+      "options": [
+        "一杯茶 (A cup of tea)",
+        "一杯牛奶 (A glass of milk)",
+        "一杯咖啡 (A cup of coffee)",
+        "冰水 (Ice water)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 13."
+}

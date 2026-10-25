@@ -1,0 +1,250 @@
+{
+  "id": "hsk-2-unit-15",
+  "hskLevel": 2,
+  "unitId": 15,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第15课：新年就要到了",
+    "en": "Lesson 15: The New Year is coming",
+    "ar": "الدرس 15: العام الجديد على وشك الحلول"
+  },
+  "targetVocabularyIds": [
+    "xinnian",
+    "piao",
+    "kuaiyao",
+    "jichang",
+    "shangchang",
+    "hongcha",
+    "kuaile",
+    "zhunbei"
+  ],
+  "dialogue": [
+    {
+      "id": "15-1-1",
+      "role": "Speaker A",
+      "hanzi": "新年就要到了，你有什么打算？",
+      "pinyin": "Xīnnián jiù yào dào le, nǐ yǒu shénme dǎsuan?",
+      "translation": {
+        "en": "The New Year is coming soon; what are your plans?",
+        "ar": "العام الجديد قارب على الحلول، ما هي خططك؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "15-1-2",
+      "role": "Speaker B",
+      "hanzi": "我想回家看望我父母。",
+      "pinyin": "Wǒ xiǎng huí jiā kànwàng wǒ fùmǔ.",
+      "translation": {
+        "en": "I want to go back home to visit my parents.",
+        "ar": "أود العودة إلى بلدتي لزيارة والدي."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-1-3",
+      "role": "Speaker A",
+      "hanzi": "你买到回家的火车票了吗？",
+      "pinyin": "Nǐ mǎidào huí jiā de huǒchēpiào le ma?",
+      "translation": {
+        "en": "Did you manage to buy a train ticket home?",
+        "ar": "هل تمكنت من شراء تذكرة القطار للعودة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "15-1-4",
+      "role": "Speaker B",
+      "hanzi": "已经买到了，下周二就出发。",
+      "pinyin": "Yǐjīng mǎidào le, xià zhōu'èr jiù chūfā.",
+      "translation": {
+        "en": "Yes, I got it; departing next Tuesday.",
+        "ar": "نعم اشتريتها بالفعل، وسأنطلق يوم الثلاثاء القادم."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-2-1",
+      "role": "Speaker A",
+      "hanzi": "飞机快要起飞了，请系好安全带。",
+      "pinyin": "Fēijī kuài yào qǐfēi le, qǐng jì hǎo ānquándài.",
+      "translation": {
+        "en": "The airplane is about to take off; please fasten your seat belt.",
+        "ar": "الطائرة على وشك الإقلاع، يُرجى ربط أحزمة الأمان."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-2-2",
+      "role": "Speaker B",
+      "hanzi": "还有多长时间能到北京？",
+      "pinyin": "Hái yǒu duō cháng shíjiān néng dào Běijīng?",
+      "translation": {
+        "en": "How much longer until we arrive in Beijing?",
+        "ar": "كم من الوقت بقي حتى نصل إلى بكين؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "15-2-3",
+      "role": "Speaker A",
+      "hanzi": "大概两个小时就到了。",
+      "pinyin": "Dàgài liǎng ge xiǎoshí jiù dào le.",
+      "translation": {
+        "en": "We will arrive in approximately two hours.",
+        "ar": "سنصل في حوالي ساعتين تقريباً."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-2-4",
+      "role": "Speaker B",
+      "hanzi": "好的，谢谢。",
+      "pinyin": "Hǎo de, xièxie.",
+      "translation": {
+        "en": "All right, thank you.",
+        "ar": "حسناً، شكراً لك."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-3-1",
+      "role": "Speaker A",
+      "hanzi": "快要放假了，很多人都在买年货。",
+      "pinyin": "Kuài yào fàngjià le, hěn duō rén dōu zài mǎi niánhuò.",
+      "translation": {
+        "en": "The vacation is about to start; many people are buying New Year goods.",
+        "ar": "العطلة على وشك البدء، والكثير من الناس يشترون لوازم العام الجديد."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-3-2",
+      "role": "Speaker B",
+      "hanzi": "是啊，商店里人真多。",
+      "pinyin": "Shì a, shāngdiàn lǐ rén zhēn duō.",
+      "translation": {
+        "en": "Yes, there are so many people in the stores.",
+        "ar": "أجل، المتاجر مزدحمة جداً بالمتسوقين."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-3-3",
+      "role": "Speaker A",
+      "hanzi": "我们也买些苹果和糖果吧。",
+      "pinyin": "Wǒmen yě mǎi xiē píngguǒ hé tángguǒ ba.",
+      "translation": {
+        "en": "Let's also buy some apples and sweets.",
+        "ar": "فلنشترِ نحن أيضاً بعض التفاح والحلوى."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-3-4",
+      "role": "Speaker B",
+      "hanzi": "好，再买点儿红茶。",
+      "pinyin": "Hǎo, zài mǎi diǎnr hóngchá.",
+      "translation": {
+        "en": "Sure, and let's get some black tea too.",
+        "ar": "حسناً، ولنبتع أيضاً بعض الشاي الأحمر."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-4-1",
+      "role": "Speaker A",
+      "hanzi": "马上就要十二点了，新的一年要来了！",
+      "pinyin": "Mǎshàng jiù yào shí'èr diǎn le, xīn de yì nián yào lái le!",
+      "translation": {
+        "en": "It's almost midnight; the new year is coming!",
+        "ar": "أوشكت الساعة على الثانية عشرة منتصف الليل، العام الجديد على الأبواب!"
+      },
+      "audio": null
+    },
+    {
+      "id": "15-4-2",
+      "role": "Speaker B",
+      "hanzi": "听，外面开始放烟花了！",
+      "pinyin": "Tīng, wàimiàn kāishǐ fàng yānhuā le!",
+      "translation": {
+        "en": "Listen, fireworks are starting outside!",
+        "ar": "استمع، لقد بدأت الألعاب النارية في الخارج!"
+      },
+      "audio": null
+    },
+    {
+      "id": "15-4-3",
+      "role": "Speaker A",
+      "hanzi": "祝你新年快乐，身体健康！",
+      "pinyin": "Zhù nǐ xīnnián kuàilè, shēntǐ jiànkāng!",
+      "translation": {
+        "en": "Wishing you a Happy New Year and good health!",
+        "ar": "أتمنى لك عاماً جديداً سعيداً وموفور الصحة والعافية!"
+      },
+      "audio": null
+    },
+    {
+      "id": "15-4-4",
+      "role": "Speaker B",
+      "hanzi": "祝你新年快乐，万事如意！",
+      "pinyin": "Zhù nǐ xīnnián kuàilè, wànshì rúyì!",
+      "translation": {
+        "en": "Wishing you a Happy New Year and may all your wishes come true!",
+        "ar": "أتمنى لك عاماً جديداً مفعماً بالسعادة وتحقيق كل الأمنيات!"
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Expressions of Imminent Action (快要……了 / 就要……了 / 马上就要……了)",
+      "explanation": "Indicates that an event or action will happen very soon: 快要/就要/马上就要 + Verb/Adj + 了 (e.g., 新年就要到了 = The New Year is coming soon).",
+      "arExplanation": "صيغ اقتراب حدوث الفعل: 快要/就要/马上就要 + الفعل + 了، لتدل على أن الحدث سيقع في القريب العاجل أو وشيك الحدوث."
+    },
+    {
+      "point": "New Year Blessings with 祝 (zhù)",
+      "explanation": "Pattern: 祝 + Recipient + Good Wish (e.g., 祝你新年快乐 = Wish you Happy New Year, 万事如意 = May all things go according to your wishes).",
+      "arExplanation": "صيغة التهاني والتمنيات: 祝 + الشخص + التهنئة (مثل: أتمنى لك عاماً سعيداً، وأن تسير كل أمورك على أحسن ما يرام)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Spring Festival Rush (春运) and New Year Goods (年货)",
+      "detail": "The Spring Festival migration (春运) is the world's largest annual human movement, where millions journey home to reunite with parents and loved ones.",
+      "arDetail": "يُعد موسم السفر في عيد الربيع الصيني أضخم حركة تنقل بشري سنوية في العالم، حيث يعود الملايين إلى ديارهم للم شمل العائلة."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q15-1",
+      "question": "What does Speaker B plan to do for the New Year in dialogue 1?",
+      "arQuestion": "ما هي خطة المتحدث B للعام الجديد في الحوار الأول؟",
+      "options": [
+        "回家看望父母 (Go home to visit parents)",
+        "去国外旅游 (Travel abroad)",
+        "在公司加班 (Work overtime at company)",
+        "去北京看朋友 (Visit friends in Beijing)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q15-2",
+      "question": "How long until the flight reaches Beijing in dialogue 2?",
+      "arQuestion": "كم من الوقت بقي لوصول الطائرة إلى بكين في الحوار الثاني؟",
+      "options": [
+        "大概两个小时 (Approximately 2 hours)",
+        "半个小时 (Half an hour)",
+        "四个小时 (Four hours)",
+        "十分钟 (Ten minutes)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official HSK 2 Standard Course Lesson 15 dialogues."
+}

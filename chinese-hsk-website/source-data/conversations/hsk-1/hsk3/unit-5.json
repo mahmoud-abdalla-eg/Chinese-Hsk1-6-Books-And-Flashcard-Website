@@ -1,0 +1,219 @@
+{
+  "id": "hsk-1-hsk3-unit-5",
+  "curriculum": "hsk3",
+  "hskLevel": 1,
+  "unitId": 5,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第5课：今天我休息",
+    "en": "Lesson 5: I Am Off Today",
+    "ar": "الدرس 5: اليوم لدي يوم عطلة"
+  },
+  "dialogue": [
+    {
+      "id": "5-1-1",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "今天几号？",
+      "pinyin": "Jīntiān jǐ hào?",
+      "translation": {
+        "en": "What's the date today?",
+        "ar": "ما تاريخ اليوم؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-1-2",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "今天9月8号。",
+      "pinyin": "Jīntiān jiǔ yuè bā hào.",
+      "translation": {
+        "en": "Today is September 8th.",
+        "ar": "اليوم الثامن من سبتمبر."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-1-3",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "星期几？",
+      "pinyin": "Xīngqī jǐ?",
+      "translation": {
+        "en": "What day of the week is it?",
+        "ar": "أي يوم من أيام الأسبوع؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-1-4",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "星期日。今天我休息。",
+      "pinyin": "Xīngqīrì. Jīntiān wǒ xiūxi.",
+      "translation": {
+        "en": "Sunday. I'm off today.",
+        "ar": "يوم الأحد. اليوم أنا في عطلة وراحة."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-2-1",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "你会做饭吗？",
+      "pinyin": "Nǐ huì zuò fàn ma?",
+      "translation": {
+        "en": "Can you cook? / Do you know how to cook?",
+        "ar": "هل تجيد الطهي وإعداد الطعام؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-2-2",
+      "role": "杨同乐 (Yang Tongle)",
+      "hanzi": "我会做。",
+      "pinyin": "Wǒ huì zuò.",
+      "translation": {
+        "en": "Yes, I can.",
+        "ar": "نعم، أجيد ذلك."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-2-3",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "你会做什么？",
+      "pinyin": "Nǐ huì zuò shénme?",
+      "translation": {
+        "en": "What can you make?",
+        "ar": "ماذا تجيد أن تطهو؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-2-4",
+      "role": "杨同乐 (Yang Tongle)",
+      "hanzi": "我会做面条儿、饺子，也会做一些菜。星期天我也做饭。",
+      "pinyin": "Wǒ huì zuò miàntiáor, jiǎozi, yě huì zuò yìxiē cài. Xīngqītiān wǒ yě zuò fàn.",
+      "translation": {
+        "en": "I can make noodles, dumplings, and also some dishes. I also cook on Sundays.",
+        "ar": "أجيد إعداد النودلز، الزلابية الصينية (الدمبلينغ)، وبعض الأطباق المتنوعة. كما أنني أطبخ يوم الأحد أيضاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-3-1",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "同乐，下班吗？",
+      "pinyin": "Tónglè, xiàbān ma?",
+      "translation": {
+        "en": "Tongle, are you finishing work now?",
+        "ar": "يا تونغله، هل انتهيت من دوام العمل؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-3-2",
+      "role": "杨同乐 (Yang Tongle)",
+      "hanzi": "下班。",
+      "pinyin": "Xiàbān.",
+      "translation": {
+        "en": "Yes, finishing work.",
+        "ar": "نعم، انتهى الدوام."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-3-3",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "这是你的新电脑吗？",
+      "pinyin": "Zhè shì nǐ de xīn diànnǎo ma?",
+      "translation": {
+        "en": "Is this your new computer?",
+        "ar": "هل هذا حاسوبك الجديد؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-3-4",
+      "role": "杨同乐 (Yang Tongle)",
+      "hanzi": "是的，是我的新电脑。",
+      "pinyin": "Shì de, shì wǒ de xīn diànnǎo.",
+      "translation": {
+        "en": "Yes, it is my new computer.",
+        "ar": "نعم، إنه حاسوبي الجديد."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-3-5",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "真好看！",
+      "pinyin": "Zhēn hǎokàn!",
+      "translation": {
+        "en": "It looks really nice!",
+        "ar": "جميل وأنيق حقاً!"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-3-6",
+      "role": "杨同乐 (Yang Tongle)",
+      "hanzi": "我也很喜欢它。",
+      "pinyin": "Wǒ yě hěn xǐhuan tā.",
+      "translation": {
+        "en": "I really like it too.",
+        "ar": "وأنا أيضاً أحبه ومعجب به جداً."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Expressing Dates and Days (时间的表达)",
+      "explanation": "Chinese expresses dates from largest to smallest unit: Month + Day + Day of Week, e.g., 9月8号 星期日 (September 8th, Sunday).",
+      "arExplanation": "تُصاغ التواريخ في الصينية من الوحدة الأكبر إلى الأصغر: الشهر + اليوم + يوم الأسبوع؛ مثل: 9月8号 星期日."
+    },
+    {
+      "point": "Modal Verb 会 (huì - learned ability)",
+      "explanation": "‘会’ expresses an ability acquired through learning or practice: 我会做饭 (I can cook / I know how to cook). Negation is '不会' (bú huì).",
+      "arExplanation": "فعل المقدرة '会' يعبر عن مهارة أو قدرة مكتسبة بالتعلم والتمرين، مثل: 我会做饭 (أجيد الطهي). والنفي: 不会."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Sunday: 星期日 (Xīngqīrì) vs 星期天 (Xīngqītiān)",
+      "detail": "Both words refer to Sunday. 星期日 is often used in written or formal contexts, while 星期天 is common in casual spoken conversation.",
+      "arDetail": "كلا اللفظين يعنيان 'يوم الأحد'. 星期日 يُستخدم غالباً في السياقات المكتوبة والرسمية، بينما 星期天 أكثر شيوعاً في المحادثات اليومية الشفهية."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q5-1",
+      "question": "What Chinese dishes can Yang Tongle make?",
+      "arQuestion": "ما هي الأطباق التي يستطيع يانغ تونغله طهيها؟",
+      "options": [
+        "面条儿、饺子和一些菜 (Noodles, dumplings, and dishes)",
+        "烤鸭和米饭 (Roast duck and rice)",
+        "蛋糕和面包 (Cakes and bread)",
+        "他不会做饭 (He cannot cook)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q5-2",
+      "question": "What does Wang Yixue say about Yang Tongle's new computer?",
+      "arQuestion": "ماذا قالت وانغ ييشيويه عن حاسوب يانغ تونغله الجديد؟",
+      "options": [
+        "真好看！ (It looks really nice!)",
+        "太贵了！ (Too expensive!)",
+        "很大！ (Very big!)",
+        "真便宜！ (Really cheap!)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 5."
+}

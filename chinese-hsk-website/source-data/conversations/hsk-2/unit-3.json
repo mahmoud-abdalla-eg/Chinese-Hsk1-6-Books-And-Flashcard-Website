@@ -1,72 +1,252 @@
 {
-  "id": "hsk-2-unit-3-conversation-1",
+  "id": "hsk-2-unit-3",
   "hskLevel": 2,
   "unitId": 3,
-  "status": "needs-authoring",
+  "contentType": "dialogue",
+  "status": "ready",
   "title": {
-    "en": "Unit 3 conversation authoring brief",
-    "zh": "第3单元会话编写说明",
-    "ar": "موجز تأليف محادثة الوحدة 3"
+    "zh": "第3课：左边那个红色的是我的",
+    "en": "Lesson 3: The red one on the left is mine",
+    "ar": "الدرس 3: الدراجة الحمراء على اليسار هي دراجتي"
   },
   "targetVocabularyIds": [
-    "ming",
-    "na",
-    "nai-cha",
-    "nainai",
-    "name",
-    "nan-hair",
-    "na-yang",
-    "niao",
-    "nuhair",
-    "pangbian",
-    "pao",
-    "pao-bu",
-    "piao",
-    "qian-mian",
-    "qilai",
-    "qing",
-    "qiu",
-    "qizi",
-    "rang",
-    "rou",
-    "shangchang",
-    "shang-lai",
-    "shang-mian",
-    "shang-qu",
-    "shang-wang",
-    "shengri",
-    "shenti",
-    "shi",
-    "shi-qing",
-    "shou",
     "shoubiao",
-    "shu-bao",
-    "shufu",
+    "baozhi",
     "song",
-    "suiran",
-    "suoyi",
-    "teng",
-    "ti",
-    "ti-2",
-    "tiao",
-    "tiaowu",
-    "tou",
-    "waiguo",
-    "waimian",
-    "wan",
-    "wan-2",
-    "wang",
-    "wang-2",
-    "wangshang",
-    "wei"
+    "niunai",
+    "zhang-fu",
+    "pangbian",
+    "hong-se",
+    "yanse",
+    "zuobian",
+    "youbian"
   ],
-  "dialogue": [],
-  "grammarNotes": [],
-  "culturalNotes": [],
-  "comprehensionQuestions": [],
+  "dialogue": [
+    {
+      "id": "3-1-1",
+      "role": "Speaker A",
+      "hanzi": "这块手表是你的吗？",
+      "pinyin": "Zhè kuài shǒubiǎo shì nǐ de ma?",
+      "translation": {
+        "en": "Is this watch yours?",
+        "ar": "هل هذه الساعة لك؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "3-1-2",
+      "role": "Speaker B",
+      "hanzi": "不是我的。是我爸爸的。",
+      "pinyin": "Bú shì wǒ de. Shì wǒ bàba de.",
+      "translation": {
+        "en": "No, it's not mine. It's my father's.",
+        "ar": "ليست لي، إنها لوالدي."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-1-3",
+      "role": "Speaker A",
+      "hanzi": "多少钱买的？",
+      "pinyin": "Duōshao qián mǎi de?",
+      "translation": {
+        "en": "How much did it cost?",
+        "ar": "بكم اشتريتموها؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "3-1-4",
+      "role": "Speaker B",
+      "hanzi": "三千多块。",
+      "pinyin": "Sānqiān duō kuài.",
+      "translation": {
+        "en": "More than three thousand yuan.",
+        "ar": "أكثر من ثلاثة آلاف يوان."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-2-1",
+      "role": "Speaker A",
+      "hanzi": "这是今天早上的报纸吗？",
+      "pinyin": "Zhè shì jīntiān zǎoshang de bàozhǐ ma?",
+      "translation": {
+        "en": "Is this this morning's newspaper?",
+        "ar": "هل هذه جريدة صباح اليوم؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "3-2-2",
+      "role": "Speaker B",
+      "hanzi": "不是，是昨天的。",
+      "pinyin": "Bú shì, shì zuótiān de.",
+      "translation": {
+        "en": "No, it's yesterday's.",
+        "ar": "لا، إنها جريدة الأمس."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-2-3",
+      "role": "Speaker A",
+      "hanzi": "你听，是不是送报纸的来了？",
+      "pinyin": "Nǐ tīng, shì bu shì sòng bàozhǐ de lái le?",
+      "translation": {
+        "en": "Listen, is that the newspaper delivery person coming?",
+        "ar": "اسمع، أليس موزع الصحف هو القادم؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "3-2-4",
+      "role": "Speaker B",
+      "hanzi": "我看一下。不是，是送牛奶的。",
+      "pinyin": "Wǒ kàn yíxià. Bú shì, shì sòng niúnǎi de.",
+      "translation": {
+        "en": "Let me check. No, it's the milk delivery person.",
+        "ar": "سألقي نظرة. لا، إنه موزع الحليب."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-3-1",
+      "role": "Speaker A",
+      "hanzi": "这是谁的房间？",
+      "pinyin": "Zhè shì shéi de fángjiān?",
+      "translation": {
+        "en": "Whose room is this?",
+        "ar": "غرفة من هذه؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "3-3-2",
+      "role": "Speaker B",
+      "hanzi": "这是我和我丈夫的，旁边那个小的房间是我女儿的。",
+      "pinyin": "Zhè shì wǒ hé wǒ zhàngfu de, pángbiān nàge xiǎo de fángjiān shì wǒ nǚ'ér de.",
+      "translation": {
+        "en": "This is mine and my husband's; the small room next to it is my daughter's.",
+        "ar": "هذه غرفتي أنا وزوجي، والغرفة الصغيرة بجوارها هي غرفة ابنتي."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-3-3",
+      "role": "Speaker A",
+      "hanzi": "你女儿的房间真漂亮！都是粉色的。",
+      "pinyin": "Nǐ nǚ'ér de fángjiān zhēn piàoliang! Dōu shì fěnsè de.",
+      "translation": {
+        "en": "Your daughter's room is really pretty! It's all pink.",
+        "ar": "غرفة ابنتك جميلة جداً! كلها باللون الوردي."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-3-4",
+      "role": "Speaker B",
+      "hanzi": "是啊，粉色是我女儿最喜欢的颜色。",
+      "pinyin": "Shì a, fěnsè shì wǒ nǚ'ér zuì xǐhuan de yánsè.",
+      "translation": {
+        "en": "Yes, pink is my daughter's favorite color.",
+        "ar": "أجل، اللون الوردي هو لون ابنتي المفضل."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-4-1",
+      "role": "Speaker A",
+      "hanzi": "你看见我的自行车了吗？",
+      "pinyin": "Nǐ kànjiàn wǒ de zìxíngchē le ma?",
+      "translation": {
+        "en": "Did you see my bicycle?",
+        "ar": "هل رأيت دراجتي الهوائية؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "3-4-2",
+      "role": "Speaker B",
+      "hanzi": "哪辆是你的？",
+      "pinyin": "Nǎ liàng shì nǐ de?",
+      "translation": {
+        "en": "Which one is yours?",
+        "ar": "أيها هي دراجتك؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "3-4-3",
+      "role": "Speaker A",
+      "hanzi": "左边那个红色的。",
+      "pinyin": "Zuǒbiān nàge hóngsè de.",
+      "translation": {
+        "en": "The red one on the left.",
+        "ar": "تلك الحمراء على جهة اليسار."
+      },
+      "audio": null
+    },
+    {
+      "id": "3-4-4",
+      "role": "Speaker B",
+      "hanzi": "找到了，在那儿呢。",
+      "pinyin": "Zhǎodào le, zài nàr ne.",
+      "translation": {
+        "en": "Found it, right over there.",
+        "ar": "وجدتها، إنها هناك."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "The 的 (de) Phrase as a Substantive",
+      "explanation": "When a noun is omitted after 的, the phrase acts as a noun phrase referring to the object (e.g., 红色的 = the red one, 送牛奶的 = the milk delivery person).",
+      "arExplanation": "عند حذف الاسم بعد أداة 的، يتحول التركيب إلى اسم يشير للشيء أو الشخص المقصود (مثل: الحمراء، موزع الحليب)."
+    },
+    {
+      "point": "Approximate Numbers after Base Numbers with 多",
+      "explanation": "When placed directly after round multiples of ten or hundreds (三千多), 多 indicates a surplus up to the next unit.",
+      "arExplanation": "توضع 多 بعد العقود والمئات للدلالة على الزيادة عن الرقم المذكور (مثل: أكثر من ثلاثة آلاف)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Bicycles and Shared Mobility in China",
+      "detail": "China is known as the kingdom of bicycles, where shared bikes and eco-friendly cycling fill city roads alongside modern metros.",
+      "arDetail": "تشتهر الصين بكونها موطن الدراجات الهوائية، حيث تشهد شوارعها ملايين الدراجات التشاركية الحديثة والصديقة للبيئة."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q3-1",
+      "question": "Whose watch is it?",
+      "arQuestion": "لمن هذه الساعة؟",
+      "options": [
+        "爸爸的 (Father's)",
+        "妈妈的 (Mother's)",
+        "老师的 (Teacher's)",
+        "同学的 (Classmate's)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q3-2",
+      "question": "Which bicycle belongs to the speaker?",
+      "arQuestion": "أي دراجة تخص المتحدث؟",
+      "options": [
+        "左边红色的 (The red one on the left)",
+        "右边黑色的 (The black one on the right)",
+        "中间白色的 (The white one in the middle)",
+        "前面的 (The one in front)"
+      ],
+      "answerIndex": 0
+    }
+  ],
   "shadowingPractice": {
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "This scaffold intentionally contains no invented dialogue. Add reviewed Chinese, pinyin, English, Arabic, and real audio paths before marking complete."
+  "authoringNote": "Official HSK 2 Standard Course Lesson 3 dialogues."
 }

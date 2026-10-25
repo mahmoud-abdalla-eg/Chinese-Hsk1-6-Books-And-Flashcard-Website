@@ -1,72 +1,274 @@
 {
-  "id": "hsk-2-unit-1-conversation-1",
+  "id": "hsk-2-unit-1",
   "hskLevel": 2,
   "unitId": 1,
-  "status": "needs-authoring",
+  "contentType": "dialogue",
+  "status": "ready",
   "title": {
-    "en": "Unit 1 conversation authoring brief",
-    "zh": "第1单元会话编写说明",
-    "ar": "موجز تأليف محادثة الوحدة 1"
+    "zh": "第1课：九月去北京旅游最好",
+    "en": "Lesson 1: September is the best time to visit Beijing",
+    "ar": "الدرس 1: أفضل وقت لزيارة بكين هو شهر سبتمبر"
   },
   "targetVocabularyIds": [
-    "a",
-    "aihao",
-    "baise",
-    "ban",
-    "bang",
-    "bangmang",
-    "bao",
-    "benzi",
-    "bi",
-    "bi-2",
-    "bie",
-    "bu-hao-yisi",
-    "bu-cuo",
-    "chang",
-    "chezhan",
-    "chu",
-    "chuang",
-    "chu-guo",
-    "chu-lai",
-    "chumen",
-    "chu-qu",
-    "ci",
-    "ci-2",
-    "cong",
-    "cong-xiao",
-    "cuo",
-    "da",
-    "da-che",
-    "da-kai",
-    "dan",
-    "danshi",
-    "de",
-    "di",
-    "deng",
-    "ditie",
-    "dong",
-    "dong-2",
-    "fanguan",
-    "fei",
-    "gao",
-    "gaosu",
-    "gao-zhong",
-    "gen",
-    "ge-zi",
-    "gong-jiao-che",
-    "guo",
-    "guolai",
-    "guonian",
-    "guoqu",
-    "haishi"
+    "luyou",
+    "jue-de",
+    "zui",
+    "weishenme",
+    "ye",
+    "yundong",
+    "zuqiu",
+    "ti-2",
+    "yanjing",
+    "xinnian"
   ],
-  "dialogue": [],
-  "grammarNotes": [],
-  "culturalNotes": [],
-  "comprehensionQuestions": [],
+  "dialogue": [
+    {
+      "id": "1-1-1",
+      "role": "Speaker A",
+      "hanzi": "我要去北京旅游，你觉得什么时候去最好？",
+      "pinyin": "Wǒ yào qù Běijīng lǚyóu, nǐ juéde shénme shíhou qù zuì hǎo?",
+      "translation": {
+        "en": "I'm going to travel to Beijing. When do you think is the best time to go?",
+        "ar": "سأسافر إلى بكين في رحلة سياحية، في أي وقت تعتقد أنه الأنسب للذهاب؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-1-2",
+      "role": "Speaker B",
+      "hanzi": "九月去北京旅游最好。",
+      "pinyin": "Jiǔyuè qù Běijīng lǚyóu zuì hǎo.",
+      "translation": {
+        "en": "September is the best time to visit Beijing.",
+        "ar": "شهر سبتمبر هو أفضل وقت لزيارة بكين."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-1-3",
+      "role": "Speaker A",
+      "hanzi": "为什么？",
+      "pinyin": "Wèishénme?",
+      "translation": {
+        "en": "Why?",
+        "ar": "لماذا؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-1-4",
+      "role": "Speaker B",
+      "hanzi": "九月的北京天气不冷也不热。",
+      "pinyin": "Jiǔyuè de Běijīng tiānqì bù lěng yě bú rè.",
+      "translation": {
+        "en": "The weather in Beijing in September is neither cold nor hot.",
+        "ar": "الطقس في بكين في شهر سبتمبر ليس بارداً ولا حاراً."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-2-1",
+      "role": "Speaker A",
+      "hanzi": "你喜欢什么运动？",
+      "pinyin": "Nǐ xǐhuan shénme yùndòng?",
+      "translation": {
+        "en": "What sport do you like?",
+        "ar": "ما هي الرياضة التي تحبها؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-2-2",
+      "role": "Speaker B",
+      "hanzi": "我最喜欢踢足球。",
+      "pinyin": "Wǒ zuì xǐhuan tī zúqiú.",
+      "translation": {
+        "en": "I like playing football the most.",
+        "ar": "أحب لعب كرة القدم أكثر من أي شيء."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-2-3",
+      "role": "Speaker A",
+      "hanzi": "下午我们一起去踢足球吧。",
+      "pinyin": "Xiàwǔ wǒmen yìqǐ qù tī zúqiú ba.",
+      "translation": {
+        "en": "Let's go play football together this afternoon.",
+        "ar": "دعنا نذهب لنلعب كرة القدم معاً بعد ظهر اليوم."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-2-4",
+      "role": "Speaker B",
+      "hanzi": "好啊！",
+      "pinyin": "Hǎo a!",
+      "translation": {
+        "en": "Great!",
+        "ar": "حسناً، فكرة ممتازة!"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-3-1",
+      "role": "Speaker A",
+      "hanzi": "我们要不要买几个新的椅子？",
+      "pinyin": "Wǒmen yào bu yào mǎi jǐ ge xīn de yǐzi?",
+      "translation": {
+        "en": "Should we buy a few new chairs?",
+        "ar": "هل ينبغي علينا شراء بضعة كراسٍ جديدة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-3-2",
+      "role": "Speaker B",
+      "hanzi": "好啊。什么时候去买？",
+      "pinyin": "Hǎo a. Shénme shíhou qù mǎi?",
+      "translation": {
+        "en": "Sure. When shall we go buy them?",
+        "ar": "فكرة جيدة. متى سنذهب لشرائها؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-3-3",
+      "role": "Speaker A",
+      "hanzi": "明天下午怎么样？你明天几点能回来？",
+      "pinyin": "Míngtiān xiàwǔ zěnmeyàng? Nǐ míngtiān jǐ diǎn néng huílái?",
+      "translation": {
+        "en": "How about tomorrow afternoon? What time can you come back tomorrow?",
+        "ar": "ما رأيك بعد ظهر الغد؟ في أي وقت يمكنك العودة غداً؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-3-4",
+      "role": "Speaker B",
+      "hanzi": "三点多。",
+      "pinyin": "Sān diǎn duō.",
+      "translation": {
+        "en": "A little past three o'clock.",
+        "ar": "بعد الثالثة بقليل."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-4-1",
+      "role": "Speaker A",
+      "hanzi": "桌子下面有个猫。",
+      "pinyin": "Zhuōzi xiàmiàn yǒu ge māo.",
+      "translation": {
+        "en": "There is a cat under the table.",
+        "ar": "توجد قطة تحت الطاولة."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-4-2",
+      "role": "Speaker B",
+      "hanzi": "那是王朋的猫，它叫花花。",
+      "pinyin": "Nà shì Wáng Péng de māo, tā jiào Huāhua.",
+      "translation": {
+        "en": "That's Wang Peng's cat, its name is Huahua.",
+        "ar": "تلك قطة وانغ بنغ، اسمها هواهوا."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-4-3",
+      "role": "Speaker A",
+      "hanzi": "它很漂亮。",
+      "pinyin": "Tā hěn piàoliang.",
+      "translation": {
+        "en": "It is very pretty.",
+        "ar": "إنها جميلة جداً."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-4-4",
+      "role": "Speaker B",
+      "hanzi": "是啊，我觉得它的眼睛最漂亮。",
+      "pinyin": "Shì a, wǒ juéde tā de yǎnjing zuì piàoliang.",
+      "translation": {
+        "en": "Yes, I think its eyes are the prettiest.",
+        "ar": "أجل، أعتقد أن عينيها هما الأجمل."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-4-5",
+      "role": "Speaker A",
+      "hanzi": "它多大了？",
+      "pinyin": "Tā duō dà le?",
+      "translation": {
+        "en": "How old is it?",
+        "ar": "كم عمرها؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-4-6",
+      "role": "Speaker B",
+      "hanzi": "六个多月。",
+      "pinyin": "Liù ge duō yuè.",
+      "translation": {
+        "en": "More than six months.",
+        "ar": "أكثر من ستة أشهر."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "The Superlative with 最 (zuì)",
+      "explanation": "Placed before an adjective or psychological verb to mean 'most' or '-est' (e.g., 最好 = best, 最喜欢 = like most).",
+      "arExplanation": "تُوضع كلمة 最 قبل الصفة أو الفعل الشعوري للتعبير عن صيغة التفضيل العليا (الأفضل، الأكثر حباً)."
+    },
+    {
+      "point": "Expression of Approximate Numbers with 多 (duō)",
+      "explanation": "When placed after a number or measure word, 多 indicates an approximate amount exceeding the number (e.g., 三点多 = a little after 3:00, 六个多月 = over six months).",
+      "arExplanation": "تُستعمل 多 بعد الأرقام أو الكلمات القياسية لتدل على كمية تقريبية تزيد قليلاً عن الرقم المحدد."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Golden Autumn in Beijing (金秋北京)",
+      "detail": "September and October feature Beijing's best weather, with clear blue skies and comfortable breezes before the winter cold begins.",
+      "arDetail": "يُعتبر فصلا الخريف (سبتمبر وأكتوبر) أجمل أوقات العام في بكين لاعتدال الطقس وجمال الطبيعة."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q1-1",
+      "question": "When is the best time to visit Beijing?",
+      "arQuestion": "متى يكون أفضل وقت لزيارة بكين؟",
+      "options": [
+        "九月 (September)",
+        "一月 (January)",
+        "七月 (July)",
+        "十二月 (December)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q1-2",
+      "question": "What sport does Speaker B like the most?",
+      "arQuestion": "ما هي الرياضة المفضلة لدى المتحدث B؟",
+      "options": [
+        "踢足球 (Football)",
+        "游泳 (Swimming)",
+        "跑步 (Running)",
+        "打篮球 (Basketball)"
+      ],
+      "answerIndex": 0
+    }
+  ],
   "shadowingPractice": {
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "This scaffold intentionally contains no invented dialogue. Add reviewed Chinese, pinyin, English, Arabic, and real audio paths before marking complete."
+  "authoringNote": "Official HSK 2 Standard Course Lesson 1 dialogues."
 }

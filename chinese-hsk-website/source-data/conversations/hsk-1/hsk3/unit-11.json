@@ -1,0 +1,258 @@
+{
+  "id": "hsk-1-hsk3-unit-11",
+  "curriculum": "hsk3",
+  "hskLevel": 1,
+  "unitId": 11,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第11课：我读大学呢",
+    "en": "Lesson 11: I'm studying at university",
+    "ar": "الدرس 11: أنا أدرس في الجامعة"
+  },
+  "dialogue": [
+    {
+      "id": "11-1-1",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "喂，李文，你什么时候能到饭店？",
+      "pinyin": "Wèi, Lǐ Wén, nǐ shénme shíhou néng dào fàndiàn?",
+      "translation": {
+        "en": "Hello, Li Wen. When will you arrive at the restaurant?",
+        "ar": "مرحباً لي ون، متى ستصل إلى المطعم؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-1-2",
+      "role": "李文 (Li Wen)",
+      "hanzi": "还不知道，正在找呢。",
+      "pinyin": "Hái bù zhīdào, zhèngzài zhǎo ne.",
+      "translation": {
+        "en": "Not sure yet, I'm looking for it right now.",
+        "ar": "لا أعرف بعد، ما زلت أبحث عنه الآن."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-1-3",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "它是不是在超市后边？",
+      "pinyin": "Tā shì bu shì zài chāoshì hòubian?",
+      "translation": {
+        "en": "Is it behind the supermarket?",
+        "ar": "أليس هو خلف السوبرماركت؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-1-4",
+      "role": "李文 (Li Wen)",
+      "hanzi": "是的。",
+      "pinyin": "Shì de.",
+      "translation": {
+        "en": "Yes, it is.",
+        "ar": "نعم، هو كذلك."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-1-5",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "你开车没开车？",
+      "pinyin": "Nǐ kāichē méi kāichē?",
+      "translation": {
+        "en": "Are you driving or not?",
+        "ar": "هل تقود السيارة أم لا؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-1-6",
+      "role": "李文 (Li Wen)",
+      "hanzi": "我没开车，坐车呢。",
+      "pinyin": "Wǒ méi kāichē, zuò chē ne.",
+      "translation": {
+        "en": "I'm not driving, I'm taking a ride (riding a car).",
+        "ar": "أنا لا أقود السيارة، بل أستقل وسيلة مواصلات."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-2-1",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "你还在读大学吗？",
+      "pinyin": "Nǐ hái zài dú dàxué ma?",
+      "translation": {
+        "en": "Are you still studying at university?",
+        "ar": "هل ما زلت تدرس في الجامعة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-2-2",
+      "role": "李文 (Li Wen)",
+      "hanzi": "对，我读大学呢，还是大学生。",
+      "pinyin": "Duì, wǒ dú dàxué ne, hái shì dàxuéshēng.",
+      "translation": {
+        "en": "Yes, I'm studying at university—I'm still an undergraduate.",
+        "ar": "نعم، أنا أدرس بالجامعة، وما زلت طالباً جامعياً."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-2-3",
+      "role": "王一飞 (Wang Yifei)",
+      "hanzi": "你们学习忙不忙？",
+      "pinyin": "Nǐmen xuéxí máng bu máng?",
+      "translation": {
+        "en": "Are you busy with your studies?",
+        "ar": "هل دراستكم مزدحمة / هل أنتم مشغولون بالدراسة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-2-4",
+      "role": "李文 (Li Wen)",
+      "hanzi": "非常忙，我学医，我们的课很多。",
+      "pinyin": "Fēicháng máng, wǒ xué yī, wǒmen de kè hěn duō.",
+      "translation": {
+        "en": "Very busy. I major in medicine, and we have a lot of classes.",
+        "ar": "مشغولون جداً، أنا أدرس الطب ولدينا الكثير من الحصص."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-1",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "弟弟起床没起床呢？",
+      "pinyin": "Dìdi qǐchuáng méi qǐchuáng ne?",
+      "translation": {
+        "en": "Has younger brother gotten up yet?",
+        "ar": "هل استيقظ أخي الصغير من الفراش أم لا؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-2",
+      "role": "刘小雪 (Liu Xiaoxue)",
+      "hanzi": "没起床呢，还在睡觉。",
+      "pinyin": "Méi qǐchuáng ne, hái zài shuìjiào.",
+      "translation": {
+        "en": "He hasn't gotten up yet; he is still sleeping.",
+        "ar": "لم يستيقظ بعد، ما زال نائماً."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-3",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "还睡呢？他今天去不去哪里？",
+      "pinyin": "Hái shuì ne? Tā jīntiān qù bu qù nǎli?",
+      "translation": {
+        "en": "Still sleeping? Is he going anywhere today?",
+        "ar": "ما زال نائماً؟ هل سيذهب إلى أي مكان اليوم؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-4",
+      "role": "刘小雪 (Liu Xiaoxue)",
+      "hanzi": "去哪里？",
+      "pinyin": "Qù nǎli?",
+      "translation": {
+        "en": "Where would he go?",
+        "ar": "إلى أين يذهب؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-5",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "去超市。",
+      "pinyin": "Qù chāoshì.",
+      "translation": {
+        "en": "To the supermarket.",
+        "ar": "إلى السوبرماركت."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-6",
+      "role": "刘小雪 (Liu Xiaoxue)",
+      "hanzi": "我昨天问他，他对我说，他不去，他今天要和小朋友玩。",
+      "pinyin": "Wǒ zuótiān wèn tā, tā duì wǒ shuō, tā bú qù, tā jīntiān yào hé xiǎopéngyǒu wán.",
+      "translation": {
+        "en": "I asked him yesterday. He told me he's not going; he wants to play with other kids today.",
+        "ar": "سألته أمس، فقال لي إنه لن يذهب، ويريد أن يلعب مع أصدقائه الأطفال اليوم."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Progressive Aspect: 正在/在……呢 (zhèngzài/zài ... ne)",
+      "explanation": "‘正在’ or ‘在’ before a verb, often paired with modal particle ‘呢’ at the end of the clause, denotes an action in progress: 正在找呢 (in the middle of searching), 还在睡觉 (still sleeping).",
+      "arExplanation": "تُستخدم '正在' أو '在' قبل الفعل، وغالباً ما تقترن بـ '呢' في نهاية الجملة للدلالة على استمرار حدوث الفعل في الوقت الحاضر: '正在找呢' (أنا أبحث الآن)."
+    },
+    {
+      "point": "Affirmative-Negative Questions (正反疑问句)",
+      "explanation": "Questions formed by juxtaposing affirmative and negative forms of verbs or adjectives: ‘忙不忙’ (máng bu máng), ‘是不是’ (shì bu shì), ‘开车没开车’ (kāichē méi kāichē).",
+      "arExplanation": "صيغة السؤال الإيجابي-السلبي (V-不-V أو V-没-V) تجمع بين الفعل ونفيه للسؤال عما إذا كان الفعل حاصلاً أم لا دون الحاجة لاستخدام '吗'."
+    },
+    {
+      "point": "Preposition 对 (duì)",
+      "explanation": "Used to introduce the recipient or target of an action: 他对我说 (He said to me / He told me).",
+      "arExplanation": "حرف الجر '对' يُستخدم لتقديم الطرف أو الشخص الموجّه إليه الفعل: '他对我说' (قال لي)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "College Majors & 'Reading' University (读大学)",
+      "detail": "In Chinese, attending university is colloquially expressed as '读大学' (dú dàxué, literally 'reading university') or '上大学' (shàng dàxué). Medical degrees (学医) typically require 5 to 8 rigorous years of study in China.",
+      "arDetail": "في اللغة الصينية، يُعبَّر عن الالتحاق بالجامعة ومتابعة التعليم العالي بالتعبير '读大学' (قراءة الجامعة) أو '上大学'. وتستغرق دراسة الطب (学医) في الصين بين 5 إلى 8 سنوات من الجهد المكثف."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q11-1",
+      "question": "What is Li Wen doing right now according to the phone call?",
+      "arQuestion": "ماذا يفعل لي ون حالياً وفقاً للمكالمة الهاتفية؟",
+      "options": [
+        "正在找饭店 (Looking for the restaurant)",
+        "正在开车 (Driving a car)",
+        "在读大学 (Attending class)",
+        "在超市买东西 (Shopping at supermarket)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q11-2",
+      "question": "What is Li Wen studying at university?",
+      "arQuestion": "ماذا يدرس لي ون في الجامعة؟",
+      "options": [
+        "医 (Medicine)",
+        "汉语 (Chinese)",
+        "电脑 (Computer science)",
+        "英语 (English)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q11-3",
+      "question": "Why won't the younger brother go to the supermarket today?",
+      "arQuestion": "لماذا لن يذهب الأخ الأصغر إلى السوبرماركت اليوم؟",
+      "options": [
+        "他要和小朋友玩 (He wants to play with other kids)",
+        "他生病了 (He is sick)",
+        "他要上学 (He has school)",
+        "他不想起床 (He doesn't want to get up)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 11."
+}

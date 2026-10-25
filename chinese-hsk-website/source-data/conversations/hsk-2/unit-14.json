@@ -1,0 +1,253 @@
+{
+  "id": "hsk-2-unit-14",
+  "hskLevel": 2,
+  "unitId": 14,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第14课：你看过那个电影吗",
+    "en": "Lesson 14: Have you seen that movie?",
+    "ar": "الدرس 14: هل شاهدت ذلك الفيلم من قبل؟"
+  },
+  "targetVocabularyIds": [
+    "guo-2",
+    "ci-2",
+    "beijing-kaoya",
+    "fanguan",
+    "you-yi-si",
+    "chang"
+  ],
+  "dialogue": [
+    {
+      "id": "14-1-1",
+      "role": "Speaker A",
+      "hanzi": "你看过那个中国电影吗？",
+      "pinyin": "Nǐ kàn guò nàge Zhōngguó diànyǐng ma?",
+      "translation": {
+        "en": "Have you seen that Chinese movie?",
+        "ar": "هل شاهدت ذلك الفيلم الصيني من قبل؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "14-1-2",
+      "role": "Speaker B",
+      "hanzi": "没看过，听说很有意思。",
+      "pinyin": "Méi kàn guò, tīngshuō hěn yǒu yìsi.",
+      "translation": {
+        "en": "No, I haven't seen it; I heard it's very interesting.",
+        "ar": "لم أشاهده، لكن سمعت أنه مشوق وممتع للغاية."
+      },
+      "audio": null
+    },
+    {
+      "id": "14-1-3",
+      "role": "Speaker A",
+      "hanzi": "周末我们一起去看，好吗？",
+      "pinyin": "Zhōumò wǒmen yìqǐ qù kàn, hǎo ma?",
+      "translation": {
+        "en": "Shall we go watch it together this weekend?",
+        "ar": "هل نذهب لمشاهدته معاً في عطلة نهاية الأسبوع؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "14-1-4",
+      "role": "Speaker B",
+      "hanzi": "太好了，我很想看。",
+      "pinyin": "Tài hǎo le, wǒ hěn xiǎng kàn.",
+      "translation": {
+        "en": "Wonderful! I really want to watch it.",
+        "ar": "رائع جداً، أنا متلهف لمشاهدته."
+      },
+      "audio": null
+    },
+    {
+      "id": "14-2-1",
+      "role": "Speaker A",
+      "hanzi": "你吃过北京烤鸭吗？",
+      "pinyin": "Nǐ chī guò Běijīng kǎoyā ma?",
+      "translation": {
+        "en": "Have you eaten Beijing roast duck before?",
+        "ar": "هل تناولت بط بكين المشوي من قبل؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "14-2-2",
+      "role": "Speaker B",
+      "hanzi": "以前吃过一次，味道好极了。",
+      "pinyin": "Yǐqián chī guò yí cì, wèidào hǎo jí le.",
+      "translation": {
+        "en": "I ate it once in the past; the flavor was extraordinarily good.",
+        "ar": "تناولته مرة واحدة من قبل، ومذاقه كان شهياً ولذيذاً للغاية."
+      },
+      "audio": null
+    },
+    {
+      "id": "14-2-3",
+      "role": "Speaker A",
+      "hanzi": "今天我们再吃一次吧。",
+      "pinyin": "Jīntiān wǒmen zài chī yí cì ba.",
+      "translation": {
+        "en": "Let's eat it once more today.",
+        "ar": "دعنا نتناوله مرة أخرى اليوم."
+      },
+      "audio": null
+    },
+    {
+      "id": "14-2-4",
+      "role": "Speaker B",
+      "hanzi": "好啊，我很喜欢吃烤鸭。",
+      "pinyin": "Hǎo a, wǒ hěn xǐhuan chī kǎoyā.",
+      "translation": {
+        "en": "Sure thing, I love eating roast duck.",
+        "ar": "بكل سرور، فأنا أعشق أكل البط المشوي."
+      },
+      "audio": null
+    },
+    {
+      "id": "14-3-1",
+      "role": "Speaker A",
+      "hanzi": "你去过长城吗？",
+      "pinyin": "Nǐ qù guò Chángchéng ma?",
+      "translation": {
+        "en": "Have you been to the Great Wall?",
+        "ar": "هل زرت سور الصين العظيم من قبل؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "14-3-2",
+      "role": "Speaker B",
+      "hanzi": "去过两次，长城真壮观。",
+      "pinyin": "Qù guò liǎng cì, Chángchéng zhēn zhuàngguān.",
+      "translation": {
+        "en": "I've been there twice; the Great Wall is truly magnificent.",
+        "ar": "زرته مرتين، وسور الصين العظيم مهيب ورائع بحق."
+      },
+      "audio": null
+    },
+    {
+      "id": "14-3-3",
+      "role": "Speaker A",
+      "hanzi": "我还没去过呢，有机会一定要去看看。",
+      "pinyin": "Wǒ hái méi qù guò ne, yǒu jīhuì yídìng yào qù kànkan.",
+      "translation": {
+        "en": "I haven't been there yet; if there's an opportunity, I must go see it.",
+        "ar": "أنا لم أزره بعد، وحين تسنح الفرصة سأذهب لرؤيته بكل تأكيد."
+      },
+      "audio": null
+    },
+    {
+      "id": "14-3-4",
+      "role": "Speaker B",
+      "hanzi": "最好秋天去，秋天的风景最美。",
+      "pinyin": "Zuì hǎo qiūtiān qù, qiūtiān de fēngjǐng zuì měi.",
+      "translation": {
+        "en": "Best to go in autumn; the autumn scenery is the most beautiful.",
+        "ar": "من الأفضل زيارته في الخريف، فالمناظر الطبيعية الخريفية هناك هي الأروع."
+      },
+      "audio": null
+    },
+    {
+      "id": "14-4-1",
+      "role": "Speaker A",
+      "hanzi": "这本书你读过了吗？",
+      "pinyin": "Zhè běn shū nǐ dú guò le ma?",
+      "translation": {
+        "en": "Have you read this book before?",
+        "ar": "هل قرأت هذا الكتاب من قبل؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "14-4-2",
+      "role": "Speaker B",
+      "hanzi": "读过，写得非常生动。",
+      "pinyin": "Dú guò, xiě de fēicháng shēngdòng.",
+      "translation": {
+        "en": "I have; it is written very vividly.",
+        "ar": "قرأته، وأسلوب كتابته حيوي ورائع جداً."
+      },
+      "audio": null
+    },
+    {
+      "id": "14-4-3",
+      "role": "Speaker A",
+      "hanzi": "能借给我看看吗？",
+      "pinyin": "Néng jiè gěi wǒ kànkan ma?",
+      "translation": {
+        "en": "Could you lend it to me to read?",
+        "ar": "هل يمكنك إعارتي إياه لأقرأه؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "14-4-4",
+      "role": "Speaker B",
+      "hanzi": "当然可以，看完了再还给我就行。",
+      "pinyin": "Dāngrán kěyǐ, kàn wán le zài huán gěi wǒ jiù xíng.",
+      "translation": {
+        "en": "Of course! Just return it to me after you finish reading.",
+        "ar": "بالتأكيد، متى ما فرغت من قراءته أعده لي."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "The Experiential Particle 过 (guo)",
+      "explanation": "Attached after a verb to emphasize past life experience: Verb + 过 (e.g., 看过 = have seen, 吃过 = have eaten, 去过 = have been to).",
+      "arExplanation": "أداة الخبرة السابقة 过: تأتي بعد الفعل لتدل على خوض التجربة في الماضي (مثل: شاهدتُ من قبل، أكلتُ، زرتُ)."
+    },
+    {
+      "point": "Negation of Past Experience with 没 / 没有",
+      "explanation": "Use 没 or 没有 before the verb, retaining 过: 没看过 (haven't seen), 没去过 (haven't been). Never use 不.",
+      "arExplanation": "نفي التجربة السابقة يكون بـ 没 أو 没有 قبل الفعل مع إبقاء 过 (مثل: لم أشاهده من قبل)."
+    },
+    {
+      "point": "Verbal Measure Word 次 (cì)",
+      "explanation": "Indicates the number of times an action occurred: Verb + 过 + Number + 次 (e.g., 吃过一次 = ate once, 去过两次 = went twice).",
+      "arExplanation": "الكلمة القياسية لتكرار الفعل 次: تدل على عدد مرات وقوع التجربة (مثل: أكلتُ مرة واحدة، ذهبتُ مرتين)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Peking Roast Duck and the Great Wall (烤鸭与长城)",
+      "detail": "The famous saying '不到长城非好汉' (He who has not climbed the Great Wall is not a true hero) highlights Beijing's most iconic wonders.",
+      "arDetail": "يجسد سور الصين العظيم وبط بكين المشوي رمزين بارزين للثقافة والحضارة الصينية العريقة في قلب العاصمة بكين."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q14-1",
+      "question": "How many times has Speaker B eaten Peking roast duck before?",
+      "arQuestion": "كم مرة تناول المتحدث B بط بكين المشوي من قبل؟",
+      "options": [
+        "吃过一次 (Eaten once)",
+        "吃过三次 (Eaten three times)",
+        "从来没吃过 (Never eaten before)",
+        "经常吃 (Eats frequently)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q14-2",
+      "question": "How many times has Speaker B visited the Great Wall?",
+      "arQuestion": "كم مرة زار المتحدث B سور الصين العظيم؟",
+      "options": [
+        "去过两次 (Visited twice)",
+        "去过一次 (Visited once)",
+        "没去过 (Never visited)",
+        "去过很多次 (Visited many times)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official HSK 2 Standard Course Lesson 14 dialogues."
+}

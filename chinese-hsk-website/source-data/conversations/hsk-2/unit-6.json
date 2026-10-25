@@ -1,0 +1,250 @@
+{
+  "id": "hsk-2-unit-6",
+  "hskLevel": 2,
+  "unitId": 6,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第6课：你怎么不吃了",
+    "en": "Lesson 6: Why don't you eat more?",
+    "ar": "الدرس 6: لماذا لا تأكل المزيد؟"
+  },
+  "targetVocabularyIds": [
+    "teng",
+    "dangao",
+    "shufu",
+    "shenti",
+    "pao-bu",
+    "yundong",
+    "danshi",
+    "keneng"
+  ],
+  "dialogue": [
+    {
+      "id": "6-1-1",
+      "role": "Speaker A",
+      "hanzi": "你怎么不吃了？",
+      "pinyin": "Nǐ zěnme bù chī le?",
+      "translation": {
+        "en": "Why aren't you eating anymore?",
+        "ar": "لماذا توقفت عن الأكل؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-1-2",
+      "role": "Speaker B",
+      "hanzi": "我觉得有点儿不舒服。",
+      "pinyin": "Wǒ juéde yǒudiǎnr bù shūfu.",
+      "translation": {
+        "en": "I'm feeling a bit unwell.",
+        "ar": "أشعر ببعض التعب وعدم الارتياح."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-1-3",
+      "role": "Speaker A",
+      "hanzi": "怎么了？感冒了吗？",
+      "pinyin": "Zěnme le? Gǎnmào le ma?",
+      "translation": {
+        "en": "What's wrong? Do you have a cold?",
+        "ar": "ما بك؟ هل أصبت بالزكام؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-1-4",
+      "role": "Speaker B",
+      "hanzi": "没感冒，可能昨天晚上没睡好。",
+      "pinyin": "Méi gǎnmào, kěnéng zuótiān wǎnshang méi shuì hǎo.",
+      "translation": {
+        "en": "No cold, probably didn't sleep well last night.",
+        "ar": "لم أصب بزكام، ربما لم أنم جيداً البارحة."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-2-1",
+      "role": "Speaker A",
+      "hanzi": "你怎么吃得这么少？",
+      "pinyin": "Nǐ zěnme chī de zhème shǎo?",
+      "translation": {
+        "en": "How come you are eating so little?",
+        "ar": "لماذا تأكل هذا القليل جداً؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-2-2",
+      "role": "Speaker B",
+      "hanzi": "我最近在减肥。",
+      "pinyin": "Wǒ zuìjìn zài jiǎnféi.",
+      "translation": {
+        "en": "I've been on a diet recently.",
+        "ar": "أتبع حمية غذائية لإنقاص وزني هذه الأيام."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-2-3",
+      "role": "Speaker A",
+      "hanzi": "你一点儿也不胖，不用减肥。",
+      "pinyin": "Nǐ yìdiǎnr yě bú pàng, bú yòng jiǎnféi.",
+      "translation": {
+        "en": "You are not fat at all; no need to diet.",
+        "ar": "لست سميناً على الإطلاق، لا داعي لتخفيف وزنك."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-2-4",
+      "role": "Speaker B",
+      "hanzi": "我想更瘦一点儿。",
+      "pinyin": "Wǒ xiǎng gèng shòu yìdiǎnr.",
+      "translation": {
+        "en": "I'd like to be a bit slimmer.",
+        "ar": "أود أن أكون أنحف قليلاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-3-1",
+      "role": "Speaker A",
+      "hanzi": "你每天都来跑步吗？",
+      "pinyin": "Nǐ měi tiān dōu lái pǎobù ma?",
+      "translation": {
+        "en": "Do you come to run every day?",
+        "ar": "هل تأتي لممارسة الجري كل يوم؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-3-2",
+      "role": "Speaker B",
+      "hanzi": "是啊，运动对身体好。",
+      "pinyin": "Shì a, yùndòng duì shēntǐ hǎo.",
+      "translation": {
+        "en": "Yes, exercise is good for one's health.",
+        "ar": "أجل، الرياضة مفيدة جداً لصحة الجسم."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-3-3",
+      "role": "Speaker A",
+      "hanzi": "我也很想运动，但是太忙了。",
+      "pinyin": "Wǒ yě hěn xiǎng yùndòng, dànshì tài máng le.",
+      "translation": {
+        "en": "I also really want to exercise, but I'm too busy.",
+        "ar": "أنا أيضاً أريد ممارسة الرياضة، لكني مشغول للغاية."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-3-4",
+      "role": "Speaker B",
+      "hanzi": "每天运动半个小时就够了。",
+      "pinyin": "Měi tiān yùndòng bàn ge xiǎoshí jiù gòu le.",
+      "translation": {
+        "en": "Exercising half an hour every day is quite enough.",
+        "ar": "نصف ساعة من الرياضة يومياً كافية تماماً."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-4-1",
+      "role": "Speaker A",
+      "hanzi": "这块蛋糕真好吃！你怎么不吃？",
+      "pinyin": "Zhè kuài dàngāo zhēn hǎochī! Nǐ zěnme bù chī?",
+      "translation": {
+        "en": "This piece of cake is really delicious! Why don't you have some?",
+        "ar": "قطعة الحلوى هذه لذيذة حقاً! لماذا لا تأكل منها؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-4-2",
+      "role": "Speaker B",
+      "hanzi": "我牙疼，吃不了甜的。",
+      "pinyin": "Wǒ yá téng, chī bu liǎo tián de.",
+      "translation": {
+        "en": "My tooth aches; I can't eat sweets.",
+        "ar": "أسناني تؤلمني، لا أستطيع تناول الحلويات."
+      },
+      "audio": null
+    },
+    {
+      "id": "6-4-3",
+      "role": "Speaker A",
+      "hanzi": "去看医生了吗？",
+      "pinyin": "Qù kàn yīshēng le ma?",
+      "translation": {
+        "en": "Have you seen a doctor?",
+        "ar": "هل زرت الطبيب؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "6-4-4",
+      "role": "Speaker B",
+      "hanzi": "看过了，医生说要多刷牙。",
+      "pinyin": "Kàn guò le, yīshēng shuō yào duō shuāyá.",
+      "translation": {
+        "en": "I did. The doctor told me to brush my teeth more often.",
+        "ar": "زرته، وقال الطبيب إنه عليّ تنظيف أسناني بالفرشاة بانتظام أكثر."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Interrogative Pronoun 怎么 (zěnme) Asking 'Why'",
+      "explanation": "Used to inquire about cause or reason, often carrying a mild sense of surprise or curiosity (e.g., 你怎么不吃了？).",
+      "arExplanation": "تُستخدم أداة 怎么 للاستفهام عن السبب مع نبرة تعجب خفيفة (بمعنى: لمَ، كيف أنك توقفت؟)."
+    },
+    {
+      "point": "Total Negation with 一点儿也/都不 (yìdiǎnr yě/dōu bù)",
+      "explanation": "Structure: Subject + 一点儿也/都 + 不/没 + Verb/Adj, indicating 'not at all' (e.g., 一点儿也不胖 = not fat at all).",
+      "arExplanation": "صيغة النفي التام: اسم/ضمير + 一点儿也/都 + 不/没، وتعني 'على الإطلاق' أو 'بتاتاً'."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Table Manners and Hospitality in China",
+      "detail": "Hosts genuinely care about guests eating well and often ask '你怎么不吃了' out of warm concern and attentiveness.",
+      "arDetail": "من عادات الضيافة الصينية سؤال الضيف بلطف واهتمام إذا توقف عن الأكل، حرصاً على إكرامه وراحته."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q6-1",
+      "question": "Why does Speaker B eat so little in dialogue 2?",
+      "arQuestion": "لماذا يأكل المتحدث B القليل في الحوار الثاني؟",
+      "options": [
+        "在减肥 (On a diet to lose weight)",
+        "没有胃口 (Has no appetite)",
+        "饭不好吃 (Food isn't good)",
+        "急着去上班 (Rushing to work)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q6-2",
+      "question": "Why can't Speaker B eat the sweet cake in dialogue 4?",
+      "arQuestion": "لماذا لا يستطيع المتحدث B أكل كعكة الحلوى في الحوار الرابع؟",
+      "options": [
+        "牙疼 (Toothache)",
+        "头疼 (Headache)",
+        "肚子疼 (Stomachache)",
+        "嗓子疼 (Sore throat)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official HSK 2 Standard Course Lesson 6 dialogues."
+}

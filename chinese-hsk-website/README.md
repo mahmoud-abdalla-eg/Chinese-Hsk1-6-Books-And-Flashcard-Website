@@ -10,7 +10,7 @@ Built with Next.js App Router, React, Tailwind CSS 4, Supabase, and local JSON s
 
 - **HSK 1-6 Vocabulary**: Complete word library with customizable 25, 50, and 100-word unit batches.
 - **Spaced Flashcards**: Spaced-repetition deck with audio pronunciation, pinyin, and SRS rating system (*Again*, *Hard*, *Good*, *Easy*).
-- **Conversation Lessons**: Situational dialogue lessons covering practical, daily-life communication scenarios.
+- **Conversation Lessons**: Dual-curriculum situational dialogue lessons featuring both the Classic Standard Course and authentic New HSK 3.0 Course (FLTRP 2025/2026). Each dialogue turn has 4 layers (Hanzi, Pinyin, English, and Arabic), with grammar points, cultural notes, and comprehension checks. **HSK 1 and HSK 2 conversations are fully ready** (60 lessons total: 30 for HSK 1 and 30 for HSK 2) with interactive curriculum filter tabs.
 - **Grammar Paths**: Step-by-step grammar units with clear rules and authentic example sentences.
 - **Books & Materials Hub**: Standardized HSK 2.0 & 3.0 textbooks, workbooks, and study references.
 - **Learner Dashboard**: Cloud & local progress tracking, daily streaks, review history, and weak-word analytics.

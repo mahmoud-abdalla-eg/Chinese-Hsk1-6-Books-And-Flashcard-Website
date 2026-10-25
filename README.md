@@ -20,7 +20,7 @@ chinese-hsk-website
 
 - **HSK 1-6 Vocabulary**: Complete word library with customizable 25, 50, and 100-word unit batches.
 - **Spaced Flashcards**: Spaced-repetition deck with audio pronunciation, pinyin, and SRS rating system (*Again*, *Hard*, *Good*, *Easy*).
-- **Conversation Lessons**: Situational dialogue lessons covering practical, daily-life communication scenarios (Coming Soon).
+- **Conversation Lessons**: Dual-curriculum situational dialogue lessons featuring both the Classic Standard Course and authentic New HSK 3.0 Course (FLTRP 2025/2026). Each lesson features 4-layer dialogues (Hanzi, Pinyin with tone marks, English, and Arabic), grammar points, cultural notes, and comprehension checks. **HSK 1 and HSK 2 conversations are fully ready** (60 lessons total: 30 for HSK 1 and 30 for HSK 2) with interactive curriculum filter tabs.
 - **Grammar Paths**: Step-by-step grammar units with clear rules and authentic example sentences.
 - **Books & Materials Hub**: Standardized HSK 2.0 & 3.0 textbooks, workbooks, and study references.
 - **Learner Dashboard**: Cloud & local progress tracking, daily streaks, review history, and weak-word analytics.
@@ -33,13 +33,13 @@ chinese-hsk-website
 
 | Level | Expected Words | Vocabulary Status | Conversation Lessons |
 | :--- | ---: | :---: | :---: |
-| **HSK 1** | 319 | Ready | - |
-| **HSK 2** | 217 | Ready | - |
-| **HSK 3** | 538 | Ready | - |
-| **HSK 4** | 1,139 | Ready | - |
-| **HSK 5** | 1,690 | Ready | - |
-| **HSK 6** | 1,777 | Ready | - |
-| **Total** | **5,680** | Ready | Coming Soon |
+| **HSK 1** | 319 | Ready | **Ready** (30 Lessons: 15 Standard + 15 New HSK 3.0) |
+| **HSK 2** | 217 | Ready | **Ready** (30 Lessons: 15 Standard + 15 New HSK 3.0) |
+| **HSK 3** | 538 | Ready | In Progress |
+| **HSK 4** | 1,139 | Ready | In Progress |
+| **HSK 5** | 1,690 | Ready | In Progress |
+| **HSK 6** | 1,777 | Ready | In Progress |
+| **Total** | **5,680** | Ready | **60 Lessons Ready** (HSK 1 & 2 Dual Curriculum) |
 
 ---
 

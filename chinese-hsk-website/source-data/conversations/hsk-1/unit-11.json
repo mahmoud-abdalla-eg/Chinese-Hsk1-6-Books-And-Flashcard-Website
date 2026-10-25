@@ -1,0 +1,210 @@
+{
+  "id": "hsk-1-unit-11",
+  "hskLevel": 1,
+  "unitId": 11,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第11课：现在几点",
+    "en": "Lesson 11: What's the Time Now",
+    "ar": "الدرس 11: كم الساعة الآن"
+  },
+  "targetVocabularyIds": [
+    "xianzai",
+    "dian-2",
+    "fen",
+    "zhongwu",
+    "chi",
+    "fan",
+    "shihou",
+    "hui",
+    "women",
+    "dianying",
+    "zhu",
+    "qian",
+    "beijing"
+  ],
+  "dialogue": [
+    {
+      "id": "11-1-1",
+      "role": "Speaker A",
+      "hanzi": "现在几点？",
+      "pinyin": "Xiànzài jǐ diǎn?",
+      "translation": {
+        "en": "What is the time now?",
+        "ar": "كم الساعة الآن؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-1-2",
+      "role": "Speaker B",
+      "hanzi": "现在十点十分。",
+      "pinyin": "Xiànzài shí diǎn shí fēn.",
+      "translation": {
+        "en": "It is 10:10 now.",
+        "ar": "الساعة الآن العاشرة وعشر دقائق."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-1-3",
+      "role": "Speaker A",
+      "hanzi": "中午几点吃饭？",
+      "pinyin": "Zhōngwǔ jǐ diǎn chī fàn?",
+      "translation": {
+        "en": "When will we eat lunch at noon?",
+        "ar": "في أي ساعة نتناول الغداء ظهراً؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-1-4",
+      "role": "Speaker B",
+      "hanzi": "十二点吃饭。",
+      "pinyin": "Shí'èr diǎn chī fàn.",
+      "translation": {
+        "en": "We will eat at 12 o'clock.",
+        "ar": "نتناول الغداء عند الساعة الثانية عشرة."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-2-1",
+      "role": "Speaker A",
+      "hanzi": "爸爸什么时候回家？",
+      "pinyin": "Bàba shénme shíhou huí jiā?",
+      "translation": {
+        "en": "When is Dad coming home?",
+        "ar": "متى يعود أبي إلى المنزل؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-2-2",
+      "role": "Speaker B",
+      "hanzi": "下午五点。",
+      "pinyin": "Xiàwǔ wǔ diǎn.",
+      "translation": {
+        "en": "At 5:00 p.m.",
+        "ar": "في الخامسة بعد الظهر."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-2-3",
+      "role": "Speaker A",
+      "hanzi": "我们什么时候去看电影？",
+      "pinyin": "Wǒmen shénme shíhou qù kàn diànyǐng?",
+      "translation": {
+        "en": "When are we going to see the movie?",
+        "ar": "متى سنذهب لمشاهدة الفيلم؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-2-4",
+      "role": "Speaker B",
+      "hanzi": "六点三十分。",
+      "pinyin": "Liù diǎn sānshí fēn.",
+      "translation": {
+        "en": "At 6:30.",
+        "ar": "في الساعة السادسة وثلاثين دقيقة."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-1",
+      "role": "Speaker A",
+      "hanzi": "我星期一去北京。",
+      "pinyin": "Wǒ xīngqīyī qù Běijīng.",
+      "translation": {
+        "en": "I am going to Beijing on Monday.",
+        "ar": "سأذهب إلى بكين يوم الإثنين."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-2",
+      "role": "Speaker B",
+      "hanzi": "你想在北京住几天？",
+      "pinyin": "Nǐ xiǎng zài Běijīng zhù jǐ tiān?",
+      "translation": {
+        "en": "How many days do you want to stay in Beijing?",
+        "ar": "كم يوماً تنوي الإقامة في بكين؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-3",
+      "role": "Speaker A",
+      "hanzi": "住三天。",
+      "pinyin": "Zhù sān tiān.",
+      "translation": {
+        "en": "Stay for three days.",
+        "ar": "سأقيم لمدة ثلاثة أيام."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-4",
+      "role": "Speaker B",
+      "hanzi": "星期五前能回家吗？",
+      "pinyin": "Xīngqīwǔ qián néng huí jiā ma?",
+      "translation": {
+        "en": "Can you return home before Friday?",
+        "ar": "هل تستطيع العودة للمنزل قبل يوم الجمعة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-5",
+      "role": "Speaker A",
+      "hanzi": "能。",
+      "pinyin": "Néng.",
+      "translation": {
+        "en": "Yes, I can.",
+        "ar": "نعم، أستطيع."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Expression of Clock Time (点 + 分)",
+      "explanation": "Hours are expressed with 点 (diǎn) and minutes with 分 (fēn), preceded by time of day: 下午五点 (5 PM).",
+      "arExplanation": "يُعبر عن الساعات بـ 点 والدقائق بـ 分، ويسبقها توقيت اليوم (صباحاً أو مساءً)."
+    },
+    {
+      "point": "Time words as Adverbial Modifiers",
+      "explanation": "Time words indicating when an action takes place appear either before the subject or immediately after it, but never after the verb.",
+      "arExplanation": "ظروف الزمان تأتي إما قبل الفاعل أو بعده مباشرة، ولا تأتي مطلقاً بعد الفعل في الصينية."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Punctuality and Meal Times",
+      "detail": "Standard Chinese lunch hours are punctual, typically observed precisely between 11:30 AM and 12:30 PM.",
+      "arDetail": "مواعيد وجبة الغداء في الصين دقيقة ومنتظمة، وغالباً ما تكون بين الساعة الحادية عشرة والنصف والثانية عشرة والنصف ظهراً."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q11-1",
+      "question": "What time are they going to watch the movie in Dialogue 2?",
+      "arQuestion": "في أي ساعة سيذهبون لمشاهدة الفيلم في الحوار الثاني؟",
+      "options": [
+        "六点三十分 (6:30)",
+        "五点 (5:00)",
+        "十二点 (12:00)",
+        "十点十分 (10:10)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official HSK 1 Standard Course Lesson 11 dialogues."
+}

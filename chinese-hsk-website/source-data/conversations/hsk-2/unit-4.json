@@ -1,69 +1,251 @@
 {
-  "id": "hsk-2-unit-4-conversation-1",
+  "id": "hsk-2-unit-4",
   "hskLevel": 2,
   "unitId": 4,
-  "status": "needs-authoring",
+  "contentType": "dialogue",
+  "status": "ready",
   "title": {
-    "en": "Unit 4 conversation authoring brief",
-    "zh": "第4单元会话编写说明",
-    "ar": "موجز تأليف محادثة الوحدة 4"
+    "zh": "第4课：这个工作是他帮我介绍的",
+    "en": "Lesson 4: He recommended me for this job",
+    "ar": "الدرس 4: هذا العمل عرّفني عليه هو"
   },
   "targetVocabularyIds": [
-    "weishenme",
-    "xi",
-    "xialai",
-    "xiamian",
-    "xiao",
-    "xiaohair",
-    "xiaoshihou",
-    "xiaqu",
-    "xing",
-    "xingming",
-    "xi-shou-jian",
-    "xiwang",
-    "yanjing",
-    "yanse",
-    "yao",
-    "yaodian",
-    "ye-ye",
-    "yihuir",
-    "yijing",
-    "yin",
-    "yinwei",
-    "yiqi",
-    "yisi",
-    "you",
-    "you-2",
-    "you-yi-si",
-    "youbian",
-    "youshihou",
-    "youyong",
-    "yu",
-    "yuan",
-    "yundong",
-    "zhan",
+    "jieshao",
+    "bang",
+    "bangmang",
+    "gaosu",
+    "jiaoshi",
+    "kaishi",
+    "shoubiao",
     "zhang-fu",
-    "zhe",
-    "zhengme",
-    "zheng",
-    "zheyang",
-    "zhou",
-    "zhunbei",
-    "ziji",
-    "zou",
-    "zoulu",
-    "zui",
-    "zuo",
-    "zuobian",
-    "zuqiu"
+    "yihuir"
   ],
-  "dialogue": [],
-  "grammarNotes": [],
-  "culturalNotes": [],
-  "comprehensionQuestions": [],
+  "dialogue": [
+    {
+      "id": "4-1-1",
+      "role": "Speaker A",
+      "hanzi": "你晚上几点睡觉？",
+      "pinyin": "Nǐ wǎnshang jǐ diǎn shuìjiào?",
+      "translation": {
+        "en": "What time do you go to sleep at night?",
+        "ar": "في أي وقت تنام في الليل؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "4-1-2",
+      "role": "Speaker B",
+      "hanzi": "我晚上十一点多睡觉。",
+      "pinyin": "Wǒ wǎnshang shíyī diǎn duō shuìjiào.",
+      "translation": {
+        "en": "I go to sleep around after eleven at night.",
+        "ar": "أنام بعد الحادية عشرة ليلاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "4-1-3",
+      "role": "Speaker A",
+      "hanzi": "你起得真早！每天都这么早吗？",
+      "pinyin": "Nǐ qǐ de zhēn zǎo! Měi tiān dōu zhème zǎo ma?",
+      "translation": {
+        "en": "You get up so early! Is it this early every day?",
+        "ar": "أنت تستيقظ مبكراً جداً! هل تستيقظ هكذا كل يوم؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "4-1-4",
+      "role": "Speaker B",
+      "hanzi": "对，习惯了。",
+      "pinyin": "Duì, xíguàn le.",
+      "translation": {
+        "en": "Yes, I'm used to it.",
+        "ar": "نعم، اعتدت على ذلك."
+      },
+      "audio": null
+    },
+    {
+      "id": "4-2-1",
+      "role": "Speaker A",
+      "hanzi": "认识张先生吗？",
+      "pinyin": "Rènshi Zhāng xiānsheng ma?",
+      "translation": {
+        "en": "Do you know Mr. Zhang?",
+        "ar": "هل تعرف السيد تشانغ؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "4-2-2",
+      "role": "Speaker B",
+      "hanzi": "认识，他是我大学同学。",
+      "pinyin": "Rènshi, tā shì wǒ dàxué tóngxué.",
+      "translation": {
+        "en": "Yes, he is my college classmate.",
+        "ar": "أعرفه، إنه زميلي في الجامعة."
+      },
+      "audio": null
+    },
+    {
+      "id": "4-2-3",
+      "role": "Speaker A",
+      "hanzi": "这个工作是他帮我介绍的。",
+      "pinyin": "Zhè ge gōngzuò shì tā bāng wǒ jièshào de.",
+      "translation": {
+        "en": "He was the one who recommended this job to me.",
+        "ar": "هذه الوظيفة عرّفني عليها هو."
+      },
+      "audio": null
+    },
+    {
+      "id": "4-2-4",
+      "role": "Speaker B",
+      "hanzi": "太好了，张先生人很好。",
+      "pinyin": "Tài hǎo le, Zhāng xiānsheng rén hěn hǎo.",
+      "translation": {
+        "en": "That's wonderful! Mr. Zhang is a very good person.",
+        "ar": "رائع جداً، السيد تشانغ شخص طيب ومحترم للغاية."
+      },
+      "audio": null
+    },
+    {
+      "id": "4-3-1",
+      "role": "Speaker A",
+      "hanzi": "喂，您好！请问李老师在吗？",
+      "pinyin": "Wéi, nín hǎo! Qǐngwèn Lǐ lǎoshī zài ma?",
+      "translation": {
+        "en": "Hello! May I ask if Teacher Li is there?",
+        "ar": "مرحباً! لو سمحت هل المعلم لي موجود؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "4-3-2",
+      "role": "Speaker B",
+      "hanzi": "他不在，去教室上课了。",
+      "pinyin": "Tā bú zài, qù jiàoshì shàngkè le.",
+      "translation": {
+        "en": "He is not in; he went to the classroom to teach.",
+        "ar": "ليس موجوداً، لقد ذهب إلى الفصل لإعطاء الدرس."
+      },
+      "audio": null
+    },
+    {
+      "id": "4-3-3",
+      "role": "Speaker A",
+      "hanzi": "他什么时候能回来？",
+      "pinyin": "Tā shénme shíhou néng huílái?",
+      "translation": {
+        "en": "When can he come back?",
+        "ar": "متى يمكنه العودة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "4-3-4",
+      "role": "Speaker B",
+      "hanzi": "他十一点左右回来。",
+      "pinyin": "Tā shíyī diǎn zuǒyòu huílái.",
+      "translation": {
+        "en": "He will return around eleven o'clock.",
+        "ar": "سيعود في حدود الساعة الحادية عشرة."
+      },
+      "audio": null
+    },
+    {
+      "id": "4-4-1",
+      "role": "Speaker A",
+      "hanzi": "你怎么知道这么多？",
+      "pinyin": "Nǐ zěnme zhīdào zhème duō?",
+      "translation": {
+        "en": "How do you know so much?",
+        "ar": "كيف تعرف كل هذه المعلومات الكثيرة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "4-4-2",
+      "role": "Speaker B",
+      "hanzi": "都是大卫告诉我的。",
+      "pinyin": "Dōu shì Dàwèi gàosu wǒ de.",
+      "translation": {
+        "en": "David told me all of it.",
+        "ar": "كلها أخبرني بها ديفيد."
+      },
+      "audio": null
+    },
+    {
+      "id": "4-4-3",
+      "role": "Speaker A",
+      "hanzi": "大卫是谁？",
+      "pinyin": "Dàwèi shì shéi?",
+      "translation": {
+        "en": "Who is David?",
+        "ar": "من هو ديفيد؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "4-4-4",
+      "role": "Speaker B",
+      "hanzi": "他是我的好朋友。",
+      "pinyin": "Tā shì wǒ de hǎo péngyou.",
+      "translation": {
+        "en": "He is my good friend.",
+        "ar": "إنه صديقي المقرب."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "The 是……的 (shì...de) Structure to Emphasize the Agent",
+      "explanation": "Emphasizes who performed a known past action (e.g., 这个工作是他帮我介绍的 = It was he who recommended this job).",
+      "arExplanation": "يُستخدم تركيب 是……的 للتأكيد على الفاعل أو الشخص الذي قام بالفعل في الماضي."
+    },
+    {
+      "point": "Approximation with 左右 (zuǒyòu)",
+      "explanation": "Placed after a time or number to mean 'around' or 'approximately' (e.g., 十一点左右 = around eleven o'clock).",
+      "arExplanation": "توضع 左右 بعد التوقيت أو الرقم لتعني 'حوالي' أو 'تقريباً'."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Social Introductions and Guanxi (人脉与介绍)",
+      "detail": "Warm introductions by mutual friends or university classmates are highly valued in Chinese social and workplace culture.",
+      "arDetail": "تحظى التوصيات والتعارف المتبادل بين زملاء الدراسة والأصدقاء باحترام وتقدير كبير في بيئة العمل الصينية."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q4-1",
+      "question": "Who introduced the job to Speaker A?",
+      "arQuestion": "من الذي رشح الوظيفة للمتحدث A؟",
+      "options": [
+        "张先生 (Mr. Zhang)",
+        "李老师 (Teacher Li)",
+        "大卫 (David)",
+        "王朋 (Wang Peng)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q4-2",
+      "question": "What time will Teacher Li return?",
+      "arQuestion": "في أي وقت سيعود المعلم لي؟",
+      "options": [
+        "十一点左右 (Around 11:00)",
+        "九点左右 (Around 9:00)",
+        "十二点 (At 12:00)",
+        "下午三点 (At 3:00 PM)"
+      ],
+      "answerIndex": 0
+    }
+  ],
   "shadowingPractice": {
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "This scaffold intentionally contains no invented dialogue. Add reviewed Chinese, pinyin, English, Arabic, and real audio paths before marking complete."
+  "authoringNote": "Official HSK 2 Standard Course Lesson 4 dialogues."
 }

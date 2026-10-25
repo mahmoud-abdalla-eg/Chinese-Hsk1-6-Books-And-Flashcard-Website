@@ -1,0 +1,249 @@
+{
+  "id": "hsk-2-unit-11",
+  "hskLevel": 2,
+  "unitId": 11,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第11课：他比我大三岁",
+    "en": "Lesson 11: He is three years older than me",
+    "ar": "الدرس 11: هو أكبر مني بثلاث سنوات"
+  },
+  "targetVocabularyIds": [
+    "bi",
+    "gao",
+    "kuai",
+    "man",
+    "geng",
+    "shangchang",
+    "xinnian"
+  ],
+  "dialogue": [
+    {
+      "id": "11-1-1",
+      "role": "Speaker A",
+      "hanzi": "你哥哥多大？",
+      "pinyin": "Nǐ gēge duō dà?",
+      "translation": {
+        "en": "How old is your older brother?",
+        "ar": "كم عمر أخيك الأكبر؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-1-2",
+      "role": "Speaker B",
+      "hanzi": "他比我大三岁，今年二十五岁。",
+      "pinyin": "Tā bǐ wǒ dà sān suì, jīntián èrshíwǔ suì.",
+      "translation": {
+        "en": "He is three years older than me, twenty-five years old this year.",
+        "ar": "هو أكبر مني بثلاث سنوات، عمره خمس وعشرون سنة هذا العام."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-1-3",
+      "role": "Speaker A",
+      "hanzi": "他工作了吗？",
+      "pinyin": "Tā gōngzuò le ma?",
+      "translation": {
+        "en": "Does he work?",
+        "ar": "هل بدأ العمل؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-1-4",
+      "role": "Speaker B",
+      "hanzi": "工作了，他在一家医院当医生。",
+      "pinyin": "Gōngzuò le, tā zài yì jiā yīyuàn dāng yīshēng.",
+      "translation": {
+        "en": "Yes, he works as a doctor in a hospital.",
+        "ar": "نعم يعمل، إنه طبيب في أحد المستشفيات."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-2-1",
+      "role": "Speaker A",
+      "hanzi": "今天天气真冷啊！",
+      "pinyin": "Jīntiān tiānqì zhēn lěng a!",
+      "translation": {
+        "en": "The weather today is truly cold!",
+        "ar": "الطقس بارد حقاً اليوم!"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-2-2",
+      "role": "Speaker B",
+      "hanzi": "是啊，比昨天冷多了。",
+      "pinyin": "Shì a, bǐ zuótiān lěng duō le.",
+      "translation": {
+        "en": "Indeed, much colder than yesterday.",
+        "ar": "أجل، إنه أبرد بكثير من الأمس."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-2-3",
+      "role": "Speaker A",
+      "hanzi": "咱们回房间吧，外面风太大。",
+      "pinyin": "Zánmen huí fángjiān ba, wàimiàn fēng tài dà.",
+      "translation": {
+        "en": "Let's go back inside; the wind outside is too strong.",
+        "ar": "فلنعد إلى الغرفة، الرياح في الخارج قوية جداً."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-2-4",
+      "role": "Speaker B",
+      "hanzi": "好，走吧。",
+      "pinyin": "Hǎo, zǒu ba.",
+      "translation": {
+        "en": "Okay, let's go.",
+        "ar": "حسناً، هيا بنا."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-1",
+      "role": "Speaker A",
+      "hanzi": "这个西瓜真甜！",
+      "pinyin": "Zhè ge xīguā zhēn tián!",
+      "translation": {
+        "en": "This watermelon is really sweet!",
+        "ar": "هذا البطيخ حلو المذاق حقاً!"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-2",
+      "role": "Speaker B",
+      "hanzi": "比昨天的那个甜多了。",
+      "pinyin": "Bǐ zuótiān de nàge tián duō le.",
+      "translation": {
+        "en": "Much sweeter than yesterday's.",
+        "ar": "أحلى بكثير من بطيخ الأمس."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-3",
+      "role": "Speaker A",
+      "hanzi": "价格也比昨天便宜一点儿。",
+      "pinyin": "Jiàgé yě bǐ zuótiān piányi yìdiǎnr.",
+      "translation": {
+        "en": "The price is also slightly cheaper than yesterday.",
+        "ar": "والسعر أيضاً أرخص قليلاً من سعر الأمس."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-3-4",
+      "role": "Speaker B",
+      "hanzi": "那咱们多买两个吧。",
+      "pinyin": "Nà zánmen duō mǎi liǎng ge ba.",
+      "translation": {
+        "en": "Then let's buy two more.",
+        "ar": "إذاً فلنشترِ اثنتين إضافيتين."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-4-1",
+      "role": "Speaker A",
+      "hanzi": "王方，你学汉语多长时间了？",
+      "pinyin": "Wáng Fāng, nǐ xué Hànyǔ duō cháng shíjiān le?",
+      "translation": {
+        "en": "Wang Fang, how long have you been studying Chinese?",
+        "ar": "وانغ فانغ، كم من الوقت وأنت تدرس اللغة الصينية؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "11-4-2",
+      "role": "Speaker B",
+      "hanzi": "我学了一年多了。",
+      "pinyin": "Wǒ xué le yì nián duō le.",
+      "translation": {
+        "en": "I've been studying for more than a year.",
+        "ar": "أدرسها منذ أكثر من عام."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-4-3",
+      "role": "Speaker A",
+      "hanzi": "你说得真好，比我说得好多了。",
+      "pinyin": "Nǐ shuō de zhēn hǎo, bǐ wǒ shuō de hǎo duō le.",
+      "translation": {
+        "en": "You speak so well, much better than I do.",
+        "ar": "أنت تتحدث بها بطلاقة ممتازة، أفضل مني بكثير."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-4-4",
+      "role": "Speaker B",
+      "hanzi": "哪里哪里，你比我学得快。",
+      "pinyin": "Nǎlǐ nǎlǐ, nǐ bǐ wǒ xué de kuài.",
+      "translation": {
+        "en": "Not at all, you learn faster than me.",
+        "ar": "لا على الإطلاق، أنت تتعلم أسرع مني."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Comparison Structure with 比 (bǐ)",
+      "explanation": "Basic pattern: A + 比 + B + Adjective (+ Difference). For example: 他比我大三岁 (He is three years older than me).",
+      "arExplanation": "صيغة المقارنة بأداة 比: الطرف الأول + 比 + الطرف الثاني + الصفة (+ مقدار الفارق)."
+    },
+    {
+      "point": "Expressing Differences in Degree (多了 / 一点儿)",
+      "explanation": "Attach 多了 (much more) or 一点儿 (a little bit) after the adjective: 比昨天冷多了 (much colder than yesterday).",
+      "arExplanation": "لتحديد درجة التفاوت في المقارنة، نضيف 多了 (أكثر بكثير) أو 一点儿 (أكثر بقليل) بعد الصفة مباشرة."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Modesty in Chinese Compliments (哪里哪里)",
+      "detail": "When receiving praise, responding with '哪里哪里' demonstrates polite humility, a valued virtue in Chinese cultural discourse.",
+      "arDetail": "يُعتبر الرد بـ '哪里哪里' (أبداً، ليس إلى هذا الحد) عند تلقي المديح دليلاً على التواضع ودماثة الخلق في الثقافة الصينية."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q11-1",
+      "question": "How many years older is Speaker B's brother?",
+      "arQuestion": "بكم سنة يكبر الأخ شقيقه؟",
+      "options": [
+        "大三岁 (Three years older)",
+        "大两岁 (Two years older)",
+        "大五岁 (Five years older)",
+        "大一岁 (One year older)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q11-2",
+      "question": "How is today's weather compared to yesterday in dialogue 2?",
+      "arQuestion": "كيف يبدو طقس اليوم مقارنة بالأمس في الحوار الثاني؟",
+      "options": [
+        "比昨天冷多了 (Much colder than yesterday)",
+        "比昨天热 (Hotter than yesterday)",
+        "和昨天一样 (Same as yesterday)",
+        "晴天有太阳 (Sunny and warm)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official HSK 2 Standard Course Lesson 11 dialogues."
+}

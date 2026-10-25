@@ -1,0 +1,224 @@
+{
+  "id": "hsk-1-hsk3-unit-7",
+  "curriculum": "hsk3",
+  "hskLevel": 1,
+  "unitId": 7,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第7课：我晚上六点半下班",
+    "en": "Lesson 7: I finish work at 6:30 in the evening",
+    "ar": "الدرس 7: أنتهي من العمل في السادسة والنصف مساءً"
+  },
+  "dialogue": [
+    {
+      "id": "7-1-1",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "现在几点？",
+      "pinyin": "Xiànzài jǐ diǎn?",
+      "translation": {
+        "en": "What time is it now?",
+        "ar": "كم الساعة الآن؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-1-2",
+      "role": "安妮 (Annie)",
+      "hanzi": "早上八点四十。",
+      "pinyin": "Zǎoshang bā diǎn sìshí.",
+      "translation": {
+        "en": "It's 8:40 in the morning.",
+        "ar": "إنها الثامنة وأربعون دقيقة صباحاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-1-3",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "我上午十点十分有课。",
+      "pinyin": "Wǒ shàngwǔ shí diǎn shí fēn yǒu kè.",
+      "translation": {
+        "en": "I have a class at 10:10 in the morning.",
+        "ar": "لدي درس في العاشرة وعشر دقائق صباحاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-1-4",
+      "role": "安妮 (Annie)",
+      "hanzi": "好的，我们下午两点见吧。",
+      "pinyin": "Hǎo de, wǒmen xiàwǔ liǎng diǎn jiàn ba.",
+      "translation": {
+        "en": "Alright, let's meet at 2:00 in the afternoon.",
+        "ar": "حسناً، لنلتقِ في الثانية بعد الظهر."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-2-1",
+      "role": "李文 (Li Wen)",
+      "hanzi": "下午我想去电影院看电影，你去吗？",
+      "pinyin": "Xiàwǔ wǒ xiǎng qù diànyǐngyuàn kàn diànyǐng, nǐ qù ma?",
+      "translation": {
+        "en": "I want to go to the cinema to watch a movie this afternoon. Are you going?",
+        "ar": "أريد الذهاب إلى السينما بعد الظهر لمشاهدة فيلم، هل ستذهبين؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-2-2",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "我不想去，下午还有事。",
+      "pinyin": "Wǒ bù xiǎng qù, xiàwǔ hái yǒu shì.",
+      "translation": {
+        "en": "I don't want to go. I still have things to do this afternoon.",
+        "ar": "لا أريد الذهاب، ما زال لدي عمل بعد الظهر."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-2-3",
+      "role": "李文 (Li Wen)",
+      "hanzi": "好的。明天呢？",
+      "pinyin": "Hǎo de. Míngtiān ne?",
+      "translation": {
+        "en": "Okay. How about tomorrow?",
+        "ar": "حسناً. وماذا عن الغد؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-2-4",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "我明天下午两点还要上课呢，四点半下课。",
+      "pinyin": "Wǒ míngtiān xiàwǔ liǎng diǎn hái yào shàngkè ne, sì diǎn bàn xiàkè.",
+      "translation": {
+        "en": "I still have class tomorrow afternoon at 2:00, and it finishes at 4:30.",
+        "ar": "لدي درس أيضاً غداً في الثانية بعد الظهر، وينتهي عند الرابعة والنصف."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-3-1",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "喂，你在哪儿呢？",
+      "pinyin": "Wèi, nǐ zài nǎr ne?",
+      "translation": {
+        "en": "Hey, where are you?",
+        "ar": "ألو، أين أنت؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-3-2",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "我在家里呢。",
+      "pinyin": "Wǒ zài jiā li ne.",
+      "translation": {
+        "en": "I'm at home.",
+        "ar": "أنا في المنزل."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-3-3",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "我晚上六点半下班。",
+      "pinyin": "Wǒ wǎnshang liù diǎn bàn xiàbān.",
+      "translation": {
+        "en": "I'll finish work at 6:30 in the evening.",
+        "ar": "سأنتهي من عملي في السادسة والنصف مساءً."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-3-4",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "我八点去医院上班。",
+      "pinyin": "Wǒ bā diǎn qù yīyuàn shàngbān.",
+      "translation": {
+        "en": "I go to work at the hospital at 8:00.",
+        "ar": "سأذهب للعمل في المستشفى في الثامنة."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-3-5",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "好的，你去店里买些菜吧。",
+      "pinyin": "Hǎo de, nǐ qù diàn li mǎi xiē cài ba.",
+      "translation": {
+        "en": "Alright, could you go to the store to buy some vegetables?",
+        "ar": "حسناً، اذهب إلى المتجر واشترِ بعض الخضار."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-3-6",
+      "role": "刘明 (Liu Ming)",
+      "hanzi": "好，我十分钟后去。",
+      "pinyin": "Hǎo, wǒ shí fēnzhōng hòu qù.",
+      "translation": {
+        "en": "Okay, I'll go in ten minutes.",
+        "ar": "حسناً، سأذهب بعد عشر دقائق."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Expression of Time (时间的表达)",
+      "explanation": "Chinese expresses points in time from largest unit to smallest: [Time of day] + [Hour: 点] + [Minute: 分 / 半]. E.g., 早上八点四十 (8:40 AM), 晚上六点半 (6:30 PM).",
+      "arExplanation": "تُرتّب عناصر الوقت في الصينية من الأكبر إلى الأصغر: الفترة الزمنية أولاً، تليها الساعات (点)، ثم الدقائق (分) أو النصف (半)."
+    },
+    {
+      "point": "Modal Particle 吧 (ba) for Suggestions",
+      "explanation": "‘吧’ placed at the end of a sentence softens the tone into a friendly suggestion, consultation, or request: 我们下午两点见吧 (Let's meet at 2:00 PM).",
+      "arExplanation": "حرف المعنى '吧' في نهاية الجملة يخفف النبرة ويحول الكلام إلى اقتراح أو تشاور لطيف: 'دعنا نلتقِ في الثانية بعد الظهر'."
+    },
+    {
+      "point": "Modal Particle 呢 (ne) Confirming Facts",
+      "explanation": "‘呢’ at sentence end confirms a current state, fact, or ongoing situation: 我在家里呢 (I am at home right now).",
+      "arExplanation": "تأتي '呢' في نهاية الجملة الخبرية لتأكيد استمرار الحالة أو حقيقة معينة: 'أنا في المنزل حالياً'."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Daily Routine and Evening Shifts in Urban China",
+      "detail": "Medical professionals and service staff in Chinese cities frequently work evening or night shifts (上夜班/晚班), while families maintain active communication regarding dinner preparation.",
+      "arDetail": "يعمل العاملون في المستشفيات والخدمات في المدن الصينية بنظام المناوبات المسائية والليلية، وتهتم الأسر بالتنسيق المستمر لتحضير وجبات الطعام اليومية."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q7-1",
+      "question": "What time does Wang Yixue finish work in the evening?",
+      "arQuestion": "في أي ساعة تنهي وانغ ييشيويه عملها مساءً؟",
+      "options": [
+        "六点半 (6:30)",
+        "八点四十 (8:40)",
+        "两点 (2:00)",
+        "八点 (8:00)"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "id": "q7-2",
+      "question": "What does Wang Yixue ask Liu Ming to do before his shift?",
+      "arQuestion": "ماذا طلبت وانغ ييشيويه من ليو مينغ أن يفعل قبل بدء مناوبته؟",
+      "options": [
+        "去店里买些菜 (Go to the store to buy some vegetables)",
+        "去看电影 (Go watch a movie)",
+        "去学校上课 (Go to school for class)",
+        "做米饭 (Cook rice)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 7."
+}

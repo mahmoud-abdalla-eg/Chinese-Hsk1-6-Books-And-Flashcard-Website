@@ -1,0 +1,193 @@
+{
+  "id": "hsk-1-unit-9",
+  "hskLevel": 1,
+  "unitId": 9,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第9课：你儿子在哪儿工作",
+    "en": "Lesson 9: Where Does Your Son Work",
+    "ar": "الدرس 9: أين يعمل ابنك"
+  },
+  "targetVocabularyIds": [
+    "zai-2",
+    "nar-2",
+    "gongzuo",
+    "erzi",
+    "yi-yuan",
+    "yi-sheng",
+    "baba"
+  ],
+  "dialogue": [
+    {
+      "id": "9-1-1",
+      "role": "Speaker A",
+      "hanzi": "小猫在哪儿？",
+      "pinyin": "Xiǎomāo zài nǎr?",
+      "translation": {
+        "en": "Where is the kitten?",
+        "ar": "أين القطة الصغيرة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "9-1-2",
+      "role": "Speaker B",
+      "hanzi": "小猫在那儿。",
+      "pinyin": "Xiǎomāo zài nàr.",
+      "translation": {
+        "en": "The kitten is over there.",
+        "ar": "القطة الصغيرة هناك."
+      },
+      "audio": null
+    },
+    {
+      "id": "9-1-3",
+      "role": "Speaker A",
+      "hanzi": "小狗在哪儿？",
+      "pinyin": "Xiǎogǒu zài nǎr?",
+      "translation": {
+        "en": "Where is the puppy?",
+        "ar": "أين الكلب الصغير؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "9-1-4",
+      "role": "Speaker B",
+      "hanzi": "小狗在椅子下面。",
+      "pinyin": "Xiǎogǒu zài yǐzi xiàmiàn.",
+      "translation": {
+        "en": "The puppy is under the chair.",
+        "ar": "الكلب الصغير تحت الكرسي."
+      },
+      "audio": null
+    },
+    {
+      "id": "9-2-1",
+      "role": "Speaker A",
+      "hanzi": "你在哪儿工作？",
+      "pinyin": "Nǐ zài nǎr gōngzuò?",
+      "translation": {
+        "en": "Where do you work?",
+        "ar": "أين تعمل؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "9-2-2",
+      "role": "Speaker B",
+      "hanzi": "我在学校工作。",
+      "pinyin": "Wǒ zài xuéxiào gōngzuò.",
+      "translation": {
+        "en": "I work at a school.",
+        "ar": "أعمل في المدرسة."
+      },
+      "audio": null
+    },
+    {
+      "id": "9-2-3",
+      "role": "Speaker A",
+      "hanzi": "你儿子在哪儿工作？",
+      "pinyin": "Nǐ érzi zài nǎr gōngzuò?",
+      "translation": {
+        "en": "Where does your son work?",
+        "ar": "وأين يعمل ابنك؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "9-2-4",
+      "role": "Speaker B",
+      "hanzi": "我儿子在医院工作，他是医生。",
+      "pinyin": "Wǒ érzi zài yīyuàn gōngzuò, tā shì yīshēng.",
+      "translation": {
+        "en": "My son works at a hospital; he is a doctor.",
+        "ar": "ابني يعمل في المستشفى، هو طبيب."
+      },
+      "audio": null
+    },
+    {
+      "id": "9-3-1",
+      "role": "Speaker A",
+      "hanzi": "你爸爸在家里吗？",
+      "pinyin": "Nǐ bàba zài jiā lǐ ma?",
+      "translation": {
+        "en": "Is your father at home?",
+        "ar": "هل والدك في المنزل؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "9-3-2",
+      "role": "Speaker B",
+      "hanzi": "不在家里。",
+      "pinyin": "Bú zài jiā lǐ.",
+      "translation": {
+        "en": "No, he is not at home.",
+        "ar": "ليس في المنزل."
+      },
+      "audio": null
+    },
+    {
+      "id": "9-3-3",
+      "role": "Speaker A",
+      "hanzi": "他在哪儿呢？",
+      "pinyin": "Tā zài nǎr ne?",
+      "translation": {
+        "en": "Where is he?",
+        "ar": "أين هو إذاً؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "9-3-4",
+      "role": "Speaker B",
+      "hanzi": "他在医院。",
+      "pinyin": "Tā zài yīyuàn.",
+      "translation": {
+        "en": "He is at the hospital.",
+        "ar": "إنه في المستشفى."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Verb 在 (zài) for Location",
+      "explanation": "Subject + 在 + Location indicates where someone or something exists: 他在医院 (He is at the hospital).",
+      "arExplanation": "الفعل 在 متبوعاً بالمكان يعبر عن التواجد في ذلك الموقع."
+    },
+    {
+      "point": "Prepositional Phrase 在 + Location + Verb",
+      "explanation": "Indicates where an action occurs: 我在学校工作 (I work at a school). Note that place precedes the verb in Chinese.",
+      "arExplanation": "في الصينية، يأتي ظرف المكان قبل الفعل الذي يُمارس فيه (في المدرسة + أعمل)."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Medical Professionals in China",
+      "detail": "Doctors (医生) and teachers (老师) hold high professional respect in Chinese social conversation.",
+      "arDetail": "تحظى مهنة الطبيب والمعلم بتقدير واحترام واسع في الثقافة الصينية."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q9-1",
+      "question": "What is Speaker B's son's profession?",
+      "arQuestion": "ما هي مهنة ابن المتحدث B؟",
+      "options": [
+        "医生 (Doctor)",
+        "老师 (Teacher)",
+        "学生 (Student)",
+        "司机 (Driver)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official HSK 1 Standard Course Lesson 9 dialogues."
+}

@@ -1,0 +1,192 @@
+{
+  "id": "hsk-1-unit-10",
+  "hskLevel": 1,
+  "unitId": 10,
+  "contentType": "dialogue",
+  "status": "ready",
+  "title": {
+    "zh": "第10课：我能坐这儿吗",
+    "en": "Lesson 10: Can I Sit Here",
+    "ar": "الدرس 10: هل يمكنني الجلوس هنا"
+  },
+  "targetVocabularyIds": [
+    "zhuozi",
+    "diannao",
+    "ben",
+    "zher",
+    "zuo",
+    "neng"
+  ],
+  "dialogue": [
+    {
+      "id": "10-1-1",
+      "role": "Speaker A",
+      "hanzi": "桌子上有什么？",
+      "pinyin": "Zhuōzi shang yǒu shénme?",
+      "translation": {
+        "en": "What is on the table?",
+        "ar": "ماذا يوجد على الطاولة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "10-1-2",
+      "role": "Speaker B",
+      "hanzi": "桌子上有一个电脑和一本书。",
+      "pinyin": "Zhuōzi shang yǒu yí ge diànnǎo hé yì běn shū.",
+      "translation": {
+        "en": "There is a computer and a book on the table.",
+        "ar": "يوجد على الطاولة جهاز حاسوب وكتاب."
+      },
+      "audio": null
+    },
+    {
+      "id": "10-1-3",
+      "role": "Speaker A",
+      "hanzi": "杯子在哪儿？",
+      "pinyin": "Bēizi zài nǎr?",
+      "translation": {
+        "en": "Where is the cup?",
+        "ar": "أين الكوب؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "10-1-4",
+      "role": "Speaker B",
+      "hanzi": "杯子在桌子里。",
+      "pinyin": "Bēizi zài zhuōzi lǐ.",
+      "translation": {
+        "en": "The cup is inside the desk.",
+        "ar": "الكوب في درج الطاولة."
+      },
+      "audio": null
+    },
+    {
+      "id": "10-2-1",
+      "role": "Speaker A",
+      "hanzi": "前面那个人叫什么名字？",
+      "pinyin": "Qiánmiàn nàge rén jiào shénme míngzi?",
+      "translation": {
+        "en": "What is the name of that person in front?",
+        "ar": "ما اسم ذلك الشخص الذي في الأمام؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "10-2-2",
+      "role": "Speaker B",
+      "hanzi": "他叫王方，在医院工作。",
+      "pinyin": "Tā jiào Wáng Fāng, zài yīyuàn gōngzuò.",
+      "translation": {
+        "en": "His name is Wang Fang; he works in a hospital.",
+        "ar": "اسمه وانغ فانغ، يعمل في المستشفى."
+      },
+      "audio": null
+    },
+    {
+      "id": "10-2-3",
+      "role": "Speaker A",
+      "hanzi": "后面那个人呢？他叫什么名字？",
+      "pinyin": "Hòumiàn nàge rén ne? Tā jiào shénme míngzi?",
+      "translation": {
+        "en": "What about the person behind? What's his name?",
+        "ar": "وماذا عن الشخص الذي في الخلف؟ ما اسمه؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "10-2-4",
+      "role": "Speaker B",
+      "hanzi": "他叫谢朋，在商店工作。",
+      "pinyin": "Tā jiào Xiè Péng, zài shāngdiàn gōngzuò.",
+      "translation": {
+        "en": "His name is Xie Peng; he works in a store.",
+        "ar": "اسمه شيه بينغ، يعمل في المتجر."
+      },
+      "audio": null
+    },
+    {
+      "id": "10-3-1",
+      "role": "Speaker A",
+      "hanzi": "这儿有人吗？",
+      "pinyin": "Zhèr yǒu rén ma?",
+      "translation": {
+        "en": "Is this seat taken?",
+        "ar": "هل هذا المقعد مشغول؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "10-3-2",
+      "role": "Speaker B",
+      "hanzi": "没有。",
+      "pinyin": "Méiyǒu.",
+      "translation": {
+        "en": "No, it isn't.",
+        "ar": "لا، المقعد شاغر."
+      },
+      "audio": null
+    },
+    {
+      "id": "10-3-3",
+      "role": "Speaker A",
+      "hanzi": "我能坐这儿吗？",
+      "pinyin": "Wǒ néng zuò zhèr ma?",
+      "translation": {
+        "en": "May I sit here?",
+        "ar": "هل يمكنني الجلوس هنا؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "10-3-4",
+      "role": "Speaker B",
+      "hanzi": "请坐。",
+      "pinyin": "Qǐng zuò.",
+      "translation": {
+        "en": "Please sit down.",
+        "ar": "تفضل بالجلوس."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [
+    {
+      "point": "Existence with 有 (yǒu)",
+      "explanation": "Location + 有 + Noun indicates what exists at that location: 桌子上有一个电脑 (There is a computer on the table).",
+      "arExplanation": "صيغة الوجود: المكان + 有 + الشيء تدل على وجود ذلك الشيء في الموقع المحدد."
+    },
+    {
+      "point": "Permission with 能 (néng)",
+      "explanation": "能 + Verb is used to ask for permission or express physical possibility: 我能坐这儿吗？(May I sit here?).",
+      "arExplanation": "الفعل المساعد 能 متبوعاً بفعل يستخدم لطلب الإذن أو الاستئذان."
+    }
+  ],
+  "culturalNotes": [
+    {
+      "title": "Polite Request: 请坐 (Qǐng zuò)",
+      "detail": "Offering a seat with '请坐' is an immediate gesture of courtesy and comfort in Chinese social interactions.",
+      "arDetail": "دعوة الضيف للجلوس بعبارة '请坐' هي لفتة ترحيبية فورية تعكس كرم الضيافة الصينية."
+    }
+  ],
+  "comprehensionQuestions": [
+    {
+      "id": "q10-1",
+      "question": "What is on the table in Dialogue 1?",
+      "arQuestion": "ماذا يوجد على الطاولة في الحوار الأول؟",
+      "options": [
+        "一个电脑和一本书 (A computer and a book)",
+        "两个杯子 (Two cups)",
+        "三只小猫 (Three kittens)",
+        "很多衣服 (Many clothes)"
+      ],
+      "answerIndex": 0
+    }
+  ],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "authoringNote": "Official HSK 1 Standard Course Lesson 10 dialogues."
+}
