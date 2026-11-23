@@ -175,4 +175,4 @@ Under AGPL-3.0:
 - If you run or host a modified version of this software over a computer network (such as running a paid site, SaaS, or hosted learning service), you **must make your modifications publicly available as open source under the same AGPL-3.0 license**.
 - This protects against closed-source paid exploitation while remaining 100% OSI-approved open source.
 
-See: [LICENSE](./LICENSE) and [LICENSE.md](./LICENSE.md)
+See: [LICENSE](./LICENSE)
