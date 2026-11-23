@@ -2,7 +2,15 @@
 
 The core Next.js web application for **Mandarin Flow HSK**, a modern Mandarin learning platform for HSK 1-6 vocabulary, grammar, conversations, interactive flashcards, textbooks & materials, and progress tracking.
 
-Built with Next.js App Router, React, Tailwind CSS 4, Supabase, and local JSON source data. Designed for multilingual learners with native English and Arabic (RTL) support.
+**Live Demo:** [chinese-hsk-flashcards.vercel.app](https://chinese-hsk-flashcards.vercel.app)
+
+---
+
+### App Preview
+
+| Platform Overview & Conversations | Spaced-Repetition Flashcards |
+| :---: | :---: |
+| [![Platform Overview](./public/screenshots/platform-overview.png)](https://chinese-hsk-flashcards.vercel.app) | [![Flashcard Study Session](./public/screenshots/flashcard-session.png)](https://chinese-hsk-flashcards.vercel.app/flashcards) |
 
 ---
 
@@ -118,3 +126,9 @@ npm run seed:supabase         # Seed Supabase database from source JSON files
 npm run generate-audio        # Batch generate speech synthesis audio
 npm run generate-conversations # Generate dialogue scaffolds
 ```
+
+---
+
+## License
+
+This project is licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)**. See [LICENSE](../LICENSE).

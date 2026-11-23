@@ -1,6 +1,6 @@
 # Mandarin Flow HSK - HSK 1-6 Platform
 
-[![License: Source Available - Non-Commercial](https://img.shields.io/badge/License-Source%20Available--Non--Commercial-red.svg)](./LICENSE.md)
+[![License: AGPL-3.0](https://img.shields.io/badge/License-AGPL_3.0-blue.svg)](./LICENSE)
 [![Next.js](https://img.shields.io/badge/Next.js-16.4.3-black?logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.2.4-blue?logo=react)](https://react.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4-38bdf8?logo=tailwindcss)](https://tailwindcss.com/)
@@ -8,11 +8,17 @@
 
 A modern, mobile-friendly, multilingual Chinese learning platform for HSK 1-6 vocabulary, grammar, dialogues, spaced-repetition flashcards, textbooks & learning materials, learner progress analytics, and admin-managed course content.
 
-The main web application lives in:
+**Live Demo:** [chinese-hsk-flashcards.vercel.app](https://chinese-hsk-flashcards.vercel.app)
 
-```bash
-chinese-hsk-website
-```
+---
+
+### App Preview
+
+| Platform Overview & Conversations | Spaced-Repetition Flashcards |
+| :---: | :---: |
+| [![Platform Overview](./docs/screenshots/platform-overview.png)](https://chinese-hsk-flashcards.vercel.app) | [![Flashcard Study Session](./docs/screenshots/flashcard-session.png)](https://chinese-hsk-flashcards.vercel.app/flashcards) |
+
+*The core Next.js web application source code is located in [`chinese-hsk-website/`](./chinese-hsk-website).*
 
 ---
 
@@ -162,6 +168,11 @@ Created by [Mahmoud Abdalla](https://github.com/mahmoud-abdalla-eg).
 
 ## License
 
-This project is **source available for personal and educational use only**. Commercial use, resale, paid hosting, sublicensing, or selling modified versions is prohibited without prior written permission.
+This project is licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)** — an OSI-approved open-source copyleft license.
 
-See: [LICENSE.md](./LICENSE.md)
+Under AGPL-3.0:
+- Anyone is free to use, study, modify, and distribute this software.
+- If you run or host a modified version of this software over a computer network (such as running a paid site, SaaS, or hosted learning service), you **must make your modifications publicly available as open source under the same AGPL-3.0 license**.
+- This protects against closed-source paid exploitation while remaining 100% OSI-approved open source.
+
+See: [LICENSE](./LICENSE) and [LICENSE.md](./LICENSE.md)
