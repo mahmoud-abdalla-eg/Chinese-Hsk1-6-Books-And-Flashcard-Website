@@ -24,7 +24,7 @@ def main():
         "wordArabicGenerated": 0,
         "exampleEnglishGenerated": 0,
         "exampleArabicGenerated": 0,
-        "metaExamplesGenerated": 0,
+        "missingExamplesDetected": 0,
         "levels": {},
     }
     remaining = args.limit
@@ -35,7 +35,7 @@ def main():
           "wordArabicGenerated": 0,
           "exampleEnglishGenerated": 0,
           "exampleArabicGenerated": 0,
-          "metaExamplesGenerated": 0,
+          "missingExamplesDetected": 0,
       }
       for word in words:
           if remaining == 0 and args.limit:
@@ -57,29 +57,37 @@ def main():
 
 def enrich_word(word, cache, sleep, report):
     changed = False
+    generated_arabic = False
+    generated_example_translation = False
     meaning = word.setdefault("meaning", {"en": "", "ar": ""})
     example = word.setdefault("example", blank_example())
     examples = word.setdefault("examples", [])
+
     if meaning.get("en") and not meaning.get("ar"):
         meaning["ar"] = translate(meaning["en"], "en", "ar", cache, sleep)
         report["wordArabicGenerated"] += 1
+        generated_arabic = True
         changed = True
 
     if not example.get("hanzi"):
-        generated = generated_meta_example(word)
-        word["example"] = generated
-        example = word["example"]
-        examples.insert(0, generated)
-        report["metaExamplesGenerated"] += 1
+        example = next(
+            (item for item in examples if item.get("hanzi")),
+            blank_example(),
+        )
+        word["example"] = example
+        if not example.get("hanzi"):
+            report["missingExamplesDetected"] += 1
         changed = True
 
     if example.get("hanzi") and not example.get("en"):
         example["en"] = translate(example["hanzi"], "zh-CN", "en", cache, sleep)
         report["exampleEnglishGenerated"] += 1
+        generated_example_translation = True
         changed = True
     if example.get("en") and not example.get("ar"):
         example["ar"] = translate(example["en"], "en", "ar", cache, sleep)
         report["exampleArabicGenerated"] += 1
+        generated_example_translation = True
         changed = True
 
     normalized_examples = []
@@ -91,10 +99,12 @@ def enrich_word(word, cache, sleep, report):
         if item.get("hanzi") and not item.get("en"):
             item["en"] = translate(item["hanzi"], "zh-CN", "en", cache, sleep)
             report["exampleEnglishGenerated"] += 1
+            generated_example_translation = True
             changed = True
         if item.get("en") and not item.get("ar"):
             item["ar"] = translate(item["en"], "en", "ar", cache, sleep)
             report["exampleArabicGenerated"] += 1
+            generated_example_translation = True
             changed = True
         normalized_examples.append(
             {
@@ -105,21 +115,17 @@ def enrich_word(word, cache, sleep, report):
             }
         )
     word["examples"] = normalized_examples
-    word["generatedContent"] = {
-        "arabic": "machine-generated",
-        "examples": "machine-generated where source examples were missing",
-    }
+    if generated_arabic or generated_example_translation:
+        generated_content = word.setdefault("generatedContent", {})
+        if generated_arabic:
+            generated_content["arabic"] = (
+                "machine-generated translation, review recommended"
+            )
+        if generated_example_translation:
+            generated_content["examples"] = (
+                "machine-generated translation, review recommended"
+            )
     return changed
-
-
-def generated_meta_example(word):
-    hanzi = word.get("hanzi", "")
-    return {
-        "hanzi": f"我今天学习“{hanzi}”这个词。",
-        "pinyin": "",
-        "en": f'Today I learned the word "{hanzi}".',
-        "ar": "",
-    }
 
 
 def translate(text, source, target, cache, sleep):

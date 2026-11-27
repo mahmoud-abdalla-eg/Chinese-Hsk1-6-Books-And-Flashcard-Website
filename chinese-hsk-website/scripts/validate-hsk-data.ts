@@ -22,33 +22,65 @@ function audioExists(audioPath) {
   );
 }
 
+function isGeneratedPlaceholder(hanzi) {
+  return hanzi?.startsWith("我今天学习“") && hanzi.endsWith("”这个词。");
+}
+
 function validateLevel(level) {
   const words = readWords(level);
   const duplicateMap = new Map();
-  for (const word of words)
+  const duplicateIds = new Map();
+  const missingByField = new Map();
+  let placeholderExamples = 0;
+  let audioReferences = 0;
+  let brokenAudioReferences = 0;
+
+  for (const word of words) {
     duplicateMap.set(word.hanzi, (duplicateMap.get(word.hanzi) || 0) + 1);
+    duplicateIds.set(word.id, (duplicateIds.get(word.id) || 0) + 1);
+    if (isGeneratedPlaceholder(word.example?.hanzi)) placeholderExamples += 1;
+
+    const requiredFields = [
+      ["id", word.id],
+      ["hanzi", word.hanzi],
+      ["pinyin", word.pinyin],
+      ["english translation", word.meaning?.en],
+      ["arabic translation", word.meaning?.ar],
+      ["example sentence", word.example?.hanzi],
+      ["example pinyin", word.example?.pinyin],
+      ["example english", word.example?.en],
+      ["example arabic", word.example?.ar],
+    ];
+    for (const [field, value] of requiredFields) {
+      if (!value) {
+        missingByField.set(field, (missingByField.get(field) || 0) + 1);
+      }
+    }
+
+    for (const audioPath of [word.audio?.word, word.audio?.example]) {
+      if (!audioPath) continue;
+      audioReferences += 1;
+      if (!audioExists(audioPath)) brokenAudioReferences += 1;
+    }
+  }
+
   const duplicateWords = [...duplicateMap.entries()]
     .filter(([, count]) => count > 1)
     .map(([hanzi]) => hanzi);
-  const missingFields = words.flatMap((word) => {
-    const missing = [];
-    if (!word.pinyin) missing.push("pinyin");
-    if (!word.meaning?.en) missing.push("english translation");
-    if (!word.meaning?.ar) missing.push("arabic translation");
-    if (!word.example?.hanzi) missing.push("example sentence");
-    if (!word.example?.pinyin) missing.push("example pinyin");
-    if (!word.example?.en) missing.push("example english");
-    if (!word.example?.ar) missing.push("example arabic");
-    if (!audioExists(word.audio?.word)) missing.push("word audio");
-    if (!audioExists(word.audio?.example)) missing.push("example audio");
-    return missing.length ? [{ id: word.id, hanzi: word.hanzi, missing }] : [];
-  });
+
   return {
     level,
     expectedCount: expected[level],
     actualCount: words.length,
+    duplicateIds: [...duplicateIds.entries()]
+      .filter(([, count]) => count > 1)
+      .map(([id]) => id),
     duplicateWords,
-    missingFields,
+    missingByField: Object.fromEntries(missingByField),
+    placeholderExamples,
+    audioReferences,
+    expectedAudioReferences: words.length * 2,
+    brokenAudioReferences,
   };
 }
 
@@ -60,20 +92,33 @@ for (let level = 1; level <= 6; level += 1) {
     warnings.push(
       `expected ${result.expectedCount}, found ${result.actualCount}`,
     );
+  if (result.duplicateIds.length)
+    warnings.push(`duplicate IDs: ${result.duplicateIds.join(", ")}`);
   if (result.duplicateWords.length)
     warnings.push(`duplicates: ${result.duplicateWords.join(", ")}`);
-  if (result.missingFields.length)
+  const missingFields = Object.entries(result.missingByField).map(
+    ([field, count]) => `${count} missing ${field}`,
+  );
+  if (missingFields.length) warnings.push(missingFields.join(", "));
+  if (result.placeholderExamples)
     warnings.push(
-      `${result.missingFields.length} words missing required fields/audio`,
+      `${result.placeholderExamples} synthetic placeholder examples need replacement`,
+    );
+  if (result.brokenAudioReferences)
+    warnings.push(
+      `${result.brokenAudioReferences} referenced audio files do not exist`,
     );
   if (warnings.length) {
     hasWarnings = true;
     console.warn(`HSK ${result.level} warnings: ${warnings.join("; ")}`);
   } else {
-    console.log(`HSK ${result.level} OK: ${result.actualCount} words`);
+    console.log(`HSK ${result.level} text data OK: ${result.actualCount} words`);
   }
+  console.log(
+    `HSK ${result.level} audio references: ${result.audioReferences}/${result.expectedAudioReferences}; missing references are optional`,
+  );
 }
 if (hasWarnings)
   console.warn(
-    "Validation completed with warnings. Build data is usable, but course content is incomplete.",
+    "Validation completed with warnings. See source-data/review-queues for content needing review.",
   );
