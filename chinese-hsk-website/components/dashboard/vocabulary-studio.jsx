@@ -60,6 +60,15 @@ export default function VocabularyStudio({ allWords = [] }) {
         easy: false,
         due: false,
       });
+    } else if (diffParam === "due") {
+      setCatalogTab("due");
+      setMixerDifficulties({
+        hard: false,
+        fav: false,
+        mid: false,
+        easy: false,
+        due: true,
+      });
     } else if (diffParam === "fav" || diffParam === "favorites") {
       setCatalogTab("fav");
       setMixerDifficulties({

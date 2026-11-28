@@ -103,6 +103,7 @@ const studyModes = [
 export default function SiteHeader() {
   const pathname = usePathname();
   const { tr, lang, setLang } = useLanguage();
+  const isArabic = lang === "ar";
   const { user, logout } = useAuth();
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [learnDropdownOpen, setLearnDropdownOpen] = useState(false);
@@ -170,8 +171,8 @@ export default function SiteHeader() {
           <button
             type="button"
             onClick={() => setDrawerOpen(true)}
-            className="grid h-9 w-9 sm:h-10 sm:w-10 place-items-center rounded-xl border border-slate-200 bg-slate-50 text-slate-700 transition hover:border-teal-400 hover:bg-slate-100 hover:text-slate-950 lg:hidden shrink-0"
-            aria-label="Open navigation menu"
+            className="grid h-11 w-11 place-items-center rounded-xl border border-slate-200 bg-slate-50 text-slate-700 transition hover:border-teal-400 hover:bg-slate-100 hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2 lg:hidden shrink-0"
+            aria-label={tr("openNavigationMenu")}
             aria-expanded={drawerOpen}
           >
             <svg
@@ -192,7 +193,7 @@ export default function SiteHeader() {
           {/* Logo & Brand Title (links to Home /) */}
           <Link
             href="/"
-            className="group flex min-w-0 items-center gap-1.5 sm:gap-3"
+            className="group flex min-w-0 items-center gap-1.5 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2 sm:gap-3"
           >
             <Image
               src="/logo.png"
@@ -214,11 +215,14 @@ export default function SiteHeader() {
         </div>
 
         {/* Center: Streamlined Desktop Navigation Bar (visible on lg: >= 1024px) */}
-        <nav className="hidden items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 p-1 text-sm font-black text-slate-700 lg:flex">
+        <nav
+          aria-label={tr("navigationMenu")}
+          className="hidden items-center gap-1.5 rounded-full border border-slate-200 bg-slate-50 p-1 text-sm font-black text-slate-700 lg:flex"
+        >
           {/* 1. Dashboard Pill */}
           <Link
             href="/dashboard"
-            className={`rounded-full px-4 py-1.5 transition ${
+            className={`inline-flex min-h-11 items-center rounded-full px-4 py-1.5 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2 ${
               isDashboardActive
                 ? "bg-teal-700 text-white shadow-2xs"
                 : "text-slate-700 hover:text-teal-700"
@@ -234,7 +238,7 @@ export default function SiteHeader() {
               onClick={() => setLearnDropdownOpen((prev) => !prev)}
               aria-expanded={learnDropdownOpen}
               aria-haspopup="menu"
-              className={`inline-flex items-center gap-1.5 rounded-full px-4 py-1.5 transition ${
+              className={`inline-flex min-h-11 items-center gap-1.5 rounded-full px-4 py-1.5 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2 ${
                 isLearnActive
                   ? "bg-teal-700 text-white shadow-2xs"
                   : "text-slate-700 hover:text-teal-700"
@@ -262,7 +266,7 @@ export default function SiteHeader() {
             {learnDropdownOpen && (
               <div
                 role="menu"
-                aria-label="Learning modes"
+                aria-label={tr("navLearn")}
                 className="absolute start-0 top-full mt-2 w-72 rounded-2xl border border-slate-200 bg-white p-2 shadow-xl z-50 transition-all duration-150"
               >
                 {studyModes.map((mode) => {
@@ -273,7 +277,7 @@ export default function SiteHeader() {
                       href={mode.href}
                       onClick={() => setLearnDropdownOpen(false)}
                       role="menuitem"
-                      className={`flex items-start gap-3 rounded-xl p-2.5 transition ${
+                      className={`flex items-start gap-3 rounded-xl p-2.5 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-1 ${
                         active
                           ? "bg-teal-50/80 text-teal-900"
                           : "text-slate-700 hover:bg-slate-50 hover:text-slate-950"
@@ -306,7 +310,7 @@ export default function SiteHeader() {
           {/* 3. Books Pill */}
           <Link
             href="/books"
-            className={`rounded-full px-4 py-1.5 transition ${
+            className={`inline-flex min-h-11 items-center rounded-full px-4 py-1.5 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2 ${
               isBooksActive
                 ? "bg-teal-700 text-white shadow-2xs"
                 : "text-slate-700 hover:text-teal-700"
@@ -318,7 +322,7 @@ export default function SiteHeader() {
           {/* 4. Contact Pill */}
           <Link
             href="/contact"
-            className={`rounded-full px-4 py-1.5 transition ${
+            className={`inline-flex min-h-11 items-center rounded-full px-4 py-1.5 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2 ${
               isContactActive
                 ? "bg-teal-700 text-white shadow-2xs"
                 : "text-slate-700 hover:text-teal-700"
@@ -341,7 +345,7 @@ export default function SiteHeader() {
           className="fixed inset-0 z-50 lg:hidden"
           role="dialog"
           aria-modal="true"
-          aria-label="Navigation Menu"
+          aria-label={tr("navigationMenu")}
         >
           {/* Dimmed Backdrop */}
           <div
@@ -351,13 +355,13 @@ export default function SiteHeader() {
           />
 
           {/* Drawer Content Panel (start-0 ensures left in LTR, right in RTL) */}
-          <div className="fixed inset-y-0 start-0 z-50 flex h-full h-screen h-dvh max-h-screen w-[86vw] max-w-[320px] flex-col bg-white p-4 sm:p-5 shadow-2xl overflow-hidden transition-transform duration-300 ease-out">
+          <div className="fixed inset-y-0 start-0 z-50 flex h-dvh max-h-dvh w-[86vw] max-w-[320px] flex-col bg-white p-4 shadow-2xl overflow-hidden transition-transform duration-300 ease-out sm:p-5">
             {/* Drawer Header */}
             <div className="flex items-center justify-between border-b border-slate-100 pb-4 shrink-0">
               <Link
                 href="/"
                 onClick={() => setDrawerOpen(false)}
-                className="flex items-center gap-2.5"
+                className="flex items-center gap-2.5 rounded-xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2"
               >
                 <Image
                   src="/logo.png"
@@ -373,8 +377,8 @@ export default function SiteHeader() {
               <button
                 type="button"
                 onClick={() => setDrawerOpen(false)}
-                className="grid h-10 w-10 place-items-center rounded-xl text-slate-400 hover:bg-slate-100 hover:text-slate-700 transition"
-                aria-label="Close menu"
+                className="grid h-11 w-11 place-items-center rounded-xl text-slate-400 transition hover:bg-slate-100 hover:text-slate-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2"
+                aria-label={tr("closeNavigationMenu")}
               >
                 <svg
                   className="h-5 w-5"
@@ -393,12 +397,12 @@ export default function SiteHeader() {
             </div>
 
             {/* Nav Destination Links */}
-            <nav className="my-3 flex-1 min-h-0 space-y-4 overflow-y-auto overscroll-contain pr-1">
+            <nav className="my-3 min-h-0 flex-1 space-y-4 overflow-y-auto overscroll-contain pe-1">
               {/* Dashboard Link */}
               <Link
                 href="/dashboard"
                 onClick={() => setDrawerOpen(false)}
-                className={`flex items-center justify-between rounded-xl px-4 py-3 text-sm font-black transition ${
+                className={`flex min-h-11 items-center justify-between rounded-xl px-4 py-3 text-sm font-black transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2 ${
                   isDashboardActive
                     ? "bg-teal-700 text-white shadow-xs"
                     : "text-slate-700 hover:bg-slate-100 hover:text-slate-950"
@@ -406,7 +410,7 @@ export default function SiteHeader() {
               >
                 <span>{tr("dashboard")}</span>
                 <span
-                  className={`text-xs ${
+                  className={`text-xs ${isArabic ? "rotate-180" : ""} ${
                     isDashboardActive ? "text-teal-200" : "text-slate-400"
                   }`}
                   aria-hidden="true"
@@ -419,7 +423,7 @@ export default function SiteHeader() {
               <Link
                 href="/books"
                 onClick={() => setDrawerOpen(false)}
-                className={`flex items-center justify-between rounded-xl px-4 py-3 text-sm font-black transition ${
+                className={`flex min-h-11 items-center justify-between rounded-xl px-4 py-3 text-sm font-black transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2 ${
                   isBooksActive
                     ? "bg-teal-700 text-white shadow-xs"
                     : "text-slate-700 hover:bg-slate-100 hover:text-slate-950"
@@ -442,7 +446,7 @@ export default function SiteHeader() {
                   <span>{tr("navBooks")}</span>
                 </div>
                 <span
-                  className={`text-xs ${
+                  className={`text-xs ${isArabic ? "rotate-180" : ""} ${
                     isBooksActive ? "text-teal-200" : "text-slate-400"
                   }`}
                   aria-hidden="true"
@@ -455,7 +459,7 @@ export default function SiteHeader() {
               <Link
                 href="/contact"
                 onClick={() => setDrawerOpen(false)}
-                className={`flex items-center justify-between rounded-xl px-4 py-3 text-sm font-black transition ${
+                className={`flex min-h-11 items-center justify-between rounded-xl px-4 py-3 text-sm font-black transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2 ${
                   isContactActive
                     ? "bg-teal-700 text-white shadow-xs"
                     : "text-slate-700 hover:bg-slate-100 hover:text-slate-950"
@@ -478,7 +482,7 @@ export default function SiteHeader() {
                   <span>{tr("contactNav")}</span>
                 </div>
                 <span
-                  className={`text-xs ${
+                  className={`text-xs ${isArabic ? "rotate-180" : ""} ${
                     isContactActive ? "text-teal-200" : "text-slate-400"
                   }`}
                   aria-hidden="true"
@@ -500,7 +504,7 @@ export default function SiteHeader() {
                         key={mode.href}
                         href={mode.href}
                         onClick={() => setDrawerOpen(false)}
-                        className={`flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-black transition ${
+                        className={`flex min-h-11 items-center gap-3 rounded-xl px-3 py-2.5 text-sm font-black transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2 ${
                           active
                             ? "bg-teal-50 text-teal-800"
                             : "text-slate-700 hover:bg-slate-50"
@@ -525,7 +529,7 @@ export default function SiteHeader() {
               {/* Quick HSK Levels Navigation */}
               <div className="border-t border-slate-100 pt-4">
                 <span className="block px-2 text-[11px] font-black uppercase tracking-[0.16em] text-slate-400">
-                  HSK Levels
+                  {tr("chooseYourLevel")}
                 </span>
                 <div className="mt-2.5 grid grid-cols-3 gap-2">
                   {[1, 2, 3, 4, 5, 6].map((lvl) => (
@@ -533,7 +537,7 @@ export default function SiteHeader() {
                       key={lvl}
                       href={`/hsk/${lvl}`}
                       onClick={() => setDrawerOpen(false)}
-                      className={`rounded-xl border py-2 text-center text-xs font-black transition ${
+                      className={`min-h-11 rounded-xl border py-2 text-center text-xs font-black transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2 ${
                         pathname === `/hsk/${lvl}`
                           ? "border-teal-700 bg-teal-50 text-teal-800"
                           : "border-slate-200 bg-slate-50 text-slate-700 hover:border-slate-300 hover:bg-white"
@@ -556,7 +560,7 @@ export default function SiteHeader() {
                       key={code}
                       type="button"
                       onClick={() => setLang(code)}
-                      className={`flex items-center justify-between rounded-xl px-3 py-2 text-xs font-bold transition ${
+                      className={`flex min-h-11 items-center justify-between rounded-xl px-3 py-2 text-xs font-bold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2 ${
                         code === lang
                           ? "bg-teal-700 text-white shadow-xs"
                           : "border border-slate-200 bg-slate-50 text-slate-700 hover:bg-white"
@@ -602,7 +606,7 @@ export default function SiteHeader() {
                       logout();
                       setDrawerOpen(false);
                     }}
-                    className="flex w-full items-center justify-center gap-2 rounded-xl border border-rose-200 bg-rose-50/50 py-2.5 text-xs font-black text-rose-700 hover:bg-rose-100 transition"
+                    className="flex min-h-11 w-full items-center justify-center gap-2 rounded-xl border border-rose-200 bg-rose-50/50 py-2.5 text-xs font-black text-rose-700 transition hover:bg-rose-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-700 focus-visible:ring-offset-2"
                   >
                     <svg
                       className="h-4 w-4 text-rose-600 shrink-0"
@@ -626,14 +630,14 @@ export default function SiteHeader() {
                   <Link
                     href="/login"
                     onClick={() => setDrawerOpen(false)}
-                    className="flex items-center justify-center rounded-xl border border-slate-200 bg-slate-50 py-2.5 text-xs font-black text-slate-700 hover:border-teal-400 hover:bg-white transition"
+                    className="flex min-h-11 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 py-2.5 text-xs font-black text-slate-700 transition hover:border-teal-400 hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2"
                   >
                     {tr("logIn")}
                   </Link>
                   <Link
                     href="/signup"
                     onClick={() => setDrawerOpen(false)}
-                    className="flex items-center justify-center rounded-xl bg-teal-700 py-2.5 text-xs font-black text-white hover:bg-teal-800 shadow-xs transition"
+                    className="flex min-h-11 items-center justify-center rounded-xl bg-teal-700 py-2.5 text-xs font-black text-white shadow-xs transition hover:bg-teal-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2"
                   >
                     {tr("signUp")}
                   </Link>
