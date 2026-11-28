@@ -25,7 +25,7 @@ export async function getAnalyticsStats() {
 
     const [
       { count: visits },
-      { data: performanceSamples },
+      { data: performanceEvents },
       { data: progressList },
       { data: recentEvents },
     ] = await Promise.all([
@@ -36,7 +36,7 @@ export async function getAnalyticsStats() {
       supabase
         .from("analytics_events")
         .select("path, metrics, created_at")
-        .eq("type", "performance")
+        .in("type", ["performance", "visit"])
         .gte("created_at", since)
         .order("created_at", { ascending: false })
         .limit(200),
@@ -50,6 +50,11 @@ export async function getAnalyticsStats() {
     ]);
 
     const progressRecords = progressList || [];
+    const performanceSamples = (performanceEvents || []).filter(
+      (event) =>
+        Number(event.metrics?.loadMs || 0) > 0 ||
+        Number(event.metrics?.domReadyMs || 0) > 0,
+    );
     const studiedUsers = new Set(progressRecords.map((r) => r.user_id)).size;
     const activeStudyRecords = progressRecords.filter((r) => {
       const p = r.progress || {};
