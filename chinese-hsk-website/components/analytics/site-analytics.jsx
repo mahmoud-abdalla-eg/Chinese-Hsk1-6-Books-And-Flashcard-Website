@@ -1,29 +1,34 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import { createPageViewTracker } from "@/lib/analytics/page-view-tracker";
 
 export default function SiteAnalytics() {
   const pathname = usePathname();
+  const trackerRef = useRef(null);
+
+  if (trackerRef.current === null) {
+    trackerRef.current = createPageViewTracker({
+      send: sendEvent,
+      getMetrics: getNavigationMetrics,
+    });
+  }
 
   useEffect(() => {
-    sendEvent({ type: "visit", path: pathname, referrer: document.referrer });
-    const timer = window.setTimeout(() => {
-      const navigation = performance.getEntriesByType("navigation")[0];
-      if (!navigation) return;
-      sendEvent({
-        type: "performance",
-        path: pathname,
-        metrics: {
-          loadMs: navigation.loadEventEnd,
-          domReadyMs: navigation.domContentLoadedEventEnd,
-        },
-      });
-    }, 1200);
-    return () => window.clearTimeout(timer);
+    return trackerRef.current(pathname, document.referrer);
   }, [pathname]);
 
   return null;
+}
+
+function getNavigationMetrics() {
+  const navigation = performance.getEntriesByType("navigation")[0];
+  if (!navigation) return {};
+  return {
+    loadMs: navigation.loadEventEnd,
+    domReadyMs: navigation.domContentLoadedEventEnd,
+  };
 }
 
 function sendEvent(payload) {
