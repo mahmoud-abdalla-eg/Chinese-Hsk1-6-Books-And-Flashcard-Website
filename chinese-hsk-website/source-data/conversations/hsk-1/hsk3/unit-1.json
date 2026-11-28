@@ -12,112 +12,68 @@
   },
   "dialogue": [
     {
-      "id": "1-1-1",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "AI小语，你好！",
-      "pinyin": "AI Xiǎoyǔ, nǐ hǎo!",
+      "id": "1-greeting-1",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "你好，李文！AI小语今天要来我们学校。",
+      "pinyin": "Nǐ hǎo, Lǐ Wén! AI Xiǎoyǔ jīntiān yào lái wǒmen xuéxiào.",
       "translation": {
-        "en": "Hello, AI Xiaoyu!",
-        "ar": "مرحباً يا ذكاء اصطناعي شياويو!"
+        "en": "Hi, Li Wen! AI Xiaoyu is coming to our school today.",
+        "ar": "مرحباً يا لي ون! ستأتي شياويو الذكية إلى مدرستنا اليوم."
       },
       "audio": null
     },
     {
-      "id": "1-1-2",
-      "role": "小语 (Xiaoyu)",
-      "hanzi": "王老师，你好！",
-      "pinyin": "Wáng lǎoshī, nǐ hǎo!",
+      "id": "1-greeting-2",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "真的？她也来上课吗？",
+      "pinyin": "Zhēn de? Tā yě lái shàngkè ma?",
       "translation": {
-        "en": "Hello, Ms. Wang!",
-        "ar": "مرحباً يا أستاذة وانغ!"
+        "en": "Really? Is she coming to class too?",
+        "ar": "حقاً؟ هل ستأتي إلى الدرس أيضاً؟"
       },
       "audio": null
     },
     {
-      "id": "1-2-1",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "大家好！",
-      "pinyin": "Dàjiā hǎo!",
+      "id": "1-greeting-3",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "是的，王老师请她和新同学见面。",
+      "pinyin": "Shì de, Wáng lǎoshī qǐng tā hé xīn tóngxué jiànmiàn.",
       "translation": {
-        "en": "Hello, everyone!",
-        "ar": "مرحباً بالجميع!"
+        "en": "Yes, Teacher Wang invited her to meet the new classmates.",
+        "ar": "نعم، دعت المعلمة وانغ شياويو للقاء زملاء الدراسة الجدد."
       },
       "audio": null
     },
     {
-      "id": "1-2-2",
-      "role": "学生们 (Students)",
-      "hanzi": "老师，您好！",
-      "pinyin": "Lǎoshī, nín hǎo!",
+      "id": "1-greeting-4",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "太好了，大家都想认识她。",
+      "pinyin": "Tài hǎo le, dàjiā dōu xiǎng rènshi tā.",
       "translation": {
-        "en": "Hello, teacher!",
-        "ar": "أهلاً وسهلاً بكِ يا معلمتنا!"
+        "en": "Great! Everyone wants to meet her.",
+        "ar": "رائع! يريد الجميع التعرف إليها."
       },
       "audio": null
     },
     {
-      "id": "1-2-3",
-      "role": "小语 (Xiaoyu)",
-      "hanzi": "你们好！",
-      "pinyin": "Nǐmen hǎo!",
+      "id": "1-greeting-5",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "同学们已经在教室里等着了，我们一起进去吧。",
+      "pinyin": "Tóngxuémen yǐjīng zài jiàoshì lǐ děngzhe le, wǒmen yìqǐ jìnqù ba.",
       "translation": {
-        "en": "Hello, all of you!",
-        "ar": "مرحباً بكم جميعاً!"
+        "en": "The class is already waiting in the classroom. Let’s go in together.",
+        "ar": "ينتظر زملاء الدراسة في الصف بالفعل. لندخل معاً."
       },
       "audio": null
     },
     {
-      "id": "1-2-4",
-      "role": "学生们 (Students)",
-      "hanzi": "你好，小语！",
-      "pinyin": "Nǐ hǎo, Xiǎoyǔ!",
+      "id": "1-greeting-6",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "好，先跟王老师打个招呼，再和大家说你好。",
+      "pinyin": "Hǎo, xiān gēn Wáng lǎoshī dǎ ge zhāohu, zài hé dàjiā shuō nǐ hǎo.",
       "translation": {
-        "en": "Hello, Xiaoyu!",
-        "ar": "مرحباً يا شياويو!"
-      },
-      "audio": null
-    },
-    {
-      "id": "1-3-1",
-      "role": "学生们 (Students)",
-      "hanzi": "谢谢！",
-      "pinyin": "Xièxie!",
-      "translation": {
-        "en": "Thank you!",
-        "ar": "شكراً لكِ!"
-      },
-      "audio": null
-    },
-    {
-      "id": "1-3-2",
-      "role": "小语 (Xiaoyu)",
-      "hanzi": "不客气！",
-      "pinyin": "Bú kèqi!",
-      "translation": {
-        "en": "You're welcome!",
-        "ar": "على الرحب والسعة!"
-      },
-      "audio": null
-    },
-    {
-      "id": "1-3-3",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "同学们，再见！",
-      "pinyin": "Tóngxuémen, zàijiàn!",
-      "translation": {
-        "en": "Goodbye, class!",
-        "ar": "إلى اللقاء يا طلابي!"
-      },
-      "audio": null
-    },
-    {
-      "id": "1-3-4",
-      "role": "学生们 (Students)",
-      "hanzi": "老师，再见！",
-      "pinyin": "Lǎoshī, zàijiàn!",
-      "translation": {
-        "en": "Goodbye, teacher!",
-        "ar": "إلى اللقاء يا معلمتنا!"
+        "en": "Sure. Let’s greet Teacher Wang first, then say hello to everyone.",
+        "ar": "حسناً، لنحيِّ المعلمة وانغ أولاً، ثم نلقي التحية على الجميع."
       },
       "audio": null
     }
@@ -171,5 +127,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 1."
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 1.",
+  "targetVocabularyIds": ["ni-hao", "dajia", "laoshi", "tongxue", "wang-laoshi"]
 }

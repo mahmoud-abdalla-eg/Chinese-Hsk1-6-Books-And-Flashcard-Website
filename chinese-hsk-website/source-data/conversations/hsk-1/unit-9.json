@@ -10,144 +10,56 @@
     "ar": "الدرس 9: أين يعمل ابنك"
   },
   "targetVocabularyIds": [
-    "zai-2",
-    "nar-2",
+    "baba",
     "gongzuo",
-    "erzi",
-    "yi-yuan",
+    "nar-2",
+    "shihou",
+    "wanshang",
     "yi-sheng",
-    "baba"
+    "yi-yuan"
   ],
   "dialogue": [
     {
       "id": "9-1-1",
-      "role": "Speaker A",
-      "hanzi": "小猫在哪儿？",
-      "pinyin": "Xiǎomāo zài nǎr?",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "你爸爸在哪儿工作？他每天都很忙吗？",
+      "pinyin": "Nǐ bàba zài nǎr gōngzuò? Tā měitiān dōu hěn máng ma?",
       "translation": {
-        "en": "Where is the kitten?",
-        "ar": "أين القطة الصغيرة؟"
+        "en": "Where does your father work? Is he busy every day?",
+        "ar": "أين يعمل والدك؟ هل يكون مشغولاً كل يوم؟"
       },
       "audio": null
     },
     {
       "id": "9-1-2",
-      "role": "Speaker B",
-      "hanzi": "小猫在那儿。",
-      "pinyin": "Xiǎomāo zài nàr.",
+      "role": "安娜 (Ānnà)",
+      "hanzi": "他在医院工作，是一名医生。",
+      "pinyin": "Tā zài yīyuàn gōngzuò, shì yì míng yīshēng.",
       "translation": {
-        "en": "The kitten is over there.",
-        "ar": "القطة الصغيرة هناك."
+        "en": "He works at a hospital as a doctor.",
+        "ar": "يعمل في مستشفى طبيباً."
       },
       "audio": null
     },
     {
       "id": "9-1-3",
-      "role": "Speaker A",
-      "hanzi": "小狗在哪儿？",
-      "pinyin": "Xiǎogǒu zài nǎr?",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "那他每天几点回家？",
+      "pinyin": "Nà tā měitiān jǐ diǎn huí jiā?",
       "translation": {
-        "en": "Where is the puppy?",
-        "ar": "أين الكلب الصغير؟"
+        "en": "What time does he get home each day?",
+        "ar": "في أي ساعة يعود إلى المنزل كل يوم؟"
       },
       "audio": null
     },
     {
       "id": "9-1-4",
-      "role": "Speaker B",
-      "hanzi": "小狗在椅子下面。",
-      "pinyin": "Xiǎogǒu zài yǐzi xiàmiàn.",
+      "role": "安娜 (Ānnà)",
+      "hanzi": "晚上七点左右，有时候还要在医院吃饭。",
+      "pinyin": "Wǎnshang qī diǎn zuǒyòu, yǒushíhou hái yào zài yīyuàn chīfàn.",
       "translation": {
-        "en": "The puppy is under the chair.",
-        "ar": "الكلب الصغير تحت الكرسي."
-      },
-      "audio": null
-    },
-    {
-      "id": "9-2-1",
-      "role": "Speaker A",
-      "hanzi": "你在哪儿工作？",
-      "pinyin": "Nǐ zài nǎr gōngzuò?",
-      "translation": {
-        "en": "Where do you work?",
-        "ar": "أين تعمل؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "9-2-2",
-      "role": "Speaker B",
-      "hanzi": "我在学校工作。",
-      "pinyin": "Wǒ zài xuéxiào gōngzuò.",
-      "translation": {
-        "en": "I work at a school.",
-        "ar": "أعمل في المدرسة."
-      },
-      "audio": null
-    },
-    {
-      "id": "9-2-3",
-      "role": "Speaker A",
-      "hanzi": "你儿子在哪儿工作？",
-      "pinyin": "Nǐ érzi zài nǎr gōngzuò?",
-      "translation": {
-        "en": "Where does your son work?",
-        "ar": "وأين يعمل ابنك؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "9-2-4",
-      "role": "Speaker B",
-      "hanzi": "我儿子在医院工作，他是医生。",
-      "pinyin": "Wǒ érzi zài yīyuàn gōngzuò, tā shì yīshēng.",
-      "translation": {
-        "en": "My son works at a hospital; he is a doctor.",
-        "ar": "ابني يعمل في المستشفى، هو طبيب."
-      },
-      "audio": null
-    },
-    {
-      "id": "9-3-1",
-      "role": "Speaker A",
-      "hanzi": "你爸爸在家里吗？",
-      "pinyin": "Nǐ bàba zài jiā lǐ ma?",
-      "translation": {
-        "en": "Is your father at home?",
-        "ar": "هل والدك في المنزل؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "9-3-2",
-      "role": "Speaker B",
-      "hanzi": "不在家里。",
-      "pinyin": "Bú zài jiā lǐ.",
-      "translation": {
-        "en": "No, he is not at home.",
-        "ar": "ليس في المنزل."
-      },
-      "audio": null
-    },
-    {
-      "id": "9-3-3",
-      "role": "Speaker A",
-      "hanzi": "他在哪儿呢？",
-      "pinyin": "Tā zài nǎr ne?",
-      "translation": {
-        "en": "Where is he?",
-        "ar": "أين هو إذاً؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "9-3-4",
-      "role": "Speaker B",
-      "hanzi": "他在医院。",
-      "pinyin": "Tā zài yīyuàn.",
-      "translation": {
-        "en": "He is at the hospital.",
-        "ar": "إنه في المستشفى."
+        "en": "Around seven in the evening; sometimes he eats at the hospital.",
+        "ar": "حوالي السابعة مساءً، وأحياناً يتناول العشاء في المستشفى."
       },
       "audio": null
     }
@@ -189,5 +101,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official HSK 1 Standard Course Lesson 9 dialogues."
+  "authoringNote": "Official HSK 1 Standard Course Lesson 9 dialogues.",
+  "curriculum": "standard"
 }

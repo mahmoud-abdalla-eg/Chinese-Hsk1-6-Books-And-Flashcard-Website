@@ -19,6 +19,7 @@ export function usePersistentProgress() {
     let cancelled = false;
 
     async function loadProgress() {
+      setSyncStatus("loading");
       if (authLoading) return;
 
       if (!user) {
@@ -38,6 +39,7 @@ export function usePersistentProgress() {
       if (cancelled) return;
       setStorageKey(key);
       setProgress(local);
+      setSyncStatus("local");
 
       try {
         const response = await fetch("/api/progress", {

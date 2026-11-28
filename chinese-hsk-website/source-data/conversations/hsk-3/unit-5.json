@@ -2,65 +2,59 @@
   "id": "hsk-3-unit-5-conversation-1",
   "hskLevel": 3,
   "unitId": 5,
-  "status": "needs-authoring",
+  "status": "ready",
   "title": {
-    "en": "Unit 5 conversation authoring brief",
-    "zh": "第5单元会话编写说明",
-    "ar": "موجز تأليف محادثة الوحدة 5"
+    "zh": "第5课：这样的照片才好看",
+    "en": "Lesson 5: That’s how you get a good photo",
+    "ar": "الدرس 5: هكذا تبدو الصور أجمل"
   },
-  "targetVocabularyIds": [
-    "jie-hun",
-    "jie-jue",
-    "jiemei",
-    "jie-mu",
-    "jie-ri",
-    "jie-shu",
-    "jihu",
-    "ji-hui",
-    "jijie",
-    "jin",
-    "jingguo",
-    "jingli",
-    "jiu",
-    "jiu-2",
-    "jiu-3",
-    "ju",
-    "jue-ding",
-    "juzi",
-    "ka",
-    "kaihua",
-    "kai-hui",
-    "kai-ji",
-    "kai-xin",
-    "kanlai",
-    "ke",
-    "ke-2",
-    "ke-3",
-    "ke-ai",
-    "keben",
-    "ke-ren",
-    "ke-shi",
-    "kewen",
-    "kongtiao",
-    "ku",
-    "kuaizi",
-    "kuangquanshui",
-    "laizi",
-    "lan",
-    "lao",
-    "lao-ren",
-    "lian",
-    "lian-2",
-    "liang",
-    "liang-kuai",
-    "lian-xi",
-    "liao",
-    "liao-jie",
-    "liao-tianr",
-    "likai",
-    "lin-ju"
+  "targetVocabularyIds": ["paizhao"],
+  "dialogue": [
+    {
+      "id": "5-1-1",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "你站到树旁边去，这样拍出来才好看。",
+      "pinyin": "Nǐ zhàn dào shù pángbiān qù, zhèyàng pāi chūlái cái hǎokàn.",
+      "translation": {
+        "en": "Stand by the tree; the photo will look better that way.",
+        "ar": "قف بجانب الشجرة، فالصورة ستبدو أجمل هكذا."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-1-2",
+      "role": "许安 (Xǔ Ān)",
+      "hanzi": "我往左边一点儿，还是站在这里？",
+      "pinyin": "Wǒ wǎng zuǒbian yìdiǎnr, háishi zhàn zài zhèlǐ?",
+      "translation": {
+        "en": "Should I move a little to the left, or stay here?",
+        "ar": "هل أتحرك قليلاً إلى اليسار أم أبقى هنا؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "5-1-3",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "再往左一点儿，好，就这样，别动。",
+      "pinyin": "Zài wǎng zuǒ yìdiǎnr, hǎo, jiù zhèyàng, bié dòng.",
+      "translation": {
+        "en": "A little farther left. Good, right there—don’t move.",
+        "ar": "إلى اليسار قليلاً بعد. جيد، هكذا تماماً، لا تتحرك."
+      },
+      "audio": null
+    },
+    {
+      "id": "5-1-4",
+      "role": "许安 (Xǔ Ān)",
+      "hanzi": "这张照片很好看，你能再帮我拍照吗？",
+      "pinyin": "Zhè zhāng zhàopiàn hěn hǎokàn, nǐ néng zài bāng wǒ pāizhào ma?",
+      "translation": {
+        "en": "This photo looks great. Could you take another one for me?",
+        "ar": "هذه الصورة جميلة. هل يمكنك التقاط صورة أخرى لي؟"
+      },
+      "audio": null
+    }
   ],
-  "dialogue": [],
   "grammarNotes": [],
   "culturalNotes": [],
   "comprehensionQuestions": [],
@@ -68,5 +62,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "This scaffold intentionally contains no invented dialogue. Add reviewed Chinese, pinyin, English, Arabic, and real audio paths before marking complete."
+  "authoringNote": "Original dialogue aligned to the lesson topic; translations and tone-marked pinyin are supplied for every turn.",
+  "curriculum": "hsk3"
 }

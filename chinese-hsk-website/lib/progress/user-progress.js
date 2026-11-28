@@ -7,7 +7,7 @@ export async function getUserProgress(userId) {
 
   const { data } = await supabase
     .from("user_progress")
-    .select("progress")
+    .select("progress, updated_at")
     .eq("user_id", userId)
     .maybeSingle();
 
@@ -15,6 +15,7 @@ export async function getUserProgress(userId) {
   return {
     userId,
     progress: data.progress,
+    updatedAt: data.updated_at || null,
   };
 }
 

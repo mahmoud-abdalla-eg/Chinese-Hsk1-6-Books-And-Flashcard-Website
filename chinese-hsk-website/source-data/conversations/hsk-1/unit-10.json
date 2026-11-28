@@ -9,144 +9,49 @@
     "en": "Lesson 10: Can I Sit Here",
     "ar": "الدرس 10: هل يمكنني الجلوس هنا"
   },
-  "targetVocabularyIds": [
-    "zhuozi",
-    "diannao",
-    "ben",
-    "zher",
-    "zuo",
-    "neng"
-  ],
+  "targetVocabularyIds": ["ke-yi", "meiyou", "xiexie", "zhe-li"],
   "dialogue": [
     {
       "id": "10-1-1",
-      "role": "Speaker A",
-      "hanzi": "桌子上有什么？",
-      "pinyin": "Zhuōzi shang yǒu shénme?",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "不好意思，这里有人坐吗？",
+      "pinyin": "Bù hǎoyìsi, zhèlǐ yǒu rén zuò ma?",
       "translation": {
-        "en": "What is on the table?",
-        "ar": "ماذا يوجد على الطاولة؟"
+        "en": "Excuse me, is anyone sitting here?",
+        "ar": "عذراً، هل هذا المقعد مشغول؟"
       },
       "audio": null
     },
     {
       "id": "10-1-2",
-      "role": "Speaker B",
-      "hanzi": "桌子上有一个电脑和一本书。",
-      "pinyin": "Zhuōzi shang yǒu yí ge diànnǎo hé yì běn shū.",
+      "role": "安娜 (Ānnà)",
+      "hanzi": "没有人，你可以坐。",
+      "pinyin": "Méiyǒu rén, nǐ kěyǐ zuò.",
       "translation": {
-        "en": "There is a computer and a book on the table.",
-        "ar": "يوجد على الطاولة جهاز حاسوب وكتاب."
+        "en": "No, you can sit here.",
+        "ar": "لا، يمكنك الجلوس هنا."
       },
       "audio": null
     },
     {
       "id": "10-1-3",
-      "role": "Speaker A",
-      "hanzi": "杯子在哪儿？",
-      "pinyin": "Bēizi zài nǎr?",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "谢谢。你也去图书馆吗？",
+      "pinyin": "Xièxie. Nǐ yě qù túshūguǎn ma?",
       "translation": {
-        "en": "Where is the cup?",
-        "ar": "أين الكوب؟"
+        "en": "Thanks. Are you going to the library too?",
+        "ar": "شكراً. هل تذهب إلى المكتبة أيضاً؟"
       },
       "audio": null
     },
     {
       "id": "10-1-4",
-      "role": "Speaker B",
-      "hanzi": "杯子在桌子里。",
-      "pinyin": "Bēizi zài zhuōzi lǐ.",
+      "role": "安娜 (Ānnà)",
+      "hanzi": "是的，我坐两站以后下车。",
+      "pinyin": "Shì de, wǒ zuò liǎng zhàn yǐhòu xià chē.",
       "translation": {
-        "en": "The cup is inside the desk.",
-        "ar": "الكوب في درج الطاولة."
-      },
-      "audio": null
-    },
-    {
-      "id": "10-2-1",
-      "role": "Speaker A",
-      "hanzi": "前面那个人叫什么名字？",
-      "pinyin": "Qiánmiàn nàge rén jiào shénme míngzi?",
-      "translation": {
-        "en": "What is the name of that person in front?",
-        "ar": "ما اسم ذلك الشخص الذي في الأمام؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "10-2-2",
-      "role": "Speaker B",
-      "hanzi": "他叫王方，在医院工作。",
-      "pinyin": "Tā jiào Wáng Fāng, zài yīyuàn gōngzuò.",
-      "translation": {
-        "en": "His name is Wang Fang; he works in a hospital.",
-        "ar": "اسمه وانغ فانغ، يعمل في المستشفى."
-      },
-      "audio": null
-    },
-    {
-      "id": "10-2-3",
-      "role": "Speaker A",
-      "hanzi": "后面那个人呢？他叫什么名字？",
-      "pinyin": "Hòumiàn nàge rén ne? Tā jiào shénme míngzi?",
-      "translation": {
-        "en": "What about the person behind? What's his name?",
-        "ar": "وماذا عن الشخص الذي في الخلف؟ ما اسمه؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "10-2-4",
-      "role": "Speaker B",
-      "hanzi": "他叫谢朋，在商店工作。",
-      "pinyin": "Tā jiào Xiè Péng, zài shāngdiàn gōngzuò.",
-      "translation": {
-        "en": "His name is Xie Peng; he works in a store.",
-        "ar": "اسمه شيه بينغ، يعمل في المتجر."
-      },
-      "audio": null
-    },
-    {
-      "id": "10-3-1",
-      "role": "Speaker A",
-      "hanzi": "这儿有人吗？",
-      "pinyin": "Zhèr yǒu rén ma?",
-      "translation": {
-        "en": "Is this seat taken?",
-        "ar": "هل هذا المقعد مشغول؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "10-3-2",
-      "role": "Speaker B",
-      "hanzi": "没有。",
-      "pinyin": "Méiyǒu.",
-      "translation": {
-        "en": "No, it isn't.",
-        "ar": "لا، المقعد شاغر."
-      },
-      "audio": null
-    },
-    {
-      "id": "10-3-3",
-      "role": "Speaker A",
-      "hanzi": "我能坐这儿吗？",
-      "pinyin": "Wǒ néng zuò zhèr ma?",
-      "translation": {
-        "en": "May I sit here?",
-        "ar": "هل يمكنني الجلوس هنا؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "10-3-4",
-      "role": "Speaker B",
-      "hanzi": "请坐。",
-      "pinyin": "Qǐng zuò.",
-      "translation": {
-        "en": "Please sit down.",
-        "ar": "تفضل بالجلوس."
+        "en": "Yes. I’m getting off in two stops.",
+        "ar": "نعم، سأنزل بعد محطتين."
       },
       "audio": null
     }
@@ -188,5 +93,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official HSK 1 Standard Course Lesson 10 dialogues."
+  "authoringNote": "Official HSK 1 Standard Course Lesson 10 dialogues.",
+  "curriculum": "standard"
 }

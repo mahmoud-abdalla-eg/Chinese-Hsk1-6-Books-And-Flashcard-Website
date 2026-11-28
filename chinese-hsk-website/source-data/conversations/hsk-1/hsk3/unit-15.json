@@ -12,156 +12,68 @@
   },
   "dialogue": [
     {
-      "id": "15-1-1",
-      "role": "李文 (Li Wen)",
-      "hanzi": "你们爱吃哪个菜？",
-      "pinyin": "Nǐmen ài chī nǎge cài?",
+      "id": "15-airport-1",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "你们去年去西安玩得怎么样？",
+      "pinyin": "Nǐmen qùnián qù Xī’ān wán de zěnmeyàng?",
       "translation": {
-        "en": "Which dish do you love eating?",
-        "ar": "أي طبق تفضلون وتستمتعون بأكله؟"
+        "en": "How was your trip to Xi’an last year?",
+        "ar": "كيف كانت رحلتكم إلى شيآن العام الماضي؟"
       },
       "audio": null
     },
     {
-      "id": "15-1-2",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "我喜欢这个，也喜欢那个。",
-      "pinyin": "Wǒ xǐhuan zhège, yě xǐhuan nàge.",
+      "id": "15-airport-2",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "很好玩儿。今年我们想去北京。",
+      "pinyin": "Hěn hǎowánr. Jīnnián wǒmen xiǎng qù Běijīng.",
       "translation": {
-        "en": "I like this one, and I like that one too.",
-        "ar": "يعجبني هذا الطبق، وذلك الطبق أيضاً."
+        "en": "It was a lot of fun. This year we want to go to Beijing.",
+        "ar": "كانت ممتعة جداً. نريد الذهاب إلى بكين هذا العام."
       },
       "audio": null
     },
     {
-      "id": "15-1-3",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "这些菜都好吃，还很好看。",
-      "pinyin": "Zhèxiē cài dōu hǎochī, hái hěn hǎokàn.",
+      "id": "15-airport-3",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "你们坐飞机要几个小时？",
+      "pinyin": "Nǐmen zuò fēijī yào jǐ ge xiǎoshí?",
       "translation": {
-        "en": "These dishes are all delicious, and they look great too.",
-        "ar": "كل هذه الأطباق لذيذة، ومظهرها جميل جداً أيضاً."
+        "en": "How many hours will your flight take?",
+        "ar": "كم ساعة تستغرق رحلتكم بالطائرة؟"
       },
       "audio": null
     },
     {
-      "id": "15-1-4",
-      "role": "李文 (Li Wen)",
-      "hanzi": "我爱吃中国菜，也喜欢做。大家多吃点儿。",
-      "pinyin": "Wǒ ài chī Zhōngguó cài, yě xǐhuan zuò. Dàjiā duō chī diǎnr.",
+      "id": "15-airport-4",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "大概三个小时，家人会在机场接我们。",
+      "pinyin": "Dàgài sān ge xiǎoshí, jiārén huì zài jīchǎng jiē wǒmen.",
       "translation": {
-        "en": "I love eating Chinese food, and I enjoy cooking it too. Everyone, please eat more!",
-        "ar": "أنا أحب الطعام الصيني وأحب طبخه أيضاً. كلوا المزيد يا رفاق، بالهناء والشفاء."
+        "en": "About three hours. My family will meet us at the airport.",
+        "ar": "نحو ثلاث ساعات. ستستقبلنا عائلتي في المطار."
       },
       "audio": null
     },
     {
-      "id": "15-2-1",
-      "role": "李文 (Li Wen)",
-      "hanzi": "你们都想去哪儿？",
-      "pinyin": "Nǐmen dōu xiǎng qù nǎr?",
+      "id": "15-airport-5",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "你姐姐有时间去大兴机场吗？",
+      "pinyin": "Nǐ jiějie yǒu shíjiān qù Dàxīng Jīchǎng ma?",
       "translation": {
-        "en": "Where do you all want to visit?",
-        "ar": "إلى أين ترغبون جميعاً في السفر والزيارة؟"
+        "en": "Will your older sister have time to go to Daxing Airport?",
+        "ar": "هل سيكون لدى أختك الكبرى وقت للذهاب إلى مطار داشينغ؟"
       },
       "audio": null
     },
     {
-      "id": "15-2-2",
-      "role": "安妮 (Annie)",
-      "hanzi": "去年我和男朋友去了西安，今年我想去北京。",
-      "pinyin": "Qùnián wǒ hé nánpéngyou qùle Xī'ān, jīnnián wǒ xiǎng qù Běijīng.",
+      "id": "15-airport-6",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "有，她星期天来接你们。我们到北京后在大兴机场见！",
+      "pinyin": "Yǒu, tā xīngqītiān lái jiē nǐmen. Wǒmen dào Běijīng hòu zài Dàxīng Jīchǎng jiàn!",
       "translation": {
-        "en": "Last year my boyfriend and I went to Xi'an; this year I want to visit Beijing.",
-        "ar": "في العام الماضي ذهبت أنا وصديقي إلى شيآن، وهذا العام أريد زيارة بكين."
-      },
-      "audio": null
-    },
-    {
-      "id": "15-2-3",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "前几年我去了西安，非常非常好玩儿。今年我也想去北京。",
-      "pinyin": "Qián jǐ nián wǒ qùle Xī'ān, fēicháng hǎowánr. Jīnnián wǒ yě xiǎng qù Běijīng.",
-      "translation": {
-        "en": "A few years ago I went to Xi'an, and it was so much fun. This year I want to visit Beijing too.",
-        "ar": "قبل عدة سنوات ذهبت إلى شيآن وكانت ممتعة للغاية. وهذا العام أود الذهاب إلى بكين أيضاً."
-      },
-      "audio": null
-    },
-    {
-      "id": "15-2-4",
-      "role": "李文 (Li Wen)",
-      "hanzi": "我和王老师都是北京人，北京非常漂亮。",
-      "pinyin": "Wǒ hé Wáng lǎoshī dōu shì Běijīng rén, Běijīng fēicháng piàoliang.",
-      "translation": {
-        "en": "Ms. Wang and I are both from Beijing. Beijing is very beautiful.",
-        "ar": "أنا والأستاذة وانغ من أهل بكين، وبكين مدينة فائقة الجمال."
-      },
-      "audio": null
-    },
-    {
-      "id": "15-3-1",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "你们的飞机到北京要几个小时？",
-      "pinyin": "Nǐmen de fēijī dào Běijīng yào jǐ gè xiǎoshí?",
-      "translation": {
-        "en": "How many hours will your flight take to reach Beijing?",
-        "ar": "كم ساعة تستغرق رحلتكم الجوية للوصول إلى بكين؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "15-3-2",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "九个小时。",
-      "pinyin": "Jiǔ gè xiǎoshí.",
-      "translation": {
-        "en": "Nine hours.",
-        "ar": "تسع ساعات."
-      },
-      "audio": null
-    },
-    {
-      "id": "15-3-3",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "我家人都在北京，星期天我姐姐也有时间，她可以去机场接你们，你们也可以住我家。",
-      "pinyin": "Wǒ jiārén dōu zài Běijīng, xīngqītiān wǒ jiějie yě yǒu shíjiān, tā kěyǐ qù jīchǎng jiē nǐmen, nǐmen yě kěyǐ zhù wǒ jiā.",
-      "translation": {
-        "en": "My whole family is in Beijing, and my older sister has free time on Sunday. She can pick you up at the airport, and you can stay at my home.",
-        "ar": "كل أفراد عائلتي في بكين، ولدى أختي الكبرى وقت فراغ يوم الأحد، يمكنها استقبالكم في المطار، كما يمكنكم الإقامة في بيتي."
-      },
-      "audio": null
-    },
-    {
-      "id": "15-3-4",
-      "role": "安妮 (Annie)",
-      "hanzi": "我们星期日早上八点到大兴机场，早不早？",
-      "pinyin": "Wǒmen xīngqīrì zǎoshang bā diǎn dào Dàxīng Jīchǎng, zǎo bu zǎo?",
-      "translation": {
-        "en": "We'll arrive at Daxing Airport at 8:00 on Sunday morning; is that too early?",
-        "ar": "سنصل إلى مطار داشينغ صباح الأحد عند الساعة الثامنة، أليس ذلك مبكراً جداً؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "15-3-5",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "不早。",
-      "pinyin": "Bù zǎo.",
-      "translation": {
-        "en": "Not too early.",
-        "ar": "ليس مبكراً أبداً."
-      },
-      "audio": null
-    },
-    {
-      "id": "15-3-6",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "谢谢老师！那我们和您姐姐在大兴机场见！",
-      "pinyin": "Xièxie lǎoshī! Nà wǒmen hé nín jiějie zài Dàxīng Jīchǎng jiàn!",
-      "translation": {
-        "en": "Thank you, Teacher! We'll meet your sister at Daxing Airport then!",
-        "ar": "شكراً جزيلاً يا معلمتنا! إذاً سنلتقي مع أختكِ في مطار داشينغ!"
+        "en": "Yes, she’ll pick you up on Sunday. Let’s meet at Daxing Airport when you arrive in Beijing!",
+        "ar": "نعم، ستأتي لاستقبالكم يوم الأحد. لنلتقِ في مطار داشينغ بعد وصولكم إلى بكين!"
       },
       "audio": null
     }
@@ -220,5 +132,17 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 15."
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 15.",
+  "targetVocabularyIds": [
+    "fei-ji",
+    "haowanr",
+    "jichang",
+    "jia-ren",
+    "shijian",
+    "xiaoshi",
+    "beijing",
+    "daxing-jichang",
+    "xi-an",
+    "qu-nian"
+  ]
 }

@@ -12,156 +12,68 @@
   },
   "dialogue": [
     {
-      "id": "9-1-1",
-      "role": "李文 (Li Wen)",
-      "hanzi": "学校前边有一家电影院。",
-      "pinyin": "Xuéxiào qiánbian yǒu yì jiā diànyǐngyuàn.",
+      "id": "9-schoolday-1",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "你明天上午在哪儿？",
+      "pinyin": "Nǐ míngtiān shàngwǔ zài nǎr?",
       "translation": {
-        "en": "There is a cinema in front of the school.",
-        "ar": "توجد دار سينما أمام المدرسة."
+        "en": "Where will you be tomorrow morning?",
+        "ar": "أين ستكون صباح الغد؟"
       },
       "audio": null
     },
     {
-      "id": "9-1-2",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "对。我们晚上去那个电影院看电影吧。",
-      "pinyin": "Duì. Wǒmen wǎnshang qù nàge diànyǐngyuàn kàn diànyǐng ba.",
+      "id": "9-schoolday-2",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "我在学校学习，下午回家。",
+      "pinyin": "Wǒ zài xuéxiào xuéxí, xiàwǔ huí jiā.",
       "translation": {
-        "en": "Yes. Let's go to that cinema to watch a movie tonight.",
-        "ar": "صحيح. دعينا نذهب إلى تلك السينما الليلة لمشاهدة فيلم."
+        "en": "I’ll study at school and go home in the afternoon.",
+        "ar": "سأدرس في المدرسة وأعود إلى المنزل بعد الظهر."
       },
       "audio": null
     },
     {
-      "id": "9-1-3",
-      "role": "李文 (Li Wen)",
-      "hanzi": "好！我们七点在电影院外边见，好吗？",
-      "pinyin": "Hǎo! Wǒmen qī diǎn zài diànyǐngyuàn wàibian jiàn, hǎo ma?",
+      "id": "9-schoolday-3",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "那明天晚上呢？你准备做什么？",
+      "pinyin": "Nà míngtiān wǎnshang ne? Nǐ zhǔnbèi zuò shénme?",
       "translation": {
-        "en": "Great! Let's meet outside the cinema at 7:00, okay?",
-        "ar": "رائع! لنلتقِ خارج السينما في السابعة، حسناً؟"
+        "en": "What about tomorrow evening? What are you planning to do?",
+        "ar": "وماذا عن مساء الغد؟ ماذا تخططين أن تفعلي؟"
       },
       "audio": null
     },
     {
-      "id": "9-1-4",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "好的，晚上七点见！",
-      "pinyin": "Hǎo de, wǎnshang qī diǎn jiàn!",
+      "id": "9-schoolday-4",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "我下午回家读书，晚上在学校前边等朋友，再一起去外边。",
+      "pinyin": "Wǒ xiàwǔ huí jiā dúshū, wǎnshang zài xuéxiào qiánbian děng péngyou, zài yìqǐ qù wàibian.",
       "translation": {
-        "en": "Okay, see you at 7:00 in the evening!",
-        "ar": "حسناً، أراكِ في السابعة مساءً!"
+        "en": "I’ll read at home in the afternoon, then meet a friend in front of the school and go out together.",
+        "ar": "سأقرأ في المنزل بعد الظهر، ثم ألتقي صديقة أمام المدرسة ونخرج معاً."
       },
       "audio": null
     },
     {
-      "id": "9-2-1",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "椅子上有一本中文书，那是谁的书？",
-      "pinyin": "Yǐzi shang yǒu yì běn Zhōngwén shū, nà shì shéi de shū?",
+      "id": "9-schoolday-5",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "你朋友唱歌好听吗？",
+      "pinyin": "Nǐ péngyou chànggē hǎotīng ma?",
       "translation": {
-        "en": "There is a Chinese book on the chair. Whose book is that?",
-        "ar": "يوجد كتاب لغة صينية على الكرسي، كتاب مَن هذا؟"
+        "en": "Does your friend sing well?",
+        "ar": "هل تغني صديقتك جيداً؟"
       },
       "audio": null
     },
     {
-      "id": "9-2-2",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "是我的书，谢谢。这是我的第二本中文书。",
-      "pinyin": "Shì wǒ de shū, xièxie. Zhè shì wǒ de dì-èr běn Zhōngwén shū.",
+      "id": "9-schoolday-6",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "很好听！你也一起来吧。",
+      "pinyin": "Hěn hǎotīng! Nǐ yě yìqǐ lái ba.",
       "translation": {
-        "en": "It's my book, thank you. This is my second Chinese book.",
-        "ar": "إنه كتابي، شكراً لكِ. هذا هو كتابي الصيني الثاني."
-      },
-      "audio": null
-    },
-    {
-      "id": "9-2-3",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "不客气。你明天上午在哪儿？",
-      "pinyin": "Bú kèqi. Nǐ míngtiān shàngwǔ zài nǎr?",
-      "translation": {
-        "en": "You're welcome. Where will you be tomorrow morning?",
-        "ar": "على الرحب والسعة. أين ستكون صباح الغد؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "9-2-4",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "我明天上午在学校学习。",
-      "pinyin": "Wǒ míngtiān shàngwǔ zài xuéxiào xuéxí.",
-      "translation": {
-        "en": "I'll be studying at school tomorrow morning.",
-        "ar": "سأكون أدرس في المدرسة صباح الغد."
-      },
-      "audio": null
-    },
-    {
-      "id": "9-3-1",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "明天星期六，你做什么？",
-      "pinyin": "Míngtiān Xīngqīliù, nǐ zuò shénme?",
-      "translation": {
-        "en": "Tomorrow is Saturday. What are you going to do?",
-        "ar": "غداً يوم السبت، ماذا ستفعل؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "9-3-2",
-      "role": "杨同乐 (Yang Tongle)",
-      "hanzi": "我白天在家里读书，晚上和朋友们去外边唱歌。",
-      "pinyin": "Wǒ báitiān zài jiā li dúshū, wǎnshang hé péngyoumen qù wàibian chàng gē.",
-      "translation": {
-        "en": "I will read at home during the day and go out to sing with friends in the evening.",
-        "ar": "سأقرأ في المنزل نهاراً، وفي المساء سأذهب مع أصدقائي للغناء بالخارج."
-      },
-      "audio": null
-    },
-    {
-      "id": "9-3-3",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "你唱歌很好听。",
-      "pinyin": "Nǐ chàng gē hěn hǎotīng.",
-      "translation": {
-        "en": "You sing very nicely.",
-        "ar": "غناؤك عذب وجميل جداً."
-      },
-      "audio": null
-    },
-    {
-      "id": "9-3-4",
-      "role": "杨同乐 (Yang Tongle)",
-      "hanzi": "谢谢！您星期六做什么？",
-      "pinyin": "Xièxie! Nín Xīngqīliù zuò shénme?",
-      "translation": {
-        "en": "Thank you! What will you do on Saturday?",
-        "ar": "شكراً لكِ! وماذا ستفعلين حضرتكِ يوم السبت؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "9-3-5",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "我在家里做饭、看电视，和孩子们、小狗玩。",
-      "pinyin": "Wǒ zài jiā li zuò fàn, kàn diànshì, hé háizimen, xiǎogǒu wán.",
-      "translation": {
-        "en": "I'll cook at home, watch TV, and play with my children and little dog.",
-        "ar": "سأطبخ في المنزل وأشاهد التلفاز وألعب مع أطفالي وكلبي الصغير."
-      },
-      "audio": null
-    },
-    {
-      "id": "9-3-6",
-      "role": "杨同乐 (Yang Tongle)",
-      "hanzi": "我也有一只小狗。",
-      "pinyin": "Wǒ yě yǒu yì zhī xiǎogǒu.",
-      "translation": {
-        "en": "I have a little dog too.",
-        "ar": "أنا لدي كلب صغير أيضاً."
+        "en": "Very well! You should come along too.",
+        "ar": "تغني جيداً جداً! تعال معنا أنت أيضاً."
       },
       "audio": null
     }
@@ -220,5 +132,13 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 9."
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 9.",
+  "targetVocabularyIds": [
+    "dushu",
+    "haoting",
+    "pengyou",
+    "qianbian",
+    "waibian",
+    "xuexi"
+  ]
 }

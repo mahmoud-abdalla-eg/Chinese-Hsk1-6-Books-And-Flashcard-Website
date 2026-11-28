@@ -12,15 +12,15 @@ export default function ConversationLevelHero({
   const copyByLang = {
     ar: {
       title: `محادثات HSK ${level}`,
-      body: `تدرّب على ${conversationCount} درساً في المحادثة مع المفردات المستهدفة والحوارات ودعم الاستماع.`,
+      body: `اختر من بين ${conversationCount} درساً، واقرأ المحادثات مع خيارات إظهار النطق الصوتي والترجمة ودعم الاستماع.`,
     },
     en: {
       title: `HSK ${level} conversations`,
-      body: `Practice ${conversationCount} unit lessons with target vocabulary, simple dialogue, and listening support as content becomes available.`,
+      body: `Choose from ${conversationCount} lessons and read each conversation with optional pinyin, translation, and listening support.`,
     },
     zh: {
       title: `HSK ${level} 对话课程`,
-      body: `通过目标词汇、简短对话和听力支持练习 ${conversationCount} 课单元。`,
+      body: `从 ${conversationCount} 课中选择课程，可切换拼音、翻译并收听对话。`,
     },
   };
   const copy = copyByLang[lang] || copyByLang.en;

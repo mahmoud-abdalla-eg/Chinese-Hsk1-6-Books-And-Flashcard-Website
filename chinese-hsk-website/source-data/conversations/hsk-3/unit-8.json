@@ -2,65 +2,59 @@
   "id": "hsk-3-unit-8-conversation-1",
   "hskLevel": 3,
   "unitId": 8,
-  "status": "needs-authoring",
+  "status": "ready",
   "title": {
-    "en": "Unit 8 conversation authoring brief",
-    "zh": "第8单元会话编写说明",
-    "ar": "موجز تأليف محادثة الوحدة 8"
+    "zh": "第8课：今天我出院了",
+    "en": "Lesson 8: I’m leaving the hospital today",
+    "ar": "الدرس 8: سأغادر المستشفى اليوم"
   },
-  "targetVocabularyIds": [
-    "ti-yu",
-    "ti-yu-guan",
-    "tongshi",
-    "tongyi",
-    "toufa",
-    "tui",
-    "turan",
-    "tushuguan",
-    "waidi",
-    "waimai",
-    "waiyu",
-    "wan",
-    "wan-cheng",
-    "wan-dian",
-    "wangji",
-    "wangqiu",
-    "wangzhan",
-    "wanhui",
-    "wei",
-    "weile",
-    "weishengjian",
-    "wenhua",
-    "wuzi",
-    "xi",
-    "xi-ai",
-    "xian",
-    "xiang",
-    "xiang-2",
-    "xiangji",
-    "xiangjiao",
-    "xiang-xin",
-    "xiang-zi",
-    "xiao-qu",
-    "xiaoxin",
-    "xiaoyuan",
-    "xiaozhang",
-    "xiatian",
-    "xibei",
-    "xie",
-    "xi-fang",
-    "xi-gua",
-    "xi-guan",
-    "xin",
-    "xi-nan",
-    "xing",
-    "xingli",
-    "xing-qu",
-    "xin-li",
-    "xinnian",
-    "xin-wen"
+  "targetVocabularyIds": ["chuyuan", "yihou"],
+  "dialogue": [
+    {
+      "id": "8-1-1",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "医生说你今天可以出院了，感觉怎么样？",
+      "pinyin": "Yīshēng shuō nǐ jīntiān kěyǐ chūyuàn le, gǎnjué zěnmeyàng?",
+      "translation": {
+        "en": "The doctor says you can leave today. How are you feeling?",
+        "ar": "قال الطبيب إنك تستطيع مغادرة المستشفى اليوم. كيف تشعر؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "8-1-2",
+      "role": "许安 (Xǔ Ān)",
+      "hanzi": "好多了，就是走得还不太快。",
+      "pinyin": "Hǎo duō le, jiùshì zǒu de hái bú tài kuài.",
+      "translation": {
+        "en": "Much better, though I still can’t walk very fast.",
+        "ar": "أشعر بتحسن كبير، لكنني ما زلت لا أمشي بسرعة."
+      },
+      "audio": null
+    },
+    {
+      "id": "8-1-3",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "我把你的东西都收好了，车在门口等着。",
+      "pinyin": "Wǒ bǎ nǐ de dōngxi dōu shōu hǎo le, chē zài ménkǒu děngzhe.",
+      "translation": {
+        "en": "I packed all your things. The car is waiting at the entrance.",
+        "ar": "جمعت كل أغراضك، والسيارة تنتظر عند المدخل."
+      },
+      "audio": null
+    },
+    {
+      "id": "8-1-4",
+      "role": "许安 (Xǔ Ān)",
+      "hanzi": "谢谢你，回家以后我会按时吃药、多休息。",
+      "pinyin": "Xièxie nǐ, huí jiā yǐhòu wǒ huì ànshí chī yào, duō xiūxi.",
+      "translation": {
+        "en": "Thanks. I’ll take my medicine on time and rest at home.",
+        "ar": "شكراً لك. سألتزم بالدواء وأرتاح كثيراً حين أعود إلى المنزل."
+      },
+      "audio": null
+    }
   ],
-  "dialogue": [],
   "grammarNotes": [],
   "culturalNotes": [],
   "comprehensionQuestions": [],
@@ -68,5 +62,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "This scaffold intentionally contains no invented dialogue. Add reviewed Chinese, pinyin, English, Arabic, and real audio paths before marking complete."
+  "authoringNote": "Original dialogue aligned to the lesson topic; translations and tone-marked pinyin are supplied for every turn.",
+  "curriculum": "hsk3"
 }

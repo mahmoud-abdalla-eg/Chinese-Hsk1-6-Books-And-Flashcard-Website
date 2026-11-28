@@ -13,210 +13,68 @@
   "dialogue": [
     {
       "id": "9-1-1",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "儿子的裤子坏了，我们给他买条新的吧。",
-      "pinyin": "Érzi de kùzi huài le, wǒmen gěi tā mǎi tiáo xīn de ba.",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "我去买杯奶茶，你想喝什么？",
+      "pinyin": "Wǒ qù mǎi bēi nǎichá, nǐ xiǎng hē shénme?",
       "translation": {
-        "en": "Our son's pants are worn out; let's buy him a new pair.",
-        "ar": "بنطال ابننا تمزق، فلنشترِ له بنطالاً جديداً."
+        "en": "I’m going to buy a cup of milk tea. What would you like?",
+        "ar": "سأذهب لشراء كوب من شاي الحليب، ماذا تود أن تشرب؟"
       },
-      "audio": null
+      "audio": null,
+      "ar": "سأذهب لشراء كوب من شاي الحليب، ماذا تودين أن تشربي؟"
     },
     {
       "id": "9-1-2",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "好啊。你看这条黑色的怎么样？",
-      "pinyin": "Hǎo a. Nǐ kàn zhè tiáo hēisè de zěnmeyàng?",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "我想喝咖啡。门口旁边有一家店，我们走路过去吧。",
+      "pinyin": "Wǒ xiǎng hē kāfēi. Ménkǒu pángbiān yǒu yì jiā diàn, wǒmen zǒulù guòqu ba.",
       "translation": {
-        "en": "Sure. What do you think of this black pair?",
-        "ar": "حسناً. ما رأيك في هذا البنطال الأسود؟"
+        "en": "I’d like coffee. There’s a shop by the entrance; let’s walk over.",
+        "ar": "أود شرب القهوة. يوجد متجر بجوار المدخل، فلنذهب إليه مشياً."
       },
       "audio": null
     },
     {
       "id": "9-1-3",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "没有你上次买的那条好看。",
-      "pinyin": "Méiyǒu nǐ shàng cì mǎi de nà tiáo hǎokàn.",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "好。你看，那个男孩儿个子真高。",
+      "pinyin": "Hǎo. Nǐ kàn, nàge nánháir gèzi zhēn gāo.",
       "translation": {
-        "en": "It's not as nice as the one you bought last time.",
-        "ar": "ليس جميلاً مثل ذلك الذي اشتريته في المرة السابقة."
+        "en": "Okay. Look, that boy is really tall.",
+        "ar": "حسناً. انظر، ذلك الصبي طويل القامة جداً."
       },
       "audio": null
     },
     {
       "id": "9-1-4",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "旁边那个男孩儿就穿了这样的裤子，我觉得很好看啊！",
-      "pinyin": "Pángbiān nàge nánháir jiù chuānle zhèyàng de kùzi, wǒ juéde hěn hǎokàn a!",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "是啊，他那么高，应该上中学了吧？",
+      "pinyin": "Shì a, tā nàme gāo, yīnggāi shàng zhōngxué le ba?",
       "translation": {
-        "en": "The boy next to us is wearing pants just like these, and I think they look great!",
-        "ar": "الفتى الذي بجانبنا يرتدي بنطالاً كهذا تماماً، وأرى أنه يبدو أنيقاً جداً!"
+        "en": "He is. He’s so tall, he must be in middle school, right?",
+        "ar": "صحيح، إنه طويل جداً، لا بد أنه في المرحلة الإعدادية، أليس كذلك؟"
       },
       "audio": null
     },
     {
       "id": "9-1-5",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "儿子的个子没有他那么高，穿上就不会太好看。",
-      "pinyin": "Érzi de gèzi méiyǒu tā nàme gāo, chuānshang jiù bú huì tài hǎokàn.",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "可能吧。奶茶店就在咖啡店旁边，这样我们都能买到。",
+      "pinyin": "Kěnéng ba. Nǎichá diàn jiù zài kāfēi diàn pángbiān, zhèyàng wǒmen dōu néng mǎidào.",
       "translation": {
-        "en": "Our son isn't as tall as he is, so it wouldn't look as good on him.",
-        "ar": "قوام ابننا ليس بطوله، ولن يبدو مناسباً عليه كثيراً."
+        "en": "Maybe. The milk-tea shop is right next to the café, so we can both get what we want.",
+        "ar": "ربما. متجر شاي الحليب بجوار المقهى مباشرة، وهكذا يمكن لكل منا شراء ما يريد."
       },
       "audio": null
     },
     {
       "id": "9-1-6",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "好吧，我们再去那边看看。",
-      "pinyin": "Hǎo ba, wǒmen zài qù nàbian kànkan.",
-      "translation": {
-        "en": "Alright, let's head over there and take another look.",
-        "ar": "حسناً، لنذهب إلى تلك الجهة ونلقي نظرة أخرى."
-      },
-      "audio": null
-    },
-    {
-      "id": "9-2-1",
       "role": "王一雪 (Wang Yixue)",
-      "hanzi": "门口有家奶茶店。你想喝杯奶茶吗？",
-      "pinyin": "Ménkǒu yǒu jiā nǎichǎdiàn. Nǐ xiǎng hē bēi nǎichá ma?",
+      "hanzi": "太方便了！买好以后我们再慢慢走回去。",
+      "pinyin": "Tài fāngbiàn le! Mǎi hǎo yǐhòu wǒmen zài mànmàn zǒu huíqu.",
       "translation": {
-        "en": "There's a bubble tea shop at the entrance. Would you like a cup of bubble tea?",
-        "ar": "يوجد متجر لشاي الحليب عند المدخل. هل ترغب في شرب كوب من شاي الحليب؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "9-2-2",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "我想喝咖啡，还是去咖啡店吧。",
-      "pinyin": "Wǒ xiǎng hē kāfēi, háishi qù kāfēidiàn ba.",
-      "translation": {
-        "en": "I'd prefer coffee; let's go to a cafe instead.",
-        "ar": "أود شرب القهوة، فلنذهب إلى المقهى أفضل."
-      },
-      "audio": null
-    },
-    {
-      "id": "9-2-3",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "咖啡店离这儿有点儿远。",
-      "pinyin": "Kāfēidiàn lí zhèr yǒudiǎnr yuǎn.",
-      "translation": {
-        "en": "The cafe is a bit far from here.",
-        "ar": "المقهى بعيد قليلاً عن هنا."
-      },
-      "audio": null
-    },
-    {
-      "id": "9-2-4",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "没关系，那家店的咖啡很好喝。",
-      "pinyin": "Méi guānxi, nà jiā diàn de kāfēi hěn hǎohē.",
-      "translation": {
-        "en": "That's fine; that shop's coffee is really delicious.",
-        "ar": "لا بأس، فالقهوة في ذلك المتجر لذيذة للغاية."
-      },
-      "audio": null
-    },
-    {
-      "id": "9-2-5",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "那你等一下，我去买杯奶茶。",
-      "pinyin": "Nà nǐ děng yíxià, wǒ qù mǎi bēi nǎichá.",
-      "translation": {
-        "en": "Then wait for a moment; I'll go buy a cup of bubble tea.",
-        "ar": "انتظر لحظة إذاً، سأذهب لشراء كوب من شاي الحليب."
-      },
-      "audio": null
-    },
-    {
-      "id": "9-2-6",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "你不想喝咖啡吗？",
-      "pinyin": "Nǐ bù xiǎng hē kāfēi ma?",
-      "translation": {
-        "en": "Don't you want to drink coffee?",
-        "ar": "ألا ترغبين في شرب القهوة؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "9-2-7",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "喝了咖啡，晚上就别想睡觉了。",
-      "pinyin": "Hēle kāfēi, wǎnshang jiù bié xiǎng shuìjiào le.",
-      "translation": {
-        "en": "If I drink coffee, I can forget about sleeping tonight!",
-        "ar": "إذا شربتُ القهوة، فلن أستطيع النوم الليلة على الإطلاق!"
-      },
-      "audio": null
-    },
-    {
-      "id": "9-3-1",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "我们打车回去吧。",
-      "pinyin": "Wǒmen dǎchē huíqu ba.",
-      "translation": {
-        "en": "Let's take a taxi back.",
-        "ar": "فلنأخذ سيارة أجرة في طريق العودة."
-      },
-      "audio": null
-    },
-    {
-      "id": "9-3-2",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "这里离家很近，还是走路吧。",
-      "pinyin": "Zhèlǐ lí jiā hěn jìn, háishi zǒulù ba.",
-      "translation": {
-        "en": "It's very close to home from here; let's walk instead.",
-        "ar": "المكان قريب جداً من البيت، فلنعد سيراً على الأقدام أفضل."
-      },
-      "audio": null
-    },
-    {
-      "id": "9-3-3",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "要走多长时间？",
-      "pinyin": "Yào zǒu duō cháng shíjiān?",
-      "translation": {
-        "en": "How long will the walk take?",
-        "ar": "كم من الوقت سيستغرق المشي؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "9-3-4",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "走半个多小时就到了。",
-      "pinyin": "Zǒu bàn ge duō xiǎoshí jiù dào le.",
-      "translation": {
-        "en": "Walking a little over half an hour will get us there.",
-        "ar": "المشي لن يستغرق سوى نصف ساعة وبضع دقائق وسنصل."
-      },
-      "audio": null
-    },
-    {
-      "id": "9-3-5",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "好的。每天上下班都坐车，今天运动运动吧。",
-      "pinyin": "Hǎo de. Měi tiān shàng xià bān dōu zuò chē, jīntiān yùndòng yùndòng ba.",
-      "translation": {
-        "en": "Sounds good. We ride vehicles to work every day, so let's get some exercise today.",
-        "ar": "حسناً. نحن نركب المواصلات يومياً للعمل، فلنتحرك ونمارس بعض الرياضة اليوم."
-      },
-      "audio": null
-    },
-    {
-      "id": "9-4-1",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "这周刘明休息，我下班后跟他去了一家商店。商店里边的衣服没有大商场里的好看。我们没有买到喜欢的衣服，从商店出来就到咖啡店坐了坐。因为想运动运动，所以喝完东西，我们就走回家了。",
-      "pinyin": "Zhè zhōu Liú Míng xiūxi, wǒ xiàbān hòu gēn tā qùle yì jiā shāngdiàn. Shāngdiàn lǐbian de yīfu méiyǒu dà shāngchǎng lǐ de hǎokàn. Wǒmen méiyǒu mǎidào xǐhuan de yīfu, cóng shāngdiàn chūlái jiù dào kāfēidiàn zuòle zuò. Yīnwèi xiǎng yùndòng yùndòng, suǒyǐ hēwán dōngxi, wǒmen jiù zǒuhuí jiā le.",
-      "translation": {
-        "en": "Liu Ming had time off this week, so after work I went to a shop with him. The clothes inside weren't as stylish as those in big department stores. We didn't find any clothes we liked, so after leaving the shop, we sat in a cafe for a bit. Because we wanted to get some exercise, after finishing our drinks, we walked home.",
-        "ar": "هذا الأسبوع كان ليو مينغ في عطلة، فذهبت معه بعد انتهاء عملي إلى أحد المتاجر. لم تكن الملابس هناك بجمال تلك المعروضة في المتاجر الكبرى. لم نجد ملابس تعجبنا، وبعد الخروج من المتجر جلسنا لبعض الوقت في المقهى. ورغبة منا في ممارسة بعض النشاط الرياضي، عدنا سيراً على الأقدام إلى البيت بعد أن أنهينا مشروباتنا."
+        "en": "That’s convenient! After buying our drinks, we can walk back slowly.",
+        "ar": "هذا مريح جداً! بعد شراء مشروباتنا يمكننا العودة مشياً على مهل."
       },
       "audio": null
     }
@@ -282,5 +140,6 @@
       ],
       "answerIndex": 0
     }
-  ]
+  ],
+  "targetVocabularyIds": ["ka-fei", "menkou", "nan-hair", "pangbian", "zoulu"]
 }

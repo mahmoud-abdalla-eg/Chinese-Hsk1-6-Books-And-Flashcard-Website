@@ -12,178 +12,68 @@
   },
   "dialogue": [
     {
-      "id": "10-1-1",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "请问，有杯子吗？",
-      "pinyin": "Qǐngwèn, yǒu bēizi ma?",
+      "id": "10-apples-1",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "请问，这些苹果多少钱一斤？",
+      "pinyin": "Qǐngwèn, zhèxiē píngguǒ duōshao qián yì jīn?",
       "translation": {
-        "en": "Excuse me, do you have any cups?",
-        "ar": "لو سمحت، هل لديكم أكواب؟"
+        "en": "Excuse me, how much are these apples per half-kilo?",
+        "ar": "عذراً، كم سعر هذه التفاحات للنصف كيلو؟"
       },
       "audio": null
     },
     {
-      "id": "10-1-2",
-      "role": "售货员 (Salesperson)",
-      "hanzi": "有，杯子在这边。",
-      "pinyin": "Yǒu, bēizi zài zhèbiān.",
+      "id": "10-apples-2",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "五块钱一斤，那边的梨更便宜。",
+      "pinyin": "Wǔ kuài qián yì jīn, nàbiān de lí gèng piányi.",
       "translation": {
-        "en": "Yes, the cups are over here.",
-        "ar": "نعم، الأكواب في هذه الناحية."
+        "en": "Five yuan per half-kilo; the pears over there are even cheaper.",
+        "ar": "خمسة يوانات للنصف كيلو، والكمثرى هناك أرخص."
       },
       "audio": null
     },
     {
-      "id": "10-1-3",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "多少钱一个？",
-      "pinyin": "Duōshao qián yí gè?",
+      "id": "10-apples-3",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "我买两斤苹果，再买些水果。",
+      "pinyin": "Wǒ mǎi liǎng jīn píngguǒ, zài mǎi xiē shuǐguǒ.",
       "translation": {
-        "en": "How much is one?",
-        "ar": "بكم الكوب الواحد؟"
+        "en": "I’ll buy a kilo of apples and some other fruit.",
+        "ar": "سأشتري كيلوغراماً من التفاح وبعض الفاكهة الأخرى."
       },
       "audio": null
     },
     {
-      "id": "10-1-4",
-      "role": "售货员 (Salesperson)",
-      "hanzi": "这些五块钱一个，那些十块钱一个。",
-      "pinyin": "Zhèxiē wǔ kuài qián yí gè, nàxiē shí kuài qián yí gè.",
+      "id": "10-apples-4",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "好的。你要不要这个杯子？商店今天有折扣。",
+      "pinyin": "Hǎo de. Nǐ yào bu yào zhège bēizi? Shāngdiàn jīntiān yǒu zhékòu.",
       "translation": {
-        "en": "These are five yuan each, and those are ten yuan each.",
-        "ar": "هذه بخمسة يوانات للواحد، وتلك بعشرة يوانات للواحد."
+        "en": "Okay. Would you like this cup? The store has a sale today.",
+        "ar": "حسناً. هل تريدين هذا الكوب؟ يوجد تخفيض في المتجر اليوم."
       },
       "audio": null
     },
     {
-      "id": "10-1-5",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "我买这个吧。",
-      "pinyin": "Wǒ mǎi zhège ba.",
+      "id": "10-apples-5",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "这边的衣服也便宜吗？我想给姐姐买一件。",
+      "pinyin": "Zhèbiān de yīfu yě piányi ma? Wǒ xiǎng gěi jiějie mǎi yí jiàn.",
       "translation": {
-        "en": "I'll take this one, please.",
-        "ar": "سآخذ هذا إذاً."
+        "en": "Are the clothes around here inexpensive too? I’d like to buy one for my sister.",
+        "ar": "هل الملابس هنا رخيصة أيضاً؟ أود شراء قطعة لأختي."
       },
       "audio": null
     },
     {
-      "id": "10-2-1",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "这儿的水果真不少！",
-      "pinyin": "Zhèr de shuǐguǒ zhēn bù shǎo!",
+      "id": "10-apples-6",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "很便宜。你看看这件怎么样？",
+      "pinyin": "Hěn piányi. Nǐ kànkan zhè jiàn zěnmeyàng?",
       "translation": {
-        "en": "There's so much fruit here!",
-        "ar": "الفواكه هنا وفيرة حقاً!"
-      },
-      "audio": null
-    },
-    {
-      "id": "10-2-2",
-      "role": "售货员 (Salesperson)",
-      "hanzi": "您想买什么？",
-      "pinyin": "Nín xiǎng mǎi shénme?",
-      "translation": {
-        "en": "What would you like to buy?",
-        "ar": "ماذا ترغبين في شرائه؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "10-2-3",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "我想买两斤苹果。",
-      "pinyin": "Wǒ xiǎng mǎi liǎng jīn píngguǒ.",
-      "translation": {
-        "en": "I'd like two jin of apples, please.",
-        "ar": "أود شراء جينين (نحو كيلوغرام) من التفاح."
-      },
-      "audio": null
-    },
-    {
-      "id": "10-2-4",
-      "role": "售货员 (Salesperson)",
-      "hanzi": "苹果三块五一斤。这些七块二，七块钱吧。",
-      "pinyin": "Píngguǒ sān kuài wǔ yì jīn. Zhèxiē qī kuài èr, qī kuài qián ba.",
-      "translation": {
-        "en": "The apples are 3.5 yuan per jin. That's 7.2 yuan in total—let's make it 7 yuan.",
-        "ar": "التفاح بثلاثة يوانات ونصف للجين. الحساب 7.2 يوان، فلنجعلها 7 يوانات."
-      },
-      "audio": null
-    },
-    {
-      "id": "10-2-5",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "好的，这儿的苹果真便宜！",
-      "pinyin": "Hǎo de, zhèr de píngguǒ zhēn piányi!",
-      "translation": {
-        "en": "Great! The apples here are really affordable!",
-        "ar": "رائع، التفاح هنا رخيص للغاية!"
-      },
-      "audio": null
-    },
-    {
-      "id": "10-3-1",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "这家商店衣服真多！这一件一百元，怎么样？",
-      "pinyin": "Zhè jiā shāngdiàn yīfu zhēn duō! Zhè yí jiàn yìbǎi yuán, zěnmeyàng?",
-      "translation": {
-        "en": "There are so many clothes in this store! This one is 100 yuan, what do you think?",
-        "ar": "الملابس كثيرة جداً في هذا المتجر! هذه القطعة بمئة يوان، ما رأيك؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "10-3-2",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "好看，也不贵。",
-      "pinyin": "Hǎokàn, yě bú guì.",
-      "translation": {
-        "en": "It looks great, and it's not expensive.",
-        "ar": "جميلة ومظهرها رائع، وليست باهظة الثمن."
-      },
-      "audio": null
-    },
-    {
-      "id": "10-3-3",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "小雪能穿，买一件吧。",
-      "pinyin": "Xiǎoxuě néng chuān, mǎi yí jiàn ba.",
-      "translation": {
-        "en": "Xiaoxue can wear it. Let's get one.",
-        "ar": "تناسب شياو شيويه، لنشترِ قطعة واحدة."
-      },
-      "audio": null
-    },
-    {
-      "id": "10-3-4",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "好的。小明能穿吗？",
-      "pinyin": "Hǎo de. Xiǎomíng néng chuān ma?",
-      "translation": {
-        "en": "Okay. Do you think Xiaoming can wear it too?",
-        "ar": "حسناً. وهل تناسب شياو مينغ أيضاً؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "10-3-5",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "不能。这些是女孩子穿的衣服，男孩子的衣服在那儿。",
-      "pinyin": "Bù néng. Zhèxiē shì nǚ háizi chuān de yīfu, nán háizi de yīfu zài nàr.",
-      "translation": {
-        "en": "No. These are girls' clothes. The boys' section is over there.",
-        "ar": "لا يمكنه. هذه ملابس للفتيات، وملابس الفتيان هناك."
-      },
-      "audio": null
-    },
-    {
-      "id": "10-3-6",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "好的。",
-      "pinyin": "Hǎo de.",
-      "translation": {
-        "en": "Alright.",
-        "ar": "حسناً."
+        "en": "They are. Take a look—what do you think of this one?",
+        "ar": "إنها رخيصة. انظري إلى هذه، ما رأيك بها؟"
       },
       "audio": null
     }
@@ -242,5 +132,16 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 10."
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 10.",
+  "targetVocabularyIds": [
+    "beizi",
+    "pian-yi",
+    "ping-guo",
+    "shangdian",
+    "shui-guo",
+    "yi-fu",
+    "zhe-bian",
+    "zhe-xie",
+    "zenme-yang"
+  ]
 }

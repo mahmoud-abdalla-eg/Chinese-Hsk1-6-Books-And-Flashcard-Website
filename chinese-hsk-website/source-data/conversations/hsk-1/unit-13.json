@@ -10,147 +10,56 @@
     "ar": "الدرس 13: إنه يتعلم طبخ الطعام الصيني"
   },
   "targetVocabularyIds": [
-    "wei",
-    "ye",
-    "xue",
-    "shangwu",
-    "shui-jiao",
-    "dianshi",
-    "xi-huan",
-    "dianhua",
-    "gei",
-    "ba"
+    "baba",
+    "jidan",
+    "jintian",
+    "ke-yi",
+    "shenme",
+    "women",
+    "zhongguo"
   ],
   "dialogue": [
     {
       "id": "13-1-1",
-      "role": "Speaker A",
-      "hanzi": "喂，你在做什么呢？",
-      "pinyin": "Wèi, nǐ zài zuò shénme ne?",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "你爸爸在厨房做什么？闻起来真香。",
+      "pinyin": "Nǐ bàba zài chúfáng zuò shénme? Wén qǐlái zhēn xiāng.",
       "translation": {
-        "en": "Hello, what are you doing?",
-        "ar": "ألو، ماذا تفعل؟"
+        "en": "What’s your father making in the kitchen? It smells wonderful.",
+        "ar": "ماذا يحضر والدك في المطبخ؟ رائحته شهية."
       },
       "audio": null
     },
     {
       "id": "13-1-2",
-      "role": "Speaker B",
-      "hanzi": "我在看书呢。",
-      "pinyin": "Wǒ zài kàn shū ne.",
+      "role": "安娜 (Ānnà)",
+      "hanzi": "他在学做中国菜，今天做了面条和鸡蛋。",
+      "pinyin": "Tā zài xué zuò Zhōngguó cài, jīntiān zuò le miàntiáo hé jīdàn.",
       "translation": {
-        "en": "I am reading a book.",
-        "ar": "أنا أقرأ كتاباً."
+        "en": "He’s learning Chinese cooking. Today he made noodles and eggs.",
+        "ar": "يتعلم إعداد الطعام الصيني. حضّر اليوم المعكرونة والبيض."
       },
       "audio": null
     },
     {
       "id": "13-1-3",
-      "role": "Speaker A",
-      "hanzi": "大卫也在看书吗？",
-      "pinyin": "Dàwèi yě zài kàn shū ma?",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "我可以帮忙吗？我会洗菜。",
+      "pinyin": "Wǒ kěyǐ bāngmáng ma? Wǒ huì xǐ cài.",
       "translation": {
-        "en": "Is David reading too?",
-        "ar": "هل ديفيد يقرأ كتاباً أيضاً؟"
+        "en": "Can I help? I can wash the vegetables.",
+        "ar": "هل أستطيع المساعدة؟ يمكنني غسل الخضروات."
       },
       "audio": null
     },
     {
       "id": "13-1-4",
-      "role": "Speaker B",
-      "hanzi": "他没看书，他在学做中国菜呢。",
-      "pinyin": "Tā méi kàn shū, tā zài xué zuò Zhōngguó cài ne.",
+      "role": "安娜 (Ānnà)",
+      "hanzi": "当然可以，洗好以后我们一起吃饭。",
+      "pinyin": "Dāngrán kěyǐ, xǐ hǎo yǐhòu wǒmen yìqǐ chīfàn.",
       "translation": {
-        "en": "He is not reading; he is learning to cook Chinese food.",
-        "ar": "هو لا يقرأ؛ إنه يتعلم طبخ الطعام الصيني."
-      },
-      "audio": null
-    },
-    {
-      "id": "13-2-1",
-      "role": "Speaker A",
-      "hanzi": "昨天上午你在做什么呢？",
-      "pinyin": "Zuótiān shàngwǔ nǐ zài zuò shénme ne?",
-      "translation": {
-        "en": "What were you doing yesterday morning?",
-        "ar": "ماذا كنت تفعل صباح أمس؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "13-2-2",
-      "role": "Speaker B",
-      "hanzi": "我在睡觉呢。你呢？",
-      "pinyin": "Wǒ zài shuìjiào ne. Nǐ ne?",
-      "translation": {
-        "en": "I was sleeping. What about you?",
-        "ar": "كنت نائماً. وأنتَ؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "13-2-3",
-      "role": "Speaker A",
-      "hanzi": "我在家看电视呢。你喜欢看电视吗？",
-      "pinyin": "Wǒ zài jiā kàn diànshì ne. Nǐ xǐhuan kàn diànshì ma?",
-      "translation": {
-        "en": "I was watching TV at home. Do you like watching TV?",
-        "ar": "كنت في المنزل أشاهد التلفاز. هل تحب مشاهدة التلفاز؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "13-2-4",
-      "role": "Speaker B",
-      "hanzi": "我不喜欢看电视，我喜欢看电影。",
-      "pinyin": "Wǒ bù xǐhuan kàn diànshì, wǒ xǐhuan kàn diànyǐng.",
-      "translation": {
-        "en": "I don't like watching TV; I like watching movies.",
-        "ar": "أنا لا أحب مشاهدة التلفاز، أفضل مشاهدة الأفلام."
-      },
-      "audio": null
-    },
-    {
-      "id": "13-3-1",
-      "role": "Speaker A",
-      "hanzi": "83016789，这是张先生的电话吗？",
-      "pinyin": "Bā sān líng yāo liù qī bā jiǔ, zhè shì Zhāng xiānsheng de diànhuà ma?",
-      "translation": {
-        "en": "83016789, is this Mr. Zhang's phone number?",
-        "ar": "83016789، هل هذا رقم هاتف السيد تشانغ؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "13-3-2",
-      "role": "Speaker B",
-      "hanzi": "不是。他的电话是82304156。",
-      "pinyin": "Bú shì. Tā de diànhuà shì bā èr sān líng sì yāo wǔ liù.",
-      "translation": {
-        "en": "No. His phone number is 82304156.",
-        "ar": "كلا. رقم هاتفه هو 82304156."
-      },
-      "audio": null
-    },
-    {
-      "id": "13-3-3",
-      "role": "Speaker A",
-      "hanzi": "好，我现在给他打电话。",
-      "pinyin": "Hǎo, wǒ xiànzài gěi tā dǎ diànhuà.",
-      "translation": {
-        "en": "Okay, I will call him right now.",
-        "ar": "حسناً، سأتصل به هاتفياً الآن."
-      },
-      "audio": null
-    },
-    {
-      "id": "13-3-4",
-      "role": "Speaker B",
-      "hanzi": "他在工作呢，你下午打吧。",
-      "pinyin": "Tā zài gōngzuò ne, nǐ xiàwǔ dǎ ba.",
-      "translation": {
-        "en": "He is working now; please call this afternoon.",
-        "ar": "إنه منشغل بالعمل الآن، من الأفضل أن تتصل به بعد الظهر."
+        "en": "Of course. We’ll eat together when you’re done.",
+        "ar": "بالطبع، سنتناول الطعام معاً بعد أن تنتهي."
       },
       "audio": null
     }
@@ -192,5 +101,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official HSK 1 Standard Course Lesson 13 dialogues."
+  "authoringNote": "Official HSK 1 Standard Course Lesson 13 dialogues.",
+  "curriculum": "standard"
 }

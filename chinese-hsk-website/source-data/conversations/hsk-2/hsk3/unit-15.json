@@ -13,210 +13,67 @@
   "dialogue": [
     {
       "id": "15-1-1",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "考试就要开始了，请大家写上姓名，写好后就可以做题了。",
-      "pinyin": "Kǎoshì jiù yào kāishǐ le, qǐng dàjiā xiěshang xìngmíng, xiěhǎo hòu jiù kěyǐ zuò tí le.",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "考试结束了！我想再出国旅行，去中国看看老朋友。",
+      "pinyin": "Kǎoshì jiéshù le! Wǒ xiǎng zài chūguó lǚxíng, qù Zhōngguó kànkan lǎo péngyou.",
       "translation": {
-        "en": "The exam is about to begin. Everyone please write down your name; once you have written it, you may start answering questions.",
-        "ar": "الامتحان على وشك البدء، يرجى من الجميع كتابة الاسم، وبعد ذلك يمكنكم البدء في الإجابة."
+        "en": "The exams are over! I want to travel abroad again, visit China, and see my old friends.",
+        "ar": "انتهت الامتحانات! أريد أن أزور الصين مرة أخرى لأرى أصدقائي القدامى."
       },
       "audio": null
     },
     {
       "id": "15-1-2",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "老师，我做完了。",
-      "pinyin": "Lǎoshī, wǒ zuòwán le.",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "这次准备去哪儿？你要先买机票吗？",
+      "pinyin": "Zhè cì zhǔnbèi qù nǎr? Nǐ yào xiān mǎi jīpiào ma?",
       "translation": {
-        "en": "Teacher, I'm finished.",
-        "ar": "أستاذة، لقد انتهيت من الإجابة."
+        "en": "Where are you planning to go this time? Will you buy your plane ticket first?",
+        "ar": "إلى أين تخططين للذهاب هذه المرة؟ هل ستشترين تذكرة الطيران أولاً؟"
       },
       "audio": null
     },
     {
       "id": "15-1-3",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "老师，我也做完了。",
-      "pinyin": "Lǎoshī, wǒ yě zuòwán le.",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "先飞北京。我已经看好了机票，星期五出发。",
+      "pinyin": "Xiān fēi Běijīng. Wǒ yǐjīng kàn hǎo le jīpiào, xīngqīwǔ chūfā.",
       "translation": {
-        "en": "Teacher, I'm finished too.",
-        "ar": "أستاذة، وأنا انتهيت أيضاً."
+        "en": "I’ll fly to Beijing first. I’ve already picked a ticket and leave on Friday.",
+        "ar": "سأسافر أولاً إلى بكين. اخترت تذكرة الطيران بالفعل وسأنطلق يوم الجمعة."
       },
       "audio": null
     },
     {
       "id": "15-1-4",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "对了，你们考完试要去哪儿？",
-      "pinyin": "Duì le, nǐmen kǎowán shì yào qù nǎr?",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "到机场以后怎么去颐和园？",
+      "pinyin": "Dào jīchǎng yǐhòu zěnme qù Yíhé Yuán?",
       "translation": {
-        "en": "By the way, where are you all going after finishing the exam?",
-        "ar": "بالمناسبة، إلى أين ستذهبون جميعاً بعد الانتهاء من الامتحان؟"
+        "en": "How will you get to the Summer Palace after you arrive at the airport?",
+        "ar": "كيف ستذهبين إلى القصر الصيفي بعد وصولك إلى المطار؟"
       },
       "audio": null
     },
     {
       "id": "15-1-5",
       "role": "白家月 (Bai Jiayue)",
-      "hanzi": "我想再去一次中国，因为那里太好玩了！",
-      "pinyin": "Wǒ xiǎng zài qù yí cì Zhōngguó, yīnwèi nàli tài hǎowán le!",
+      "hanzi": "朋友会来接我。我们还没买门票，打算到了再买。",
+      "pinyin": "Péngyou huì lái jiē wǒ. Wǒmen hái méi mǎi ménpiào, dǎsuàn dào le zài mǎi.",
       "translation": {
-        "en": "I want to go to China once more, because it's so much fun there!",
-        "ar": "أود السفر إلى الصين مرة أخرى، لأن الأجواء هناك ممتعة للغاية!"
+        "en": "A friend will pick me up. We haven’t bought the entrance tickets yet; we’ll get them when we arrive.",
+        "ar": "سيأتي صديقي لاستقبالي. لم نشترِ تذاكر الدخول بعد، وسنشتريها عند الوصول."
       },
       "audio": null
     },
     {
-      "id": "15-2-1",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "考完试了，我现在可以出国旅游了。",
-      "pinyin": "Kǎowán shì le, wǒ xiànzài kěyǐ chūguó lǚyóu le.",
+      "id": "15-1-6",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "听起来真好！你这次出门一定会玩得很开心。",
+      "pinyin": "Tīng qǐlái zhēn hǎo! Nǐ zhè cì chūmén yídìng huì wán de hěn kāixīn.",
       "translation": {
-        "en": "Exams are finished! Now I can travel abroad.",
-        "ar": "انتهت الامتحانات! يمكنني الآن السفر للسياحة في الخارج."
-      },
-      "audio": null
-    },
-    {
-      "id": "15-2-2",
-      "role": "李文 (Li Wen)",
-      "hanzi": "你要去哪儿？",
-      "pinyin": "Nǐ yào qù nǎr?",
-      "translation": {
-        "en": "Where do you plan to go?",
-        "ar": "إلى أين تخططين للذهاب؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "15-2-3",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "我要再去一次北京。",
-      "pinyin": "Wǒ yào zài qù yí cì Běijīng.",
-      "translation": {
-        "en": "I'm going to Beijing once more.",
-        "ar": "سأسافر إلى بكين مرة أخرى."
-      },
-      "audio": null
-    },
-    {
-      "id": "15-2-4",
-      "role": "李文 (Li Wen)",
-      "hanzi": "为什么还去北京？",
-      "pinyin": "Wèishénme hái qù Běijīng?",
-      "translation": {
-        "en": "Why go to Beijing again?",
-        "ar": "لماذا تسافرين إلى بكين مجدداً؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "15-2-5",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "因为我想再吃一次烤鸭，再喝一次奶茶，再去颐和园看一次风景……",
-      "pinyin": "Yīnwèi wǒ xiǎng zài chī yí cì kǎoyā, zài hē yí cì nǎichá, zài qù Yíhé Yuán kàn yí cì fēngjǐng...",
-      "translation": {
-        "en": "Because I want to eat Peking duck again, drink bubble tea again, visit the Summer Palace to enjoy the sights once more...",
-        "ar": "لأنني أريد تناول بط بكين المشوي مرة أخرى، وشرب شاي الحليب مجدداً، والذهاب إلى القصر الصيفي لرؤية المعالم الخلابة مرة أخرى..."
-      },
-      "audio": null
-    },
-    {
-      "id": "15-2-6",
-      "role": "李文 (Li Wen)",
-      "hanzi": "哈哈，你已经去过两次北京了，还要再去！",
-      "pinyin": "Hāhā, nǐ yǐjīng qùguo liǎng cì Běijīng le, hái yào zài qù!",
-      "translation": {
-        "en": "Haha, you've already been to Beijing twice, and you still want to go again!",
-        "ar": "هههه، لقد زرتِ بكين مرتين من قبل، وما زلتِ ترغبين في الذهاب إليها مجدداً!"
-      },
-      "audio": null
-    },
-    {
-      "id": "15-2-7",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "是啊，北京太吸引人了。我已经买好了门票，一放假就出门！",
-      "pinyin": "Shì a, Běijīng tài xīyǐn rén le. Wǒ yǐjīng mǎihǎo le ménpiào, yí fàngjià jiù chūmén!",
-      "translation": {
-        "en": "Yes, Beijing is so captivating. I've already purchased entrance tickets; as soon as holiday begins, I'm heading out!",
-        "ar": "نعم، فبكين ساحرة وجذابة للغاية. لقد اشتريت تذاكر الدخول بالفعل، وسأنطلق فور بدء العطلة!"
-      },
-      "audio": null
-    },
-    {
-      "id": "15-3-1",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "李文，你有一年没回国了吧？",
-      "pinyin": "Lǐ Wén, nǐ yǒu yì nián méi huí guó le ba?",
-      "translation": {
-        "en": "Li Wen, it's been about a year since you last returned to your home country, right?",
-        "ar": "لي ون، لقد مضت قرابة سنة كاملة لم تعد فيها إلى وطنك، أليس كذلك؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "15-3-2",
-      "role": "李文 (Li Wen)",
-      "hanzi": "不到一年。我六月的时候回去了一次。",
-      "pinyin": "Búdào yì nián. Wǒ liùyuè de shíhou huíqu le yí cì.",
-      "translation": {
-        "en": "Not quite a year. I went back once in June.",
-        "ar": "أقل من عام؛ لقد عدت مرة واحدة في شهر يونيو."
-      },
-      "audio": null
-    },
-    {
-      "id": "15-3-3",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "我怎么忘了？还是我送你去机场的呢。",
-      "pinyin": "Wǒ zěnme wàng le? Hái shì wǒ sòng nǐ qù jīchǎng de ne.",
-      "translation": {
-        "en": "How could I forget? It was actually me who took you to the airport!",
-        "ar": "كيف نسيت ذلك؟ لقد كنت أنا من أوصلتك إلى المطار في الواقع!"
-      },
-      "audio": null
-    },
-    {
-      "id": "15-3-4",
-      "role": "李文 (Li Wen)",
-      "hanzi": "是啊。",
-      "pinyin": "Shì a.",
-      "translation": {
-        "en": "Yes, indeed.",
-        "ar": "نعم، هذا صحيح."
-      },
-      "audio": null
-    },
-    {
-      "id": "15-3-5",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "我记得你那次的机票很便宜。",
-      "pinyin": "Wǒ jìde nǐ nà cì de jīpiào hěn piányi.",
-      "translation": {
-        "en": "I remember your plane ticket that time was very inexpensive.",
-        "ar": "أتذكر أن تذكرة طيرانك في تلك المرة كانت رخيصة جداً."
-      },
-      "audio": null
-    },
-    {
-      "id": "15-3-6",
-      "role": "李文 (Li Wen)",
-      "hanzi": "没错，可能因为那个时候去北京的人不多吧。这次的机票虽然有点儿贵，但想到就要飞北京了，我还是很高兴！",
-      "pinyin": "Méi cuò, kěnéng yīnwèi nàge shíhou qù Běijīng de rén bù duō ba. Zhè cì de jīpiào suīrán yǒudiǎnr guì, dàn xiǎngdào jiù yào fēi Běijīng le, wǒ hái shì hěn gāoxìng!",
-      "translation": {
-        "en": "Exactly, probably because fewer people were traveling to Beijing back then. Although the ticket this time is slightly expensive, just thinking about flying to Beijing soon still makes me very happy!",
-        "ar": "صحيح، ربما لأنه لم يكن هناك الكثير من المسافرين إلى بكين في ذلك الوقت. ورغم أن تذكرة هذه المرة أغلى قليلاً، إلا أن مجرد التفكير في أنني سأطير إلى بكين قريباً يجعلني سعيداً للغاية!"
-      },
-      "audio": null
-    },
-    {
-      "id": "15-4-1",
-      "role": "李文 (Li Wen)",
-      "hanzi": "今年六月我回了一次北京，现在有半年多没回去了。我有点儿想家。春节就要到了，我要回去过年。家月也要去北京——我们都是星期五的飞机。家月说我们好像小鸟，一起飞去北京，再一起飞回来。",
-      "pinyin": "Jīnnián liùyuè wǒ huíle yí cì Běijīng, xiànzài yǒu bàn nián duō méi huíqu le. Wǒ yǒudiǎnr xiǎngjiā. Chūnjié jiù yào dào le, wǒ yào huíqu guònián. Jiāyuè yě yào qù Běijīng—wǒmen dōu shì xīngqīwǔ de fēijī. Jiāyuè shuō wǒmen hǎoxiàng xiǎoniǎo, yìqǐ fēiqù Běijīng, zài yìqǐ fēihuí lái.",
-      "translation": {
-        "en": "I went back to Beijing once this June, and now it has been over six months since I last went back. I miss home a bit. The Spring Festival is coming, and I'll be going back to celebrate it. Jiayue is also going to Beijing—we're both on the same flight this Friday. Jiayue said we are like little birds, flying to Beijing together and then flying back here together.",
-        "ar": "عدت إلى بكين مرة واحدة في شهر يونيو الماضي، وها قد مضى أكثر من ستة أشهر دون أن أعود إليها. يراودني الحنين إلى الوطن والبيت. عيد الربيع يطرق الأبواب، وسأعود للاحتفال به هناك. وجيايوي ستسافر إلى بكين أيضاً—وكلانا على متن نفس طائرة يوم الجمعة. قالت جيايوي إننا نشبه طائرين صغيرين، نطير معاً إلى بكين، ثم نطير عائدين إلى هنا معاً."
+        "en": "That sounds wonderful! You’re sure to have a great time on this trip.",
+        "ar": "تبدو رحلة رائعة! لا شك أنك ستستمتعين كثيراً في هذه الرحلة."
       },
       "audio": null
     }
@@ -277,5 +134,12 @@
       ],
       "answerIndex": 0
     }
+  ],
+  "targetVocabularyIds": [
+    "chu-guo",
+    "jipiao",
+    "jichang",
+    "menpiao",
+    "yihe-yuan"
   ]
 }

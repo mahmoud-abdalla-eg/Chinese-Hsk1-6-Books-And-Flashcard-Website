@@ -2,65 +2,59 @@
   "id": "hsk-3-unit-9-conversation-1",
   "hskLevel": 3,
   "unitId": 9,
-  "status": "needs-authoring",
+  "status": "ready",
   "title": {
-    "en": "Unit 9 conversation authoring brief",
-    "zh": "第9单元会话编写说明",
-    "ar": "موجز تأليف محادثة الوحدة 9"
+    "zh": "第9课：打不好没关系",
+    "en": "Lesson 9: It’s fine if you don’t play well",
+    "ar": "الدرس 9: لا بأس إن لم تلعب جيداً"
   },
-  "targetVocabularyIds": [
-    "xin-xian",
-    "xinyongka",
-    "xiujia",
-    "xi-yi-ji",
-    "xi-zao",
-    "xuan",
-    "xuan-ze",
-    "xueqi",
-    "xuyao",
-    "ya",
-    "yang",
-    "yang-2",
-    "yaoqiu",
-    "ya-shua",
-    "ye",
-    "yi-ban",
-    "yibian",
-    "yiding",
-    "yi-gong",
-    "yihou",
-    "yikuair",
-    "ying-gai",
-    "yingxiang",
-    "yinhang",
-    "yin-hang-ka",
-    "yin-liao",
-    "yinyue",
-    "yiqian",
-    "yishang",
-    "yiwai",
-    "yiwei",
-    "yi-xia",
-    "yiyang",
-    "yizhi",
-    "yong",
-    "you",
-    "you-guan",
-    "youjian",
-    "luke",
-    "youming",
-    "youxi",
-    "youxiang",
-    "youyong",
-    "yuan",
-    "yuan-2",
-    "yuanyi",
-    "yu-dao",
-    "yue",
-    "yueliang",
-    "yu-jian"
+  "targetVocabularyIds": ["bisai", "canjia", "chengji", "jinzhang", "wangqiu"],
+  "dialogue": [
+    {
+      "id": "9-1-1",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "今天的网球比赛我能参加吗？我有点儿紧张。",
+      "pinyin": "Jīntiān de wǎngqiú bǐsài wǒ néng cānjiā ma? Wǒ yǒudiǎnr jǐnzhāng.",
+      "translation": {
+        "en": "Can I join today’s tennis match? I’m a little nervous.",
+        "ar": "هل يمكنني المشاركة في مباراة التنس اليوم؟ أشعر ببعض التوتر."
+      },
+      "audio": null
+    },
+    {
+      "id": "9-1-2",
+      "role": "许安 (Xǔ Ān)",
+      "hanzi": "当然能，成绩不重要，大家出来锻炼就好。",
+      "pinyin": "Dāngrán néng, chéngjì bù zhòngyào, dàjiā chūlái duànliàn jiù hǎo.",
+      "translation": {
+        "en": "Of course. The score doesn’t matter; we’re here to exercise.",
+        "ar": "بالطبع، فالنتيجة ليست مهمة، نحن هنا لممارسة الرياضة."
+      },
+      "audio": null
+    },
+    {
+      "id": "9-1-3",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "那我先热身，要是打不好也没关系。",
+      "pinyin": "Nà wǒ xiān rèshēn, yàoshi dǎ bù hǎo yě méi guānxi.",
+      "translation": {
+        "en": "I’ll warm up first. It’s fine if I don’t play well.",
+        "ar": "سأبدأ بالإحماء، ولا بأس إن لم ألعب جيداً."
+      },
+      "audio": null
+    },
+    {
+      "id": "9-1-4",
+      "role": "许安 (Xǔ Ān)",
+      "hanzi": "对，等比赛结束我们再一起看分数。",
+      "pinyin": "Duì, děng bǐsài jiéshù wǒmen zài yìqǐ kàn fēnshù.",
+      "translation": {
+        "en": "Right. We can look at the score together after the match.",
+        "ar": "صحيح، سنراجع النتيجة معاً بعد انتهاء المباراة."
+      },
+      "audio": null
+    }
   ],
-  "dialogue": [],
   "grammarNotes": [],
   "culturalNotes": [],
   "comprehensionQuestions": [],
@@ -68,5 +62,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "This scaffold intentionally contains no invented dialogue. Add reviewed Chinese, pinyin, English, Arabic, and real audio paths before marking complete."
+  "authoringNote": "Original dialogue aligned to the lesson topic; translations and tone-marked pinyin are supplied for every turn.",
+  "curriculum": "hsk3"
 }

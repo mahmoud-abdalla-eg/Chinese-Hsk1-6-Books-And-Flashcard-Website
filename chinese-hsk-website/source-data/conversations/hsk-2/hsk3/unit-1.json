@@ -14,209 +14,66 @@
     {
       "id": "1-1-1",
       "role": "白家月 (Bai Jiayue)",
-      "hanzi": "请问，您是王一飞老师的姐姐吗？",
-      "pinyin": "Qǐngwèn, nín shì Wáng Yīfēi lǎoshī de jiějie ma?",
+      "hanzi": "王老师，谢谢你今天来接我，还帮我安排晚饭。",
+      "pinyin": "Wáng lǎoshī, xièxie nǐ jīntiān lái jiē wǒ, hái bāng wǒ ānpái wǎnfàn.",
       "translation": {
-        "en": "Excuse me, are you Ms. Wang Yifei's older sister?",
-        "ar": "لو سمحتِ، هل حضرتكِ الأخت الكبرى للأستاذة وانغ ييفي؟"
+        "en": "Teacher Wang, thank you for picking me up today and helping arrange dinner.",
+        "ar": "أستاذة وانغ، شكراً لمجيئك لاستقبالي اليوم ولمساعدتي في ترتيب العشاء."
       },
       "audio": null
     },
     {
       "id": "1-1-2",
       "role": "王一雪 (Wang Yixue)",
-      "hanzi": "是的，你们就是她的学生吧？",
-      "pinyin": "Shì de, nǐmen jiù shì tā de xuésheng ba?",
+      "hanzi": "别客气。我已经跟姐姐说了，她很想认识你。",
+      "pinyin": "Bié kèqi. Wǒ yǐjīng gēn jiějie shuō le, tā hěn xiǎng rènshi nǐ.",
       "translation": {
-        "en": "Yes, I am. You two must be her students, right?",
-        "ar": "نعم، أنتما طالباها بلا شك، أليس كذلك؟"
+        "en": "No need to thank me. I already told my older sister, and she’s looking forward to meeting you.",
+        "ar": "لا داعي للشكر. أخبرت أختي الكبرى بالفعل، وهي تتطلع إلى التعرف إليك."
       },
       "audio": null
     },
     {
       "id": "1-1-3",
       "role": "白家月 (Bai Jiayue)",
-      "hanzi": "对。我是白家月，她是安妮。",
-      "pinyin": "Duì. Wǒ shì Bái Jiāyuè, tā shì Ānnī.",
+      "hanzi": "你好，王姐姐！第一次见面就让你请客，我有点儿不好意思。",
+      "pinyin": "Nǐ hǎo, Wáng jiějie! Dì-yī cì jiànmiàn jiù ràng nǐ qǐngkè, wǒ yǒudiǎnr bù hǎoyìsi.",
       "translation": {
-        "en": "Exactly. I'm Bai Jiayue, and this is Annie.",
-        "ar": "صحيح. أنا باي جيايوي، وهذه آني."
+        "en": "Hello, Ms. Wang! I feel a little awkward having you treat me on our first meeting.",
+        "ar": "مرحباً يا أخت وانغ! أشعر بشيء من الحرج لأنك ستعزمينني في أول لقاء لنا."
       },
       "audio": null
     },
     {
       "id": "1-1-4",
       "role": "王一雪 (Wang Yixue)",
-      "hanzi": "你们好，我叫王一雪。一飞给我打电话了，让我来接你们。",
-      "pinyin": "Nǐmen hǎo, wǒ jiào Wáng Yīxuě. Yīfēi gěi wǒ dǎ diànhuà le, ràng wǒ lái jiē nǐmen.",
+      "hanzi": "没关系。听说你喜欢旅游，我给你介绍一家北京老饭馆。",
+      "pinyin": "Méi guānxi. Tīngshuō nǐ xǐhuan lǚyóu, wǒ gěi nǐ jièshào yì jiā Běijīng lǎo fànguǎn.",
       "translation": {
-        "en": "Hello! I'm Wang Yixue. Yifei called me and asked me to pick you up.",
-        "ar": "مرحباً بكما! اسمي وانغ ييشيويه. اتصلت بي ييفي وطلبت مني القدوم لاستقبالكما."
+        "en": "That’s all right. I heard you enjoy travelling, so I’ll introduce you to an old Beijing restaurant.",
+        "ar": "لا بأس. سمعت أنك تحبين السفر، لذا سأعرّفك إلى مطعم بكيني قديم."
       },
       "audio": null
     },
     {
       "id": "1-1-5",
-      "role": "白家月和安妮 (Bai Jiayue & Annie)",
-      "hanzi": "谢谢您。",
-      "pinyin": "Xièxie nín.",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "太好了！我在网上看过北京烤鸭，一直想尝尝。",
+      "pinyin": "Tài hǎo le! Wǒ zài wǎngshang kàn guo Běijīng kǎoyā, yìzhí xiǎng chángchang.",
       "translation": {
-        "en": "Thank you very much.",
-        "ar": "شكراً جزيلاً لحضرتكِ."
+        "en": "That’s great! I’ve seen Peking duck online and have wanted to try it for ages.",
+        "ar": "رائع! شاهدت بط بكين المشوي على الإنترنت، وأردت تذوقه منذ مدة."
       },
       "audio": null
     },
     {
       "id": "1-1-6",
       "role": "王一雪 (Wang Yixue)",
-      "hanzi": "不客气。",
-      "pinyin": "Bú kèqi.",
+      "hanzi": "那今晚就吃这个吧。有时我也会带朋友来这里。",
+      "pinyin": "Nà jīnwǎn jiù chī zhège ba. Yǒushí wǒ yě huì dài péngyou lái zhèlǐ.",
       "translation": {
-        "en": "You're welcome.",
-        "ar": "على الرحب والسعة."
-      },
-      "audio": null
-    },
-    {
-      "id": "1-2-1",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "你们是第一次来北京吗？",
-      "pinyin": "Nǐmen shì dì-yī cì lái Běijīng ma?",
-      "translation": {
-        "en": "Is this your first time visiting Beijing?",
-        "ar": "هل هذه هي المرة الأولى التي تأتيان فيها إلى بكين؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "1-2-2",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "是的，我们都是第一次来。",
-      "pinyin": "Shì de, wǒmen dōu shì dì-yī cì lái.",
-      "translation": {
-        "en": "Yes, it is the first time for both of us.",
-        "ar": "نعم، كلتانا نزورها لأول مرة."
-      },
-      "audio": null
-    },
-    {
-      "id": "1-2-3",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "你们是来学中文的吗？",
-      "pinyin": "Nǐmen shì lái xué Zhōngwén de ma?",
-      "translation": {
-        "en": "Did you come here to study Chinese?",
-        "ar": "هل جئتما لتعلم اللغة الصينية؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "1-2-4",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "不是，我们是来旅游的。",
-      "pinyin": "Bú shì, wǒmen shì lái lǚyóu de.",
-      "translation": {
-        "en": "No, we came for tourism and travel.",
-        "ar": "كلا، لقد جئنا من أجل السياحة والسفر."
-      },
-      "audio": null
-    },
-    {
-      "id": "1-2-5",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "我这几天都不忙，你们有事就找我。",
-      "pinyin": "Wǒ zhè jǐ tiān dōu bù máng, nǐmen yǒu shì jiù zhǎo wǒ.",
-      "translation": {
-        "en": "I'm not busy these days; whenever you need anything, just reach out to me.",
-        "ar": "أنا لست مشغولة هذه الأيام، إذا احتجتما لأي شيء فتواصلا معي فوراً."
-      },
-      "audio": null
-    },
-    {
-      "id": "1-2-6",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "好的，谢谢您。",
-      "pinyin": "Hǎo de, xièxie nín.",
-      "translation": {
-        "en": "Great, thank you so much.",
-        "ar": "حسناً، شكراً جزيلاً لحضرتكِ."
-      },
-      "audio": null
-    },
-    {
-      "id": "1-3-1",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "喂，家月，你明天有时间吗？我想请你帮个忙。",
-      "pinyin": "Wèi, Jiāyuè, nǐ míngtiān yǒu shíjiān ma? Wǒ xiǎng qǐng nǐ bāng ge máng.",
-      "translation": {
-        "en": "Hello, Jiayue! Do you have time tomorrow? I'd like to ask you for a favor.",
-        "ar": "مرحباً جيايوي! هل لديكِ متسع من الوقت غداً؟ أود أن أطلب منكِ معروفاً."
-      },
-      "audio": null
-    },
-    {
-      "id": "1-3-2",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "不好意思，天中，我已经到北京了。",
-      "pinyin": "Bù hǎoyìsi, Tiānzhōng, wǒ yǐjīng dào Běijīng le.",
-      "translation": {
-        "en": "I'm sorry, Tianzhong, I have already arrived in Beijing.",
-        "ar": "أعتذر منك يا تيانتشونغ، لقد وصلت إلى بكين بالفعل."
-      },
-      "audio": null
-    },
-    {
-      "id": "1-3-3",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "你是什么时候到的？",
-      "pinyin": "Nǐ shì shénme shíhou dào de?",
-      "translation": {
-        "en": "When did you arrive?",
-        "ar": "متى وصلتِ؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "1-3-4",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "我是今天早上到的。你有事可以叫李文帮忙，他还在学校呢。",
-      "pinyin": "Wǒ shì jīntiān zǎoshang dào de. Nǐ yǒu shì kěyǐ jiào Lǐ Wén bāngmáng, tā hái zài xuéxiào ne.",
-      "translation": {
-        "en": "I arrived this morning. If you need anything, you can ask Li Wen for help—he's still at school.",
-        "ar": "وصلت صباح اليوم. إذا كان لديك أمر ما فيمكنك طلب المساعدة من لي ون، فهو لا يزال في الجامعة."
-      },
-      "audio": null
-    },
-    {
-      "id": "1-3-5",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "好的，那我给他打个电话。",
-      "pinyin": "Hǎo de, nà wǒ gěi tā dǎ ge diànhuà.",
-      "translation": {
-        "en": "Alright, then I'll give him a call.",
-        "ar": "حسناً، سأتصل به هاتفياً إذاً."
-      },
-      "audio": null
-    },
-    {
-      "id": "1-3-6",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "好的，再见！",
-      "pinyin": "Hǎo de, zàijiàn!",
-      "translation": {
-        "en": "Alright, goodbye!",
-        "ar": "حسناً، مع السلامة!"
-      },
-      "audio": null
-    },
-    {
-      "id": "1-4-1",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "王老师，我们已经到北京了，是您姐姐来接的我们。她请我们吃了北京烤鸭，还给我们介绍了很多东西。我们的中文不太好，有时不太懂她的意思。",
-      "pinyin": "Wáng lǎoshī, wǒmen yǐjīng dào Běijīng le, shì nín jiějie lái jiē de wǒmen. Tā qǐng wǒmen chīle Běijīng kǎoyā, hái gěi wǒmen jièshàole hěn duō dōngxi. Wǒmen de Zhōngwén bú tài hǎo, yǒushí bú tài dǒng tā de yìsi.",
-      "translation": {
-        "en": "Teacher Wang, we have already arrived in Beijing. Your older sister came to pick us up. She treated us to Peking Duck and introduced so many things to us. Our Chinese isn't very proficient yet, so sometimes we don't quite catch her meaning.",
-        "ar": "أستاذة وانغ، لقد وصلنا إلى بكين، وقد جاءت أختكِ الكبرى لاستقبالنا. لقد عزمتنا على بط بكين المشوي وشرحت لنا الكثير من الأمور. لغتنا الصينية ليست قوية بعد، لذا أحياناً لا نفهم قصدها تماماً."
+        "en": "Then let’s have that tonight. I sometimes bring friends here too.",
+        "ar": "إذن لنتناوله الليلة. أُحضر أصدقائي إلى هنا أحياناً أيضاً."
       },
       "audio": null
     }
@@ -287,5 +144,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 1."
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 1.",
+  "targetVocabularyIds": ["luyou", "jieshao", "beijing-kaoya"]
 }

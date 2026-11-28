@@ -13,199 +13,67 @@
   "dialogue": [
     {
       "id": "7-1-1",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "安妮，你是什么时候从北京回来的？",
-      "pinyin": "Ānnī, nǐ shì shénme shíhou cóng Běijīng huílái de?",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "你弟弟周末还去打篮球吗？",
+      "pinyin": "Nǐ dìdi zhōumò hái qù dǎ lánqiú ma?",
       "translation": {
-        "en": "Annie, when did you get back from Beijing?",
-        "ar": "آني، متى عدتِ من بكين؟"
+        "en": "Does your younger brother still play basketball on weekends?",
+        "ar": "هل لا يزال أخوك الأصغر يلعب كرة السلة في عطلة نهاية الأسبوع؟"
       },
       "audio": null
     },
     {
       "id": "7-1-2",
-      "role": "安妮 (Annie)",
-      "hanzi": "昨天下午。天中，你怎么一下课就往外跑？",
-      "pinyin": "Zuótiān xiàwǔ. Tiānzhōng, nǐ zěnme yí xiàkè jiù wǎng wài pǎo?",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "去啊，他每天都练，打得越来越好了。",
+      "pinyin": "Qù a, tā měitiān dōu liàn, dǎ de yuèláiyuè hǎo le.",
       "translation": {
-        "en": "Yesterday afternoon. Tianzhong, why do you rush outside as soon as class ends?",
-        "ar": "بعد ظهر أمس. يا تيانتشونغ، لماذا تهرع إلى الخارج بمجرد انتهاء الحصة؟"
+        "en": "Yes. He practices every day and is getting better and better.",
+        "ar": "نعم، يتدرب كل يوم، وأصبح يلعب أفضل فأفضل."
       },
       "audio": null
     },
     {
       "id": "7-1-3",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "我跟同学说好了，一起去打篮球。",
-      "pinyin": "Wǒ gēn tóngxué shuōhǎo le, yìqǐ qù dǎ lánqiú.",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "他最喜欢什么运动？我以为他喜欢足球。",
+      "pinyin": "Tā zuì xǐhuan shénme yùndòng? Wǒ yǐwéi tā xǐhuan zúqiú.",
       "translation": {
-        "en": "I made plans with my classmates to go play basketball together.",
-        "ar": "اتفقت مع زملائي على الذهاب للعب كرة السلة معاً."
+        "en": "What sport does he like best? I thought he liked soccer.",
+        "ar": "ما الرياضة التي يحبها أكثر؟ ظننت أنه يحب كرة القدم."
       },
       "audio": null
     },
     {
       "id": "7-1-4",
-      "role": "安妮 (Annie)",
-      "hanzi": "我也想跟你们一起玩。",
-      "pinyin": "Wǒ yě xiǎng gēn nǐmen yìqǐ wán.",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "以前喜欢，现在篮球是他的爱好。他也常跑步。",
+      "pinyin": "Yǐqián xǐhuan, xiànzài lánqiú shì tā de àihào. Tā yě cháng pǎobù.",
       "translation": {
-        "en": "I'd like to join and play with you guys too.",
-        "ar": "أود اللعب معتكم أيضاً."
+        "en": "He used to, but now basketball is his hobby. He also runs often.",
+        "ar": "كان يحبها من قبل، أما الآن فهوايته كرة السلة. وهو يركض كثيراً أيضاً."
       },
       "audio": null
     },
     {
       "id": "7-1-5",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "没问题，走吧。",
-      "pinyin": "Méi wèntí, zǒu ba.",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "那他会游泳吗？运动以后怎么休息？",
+      "pinyin": "Nà tā huì yóuyǒng ma? Yùndòng yǐhòu zěnme xiūxi?",
       "translation": {
-        "en": "No problem! Let's go.",
-        "ar": "لا مشكلة على الإطلاق، هيا بنا."
+        "en": "Can he swim too? How does he rest after exercising?",
+        "ar": "هل يستطيع السباحة أيضاً؟ وكيف يستريح بعد التمرين؟"
       },
       "audio": null
     },
     {
-      "id": "7-2-1",
-      "role": "安妮 (Annie)",
-      "hanzi": "天中，你是不是很喜欢打篮球？",
-      "pinyin": "Tiānzhōng, nǐ shì bu shì hěn xǐhuan dǎ lánqiú?",
+      "id": "7-1-6",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "会，他夏天常去游泳。我们周六可以一起去看他比赛。",
+      "pinyin": "Huì, tā xiàtiān cháng qù yóuyǒng. Wǒmen zhōuliù kěyǐ yìqǐ qù kàn tā bǐsài.",
       "translation": {
-        "en": "Tianzhong, do you really like playing basketball?",
-        "ar": "تيانتشونغ، هل تحب حقاً لعب كرة السلة؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "7-2-2",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "是啊。",
-      "pinyin": "Shì a.",
-      "translation": {
-        "en": "Yes, I do.",
-        "ar": "نعم بالتأكيد."
-      },
-      "audio": null
-    },
-    {
-      "id": "7-2-3",
-      "role": "安妮 (Annie)",
-      "hanzi": "你还喜欢什么运动？",
-      "pinyin": "Nǐ hái xǐhuan shénme yùndòng?",
-      "translation": {
-        "en": "What other sports do you like?",
-        "ar": "ما الرياضات الأخرى التي تفضلها أيضاً؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "7-2-4",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "我还喜欢踢足球，一到星期天就跟朋友们去踢球。",
-      "pinyin": "Wǒ hái xǐhuan tī zúqiú, yí dào xīngqītiān jiù gēn péngyoumen qù tī qiú.",
-      "translation": {
-        "en": "I also love playing soccer. Whenever Sunday comes, I go play ball with friends.",
-        "ar": "أحب أيضاً لعب كرة القدم، وبمجرد حلول يوم الأحد أذهب للعب الكرة مع الأصدقاء."
-      },
-      "audio": null
-    },
-    {
-      "id": "7-2-5",
-      "role": "安妮 (Annie)",
-      "hanzi": "你踢得怎么样？",
-      "pinyin": "Nǐ tī de zěnmeyàng?",
-      "translation": {
-        "en": "How well do you play?",
-        "ar": "كيف هو مستواك في اللعب؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "7-2-6",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "我踢得还可以。",
-      "pinyin": "Wǒ tī de hái kěyǐ.",
-      "translation": {
-        "en": "I play pretty decently.",
-        "ar": "ألعب بشكل لا بأس به."
-      },
-      "audio": null
-    },
-    {
-      "id": "7-3-1",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "你篮球打得怎么样？",
-      "pinyin": "Nǐ lánqiú dǎ de zěnmeyàng?",
-      "translation": {
-        "en": "How are your basketball skills?",
-        "ar": "كيف هو مستواكِ في كرة السلة؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "7-3-2",
-      "role": "安妮 (Annie)",
-      "hanzi": "还行吧。",
-      "pinyin": "Hái xíng ba.",
-      "translation": {
-        "en": "It's alright, I guess.",
-        "ar": "مستواي مقبول نوعاً ما."
-      },
-      "audio": null
-    },
-    {
-      "id": "7-3-3",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "跑步呢？你跑得快不快？",
-      "pinyin": "Pǎobù ne? Nǐ pǎo de kuài bu kuài?",
-      "translation": {
-        "en": "What about running? Do you run fast?",
-        "ar": "وماذا عن الجري؟ هل تجرين بسرعة؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "7-3-4",
-      "role": "安妮 (Annie)",
-      "hanzi": "我跑得不快，也不太喜欢跑步。",
-      "pinyin": "Wǒ pǎo de bú kuài, yě bú tài xǐhuan pǎobù.",
-      "translation": {
-        "en": "I don't run fast, and I don't really like running either.",
-        "ar": "لا أجري بسرعة، ولا أحب الجري كثيراً في الواقع."
-      },
-      "audio": null
-    },
-    {
-      "id": "7-3-5",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "那你喜欢游泳吗？",
-      "pinyin": "Nà nǐ xǐhuan yóuyǒng ma?",
-      "translation": {
-        "en": "Then do you like swimming?",
-        "ar": "إذاً هل تحبين السباحة؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "7-3-6",
-      "role": "安妮 (Annie)",
-      "hanzi": "喜欢，但我游泳游得不快。",
-      "pinyin": "Xǐhuan, dàn wǒ yóuyǒng yóu de bú kuài.",
-      "translation": {
-        "en": "I do, but I don't swim very fast.",
-        "ar": "أحبها، لكنني لا أسبح بسرعة."
-      },
-      "audio": null
-    },
-    {
-      "id": "7-4-1",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "我的爱好是运动。从上小学开始，我每天都跟爸爸去运动。现在我篮球打得很好，足球踢得不错，游泳游得也很快。我一有时间就去运动。",
-      "pinyin": "Wǒ de àihào shì yùndòng. Cóng shàng xiǎoxué kāishǐ, wǒ měi tiān dōu gēn bàba qù yùndòng. Xiànzài wǒ lánqiú dǎ de hěn hǎo, zúqiú tī de búcuò, yóuyǒng yóu de yě hěn kuài. Wǒ yì yǒu shíjiān jiù qù yùndòng.",
-      "translation": {
-        "en": "My hobby is doing sports. Ever since primary school, I have exercised with my dad every day. Now I play basketball very well, play soccer quite well, and swim very fast too. Whenever I have free time, I go play sports.",
-        "ar": "هوايتي هي ممارسة الرياضة. منذ بدأت المرحلة الابتدائية، وأنا أمارس الرياضة مع والدي كل يوم. والآن أنا ألعب كرة السلة ببراعة، وألعب كرة القدم بشكل جيد، وأسبح بسرعة فائقة أيضاً. وبمجرد أن يتوفر لدي أي وقت، أذهب لممارسة الرياضة."
+        "en": "Yes, he often goes swimming in summer. We can go watch his game together Saturday.",
+        "ar": "نعم، يذهب للسباحة كثيراً في الصيف. يمكننا الذهاب لمشاهدة مباراته معاً يوم السبت."
       },
       "audio": null
     }
@@ -271,5 +139,6 @@
       ],
       "answerIndex": 0
     }
-  ]
+  ],
+  "targetVocabularyIds": ["aihao", "lanqiu", "pao-bu", "youyong", "yundong"]
 }

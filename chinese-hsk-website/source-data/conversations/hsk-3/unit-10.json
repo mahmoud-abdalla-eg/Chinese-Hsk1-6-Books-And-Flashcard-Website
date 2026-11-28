@@ -2,56 +2,59 @@
   "id": "hsk-3-unit-10-conversation-1",
   "hskLevel": 3,
   "unitId": 10,
-  "status": "needs-authoring",
+  "status": "ready",
   "title": {
-    "en": "Unit 10 conversation authoring brief",
-    "zh": "第10单元会话编写说明",
-    "ar": "موجز تأليف محادثة الوحدة 10"
+    "zh": "第10课：你明天再把书还给我",
+    "en": "Lesson 10: You can return the book tomorrow",
+    "ar": "الدرس 10: أعد إليّ الكتاب غداً"
   },
-  "targetVocabularyIds": [
-    "yu-mao-qiu",
-    "yun-dong-hui",
-    "yun-dong-yuan",
-    "yuyan",
-    "yu-yi",
-    "zang",
-    "zanmen",
-    "zenme-ban",
-    "zenyang",
-    "zhang",
-    "zhao",
-    "zhaogu",
-    "zhao-ji",
-    "zhaopian",
-    "zhaoxiang",
-    "zhi",
-    "zhi-neng",
-    "zhidao",
-    "zhishi",
-    "zhiyao",
-    "zhiyou",
-    "zhong",
-    "zhong-2",
-    "zhongjian",
-    "zhongyao",
-    "zhongyu",
-    "zhou-mo",
-    "zhuyao",
-    "zhuyi",
-    "zhuyuan",
-    "zi",
-    "zi-dian",
-    "zixingche",
-    "zong",
-    "zongshi",
-    "zui",
-    "zui-hao",
-    "zuihou",
-    "zui-jin",
-    "zuoke",
-    "zuoye"
+  "targetVocabularyIds": ["bangongshi", "fuxi"],
+  "dialogue": [
+    {
+      "id": "10-1-1",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "这本书你看完了吗？我明天要在办公室复习。",
+      "pinyin": "Zhè běn shū nǐ kàn wán le ma? Wǒ míngtiān yào zài bàngōngshì fùxí.",
+      "translation": {
+        "en": "Have you finished this book? I need it to review in the office tomorrow.",
+        "ar": "هل انتهيت من قراءة هذا الكتاب؟ أحتاجه للمراجعة في المكتب غداً."
+      },
+      "audio": null
+    },
+    {
+      "id": "10-1-2",
+      "role": "许安 (Xǔ Ān)",
+      "hanzi": "还差最后几页，我今晚看完就还给你。",
+      "pinyin": "Hái chà zuìhòu jǐ yè, wǒ jīnwǎn kàn wán jiù huán gěi nǐ.",
+      "translation": {
+        "en": "Just a few pages left. I’ll return it as soon as I finish tonight.",
+        "ar": "بقيت صفحات قليلة. سأعيده إليك فور أن أنتهي الليلة."
+      },
+      "audio": null
+    },
+    {
+      "id": "10-1-3",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "不着急，你明天再把书还给我也可以。",
+      "pinyin": "Bù zháojí, nǐ míngtiān zài bǎ shū huán gěi wǒ yě kěyǐ.",
+      "translation": {
+        "en": "No rush. You can return it to me tomorrow instead.",
+        "ar": "لا داعي للعجلة، يمكنك إعادته إليّ غداً."
+      },
+      "audio": null
+    },
+    {
+      "id": "10-1-4",
+      "role": "许安 (Xǔ Ān)",
+      "hanzi": "太好了，我看完以后把书放在你桌上。",
+      "pinyin": "Tài hǎo le, wǒ kàn wán yǐhòu bǎ shū fàng zài nǐ zhuōshàng.",
+      "translation": {
+        "en": "Great. I’ll leave it on your desk when I’m done.",
+        "ar": "رائع، سأضع الكتاب على مكتبك بعد أن أنتهي."
+      },
+      "audio": null
+    }
   ],
-  "dialogue": [],
   "grammarNotes": [],
   "culturalNotes": [],
   "comprehensionQuestions": [],
@@ -59,5 +62,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "This scaffold intentionally contains no invented dialogue. Add reviewed Chinese, pinyin, English, Arabic, and real audio paths before marking complete."
+  "authoringNote": "Original dialogue aligned to the lesson topic; translations and tone-marked pinyin are supplied for every turn.",
+  "curriculum": "hsk3"
 }

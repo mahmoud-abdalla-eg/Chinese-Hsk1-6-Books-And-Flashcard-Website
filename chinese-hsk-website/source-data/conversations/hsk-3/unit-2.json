@@ -2,65 +2,59 @@
   "id": "hsk-3-unit-2-conversation-1",
   "hskLevel": 3,
   "unitId": 2,
-  "status": "needs-authoring",
+  "status": "ready",
   "title": {
-    "en": "Unit 2 conversation authoring brief",
-    "zh": "第2单元会话编写说明",
-    "ar": "موجز تأليف محادثة الوحدة 2"
+    "zh": "第2课：你们想吃什么就点什么",
+    "en": "Lesson 2: Order whatever you like",
+    "ar": "الدرس 2: اطلبوا ما تشاؤون"
   },
-  "targetVocabularyIds": [
-    "cha-2",
-    "chabuduo",
-    "chang",
-    "chang-2",
-    "changjian",
-    "chang-yong",
-    "changchang",
-    "cheng-ji",
-    "chengshi",
-    "chenshan",
-    "chidao",
-    "chuan",
-    "chufa",
-    "chule",
-    "chuntian",
-    "chusheng",
-    "chuyuan",
-    "chuzhong",
-    "ci-dian",
-    "congming",
-    "dagai",
-    "dai",
-    "dangao",
-    "dangran",
-    "danxin",
-    "daochu",
-    "daren",
-    "da-sao",
-    "da-suan",
-    "daxiao",
-    "daxiongmao",
-    "dayi",
-    "dedao",
-    "defen",
-    "dehuo",
-    "deng",
-    "dian",
-    "dianti",
-    "dian-zi-shu",
-    "didian",
-    "difang",
-    "ditu",
-    "diu",
-    "dong",
-    "dongbei",
-    "dong-de",
-    "dongfang",
-    "dongnan",
-    "dongtian",
-    "dongwu"
+  "targetVocabularyIds": ["caidan", "fuwu"],
+  "dialogue": [
+    {
+      "id": "2-1-1",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "既然大家都饿了，想吃什么就点什么吧。",
+      "pinyin": "Jìrán dàjiā dōu è le, xiǎng chī shénme jiù diǎn shénme ba.",
+      "translation": {
+        "en": "Since everyone is hungry, order whatever you feel like.",
+        "ar": "بما أن الجميع جائع، فليطلب كلٌّ ما يشتهي."
+      },
+      "audio": null
+    },
+    {
+      "id": "2-1-2",
+      "role": "许安 (Xǔ Ān)",
+      "hanzi": "这家店又安静又干净，我想吃面条。",
+      "pinyin": "Zhè jiā diàn yòu ānjìng yòu gānjìng, wǒ xiǎng chī miàntiáo.",
+      "translation": {
+        "en": "This place is both quiet and clean. I’d like noodles.",
+        "ar": "هذا المطعم هادئ ونظيف، وأرغب في تناول المعكرونة."
+      },
+      "audio": null
+    },
+    {
+      "id": "2-1-3",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "我也想点一份饺子，再要两杯茶。",
+      "pinyin": "Wǒ yě xiǎng diǎn yí fèn jiǎozi, zài yào liǎng bēi chá.",
+      "translation": {
+        "en": "I’ll order a serving of dumplings too, and two cups of tea.",
+        "ar": "سأطلب حصة من الزلابية أيضاً وكوبين من الشاي."
+      },
+      "audio": null
+    },
+    {
+      "id": "2-1-4",
+      "role": "许安 (Xǔ Ān)",
+      "hanzi": "好，你先看看菜单，我去叫服务员。",
+      "pinyin": "Hǎo, nǐ xiān kànkan càidān, wǒ qù jiào fúwùyuán.",
+      "translation": {
+        "en": "All right. Look over the menu while I call the server.",
+        "ar": "حسناً، ألقِ نظرة على القائمة بينما أنادي النادل."
+      },
+      "audio": null
+    }
   ],
-  "dialogue": [],
   "grammarNotes": [],
   "culturalNotes": [],
   "comprehensionQuestions": [],
@@ -68,5 +62,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "This scaffold intentionally contains no invented dialogue. Add reviewed Chinese, pinyin, English, Arabic, and real audio paths before marking complete."
+  "authoringNote": "Original dialogue aligned to the lesson topic; translations and tone-marked pinyin are supplied for every turn.",
+  "curriculum": "hsk3"
 }

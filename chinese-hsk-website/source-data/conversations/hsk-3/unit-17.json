@@ -1,0 +1,68 @@
+{
+  "id": "hsk-3-unit-17-conversation-1",
+  "hskLevel": 3,
+  "unitId": 17,
+  "contentType": "dialogue",
+  "title": {
+    "zh": "第17课：我要多向认真的人学习",
+    "en": "Lesson 17: Learning from careful people",
+    "ar": "الدرس 17: أريد أن أتعلم من الأشخاص المجتهدين"
+  },
+  "dialogue": [
+    {
+      "id": "17-1-1",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "你做事这么认真，我应该多向你学习。",
+      "pinyin": "Nǐ zuòshì zhème rènzhēn, wǒ yīnggāi duō xiàng nǐ xuéxí.",
+      "translation": {
+        "en": "You’re so careful with your work. I should learn from you.",
+        "ar": "أنت دقيق جداً في عملك، وينبغي أن أتعلم منك."
+      },
+      "audio": null
+    },
+    {
+      "id": "17-1-2",
+      "role": "许安 (Xǔ Ān)",
+      "hanzi": "我只是习惯先把事情安排好，再继续做。",
+      "pinyin": "Wǒ zhǐshì xíguàn xiān bǎ shìqing ānpái hǎo, zài jìxù zuò.",
+      "translation": {
+        "en": "I’m just used to planning things before I continue.",
+        "ar": "اعتدت فحسب أن أرتب الأمور قبل أن أواصل العمل."
+      },
+      "audio": null
+    },
+    {
+      "id": "17-1-3",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "要是我每天也这样准备，工作就不会这么乱了。",
+      "pinyin": "Yàoshi wǒ měitiān yě zhèyàng zhǔnbèi, gōngzuò jiù bú huì zhème luàn le.",
+      "translation": {
+        "en": "If I prepared like that every day, my work wouldn’t be so chaotic.",
+        "ar": "لو استعددت كل يوم بهذه الطريقة، لما كان عملي فوضوياً."
+      },
+      "audio": null
+    },
+    {
+      "id": "17-1-4",
+      "role": "许安 (Xǔ Ān)",
+      "hanzi": "慢慢来，先从写下每天要做的事开始吧，遇到难题再问我。",
+      "pinyin": "Mànmàn lái, xiān cóng xiěxià měitiān yào zuò de shì kāishǐ ba, yùdào nántí zài wèn wǒ.",
+      "translation": {
+        "en": "Take it step by step. Write down your daily tasks, and ask me when you run into a problem.",
+        "ar": "ابدأ بالتدريج، واكتب مهامك اليومية، واسألني إن واجهت مسألة صعبة."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [],
+  "culturalNotes": [],
+  "comprehensionQuestions": [],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "status": "ready",
+  "curriculum": "hsk3",
+  "targetVocabularyIds": ["jixu", "nanti"],
+  "authoringNote": "Original dialogue aligned to the lesson topic; translations and tone-marked pinyin are supplied for every turn."
+}

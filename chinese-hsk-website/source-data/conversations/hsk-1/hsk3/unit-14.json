@@ -12,167 +12,68 @@
   },
   "dialogue": [
     {
-      "id": "14-1-1",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "你们上火车后看见王老师了吗？",
-      "pinyin": "Nǐmen shàng huǒchē hòu kànjiàn Wáng lǎoshī le ma?",
+      "id": "14-movie-1",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "昨天晚上你坐火车回家了吗？",
+      "pinyin": "Zuótiān wǎnshang nǐ zuò huǒchē huí jiā le ma?",
       "translation": {
-        "en": "Did you see Teacher Wang after getting on the train?",
-        "ar": "هل رأيتم الأستاذة وانغ بعد ركوبكم القطار؟"
+        "en": "Did you take the train home last night?",
+        "ar": "هل عدت إلى المنزل بالقطار مساء أمس؟"
       },
       "audio": null
     },
     {
-      "id": "14-1-2",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "没看见。中午车开后，有些人看书，有些人睡觉了。",
-      "pinyin": "Méi kànjiàn. Zhōngwǔ chē kāi hòu, yǒuxiē rén kàn shū, yǒuxiē rén shuìjiào le.",
+      "id": "14-movie-2",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "是的，我在火车上看了一部电影。",
+      "pinyin": "Shì de, wǒ zài huǒchē shàng kàn le yí bù diànyǐng.",
       "translation": {
-        "en": "No, we didn't. After the train departed at noon, some people read books, and some fell asleep.",
-        "ar": "لم نرها. بعد تحرك القطار ظهراً، كان بعض الأشخاص يقرأون وبعضهم نام."
+        "en": "Yes, I watched a movie on the train.",
+        "ar": "نعم، شاهدت فيلماً في القطار."
       },
       "audio": null
     },
     {
-      "id": "14-1-3",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "你呢？",
-      "pinyin": "Nǐ ne?",
+      "id": "14-movie-3",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "电影讲什么？里面有哪些人？",
+      "pinyin": "Diànyǐng jiǎng shénme? Lǐmiàn yǒu nǎxiē rén?",
       "translation": {
-        "en": "How about you?",
-        "ar": "وأنت ماذا عنك؟"
+        "en": "What was it about? Which people were in it?",
+        "ar": "عمّ كان الفيلم؟ ومن الشخصيات فيه؟"
       },
       "audio": null
     },
     {
-      "id": "14-1-4",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "我看了一个电影。",
-      "pinyin": "Wǒ kànle yí gè diànyǐng.",
+      "id": "14-movie-4",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "有几个中学生，他们一起学汉语、写汉字。",
+      "pinyin": "Yǒu jǐ ge zhōngxuéshēng, tāmen yìqǐ xué Hànyǔ, xiě Hànzì.",
       "translation": {
-        "en": "I watched a movie.",
-        "ar": "شاهدت فيلماً."
+        "en": "There were some middle-school students learning Mandarin and writing Chinese characters together.",
+        "ar": "كان فيه بعض طلاب المرحلة الإعدادية يتعلمون الصينية ويكتبون الحروف الصينية معاً."
       },
       "audio": null
     },
     {
-      "id": "14-2-1",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "你们会说汉语了，也会写汉字了吗？",
-      "pinyin": "Nǐmen huì shuō Hànyǔ le, yě huì xiě Hànzì le ma?",
+      "id": "14-movie-5",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "他们在电影里说话多吗？",
+      "pinyin": "Tāmen zài diànyǐng lǐ shuōhuà duō ma?",
       "translation": {
-        "en": "Now that you can speak Chinese, can you also write Chinese characters?",
-        "ar": "صرتم تجيدون التحدث بالصينية، فهل صرتم تجيدون كتابة المقاطع الصينية أيضاً؟"
+        "en": "Did they talk a lot in the movie?",
+        "ar": "هل تحدثوا كثيراً في الفيلم؟"
       },
       "audio": null
     },
     {
-      "id": "14-2-2",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "我们都会写了。",
-      "pinyin": "Wǒmen dōu huì xiě le.",
+      "id": "14-movie-6",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "不多。明年我女儿也要上中学，她很喜欢这个故事。",
+      "pinyin": "Bù duō. Míngnián wǒ nǚ’ér yě yào shàng zhōngxué, tā hěn xǐhuan zhège gùshi.",
       "translation": {
-        "en": "We can all write them now.",
-        "ar": "أصبحنا جميعاً نعرف كيف نكتبها."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-2-3",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "老师，我听不见。",
-      "pinyin": "Lǎoshī, wǒ tīng bú jiàn.",
-      "translation": {
-        "en": "Teacher, I cannot hear you.",
-        "ar": "يا أستاذ، لا أستطيع سماعك."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-2-4",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "请大家不要说话！请听老师的问题：你们都会写哪些汉字了？",
-      "pinyin": "Qǐng dàjiā búyào shuōhuà! Qǐng tīng lǎoshī de wèntí: Nǐmen dōu huì xiě nǎxiē Hànzì le?",
-      "translation": {
-        "en": "Everyone, please don't talk! Please listen to my question: Which Chinese characters can you all write now?",
-        "ar": "رجاءً من الجميع التوقف عن الكلام! اسمعوا سؤال المعلم: ما هي المقاطع الصينية التي يمكنكم كتابتها الآن؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "14-2-5",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "我会写这些字了，您看！",
-      "pinyin": "Wǒ huì xiě zhèxiē zì le, nín kàn!",
-      "translation": {
-        "en": "I know how to write these characters now, look!",
-        "ar": "صرت أعرف كتابة هذه الحروف، انظر حضرتك!"
-      },
-      "audio": null
-    },
-    {
-      "id": "14-3-1",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "明年女儿上中学。",
-      "pinyin": "Míngnián nǚ'ér shàng zhōngxué.",
-      "translation": {
-        "en": "Next year our daughter starts middle school.",
-        "ar": "في العام القادم ستدخل ابنتنا المدرسة الإعدادية."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-3-2",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "对。儿子也上小学了。",
-      "pinyin": "Duì. Érzi yě shàng xiǎoxué le.",
-      "translation": {
-        "en": "Right. Our son will also start primary school.",
-        "ar": "صحيح. وابننا أيضاً سيبدأ المدرسة الابتدائية."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-3-3",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "我们家有了一个中学生。",
-      "pinyin": "Wǒmen jiā yǒu le yí gè zhōngxuéshēng.",
-      "translation": {
-        "en": "Our home will have a middle schooler.",
-        "ar": "سيكون في عائلتنا طالب مرحلة إعدادية."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-3-4",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "还有了一个小学生。",
-      "pinyin": "Hái yǒu le yí gè xiǎoxuéshēng.",
-      "translation": {
-        "en": "And also a primary schooler.",
-        "ar": "وطالب مدرسة ابتدائية أيضاً."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-3-5",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "上学后，他们都忙了。",
-      "pinyin": "Shàngxué hòu, tāmen dōu máng le.",
-      "translation": {
-        "en": "Once school starts, they will both be busy.",
-        "ar": "بعد بدء الدراسة، سيصبح كلاهما مشغولاً."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-3-6",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "是的。太晚了，睡觉吧。",
-      "pinyin": "Shì de. Tài wǎn le, shuìjiào ba.",
-      "translation": {
-        "en": "Yes. It's late now, let's go to sleep.",
-        "ar": "أجل. الوقت تأخر جداً، فلننم الآن."
+        "en": "Not much. My daughter starts middle school next year, and she really likes this story.",
+        "ar": "ليس كثيراً. ستلتحق ابنتي بالمدرسة الإعدادية العام المقبل، وهي تحب هذه القصة كثيراً."
       },
       "audio": null
     }
@@ -231,5 +132,15 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 14."
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 14.",
+  "targetVocabularyIds": [
+    "huoche",
+    "mingnian",
+    "shuo-hua",
+    "tamen",
+    "zhongxue",
+    "zhongxuesheng",
+    "hanyu",
+    "hanzi"
+  ]
 }

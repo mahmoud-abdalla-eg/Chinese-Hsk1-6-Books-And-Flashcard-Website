@@ -10,77 +10,55 @@
     "ar": "الدرس 1: مرحباً"
   },
   "targetVocabularyIds": [
-    "ni",
-    "hao-2",
-    "nin",
-    "nimen",
-    "duibuqi",
-    "mei-guanxi"
+    "jintian",
+    "mingzi",
+    "ni-hao",
+    "shenme",
+    "tongxue",
+    "women"
   ],
   "dialogue": [
     {
       "id": "1-1-1",
-      "role": "Speaker A",
-      "hanzi": "你好！",
-      "pinyin": "Nǐ hǎo!",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "你好！你是安娜吗？",
+      "pinyin": "Nǐ hǎo! Nǐ shì Ānnà ma?",
       "translation": {
-        "en": "Hello!",
-        "ar": "مرحباً!"
+        "en": "Hi! Are you Anna?",
+        "ar": "مرحباً! هل أنت آنا؟"
       },
       "audio": null
     },
     {
       "id": "1-1-2",
-      "role": "Speaker B",
-      "hanzi": "你好！",
-      "pinyin": "Nǐ hǎo!",
+      "role": "安娜 (Ānnà)",
+      "hanzi": "你好，我是安娜。你叫什么名字？",
+      "pinyin": "Nǐ hǎo, wǒ shì Ānnà. Nǐ jiào shénme míngzi?",
       "translation": {
-        "en": "Hello!",
-        "ar": "مرحباً!"
+        "en": "Hi, I’m Anna. What’s your name?",
+        "ar": "مرحباً، أنا آنا. ما اسمك؟"
       },
       "audio": null
     },
     {
-      "id": "1-2-1",
-      "role": "Speaker A",
-      "hanzi": "您好！",
-      "pinyin": "Nín hǎo!",
+      "id": "1-1-3",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "我叫林然，是今天来的新同学。",
+      "pinyin": "Wǒ jiào Lín Rán, shì jīntiān lái de xīn tóngxué.",
       "translation": {
-        "en": "Hello (respectful)!",
-        "ar": "أهلاً وسهلاً بكَ (بصيغة الاحترام)!"
+        "en": "I’m Lin Ran, the new student who arrived today.",
+        "ar": "اسمي لين ران، وأنا الطالب الجديد الذي وصل اليوم."
       },
       "audio": null
     },
     {
-      "id": "1-2-2",
-      "role": "Speaker B",
-      "hanzi": "你们好！",
-      "pinyin": "Nǐmen hǎo!",
+      "id": "1-1-4",
+      "role": "安娜 (Ānnà)",
+      "hanzi": "欢迎你！我们一起去教室吧。",
+      "pinyin": "Huānyíng nǐ! Wǒmen yìqǐ qù jiàoshì ba.",
       "translation": {
-        "en": "Hello everyone!",
-        "ar": "مرحباً بكم جميعاً!"
-      },
-      "audio": null
-    },
-    {
-      "id": "1-3-1",
-      "role": "Speaker A",
-      "hanzi": "对不起！",
-      "pinyin": "Duìbuqǐ!",
-      "translation": {
-        "en": "I am sorry!",
-        "ar": "أنا آسف!"
-      },
-      "audio": null
-    },
-    {
-      "id": "1-3-2",
-      "role": "Speaker B",
-      "hanzi": "没关系！",
-      "pinyin": "Méi guānxi!",
-      "translation": {
-        "en": "That is all right!",
-        "ar": "لا بأس! (لا عليك!)"
+        "en": "Welcome! Let’s go to the classroom together.",
+        "ar": "أهلاً بك! لنذهب إلى الصف معاً."
       },
       "audio": null
     }
@@ -122,5 +100,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official HSK 1 Standard Course Lesson 1 dialogues."
+  "authoringNote": "Official HSK 1 Standard Course Lesson 1 dialogues.",
+  "curriculum": "standard"
 }

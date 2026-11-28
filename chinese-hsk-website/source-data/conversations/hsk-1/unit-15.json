@@ -10,145 +10,57 @@
     "ar": "الدرس 15: لقد جئتُ بالطائرة"
   },
   "targetVocabularyIds": [
-    "ren-shi",
-    "nian",
-    "daxue",
-    "fanguan",
-    "chuzuche",
-    "gaoxing",
-    "ting",
-    "fei-ji"
+    "fei-ji",
+    "huoche",
+    "jichang",
+    "jintian",
+    "shangwu",
+    "zenme",
+    "zhe-li",
+    "beijing"
   ],
   "dialogue": [
     {
       "id": "15-1-1",
-      "role": "Speaker A",
-      "hanzi": "你和李小姐是什么时候认识的？",
-      "pinyin": "Nǐ hé Lǐ xiǎojiě shì shénme shíhou rènshi de?",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "你怎么来北京的？坐火车还是飞机？",
+      "pinyin": "Nǐ zěnme lái Běijīng de? Zuò huǒchē háishi fēijī?",
       "translation": {
-        "en": "When did you and Miss Li get to know each other?",
-        "ar": "متى تعرفتَ على الآنسة لي؟"
+        "en": "How did you get to Beijing, by train or by plane?",
+        "ar": "كيف وصلت إلى بكين، بالقطار أم بالطائرة؟"
       },
       "audio": null
     },
     {
       "id": "15-1-2",
-      "role": "Speaker B",
-      "hanzi": "我们是2011年9月认识的。",
-      "pinyin": "Wǒmen shì èr líng yī yī nián jiǔ yuè rènshi de.",
+      "role": "安娜 (Ānnà)",
+      "hanzi": "我坐飞机来的，今天上午刚到。",
+      "pinyin": "Wǒ zuò fēijī lái de, jīntiān shàngwǔ gāng dào.",
       "translation": {
-        "en": "We met in September 2011.",
-        "ar": "تعرفنا في سبتمبر عام 2011."
+        "en": "I flew here and arrived just this morning.",
+        "ar": "جئت بالطائرة ووصلت هذا الصباح."
       },
       "audio": null
     },
     {
       "id": "15-1-3",
-      "role": "Speaker A",
-      "hanzi": "你们在哪儿认识的？",
-      "pinyin": "Nǐmen zài nǎr rènshi de?",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "机场离这里远吗？你怎么过来的？",
+      "pinyin": "Jīchǎng lí zhèlǐ yuǎn ma? Nǐ zěnme guòlái de?",
       "translation": {
-        "en": "Where did you meet?",
-        "ar": "أين التقيتما؟"
+        "en": "Is the airport far? How did you get here?",
+        "ar": "هل المطار بعيد من هنا؟ كيف وصلت إلى هنا؟"
       },
       "audio": null
     },
     {
       "id": "15-1-4",
-      "role": "Speaker B",
-      "hanzi": "我们是在学校认识的，她是我大学同学。",
-      "pinyin": "Wǒmen shì zài xuéxiào rènshi de, tā shì wǒ dàxué tóngxué.",
+      "role": "安娜 (Ānnà)",
+      "hanzi": "不太远，我坐地铁过来的，很方便。",
+      "pinyin": "Bú tài yuǎn, wǒ zuò dìtiě guòlái de, hěn fāngbiàn.",
       "translation": {
-        "en": "We met at school; she was my university classmate.",
-        "ar": "التقينا في الجامعة، كانت زميلتي في دراستي الجامعية."
-      },
-      "audio": null
-    },
-    {
-      "id": "15-2-1",
-      "role": "Speaker A",
-      "hanzi": "你们是怎么来饭馆的？",
-      "pinyin": "Nǐmen shì zěnme lái fànguǎn de?",
-      "translation": {
-        "en": "How did you get to the restaurant?",
-        "ar": "كيف جئتم إلى المطعم؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "15-2-2",
-      "role": "Speaker B",
-      "hanzi": "我们是坐出租车来的。",
-      "pinyin": "Wǒmen shì zuò chūzūchē lái de.",
-      "translation": {
-        "en": "We came by taxi.",
-        "ar": "جئنا بسيارة الأجرة (التاكسي)."
-      },
-      "audio": null
-    },
-    {
-      "id": "15-2-3",
-      "role": "Speaker A",
-      "hanzi": "李先生呢？",
-      "pinyin": "Lǐ xiānsheng ne?",
-      "translation": {
-        "en": "What about Mr. Li?",
-        "ar": "وماذا عن السيد لي؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "15-2-4",
-      "role": "Speaker B",
-      "hanzi": "他是和朋友一起开车来的。",
-      "pinyin": "Tā shì hé péngyou yìqǐ kāi chē lái de.",
-      "translation": {
-        "en": "He drove here together with a friend.",
-        "ar": "لقد جاء بالسيارة برفقة صديق له."
-      },
-      "audio": null
-    },
-    {
-      "id": "15-3-1",
-      "role": "Speaker A",
-      "hanzi": "很高兴认识您！李小姐。",
-      "pinyin": "Hěn gāoxìng rènshi nín! Lǐ xiǎojiě.",
-      "translation": {
-        "en": "Very pleased to meet you, Miss Li!",
-        "ar": "سررتُ جداً بلقائك يا آنسة لي!"
-      },
-      "audio": null
-    },
-    {
-      "id": "15-3-2",
-      "role": "Speaker B",
-      "hanzi": "认识你我也很高兴！",
-      "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng!",
-      "translation": {
-        "en": "Nice to meet you too!",
-        "ar": "وأنا مسرورة جداً بالتعرف عليك أيضاً!"
-      },
-      "audio": null
-    },
-    {
-      "id": "15-3-3",
-      "role": "Speaker A",
-      "hanzi": "听张先生说，您是坐飞机来北京的？",
-      "pinyin": "Tīng Zhāng xiānsheng shuō, nín shì zuò fēijī lái Běijīng de?",
-      "translation": {
-        "en": "I heard from Mr. Zhang that you came to Beijing by plane?",
-        "ar": "سمعتُ من السيد تشانغ أنكِ جئتِ إلى بكين بالطائرة؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "15-3-4",
-      "role": "Speaker B",
-      "hanzi": "是的。",
-      "pinyin": "Shì de.",
-      "translation": {
-        "en": "Yes, that's right.",
-        "ar": "نعم، هذا صحيح."
+        "en": "Not very far. I took the subway; it was convenient.",
+        "ar": "ليس بعيداً جداً. جئت بالمترو وكان ذلك سهلاً."
       },
       "audio": null
     }
@@ -190,5 +102,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official HSK 1 Standard Course Lesson 15 dialogues."
+  "authoringNote": "Official HSK 1 Standard Course Lesson 15 dialogues.",
+  "curriculum": "standard"
 }

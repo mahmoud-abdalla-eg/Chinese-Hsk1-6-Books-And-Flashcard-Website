@@ -13,221 +13,68 @@
   "dialogue": [
     {
       "id": "14-1-1",
-      "role": "李文 (Li Wen)",
-      "hanzi": "王老师，你家楼下站着一个人。",
-      "pinyin": "Wáng lǎoshī, nǐ jiā lóu xià zhànzhe yí ge rén.",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "新年快到了，你今年怎么过年？",
+      "pinyin": "Xīnnián kuài dào le, nǐ jīnnián zěnme guònián?",
       "translation": {
-        "en": "Teacher Wang, there is someone standing downstairs below your apartment.",
-        "ar": "أستاذة وانغ، هناك شخص يقف أسفل بنايتكِ."
+        "en": "The New Year is coming soon. How are you celebrating this year?",
+        "ar": "اقتربت السنة الجديدة، كيف ستحتفل بها هذا العام؟"
       },
       "audio": null
     },
     {
       "id": "14-1-2",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "我家楼下？我看看。",
-      "pinyin": "Wǒ jiā lóu xià? Wǒ kànkan.",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "我一个人在这边过年，总觉得没意思。",
+      "pinyin": "Wǒ yí ge rén zài zhèbiān guònián, zǒng juéde méi yìsi.",
       "translation": {
-        "en": "Downstairs below my home? Let me see.",
-        "ar": "أسفل بنايتي؟ دعيني أنظر."
+        "en": "When I celebrate here alone, it always feels boring.",
+        "ar": "أنا وحدي هنا، وكنت أظن أن الاحتفال بعيداً عن البيت سيكون مملاً."
       },
       "audio": null
     },
     {
       "id": "14-1-3",
-      "role": "李文 (Li Wen)",
-      "hanzi": "那个人穿着黑色的衣服，手里还拿着一个黑色的包。",
-      "pinyin": "Nàge rén chuānzhe hēisè de yīfu, shǒulǐ hái názhe yí ge hēisè de bāo.",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "来我家吧，我爸妈也在。房子前面有个小公园。",
+      "pinyin": "Lái wǒ jiā ba, wǒ bàmā yě zài. Fángzi qiánmiàn yǒu ge xiǎo gōngyuán.",
       "translation": {
-        "en": "That person is wearing black clothes and holding a black bag in his hand.",
-        "ar": "ذلك الشخص يرتدي ملابس سوداء ويحمل حقيبة سوداء في يده."
+        "en": "Come to my place; my parents will be there too. There’s a little park in front of the house.",
+        "ar": "تعال إلى منزلي، فوالداي سيكونان هناك أيضاً. توجد حديقة صغيرة أمام المنزل."
       },
-      "audio": null
+      "audio": null,
+      "ar": "تعالي إلى منزلي، فوالداي سيكونان هناك أيضاً. توجد حديقة صغيرة أمام المنزل."
     },
     {
       "id": "14-1-4",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "我看见那个人了，他是我男朋友！",
-      "pinyin": "Wǒ kànjiàn nàge rén le, tā shì wǒ nánpéngyou!",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "谢谢！我可以带点儿东西吗？你家有小孩儿吗？",
+      "pinyin": "Xièxie! Wǒ kěyǐ dài diǎnr dōngxi ma? Nǐ jiā yǒu xiǎoháir ma?",
       "translation": {
-        "en": "I see him now—he's my boyfriend!",
-        "ar": "لقد رأيته، إنه صديقي (خطيبي)!"
+        "en": "Thank you! Can I bring something? Are there any children in your family?",
+        "ar": "شكراً! هل يمكنني إحضار شيء؟ هل يوجد أطفال في عائلتك؟"
       },
       "audio": null
     },
     {
       "id": "14-1-5",
-      "role": "李文 (Li Wen)",
-      "hanzi": "哈哈，王老师，您快过去吧。",
-      "pinyin": "Hāhā, Wáng lǎoshī, nín kuài guòqu ba.",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "我妹妹是个小女孩儿，喜欢看人跳舞。带水果就好。",
+      "pinyin": "Wǒ mèimei shì ge xiǎo nǚháir, xǐhuan kàn rén tiàowǔ. Dài shuǐguǒ jiù hǎo.",
       "translation": {
-        "en": "Haha, Teacher Wang, hurry on over to him!",
-        "ar": "هههه، أستاذة وانغ، أسرعي بالذهاب إليه!"
+        "en": "My little sister loves watching people dance. Just bring some fruit.",
+        "ar": "أختي الصغيرة تحب مشاهدة الناس وهم يرقصون. يكفي أن تحضر بعض الفاكهة."
       },
       "audio": null
     },
     {
       "id": "14-1-6",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "好的，李文，明天见！",
-      "pinyin": "Hǎo de, Lǐ Wén, míngtiān jiàn!",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "好，我也准备一个小游戏，大家一起过年就不无聊了。",
+      "pinyin": "Hǎo, wǒ yě zhǔnbèi yí ge xiǎo yóuxì, dàjiā yìqǐ guònián jiù bù wúliáo le.",
       "translation": {
-        "en": "Alright, Li Wen, see you tomorrow!",
-        "ar": "حسناً يا لي ون، أراك غداً!"
-      },
-      "audio": null
-    },
-    {
-      "id": "14-2-1",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "同乐，真是你啊！上次打电话，你说有时间过来看我，没想到这么快就来了！",
-      "pinyin": "Tónglè, zhēn shì nǐ a! Shàng cì dǎ diànhuà, nǐ shuō yǒu shíjiān guòlai kàn wǒ, méi xiǎngdào zhème kuài jiù lái le!",
-      "translation": {
-        "en": "Tongle, it really is you! Last time we spoke on the phone, you mentioned coming to see me when you had time, but I never imagined you'd arrive this quickly!",
-        "ar": "تونغله، إنه أنت حقاً! في المرة الأخيرة عندما تحدثنا هاتفياً قلت إنك ستأتي لزيارتي إذا سنح الوقت، لم أتوقع أبداً أن تأتي بهذه السرعة!"
-      },
-      "audio": null
-    },
-    {
-      "id": "14-2-2",
-      "role": "杨同乐 (Yang Tongle)",
-      "hanzi": "就要过年了，你一个人在这儿多没意思啊，所以我就早早过来了。",
-      "pinyin": "Jiù yào guònián le, nǐ yí ge rén zài zhèr duō méi yìsi a, suǒyǐ wǒ jiù zǎozǎo guòlai le.",
-      "translation": {
-        "en": "New Year is right around the corner. How dull it would be for you to celebrate all by yourself here! So I came over early.",
-        "ar": "رأس السنة على وشك الحلول، وكم سيكون الأمر مملاً وموحشاً أن تحتفلي هنا بمفردكِ! لذا جئتُ مبكراً جداً."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-2-3",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "你能来，我太高兴了！",
-      "pinyin": "Nǐ néng lái, wǒ tài gāoxìng le!",
-      "translation": {
-        "en": "I'm so thrilled that you could come!",
-        "ar": "أنا في غاية السعادة والسرور لحضورك!"
-      },
-      "audio": null
-    },
-    {
-      "id": "14-2-4",
-      "role": "杨同乐 (Yang Tongle)",
-      "hanzi": "一飞，你旁边这位是？",
-      "pinyin": "Yīfēi, nǐ pángbiān zhè wèi shì?",
-      "translation": {
-        "en": "Yifei, who is this person next to you?",
-        "ar": "ييفي، من هذا الشخص الذي بجانبكِ؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "14-2-5",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "这是我的学生李文。",
-      "pinyin": "Zhè shì wǒ de xuésheng Lǐ Wén.",
-      "translation": {
-        "en": "This is my student, Li Wen.",
-        "ar": "هذا طالبي لي ون."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-2-6",
-      "role": "杨同乐 (Yang Tongle)",
-      "hanzi": "李文，你好！",
-      "pinyin": "Lǐ Wén, nǐ hǎo!",
-      "translation": {
-        "en": "Hello, Li Wen!",
-        "ar": "أهلاً يا لي ون!"
-      },
-      "audio": null
-    },
-    {
-      "id": "14-2-7",
-      "role": "李文 (Li Wen)",
-      "hanzi": "您好！王老师，你们聊，我先走了。",
-      "pinyin": "Nín hǎo! Wáng lǎoshī, nǐmen liáo, wǒ xiān zǒu le.",
-      "translation": {
-        "en": "Hello! Teacher Wang, I'll let you two chat; I'll take my leave first.",
-        "ar": "أهلاً بحضرتك! أستاذة وانغ، سأترككما تتحدثان وسأنصرف الآن."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-3-1",
-      "role": "杨同乐 (Yang Tongle)",
-      "hanzi": "一飞，你住的房子真不错，很大，离学校也不远。",
-      "pinyin": "Yīfēi, nǐ zhù de fángzi zhēn búcuò, hěn dà, lí xuéxiào yě bù yuǎn.",
-      "translation": {
-        "en": "Yifei, your apartment is really nice—very spacious, and not far from the university.",
-        "ar": "ييفي، الشقة التي تسكنين فيها رائعة حقاً، واسعة وقريبة من الجامعة أيضاً."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-3-2",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "是啊！我楼下还住着一家中国人，他们人很好。",
-      "pinyin": "Shì a! Wǒ lóu xià hái zhùzhe yì jiā Zhōngguó rén, tāmen rén hěn hǎo.",
-      "translation": {
-        "en": "Yes! A Chinese family also lives downstairs below me; they are wonderful people.",
-        "ar": "نعم! تسكن أسفلي أيضاً عائلة صينية، وهم أناس طيبون للغاية."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-3-3",
-      "role": "杨同乐 (Yang Tongle)",
-      "hanzi": "这样你有事情就可以找他们帮忙。",
-      "pinyin": "Zhèyàng nǐ yǒu shìqing jiù kěyǐ zhǎo tāmen bāngmáng.",
-      "translation": {
-        "en": "That way, if you ever need anything, you can turn to them for help.",
-        "ar": "بهذا إذا احتجتِ أي مساعدة يمكنكِ اللجوء إليهم."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-3-4",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "对，我也帮他们家的小孩儿学中文。",
-      "pinyin": "Duì, wǒ yě bāng tāmen jiā de xiǎoháir xué Zhōngwén.",
-      "translation": {
-        "en": "Right, and I also help their young child study Chinese.",
-        "ar": "صحيح، وأنا أساعد طفلهم في تعلم اللغة الصينية أيضاً."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-3-5",
-      "role": "杨同乐 (Yang Tongle)",
-      "hanzi": "我记得你跟我说过，是个女孩儿，学得也很好。",
-      "pinyin": "Wǒ jìde nǐ gēn wǒ shuōguo, shì ge nǚháir, xué de yě hěn hǎo.",
-      "translation": {
-        "en": "I remember you telling me about her—she's a little girl and studies very well.",
-        "ar": "أتذكر أنكِ أخبرتني عنها، إنها فتاة صغيرة وتتعلم بجد وتفوق."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-3-6",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "是的，她经常跑上来找我玩。",
-      "pinyin": "Shì de, tā jīngcháng pǎo shànglai zhǎo wǒ wán.",
-      "translation": {
-        "en": "Yes, she often runs upstairs to hang out with me.",
-        "ar": "نعم، وهي تصعد الدرج كثيراً للمجيء واللعب معي."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-4-1",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "我男朋友姓杨，叫杨同乐。他高个子、大眼睛，唱歌唱得很好，跳舞跳得也不错。他和我有姐姐一起工作，是姐姐介绍我们认识的。他告诉我，从见到我的第一天开始，他就喜欢上我了。",
-      "pinyin": "Wǒ nánpéngyou xìng Yáng, jiào Yáng Tónglè. Tā gāo gèzi, dà yǎnjing, chànggē chàng de hěn hǎo, tiàowǔ tiào de yě búcuò. Tā hé wǒ jiějie yìqǐ gōngzuò, shì jiějie jièshào wǒmen rènshi de. Tā gàosu wǒ, cóng jiàndào wǒ de dì-yī tiān kāishǐ, tā jiù xǐhuanshang wǒ le.",
-      "translation": {
-        "en": "My boyfriend's surname is Yang, and his full name is Yang Tongle. He is tall with big eyes; he sings very well and dances quite well too. He works together with my older sister, and it was my sister who introduced us. He told me that from the very first day he met me, he fell in love with me.",
-        "ar": "اسم عائلة صديقي هو يانغ، واسمه الكامل يانغ تونغله. وهو طويل القامة، وذو عينين واسعتين، يغني ببراعة ويرقص بشكل رائع أيضاً. وهو يعمل مع أختي الكبرى في نفس المكان، وأختي هي التي عرفتنا على بعضنا. وقد أخبرني أنه منذ أول يوم رآني فيه، وقع في حبي."
+        "en": "Great. I’ll bring a little game too; celebrating together won’t be dull.",
+        "ar": "حسناً، سأحضر لعبة صغيرة أيضاً؛ لن يكون الاحتفال مملاً ما دمنا معاً."
       },
       "audio": null
     }
@@ -293,5 +140,12 @@
       ],
       "answerIndex": 0
     }
+  ],
+  "targetVocabularyIds": [
+    "fangzi",
+    "guonian",
+    "mei-yi-si",
+    "tiaowu",
+    "xiaohair"
   ]
 }

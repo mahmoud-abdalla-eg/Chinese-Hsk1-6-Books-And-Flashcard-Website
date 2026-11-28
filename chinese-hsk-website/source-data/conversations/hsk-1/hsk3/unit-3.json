@@ -12,134 +12,68 @@
   },
   "dialogue": [
     {
-      "id": "3-1-1",
-      "role": "李文 (Li Wen)",
-      "hanzi": "我是中国人。",
-      "pinyin": "Wǒ shì Zhōngguó rén.",
+      "id": "3-identity-1",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "你是中国人吗？你的中文说得很自然。",
+      "pinyin": "Nǐ shì Zhōngguó rén ma? Nǐ de Zhōngwén shuō de hěn zìrán.",
       "translation": {
-        "en": "I am Chinese.",
-        "ar": "أنا صيني."
+        "en": "Are you Chinese? Your Chinese sounds very natural.",
+        "ar": "هل أنت صيني؟ لغتك الصينية طبيعية جداً."
       },
       "audio": null
     },
     {
-      "id": "3-1-2",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "我是法国人。我的中文老师也是中国人。",
-      "pinyin": "Wǒ shì Fǎguó rén. Wǒ de Zhōngwén lǎoshī yě shì Zhōngguó rén.",
+      "id": "3-identity-2",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "是的，我在北京长大。你呢？",
+      "pinyin": "Shì de, wǒ zài Běijīng zhǎng dà. Nǐ ne?",
       "translation": {
-        "en": "I am French. My Chinese language teacher is also Chinese.",
-        "ar": "أنا فرنسية. ومعلمتي للغة الصينية صينية أيضاً."
+        "en": "Yes, I grew up in Beijing. What about you?",
+        "ar": "نعم، نشأت في بكين. وأنت؟"
       },
       "audio": null
     },
     {
-      "id": "3-2-1",
-      "role": "安妮 (Annie)",
-      "hanzi": "这是谁？",
-      "pinyin": "Zhè shì shéi?",
+      "id": "3-identity-3",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "我也是中国人，不过小时候在法国住过。",
+      "pinyin": "Wǒ yě shì Zhōngguó rén, búguò xiǎoshíhou zài Fǎguó zhù guo.",
       "translation": {
-        "en": "Who is this?",
-        "ar": "من هذا؟ (أو من هذه؟)"
+        "en": "I’m Chinese too, though I lived in France when I was little.",
+        "ar": "أنا صيني أيضاً، لكنني عشت في فرنسا عندما كنت صغيراً."
       },
       "audio": null
     },
     {
-      "id": "3-2-2",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "这是我女朋友。",
-      "pinyin": "Zhè shì wǒ nǚpéngyou.",
+      "id": "3-identity-4",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "真有意思。你姐姐也会说中文吗？",
+      "pinyin": "Zhēn yǒu yìsi. Nǐ jiějie yě huì shuō Zhōngwén ma?",
       "translation": {
-        "en": "This is my girlfriend.",
-        "ar": "هذه صديقتي (حبيبتي)."
+        "en": "That’s interesting. Can your older sister speak Chinese too?",
+        "ar": "هذا مثير للاهتمام. هل تستطيع أختك الكبرى التحدث بالصينية أيضاً؟"
       },
       "audio": null
     },
     {
-      "id": "3-2-3",
-      "role": "安妮 (Annie)",
-      "hanzi": "你女朋友是哪国人？",
-      "pinyin": "Nǐ nǚpéngyou shì nǎ guó rén?",
+      "id": "3-identity-5",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "会，她在学校工作，也教中文。",
+      "pinyin": "Huì, tā zài xuéxiào gōngzuò, yě jiāo Zhōngwén.",
       "translation": {
-        "en": "What nationality is your girlfriend?",
-        "ar": "ما جنسية صديقتك؟"
+        "en": "Yes, she works at a school and teaches Chinese there.",
+        "ar": "نعم، تعمل في مدرسة وتدرّس اللغة الصينية هناك."
       },
       "audio": null
     },
     {
-      "id": "3-2-4",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "她也是泰国人。",
-      "pinyin": "Tā yě shì Tàiguó rén.",
+      "id": "3-identity-6",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "太好了。我们以后可以一起练习中文。",
+      "pinyin": "Tài hǎo le. Wǒmen yǐhòu kěyǐ yìqǐ liànxí Zhōngwén.",
       "translation": {
-        "en": "She is also Thai.",
-        "ar": "هي أيضاً تايلاندية."
-      },
-      "audio": null
-    },
-    {
-      "id": "3-3-1",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "喂，一飞！",
-      "pinyin": "Wèi, Yīfēi!",
-      "translation": {
-        "en": "Hello, Yifei!",
-        "ar": "أهلاً يا ييفي!"
-      },
-      "audio": null
-    },
-    {
-      "id": "3-3-2",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "姐姐！",
-      "pinyin": "Jiějie!",
-      "translation": {
-        "en": "Elder sister!",
-        "ar": "أختي الكبرى!"
-      },
-      "audio": null
-    },
-    {
-      "id": "3-3-3",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "你工作还忙吗？",
-      "pinyin": "Nǐ gōngzuò hái máng ma?",
-      "translation": {
-        "en": "Are you still busy with work?",
-        "ar": "هل ما زلتِ مشغولة في العمل؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "3-3-4",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "对，还很忙。你也很忙吗？",
-      "pinyin": "Duì, hái hěn máng. Nǐ yě hěn máng ma?",
-      "translation": {
-        "en": "Yes, still very busy. Are you also very busy?",
-        "ar": "نعم، ما زلت مشغولة جداً. هل أنتِ أيضاً مشغولة؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "3-3-5",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "我不太忙。我们很想你。",
-      "pinyin": "Wǒ bú tài máng. Wǒmen hěn xiǎng nǐ.",
-      "translation": {
-        "en": "I'm not too busy. We miss you a lot.",
-        "ar": "لست مشغولة كثيراً. نحن نشتاق إليكِ كثيراً."
-      },
-      "audio": null
-    },
-    {
-      "id": "3-3-6",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "我也想你们。",
-      "pinyin": "Wǒ yě xiǎng nǐmen.",
-      "translation": {
-        "en": "I miss you all too.",
-        "ar": "وأنا أيضاً أشتاق إليكم جميعاً."
+        "en": "That’s great. We can practice Chinese together from now on.",
+        "ar": "رائع. يمكننا التدرب على الصينية معاً من الآن فصاعداً."
       },
       "audio": null
     }
@@ -193,5 +127,13 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 3."
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 3.",
+  "targetVocabularyIds": [
+    "gongzuo",
+    "jiejie",
+    "faguo",
+    "zhongguo",
+    "zhongwen",
+    "women"
+  ]
 }

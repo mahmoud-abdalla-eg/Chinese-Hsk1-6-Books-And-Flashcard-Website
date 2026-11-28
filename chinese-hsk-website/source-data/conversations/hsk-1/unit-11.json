@@ -9,162 +9,49 @@
     "en": "Lesson 11: What's the Time Now",
     "ar": "الدرس 11: كم الساعة الآن"
   },
-  "targetVocabularyIds": [
-    "xianzai",
-    "dian-2",
-    "fen",
-    "zhongwu",
-    "chi",
-    "fan",
-    "shihou",
-    "hui",
-    "women",
-    "dianying",
-    "zhu",
-    "qian",
-    "beijing"
-  ],
+  "targetVocabularyIds": ["dianying", "shouji", "women", "xianzai"],
   "dialogue": [
     {
       "id": "11-1-1",
-      "role": "Speaker A",
-      "hanzi": "现在几点？",
-      "pinyin": "Xiànzài jǐ diǎn?",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "现在几点了？电影快开始了吗？",
+      "pinyin": "Xiànzài jǐ diǎn le? Diànyǐng kuài kāishǐ le ma?",
       "translation": {
-        "en": "What is the time now?",
-        "ar": "كم الساعة الآن؟"
+        "en": "What time is it? Is the movie about to start?",
+        "ar": "كم الساعة الآن؟ هل أوشك الفيلم على البدء؟"
       },
       "audio": null
     },
     {
       "id": "11-1-2",
-      "role": "Speaker B",
-      "hanzi": "现在十点十分。",
-      "pinyin": "Xiànzài shí diǎn shí fēn.",
+      "role": "安娜 (Ānnà)",
+      "hanzi": "六点二十，电影六点半开始。",
+      "pinyin": "Liù diǎn èrshí, diànyǐng liù diǎn bàn kāishǐ.",
       "translation": {
-        "en": "It is 10:10 now.",
-        "ar": "الساعة الآن العاشرة وعشر دقائق."
+        "en": "It’s 6:20. The movie starts at 6:30.",
+        "ar": "الساعة السادسة وعشرون دقيقة، ويبدأ الفيلم في السادسة والنصف."
       },
       "audio": null
     },
     {
       "id": "11-1-3",
-      "role": "Speaker A",
-      "hanzi": "中午几点吃饭？",
-      "pinyin": "Zhōngwǔ jǐ diǎn chī fàn?",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "那我们现在进去买票吧。",
+      "pinyin": "Nà wǒmen xiànzài jìnqù mǎi piào ba.",
       "translation": {
-        "en": "When will we eat lunch at noon?",
-        "ar": "في أي ساعة نتناول الغداء ظهراً؟"
+        "en": "Then let’s go in and buy the tickets now.",
+        "ar": "فلندخل الآن ونشتري التذاكر."
       },
       "audio": null
     },
     {
       "id": "11-1-4",
-      "role": "Speaker B",
-      "hanzi": "十二点吃饭。",
-      "pinyin": "Shí'èr diǎn chī fàn.",
+      "role": "安娜 (Ānnà)",
+      "hanzi": "好，我已经在手机上看好座位了。",
+      "pinyin": "Hǎo, wǒ yǐjīng zài shǒujī shàng kàn hǎo zuòwèi le.",
       "translation": {
-        "en": "We will eat at 12 o'clock.",
-        "ar": "نتناول الغداء عند الساعة الثانية عشرة."
-      },
-      "audio": null
-    },
-    {
-      "id": "11-2-1",
-      "role": "Speaker A",
-      "hanzi": "爸爸什么时候回家？",
-      "pinyin": "Bàba shénme shíhou huí jiā?",
-      "translation": {
-        "en": "When is Dad coming home?",
-        "ar": "متى يعود أبي إلى المنزل؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "11-2-2",
-      "role": "Speaker B",
-      "hanzi": "下午五点。",
-      "pinyin": "Xiàwǔ wǔ diǎn.",
-      "translation": {
-        "en": "At 5:00 p.m.",
-        "ar": "في الخامسة بعد الظهر."
-      },
-      "audio": null
-    },
-    {
-      "id": "11-2-3",
-      "role": "Speaker A",
-      "hanzi": "我们什么时候去看电影？",
-      "pinyin": "Wǒmen shénme shíhou qù kàn diànyǐng?",
-      "translation": {
-        "en": "When are we going to see the movie?",
-        "ar": "متى سنذهب لمشاهدة الفيلم؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "11-2-4",
-      "role": "Speaker B",
-      "hanzi": "六点三十分。",
-      "pinyin": "Liù diǎn sānshí fēn.",
-      "translation": {
-        "en": "At 6:30.",
-        "ar": "في الساعة السادسة وثلاثين دقيقة."
-      },
-      "audio": null
-    },
-    {
-      "id": "11-3-1",
-      "role": "Speaker A",
-      "hanzi": "我星期一去北京。",
-      "pinyin": "Wǒ xīngqīyī qù Běijīng.",
-      "translation": {
-        "en": "I am going to Beijing on Monday.",
-        "ar": "سأذهب إلى بكين يوم الإثنين."
-      },
-      "audio": null
-    },
-    {
-      "id": "11-3-2",
-      "role": "Speaker B",
-      "hanzi": "你想在北京住几天？",
-      "pinyin": "Nǐ xiǎng zài Běijīng zhù jǐ tiān?",
-      "translation": {
-        "en": "How many days do you want to stay in Beijing?",
-        "ar": "كم يوماً تنوي الإقامة في بكين؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "11-3-3",
-      "role": "Speaker A",
-      "hanzi": "住三天。",
-      "pinyin": "Zhù sān tiān.",
-      "translation": {
-        "en": "Stay for three days.",
-        "ar": "سأقيم لمدة ثلاثة أيام."
-      },
-      "audio": null
-    },
-    {
-      "id": "11-3-4",
-      "role": "Speaker B",
-      "hanzi": "星期五前能回家吗？",
-      "pinyin": "Xīngqīwǔ qián néng huí jiā ma?",
-      "translation": {
-        "en": "Can you return home before Friday?",
-        "ar": "هل تستطيع العودة للمنزل قبل يوم الجمعة؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "11-3-5",
-      "role": "Speaker A",
-      "hanzi": "能。",
-      "pinyin": "Néng.",
-      "translation": {
-        "en": "Yes, I can.",
-        "ar": "نعم، أستطيع."
+        "en": "Okay, I’ve already picked our seats on my phone.",
+        "ar": "حسناً، اخترت مقاعدنا على الهاتف بالفعل."
       },
       "audio": null
     }
@@ -206,5 +93,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official HSK 1 Standard Course Lesson 11 dialogues."
+  "authoringNote": "Official HSK 1 Standard Course Lesson 11 dialogues.",
+  "curriculum": "standard"
 }
