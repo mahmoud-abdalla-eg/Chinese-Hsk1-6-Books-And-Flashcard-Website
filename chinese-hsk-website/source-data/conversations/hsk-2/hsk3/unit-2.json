@@ -14,209 +14,66 @@
     {
       "id": "2-1-1",
       "role": "白家月 (Bai Jiayue)",
-      "hanzi": "请问，这儿有到北京大学的公交车吗？",
-      "pinyin": "Qǐngwèn, zhèr yǒu dào Běijīng Dàxué de gōngjiāochē ma?",
+      "hanzi": "请问，去北京大学坐哪路公交车？",
+      "pinyin": "Qǐngwèn, qù Běijīng Dàxué zuò nǎ lù gōngjiāochē?",
       "translation": {
-        "en": "Excuse me, is there a bus from here to Peking University?",
-        "ar": "لو سمحت، هل توجد هنا حافلة نقل عام متجهة إلى جامعة بكين؟"
+        "en": "Excuse me, which bus should I take to Peking University?",
+        "ar": "لو سمحت، أي حافلة أركب للذهاب إلى جامعة بكين؟"
       },
       "audio": null
     },
     {
       "id": "2-1-2",
-      "role": "服务员 (Hotel Staff)",
-      "hanzi": "有，但车站有点儿远。",
-      "pinyin": "Yǒu, dàn chēzhàn yǒudiǎnr yuǎn.",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "车站就在前面，不过现在等车的人很多。",
+      "pinyin": "Chēzhàn jiù zài qiánmiàn, búguò xiànzài děng chē de rén hěn duō.",
       "translation": {
-        "en": "Yes, but the bus stop is a bit far.",
-        "ar": "نعم توجد، ولكن محطة الحافلات بعيدة بعض الشيء."
+        "en": "The bus stop is just ahead, but there are a lot of people waiting now.",
+        "ar": "محطة الحافلات أمامنا مباشرة، لكن هناك كثيراً من الناس ينتظرون الآن."
       },
       "audio": null
     },
     {
       "id": "2-1-3",
       "role": "白家月 (Bai Jiayue)",
-      "hanzi": "这儿好打车吗？",
-      "pinyin": "Zhèr hǎo dǎchē ma?",
+      "hanzi": "网上说校园很大，我想早点儿到那边看看。",
+      "pinyin": "Wǎngshang shuō xiàoyuán hěn dà, wǒ xiǎng zǎodiǎnr dào nàbian kànkan.",
       "translation": {
-        "en": "Is it easy to catch a taxi here?",
-        "ar": "هل من السهل ركوب سيارة أجرة (تاكسي) من هنا؟"
+        "en": "I read online that the campus is huge. I’d like to get there early and look around.",
+        "ar": "قرأت على الإنترنت أن الحرم الجامعي كبير جداً، وأود الوصول مبكراً لاستكشافه."
       },
       "audio": null
     },
     {
       "id": "2-1-4",
-      "role": "服务员 (Hotel Staff)",
-      "hanzi": "好打车。",
-      "pinyin": "Hǎo dǎchē.",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "那我们还是打车吧，路上不堵的话很快就到。",
+      "pinyin": "Nà wǒmen háishi dǎchē ba, lùshang bú dǔ dehuà hěn kuài jiù dào.",
       "translation": {
-        "en": "Yes, very easy to hail a cab.",
-        "ar": "نعم، ركوب سيارة الأجرة سهل جداً هنا."
+        "en": "Then let’s take a taxi instead; if traffic isn’t bad, we’ll get there quickly.",
+        "ar": "إذن من الأفضل أن نأخذ سيارة أجرة؛ سنصل سريعاً إذا لم تكن الطرق مزدحمة."
       },
       "audio": null
     },
     {
       "id": "2-1-5",
       "role": "白家月 (Bai Jiayue)",
-      "hanzi": "谢谢。安妮，我们还是打车去吧。",
-      "pinyin": "Xièxie. Ānnī, wǒmen háishi dǎchē qù ba.",
+      "hanzi": "好啊。到了以后，你可以带我去看看教室吗？",
+      "pinyin": "Hǎo a. Dào le yǐhòu, nǐ kěyǐ dài wǒ qù kànkan jiàoshì ma?",
       "translation": {
-        "en": "Thank you. Annie, let's take a taxi instead.",
-        "ar": "شكراً لك. آني، من الأفضل أن نذهب بسيارة الأجرة."
+        "en": "Sure. Once we arrive, could you show me a classroom?",
+        "ar": "حسناً. هل يمكنك أن تأخذيني لرؤية أحد الفصول الدراسية بعد أن نصل؟"
       },
       "audio": null
     },
     {
       "id": "2-1-6",
-      "role": "安妮 (Annie)",
-      "hanzi": "好，没问题。",
-      "pinyin": "Hǎo, méi wèntí.",
+      "role": "王一雪 (Wang Yixue)",
+      "hanzi": "当然可以，我以前就在北京大学上学。",
+      "pinyin": "Dāngrán kěyǐ, wǒ yǐqián jiù zài Běijīng Dàxué shàngxué.",
       "translation": {
-        "en": "Sounds good, no problem.",
-        "ar": "حسناً، لا مشكلة إطلاقاً."
-      },
-      "audio": null
-    },
-    {
-      "id": "2-2-1",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "学校里人真多啊！",
-      "pinyin": "Xuéxiào lǐ rén zhēn duō a!",
-      "translation": {
-        "en": "There are so many people on campus!",
-        "ar": "الناس كثر جداً داخل الحرم الجامعي!"
-      },
-      "audio": null
-    },
-    {
-      "id": "2-2-2",
-      "role": "安妮 (Annie)",
-      "hanzi": "是啊，北京大学有四万多名学生呢！",
-      "pinyin": "Shì a, Běijīng Dàxué yǒu sìwàn duō míng xuésheng ne!",
-      "translation": {
-        "en": "Yes! Peking University has over 40,000 students!",
-        "ar": "أجل، تضم جامعة بكين أكثر من 40 ألف طالب!"
-      },
-      "audio": null
-    },
-    {
-      "id": "2-2-3",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "你是怎么知道的？",
-      "pinyin": "Nǐ shì zěnme zhīdào de?",
-      "translation": {
-        "en": "How did you find that out?",
-        "ar": "كيف عرفتِ ذلك؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "2-2-4",
-      "role": "安妮 (Annie)",
-      "hanzi": "是网上说的，网上还说北京大学有三千多名外国学生。",
-      "pinyin": "Shì wǎngshang shuō de, wǎngshang hái shuō Běijīng Dàxué yǒu sānqiān duō míng wàiguó xuésheng.",
-      "translation": {
-        "en": "I read it online. It also says Peking University has more than 3,000 international students.",
-        "ar": "قرأته على الإنترنت، ويقول الموقع أيضاً إن جامعة بكين تضم أكثر من 3000 طالب دولي."
-      },
-      "audio": null
-    },
-    {
-      "id": "2-2-5",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "我也想来这儿学习。",
-      "pinyin": "Wǒ yě xiǎng lái zhèr xuéxí.",
-      "translation": {
-        "en": "I'd love to come and study here too.",
-        "ar": "أود أنا أيضاً أن آتي للدراسة هنا."
-      },
-      "audio": null
-    },
-    {
-      "id": "2-2-6",
-      "role": "安妮 (Annie)",
-      "hanzi": "那边就有间教室，我们去客（看）一下。",
-      "pinyin": "Nàbian jiù yǒu jiān jiàoshì, wǒmen qù kàn yíxià.",
-      "translation": {
-        "en": "There's a classroom right over there, let's go take a look.",
-        "ar": "هناك قاعة دراسية هناك، فلنذهب لنلقي نظرة."
-      },
-      "audio": null
-    },
-    {
-      "id": "2-3-1",
-      "role": "安妮 (Annie)",
-      "hanzi": "家月，你看，学校里有家电影院！",
-      "pinyin": "Jiāyuè, nǐ kàn, xuéxiào lǐ yǒu jiā diànyǐngyuàn!",
-      "translation": {
-        "en": "Jiayue, look! There is a cinema on campus!",
-        "ar": "جيايوي، انظري! توجد دار سينما داخل الحرم الجامعي!"
-      },
-      "audio": null
-    },
-    {
-      "id": "2-3-2",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "是啊，电影院还不小。",
-      "pinyin": "Shì a, diànyǐngyuàn hái bù xiǎo.",
-      "translation": {
-        "en": "Yeah, and it's pretty big.",
-        "ar": "أجل، والسينما ليست صغيرة على الإطلاق."
-      },
-      "audio": null
-    },
-    {
-      "id": "2-3-3",
-      "role": "安妮 (Annie)",
-      "hanzi": "他们卖的电影票也很便宜。",
-      "pinyin": "Tāmen mài de diànyǐngpiào yě hěn piányi.",
-      "translation": {
-        "en": "The movie tickets they sell are very cheap too.",
-        "ar": "تذاكر السينما التي يبيعونها رخيصة جداً أيضاً."
-      },
-      "audio": null
-    },
-    {
-      "id": "2-3-4",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "天哪！有的还不到二十块钱。",
-      "pinyin": "Tiān na! Yǒude hái bú dào èrshí kuài qián.",
-      "translation": {
-        "en": "Goodness! Some are even less than twenty yuan.",
-        "ar": "يا إلهي! بعضها لا يصل حتى إلى 20 يواناً."
-      },
-      "audio": null
-    },
-    {
-      "id": "2-3-5",
-      "role": "安妮 (Annie)",
-      "hanzi": "那你想不想去看个电影？",
-      "pinyin": "Nà nǐ xiǎng bu xiǎng qù kàn ge diànyǐng?",
-      "translation": {
-        "en": "So do you want to go watch a movie?",
-        "ar": "إذاً هل تودين الذهاب لمشاهدة فيلم؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "2-3-6",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "还是别看电影了，北京大学就很好看！",
-      "pinyin": "Háishi bié kàn diànyǐng le, Běijīng Dàxué jiù hěn hǎokàn!",
-      "translation": {
-        "en": "Let's skip the movie for now; Peking University itself is already so fascinating to see!",
-        "ar": "من الأفضل ألا نشاهد فيلماً الآن، فجامعة بكين نفسها تستحق المشاهدة وجميلة جداً!"
-      },
-      "audio": null
-    },
-    {
-      "id": "2-4-1",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "北京大学很大，有四万多名学生。学校很漂亮，里边还有家电影院，电影票也不贵，我们有时间还想再过来看看电影。",
-      "pinyin": "Běijīng Dàxué hěn dà, yǒu sìwàn duō míng xuésheng. Xuéxiào hěn piàoliang, lǐbian hái yǒu jiā diànyǐngyuàn, diànyǐngpiào yě bú guì, wǒmen yǒu shíjiān hái xiǎng zài guòlái kàn ge diànyǐng.",
-      "translation": {
-        "en": "Peking University is huge, with more than 40,000 students. The campus is beautiful and even has a cinema inside with inexpensive tickets. When we have free time, we'd love to come back and watch a movie.",
-        "ar": "جامعة بكين واسعة جداً وتضم أكثر من أربعين ألف طالب. الحرم الجامعي جميل للغاية وفيه دار سينما وتذاكرها غير مكلفة، ونود العودة إلى هنا لمشاهدة فيلم حين يتاح لنا وقت فراغ."
+        "en": "Of course. I used to study at Peking University.",
+        "ar": "بالطبع، فقد درست في جامعة بكين من قبل."
       },
       "audio": null
     }
@@ -275,5 +132,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 2."
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 2.",
+  "targetVocabularyIds": ["da-che", "gong-jiao-che", "beijing-daxue", "jiaoshi"]
 }

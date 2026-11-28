@@ -1,0 +1,68 @@
+{
+  "id": "hsk-3-unit-15-conversation-1",
+  "hskLevel": 3,
+  "unitId": 15,
+  "contentType": "dialogue",
+  "title": {
+    "zh": "第15课：我是半个南京人",
+    "en": "Lesson 15: I’m practically from Nanjing",
+    "ar": "الدرس 15: أنا من نانجينغ تقريباً"
+  },
+  "dialogue": [
+    {
+      "id": "15-1-1",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "你在南京住了这么多年，算不算半个南京人？",
+      "pinyin": "Nǐ zài Nánjīng zhù le zhème duō nián, suàn bu suàn bàn ge Nánjīng rén?",
+      "translation": {
+        "en": "You’ve lived in Nanjing for so many years. Are you practically a local?",
+        "ar": "عشت في نانجينغ سنوات طويلة، ألا تُعد من أهلها تقريباً؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "15-1-2",
+      "role": "许安 (Xǔ Ān)",
+      "hanzi": "算吧，我已经习惯这里的生活和天气了。",
+      "pinyin": "Suàn ba, wǒ yǐjīng xíguàn zhèlǐ de shēnghuó hé tiānqì le.",
+      "translation": {
+        "en": "I suppose so. I’m used to the life and weather here now.",
+        "ar": "أظن ذلك، فقد اعتدت الحياة والطقس هنا."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-1-3",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "根据你平时的口音，别人还以为你是本地人呢。",
+      "pinyin": "Gēnjù nǐ píngshí de kǒuyīn, biérén hái yǐwéi nǐ shì běndì rén ne.",
+      "translation": {
+        "en": "From your accent, people might think you’re a local.",
+        "ar": "قد يظن الناس أنك من أهل المدينة بسبب لهجتك."
+      },
+      "audio": null
+    },
+    {
+      "id": "15-1-4",
+      "role": "许安 (Xǔ Ān)",
+      "hanzi": "我还差得远，不过我知道哪家的鸭血粉丝汤最好吃。",
+      "pinyin": "Wǒ hái chà de yuǎn, búguò wǒ zhīdào nǎ jiā de yāxuè fěnsītāng zuì hǎochī.",
+      "translation": {
+        "en": "Not quite, but I do know where to get the best duck-blood vermicelli soup.",
+        "ar": "ليس تماماً، لكنني أعرف أفضل مكان لتناول حساء نودلز دم البط."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [],
+  "culturalNotes": [],
+  "comprehensionQuestions": [],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "status": "ready",
+  "curriculum": "hsk3",
+  "targetVocabularyIds": ["genju", "pingshi", "nanjing"],
+  "authoringNote": "Original dialogue aligned to the lesson topic; translations and tone-marked pinyin are supplied for every turn."
+}

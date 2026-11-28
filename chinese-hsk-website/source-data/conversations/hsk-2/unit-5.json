@@ -9,192 +9,71 @@
     "en": "Lesson 5: Take this one",
     "ar": "الدرس 5: لنشترِ هذه القطعة"
   },
-  "targetVocabularyIds": [
-    "yu",
-    "fanguan",
-    "bu-cuo",
-    "keneng",
-    "yin",
-    "waimian",
-    "jian-2",
-    "yi-fu",
-    "hongcha",
-    "lvcha"
-  ],
+  "targetVocabularyIds": ["yanse", "bu-cuo", "hei-se", "zuobian", "waimian"],
   "dialogue": [
     {
       "id": "5-1-1",
-      "role": "Speaker A",
-      "hanzi": "晚上我们吃什么？",
-      "pinyin": "Wǎnshang wǒmen chī shénme?",
+      "role": "林娜",
+      "hanzi": "你想给姐姐买什么？",
+      "pinyin": "Nǐ xiǎng gěi jiějie mǎi shénme?",
       "translation": {
-        "en": "What shall we eat tonight?",
-        "ar": "ماذا سنأكل في وجبة العشاء الليلة؟"
+        "en": "What would you like to buy for your older sister?",
+        "ar": "ماذا تريد أن تشتري لأختك الكبرى؟"
       },
       "audio": null
     },
     {
       "id": "5-1-2",
-      "role": "Speaker B",
-      "hanzi": "我们去外面吃吧。",
-      "pinyin": "Wǒmen qù wàimiàn chī ba.",
+      "role": "陈明",
+      "hanzi": "她需要一件外套，天气冷了。",
+      "pinyin": "Tā xūyào yí jiàn wàitào, tiānqì lěng le.",
       "translation": {
-        "en": "Let's eat out.",
-        "ar": "دعنا نأكل في الخارج."
+        "en": "She needs a coat; the weather has turned cold.",
+        "ar": "تحتاج إلى معطف، فالطقس أصبح بارداً."
       },
       "audio": null
     },
     {
       "id": "5-1-3",
-      "role": "Speaker A",
-      "hanzi": "想吃什么？",
-      "pinyin": "Xiǎng chī shénme?",
+      "role": "林娜",
+      "hanzi": "这件怎么样？颜色不错，大小也合适。",
+      "pinyin": "Zhè jiàn zěnmeyàng? Yánsè búcuò, dàxiǎo yě héshì.",
       "translation": {
-        "en": "What do you want to eat?",
-        "ar": "ماذا تحب أن تأكل؟"
+        "en": "How about this one? The color is nice, and the size looks right.",
+        "ar": "ما رأيك بهذا؟ لونه جميل ومقاسه مناسب."
       },
       "audio": null
     },
     {
       "id": "5-1-4",
-      "role": "Speaker B",
-      "hanzi": "我们去吃鱼吧，那家饭馆的鱼做得很好。",
-      "pinyin": "Wǒmen qù chī yú ba, nà jiā fànguǎn de yú zuò de hěn hǎo.",
+      "role": "陈明",
+      "hanzi": "她喜欢黑色，左边那件更适合她。",
+      "pinyin": "Tā xǐhuan hēisè, zuǒbian nà jiàn gèng shìhé tā.",
       "translation": {
-        "en": "Let's go eat fish; that restaurant prepares fish very well.",
-        "ar": "لنذهب لتناول السمك، ذلك المطعم يطهو السمك بشكل ممتاز."
+        "en": "She likes black. The one on the left would suit her better.",
+        "ar": "هي تحب الأسود. المعطف على اليسار أنسب لها."
       },
       "audio": null
     },
     {
-      "id": "5-2-1",
-      "role": "Speaker A",
-      "hanzi": "你看这件衣服怎么样？",
-      "pinyin": "Nǐ kàn zhè jiàn yīfu zěnmeyàng?",
+      "id": "5-1-5",
+      "role": "林娜",
+      "hanzi": "你可以先试试看，外面风很大。",
+      "pinyin": "Nǐ kěyǐ xiān shìshi kàn, wàimian fēng hěn dà.",
       "translation": {
-        "en": "What do you think of this piece of clothing?",
-        "ar": "ما رأيك في قطعة الملابس هذه؟"
+        "en": "You can try it on first; it’s very windy outside.",
+        "ar": "يمكنك تجربته أولاً، فالرياح شديدة في الخارج."
       },
       "audio": null
     },
     {
-      "id": "5-2-2",
-      "role": "Speaker B",
-      "hanzi": "颜色还可以，就是有点儿大。",
-      "pinyin": "Yánsè hái kěyǐ, jiù shì yǒudiǎnr dà.",
+      "id": "5-1-6",
+      "role": "陈明",
+      "hanzi": "好，就买左边这件吧，谢谢你帮我选。",
+      "pinyin": "Hǎo, jiù mǎi zuǒbian zhè jiàn ba, xièxie nǐ bāng wǒ xuǎn.",
       "translation": {
-        "en": "The color is fine, but it's a bit too big.",
-        "ar": "لونها مقبول، لكنها واسعة بعض الشيء."
-      },
-      "audio": null
-    },
-    {
-      "id": "5-2-3",
-      "role": "Speaker A",
-      "hanzi": "这件小的怎么样？",
-      "pinyin": "Zhè jiàn xiǎo de zěnmeyàng?",
-      "translation": {
-        "en": "How about this smaller one?",
-        "ar": "ما رأيك في هذه الأصغر حجماً؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "5-2-4",
-      "role": "Speaker B",
-      "hanzi": "这件不错，就买这件吧。",
-      "pinyin": "Zhè jiàn búcuò, jiù mǎi zhè jiàn ba.",
-      "translation": {
-        "en": "This one is nice; let's buy this one.",
-        "ar": "هذه جيدة جداً، فلنشترِ هذه إذاً."
-      },
-      "audio": null
-    },
-    {
-      "id": "5-3-1",
-      "role": "Speaker A",
-      "hanzi": "今天好一点儿了吗？",
-      "pinyin": "Jīntiān hǎo yìdiǎnr le ma?",
-      "translation": {
-        "en": "Are you feeling a bit better today?",
-        "ar": "هل تشعر بتحسن قليل اليوم؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "5-3-2",
-      "role": "Speaker B",
-      "hanzi": "好多了。医生让我多喝水，多休息。",
-      "pinyin": "Hǎo duō le. Yīshēng ràng wǒ duō hē shuǐ, duō xiūxi.",
-      "translation": {
-        "en": "Much better. The doctor told me to drink plenty of water and rest more.",
-        "ar": "أفضل بكثير. نصحني الطبيب بالإكثار من شرب الماء والراحة."
-      },
-      "audio": null
-    },
-    {
-      "id": "5-3-3",
-      "role": "Speaker A",
-      "hanzi": "喝点儿茶吧。",
-      "pinyin": "Hē diǎnr chá ba.",
-      "translation": {
-        "en": "Have some tea.",
-        "ar": "اشرب بعض الشاي."
-      },
-      "audio": null
-    },
-    {
-      "id": "5-3-4",
-      "role": "Speaker B",
-      "hanzi": "谢谢，我不喝茶，医生说喝水最好。",
-      "pinyin": "Xièxie, wǒ bù hē chá, yīshēng shuō hē shuǐ zuì hǎo.",
-      "translation": {
-        "en": "Thank you, I don't drink tea; the doctor said drinking water is best.",
-        "ar": "شكراً لك، أنا لا أشرب الشاي، فالطبيب قال إن شرب الماء النقي هو الأفضل."
-      },
-      "audio": null
-    },
-    {
-      "id": "5-4-1",
-      "role": "Speaker A",
-      "hanzi": "外面天气怎么样？",
-      "pinyin": "Wàimiàn tiānqì zěnmeyàng?",
-      "translation": {
-        "en": "How is the weather outside?",
-        "ar": "كيف حال الطقس في الخارج؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "5-4-2",
-      "role": "Speaker B",
-      "hanzi": "阴天，可能要下雨。",
-      "pinyin": "Yīntiān, kěnéng yào xiàyǔ.",
-      "translation": {
-        "en": "It's overcast, it might rain.",
-        "ar": "إنه غائم، ربما ستمطر."
-      },
-      "audio": null
-    },
-    {
-      "id": "5-4-3",
-      "role": "Speaker A",
-      "hanzi": "那我们今天不去踢足球了。",
-      "pinyin": "Nà wǒmen jīntiān bú qù tī zúqiú le.",
-      "translation": {
-        "en": "Then we won't go play football today.",
-        "ar": "إذاً لن نذهب للعب كرة القدم اليوم."
-      },
-      "audio": null
-    },
-    {
-      "id": "5-4-4",
-      "role": "Speaker B",
-      "hanzi": "好，在家里看电视吧。",
-      "pinyin": "Hǎo, zài jiālǐ kàn diànshì ba.",
-      "translation": {
-        "en": "Okay, let's watch TV at home.",
-        "ar": "حسناً، فلنشاهد التلفاز في المنزل."
+        "en": "All right, I’ll buy this one on the left. Thanks for helping me choose.",
+        "ar": "حسناً، سأشتري هذا المعطف على اليسار. شكراً لمساعدتي في الاختيار."
       },
       "audio": null
     }
@@ -248,5 +127,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official HSK 2 Standard Course Lesson 5 dialogues."
+  "authoringNote": "Official HSK 2 Standard Course Lesson 5 dialogues.",
+  "curriculum": "standard"
 }

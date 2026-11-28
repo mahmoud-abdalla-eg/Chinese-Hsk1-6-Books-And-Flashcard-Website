@@ -12,112 +12,68 @@
   },
   "dialogue": [
     {
-      "id": "2-1-1",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "请问，你叫什么名字？",
-      "pinyin": "Qǐngwèn, nǐ jiào shénme míngzi?",
+      "id": "2-name-1",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "请问，你叫什么名字？刚才老师叫你，我没听清。",
+      "pinyin": "Qǐngwèn, nǐ jiào shénme míngzi? Gāngcái lǎoshī jiào nǐ, wǒ méi tīngqīng.",
       "translation": {
-        "en": "Excuse me, what is your name?",
-        "ar": "من فضلك، ما اسمك؟"
+        "en": "Excuse me, what’s your name? The teacher called you just now, but I didn’t hear clearly.",
+        "ar": "عذراً، ما اسمك؟ نادتك المعلمة قبل قليل، لكنني لم أسمع بوضوح."
       },
       "audio": null
     },
     {
-      "id": "2-1-2",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "我叫陈天中。",
-      "pinyin": "Wǒ jiào Chén Tiānzhōng.",
+      "id": "2-name-2",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "我叫白家月。你是新来的同学吗？",
+      "pinyin": "Wǒ jiào Bái Jiāyuè. Nǐ shì xīn lái de tóngxué ma?",
       "translation": {
-        "en": "My name is Chen Tianzhong.",
-        "ar": "اسمي تشن تيانتشونغ."
+        "en": "I’m Bai Jiayue. Are you the new classmate?",
+        "ar": "اسمي باي جيايويه. هل أنت زميل الدراسة الجديد؟"
       },
       "audio": null
     },
     {
-      "id": "2-2-1",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "你好，安妮！",
-      "pinyin": "Nǐ hǎo, Ānnī!",
+      "id": "2-name-3",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "是的，我叫李文，很高兴认识你。",
+      "pinyin": "Shì de, wǒ jiào Lǐ Wén, hěn gāoxìng rènshi nǐ.",
       "translation": {
-        "en": "Hello, Annie!",
-        "ar": "مرحباً يا آني!"
+        "en": "Yes, I’m Li Wen. Nice to meet you.",
+        "ar": "نعم، اسمي لي ون. سررت بالتعرف إليك."
       },
       "audio": null
     },
     {
-      "id": "2-2-2",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "你好，陈天中！我不是安妮，我是白家月。",
-      "pinyin": "Nǐ hǎo, Chén Tiānzhōng! Wǒ bú shì Ānnī, wǒ shì Bái Jiāyuè.",
+      "id": "2-name-4",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "我也很高兴认识你。你刚才是不是走错教室了？",
+      "pinyin": "Wǒ yě hěn gāoxìng rènshi nǐ. Nǐ gāngcái shì bu shì zǒu cuò jiàoshì le?",
       "translation": {
-        "en": "Hello, Chen Tianzhong! I am not Annie, I am Bai Jiayue.",
-        "ar": "مرحباً تشن تيانتشونغ! أنا لست آني، أنا باي جيايويه."
+        "en": "Nice to meet you too. Did you go to the wrong classroom just now?",
+        "ar": "وأنا أيضاً سعيدة بالتعرف إليك. هل دخلت الصف الخطأ قبل قليل؟"
       },
       "audio": null
     },
     {
-      "id": "2-2-3",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "对不起！",
-      "pinyin": "Duìbuqǐ!",
+      "id": "2-name-5",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "对不起，我看错了门上的号码。",
+      "pinyin": "Duìbuqǐ, wǒ kàn cuò le mén shàng de hàomǎ.",
       "translation": {
-        "en": "I am sorry!",
-        "ar": "أنا آسف جداً!"
+        "en": "Sorry, I misread the number on the door.",
+        "ar": "أعتذر، قرأت الرقم على الباب خطأً."
       },
       "audio": null
     },
     {
-      "id": "2-2-4",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "没关系！",
-      "pinyin": "Méi guānxi!",
+      "id": "2-name-6",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "没关系，我带你去我们的教室吧。",
+      "pinyin": "Méi guānxi, wǒ dài nǐ qù wǒmen de jiàoshì ba.",
       "translation": {
-        "en": "That's all right! (No worries)",
-        "ar": "لا بأس! (لا عليك)"
-      },
-      "audio": null
-    },
-    {
-      "id": "2-3-1",
-      "role": "李文 (Li Wen)",
-      "hanzi": "你好！我叫李文。",
-      "pinyin": "Nǐ hǎo! Wǒ jiào Lǐ Wén.",
-      "translation": {
-        "en": "Hello! My name is Li Wen.",
-        "ar": "مرحباً! اسمي لي ون."
-      },
-      "audio": null
-    },
-    {
-      "id": "2-3-2",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "你好！我叫白家月。",
-      "pinyin": "Nǐ hǎo! Wǒ jiào Bái Jiāyuè.",
-      "translation": {
-        "en": "Hello! My name is Bai Jiayue.",
-        "ar": "مرحباً! اسمي باي جيايويه."
-      },
-      "audio": null
-    },
-    {
-      "id": "2-3-3",
-      "role": "李文 (Li Wen)",
-      "hanzi": "很高兴认识你。",
-      "pinyin": "Hěn gāoxìng rènshi nǐ.",
-      "translation": {
-        "en": "Nice to meet you.",
-        "ar": "سررت جداً بمعرفتك."
-      },
-      "audio": null
-    },
-    {
-      "id": "2-3-4",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "认识你我也很高兴。",
-      "pinyin": "Rènshi nǐ wǒ yě hěn gāoxìng.",
-      "translation": {
-        "en": "Nice to meet you too.",
-        "ar": "وأنا أيضاً مسرورة بمعرفتك."
+        "en": "No problem. I’ll show you to our classroom.",
+        "ar": "لا بأس، سأرشدك إلى صفنا."
       },
       "audio": null
     }
@@ -171,5 +127,14 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 2."
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 2.",
+  "targetVocabularyIds": [
+    "duibuqi",
+    "gaoxing",
+    "mei-guanxi",
+    "mingzi",
+    "qingwen",
+    "ren-shi",
+    "shenme"
+  ]
 }

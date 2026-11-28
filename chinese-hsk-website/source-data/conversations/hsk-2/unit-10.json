@@ -9,192 +9,71 @@
     "en": "Lesson 10: Stop looking, the mobile phone is on the table",
     "ar": "الدرس 10: لا تبحث أكثر، الهاتف على الطاولة"
   },
-  "targetVocabularyIds": [
-    "bie",
-    "shouji",
-    "bang",
-    "na",
-    "bao",
-    "pangbian",
-    "shangchang",
-    "chumen",
-    "yanjing",
-    "lei"
-  ],
+  "targetVocabularyIds": ["chumen", "pangbian", "xiamian", "yijing"],
   "dialogue": [
     {
       "id": "10-1-1",
-      "role": "Speaker A",
-      "hanzi": "别找了，手机在桌子上呢，电脑旁边。",
-      "pinyin": "Bié zhǎo le, shǒujī zài zhuōzi shang ne, diànnǎo pángbiān.",
+      "role": "林娜",
+      "hanzi": "陈明，你看见我的手机了吗？我出门前还拿着。",
+      "pinyin": "Chén Míng, nǐ kànjiàn wǒ de shǒujī le ma? Wǒ chūmén qián hái názhe.",
       "translation": {
-        "en": "Stop looking, the mobile phone is on the table, right next to the computer.",
-        "ar": "كفاك بحثاً، الهاتف موضوع على الطاولة بجانب الحاسوب."
+        "en": "Chen Ming, have you seen my phone? I still had it before I left.",
+        "ar": "تشن مينغ، هل رأيت هاتفي؟ كان معي قبل أن أخرج."
       },
       "audio": null
     },
     {
       "id": "10-1-2",
-      "role": "Speaker B",
-      "hanzi": "看见了，谢谢！我正找它呢。",
-      "pinyin": "Kànjiàn le, xièxie! Wǒ zhèng zhǎo tā ne.",
+      "role": "陈明",
+      "hanzi": "刚才在电脑旁边的桌子上看见了。",
+      "pinyin": "Gāngcái zài diànnǎo pángbiān de zhuōzi shàng kànjiàn le.",
       "translation": {
-        "en": "Found it, thanks! I was just looking for it.",
-        "ar": "رأيته، شكراً جزيلاً! كنت أبحث عنه في هذه اللحظة."
+        "en": "I saw it just now on the desk beside the computer.",
+        "ar": "رأيته قبل قليل على المكتب بجانب الحاسوب."
       },
       "audio": null
     },
     {
       "id": "10-1-3",
-      "role": "Speaker A",
-      "hanzi": "你要出门吗？",
-      "pinyin": "Nǐ yào chūmén ma?",
+      "role": "林娜",
+      "hanzi": "桌子上？我怎么找了半天也没看见？",
+      "pinyin": "Zhuōzi shàng? Wǒ zěnme zhǎo le bàntiān yě méi kànjiàn?",
       "translation": {
-        "en": "Are you heading out?",
-        "ar": "هل أنت خارج من البيت؟"
+        "en": "On the desk? How did I search for so long and not see it?",
+        "ar": "على المكتب؟ كيف بحثت كل هذا الوقت ولم أره؟"
       },
       "audio": null
     },
     {
       "id": "10-1-4",
-      "role": "Speaker B",
-      "hanzi": "对，我去超市买点儿水果。",
-      "pinyin": "Duì, wǒ qù chāoshì mǎi diǎnr shuǐguǒ.",
+      "role": "陈明",
+      "hanzi": "你看，它已经在本子下面了。",
+      "pinyin": "Nǐ kàn, tā yǐjīng zài běnzi xiàmian le.",
       "translation": {
-        "en": "Yes, I'm going to the supermarket to buy some fruit.",
-        "ar": "نعم، أنا ذاهب إلى السوبرماركت لشراء بعض الفاكهة."
+        "en": "Look, it’s already under your notebook.",
+        "ar": "انظري، إنه تحت دفترك بالفعل."
       },
       "audio": null
     },
     {
-      "id": "10-2-1",
-      "role": "Speaker A",
-      "hanzi": "别看报纸了，医生说你要多休息眼睛。",
-      "pinyin": "Bié kàn bàozhǐ le, yīshēng shuō nǐ yào duō xiūxi yǎnjing.",
+      "id": "10-1-5",
+      "role": "林娜",
+      "hanzi": "找到了！我刚才一直在看包里。",
+      "pinyin": "Zhǎodào le! Wǒ gāngcái yìzhí zài kàn bāo lǐ.",
       "translation": {
-        "en": "Stop reading the newspaper; the doctor told you to rest your eyes more.",
-        "ar": "توقف عن قراءة الصحف، الطبيب أوصاك بإراحة عينيك أكثر."
+        "en": "Found it! I was looking in my bag the whole time.",
+        "ar": "وجدته! كنت أبحث في حقيبتي طوال الوقت."
       },
       "audio": null
     },
     {
-      "id": "10-2-2",
-      "role": "Speaker B",
-      "hanzi": "好，那我听听音乐。",
-      "pinyin": "Hǎo, nà wǒ tīngting yīnyuè.",
+      "id": "10-1-6",
+      "role": "陈明",
+      "hanzi": "下次先看看桌子，再出门吧。",
+      "pinyin": "Xià cì xiān kànkan zhuōzi, zài chūmén ba.",
       "translation": {
-        "en": "Okay, then I'll listen to some music.",
-        "ar": "حسناً، سأستمع إلى بعض الموسيقى إذاً."
-      },
-      "audio": null
-    },
-    {
-      "id": "10-2-3",
-      "role": "Speaker A",
-      "hanzi": "听音乐挺好的，放松一下。",
-      "pinyin": "Tīng yīnyuè tǐng hǎo de, fàngsōng yíxià.",
-      "translation": {
-        "en": "Listening to music is great; relax a bit.",
-        "ar": "الاستماع للموسيقى فكرة رائعة للاسترخاء قليلاً."
-      },
-      "audio": null
-    },
-    {
-      "id": "10-2-4",
-      "role": "Speaker B",
-      "hanzi": "好的。",
-      "pinyin": "Hǎo de.",
-      "translation": {
-        "en": "All right.",
-        "ar": "حسناً."
-      },
-      "audio": null
-    },
-    {
-      "id": "10-3-1",
-      "role": "Speaker A",
-      "hanzi": "帮我拿一下包，好吗？",
-      "pinyin": "Bāng wǒ ná yíxià bāo, hǎo ma?",
-      "translation": {
-        "en": "Could you help me hold the bag for a moment?",
-        "ar": "هلّا ساعدتني وحملت هذه الحقيبة للحظة؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "10-3-2",
-      "role": "Speaker B",
-      "hanzi": "好的。怎么买了这么多东西？",
-      "pinyin": "Hǎo de. Zěnme mǎi le zhème duō dōngxi?",
-      "translation": {
-        "en": "Sure. How did you buy so many things?",
-        "ar": "بكل سرور. ولكن كيف اشتريت كل هذه الأغراض الكثيرة؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "10-3-3",
-      "role": "Speaker A",
-      "hanzi": "今天超市很多东西都打折，很便宜。",
-      "pinyin": "Jīntiān chāoshì hěn duō dōngxi dōu dǎzhé, hěn piányi.",
-      "translation": {
-        "en": "Many items in the supermarket had discounts today; very cheap.",
-        "ar": "كانت هناك تخفيضات على أشياء كثيرة في المتجر اليوم، والأسعار رخيصة جداً."
-      },
-      "audio": null
-    },
-    {
-      "id": "10-3-4",
-      "role": "Speaker B",
-      "hanzi": "难怪你买这么多。",
-      "pinyin": "Nánguài nǐ mǎi zhème duō.",
-      "translation": {
-        "en": "No wonder you bought so much.",
-        "ar": "لا عجب إذاً أنك اشتريت كل هذا."
-      },
-      "audio": null
-    },
-    {
-      "id": "10-4-1",
-      "role": "Speaker A",
-      "hanzi": "别工作了，已经十点了，该休息了。",
-      "pinyin": "Bié gōngzuò le, yǐjīng shí diǎn le, gāi xiūxi le.",
-      "translation": {
-        "en": "Stop working; it's already ten o'clock, time to rest.",
-        "ar": "كفاك عملاً، لقد أصبحت الساعة العاشرة، حان وقت الراحة."
-      },
-      "audio": null
-    },
-    {
-      "id": "10-4-2",
-      "role": "Speaker B",
-      "hanzi": "等我十分钟，我把这个做完。",
-      "pinyin": "Děng wǒ shí fēnzhōng, wǒ bǎ zhè ge zuò wán.",
-      "translation": {
-        "en": "Give me ten minutes; let me finish this.",
-        "ar": "أمهلني عشر دقائق، سأنهي هذا العمل فقط."
-      },
-      "audio": null
-    },
-    {
-      "id": "10-4-3",
-      "role": "Speaker A",
-      "hanzi": "别太累了，身体最重要。",
-      "pinyin": "Bié tài lèi le, shēntǐ zuì zhòngyào.",
-      "translation": {
-        "en": "Don't get too exhausted; health is most important.",
-        "ar": "لا ترهق نفسك كثيراً، الصحة هي الأهم دائماً."
-      },
-      "audio": null
-    },
-    {
-      "id": "10-4-4",
-      "role": "Speaker B",
-      "hanzi": "好的，我马上就好。",
-      "pinyin": "Hǎo de, wǒ mǎshàng jiù hǎo.",
-      "translation": {
-        "en": "All right, I'll be done right away.",
-        "ar": "حسناً، سأنتهي في الحال."
+        "en": "Next time, check the desk before you leave.",
+        "ar": "في المرة القادمة تحققي من المكتب قبل الخروج."
       },
       "audio": null
     }
@@ -248,5 +127,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official HSK 2 Standard Course Lesson 10 dialogues."
+  "authoringNote": "Official HSK 2 Standard Course Lesson 10 dialogues.",
+  "curriculum": "standard"
 }

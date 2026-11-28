@@ -12,10 +12,6 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
   const { lang, tr } = useLanguage();
   const { isGuest } = useAuth();
   const { progress, syncStatus } = usePersistentProgress();
-  const learnedSet = useMemo(
-    () => new Set(progress.learnedWords),
-    [progress.learnedWords],
-  );
   const wordById = useMemo(() => {
     const map = new Map();
     for (const level of levelWords) {
@@ -23,6 +19,11 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
     }
     return map;
   }, [levelWords]);
+  const learnedSet = useMemo(
+    () =>
+      new Set(progress.learnedWords.filter((wordId) => wordById.has(wordId))),
+    [progress.learnedWords, wordById],
+  );
   const totalWords = summaries.reduce((sum, item) => sum + item.wordCount, 0);
   const percent = totalWords
     ? Math.round((learnedSet.size / totalWords) * 100)
@@ -69,6 +70,10 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
       .length,
   }));
   const maxDailyCount = Math.max(1, ...dailyActivity.map((day) => day.count));
+  if (syncStatus === "loading") {
+    return <DashboardLoadingState label={tr("loadingDashboard")} />;
+  }
+
   return (
     <div className="space-y-8 pb-8">
       {isGuest ? (
@@ -306,42 +311,9 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
               </Link>
             ) : null}
           </Card>
-          <Card>
-            <h2 className="text-2xl font-black text-slate-950">
-              {tr("recentStudyActivity")}
-            </h2>
-            <div className="mt-4 grid gap-3 text-sm font-bold text-slate-600">
-              {recent.length ? (
-                recent.map((item) => (
-                  <span key={item.reviewedAt}>
-                    {formatWord(wordById.get(item.wordId), lang) || item.wordId}{" "}
-                    - {qualityLabel(item.quality, tr)}
-                  </span>
-                ))
-              ) : (
-                <span>{tr("noReviewHistory")}</span>
-              )}
-            </div>
-          </Card>
         </div>
       </div>
-      <div className="grid gap-6 lg:grid-cols-3">
-        <Card>
-          <h2 className="text-2xl font-black text-slate-950">
-            {tr("levelCompletion")}
-          </h2>
-          <div className="mt-4 grid gap-3">
-            {levelProgress.map((level) => (
-              <BarRow
-                key={level.level}
-                label={`HSK ${level.level}`}
-                value={level.learnedWords.length}
-                max={Math.max(1, level.wordCount)}
-                detail={`${level.learnedWords.length}/${level.wordCount}`}
-              />
-            ))}
-          </div>
-        </Card>
+      <div className="grid gap-6 lg:grid-cols-2">
         <Card>
           <h2 className="text-2xl font-black text-slate-950">
             {tr("reviewMix")}
@@ -360,22 +332,15 @@ export default function DashboardClient({ summaries, levelWords = [] }) {
         </Card>
         <Card>
           <h2 className="text-2xl font-black text-slate-950">
-            {tr("recentScores")}
+            {tr("recentStudyActivity")}
           </h2>
           <div className="mt-4 grid gap-3 text-sm font-bold text-slate-600">
             {recent.length ? (
               recent.map((item) => (
-                <div
-                  key={`${item.wordId}-${item.reviewedAt}`}
-                  className="flex items-center justify-between rounded-2xl bg-slate-50 px-4 py-3"
-                >
-                  <span>
-                    {formatWord(wordById.get(item.wordId), lang) || item.wordId}
-                  </span>
-                  <span className="rounded-full bg-white px-3 py-1 text-xs font-black text-slate-950">
-                    {qualityLabel(item.quality, tr)}
-                  </span>
-                </div>
+                <span key={`${item.wordId}-${item.reviewedAt}`}>
+                  {formatWord(wordById.get(item.wordId), lang) || item.wordId} -{" "}
+                  {qualityLabel(item.quality, tr)}
+                </span>
               ))
             ) : (
               <span>{tr("noReviewHistory")}</span>
@@ -563,6 +528,41 @@ function BarRow({ detail, label, max, value }) {
         />
       </div>
     </div>
+  );
+}
+
+function DashboardLoadingState({ label }) {
+  return (
+    <output
+      aria-live="polite"
+      aria-busy="true"
+      aria-label={label}
+      className="block space-y-6 pb-8"
+    >
+      <div aria-hidden="true" className="animate-pulse space-y-6">
+        <Surface className="grid gap-6 p-6 lg:grid-cols-[1fr_360px]">
+          <div className="space-y-4">
+            <div className="h-6 w-28 rounded-full bg-slate-200" />
+            <div className="h-12 max-w-lg rounded-xl bg-slate-200" />
+            <div className="h-4 max-w-2xl rounded-full bg-slate-100" />
+            <div className="h-4 max-w-xl rounded-full bg-slate-100" />
+          </div>
+          <div className="h-36 rounded-2xl bg-blue-50" />
+        </Surface>
+        <div className="grid gap-6 lg:grid-cols-[1fr_360px]">
+          <Card className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+            {["progress", "streak", "activity", "completion"].map((key) => (
+              <div key={key} className="h-24 rounded-2xl bg-slate-100" />
+            ))}
+          </Card>
+          <Card className="h-64 bg-slate-100" />
+        </div>
+        <div className="grid gap-6 lg:grid-cols-2">
+          <Card className="h-56 bg-slate-100" />
+          <Card className="h-56 bg-slate-100" />
+        </div>
+      </div>
+    </output>
   );
 }
 

@@ -1,0 +1,68 @@
+{
+  "id": "hsk-3-unit-11-conversation-1",
+  "hskLevel": 3,
+  "unitId": 11,
+  "contentType": "dialogue",
+  "title": {
+    "zh": "第11课：看来我没办法解决这个问题",
+    "en": "Lesson 11: I can’t solve this problem alone",
+    "ar": "الدرس 11: يبدو أنني لا أستطيع حل هذه المشكلة وحدي"
+  },
+  "dialogue": [
+    {
+      "id": "11-1-1",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "我试了好几次，看来还是没办法解决这个问题。",
+      "pinyin": "Wǒ shì le hǎo jǐ cì, kànlái háishi méi bànfǎ jiějué zhège wèntí.",
+      "translation": {
+        "en": "I’ve tried several times; it seems I still can’t solve this problem.",
+        "ar": "حاولت عدة مرات، ويبدو أنني ما زلت عاجزاً عن حل هذه المشكلة."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-1-2",
+      "role": "许安 (Xǔ Ān)",
+      "hanzi": "你把出错的地方给我看看，也许我能帮上忙。",
+      "pinyin": "Nǐ bǎ chūcuò de dìfang gěi wǒ kànkan, yěxǔ wǒ néng bāng shàng máng.",
+      "translation": {
+        "en": "Show me where it went wrong. Maybe I can help.",
+        "ar": "أرني موضع الخطأ، فربما أستطيع مساعدتك."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-1-3",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "这里的数字好像不对，我已经检查两遍了。",
+      "pinyin": "Zhèlǐ de shùzì hǎoxiàng bú duì, wǒ yǐjīng jiǎnchá liǎng biàn le.",
+      "translation": {
+        "en": "These numbers look wrong, though I’ve checked them twice.",
+        "ar": "تبدو الأرقام هنا غير صحيحة، مع أنني راجعتها مرتين."
+      },
+      "audio": null
+    },
+    {
+      "id": "11-1-4",
+      "role": "许安 (Xǔ Ān)",
+      "hanzi": "我再看一遍，找到了就马上告诉你。",
+      "pinyin": "Wǒ zài kàn yí biàn, zhǎodào le jiù mǎshàng gàosu nǐ.",
+      "translation": {
+        "en": "I’ll check once more and tell you as soon as I find it.",
+        "ar": "سأراجعها مرة أخرى وأخبرك فور أن أجد الخطأ."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [],
+  "culturalNotes": [],
+  "comprehensionQuestions": [],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "status": "ready",
+  "curriculum": "hsk3",
+  "targetVocabularyIds": ["banfa", "jiejue", "kanlai"],
+  "authoringNote": "Original dialogue aligned to the lesson topic; translations and tone-marked pinyin are supplied for every turn."
+}

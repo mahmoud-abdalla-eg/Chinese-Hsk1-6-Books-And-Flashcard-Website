@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { useLanguage } from "@/components/language/language-provider";
 
 export default function PasswordChangeForm() {
+  const { tr } = useLanguage();
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState("idle");
 
@@ -12,32 +14,43 @@ export default function PasswordChangeForm() {
     const formData = new FormData(form);
     const newPassword = String(formData.get("newPassword") || "");
     const confirmPassword = String(formData.get("confirmPassword") || "");
-    setStatus("saving");
-    setMessage("");
 
     if (newPassword !== confirmPassword) {
       setStatus("error");
-      setMessage("New passwords do not match.");
+      setMessage(tr("passwordsDoNotMatch"));
       return;
     }
 
-    const response = await fetch("/api/auth/password", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        currentPassword: formData.get("currentPassword"),
-        newPassword,
-      }),
-    });
-    const data = await response.json().catch(() => ({}));
-    if (!response.ok) {
+    setStatus("saving");
+    setMessage("");
+    try {
+      const response = await fetch("/api/auth/password", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          currentPassword: formData.get("currentPassword"),
+          newPassword,
+        }),
+      });
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok) {
+        const errorKey = {
+          "Current password is incorrect.": "currentPasswordIncorrect",
+          "Log in again before changing your password.":
+            "passwordSessionExpired",
+          "New password must be at least 8 characters.": "passwordTooShort",
+        }[data.error];
+        setStatus("error");
+        setMessage(errorKey ? tr(errorKey) : tr("passwordChangeFailed"));
+        return;
+      }
+      form.reset();
+      setStatus("success");
+      setMessage(tr("passwordChangedSuccessfully"));
+    } catch {
       setStatus("error");
-      setMessage(data.error || "Could not change password.");
-      return;
+      setMessage(tr("passwordChangeNetworkError"));
     }
-    form.reset();
-    setStatus("success");
-    setMessage("Password changed successfully.");
   }
 
   return (
@@ -45,24 +58,28 @@ export default function PasswordChangeForm() {
       onSubmit={changePassword}
       className="grid gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
     >
-      <h2 className="text-2xl font-black text-slate-950">Change password</h2>
+      <h2 className="text-2xl font-black text-slate-950">
+        {tr("changePassword")}
+      </h2>
       <PasswordInput
-        label="Current password"
+        label={tr("currentPassword")}
         name="currentPassword"
-        placeholder="Enter current password"
+        placeholder={tr("currentPassword")}
       />
       <PasswordInput
-        label="New password"
+        label={tr("newPassword")}
         name="newPassword"
-        placeholder="At least 8 characters"
+        placeholder={tr("passwordPlaceholder")}
       />
       <PasswordInput
-        label="Confirm new password"
+        label={tr("confirmNewPassword")}
         name="confirmPassword"
-        placeholder="Repeat new password"
+        placeholder={tr("confirmPasswordPlaceholder")}
       />
       {message ? (
         <p
+          role={status === "error" ? "alert" : "status"}
+          aria-atomic="true"
           className={`rounded-2xl p-4 text-sm font-bold ${
             status === "success"
               ? "bg-teal-50 text-teal-800"
@@ -77,7 +94,7 @@ export default function PasswordChangeForm() {
         disabled={status === "saving"}
         className="rounded-full bg-teal-700 px-5 py-3 text-sm font-black text-white hover:bg-teal-800 disabled:cursor-not-allowed disabled:bg-slate-400"
       >
-        {status === "saving" ? "Saving..." : "Update password"}
+        {status === "saving" ? tr("saving") : tr("updatePassword")}
       </button>
     </form>
   );

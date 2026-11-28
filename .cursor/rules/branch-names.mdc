@@ -1,0 +1,9 @@
+---
+description: Keep personal names out of branch names
+alwaysApply: true
+---
+
+# Branch naming
+
+- Never include the user's name, username, initials, or other personal identifier in a branch name.
+- Use a concise, purpose-based kebab-case name, such as `hsk-homepage-ui`.

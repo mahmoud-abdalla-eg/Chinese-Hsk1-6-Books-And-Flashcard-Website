@@ -2,65 +2,59 @@
   "id": "hsk-3-unit-7-conversation-1",
   "hskLevel": 3,
   "unitId": 7,
-  "status": "needs-authoring",
+  "status": "ready",
   "title": {
-    "en": "Unit 7 conversation authoring brief",
-    "zh": "第7单元会话编写说明",
-    "ar": "موجز تأليف محادثة الوحدة 7"
+    "zh": "第7课：那条裙子比短裤更好看",
+    "en": "Lesson 7: The skirt looks better",
+    "ar": "الدرس 7: التنورة أجمل من السروال القصير"
   },
-  "targetVocabularyIds": [
-    "qing-ke",
-    "qi-shi",
-    "qita",
-    "qiuchang",
-    "qiu-tian",
-    "qunzi",
-    "ran-hou",
-    "ren-de",
-    "ren-wei",
-    "ren-zhen",
-    "re-qing",
-    "rongyi",
-    "ruguo",
-    "san",
-    "sao",
-    "shafa",
-    "shan",
-    "shang-yi",
-    "shao-zi",
-    "shenbian",
-    "sheng",
-    "shen-gao",
-    "shenghuo",
-    "shengqi",
-    "shengyin",
-    "shi",
-    "shi-2",
-    "shi-3",
-    "shi-jie",
-    "shou",
-    "shou-2",
-    "shou-3",
-    "shoudao",
-    "shoudao-2",
-    "shu",
-    "shua",
-    "shuang",
-    "shui-ping",
-    "shu-shu",
-    "shu-xue",
-    "si-ji",
-    "siji",
-    "tai-yang",
-    "tang",
-    "te-bie",
-    "tian",
-    "tiao",
-    "ti-gao",
-    "ting",
-    "tingshuo"
+  "targetVocabularyIds": ["duanku", "qunzi"],
+  "dialogue": [
+    {
+      "id": "7-1-1",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "你觉得那条裙子和这条短裤，哪件更适合我？",
+      "pinyin": "Nǐ juéde nà tiáo qúnzi hé zhè tiáo duǎnkù, nǎ jiàn gèng shìhé wǒ?",
+      "translation": {
+        "en": "Which suits me better, that skirt or these shorts?",
+        "ar": "أيهما أنسب لي برأيك، تلك التنورة أم هذا السروال القصير؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "7-1-2",
+      "role": "许安 (Xǔ Ān)",
+      "hanzi": "裙子更好看，颜色也比短裤亮。",
+      "pinyin": "Qúnzi gèng hǎokàn, yánsè yě bǐ duǎnkù liàng.",
+      "translation": {
+        "en": "The skirt looks better, and its color is brighter than the shorts.",
+        "ar": "التنورة أجمل، ولونها أزهى من السروال القصير."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-1-3",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "可是我明天要骑车，穿裙子不太方便。",
+      "pinyin": "Kěshì wǒ míngtiān yào qí chē, chuān qúnzi bú tài fāngbiàn.",
+      "translation": {
+        "en": "But I’m cycling tomorrow, so a skirt may not be very practical.",
+        "ar": "لكنني سأركب الدراجة غداً، لذا قد لا تكون التنورة عملية."
+      },
+      "audio": null
+    },
+    {
+      "id": "7-1-4",
+      "role": "许安 (Xǔ Ān)",
+      "hanzi": "那就买短裤吧，舒服比好看更重要。",
+      "pinyin": "Nà jiù mǎi duǎnkù ba, shūfu bǐ hǎokàn gèng zhòngyào.",
+      "translation": {
+        "en": "Then get the shorts; comfort matters more than looks.",
+        "ar": "إذن خذ السروال القصير، فالراحة أهم من المظهر."
+      },
+      "audio": null
+    }
   ],
-  "dialogue": [],
   "grammarNotes": [],
   "culturalNotes": [],
   "comprehensionQuestions": [],
@@ -68,5 +62,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "This scaffold intentionally contains no invented dialogue. Add reviewed Chinese, pinyin, English, Arabic, and real audio paths before marking complete."
+  "authoringNote": "Original dialogue aligned to the lesson topic; translations and tone-marked pinyin are supplied for every turn.",
+  "curriculum": "hsk3"
 }

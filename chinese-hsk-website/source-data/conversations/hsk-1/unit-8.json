@@ -9,153 +9,49 @@
     "en": "Lesson 8: I'd Like Some Tea",
     "ar": "الدرس 8: أود شرب الشاي"
   },
-  "targetVocabularyIds": [
-    "xiang",
-    "he-2",
-    "cha",
-    "chi",
-    "mifan",
-    "xiawu",
-    "shangdian",
-    "mai-2",
-    "ge",
-    "beizi",
-    "zhe",
-    "duoshao",
-    "qian-2",
-    "kuai",
-    "na"
-  ],
+  "targetVocabularyIds": ["bu-yao", "dongxi", "shenme", "xiexie"],
   "dialogue": [
     {
       "id": "8-1-1",
-      "role": "Speaker A",
-      "hanzi": "你想喝什么？",
-      "pinyin": "Nǐ xiǎng hē shénme?",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "你想喝什么？这家店的茶很好。",
+      "pinyin": "Nǐ xiǎng hē shénme? Zhè jiā diàn de chá hěn hǎo.",
       "translation": {
-        "en": "What would you like to drink?",
-        "ar": "ماذا تحب أن تشرب؟"
+        "en": "What would you like to drink? The tea here is good.",
+        "ar": "ماذا تريد أن تشرب؟ الشاي في هذا المكان جيد."
       },
       "audio": null
     },
     {
       "id": "8-1-2",
-      "role": "Speaker B",
-      "hanzi": "我想喝茶。",
-      "pinyin": "Wǒ xiǎng hē chá.",
+      "role": "安娜 (Ānnà)",
+      "hanzi": "请给我一杯热茶，再来一杯水。",
+      "pinyin": "Qǐng gěi wǒ yì bēi rè chá, zài lái yì bēi shuǐ.",
       "translation": {
-        "en": "I would like some tea.",
-        "ar": "أود شرب الشاي."
+        "en": "A cup of hot tea, please, and a glass of water too.",
+        "ar": "أريد كوباً من الشاي الساخن وكوباً من الماء، من فضلك."
       },
       "audio": null
     },
     {
       "id": "8-1-3",
-      "role": "Speaker A",
-      "hanzi": "你想吃什么？",
-      "pinyin": "Nǐ xiǎng chī shénme?",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "好的。你要不要吃点儿东西？",
+      "pinyin": "Hǎo de. Nǐ yào bu yào chī diǎnr dōngxi?",
       "translation": {
-        "en": "What would you like to eat?",
-        "ar": "ماذا تحب أن تأكل؟"
+        "en": "Of course. Would you like something to eat?",
+        "ar": "حسناً. هل تريد أن تأكل شيئاً؟"
       },
       "audio": null
     },
     {
       "id": "8-1-4",
-      "role": "Speaker B",
-      "hanzi": "我想吃米饭。",
-      "pinyin": "Wǒ xiǎng chī mǐfàn.",
+      "role": "安娜 (Ānnà)",
+      "hanzi": "不用了，谢谢。我吃过饭了。",
+      "pinyin": "Bú yòng le, xièxie. Wǒ chī guò fàn le.",
       "translation": {
-        "en": "I would like some rice.",
-        "ar": "أود تناول الأرز."
-      },
-      "audio": null
-    },
-    {
-      "id": "8-2-1",
-      "role": "Speaker A",
-      "hanzi": "下午你想做什么？",
-      "pinyin": "Xiàwǔ nǐ xiǎng zuò shénme?",
-      "translation": {
-        "en": "What would you like to do this afternoon?",
-        "ar": "ماذا تريد أن تفعل بعد الظهر؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "8-2-2",
-      "role": "Speaker B",
-      "hanzi": "下午我想去商店。",
-      "pinyin": "Xiàwǔ wǒ xiǎng qù shāngdiàn.",
-      "translation": {
-        "en": "This afternoon I want to go to the store.",
-        "ar": "بعد الظهر أريد الذهاب إلى المتجر."
-      },
-      "audio": null
-    },
-    {
-      "id": "8-2-3",
-      "role": "Speaker A",
-      "hanzi": "你想买什么？",
-      "pinyin": "Nǐ xiǎng mǎi shénme?",
-      "translation": {
-        "en": "What do you want to buy?",
-        "ar": "ماذا تريد أن تشتري؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "8-2-4",
-      "role": "Speaker B",
-      "hanzi": "我想买一个杯子。",
-      "pinyin": "Wǒ xiǎng mǎi yí ge bēizi.",
-      "translation": {
-        "en": "I want to buy a cup.",
-        "ar": "أريد شراء كوب."
-      },
-      "audio": null
-    },
-    {
-      "id": "8-3-1",
-      "role": "Speaker A",
-      "hanzi": "你好！这个杯子多少钱？",
-      "pinyin": "Nǐ hǎo! Zhège bēizi duōshao qián?",
-      "translation": {
-        "en": "Hello! How much is this cup?",
-        "ar": "مرحباً! بكم هذا الكوب؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "8-3-2",
-      "role": "Speaker B",
-      "hanzi": "二十八块。",
-      "pinyin": "Èrshíbā kuài.",
-      "translation": {
-        "en": "28 yuan.",
-        "ar": "ثمانية وعشرون يواناً."
-      },
-      "audio": null
-    },
-    {
-      "id": "8-3-3",
-      "role": "Speaker A",
-      "hanzi": "那个杯子多少钱？",
-      "pinyin": "Nàge bēizi duōshao qián?",
-      "translation": {
-        "en": "How much is that cup?",
-        "ar": "وبكم ذلك الكوب الآخر؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "8-3-4",
-      "role": "Speaker B",
-      "hanzi": "那个杯子十八块钱。",
-      "pinyin": "Nàge bēizi shíbā kuài qián.",
-      "translation": {
-        "en": "That cup is 18 yuan.",
-        "ar": "ذلك الكوب بثمانية عشر يواناً."
+        "en": "No, thanks. I’ve already eaten.",
+        "ar": "لا، شكراً. لقد تناولت الطعام بالفعل."
       },
       "audio": null
     }
@@ -197,5 +93,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official HSK 1 Standard Course Lesson 8 dialogues."
+  "authoringNote": "Official HSK 1 Standard Course Lesson 8 dialogues.",
+  "curriculum": "standard"
 }

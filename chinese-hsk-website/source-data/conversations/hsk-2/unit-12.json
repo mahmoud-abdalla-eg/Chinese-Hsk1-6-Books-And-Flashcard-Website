@@ -9,189 +9,71 @@
     "en": "Lesson 12: You are wearing too little",
     "ar": "الدرس 12: ملابسك خفيفة جداً"
   },
-  "targetVocabularyIds": [
-    "de",
-    "chuan",
-    "shenti",
-    "pao-bu",
-    "kuai",
-    "baise",
-    "fanguan"
-  ],
+  "targetVocabularyIds": ["waimian", "shenti", "zhengme"],
   "dialogue": [
     {
       "id": "12-1-1",
-      "role": "Speaker A",
-      "hanzi": "今天怎么这么冷？",
-      "pinyin": "Jīntiān zěnme zhème lěng?",
+      "role": "陈明",
+      "hanzi": "外面降温了，你怎么只穿一件薄衣服？",
+      "pinyin": "Wàimian jiàngwēn le, nǐ zěnme zhǐ chuān yí jiàn báo yīfu?",
       "translation": {
-        "en": "Why is it so cold today?",
-        "ar": "لماذا الجو بارد للغاية اليوم؟"
+        "en": "It’s gotten colder outside. Why are you wearing only thin clothes?",
+        "ar": "انخفضت الحرارة في الخارج. لماذا ترتدين ثوباً خفيفاً فقط؟"
       },
       "audio": null
     },
     {
       "id": "12-1-2",
-      "role": "Speaker B",
-      "hanzi": "今天降温了，外面零下五度。",
-      "pinyin": "Jīntiān jiàngwēn le, wàimiàn líng xià wǔ dù.",
+      "role": "林娜",
+      "hanzi": "我刚从家里出来，没想到风这么大。",
+      "pinyin": "Wǒ gāng cóng jiā lǐ chūlái, méi xiǎngdào fēng zhème dà.",
       "translation": {
-        "en": "The temperature dropped today; it's five below zero outside.",
-        "ar": "انخفضت درجات الحرارة اليوم، الجو في الخارج خمس درجات تحت الصفر."
+        "en": "I just left home and didn’t expect the wind to be this strong.",
+        "ar": "خرجت للتو من المنزل ولم أتوقع أن تكون الرياح بهذه القوة."
       },
       "audio": null
     },
     {
       "id": "12-1-3",
-      "role": "Speaker A",
-      "hanzi": "你穿得太少了，容易感冒。",
-      "pinyin": "Nǐ chuān de tài shǎo le, róngyì gǎnmào.",
+      "role": "陈明",
+      "hanzi": "先穿上我的外套，别让身体着凉。",
+      "pinyin": "Xiān chuānshàng wǒ de wàitào, bié ràng shēntǐ zháoliáng.",
       "translation": {
-        "en": "You are wearing too little; it's easy to catch a cold.",
-        "ar": "ملابسك خفيفة وقليلة جداً، من السهل أن تصاب بنزلة برد."
+        "en": "Put on my coat first so you don’t catch a chill.",
+        "ar": "ارتدي معطفي أولاً كيلا تصابي بالبرد."
       },
       "audio": null
     },
     {
       "id": "12-1-4",
-      "role": "Speaker B",
-      "hanzi": "没关系，我身体很好。",
-      "pinyin": "Méi guānxi, wǒ shēntǐ hěn hǎo.",
+      "role": "林娜",
+      "hanzi": "谢谢你，等一会儿我就觉得暖和了。",
+      "pinyin": "Xièxie nǐ, děng yíhuìr wǒ jiù juéde nuǎnhuo le.",
       "translation": {
-        "en": "No worries, I have a strong body.",
-        "ar": "لا تقلق، صحتي قوية ومناعتي جيدة."
+        "en": "Thanks. I’ll feel warmer in a little while.",
+        "ar": "شكراً لك، سأشعر بالدفء بعد قليل."
       },
       "audio": null
     },
     {
-      "id": "12-2-1",
-      "role": "Speaker A",
-      "hanzi": "你怎么跑得这么快？",
-      "pinyin": "Nǐ zěnme pǎo de zhème kuài?",
+      "id": "12-1-5",
+      "role": "陈明",
+      "hanzi": "我们走快一点儿，车站就在前面。",
+      "pinyin": "Wǒmen zǒu kuài yìdiǎnr, chēzhàn jiù zài qiánmiàn.",
       "translation": {
-        "en": "How do you run so fast?",
-        "ar": "كيف تجري بهذه السرعة الكبيرة؟"
+        "en": "Let’s walk a little faster; the station is just ahead.",
+        "ar": "لنسرع قليلاً، فالمحطة أمامنا مباشرة."
       },
       "audio": null
     },
     {
-      "id": "12-2-2",
-      "role": "Speaker B",
-      "hanzi": "我每天都练习跑步。",
-      "pinyin": "Wǒ měi tiān dōu liànxí pǎobù.",
+      "id": "12-1-6",
+      "role": "林娜",
+      "hanzi": "好，回家以后我会多穿一点儿。",
+      "pinyin": "Hǎo, huí jiā yǐhòu wǒ huì duō chuān yìdiǎnr.",
       "translation": {
-        "en": "I practice running every day.",
-        "ar": "أمارس تمرين الجري يومياً."
-      },
-      "audio": null
-    },
-    {
-      "id": "12-2-3",
-      "role": "Speaker A",
-      "hanzi": "你跑得真好，比我快多了。",
-      "pinyin": "Nǐ pǎo de zhēn hǎo, bǐ wǒ kuài duō le.",
-      "translation": {
-        "en": "You run really well, much faster than me.",
-        "ar": "أنت تجري بروعة وتفوق، وأسرع مني بكثير."
-      },
-      "audio": null
-    },
-    {
-      "id": "12-2-4",
-      "role": "Speaker B",
-      "hanzi": "只要坚持练习，你也可以的。",
-      "pinyin": "Zhǐyào jiānchí liànxí, nǐ yě kěyǐ de.",
-      "translation": {
-        "en": "As long as you persist in practicing, you can do it too.",
-        "ar": "طالما أنك تداوم على التدريب، ستستطيع أنت أيضاً تحقيق ذلك."
-      },
-      "audio": null
-    },
-    {
-      "id": "12-3-1",
-      "role": "Speaker A",
-      "hanzi": "你做饭做得真好吃！",
-      "pinyin": "Nǐ zuò fàn zuò de zhēn hǎochī!",
-      "translation": {
-        "en": "You cook so deliciously!",
-        "ar": "طهيك للطعام لذيذ وشهي للغاية!"
-      },
-      "audio": null
-    },
-    {
-      "id": "12-3-2",
-      "role": "Speaker B",
-      "hanzi": "谢谢，我妈妈做饭比我做得更好。",
-      "pinyin": "Xièxie, wǒ māma zuò fàn bǐ wǒ zuò de gèng hǎo.",
-      "translation": {
-        "en": "Thank you, my mother cooks even better than I do.",
-        "ar": "شكراً لك، أمي تطهو أفضل مني بكثير."
-      },
-      "audio": null
-    },
-    {
-      "id": "12-3-3",
-      "role": "Speaker A",
-      "hanzi": "什么时候能尝尝你妈妈做的菜？",
-      "pinyin": "Shénme shíhou néng chángchang nǐ māma zuò de cài?",
-      "translation": {
-        "en": "When can I taste the dishes your mother makes?",
-        "ar": "متى يمكنني تذوق الأطباق التي تعدها والدتك؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "12-3-4",
-      "role": "Speaker B",
-      "hanzi": "下个星期来我家做客吧。",
-      "pinyin": "Xià ge xīngqī lái wǒ jiā zuòkè ba.",
-      "translation": {
-        "en": "Come be a guest at my home next week.",
-        "ar": "تفضل بزيارتنا في بيتنا ضيفاً عزيزاً في الأسبوع القادم."
-      },
-      "audio": null
-    },
-    {
-      "id": "12-4-1",
-      "role": "Speaker A",
-      "hanzi": "昨天晚上下雪了吗？",
-      "pinyin": "Zuótiān wǎnshang xià xuě le ma?",
-      "translation": {
-        "en": "Did it snow last night?",
-        "ar": "هل تساقطت الثلوج الليلة الماضية؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "12-4-2",
-      "role": "Speaker B",
-      "hanzi": "下了，下得很大，地上都是白的。",
-      "pinyin": "Xià le, xià de hěn dà, dìshang dōu shì bái de.",
-      "translation": {
-        "en": "Yes, it snowed heavily; the ground is completely white.",
-        "ar": "نعم، تساقطت بغزارة شديدة، حتى غطى البياض الأرض كلها."
-      },
-      "audio": null
-    },
-    {
-      "id": "12-4-3",
-      "role": "Speaker A",
-      "hanzi": "那我们今天穿暖和一点儿出去走走。",
-      "pinyin": "Nà wǒmen jīntiān chuān nuǎnhuo yìdiǎnr chūqù zǒuzhou.",
-      "translation": {
-        "en": "Then let's dress warmly and go for a walk outside today.",
-        "ar": "إذاً فلنرتدِ ملابس دافئة ونخرج للتنزه اليوم."
-      },
-      "audio": null
-    },
-    {
-      "id": "12-4-4",
-      "role": "Speaker B",
-      "hanzi": "好主意！",
-      "pinyin": "Hǎo zhǔyi!",
-      "translation": {
-        "en": "Great idea!",
-        "ar": "فكرة ممتازة!"
+        "en": "Okay. I’ll wear something warmer when I get home.",
+        "ar": "حسناً. سأرتدي ملابس أكثر دفئاً عندما أعود إلى المنزل."
       },
       "audio": null
     }
@@ -245,5 +127,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official HSK 2 Standard Course Lesson 12 dialogues."
+  "authoringNote": "Official HSK 2 Standard Course Lesson 12 dialogues.",
+  "curriculum": "standard"
 }

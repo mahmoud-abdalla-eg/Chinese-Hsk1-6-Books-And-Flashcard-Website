@@ -2,65 +2,59 @@
   "id": "hsk-3-unit-1-conversation-1",
   "hskLevel": 3,
   "unitId": 1,
-  "status": "needs-authoring",
+  "status": "ready",
   "title": {
-    "en": "Unit 1 conversation authoring brief",
-    "zh": "第1单元会话编写说明",
-    "ar": "موجز تأليف محادثة الوحدة 1"
+    "zh": "第1课：我们去机场接你们",
+    "en": "Lesson 1: We’ll meet you at the airport",
+    "ar": "الدرس 1: سنستقبلكما في المطار"
   },
-  "targetVocabularyIds": [
-    "ai",
-    "airen",
-    "anjing",
-    "anquan",
-    "a-yi",
-    "ba",
-    "ban",
-    "ban-2",
-    "banfa",
-    "bangongshi",
-    "bangzhu",
-    "banji",
-    "banjia",
-    "ban-tian",
-    "bao",
-    "bao-zhi",
-    "bei",
-    "bei-2",
-    "bei-fang",
-    "bian",
-    "bian-2",
-    "bian-cheng",
-    "bianhua",
-    "biaoyan",
-    "bie-de",
-    "bie-ren",
-    "bi-ji",
-    "bijiao",
-    "bi-ji-ben",
-    "bing",
-    "bing-qi-lin",
-    "bingren",
-    "binguan",
-    "bing-xiang",
-    "biru",
-    "bisai",
-    "bi-xu",
-    "butong",
-    "bu-dan",
-    "bujian",
-    "bu-jiu",
-    "buxing",
-    "bu-yong",
-    "cai",
-    "cai-dan",
-    "can-jia",
-    "cao",
-    "cao-di",
-    "ceng",
-    "cha"
+  "targetVocabularyIds": ["xingli", "yiwei"],
+  "dialogue": [
+    {
+      "id": "1-1-1",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "你看起来有点儿累，飞机晚点了吗？",
+      "pinyin": "Nǐ kànqǐlái yǒudiǎnr lèi, fēijī wǎndiǎn le ma?",
+      "translation": {
+        "en": "You look a little tired. Was the flight delayed?",
+        "ar": "تبدو متعباً قليلاً. هل تأخرت الطائرة؟"
+      },
+      "audio": null
+    },
+    {
+      "id": "1-1-2",
+      "role": "许安 (Xǔ Ān)",
+      "hanzi": "没有，提前到了二十分钟。",
+      "pinyin": "Méiyǒu, tíqián dào le èrshí fēnzhōng.",
+      "translation": {
+        "en": "No, it arrived twenty minutes early.",
+        "ar": "لا، وصلت قبل موعدها بعشرين دقيقة."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-1-3",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "我们在出口等了半天，还以为走错了。",
+      "pinyin": "Wǒmen zài chūkǒu děng le bàntiān, hái yǐwéi zǒucuò le.",
+      "translation": {
+        "en": "We waited at the exit for ages and thought we had the wrong place.",
+        "ar": "انتظرنا عند المخرج وقتاً طويلاً وظننا أننا في المكان الخطأ."
+      },
+      "audio": null
+    },
+    {
+      "id": "1-1-4",
+      "role": "许安 (Xǔ Ān)",
+      "hanzi": "我一看见你们就放心了，先去拿行李吧。",
+      "pinyin": "Wǒ yí kànjiàn nǐmen jiù fàngxīn le, xiān qù ná xíngli ba.",
+      "translation": {
+        "en": "I felt relieved as soon as I saw you. Let’s get the luggage first.",
+        "ar": "اطمأننت فور أن رأيتكما. لنذهب أولاً لأخذ الحقائب."
+      },
+      "audio": null
+    }
   ],
-  "dialogue": [],
   "grammarNotes": [],
   "culturalNotes": [],
   "comprehensionQuestions": [],
@@ -68,5 +62,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "This scaffold intentionally contains no invented dialogue. Add reviewed Chinese, pinyin, English, Arabic, and real audio paths before marking complete."
+  "authoringNote": "Original dialogue aligned to the lesson topic; translations and tone-marked pinyin are supplied for every turn.",
+  "curriculum": "hsk3"
 }

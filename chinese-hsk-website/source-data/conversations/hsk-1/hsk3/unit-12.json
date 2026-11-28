@@ -12,156 +12,68 @@
   },
   "dialogue": [
     {
-      "id": "12-1-1",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "今天天气怎么样？",
-      "pinyin": "Jīntiān tiānqì zěnmeyàng?",
+      "id": "12-snow-1",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "昨天的天气怎么样？",
+      "pinyin": "Zuótiān de tiānqì zěnmeyàng?",
       "translation": {
-        "en": "How's the weather today?",
-        "ar": "كيف حال الطقس اليوم؟"
+        "en": "What was the weather like yesterday?",
+        "ar": "كيف كان الطقس أمس؟"
       },
       "audio": null
     },
     {
-      "id": "12-1-2",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "这里的天下不太好，下雨了。",
-      "pinyin": "Zhèlǐ de tiān bú tài hǎo, xià yǔ le.",
+      "id": "12-snow-2",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "下雪了，真的很冷。",
+      "pinyin": "Xiàxuě le, zhēn de hěn lěng.",
       "translation": {
-        "en": "The weather here isn't very good; it's raining.",
-        "ar": "الطقس هنا ليس جيداً جداً، إنها تمطر."
+        "en": "It snowed, and it was really cold.",
+        "ar": "تساقطت الثلوج وكان الجو بارداً جداً."
       },
       "audio": null
     },
     {
-      "id": "12-1-3",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "雨大吗？",
-      "pinyin": "Yǔ dà ma?",
+      "id": "12-snow-3",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "我也觉得冷。今天这里还下雨吗？",
+      "pinyin": "Wǒ yě juéde lěng. Jīntiān zhèlǐ hái xiàyǔ ma?",
       "translation": {
-        "en": "Is it raining heavily?",
-        "ar": "هل المطر غزير؟"
+        "en": "I feel cold too. Is it still raining here today?",
+        "ar": "أشعر بالبرد أيضاً. هل ما زالت تمطر هنا اليوم؟"
       },
       "audio": null
     },
     {
-      "id": "12-1-4",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "有点儿大，我觉得很冷。",
-      "pinyin": "Yǒudiǎnr dà, wǒ juéde hěn lěng.",
+      "id": "12-snow-4",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "没有，今天没下雨，天气比昨天好一点儿。",
+      "pinyin": "Méiyǒu, jīntiān méi xiàyǔ, tiānqì bǐ zuótiān hǎo yìdiǎnr.",
       "translation": {
-        "en": "A bit heavy, and I feel really cold.",
-        "ar": "غزير نوعاً ما، وأشعر بالبرد الشديد."
+        "en": "No, it isn’t raining today. The weather is a little better than yesterday.",
+        "ar": "لا، لا تمطر اليوم. الطقس أفضل قليلاً من أمس."
       },
       "audio": null
     },
     {
-      "id": "12-2-1",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "昨天下雪了。",
-      "pinyin": "Zuótiān xià xuě le.",
+      "id": "12-snow-5",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "太好了，我昨天因为生病没去公司。",
+      "pinyin": "Tài hǎo le, wǒ zuótiān yīnwèi shēngbìng méi qù gōngsī.",
       "translation": {
-        "en": "It snowed yesterday.",
-        "ar": "تساقطت الثلوج بالأمس."
+        "en": "That’s good. I missed work yesterday because I was sick.",
+        "ar": "جيد، لم أذهب إلى الشركة أمس لأنني كنت مريضة."
       },
       "audio": null
     },
     {
-      "id": "12-2-2",
-      "role": "杨同乐 (Yang Tongle)",
-      "hanzi": "是的，太冷了。",
-      "pinyin": "Shì de, tài lěng le.",
+      "id": "12-snow-6",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "回家好好休息，再喝一点儿热水。",
+      "pinyin": "Huí jiā hǎohāo xiūxi, zài hē yìdiǎnr rè shuǐ.",
       "translation": {
-        "en": "Yes, it was so cold.",
-        "ar": "نعم، كان الجو بارداً للغاية."
-      },
-      "audio": null
-    },
-    {
-      "id": "12-2-3",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "你昨天没来公司，生病了？",
-      "pinyin": "Nǐ zuótiān méi lái gōngsī, shēngbìng le?",
-      "translation": {
-        "en": "You didn't come to the office yesterday; were you sick?",
-        "ar": "لم تأتِ إلى الشركة أمس، هل كنت مريضاً؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "12-2-4",
-      "role": "杨同乐 (Yang Tongle)",
-      "hanzi": "对，我昨天去医院看病了。",
-      "pinyin": "Duì, wǒ zuótiān qù yīyuàn kànbìng le.",
-      "translation": {
-        "en": "Yes, I went to the hospital to see a doctor yesterday.",
-        "ar": "نعم، ذهبت إلى المستشفى لمراجعة الطبيب أمس."
-      },
-      "audio": null
-    },
-    {
-      "id": "12-3-1",
-      "role": "杨同乐 (Yang Tongle)",
-      "hanzi": "医生，我病了。",
-      "pinyin": "Yīshēng, wǒ bìng le.",
-      "translation": {
-        "en": "Doctor, I'm not feeling well (I've fallen ill).",
-        "ar": "يا دكتور، لقد مرضت."
-      },
-      "audio": null
-    },
-    {
-      "id": "12-3-2",
-      "role": "胡医生 (Doctor Hu)",
-      "hanzi": "我看看。你觉得怎么样？",
-      "pinyin": "Wǒ kànkan. Nǐ juéde zěnmeyàng?",
-      "translation": {
-        "en": "Let me take a look. How are you feeling?",
-        "ar": "دعني ألقي نظرة. بماذا تشعر؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "12-3-3",
-      "role": "杨同乐 (Yang Tongle)",
-      "hanzi": "我很冷。",
-      "pinyin": "Wǒ hěn lěng.",
-      "translation": {
-        "en": "I feel very cold.",
-        "ar": "أشعر ببرودة شديدة."
-      },
-      "audio": null
-    },
-    {
-      "id": "12-3-4",
-      "role": "胡医生 (Doctor Hu)",
-      "hanzi": "好的，吃一点儿药，今天休息半天吧。",
-      "pinyin": "Hǎo de, chī yìdiǎnr yào, jīntiān xiūxi bàn tiān ba.",
-      "translation": {
-        "en": "Alright. Take some medicine and rest for half a day today.",
-        "ar": "حسناً، تناول بعض الدواء واسترح نصف يوم اليوم."
-      },
-      "audio": null
-    },
-    {
-      "id": "12-3-5",
-      "role": "杨同乐 (Yang Tongle)",
-      "hanzi": "好的。",
-      "pinyin": "Hǎo de.",
-      "translation": {
-        "en": "Okay.",
-        "ar": "حسناً."
-      },
-      "audio": null
-    },
-    {
-      "id": "12-3-6",
-      "role": "胡医生 (Doctor Hu)",
-      "hanzi": "回家后再喝些热水。",
-      "pinyin": "Huí jiā hòu zài hē xiē rè shuǐ.",
-      "translation": {
-        "en": "Make sure to drink some warm water after you get home.",
-        "ar": "واشرب بعض الماء الساخن بعد عودتك إلى المنزل."
+        "en": "Go home and rest well, and drink a little more hot water.",
+        "ar": "عودي إلى المنزل واستريحي جيداً، واشربي المزيد من الماء الدافئ."
       },
       "audio": null
     }
@@ -220,5 +132,14 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 12."
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 12.",
+  "targetVocabularyIds": [
+    "gongsi",
+    "jue-de",
+    "shengbing",
+    "tianqi",
+    "xia-yu",
+    "yidianr",
+    "zhe-li"
+  ]
 }

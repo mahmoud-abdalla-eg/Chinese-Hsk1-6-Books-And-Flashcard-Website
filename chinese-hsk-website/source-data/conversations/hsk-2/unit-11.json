@@ -9,189 +9,71 @@
     "en": "Lesson 11: He is three years older than me",
     "ar": "الدرس 11: هو أكبر مني بثلاث سنوات"
   },
-  "targetVocabularyIds": [
-    "bi",
-    "gao",
-    "kuai",
-    "man",
-    "geng",
-    "shangchang",
-    "xinnian"
-  ],
+  "targetVocabularyIds": ["cong-xiao", "yiqi"],
   "dialogue": [
     {
       "id": "11-1-1",
-      "role": "Speaker A",
-      "hanzi": "你哥哥多大？",
-      "pinyin": "Nǐ gēge duō dà?",
+      "role": "陈明",
+      "hanzi": "你哥哥比你大几岁？",
+      "pinyin": "Nǐ gēge bǐ nǐ dà jǐ suì?",
       "translation": {
-        "en": "How old is your older brother?",
-        "ar": "كم عمر أخيك الأكبر؟"
+        "en": "How many years older than you is your older brother?",
+        "ar": "كم يكبرك أخوك؟"
       },
       "audio": null
     },
     {
       "id": "11-1-2",
-      "role": "Speaker B",
-      "hanzi": "他比我大三岁，今年二十五岁。",
-      "pinyin": "Tā bǐ wǒ dà sān suì, jīntián èrshíwǔ suì.",
+      "role": "林娜",
+      "hanzi": "他比我大三岁，不过我们从小一起长大。",
+      "pinyin": "Tā bǐ wǒ dà sān suì, búguò wǒmen cóngxiǎo yìqǐ zhǎng dà.",
       "translation": {
-        "en": "He is three years older than me, twenty-five years old this year.",
-        "ar": "هو أكبر مني بثلاث سنوات، عمره خمس وعشرون سنة هذا العام."
+        "en": "He’s three years older, but we grew up together from childhood.",
+        "ar": "يكبرني بثلاث سنوات، لكننا نشأنا معاً منذ الصغر."
       },
       "audio": null
     },
     {
       "id": "11-1-3",
-      "role": "Speaker A",
-      "hanzi": "他工作了吗？",
-      "pinyin": "Tā gōngzuò le ma?",
+      "role": "陈明",
+      "hanzi": "你们小时候常一起做什么？",
+      "pinyin": "Nǐmen xiǎoshíhou cháng yìqǐ zuò shénme?",
       "translation": {
-        "en": "Does he work?",
-        "ar": "هل بدأ العمل؟"
+        "en": "What did you often do together when you were children?",
+        "ar": "ماذا كنتما تفعلان معاً في طفولتكما؟"
       },
       "audio": null
     },
     {
       "id": "11-1-4",
-      "role": "Speaker B",
-      "hanzi": "工作了，他在一家医院当医生。",
-      "pinyin": "Gōngzuò le, tā zài yì jiā yīyuàn dāng yīshēng.",
+      "role": "林娜",
+      "hanzi": "放学后一起踢球，周末有时去看电影。",
+      "pinyin": "Fàngxué hòu yìqǐ tī qiú, zhōumò yǒushí qù kàn diànyǐng.",
       "translation": {
-        "en": "Yes, he works as a doctor in a hospital.",
-        "ar": "نعم يعمل، إنه طبيب في أحد المستشفيات."
+        "en": "We played ball after school and sometimes went to the movies on weekends.",
+        "ar": "كنا نلعب الكرة بعد المدرسة ونذهب أحياناً لمشاهدة فيلم في عطلة نهاية الأسبوع."
       },
       "audio": null
     },
     {
-      "id": "11-2-1",
-      "role": "Speaker A",
-      "hanzi": "今天天气真冷啊！",
-      "pinyin": "Jīntiān tiānqì zhēn lěng a!",
+      "id": "11-1-5",
+      "role": "陈明",
+      "hanzi": "他现在也住在这附近吗？",
+      "pinyin": "Tā xiànzài yě zhù zài zhè fùjìn ma?",
       "translation": {
-        "en": "The weather today is truly cold!",
-        "ar": "الطقس بارد حقاً اليوم!"
+        "en": "Does he still live nearby?",
+        "ar": "هل ما زال يسكن في مكان قريب؟"
       },
       "audio": null
     },
     {
-      "id": "11-2-2",
-      "role": "Speaker B",
-      "hanzi": "是啊，比昨天冷多了。",
-      "pinyin": "Shì a, bǐ zuótiān lěng duō le.",
+      "id": "11-1-6",
+      "role": "林娜",
+      "hanzi": "不住了，去年他搬到南方工作。",
+      "pinyin": "Bú zhù le, qùnián tā bān dào nánfāng gōngzuò.",
       "translation": {
-        "en": "Indeed, much colder than yesterday.",
-        "ar": "أجل، إنه أبرد بكثير من الأمس."
-      },
-      "audio": null
-    },
-    {
-      "id": "11-2-3",
-      "role": "Speaker A",
-      "hanzi": "咱们回房间吧，外面风太大。",
-      "pinyin": "Zánmen huí fángjiān ba, wàimiàn fēng tài dà.",
-      "translation": {
-        "en": "Let's go back inside; the wind outside is too strong.",
-        "ar": "فلنعد إلى الغرفة، الرياح في الخارج قوية جداً."
-      },
-      "audio": null
-    },
-    {
-      "id": "11-2-4",
-      "role": "Speaker B",
-      "hanzi": "好，走吧。",
-      "pinyin": "Hǎo, zǒu ba.",
-      "translation": {
-        "en": "Okay, let's go.",
-        "ar": "حسناً، هيا بنا."
-      },
-      "audio": null
-    },
-    {
-      "id": "11-3-1",
-      "role": "Speaker A",
-      "hanzi": "这个西瓜真甜！",
-      "pinyin": "Zhè ge xīguā zhēn tián!",
-      "translation": {
-        "en": "This watermelon is really sweet!",
-        "ar": "هذا البطيخ حلو المذاق حقاً!"
-      },
-      "audio": null
-    },
-    {
-      "id": "11-3-2",
-      "role": "Speaker B",
-      "hanzi": "比昨天的那个甜多了。",
-      "pinyin": "Bǐ zuótiān de nàge tián duō le.",
-      "translation": {
-        "en": "Much sweeter than yesterday's.",
-        "ar": "أحلى بكثير من بطيخ الأمس."
-      },
-      "audio": null
-    },
-    {
-      "id": "11-3-3",
-      "role": "Speaker A",
-      "hanzi": "价格也比昨天便宜一点儿。",
-      "pinyin": "Jiàgé yě bǐ zuótiān piányi yìdiǎnr.",
-      "translation": {
-        "en": "The price is also slightly cheaper than yesterday.",
-        "ar": "والسعر أيضاً أرخص قليلاً من سعر الأمس."
-      },
-      "audio": null
-    },
-    {
-      "id": "11-3-4",
-      "role": "Speaker B",
-      "hanzi": "那咱们多买两个吧。",
-      "pinyin": "Nà zánmen duō mǎi liǎng ge ba.",
-      "translation": {
-        "en": "Then let's buy two more.",
-        "ar": "إذاً فلنشترِ اثنتين إضافيتين."
-      },
-      "audio": null
-    },
-    {
-      "id": "11-4-1",
-      "role": "Speaker A",
-      "hanzi": "王方，你学汉语多长时间了？",
-      "pinyin": "Wáng Fāng, nǐ xué Hànyǔ duō cháng shíjiān le?",
-      "translation": {
-        "en": "Wang Fang, how long have you been studying Chinese?",
-        "ar": "وانغ فانغ، كم من الوقت وأنت تدرس اللغة الصينية؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "11-4-2",
-      "role": "Speaker B",
-      "hanzi": "我学了一年多了。",
-      "pinyin": "Wǒ xué le yì nián duō le.",
-      "translation": {
-        "en": "I've been studying for more than a year.",
-        "ar": "أدرسها منذ أكثر من عام."
-      },
-      "audio": null
-    },
-    {
-      "id": "11-4-3",
-      "role": "Speaker A",
-      "hanzi": "你说得真好，比我说得好多了。",
-      "pinyin": "Nǐ shuō de zhēn hǎo, bǐ wǒ shuō de hǎo duō le.",
-      "translation": {
-        "en": "You speak so well, much better than I do.",
-        "ar": "أنت تتحدث بها بطلاقة ممتازة، أفضل مني بكثير."
-      },
-      "audio": null
-    },
-    {
-      "id": "11-4-4",
-      "role": "Speaker B",
-      "hanzi": "哪里哪里，你比我学得快。",
-      "pinyin": "Nǎlǐ nǎlǐ, nǐ bǐ wǒ xué de kuài.",
-      "translation": {
-        "en": "Not at all, you learn faster than me.",
-        "ar": "لا على الإطلاق، أنت تتعلم أسرع مني."
+        "en": "No. He moved south for work last year.",
+        "ar": "لا. انتقل إلى الجنوب للعمل العام الماضي."
       },
       "audio": null
     }
@@ -245,5 +127,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official HSK 2 Standard Course Lesson 11 dialogues."
+  "authoringNote": "Official HSK 2 Standard Course Lesson 11 dialogues.",
+  "curriculum": "standard"
 }

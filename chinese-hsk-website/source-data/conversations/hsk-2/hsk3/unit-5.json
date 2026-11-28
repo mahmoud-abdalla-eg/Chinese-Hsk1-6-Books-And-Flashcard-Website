@@ -13,221 +13,67 @@
   "dialogue": [
     {
       "id": "5-1-1",
-      "role": "安妮 (Annie)",
-      "hanzi": "家月，快下来吧，第一次去中国朋友家，别晚了。",
-      "pinyin": "Jiāyuè, kuài xiàlai ba, dì-yī cì qù Zhōngguó péngyou jiā, bié wǎn le.",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "你好，李文！第一次来你家，我带了一点儿礼物。",
+      "pinyin": "Nǐ hǎo, Lǐ Wén! Dì-yī cì lái nǐ jiā, wǒ dài le yìdiǎnr lǐwù.",
       "translation": {
-        "en": "Jiayue, come downstairs quickly! It's our first time visiting a Chinese friend's home, don't be late.",
-        "ar": "جيايوي، انزلي بسرعة! إنها أول زيارة لنا لمنزل صديق صيني، فلا نتأخر."
+        "en": "Hi, Li Wen! It’s my first time at your home, so I brought a small gift.",
+        "ar": "مرحباً يا لي ون! هذه أول زيارة لي إلى منزلك، لذا أحضرت هدية بسيطة."
       },
       "audio": null
     },
     {
       "id": "5-1-2",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "还有时间，你上来吧。",
-      "pinyin": "Hái yǒu shíjiān, nǐ shànglai ba.",
+      "role": "李文 (Li Wen)",
+      "hanzi": "欢迎你，快进来吧。我奶奶正在里面准备晚饭。",
+      "pinyin": "Huānyíng nǐ, kuài jìnlái ba. Wǒ nǎinai zhèngzài lǐmiàn zhǔnbèi wǎnfàn.",
       "translation": {
-        "en": "There's still time, why don't you come up?",
-        "ar": "ما زال لدينا وقت، اصعدي إليّ."
+        "en": "Welcome! Come on in. My grandmother is inside preparing dinner.",
+        "ar": "أهلاً بك، تفضلي بالدخول. جدتي في الداخل تحضّر العشاء."
       },
       "audio": null
     },
     {
       "id": "5-1-3",
-      "role": "安妮 (Annie)",
-      "hanzi": "我不上去了，就在下面等你。",
-      "pinyin": "Wǒ bù shàngqu le, jiù zài xiàmian děng nǐ.",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "这是给奶奶的茶，请你一会儿帮我送给她。",
+      "pinyin": "Zhè shì gěi nǎinai de chá, qǐng nǐ yíhuìr bāng wǒ sòng gěi tā.",
       "translation": {
-        "en": "I'm not coming up; I'll just wait for you down here.",
-        "ar": "لن أصعد، سأنتظركِ هنا في الأسفل."
+        "en": "This tea is for your grandmother. Could you give it to her in a little while?",
+        "ar": "هذا الشاي لجدتك، هل يمكنك أن تقدمه لها بعد قليل؟"
       },
       "audio": null
     },
     {
       "id": "5-1-4",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "那我一会儿就下去。",
-      "pinyin": "Nà wǒ yíhuìr jiù xiàqu.",
+      "role": "李文 (Li Wen)",
+      "hanzi": "当然。你先坐，我去下面拿两杯奶茶。",
+      "pinyin": "Dāngrán. Nǐ xiān zuò, wǒ qù xiàmian ná liǎng bēi nǎichá.",
       "translation": {
-        "en": "Alright, I'll be right down in a moment.",
-        "ar": "حسناً، سأنزل إليكِ بعد قليل."
+        "en": "Of course. Have a seat; I’ll go downstairs and get two milk teas.",
+        "ar": "بالطبع. اجلسي أولاً، سأذهب إلى الطابق السفلي لأحضر كوبين من شاي الحليب."
       },
       "audio": null
     },
     {
       "id": "5-1-5",
-      "role": "安妮 (Annie)",
-      "hanzi": "你快点儿吧。",
-      "pinyin": "Nǐ kuài diǎnr ba.",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "谢谢！我第一次见长辈，不知道该怎么说才好。",
+      "pinyin": "Xièxie! Wǒ dì-yī cì jiàn zhǎngbèi, bù zhīdào gāi zěnme shuō cái hǎo.",
       "translation": {
-        "en": "Hurry up please.",
-        "ar": "أسرعي قليلاً من فضلك."
+        "en": "Thanks! It’s my first time meeting an elder in your family, and I’m not sure what to say.",
+        "ar": "شكراً! هذه أول مرة أقابل فيها كبيراً من عائلتك، ولا أعرف ماذا أقول."
       },
       "audio": null
     },
     {
       "id": "5-1-6",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "没事，一雪姐说11点前到就可以。",
-      "pinyin": "Méishì, Yīxuě jiě shuō shíyī diǎn qián dào jiù kěyǐ.",
+      "role": "李文 (Li Wen)",
+      "hanzi": "别紧张，她很喜欢认识新朋友，等会儿我介绍你们认识。",
+      "pinyin": "Bié jǐnzhāng, tā hěn xǐhuan rènshi xīn péngyou, děnghuìr wǒ jièshào nǐmen rènshi.",
       "translation": {
-        "en": "Don't worry; Sister Yixue said arriving before 11 o'clock is fine.",
-        "ar": "لا تقلقي، قالت الأخت ييشيويه إن الوصول قبل الساعة 11 مناسب تماماً."
-      },
-      "audio": null
-    },
-    {
-      "id": "5-2-1",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "家月、安妮，快进来！我给你们介绍一下，这是孩子们的爷爷、奶奶。",
-      "pinyin": "Jiāyuè, Ānnī, kuài jìnlái! Wǒ gěi nǐmen jièshào yíxià, zhè shì háizimen de yéye, nǎinai.",
-      "translation": {
-        "en": "Jiayue, Annie, come right in! Let me introduce you: this is the children's grandfather and grandmother.",
-        "ar": "جيايوي، آني، تفضلا بالدخول سريعاً! دعوني أعرفكم ببعض: هذا جد الأطفال وهذه جدتهم."
-      },
-      "audio": null
-    },
-    {
-      "id": "5-2-2",
-      "role": "白家月和安妮 (Bai Jiayue & Annie)",
-      "hanzi": "爷爷、奶奶，你们好！",
-      "pinyin": "Yéye, nǎinai, nǐmen hǎo!",
-      "translation": {
-        "en": "Grandpa, Grandma, hello!",
-        "ar": "أهلاً بكما يا جدي ويا جدتي!"
-      },
-      "audio": null
-    },
-    {
-      "id": "5-2-3",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "爸妈，这是白家月，这是安妮。她们都是一飞的学生。",
-      "pinyin": "Bà mā, zhè shì Bái Jiāyuè, zhè shì Ānnī. Tāmen dōu shì Yīfēi de xuésheng.",
-      "translation": {
-        "en": "Mom and Dad, this is Bai Jiayue, and this is Annie. They are both Yifei's students.",
-        "ar": "أمي وأبي، هذه باي جيايوي، وهذه آني. كلتاهما من طالبات ييفي."
-      },
-      "audio": null
-    },
-    {
-      "id": "5-2-4",
-      "role": "爷爷和奶奶 (Grandpa & Grandma)",
-      "hanzi": "家月、安妮，你们好！快坐吧！",
-      "pinyin": "Jiāyuè, Ānnī, nǐmen hǎo! Kuài zuò ba!",
-      "translation": {
-        "en": "Jiayue, Annie, welcome! Please sit down!",
-        "ar": "أهلاً وسهلاً بكما يا جيايوي ويا آني! تفضلا بالجلوس سريعاً!"
-      },
-      "audio": null
-    },
-    {
-      "id": "5-2-5",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "一雪姐，这是给孩子们准备的礼物。",
-      "pinyin": "Yīxuě jiě, zhè shì gěi háizimen zhǔnbèi de lǐwù.",
-      "translation": {
-        "en": "Sister Yixue, these are gifts we prepared for the children.",
-        "ar": "أختي ييشيويه، هذه هدايا أعددناها للأطفال."
-      },
-      "audio": null
-    },
-    {
-      "id": "5-2-6",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "你们太客气了，还拿这么多礼物来！谢谢！你们别客气，快坐吧！",
-      "pinyin": "Nǐmen tài kèqi le, hái ná zhème duō lǐwù lái! Xièxie! Nǐmen bié kèqi, kuài zuò ba!",
-      "translation": {
-        "en": "You're both far too kind, bringing so many gifts! Thank you! Please make yourselves at home and have a seat!",
-        "ar": "أنتما لطيفتان وخلوقتان جداً، لم يكن هناك داعٍ لإحضار كل هذه الهدايا! شكراً لكما! لا تكلفا على أنفسكما وتفضلا بالجلوس!"
-      },
-      "audio": null
-    },
-    {
-      "id": "5-3-1",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "都12点了，我们吃饭吧。",
-      "pinyin": "Dōu shí'èr diǎn le, wǒmen chīfàn ba.",
-      "translation": {
-        "en": "It's already 12 o'clock; let's have our meal.",
-        "ar": "لقد أصبحت الساعة 12 بالفعل، فلنتناول الطعام."
-      },
-      "audio": null
-    },
-    {
-      "id": "5-3-2",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "这么多好吃的，您太客气了！",
-      "pinyin": "Zhème duō hǎochī de, nín tài kèqi le!",
-      "translation": {
-        "en": "So many delicious dishes; you really shouldn't have gone to all this trouble!",
-        "ar": "ما كل هذه الأطباق الشهية اللذيذة! كرمكم يفوق الوصف!"
-      },
-      "audio": null
-    },
-    {
-      "id": "5-3-3",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "都是我自己做的，你们多吃点儿。",
-      "pinyin": "Dōu shì wǒ zìjǐ zuò de, nǐmen duō chī diǎnr.",
-      "translation": {
-        "en": "I cooked everything myself; please eat heartily!",
-        "ar": "لقد أعددتها كلها بنفسي، كلوا واستمتعوا بالطعام."
-      },
-      "audio": null
-    },
-    {
-      "id": "5-3-4",
-      "role": "安妮 (Annie)",
-      "hanzi": "奶茶也很好喝，是您做的吗？",
-      "pinyin": "Nǎichá yě hěn hǎohē, shì nín zuò de ma?",
-      "translation": {
-        "en": "The milk tea is also delicious; did you make it too?",
-        "ar": "شاي الحليب لذيذ جداً أيضاً، هل أعددتِه أنتِ كذلك؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "5-3-5",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "不是，奶茶是爷爷买的。",
-      "pinyin": "Bú shì, nǎichá shì yéye mǎi de.",
-      "translation": {
-        "en": "No, Grandpa bought the milk tea.",
-        "ar": "كلا، شاي الحليب اشتراه الجد."
-      },
-      "audio": null
-    },
-    {
-      "id": "5-3-6",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "在哪儿买的？我还没喝过这么好喝的奶茶。",
-      "pinyin": "Zài nǎr mǎi de? Wǒ hái méi hēguo zhème hǎohē de nǎichá.",
-      "translation": {
-        "en": "Where was it bought? I have never tasted such delicious milk tea before.",
-        "ar": "من أين اشتراه؟ لم يسبق لي أن شربت شاي حليب بهذه اللذة."
-      },
-      "audio": null
-    },
-    {
-      "id": "5-3-7",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "就在前边的商场，吃完饭你们可以跟我去看看。",
-      "pinyin": "Jiù zài qiánbian de shāngchǎng, chīwán fàn nǐmen kěyǐ gēn wǒ qù kànkan.",
-      "translation": {
-        "en": "Right at the shopping mall up ahead. After finishing the meal, you can come with me to check it out.",
-        "ar": "في المجمع التجاري القريب هنا، وبعد أن ننتهي من تناول الطعام يمكنكما مرافقتي لنلقي نظرة عليه."
-      },
-      "audio": null
-    },
-    {
-      "id": "5-4-1",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "回国前一天，我们去一雪姐家了。到她家的时候，饭菜都做好了。刘爷爷还准备了奶茶。因为吃了太多东西，我们吃完饭是走回酒店的。",
-      "pinyin": "Huí guó qián yì tiān, wǒmen qù Yīxuě jiě jiā le. Dào tā jiā de shíhou, fàncài dōu zuòhǎo le. Liú yéye hái zhǔnbèile nǎichá. Yīnwèi chīle tài duō dōngxi, wǒmen chīwán fàn shì zǒuhuí jiǔdiàn de.",
-      "translation": {
-        "en": "The day before returning to our home countries, we visited Sister Yixue's home. When we arrived, the food was already cooked and ready. Grandpa Liu had also prepared milk tea. Because we ate so much, we walked all the way back to the hotel after dinner.",
-        "ar": "في اليوم السابق لعودتنا إلى بلادنا، ذهبنا لزيارة منزل الأخت ييشيويه. وحين وصلنا، كان الطعام جاهزاً ومعداً بالكامل، وكان الجد ليو قد جهز شاي الحليب أيضاً. ولأننا أكلنا الكثير من الطعام، عدنا سيراً على الأقدام إلى الفندق بعد العشاء."
+        "en": "Don’t worry. She enjoys meeting new people; I’ll introduce you to each other in a moment.",
+        "ar": "لا تقلقي، فهي تحب التعرف إلى أصدقاء جدد؛ سأعرّفكما إلى بعضكما بعد قليل."
       },
       "audio": null
     }
@@ -281,5 +127,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 5."
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 5.",
+  "targetVocabularyIds": ["jinlai", "liwu", "nainai", "zhunbei"]
 }

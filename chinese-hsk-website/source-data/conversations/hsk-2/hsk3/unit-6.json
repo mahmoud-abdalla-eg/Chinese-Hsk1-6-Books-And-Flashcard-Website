@@ -14,242 +14,66 @@
     {
       "id": "6-1-1",
       "role": "王一雪 (Wang Yixue)",
-      "hanzi": "明天就是女儿的生日了。",
-      "pinyin": "Míngtiān jiù shì nǚ'ér de shēngrì le.",
+      "hanzi": "家月，生日快乐！你今天想怎么过？",
+      "pinyin": "Jiāyuè, shēngrì kuàilè! Nǐ jīntiān xiǎng zěnme guò?",
       "translation": {
-        "en": "Tomorrow is our daughter's birthday.",
-        "ar": "غداً هو يوم ميلاد ابنتنا."
+        "en": "Happy birthday, Xiaoxue! How would you like to celebrate today?",
+        "ar": "عيد ميلاد سعيد يا شياوشيويه! كيف تودين الاحتفال اليوم؟"
       },
       "audio": null
     },
     {
       "id": "6-1-2",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "你不说，我还真忘了。我们给她准备个什么礼物呢？",
-      "pinyin": "Nǐ bù shuō, wǒ hái zhēn wàng le. Wǒmen gěi tā zhǔnbèi ge shénme lǐwù ne?",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "谢谢！我想和大家在家吃饭，不用去饭馆。",
+      "pinyin": "Xièxie! Wǒ xiǎng hé dàjiā zài jiā chīfàn, búyòng qù fànguǎn.",
       "translation": {
-        "en": "If you hadn't mentioned it, I would have completely forgotten. What gift should we prepare for her?",
-        "ar": "لو لم تذكري ذلك لكنت نسيت حقاً. ما الهدية التي يجب أن نعدها لها؟"
+        "en": "Thanks! I’d like to have dinner at home with everyone instead of going to a restaurant.",
+        "ar": "شكراً! أود تناول العشاء في المنزل مع الجميع بدلاً من الذهاب إلى مطعم."
       },
       "audio": null
     },
     {
       "id": "6-1-3",
       "role": "王一雪 (Wang Yixue)",
-      "hanzi": "她喜欢画画，你觉得画笔怎么样？",
-      "pinyin": "Tā xǐhuan huà huà, nǐ juéde huàbǐ zěnmeyàng?",
+      "hanzi": "我给你买了一个蛋糕，放在桌子上了。",
+      "pinyin": "Wǒ gěi nǐ mǎi le yí ge dàngāo, fàng zài zhuōzi shàng le.",
       "translation": {
-        "en": "She loves drawing. What do you think about color pens?",
-        "ar": "هي تحب الرسم، ما رأيك في أقلام الرسم والتلوين؟"
+        "en": "I bought you a cake and put it on the table.",
+        "ar": "اشتريت لك كعكة ووضعتها على الطاولة."
       },
       "audio": null
     },
     {
       "id": "6-1-4",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "就送画笔吧！",
-      "pinyin": "Jiù sòng huàbǐ ba!",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "太好了！我可以现在打开吗？",
+      "pinyin": "Tài hǎo le! Wǒ kěyǐ xiànzài dǎkāi ma?",
       "translation": {
-        "en": "Let's give her color pens then!",
-        "ar": "فلنهدها أقلام التلوين إذاً!"
+        "en": "That’s wonderful! Can I open it now?",
+        "ar": "رائع! هل يمكنني فتحها الآن؟"
       },
       "audio": null
     },
     {
       "id": "6-1-5",
       "role": "王一雪 (Wang Yixue)",
-      "hanzi": "那我明天上午就去买。",
-      "pinyin": "Nà wǒ míngtiān shàngwǔ jiù qù mǎi.",
+      "hanzi": "当然。大家还准备了小礼物，都在旁边的袋子里。",
+      "pinyin": "Dāngrán. Dàjiā hái zhǔnbèi le xiǎo lǐwù, dōu zài pángbiān de dàizi lǐ.",
       "translation": {
-        "en": "Then I'll go buy them tomorrow morning.",
-        "ar": "سأذهب لشرائها صباح الغد إذاً."
+        "en": "Of course. Everyone also prepared little presents; they’re all in the bag beside it.",
+        "ar": "بالتأكيد. أعدّ الجميع هدايا صغيرة أيضاً، وهي كلها في الحقيبة بجانبها."
       },
       "audio": null
     },
     {
       "id": "6-1-6",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "好的！我再给她买个大大的生日蛋糕。",
-      "pinyin": "Hǎo de! Wǒ zài gěi tā mǎi ge dàdà de shēngrì dàngāo.",
+      "role": "白家月 (Bai Jiayue)",
+      "hanzi": "你们真好！今天和朋友在一起，我觉得特别舒服、特别快乐。",
+      "pinyin": "Nǐmen zhēn hǎo! Jīntiān hé péngyou zài yìqǐ, wǒ juéde tèbié shūfu, tèbié kuàilè.",
       "translation": {
-        "en": "Great! I'll also buy her a big birthday cake.",
-        "ar": "حسناً! وسأشتري لها أيضاً كعكة عيد ميلاد كبيرة جداً."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-2-1",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "小雪，生日快乐！",
-      "pinyin": "Xiǎoxuě, shēngrì kuàilè!",
-      "translation": {
-        "en": "Xiaoxue, happy birthday!",
-        "ar": "شياوشيويه، عيد ميلاد سعيد!"
-      },
-      "audio": null
-    },
-    {
-      "id": "6-2-2",
-      "role": "刘小明 (Liu Xiaoming)",
-      "hanzi": "姐姐，生日快乐！",
-      "pinyin": "Jiějie, shēngrì kuàilè!",
-      "translation": {
-        "en": "Sister, happy birthday!",
-        "ar": "أختي الكبرى، عيد ميلاد سعيد!"
-      },
-      "audio": null
-    },
-    {
-      "id": "6-2-3",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "小雪，这是爸爸、妈妈送你的礼物。",
-      "pinyin": "Xiǎoxuě, zhè shì bàba, māma sòng nǐ de lǐwù.",
-      "translation": {
-        "en": "Xiaoxue, here is the gift from Dad and Mom.",
-        "ar": "شياوشيويه، هذه هدية من والدكِ ووالدتكِ."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-2-4",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "你打开看看喜欢不喜欢。",
-      "pinyin": "Nǐ dǎkāi kànkan xǐhuan bù xǐhuan.",
-      "translation": {
-        "en": "Open it and see if you like it.",
-        "ar": "افتحيها وانظري إن كانت تعجبكِ."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-2-5",
-      "role": "刘小雪 (Liu Xiaoxue)",
-      "hanzi": "画笔！我很喜欢！",
-      "pinyin": "Huàbǐ! Wǒ hěn xǐhuan!",
-      "translation": {
-        "en": "Color pens! I love them so much!",
-        "ar": "أقلام تلوين! أحببتها كثيراً!"
-      },
-      "audio": null
-    },
-    {
-      "id": "6-2-6",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "那你想画点儿什么？",
-      "pinyin": "Nà nǐ xiǎng huà diǎnr shénme?",
-      "translation": {
-        "en": "So what would you like to draw?",
-        "ar": "إذاً ماذا تودين أن ترسمي؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "6-2-7",
-      "role": "刘小雪 (Liu Xiaoxue)",
-      "hanzi": "画我们的家！有爸爸、妈妈、弟弟，还有黑色的狗、白色的猫什么的。",
-      "pinyin": "Huà wǒmen de jiā! Yǒu bàba, māma, dìdi, hái yǒu hēisè de gǒu, báisè de māo shénmede.",
-      "translation": {
-        "en": "Draw our home! With Dad, Mom, little brother, and our black dog, white cat, and all the rest.",
-        "ar": "سأرسم بيتنا! فيه أبي، وأمي، وأخي الصغير، والكلب الأسود، والقطة البيضاء، وغيرها!"
-      },
-      "audio": null
-    },
-    {
-      "id": "6-2-8",
-      "role": "刘小明 (Liu Xiaoming)",
-      "hanzi": "那我要画一个穿白色衣服的姐姐。",
-      "pinyin": "Nà wǒ yào huà yí ge chuān báisè yīfu de jiějie.",
-      "translation": {
-        "en": "Then I want to draw an older sister wearing white clothes.",
-        "ar": "إذاً أريد أنا أن أرسم أختي وهي ترتدي ملابس بيضاء."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-3-1",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "小雪，看看今天有什么好吃的。",
-      "pinyin": "Xiǎoxuě, kànkan jīntiān yǒu shénme hǎochī de.",
-      "translation": {
-        "en": "Xiaoxue, take a look at all the delicious food we have today.",
-        "ar": "شياوشيويه، انظري إلى ما لدينا من طعام شهي اليوم."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-3-2",
-      "role": "刘小雪 (Liu Xiaoxue)",
-      "hanzi": "长长的面条儿，大大的蛋糕！",
-      "pinyin": "Chángcháng de miàntiáor, dàdà de dàngāo!",
-      "translation": {
-        "en": "Long longevity noodles and a big cake!",
-        "ar": "نودلز طويلة وكعكة كبيرة جداً!"
-      },
-      "audio": null
-    },
-    {
-      "id": "6-3-3",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "看，还有鱼啊肉啊什么的，都是你最喜欢的。",
-      "pinyin": "Kàn, hái yǒu yú a ròu a shénmede, dōu shì nǐ zuì xǐhuan de.",
-      "translation": {
-        "en": "Look, there's also fish, meat, and so on—all of your favorites.",
-        "ar": "انظري، هناك سمك ولحم وغير ذلك، وكلها من أطباقكِ المفضلة."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-3-4",
-      "role": "刘小雪 (Liu Xiaoxue)",
-      "hanzi": "谢谢爸爸、妈妈！",
-      "pinyin": "Xièxie bàba, māma!",
-      "translation": {
-        "en": "Thank you, Dad and Mom!",
-        "ar": "شكراً لكما يا أبي وأمي!"
-      },
-      "audio": null
-    },
-    {
-      "id": "6-3-5",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "快去叫弟弟过来吃饭吧，吃完饭我们还要出去玩呢。",
-      "pinyin": "Kuài qù jiào dìdi guòlai chī fàn ba, chīwán fàn wǒmen hái yào chūqu wán ne.",
-      "translation": {
-        "en": "Hurry and call your little brother over to eat. After dinner, we're also going out to play!",
-        "ar": "أسرعي ونادي أخاكِ الصغير ليتناول الطعام، فبعد العشاء سنخرج للمرح والتنزه!"
-      },
-      "audio": null
-    },
-    {
-      "id": "6-3-6",
-      "role": "刘小雪 (Liu Xiaoxue)",
-      "hanzi": "过生日真好啊！",
-      "pinyin": "Guò shēngrì zhēn hǎo a!",
-      "translation": {
-        "en": "Celebrating birthdays is so wonderful!",
-        "ar": "كم هو رائع الاحتفال بعيد الميلاد!"
-      },
-      "audio": null
-    },
-    {
-      "id": "6-3-7",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "是的，过生日就要吃好吃的，还要高高兴兴地玩。",
-      "pinyin": "Shì de, guò shēngrì jiù yào chī hǎochī de, hái yào gāogāoxìngxìng de wán.",
-      "translation": {
-        "en": "That's right! On your birthday, you should eat delicious treats and have lots of fun joyfully.",
-        "ar": "نعم، في عيد الميلاد يجب أن نتناول الطعام اللذيذ ونستمتع بمرح وسرور."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-4-1",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "今天是女儿的生日。我们买了蛋糕，做了面条儿，还做了鱼啊肉啊什么的。吃完晚饭，全家人去看了个电影。回家后，孩子们早早地就上床了。明天不上学，他们说要舒舒服服地睡一觉，让我们晚点儿叫他们起床。这是很忙、很累，但很快乐的一天。",
-      "pinyin": "Jīntiān shì nǚ'ér de shēngrì. Wǒmen mǎile dàngāo, zuòle miàntiáor, hái zuòle yú a ròu a shénmede. Chīwán wǎnfàn, quán jiā rén qù kànle ge diànyǐng. Huí jiā hòu, háizimen zǎozǎo de jiù shàng chuáng le. Míngtiān bù shàngxué, tāmen shuō yào shūshūfúfú de shuì yí jiào, ràng wǒmen wǎndiǎnr jiào tāmen qǐchuáng. Zhè shì hěn máng, hěn lèi, dàn hěn kuàilè de yì tiān.",
-      "translation": {
-        "en": "Today was our daughter's birthday. We bought a cake, made noodles, and cooked fish, meat, and other dishes. After dinner, the whole family went to watch a movie. When we got home, the children went to bed early. Since there is no school tomorrow, they said they wanted to have a sound, comfortable sleep and asked us to wake them up a bit later. It was a busy, tiring, yet very happy day.",
-        "ar": "اليوم كان عيد ميلاد ابنتنا. اشترينا كعكة، وصنعنا النودلز، وطهونا السمك واللحم وما شابه. بعد العشاء، ذهبت العائلة بأكملها لمشاهدة فيلم سينمائي. وبعد العودة للبيت، أوى الأطفال إلى الفراش مبكراً. وبما أنه لا توجد مدرسة غداً، فقد قالوا إنهم يريدون النوم براحة تامة وطلبوا منا إيقاظهم في وقت متأخر قليلاً. لقد كان يوماً حافلاً ومتعباً، لكنه مليء بالسعادة والبهجة."
+        "en": "You’re all so kind! Being with friends today makes me feel comfortable and happy.",
+        "ar": "أنتم رائعون! أشعر براحة وسعادة كبيرتين اليوم لأنني مع أصدقائي."
       },
       "audio": null
     }
@@ -315,5 +139,6 @@
       ],
       "answerIndex": 0
     }
-  ]
+  ],
+  "targetVocabularyIds": ["dangao", "da-kai", "kuaile", "shengri", "shufu"]
 }

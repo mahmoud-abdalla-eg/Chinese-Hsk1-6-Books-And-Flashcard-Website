@@ -10,114 +10,57 @@
     "ar": "الدرس 4: هي معلمتي للغة الصينية"
   },
   "targetVocabularyIds": [
-    "ta-3",
-    "shei",
-    "de",
-    "hanyu",
-    "na-2",
-    "guo",
-    "ne",
-    "ta",
-    "tongxue",
-    "pengyou"
+    "jintian",
+    "laoshi",
+    "women",
+    "xianzai",
+    "xuexiao",
+    "zaoshang",
+    "wang-laoshi",
+    "zhongwen"
   ],
   "dialogue": [
     {
       "id": "4-1-1",
-      "role": "Speaker A",
-      "hanzi": "她是谁？",
-      "pinyin": "Tā shì shéi?",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "早上好，王老师今天来学校了吗？",
+      "pinyin": "Zǎoshang hǎo, Wáng lǎoshī jīntiān lái xuéxiào le ma?",
       "translation": {
-        "en": "Who is she?",
-        "ar": "من هي؟"
+        "en": "Good morning. Has Teacher Wang arrived at school today?",
+        "ar": "صباح الخير. هل وصلت المعلمة وانغ إلى المدرسة اليوم؟"
       },
       "audio": null
     },
     {
       "id": "4-1-2",
-      "role": "Speaker B",
-      "hanzi": "她是我的汉语老师，她叫李月。",
-      "pinyin": "Tā shì wǒ de Hànyǔ lǎoshī, tā jiào Lǐ Yuè.",
+      "role": "安娜 (Ānnà)",
+      "hanzi": "来了，她现在在教室里。",
+      "pinyin": "Lái le, tā xiànzài zài jiàoshì lǐ.",
       "translation": {
-        "en": "She is my Chinese teacher, her name is Li Yue.",
-        "ar": "هي معلمتي للغة الصينية، اسمها لي يوي."
+        "en": "Yes, she’s in the classroom now.",
+        "ar": "نعم، إنها في الصف الآن."
       },
       "audio": null
     },
     {
-      "id": "4-2-1",
-      "role": "Speaker A",
-      "hanzi": "你是哪国人？",
-      "pinyin": "Nǐ shì nǎ guó rén?",
+      "id": "4-1-3",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "她是我们的中文老师，对吗？",
+      "pinyin": "Tā shì wǒmen de Zhōngwén lǎoshī, duì ma?",
       "translation": {
-        "en": "Which country are you from?",
-        "ar": "من أي بلد أنت؟"
+        "en": "She’s our Chinese teacher, right?",
+        "ar": "هي معلمتنا للغة الصينية، أليس كذلك؟"
       },
       "audio": null
     },
     {
-      "id": "4-2-2",
-      "role": "Speaker B",
-      "hanzi": "我是美国人。你呢？",
-      "pinyin": "Wǒ shì Měiguó rén. Nǐ ne?",
+      "id": "4-1-4",
+      "role": "安娜 (Ānnà)",
+      "hanzi": "对，她人很好，讲课也很清楚。",
+      "pinyin": "Duì, tā rén hěn hǎo, jiǎngkè yě hěn qīngchu.",
       "translation": {
-        "en": "I am American. What about you?",
-        "ar": "أنا أمريكي. وأنتَ؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "4-2-3",
-      "role": "Speaker A",
-      "hanzi": "我是中国人。",
-      "pinyin": "Wǒ shì Zhōngguó rén.",
-      "translation": {
-        "en": "I am Chinese.",
-        "ar": "أنا صيني."
-      },
-      "audio": null
-    },
-    {
-      "id": "4-3-1",
-      "role": "Speaker A",
-      "hanzi": "他是谁？",
-      "pinyin": "Tā shì shéi?",
-      "translation": {
-        "en": "Who is he?",
-        "ar": "من هو؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "4-3-2",
-      "role": "Speaker B",
-      "hanzi": "他是我同学。",
-      "pinyin": "Tā shì wǒ tóngxué.",
-      "translation": {
-        "en": "He is my classmate.",
-        "ar": "هو زميلي في الدراسة."
-      },
-      "audio": null
-    },
-    {
-      "id": "4-3-3",
-      "role": "Speaker A",
-      "hanzi": "她呢？她是你的同学吗？",
-      "pinyin": "Tā ne? Tā shì nǐ de tóngxué ma?",
-      "translation": {
-        "en": "What about her? Is she your classmate?",
-        "ar": "وماذا عنها؟ هل هي زميلتك أيضاً؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "4-3-4",
-      "role": "Speaker B",
-      "hanzi": "她不是我同学，她是我朋友。",
-      "pinyin": "Tā bú shì wǒ tóngxué, tā shì wǒ péngyou.",
-      "translation": {
-        "en": "She is not my classmate, she is my friend.",
-        "ar": "هي ليست زميلتي، هي صديقتي."
+        "en": "That’s right. She’s kind and explains things clearly.",
+        "ar": "صحيح، إنها لطيفة وتشرح الدرس بوضوح."
       },
       "audio": null
     }
@@ -159,5 +102,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official HSK 1 Standard Course Lesson 4 dialogues."
+  "authoringNote": "Official HSK 1 Standard Course Lesson 4 dialogues.",
+  "curriculum": "standard"
 }

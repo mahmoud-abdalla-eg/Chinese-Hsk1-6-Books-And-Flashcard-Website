@@ -9,190 +9,71 @@
     "en": "Lesson 6: Why don't you eat more?",
     "ar": "الدرس 6: لماذا لا تأكل المزيد؟"
   },
-  "targetVocabularyIds": [
-    "teng",
-    "dangao",
-    "shufu",
-    "shenti",
-    "pao-bu",
-    "yundong",
-    "danshi",
-    "keneng"
-  ],
+  "targetVocabularyIds": ["shenti", "shufu", "dangao", "yundong"],
   "dialogue": [
     {
       "id": "6-1-1",
-      "role": "Speaker A",
-      "hanzi": "你怎么不吃了？",
-      "pinyin": "Nǐ zěnme bù chī le?",
+      "role": "陈明",
+      "hanzi": "林娜，你怎么只吃了几口？菜不合胃口吗？",
+      "pinyin": "Lín Nà, nǐ zěnme zhǐ chī le jǐ kǒu? Cài bù hé wèikǒu ma?",
       "translation": {
-        "en": "Why aren't you eating anymore?",
-        "ar": "لماذا توقفت عن الأكل؟"
+        "en": "Lin Na, why have you only had a few bites? Is the food not to your taste?",
+        "ar": "لينا، لماذا أكلت بضع لقيمات فقط؟ أليس الطعام على ذوقك؟"
       },
       "audio": null
     },
     {
       "id": "6-1-2",
-      "role": "Speaker B",
-      "hanzi": "我觉得有点儿不舒服。",
-      "pinyin": "Wǒ juéde yǒudiǎnr bù shūfu.",
+      "role": "林娜",
+      "hanzi": "菜很好吃，不过我今天身体有点儿不舒服。",
+      "pinyin": "Cài hěn hǎochī, búguò wǒ jīntiān shēntǐ yǒudiǎnr bù shūfu.",
       "translation": {
-        "en": "I'm feeling a bit unwell.",
-        "ar": "أشعر ببعض التعب وعدم الارتياح."
+        "en": "The food is delicious, but I’m feeling a little unwell today.",
+        "ar": "الطعام لذيذ، لكنني لا أشعر أنني بخير اليوم."
       },
       "audio": null
     },
     {
       "id": "6-1-3",
-      "role": "Speaker A",
-      "hanzi": "怎么了？感冒了吗？",
-      "pinyin": "Zěnme le? Gǎnmào le ma?",
+      "role": "陈明",
+      "hanzi": "要不要休息一下？我给你倒杯热水。",
+      "pinyin": "Yào bu yào xiūxi yíxià? Wǒ gěi nǐ dào bēi rèshuǐ.",
       "translation": {
-        "en": "What's wrong? Do you have a cold?",
-        "ar": "ما بك؟ هل أصبت بالزكام؟"
+        "en": "Would you like to rest a little? I’ll pour you some hot water.",
+        "ar": "هل تريدين أن تستريحي قليلاً؟ سأصب لك بعض الماء الساخن."
       },
       "audio": null
     },
     {
       "id": "6-1-4",
-      "role": "Speaker B",
-      "hanzi": "没感冒，可能昨天晚上没睡好。",
-      "pinyin": "Méi gǎnmào, kěnéng zuótiān wǎnshang méi shuì hǎo.",
+      "role": "林娜",
+      "hanzi": "谢谢。晚饭前我吃了一块蛋糕，现在不饿。",
+      "pinyin": "Xièxie. Wǎnfàn qián wǒ chī le yí kuài dàngāo, xiànzài bú è.",
       "translation": {
-        "en": "No cold, probably didn't sleep well last night.",
-        "ar": "لم أصب بزكام، ربما لم أنم جيداً البارحة."
+        "en": "Thanks. I had a piece of cake before dinner, so I’m not hungry now.",
+        "ar": "شكراً. أكلت قطعة من الكعك قبل العشاء، لذلك لست جائعة الآن."
       },
       "audio": null
     },
     {
-      "id": "6-2-1",
-      "role": "Speaker A",
-      "hanzi": "你怎么吃得这么少？",
-      "pinyin": "Nǐ zěnme chī de zhème shǎo?",
+      "id": "6-1-5",
+      "role": "陈明",
+      "hanzi": "那就别勉强，等舒服一点儿我们再去散步。",
+      "pinyin": "Nà jiù bié miǎnqiǎng, děng shūfu yìdiǎnr wǒmen zài qù sànbù.",
       "translation": {
-        "en": "How come you are eating so little?",
-        "ar": "لماذا تأكل هذا القليل جداً؟"
+        "en": "Then don’t force yourself. We can take a walk when you feel a little better.",
+        "ar": "لا تجبري نفسك إذن. يمكننا التنزه عندما تشعرين بتحسن."
       },
       "audio": null
     },
     {
-      "id": "6-2-2",
-      "role": "Speaker B",
-      "hanzi": "我最近在减肥。",
-      "pinyin": "Wǒ zuìjìn zài jiǎnféi.",
+      "id": "6-1-6",
+      "role": "林娜",
+      "hanzi": "好，明天我再陪你去运动。",
+      "pinyin": "Hǎo, míngtiān wǒ zài péi nǐ qù yùndòng.",
       "translation": {
-        "en": "I've been on a diet recently.",
-        "ar": "أتبع حمية غذائية لإنقاص وزني هذه الأيام."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-2-3",
-      "role": "Speaker A",
-      "hanzi": "你一点儿也不胖，不用减肥。",
-      "pinyin": "Nǐ yìdiǎnr yě bú pàng, bú yòng jiǎnféi.",
-      "translation": {
-        "en": "You are not fat at all; no need to diet.",
-        "ar": "لست سميناً على الإطلاق، لا داعي لتخفيف وزنك."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-2-4",
-      "role": "Speaker B",
-      "hanzi": "我想更瘦一点儿。",
-      "pinyin": "Wǒ xiǎng gèng shòu yìdiǎnr.",
-      "translation": {
-        "en": "I'd like to be a bit slimmer.",
-        "ar": "أود أن أكون أنحف قليلاً."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-3-1",
-      "role": "Speaker A",
-      "hanzi": "你每天都来跑步吗？",
-      "pinyin": "Nǐ měi tiān dōu lái pǎobù ma?",
-      "translation": {
-        "en": "Do you come to run every day?",
-        "ar": "هل تأتي لممارسة الجري كل يوم؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "6-3-2",
-      "role": "Speaker B",
-      "hanzi": "是啊，运动对身体好。",
-      "pinyin": "Shì a, yùndòng duì shēntǐ hǎo.",
-      "translation": {
-        "en": "Yes, exercise is good for one's health.",
-        "ar": "أجل، الرياضة مفيدة جداً لصحة الجسم."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-3-3",
-      "role": "Speaker A",
-      "hanzi": "我也很想运动，但是太忙了。",
-      "pinyin": "Wǒ yě hěn xiǎng yùndòng, dànshì tài máng le.",
-      "translation": {
-        "en": "I also really want to exercise, but I'm too busy.",
-        "ar": "أنا أيضاً أريد ممارسة الرياضة، لكني مشغول للغاية."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-3-4",
-      "role": "Speaker B",
-      "hanzi": "每天运动半个小时就够了。",
-      "pinyin": "Měi tiān yùndòng bàn ge xiǎoshí jiù gòu le.",
-      "translation": {
-        "en": "Exercising half an hour every day is quite enough.",
-        "ar": "نصف ساعة من الرياضة يومياً كافية تماماً."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-4-1",
-      "role": "Speaker A",
-      "hanzi": "这块蛋糕真好吃！你怎么不吃？",
-      "pinyin": "Zhè kuài dàngāo zhēn hǎochī! Nǐ zěnme bù chī?",
-      "translation": {
-        "en": "This piece of cake is really delicious! Why don't you have some?",
-        "ar": "قطعة الحلوى هذه لذيذة حقاً! لماذا لا تأكل منها؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "6-4-2",
-      "role": "Speaker B",
-      "hanzi": "我牙疼，吃不了甜的。",
-      "pinyin": "Wǒ yá téng, chī bu liǎo tián de.",
-      "translation": {
-        "en": "My tooth aches; I can't eat sweets.",
-        "ar": "أسناني تؤلمني، لا أستطيع تناول الحلويات."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-4-3",
-      "role": "Speaker A",
-      "hanzi": "去看医生了吗？",
-      "pinyin": "Qù kàn yīshēng le ma?",
-      "translation": {
-        "en": "Have you seen a doctor?",
-        "ar": "هل زرت الطبيب؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "6-4-4",
-      "role": "Speaker B",
-      "hanzi": "看过了，医生说要多刷牙。",
-      "pinyin": "Kàn guò le, yīshēng shuō yào duō shuāyá.",
-      "translation": {
-        "en": "I did. The doctor told me to brush my teeth more often.",
-        "ar": "زرته، وقال الطبيب إنه عليّ تنظيف أسناني بالفرشاة بانتظام أكثر."
+        "en": "Okay. I’ll go exercise with you tomorrow instead.",
+        "ar": "حسناً. سأذهب للتمرين معك غداً بدلاً من ذلك."
       },
       "audio": null
     }
@@ -246,5 +127,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official HSK 2 Standard Course Lesson 6 dialogues."
+  "authoringNote": "Official HSK 2 Standard Course Lesson 6 dialogues.",
+  "curriculum": "standard"
 }

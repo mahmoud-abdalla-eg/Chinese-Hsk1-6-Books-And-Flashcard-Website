@@ -12,156 +12,68 @@
   },
   "dialogue": [
     {
-      "id": "13-1-1",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "王老师，我可以再问您一个问题吗？",
-      "pinyin": "Wáng lǎoshī, wǒ kěyǐ zài wèn nín yí gè wèntí ma?",
+      "id": "13-teashop-1",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "你早饭吃了吗？",
+      "pinyin": "Nǐ zǎofàn chī le ma?",
       "translation": {
-        "en": "Teacher Wang, may I ask you one more question?",
-        "ar": "أستاذة وانغ، هل يمكنني أن أطرح عليكِ سؤالاً آخر؟"
+        "en": "Have you had breakfast?",
+        "ar": "هل تناولت الفطور؟"
       },
       "audio": null
     },
     {
-      "id": "13-1-2",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "可以。你有什么问题？",
-      "pinyin": "Kěyǐ. Nǐ yǒu shénme wèntí?",
+      "id": "13-teashop-2",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "还没有。服务员，请给我一杯茶。",
+      "pinyin": "Hái méiyǒu. Fúwùyuán, qǐng gěi wǒ yì bēi chá.",
       "translation": {
-        "en": "Of course. What is your question?",
-        "ar": "بالتأكيد. ما هو سؤالك؟"
+        "en": "Not yet. Waiter, please bring me a cup of tea.",
+        "ar": "ليس بعد. أيها النادل، أرجو أن تحضر لي كوباً من الشاي."
       },
       "audio": null
     },
     {
-      "id": "13-1-3",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "那个小店卖不卖手机？",
-      "pinyin": "Nàge xiǎodiàn mài bu mài shǒujī?",
+      "id": "13-teashop-3",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "你还想吃点儿什么？",
+      "pinyin": "Nǐ hái xiǎng chī diǎnr shénme?",
       "translation": {
-        "en": "Does that small shop sell mobile phones?",
-        "ar": "هل يبيع ذلك المتجر الصغير الهواتف المحمولة؟"
+        "en": "Would you like anything else to eat?",
+        "ar": "هل تود تناول شيء آخر؟"
       },
       "audio": null
     },
     {
-      "id": "13-1-4",
-      "role": "王一飞 (Wang Yifei)",
-      "hanzi": "我不知道。你可以打电话问一下。",
-      "pinyin": "Wǒ bù zhīdào. Nǐ kěyǐ dǎ diànhuà wèn yíxià.",
+      "id": "13-teashop-4",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "我要这个面包和一个鸡蛋。",
+      "pinyin": "Wǒ yào zhège miànbāo hé yí ge jīdàn.",
       "translation": {
-        "en": "I'm not sure. You can call and ask them.",
-        "ar": "لا أعرف. يمكنك الاتصال هاتفياً للاستفسار."
+        "en": "I’ll have this bread and an egg.",
+        "ar": "سآخذ هذا الخبز وبيضة."
       },
       "audio": null
     },
     {
-      "id": "13-2-1",
-      "role": "服务员 (Waitress)",
-      "hanzi": "女士，请坐！您喝什么？",
-      "pinyin": "Nǚshì, qǐng zuò! Nín hē shénme?",
+      "id": "13-teashop-5",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "好。面包切一半够吗？",
+      "pinyin": "Hǎo. Miànbāo qiē yí bàn gòu ma?",
       "translation": {
-        "en": "Madam, please take a seat! What would you like to drink?",
-        "ar": "سيدتي، تفضلي بالجلوس! ماذا تحبين أن تشربي؟"
+        "en": "Okay. Is half a loaf enough?",
+        "ar": "حسناً. هل يكفي نصف رغيف؟"
       },
       "audio": null
     },
     {
-      "id": "13-2-2",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "我看一下。请给我一杯牛奶。",
-      "pinyin": "Wǒ kàn yíxià. Qǐng gěi wǒ yì bēi niúnǎi.",
+      "id": "13-teashop-6",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "够了，谢谢。",
+      "pinyin": "Gòu le, xièxie.",
       "translation": {
-        "en": "Let me see. Please give me a glass of milk.",
-        "ar": "دعيني ألقي نظرة. من فضلك أعطني كوباً من الحليب."
-      },
-      "audio": null
-    },
-    {
-      "id": "13-2-3",
-      "role": "服务员 (Waitress)",
-      "hanzi": "好的。您还要什么？",
-      "pinyin": "Hǎo de. Nín hái yào shénme?",
-      "translation": {
-        "en": "Alright. Would you like anything else?",
-        "ar": "حسناً. هل تريدين شيئاً آخر؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "13-2-4",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "我还没吃早饭，再要这个面包和鸡蛋吧。",
-      "pinyin": "Wǒ hái méi chī zǎofàn, zài yào zhège miànbāo hé jīdàn ba.",
-      "translation": {
-        "en": "I haven't had breakfast yet; I'll also have this bread and eggs.",
-        "ar": "لم أتناول الإفطار بعد، سآخذ أيضاً هذا الخبز مع البيض."
-      },
-      "audio": null
-    },
-    {
-      "id": "13-3-1",
-      "role": "服务员 (Waiter)",
-      "hanzi": "先生，请坐！您要什么？",
-      "pinyin": "Xiānsheng, qǐng zuò! Nín yào shénme?",
-      "translation": {
-        "en": "Sir, please take a seat! What would you like to order?",
-        "ar": "سيدي، تفضل بالجلوس! ماذا تطلب؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "13-3-2",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "我要一斤饺子。",
-      "pinyin": "Wǒ yào yì jīn jiǎozi.",
-      "translation": {
-        "en": "I'd like one jin (500g) of dumplings.",
-        "ar": "أريد جين (نصف كيلوغرام) من الزلابية (الدمبلينغ)."
-      },
-      "audio": null
-    },
-    {
-      "id": "13-3-3",
-      "role": "服务员 (Waiter)",
-      "hanzi": "好的。一斤饺子40个。",
-      "pinyin": "Hǎo de. Yì jīn jiǎozi sìshí gè.",
-      "translation": {
-        "en": "Alright. One jin is forty dumplings.",
-        "ar": "حسناً. نصف الكيلو يحتوي على 40 حبة زلابية."
-      },
-      "audio": null
-    },
-    {
-      "id": "13-3-4",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "40个太多了，我要一半吧。",
-      "pinyin": "Sìshí gè tài duō le, wǒ yào yíbàn ba.",
-      "translation": {
-        "en": "Forty is too many; I'll take half (half a jin).",
-        "ar": "40 حبة كثيرة جداً، سآخذ النصف فقط."
-      },
-      "audio": null
-    },
-    {
-      "id": "13-3-5",
-      "role": "服务员 (Waiter)",
-      "hanzi": "半斤20个。您想喝什么？",
-      "pinyin": "Bàn jīn èrshí gè. Nín xiǎng hē shénme?",
-      "translation": {
-        "en": "Half a jin is twenty. What would you like to drink?",
-        "ar": "نصف جين يعادل 20 حبة. ماذا تحب أن تشرب؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "13-3-6",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "请给我一杯茶吧。",
-      "pinyin": "Qǐng gěi wǒ yì bēi chá ba.",
-      "translation": {
-        "en": "Please give me a cup of tea.",
-        "ar": "من فضلك أعطني كوباً من الشاي."
+        "en": "That’s enough, thank you.",
+        "ar": "هذا يكفي، شكراً."
       },
       "audio": null
     }
@@ -220,5 +132,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 13."
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 13.",
+  "targetVocabularyIds": ["jidan", "mianbao", "yi-ban", "zaofan", "zhe-ge"]
 }

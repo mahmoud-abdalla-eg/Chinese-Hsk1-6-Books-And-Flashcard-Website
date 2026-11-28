@@ -1,0 +1,68 @@
+{
+  "id": "hsk-3-unit-12-conversation-1",
+  "hskLevel": 3,
+  "unitId": 12,
+  "contentType": "dialogue",
+  "title": {
+    "zh": "第12课：这个季节天气变化很快",
+    "en": "Lesson 12: The weather changes quickly",
+    "ar": "الدرس 12: يتغير الطقس بسرعة في هذا الفصل"
+  },
+  "dialogue": [
+    {
+      "id": "12-1-1",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "这个季节天气变化很快，早上还挺暖和。",
+      "pinyin": "Zhège jìjié tiānqì biànhuà hěn kuài, zǎoshang hái tǐng nuǎnhuo.",
+      "translation": {
+        "en": "The weather changes quickly this season; it was warm this morning.",
+        "ar": "يتغير الطقس بسرعة في هذا الفصل، وكان الصباح دافئاً."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-1-2",
+      "role": "许安 (Xǔ Ān)",
+      "hanzi": "是啊，刚才下雨，现在又出太阳了。",
+      "pinyin": "Shì a, gāngcái xiàyǔ, xiànzài yòu chū tàiyáng le.",
+      "translation": {
+        "en": "It does. It was raining a moment ago, and now the sun is out.",
+        "ar": "صحيح، كانت تمطر قبل قليل، والآن ظهرت الشمس."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-1-3",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "我本来想骑车去超市，还是带把伞吧。",
+      "pinyin": "Wǒ běnlái xiǎng qí chē qù chāoshì, háishi dài bǎ sǎn ba.",
+      "translation": {
+        "en": "I was going to cycle to the supermarket, but I’ll take an umbrella.",
+        "ar": "كنت أنوي الذهاب بالدراجة إلى المتجر، لكنني سأحمل مظلة."
+      },
+      "audio": null
+    },
+    {
+      "id": "12-1-4",
+      "role": "许安 (Xǔ Ān)",
+      "hanzi": "带上吧，天气预报说晚上可能还会下雨。",
+      "pinyin": "Dài shàng ba, tiānqì yùbào shuō wǎnshang kěnéng hái huì xiàyǔ.",
+      "translation": {
+        "en": "Take it. The forecast says it may rain again tonight.",
+        "ar": "خذها معك، فتوقعات الطقس تقول إن المطر قد يعود مساءً."
+      },
+      "audio": null
+    }
+  ],
+  "grammarNotes": [],
+  "culturalNotes": [],
+  "comprehensionQuestions": [],
+  "shadowingPractice": {
+    "enabled": true,
+    "mode": "line-by-line"
+  },
+  "status": "ready",
+  "curriculum": "hsk3",
+  "targetVocabularyIds": ["bianhua", "gangcai", "jijie"],
+  "authoringNote": "Original dialogue aligned to the lesson topic; translations and tone-marked pinyin are supplied for every turn."
+}

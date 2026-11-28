@@ -9,214 +9,71 @@
     "en": "Lesson 1: September is the best time to visit Beijing",
     "ar": "الدرس 1: أفضل وقت لزيارة بكين هو شهر سبتمبر"
   },
-  "targetVocabularyIds": [
-    "luyou",
-    "jue-de",
-    "zui",
-    "weishenme",
-    "ye",
-    "yundong",
-    "zuqiu",
-    "ti-2",
-    "yanjing",
-    "xinnian"
-  ],
+  "targetVocabularyIds": ["luyou", "yiqi", "hui-lai"],
   "dialogue": [
     {
       "id": "1-1-1",
-      "role": "Speaker A",
-      "hanzi": "我要去北京旅游，你觉得什么时候去最好？",
-      "pinyin": "Wǒ yào qù Běijīng lǚyóu, nǐ juéde shénme shíhou qù zuì hǎo?",
+      "role": "林娜",
+      "hanzi": "我九月想去北京旅游，陈明，你以前去过吗？",
+      "pinyin": "Wǒ jiǔyuè xiǎng qù Běijīng lǚyóu, Chén Míng, nǐ yǐqián qùguo ma?",
       "translation": {
-        "en": "I'm going to travel to Beijing. When do you think is the best time to go?",
-        "ar": "سأسافر إلى بكين في رحلة سياحية، في أي وقت تعتقد أنه الأنسب للذهاب؟"
+        "en": "I want to travel to Beijing in September. Chen Ming, have you been there before?",
+        "ar": "أريد السفر إلى بكين في سبتمبر. تشن مينغ، هل زرتها من قبل؟"
       },
       "audio": null
     },
     {
       "id": "1-1-2",
-      "role": "Speaker B",
-      "hanzi": "九月去北京旅游最好。",
-      "pinyin": "Jiǔyuè qù Běijīng lǚyóu zuì hǎo.",
+      "role": "陈明",
+      "hanzi": "去过一次，那时候天气很舒服，游客也不太多。",
+      "pinyin": "Qùguo yí cì, nà shíhou tiānqì hěn shūfu, yóukè yě bú tài duō.",
       "translation": {
-        "en": "September is the best time to visit Beijing.",
-        "ar": "شهر سبتمبر هو أفضل وقت لزيارة بكين."
+        "en": "I went once. The weather was lovely then, and there were not too many visitors.",
+        "ar": "زرتها مرة. كان الطقس لطيفاً حينها، ولم يكن هناك الكثير من الزوار."
       },
       "audio": null
     },
     {
       "id": "1-1-3",
-      "role": "Speaker A",
-      "hanzi": "为什么？",
-      "pinyin": "Wèishénme?",
+      "role": "林娜",
+      "hanzi": "听起来不错。我想去看看颐和园。",
+      "pinyin": "Tīng qǐlái búcuò. Wǒ xiǎng qù kànkan Yíhéyuán.",
       "translation": {
-        "en": "Why?",
-        "ar": "لماذا؟"
+        "en": "That sounds good. I would like to see the Summer Palace.",
+        "ar": "يبدو ذلك جميلاً. أود زيارة القصر الصيفي."
       },
       "audio": null
     },
     {
       "id": "1-1-4",
-      "role": "Speaker B",
-      "hanzi": "九月的北京天气不冷也不热。",
-      "pinyin": "Jiǔyuè de Běijīng tiānqì bù lěng yě bú rè.",
+      "role": "陈明",
+      "hanzi": "我们可以一起去，先订好车票和旅馆。",
+      "pinyin": "Wǒmen kěyǐ yìqǐ qù, xiān dìng hǎo chēpiào hé lǚguǎn.",
       "translation": {
-        "en": "The weather in Beijing in September is neither cold nor hot.",
-        "ar": "الطقس في بكين في شهر سبتمبر ليس بارداً ولا حاراً."
+        "en": "We can go together. Let’s book our train tickets and hotel first.",
+        "ar": "يمكننا الذهاب معاً. لنحجز تذاكر القطار والفندق أولاً."
       },
       "audio": null
     },
     {
-      "id": "1-2-1",
-      "role": "Speaker A",
-      "hanzi": "你喜欢什么运动？",
-      "pinyin": "Nǐ xǐhuan shénme yùndòng?",
+      "id": "1-1-5",
+      "role": "林娜",
+      "hanzi": "好啊，你觉得在北京住几天合适？",
+      "pinyin": "Hǎo a, nǐ juéde zài Běijīng zhù jǐ tiān héshì?",
       "translation": {
-        "en": "What sport do you like?",
-        "ar": "ما هي الرياضة التي تحبها؟"
+        "en": "Sure. How many days do you think we should stay in Beijing?",
+        "ar": "حسناً، كم يوماً ترى أن علينا أن نقيم في بكين؟"
       },
       "audio": null
     },
     {
-      "id": "1-2-2",
-      "role": "Speaker B",
-      "hanzi": "我最喜欢踢足球。",
-      "pinyin": "Wǒ zuì xǐhuan tī zúqiú.",
+      "id": "1-1-6",
+      "role": "陈明",
+      "hanzi": "四天差不多，回来以后我把照片发给你。",
+      "pinyin": "Sì tiān chàbuduō, huílái yǐhòu wǒ bǎ zhàopiàn fā gěi nǐ.",
       "translation": {
-        "en": "I like playing football the most.",
-        "ar": "أحب لعب كرة القدم أكثر من أي شيء."
-      },
-      "audio": null
-    },
-    {
-      "id": "1-2-3",
-      "role": "Speaker A",
-      "hanzi": "下午我们一起去踢足球吧。",
-      "pinyin": "Xiàwǔ wǒmen yìqǐ qù tī zúqiú ba.",
-      "translation": {
-        "en": "Let's go play football together this afternoon.",
-        "ar": "دعنا نذهب لنلعب كرة القدم معاً بعد ظهر اليوم."
-      },
-      "audio": null
-    },
-    {
-      "id": "1-2-4",
-      "role": "Speaker B",
-      "hanzi": "好啊！",
-      "pinyin": "Hǎo a!",
-      "translation": {
-        "en": "Great!",
-        "ar": "حسناً، فكرة ممتازة!"
-      },
-      "audio": null
-    },
-    {
-      "id": "1-3-1",
-      "role": "Speaker A",
-      "hanzi": "我们要不要买几个新的椅子？",
-      "pinyin": "Wǒmen yào bu yào mǎi jǐ ge xīn de yǐzi?",
-      "translation": {
-        "en": "Should we buy a few new chairs?",
-        "ar": "هل ينبغي علينا شراء بضعة كراسٍ جديدة؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "1-3-2",
-      "role": "Speaker B",
-      "hanzi": "好啊。什么时候去买？",
-      "pinyin": "Hǎo a. Shénme shíhou qù mǎi?",
-      "translation": {
-        "en": "Sure. When shall we go buy them?",
-        "ar": "فكرة جيدة. متى سنذهب لشرائها؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "1-3-3",
-      "role": "Speaker A",
-      "hanzi": "明天下午怎么样？你明天几点能回来？",
-      "pinyin": "Míngtiān xiàwǔ zěnmeyàng? Nǐ míngtiān jǐ diǎn néng huílái?",
-      "translation": {
-        "en": "How about tomorrow afternoon? What time can you come back tomorrow?",
-        "ar": "ما رأيك بعد ظهر الغد؟ في أي وقت يمكنك العودة غداً؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "1-3-4",
-      "role": "Speaker B",
-      "hanzi": "三点多。",
-      "pinyin": "Sān diǎn duō.",
-      "translation": {
-        "en": "A little past three o'clock.",
-        "ar": "بعد الثالثة بقليل."
-      },
-      "audio": null
-    },
-    {
-      "id": "1-4-1",
-      "role": "Speaker A",
-      "hanzi": "桌子下面有个猫。",
-      "pinyin": "Zhuōzi xiàmiàn yǒu ge māo.",
-      "translation": {
-        "en": "There is a cat under the table.",
-        "ar": "توجد قطة تحت الطاولة."
-      },
-      "audio": null
-    },
-    {
-      "id": "1-4-2",
-      "role": "Speaker B",
-      "hanzi": "那是王朋的猫，它叫花花。",
-      "pinyin": "Nà shì Wáng Péng de māo, tā jiào Huāhua.",
-      "translation": {
-        "en": "That's Wang Peng's cat, its name is Huahua.",
-        "ar": "تلك قطة وانغ بنغ، اسمها هواهوا."
-      },
-      "audio": null
-    },
-    {
-      "id": "1-4-3",
-      "role": "Speaker A",
-      "hanzi": "它很漂亮。",
-      "pinyin": "Tā hěn piàoliang.",
-      "translation": {
-        "en": "It is very pretty.",
-        "ar": "إنها جميلة جداً."
-      },
-      "audio": null
-    },
-    {
-      "id": "1-4-4",
-      "role": "Speaker B",
-      "hanzi": "是啊，我觉得它的眼睛最漂亮。",
-      "pinyin": "Shì a, wǒ juéde tā de yǎnjing zuì piàoliang.",
-      "translation": {
-        "en": "Yes, I think its eyes are the prettiest.",
-        "ar": "أجل، أعتقد أن عينيها هما الأجمل."
-      },
-      "audio": null
-    },
-    {
-      "id": "1-4-5",
-      "role": "Speaker A",
-      "hanzi": "它多大了？",
-      "pinyin": "Tā duō dà le?",
-      "translation": {
-        "en": "How old is it?",
-        "ar": "كم عمرها؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "1-4-6",
-      "role": "Speaker B",
-      "hanzi": "六个多月。",
-      "pinyin": "Liù ge duō yuè.",
-      "translation": {
-        "en": "More than six months.",
-        "ar": "أكثر من ستة أشهر."
+        "en": "About four days. I’ll send you the photos when we get back.",
+        "ar": "نحو أربعة أيام. سأرسل إليك الصور عندما نعود."
       },
       "audio": null
     }
@@ -270,5 +127,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official HSK 2 Standard Course Lesson 1 dialogues."
+  "authoringNote": "Official HSK 2 Standard Course Lesson 1 dialogues.",
+  "curriculum": "standard"
 }

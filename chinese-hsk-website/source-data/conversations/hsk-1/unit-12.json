@@ -10,147 +10,61 @@
     "ar": "الدرس 12: كيف سيكون الطقس غداً"
   },
   "targetVocabularyIds": [
+    "da-dianhua",
+    "dianhua",
+    "mingtian",
+    "shihou",
     "tianqi",
+    "women",
+    "xia-yu",
+    "yidianr",
+    "zaoshang",
+    "zenme",
     "zenme-yang",
-    "tai",
-    "re",
-    "leng",
-    "yu",
-    "lai",
-    "ai",
-    "shui-guo",
-    "shui-2"
+    "beijing"
   ],
   "dialogue": [
     {
       "id": "12-1-1",
-      "role": "Speaker A",
-      "hanzi": "昨天北京的天气怎么样？",
-      "pinyin": "Zuótiān Běijīng de tiānqì zěnmeyàng?",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "明天北京的天气怎么样？要下雨吗？",
+      "pinyin": "Míngtiān Běijīng de tiānqì zěnmeyàng? Yào xiàyǔ ma?",
       "translation": {
-        "en": "How was the weather in Beijing yesterday?",
-        "ar": "كيف كان الطقس في بكين أمس؟"
+        "en": "What will the weather be like in Beijing tomorrow? Will it rain?",
+        "ar": "كيف سيكون الطقس في بكين غداً؟ هل ستمطر؟"
       },
       "audio": null
     },
     {
       "id": "12-1-2",
-      "role": "Speaker B",
-      "hanzi": "太热了。",
-      "pinyin": "Tài rè le.",
+      "role": "安娜 (Ānnà)",
+      "hanzi": "天气预报说会很冷，但是不会下雨。",
+      "pinyin": "Tiānqì yùbào shuō huì hěn lěng, dànshì bú huì xiàyǔ.",
       "translation": {
-        "en": "It was too hot.",
-        "ar": "كان حاراً جداً."
+        "en": "The forecast says it’ll be cold but won’t rain.",
+        "ar": "تقول النشرة إن الجو سيكون بارداً لكنه لن يمطر."
       },
       "audio": null
     },
     {
       "id": "12-1-3",
-      "role": "Speaker A",
-      "hanzi": "明天呢？明天天气怎么样？",
-      "pinyin": "Míngtiān ne? Míngtiān tiānqì zěnmeyàng?",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "那我穿厚一点儿，早上我们几点出发？",
+      "pinyin": "Nà wǒ chuān hòu yìdiǎnr, zǎoshang wǒmen jǐ diǎn chūfā?",
       "translation": {
-        "en": "What about tomorrow? How will the weather be tomorrow?",
-        "ar": "وماذا عن الغد؟ كيف سيكون الطقس غداً؟"
+        "en": "I’ll dress warmly, then. What time shall we leave?",
+        "ar": "سأرتدي ملابس أثقل إذن. في أي ساعة ننطلق صباحاً؟"
       },
       "audio": null
     },
     {
       "id": "12-1-4",
-      "role": "Speaker B",
-      "hanzi": "明天天气很好，不冷不热。",
-      "pinyin": "Míngtiān tiānqì hěn hǎo, bù lěng bú rè.",
+      "role": "安娜 (Ānnà)",
+      "hanzi": "八点吧，我到时候给你打电话。",
+      "pinyin": "Bā diǎn ba, wǒ dào shíhou gěi nǐ dǎ diànhuà.",
       "translation": {
-        "en": "Tomorrow will be very pleasant, neither cold nor hot.",
-        "ar": "طقس الغد سيكون لطيفاً جداً، لا برد فيه ولا حر."
-      },
-      "audio": null
-    },
-    {
-      "id": "12-2-1",
-      "role": "Speaker A",
-      "hanzi": "今天会下雨吗？",
-      "pinyin": "Jīntiān huì xià yǔ ma?",
-      "translation": {
-        "en": "Will it rain today?",
-        "ar": "هل ستمطر اليوم؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "12-2-2",
-      "role": "Speaker B",
-      "hanzi": "今天不会下雨。",
-      "pinyin": "Jīntiān bú huì xià yǔ.",
-      "translation": {
-        "en": "No, it will not rain today.",
-        "ar": "لن تمطر اليوم."
-      },
-      "audio": null
-    },
-    {
-      "id": "12-2-3",
-      "role": "Speaker A",
-      "hanzi": "王小姐今天会来吗？",
-      "pinyin": "Wáng xiǎojiě jīntiān huì lái ma?",
-      "translation": {
-        "en": "Will Miss Wang come today?",
-        "ar": "هل ستأتي الآنسة وانغ اليوم؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "12-2-4",
-      "role": "Speaker B",
-      "hanzi": "不会来，天气太冷了。",
-      "pinyin": "Bú huì lái, tiānqì tài lěng le.",
-      "translation": {
-        "en": "She will not come; the weather is too cold.",
-        "ar": "لن تأتي، الطقس بارد للغاية."
-      },
-      "audio": null
-    },
-    {
-      "id": "12-3-1",
-      "role": "Speaker A",
-      "hanzi": "你身体怎么样？",
-      "pinyin": "Nǐ shēntǐ zěnmeyàng?",
-      "translation": {
-        "en": "How is your health?",
-        "ar": "كيف حال صحتك؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "12-3-2",
-      "role": "Speaker B",
-      "hanzi": "我身体不太好。天气太热了，不爱吃饭。",
-      "pinyin": "Wǒ shēntǐ bú tài hǎo. Tiānqì tài rè le, bú ài chī fàn.",
-      "translation": {
-        "en": "I don't feel very well. The weather is too hot; I have no appetite.",
-        "ar": "صحتي ليست بخير تماماً. الجو شديد الحرارة، ولا شهية لي للأكل."
-      },
-      "audio": null
-    },
-    {
-      "id": "12-3-3",
-      "role": "Speaker A",
-      "hanzi": "你多吃些水果，多喝水。",
-      "pinyin": "Nǐ duō chī xiē shuǐguǒ, duō hē shuǐ.",
-      "translation": {
-        "en": "Eat more fruit and drink more water.",
-        "ar": "تناول المزيد من الفواكه، واشرب الكثير من الماء."
-      },
-      "audio": null
-    },
-    {
-      "id": "12-3-4",
-      "role": "Speaker B",
-      "hanzi": "谢谢你，医生。",
-      "pinyin": "Xièxie nǐ, yīshēng.",
-      "translation": {
-        "en": "Thank you, doctor.",
-        "ar": "شكراً لك يا دكتور."
+        "en": "Let’s say eight. I’ll call you then.",
+        "ar": "في الثامنة، وسأتصل بك حينها."
       },
       "audio": null
     }
@@ -192,5 +106,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official HSK 1 Standard Course Lesson 12 dialogues."
+  "authoringNote": "Official HSK 1 Standard Course Lesson 12 dialogues.",
+  "curriculum": "standard"
 }

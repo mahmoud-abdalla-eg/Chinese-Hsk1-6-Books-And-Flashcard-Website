@@ -361,6 +361,11 @@ export const dictionary = {
     zh: "\u8ddf\u8e2a\u5df2\u5b66\u8bcd\u6c47\u3001\u6536\u85cf\u3001\u96be\u8bcd\u3001\u95ea\u5361\u590d\u4e60\u3001\u5df2\u5b8c\u6210\u8bfe\u7a0b\u548c\u6700\u8fd1\u5b66\u4e60\u3002",
     ar: "\u062a\u0627\u0628\u0639 \u0627\u0644\u0643\u0644\u0645\u0627\u062a \u0627\u0644\u062a\u064a \u062a\u0639\u0644\u0645\u062a\u0647\u0627\u060c \u0648\u0627\u0644\u0645\u0641\u0636\u0644\u0629\u060c \u0648\u0627\u0644\u0635\u0639\u0628\u0629\u060c \u0648\u0645\u0631\u0627\u062c\u0639\u0627\u062a \u0627\u0644\u0628\u0637\u0627\u0642\u0627\u062a\u060c \u0648\u0627\u0644\u062f\u0631\u0648\u0633 \u0627\u0644\u0645\u0643\u062a\u0645\u0644\u0629\u060c \u0648\u0646\u0634\u0627\u0637\u0643 \u0627\u0644\u0623\u062e\u064a\u0631.",
   },
+  loadingDashboard: {
+    en: "Loading your progress...",
+    zh: "\u6b63\u5728\u52a0\u8f7d\u4f60\u7684\u5b66\u4e60\u8fdb\u5ea6...",
+    ar: "\u062c\u0627\u0631\u064d \u062a\u062d\u0645\u064a\u0644 \u062a\u0642\u062f\u0645\u0643...",
+  },
   overallCourseProgress: {
     en: "overall course progress",
     zh: "\u603b\u8bfe\u7a0b\u8fdb\u5ea6",
@@ -907,6 +912,66 @@ export const dictionary = {
     zh: "目标词汇",
     ar: "المفردات المستهدفة",
   },
+  conversationCurriculum: {
+    en: "Conversation curriculum",
+    zh: "对话课程体系",
+    ar: "منهج المحادثة",
+  },
+  conversationLessonList: {
+    en: "Lessons",
+    zh: "课程",
+    ar: "الدروس",
+  },
+  lesson: {
+    en: "Lesson",
+    zh: "课程",
+    ar: "الدرس",
+  },
+  standardCurriculum: {
+    en: "Standard",
+    zh: "标准教程",
+    ar: "المنهج القياسي",
+  },
+  dialogueTranscript: {
+    en: "Conversation",
+    zh: "对话",
+    ar: "المحادثة",
+  },
+  scene: {
+    en: "Scene",
+    zh: "场景",
+    ar: "المشهد",
+  },
+  pinyinLabel: {
+    en: "Pinyin",
+    zh: "拼音",
+    ar: "拼音",
+  },
+  translationLabel: {
+    en: "Translation",
+    zh: "翻译",
+    ar: "الترجمة",
+  },
+  showPinyin: {
+    en: "Show pinyin",
+    zh: "显示拼音",
+    ar: "إظهار拼音",
+  },
+  hidePinyin: {
+    en: "Hide pinyin",
+    zh: "隐藏拼音",
+    ar: "إخفاء拼音",
+  },
+  showTranslation: {
+    en: "Show translation",
+    zh: "显示翻译",
+    ar: "إظهار الترجمة",
+  },
+  hideTranslation: {
+    en: "Hide translation",
+    zh: "隐藏翻译",
+    ar: "إخفاء الترجمة",
+  },
   dialogueComingSoon: {
     en: "Dialogue coming soon.",
     zh: "对话即将推出。",
@@ -952,6 +1017,36 @@ export const dictionary = {
     zh: "账户信息",
     ar: "معلومات الحساب",
   },
+  accountProfileIntro: {
+    en: "Manage your profile, review saved study progress, and change your password securely.",
+    zh: "管理个人资料、查看已保存的学习进度，并安全地更改密码。",
+    ar: "أدر ملفك الشخصي وراجع تقدمك المحفوظ وغيّر كلمة مرورك بأمان.",
+  },
+  accountName: {
+    en: "Name",
+    zh: "姓名",
+    ar: "الاسم",
+  },
+  accountEmail: {
+    en: "Email",
+    zh: "电子邮箱",
+    ar: "البريد الإلكتروني",
+  },
+  memberSince: {
+    en: "Member since",
+    zh: "加入时间",
+    ar: "عضو منذ",
+  },
+  progressLastSynced: {
+    en: "Progress last synced",
+    zh: "上次同步进度",
+    ar: "آخر مزامنة للتقدم",
+  },
+  notAvailable: {
+    en: "Not available",
+    zh: "暂无",
+    ar: "غير متاح",
+  },
 
   currentPassword: {
     en: "Current password",
@@ -972,6 +1067,36 @@ export const dictionary = {
     en: "Change password",
     zh: "更改密码",
     ar: "تغيير كلمة المرور",
+  },
+  updatePassword: {
+    en: "Update password",
+    zh: "更新密码",
+    ar: "تحديث كلمة المرور",
+  },
+  passwordChangedSuccessfully: {
+    en: "Password changed successfully.",
+    zh: "密码已成功更改。",
+    ar: "تم تغيير كلمة المرور بنجاح.",
+  },
+  passwordChangeFailed: {
+    en: "Could not change your password. Please try again.",
+    zh: "无法更改密码，请重试。",
+    ar: "تعذر تغيير كلمة المرور. يرجى المحاولة مرة أخرى.",
+  },
+  passwordChangeNetworkError: {
+    en: "A network error prevented the password change. Please try again.",
+    zh: "网络错误导致密码未能更改，请重试。",
+    ar: "منع خطأ في الشبكة تغيير كلمة المرور. يرجى المحاولة مرة أخرى.",
+  },
+  currentPasswordIncorrect: {
+    en: "Current password is incorrect.",
+    zh: "当前密码不正确。",
+    ar: "كلمة المرور الحالية غير صحيحة.",
+  },
+  passwordSessionExpired: {
+    en: "Log in again before changing your password.",
+    zh: "请重新登录后再更改密码。",
+    ar: "يرجى تسجيل الدخول مجددًا قبل تغيير كلمة المرور.",
   },
   whatGetsSaved: {
     en: "What gets saved",

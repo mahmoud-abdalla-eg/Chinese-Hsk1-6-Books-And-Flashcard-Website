@@ -9,191 +9,71 @@
     "en": "Lesson 8: Let me think about it and tell you later",
     "ar": "الدرس 8: دعني أفكر في الأمر ثم أخبرك لاحقاً"
   },
-  "targetVocabularyIds": [
-    "rang",
-    "gaosu",
-    "deng",
-    "shi-qing",
-    "hei-se",
-    "baise",
-    "beijing-kaoya",
-    "fanguan",
-    "yanse"
-  ],
+  "targetVocabularyIds": ["gaosu", "haishi", "yiqi"],
   "dialogue": [
     {
       "id": "8-1-1",
-      "role": "Speaker A",
-      "hanzi": "我们周末去爬山，你想去吗？",
-      "pinyin": "Wǒmen zhōumò qù páshān, nǐ xiǎng qù ma?",
+      "role": "林娜",
+      "hanzi": "周六天气不错，我们想去爬山，你也来吗？",
+      "pinyin": "Zhōuliù tiānqì búcuò, wǒmen xiǎng qù páshān, nǐ yě lái ma?",
       "translation": {
-        "en": "We are going hiking this weekend, do you want to join?",
-        "ar": "سنذهب لتسلق الجبال في عطلة نهاية الأسبوع، هل تود الذهاب؟"
+        "en": "The weather looks good on Saturday. We’re going hiking; would you like to come?",
+        "ar": "يبدو الطقس جميلاً يوم السبت. سنذهب للتنزه في الجبل، فهل تأتي معنا؟"
       },
       "audio": null
     },
     {
       "id": "8-1-2",
-      "role": "Speaker B",
-      "hanzi": "让我想想再告诉你。",
-      "pinyin": "Ràng wǒ xiǎngxiang zài gàosu nǐ.",
+      "role": "陈明",
+      "hanzi": "我有点儿想去，不过得先看看工作安排。",
+      "pinyin": "Wǒ yǒudiǎnr xiǎng qù, búguò děi xiān kànkan gōngzuò ānpái.",
       "translation": {
-        "en": "Let me think about it and tell you later.",
-        "ar": "دعني أفكر بالأمر ثم أخبرك."
+        "en": "I’d like to go, but I need to check my work schedule first.",
+        "ar": "أرغب في الذهاب، لكن عليّ أن أتحقق من جدول عملي أولاً."
       },
       "audio": null
     },
     {
       "id": "8-1-3",
-      "role": "Speaker A",
-      "hanzi": "好，明天告诉我吧。",
-      "pinyin": "Hǎo, míngtiān gàosu wǒ ba.",
+      "role": "林娜",
+      "hanzi": "没关系，你想好了再告诉我。",
+      "pinyin": "Méi guānxi, nǐ xiǎng hǎo le zài gàosu wǒ.",
       "translation": {
-        "en": "Okay, just tell me tomorrow.",
-        "ar": "حسناً، أخبرني غداً إذاً."
+        "en": "That’s okay. Tell me once you’ve made up your mind.",
+        "ar": "لا بأس. أخبرني عندما تقرر."
       },
       "audio": null
     },
     {
       "id": "8-1-4",
-      "role": "Speaker B",
-      "hanzi": "没问题。",
-      "pinyin": "Méi wèntí.",
+      "role": "陈明",
+      "hanzi": "好，我今晚想一想，明天上午给你答复。",
+      "pinyin": "Hǎo, wǒ jīnwǎn xiǎng yi xiǎng, míngtiān shàngwǔ gěi nǐ dáfù.",
       "translation": {
-        "en": "No problem.",
-        "ar": "لا مشكلة."
+        "en": "Sure. I’ll think about it tonight and let you know tomorrow morning.",
+        "ar": "حسناً. سأفكر في الأمر الليلة وأجيبك صباح الغد."
       },
       "audio": null
     },
     {
-      "id": "8-2-1",
-      "role": "Speaker A",
-      "hanzi": "你找我有事吗？",
-      "pinyin": "Nǐ zhǎo wǒ yǒu shì ma?",
+      "id": "8-1-5",
+      "role": "林娜",
+      "hanzi": "你想去爬山，还是和我们一起看展览？",
+      "pinyin": "Nǐ xiǎng qù páshān, háishi hé wǒmen yìqǐ kàn zhǎnlǎn?",
       "translation": {
-        "en": "Are you looking for me for something?",
-        "ar": "هل تبحث عني لأمر ما؟"
+        "en": "Would you rather hike or see the exhibition with us?",
+        "ar": "هل تفضل التنزه في الجبل أم زيارة المعرض معنا؟"
       },
       "audio": null
     },
     {
-      "id": "8-2-2",
-      "role": "Speaker B",
-      "hanzi": "经理让我告诉你，明天上午九点开会。",
-      "pinyin": "Jīnglǐ ràng wǒ gàosu nǐ, míngtiān shàngwǔ jiǔ diǎn kāihuì.",
+      "id": "8-1-6",
+      "role": "陈明",
+      "hanzi": "我还是想爬山，最近很少出去走走。",
+      "pinyin": "Wǒ háishi xiǎng páshān, zuìjìn hěn shǎo chūqù zǒuzou.",
       "translation": {
-        "en": "The manager asked me to tell you that there is a meeting at 9:00 AM tomorrow.",
-        "ar": "طلب مني المدير إخبارك بأن هناك اجتماعاً غداً في التاسعة صباحاً."
-      },
-      "audio": null
-    },
-    {
-      "id": "8-2-3",
-      "role": "Speaker A",
-      "hanzi": "好的，我知道了。在哪个会议室？",
-      "pinyin": "Hǎo de, wǒ zhīdào le. Zài nǎge huìyìshì?",
-      "translation": {
-        "en": "Got it, thank you. Which meeting room?",
-        "ar": "حسناً، فهمت. في أي قاعة اجتماعات؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "8-2-4",
-      "role": "Speaker B",
-      "hanzi": "在三楼大会议室。",
-      "pinyin": "Zài sān lóu dà huìyìshì.",
-      "translation": {
-        "en": "In the large meeting room on the third floor.",
-        "ar": "في قاعة الاجتماعات الكبرى بالطابق الثالث."
-      },
-      "audio": null
-    },
-    {
-      "id": "8-3-1",
-      "role": "Speaker A",
-      "hanzi": "你觉得这件黑色的怎么样？",
-      "pinyin": "Nǐ juéde zhè jiàn hēisè de zěnmeyàng?",
-      "translation": {
-        "en": "What do you think of this black one?",
-        "ar": "ما رأيك في هذه القطعة السوداء؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "8-3-2",
-      "role": "Speaker B",
-      "hanzi": "我觉得这件颜色有点儿深，那件白色的更好看。",
-      "pinyin": "Wǒ juéde zhè jiàn yánsè yǒudiǎnr shēn, nà jiàn báisè de gèng hǎokàn.",
-      "translation": {
-        "en": "I think its color is a bit dark; the white one looks better.",
-        "ar": "أرى أن لونها داكن قليلاً، القطعة البيضاء هناك تبدو أجمل بكثير."
-      },
-      "audio": null
-    },
-    {
-      "id": "8-3-3",
-      "role": "Speaker A",
-      "hanzi": "那就买白色的吧。",
-      "pinyin": "Nà jiù mǎi báisè de ba.",
-      "translation": {
-        "en": "Then let's buy the white one.",
-        "ar": "فلنشترِ البيضاء إذاً."
-      },
-      "audio": null
-    },
-    {
-      "id": "8-3-4",
-      "role": "Speaker B",
-      "hanzi": "好。",
-      "pinyin": "Hǎo.",
-      "translation": {
-        "en": "Okay.",
-        "ar": "حسناً."
-      },
-      "audio": null
-    },
-    {
-      "id": "8-4-1",
-      "role": "Speaker A",
-      "hanzi": "今天晚上吃什么？",
-      "pinyin": "Jīntiān wǎnshang chī shénme?",
-      "translation": {
-        "en": "What are we eating tonight?",
-        "ar": "ماذا سنأكل في العشاء الليلة؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "8-4-2",
-      "role": "Speaker B",
-      "hanzi": "我们去吃火锅吧，或者去吃烤鸭。",
-      "pinyin": "Wǒmen qù chī huǒguō ba, huòzhě qù chī kǎoyā.",
-      "translation": {
-        "en": "Let's go have hot pot, or maybe roast duck.",
-        "ar": "لنذهب لتناول القدر الساخن (الـ Hotpot)، أو ربما البط المشوي."
-      },
-      "audio": null
-    },
-    {
-      "id": "8-4-3",
-      "role": "Speaker A",
-      "hanzi": "让我想想，还是吃烤鸭吧。",
-      "pinyin": "Ràng wǒ xiǎngxiang, háishi chī kǎoyā ba.",
-      "translation": {
-        "en": "Let me think... let's go for roast duck after all.",
-        "ar": "دعني أفكر... من الأفضل تناول البط المشوي."
-      },
-      "audio": null
-    },
-    {
-      "id": "8-4-4",
-      "role": "Speaker B",
-      "hanzi": "好，我给饭馆打电话订位子。",
-      "pinyin": "Hǎo, wǒ gěi fànguǎn dǎ diànhuà dìng wèizi.",
-      "translation": {
-        "en": "Great, I'll call the restaurant to reserve a table.",
-        "ar": "ممتاز، سأتصل بالمطعم لحجز طاولة."
+        "en": "I think I’d rather hike; I haven’t been outdoors much lately.",
+        "ar": "أظن أنني أفضل التنزه في الجبل؛ فلم أخرج كثيراً مؤخراً."
       },
       "audio": null
     }
@@ -247,5 +127,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official HSK 2 Standard Course Lesson 8 dialogues."
+  "authoringNote": "Official HSK 2 Standard Course Lesson 8 dialogues.",
+  "curriculum": "standard"
 }

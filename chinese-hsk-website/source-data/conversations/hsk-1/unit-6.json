@@ -10,148 +10,57 @@
     "ar": "الدرس 6: أنا أستطيع التحدث بالصينية"
   },
   "targetVocabularyIds": [
-    "hui-2",
-    "shuo",
-    "ma-ma",
-    "cai",
-    "hen",
-    "zuo-2",
-    "xie",
-    "hanzi",
-    "zi",
-    "zenme",
-    "du"
+    "fen-zhong",
+    "ke-yi",
+    "mei-guanxi",
+    "shang-ke",
+    "women",
+    "xuexi",
+    "yidianr",
+    "zhongwen"
   ],
   "dialogue": [
     {
       "id": "6-1-1",
-      "role": "Speaker A",
-      "hanzi": "你会说汉语吗？",
-      "pinyin": "Nǐ huì shuō Hànyǔ ma?",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "你会说中文吗？我想找人练习。",
+      "pinyin": "Nǐ huì shuō Zhōngwén ma? Wǒ xiǎng zhǎo rén liànxí.",
       "translation": {
-        "en": "Can you speak Chinese?",
-        "ar": "هل تستطيع التحدث باللغة الصينية؟"
+        "en": "Can you speak Chinese? I’m looking for someone to practise with.",
+        "ar": "هل تتحدث الصينية؟ أبحث عن شخص أتدرب معه."
       },
       "audio": null
     },
     {
       "id": "6-1-2",
-      "role": "Speaker B",
-      "hanzi": "我会说汉语。",
-      "pinyin": "Wǒ huì shuō Hànyǔ.",
+      "role": "安娜 (Ānnà)",
+      "hanzi": "会一点儿，不过我说得还不快。",
+      "pinyin": "Huì yìdiǎnr, búguò wǒ shuō de hái bú kuài.",
       "translation": {
-        "en": "Yes, I can speak Chinese.",
-        "ar": "نعم، أستطيع التحدث باللغة الصينية."
+        "en": "A little, though I don’t speak very quickly yet.",
+        "ar": "قليلاً، لكنني لا أتحدث بسرعة حتى الآن."
       },
       "audio": null
     },
     {
       "id": "6-1-3",
-      "role": "Speaker A",
-      "hanzi": "你妈妈会说汉语吗？",
-      "pinyin": "Nǐ māma huì shuō Hànyǔ ma?",
+      "role": "林然 (Lín Rán)",
+      "hanzi": "没关系，我也在学习，我们可以一起说。",
+      "pinyin": "Méi guānxi, wǒ yě zài xuéxí, wǒmen kěyǐ yìqǐ shuō.",
       "translation": {
-        "en": "Can your mother speak Chinese?",
-        "ar": "هل تستطيع والدتك التحدث باللغة الصينية؟"
+        "en": "That’s fine. I’m learning too, so we can practise together.",
+        "ar": "لا بأس، فأنا أتعلم أيضاً، ويمكننا التحدث معاً."
       },
       "audio": null
     },
     {
       "id": "6-1-4",
-      "role": "Speaker B",
-      "hanzi": "她不会说。",
-      "pinyin": "Tā bú huì shuō.",
+      "role": "安娜 (Ānnà)",
+      "hanzi": "太好了！我们每天上课以后练十分钟。",
+      "pinyin": "Tài hǎo le! Wǒmen měitiān shàngkè yǐhòu liàn shí fēnzhōng.",
       "translation": {
-        "en": "She cannot speak it.",
-        "ar": "لا، هي لا تستطيع التحدث بها."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-2-1",
-      "role": "Speaker A",
-      "hanzi": "中国菜好吃吗？",
-      "pinyin": "Zhōngguó cài hǎochī ma?",
-      "translation": {
-        "en": "Is Chinese food delicious?",
-        "ar": "هل الطعام الصيني لذيذ؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "6-2-2",
-      "role": "Speaker B",
-      "hanzi": "中国菜很好吃。",
-      "pinyin": "Zhōngguó cài hěn hǎochī.",
-      "translation": {
-        "en": "Chinese food is very delicious.",
-        "ar": "الطعام الصيني لذيذ جداً."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-2-3",
-      "role": "Speaker A",
-      "hanzi": "你会做中国菜吗？",
-      "pinyin": "Nǐ huì zuò Zhōngguó cài ma?",
-      "translation": {
-        "en": "Can you cook Chinese food?",
-        "ar": "هل تجيد طبخ الطعام الصيني؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "6-2-4",
-      "role": "Speaker B",
-      "hanzi": "我不会做。",
-      "pinyin": "Wǒ bú huì zuò.",
-      "translation": {
-        "en": "I cannot cook it.",
-        "ar": "أنا لا أجيد طبخه."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-3-1",
-      "role": "Speaker A",
-      "hanzi": "你会写汉字吗？",
-      "pinyin": "Nǐ huì xiě Hànzì ma?",
-      "translation": {
-        "en": "Can you write Chinese characters?",
-        "ar": "هل تستطيع كتابة الرموز الصينية؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "6-3-2",
-      "role": "Speaker B",
-      "hanzi": "我会写。",
-      "pinyin": "Wǒ huì xiě.",
-      "translation": {
-        "en": "Yes, I can write them.",
-        "ar": "نعم، أستطيع كتابتها."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-3-3",
-      "role": "Speaker A",
-      "hanzi": "这个字怎么写？",
-      "pinyin": "Zhège zì zěnme xiě?",
-      "translation": {
-        "en": "How do you write this character?",
-        "ar": "كيف يُكتب هذا المقطع الصيني؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "6-3-4",
-      "role": "Speaker B",
-      "hanzi": "对不起，这个字我会读，不会写。",
-      "pinyin": "Duìbuqǐ, zhège zì wǒ huì dú, bú huì xiě.",
-      "translation": {
-        "en": "Sorry, I can read this character, but cannot write it.",
-        "ar": "معذرة، هذا الرمز أستطيع قراءته، لكنني لا أعرف كتابته."
+        "en": "Great! Let’s practise for ten minutes after class each day.",
+        "ar": "رائع! لنتدرب عشر دقائق بعد الدرس كل يوم."
       },
       "audio": null
     }
@@ -193,5 +102,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official HSK 1 Standard Course Lesson 6 dialogues."
+  "authoringNote": "Official HSK 1 Standard Course Lesson 6 dialogues.",
+  "curriculum": "standard"
 }

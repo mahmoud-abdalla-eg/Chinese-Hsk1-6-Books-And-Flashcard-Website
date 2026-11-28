@@ -12,156 +12,68 @@
   },
   "dialogue": [
     {
-      "id": "6-1-1",
-      "role": "李文 (Li Wen)",
-      "hanzi": "家月，你的手机号是多少？",
-      "pinyin": "Jiāyuè, nǐ de shǒujīhào shì duōshao?",
+      "id": "6-phone-1",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "李文，你的手机号是多少？我想存在手机里。",
+      "pinyin": "Lǐ Wén, nǐ de shǒujī hào shì duōshao? Wǒ xiǎng cún zài shǒujī lǐ.",
       "translation": {
-        "en": "Jiayue, what's your cell phone number?",
-        "ar": "جيايوي، ما هو رقم هاتفك المحمول؟"
+        "en": "Li Wen, what’s your mobile number? I’d like to save it in my phone.",
+        "ar": "لي ون، ما رقم هاتفك المحمول؟ أود حفظه في هاتفي."
       },
       "audio": null
     },
     {
-      "id": "6-1-2",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "我的手机号是+33 601493190。",
-      "pinyin": "Wǒ de shǒujīhào shì +33 601493190.",
+      "id": "6-phone-2",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "我把号码发给你，免得你记错。",
+      "pinyin": "Wǒ bǎ hàomǎ fā gěi nǐ, miǎnde nǐ jì cuò.",
       "translation": {
-        "en": "My cell phone number is +33 601493190.",
-        "ar": "رقم هاتفي المحمول هو +33 601493190."
+        "en": "I’ll send you the number so you don’t write it down wrong.",
+        "ar": "سأرسل إليك الرقم كي لا تدوّنيه خطأً."
       },
       "audio": null
     },
     {
-      "id": "6-1-3",
-      "role": "李文 (Li Wen)",
-      "hanzi": "我的手机号是+86 13552721160。",
-      "pinyin": "Wǒ de shǒujīhào shì +86 13552721160.",
+      "id": "6-phone-3",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "好。明天你去哪儿？",
+      "pinyin": "Hǎo. Míngtiān nǐ qù nǎr?",
       "translation": {
-        "en": "My cell phone number is +86 13552721160.",
-        "ar": "رقم هاتفي المحمول هو +86 13552721160."
+        "en": "Okay. Where are you going tomorrow?",
+        "ar": "حسناً. إلى أين ستذهب غداً؟"
       },
       "audio": null
     },
     {
-      "id": "6-1-4",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "好的。",
-      "pinyin": "Hǎo de.",
+      "id": "6-phone-4",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "我想去超市买牛奶和一些东西。",
+      "pinyin": "Wǒ xiǎng qù chāoshì mǎi niúnǎi hé yìxiē dōngxi.",
       "translation": {
-        "en": "Alright.",
-        "ar": "حسناً."
+        "en": "I want to go to the supermarket to buy milk and a few things.",
+        "ar": "أريد الذهاب إلى السوبرماركت لشراء الحليب وبعض الأشياء."
       },
       "audio": null
     },
     {
-      "id": "6-2-1",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "家月，明天你去哪儿？",
-      "pinyin": "Jiāyuè, míngtiān nǐ qù nǎr?",
+      "id": "6-phone-5",
+      "role": "白家月 (Bái Jiāyuè)",
+      "hanzi": "晚饭我们去西安饭店吧，那边的包子非常好吃。",
+      "pinyin": "Wǎnfàn wǒmen qù Xī’ān Fàndiàn ba, nàbiān de bāozi fēicháng hǎochī.",
       "translation": {
-        "en": "Jiayue, where are you going tomorrow?",
-        "ar": "جيايوي، إلى أين ستذهبين غداً؟"
+        "en": "Let’s have dinner at Xi’an Restaurant; their steamed buns are delicious.",
+        "ar": "لنتناول العشاء في مطعم شيآن؛ فالكعك المحشو هناك لذيذ جداً."
       },
       "audio": null
     },
     {
-      "id": "6-2-2",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "我想去超市买东西。",
-      "pinyin": "Wǒ xiǎng qù chāoshì mǎi dōngxi.",
+      "id": "6-phone-6",
+      "role": "李文 (Lǐ Wén)",
+      "hanzi": "好，我们坐出租车去。",
+      "pinyin": "Hǎo, wǒmen zuò chūzūchē qù.",
       "translation": {
-        "en": "I want to go to the supermarket to buy groceries.",
-        "ar": "أريد الذهاب إلى السوبرماركت لشراء بعض الأشياء."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-2-3",
-      "role": "陈天中 (Chen Tianzhong)",
-      "hanzi": "你去超市买什么？",
-      "pinyin": "Nǐ qù chāoshì mǎi shénme?",
-      "translation": {
-        "en": "What are you going to buy at the supermarket?",
-        "ar": "ماذا ستشترين من السوبرماركت؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "6-2-4",
-      "role": "白家月 (Bai Jiayue)",
-      "hanzi": "我想买些牛奶。",
-      "pinyin": "Wǒ xiǎng mǎi xiē niúnǎi.",
-      "translation": {
-        "en": "I want to buy some milk.",
-        "ar": "أريد شراء بعض الحليب."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-3-1",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "星期天我们去哪儿吃晚饭？",
-      "pinyin": "Xīngqītiān wǒmen qù nǎr chī wǎnfàn?",
-      "translation": {
-        "en": "Where are we going for dinner on Sunday?",
-        "ar": "إلى أين سنذهب لتناول العشاء يوم الأحد؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "6-3-2",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "我还想去西安饭店。",
-      "pinyin": "Wǒ hái xiǎng qù Xī'ān Fàndiàn.",
-      "translation": {
-        "en": "I'd like to go to Xi'an Restaurant again.",
-        "ar": "أود الذهاب إلى مطعم شيآن مجدداً."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-3-3",
-      "role": "刘小雪 (Liu Xiaoxue)",
-      "hanzi": "那边的包子非常好吃，我想吃包子。",
-      "pinyin": "Nàbian de bāozi fēicháng hǎochī, wǒ xiǎng chī bāozi.",
-      "translation": {
-        "en": "The steamed stuffed buns there are very delicious—I want to eat buns.",
-        "ar": "الكعك المحشو على البخار هناك لذيذ جداً، أريد أن آكل الكعك المحشو."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-3-4",
-      "role": "刘小明 (Liu Xiaoming)",
-      "hanzi": "妈妈，我想吃米饭，不想吃包子。",
-      "pinyin": "Māma, wǒ xiǎng chī mǐfàn, bù xiǎng chī bāozi.",
-      "translation": {
-        "en": "Mom, I want to eat rice—not steamed stuffed buns.",
-        "ar": "أمي، أريد أن آكل الأرز، لا أريد الكعك المحشو."
-      },
-      "audio": null
-    },
-    {
-      "id": "6-3-5",
-      "role": "王一雪 (Wang Yixue)",
-      "hanzi": "好的。我们怎么去？",
-      "pinyin": "Hǎo de. Wǒmen zěnme qù?",
-      "translation": {
-        "en": "Alright. How shall we get there?",
-        "ar": "حسناً. كيف سنذهب؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "6-3-6",
-      "role": "刘明 (Liu Ming)",
-      "hanzi": "坐出租车去。",
-      "pinyin": "Zuò chūzūchē qù.",
-      "translation": {
-        "en": "Let's take a taxi.",
-        "ar": "لنذهب بسيارة الأجرة."
+        "en": "Great, let’s take a taxi.",
+        "ar": "حسناً، لنذهب بسيارة أجرة."
       },
       "audio": null
     }
@@ -220,5 +132,17 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 6."
+  "authoringNote": "Official New HSK 3.0 Course (FLTRP 2026) Lesson 6.",
+  "targetVocabularyIds": [
+    "chao-shi",
+    "dongxi",
+    "haochi",
+    "mingtian",
+    "niunai",
+    "shouji",
+    "wanfan",
+    "chuzuche",
+    "xi-an-fandian",
+    "baozi"
+  ]
 }

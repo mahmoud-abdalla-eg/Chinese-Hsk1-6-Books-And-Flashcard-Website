@@ -9,188 +9,71 @@
     "en": "Lesson 14: Have you seen that movie?",
     "ar": "الدرس 14: هل شاهدت ذلك الفيلم من قبل؟"
   },
-  "targetVocabularyIds": [
-    "guo-2",
-    "ci-2",
-    "beijing-kaoya",
-    "fanguan",
-    "you-yi-si",
-    "chang"
-  ],
+  "targetVocabularyIds": ["aiqingpian", "you-yi-si", "yiqi"],
   "dialogue": [
     {
       "id": "14-1-1",
-      "role": "Speaker A",
-      "hanzi": "你看过那个中国电影吗？",
-      "pinyin": "Nǐ kàn guò nàge Zhōngguó diànyǐng ma?",
+      "role": "陈明",
+      "hanzi": "你看过新上映的那部爱情片吗？",
+      "pinyin": "Nǐ kànguo xīn shàngyìng de nà bù àiqíngpiàn ma?",
       "translation": {
-        "en": "Have you seen that Chinese movie?",
-        "ar": "هل شاهدت ذلك الفيلم الصيني من قبل؟"
+        "en": "Have you seen the new romance film?",
+        "ar": "هل شاهدت الفيلم الرومانسي الجديد؟"
       },
       "audio": null
     },
     {
       "id": "14-1-2",
-      "role": "Speaker B",
-      "hanzi": "没看过，听说很有意思。",
-      "pinyin": "Méi kàn guò, tīngshuō hěn yǒu yìsi.",
+      "role": "林娜",
+      "hanzi": "还没有，听说很有意思。",
+      "pinyin": "Hái méiyǒu, tīngshuō hěn yǒuyìsi.",
       "translation": {
-        "en": "No, I haven't seen it; I heard it's very interesting.",
-        "ar": "لم أشاهده، لكن سمعت أنه مشوق وممتع للغاية."
+        "en": "Not yet. I heard it’s very interesting.",
+        "ar": "ليس بعد. سمعت أنه ممتع جداً."
       },
       "audio": null
     },
     {
       "id": "14-1-3",
-      "role": "Speaker A",
-      "hanzi": "周末我们一起去看，好吗？",
-      "pinyin": "Zhōumò wǒmen yìqǐ qù kàn, hǎo ma?",
+      "role": "陈明",
+      "hanzi": "我看过，故事不长，结尾挺特别。",
+      "pinyin": "Wǒ kànguo, gùshi bù cháng, jiéwěi tǐng tèbié.",
       "translation": {
-        "en": "Shall we go watch it together this weekend?",
-        "ar": "هل نذهب لمشاهدته معاً في عطلة نهاية الأسبوع؟"
+        "en": "I’ve seen it. The story is short, and the ending is quite unusual.",
+        "ar": "شاهدته. قصته قصيرة ونهايته مميزة."
       },
       "audio": null
     },
     {
       "id": "14-1-4",
-      "role": "Speaker B",
-      "hanzi": "太好了，我很想看。",
-      "pinyin": "Tài hǎo le, wǒ hěn xiǎng kàn.",
+      "role": "林娜",
+      "hanzi": "那我们周末一起去看吧。",
+      "pinyin": "Nà wǒmen zhōumò yìqǐ qù kàn ba.",
       "translation": {
-        "en": "Wonderful! I really want to watch it.",
-        "ar": "رائع جداً، أنا متلهف لمشاهدته."
+        "en": "Then let’s go see it together this weekend.",
+        "ar": "فلنذهب لمشاهدته معاً في عطلة نهاية الأسبوع."
       },
       "audio": null
     },
     {
-      "id": "14-2-1",
-      "role": "Speaker A",
-      "hanzi": "你吃过北京烤鸭吗？",
-      "pinyin": "Nǐ chī guò Běijīng kǎoyā ma?",
+      "id": "14-1-5",
+      "role": "陈明",
+      "hanzi": "好，我先查查几点开始，再买票。",
+      "pinyin": "Hǎo, wǒ xiān chácha jǐ diǎn kāishǐ, zài mǎi piào.",
       "translation": {
-        "en": "Have you eaten Beijing roast duck before?",
-        "ar": "هل تناولت بط بكين المشوي من قبل؟"
+        "en": "Okay. I’ll check what time it starts, then buy the tickets.",
+        "ar": "حسناً. سأتحقق من موعد العرض أولاً ثم أشتري التذاكر."
       },
       "audio": null
     },
     {
-      "id": "14-2-2",
-      "role": "Speaker B",
-      "hanzi": "以前吃过一次，味道好极了。",
-      "pinyin": "Yǐqián chī guò yí cì, wèidào hǎo jí le.",
+      "id": "14-1-6",
+      "role": "林娜",
+      "hanzi": "太好了，看完我们去吃饭吧。",
+      "pinyin": "Tài hǎo le, kàn wán wǒmen qù chī fàn ba.",
       "translation": {
-        "en": "I ate it once in the past; the flavor was extraordinarily good.",
-        "ar": "تناولته مرة واحدة من قبل، ومذاقه كان شهياً ولذيذاً للغاية."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-2-3",
-      "role": "Speaker A",
-      "hanzi": "今天我们再吃一次吧。",
-      "pinyin": "Jīntiān wǒmen zài chī yí cì ba.",
-      "translation": {
-        "en": "Let's eat it once more today.",
-        "ar": "دعنا نتناوله مرة أخرى اليوم."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-2-4",
-      "role": "Speaker B",
-      "hanzi": "好啊，我很喜欢吃烤鸭。",
-      "pinyin": "Hǎo a, wǒ hěn xǐhuan chī kǎoyā.",
-      "translation": {
-        "en": "Sure thing, I love eating roast duck.",
-        "ar": "بكل سرور، فأنا أعشق أكل البط المشوي."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-3-1",
-      "role": "Speaker A",
-      "hanzi": "你去过长城吗？",
-      "pinyin": "Nǐ qù guò Chángchéng ma?",
-      "translation": {
-        "en": "Have you been to the Great Wall?",
-        "ar": "هل زرت سور الصين العظيم من قبل؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "14-3-2",
-      "role": "Speaker B",
-      "hanzi": "去过两次，长城真壮观。",
-      "pinyin": "Qù guò liǎng cì, Chángchéng zhēn zhuàngguān.",
-      "translation": {
-        "en": "I've been there twice; the Great Wall is truly magnificent.",
-        "ar": "زرته مرتين، وسور الصين العظيم مهيب ورائع بحق."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-3-3",
-      "role": "Speaker A",
-      "hanzi": "我还没去过呢，有机会一定要去看看。",
-      "pinyin": "Wǒ hái méi qù guò ne, yǒu jīhuì yídìng yào qù kànkan.",
-      "translation": {
-        "en": "I haven't been there yet; if there's an opportunity, I must go see it.",
-        "ar": "أنا لم أزره بعد، وحين تسنح الفرصة سأذهب لرؤيته بكل تأكيد."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-3-4",
-      "role": "Speaker B",
-      "hanzi": "最好秋天去，秋天的风景最美。",
-      "pinyin": "Zuì hǎo qiūtiān qù, qiūtiān de fēngjǐng zuì měi.",
-      "translation": {
-        "en": "Best to go in autumn; the autumn scenery is the most beautiful.",
-        "ar": "من الأفضل زيارته في الخريف، فالمناظر الطبيعية الخريفية هناك هي الأروع."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-4-1",
-      "role": "Speaker A",
-      "hanzi": "这本书你读过了吗？",
-      "pinyin": "Zhè běn shū nǐ dú guò le ma?",
-      "translation": {
-        "en": "Have you read this book before?",
-        "ar": "هل قرأت هذا الكتاب من قبل؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "14-4-2",
-      "role": "Speaker B",
-      "hanzi": "读过，写得非常生动。",
-      "pinyin": "Dú guò, xiě de fēicháng shēngdòng.",
-      "translation": {
-        "en": "I have; it is written very vividly.",
-        "ar": "قرأته، وأسلوب كتابته حيوي ورائع جداً."
-      },
-      "audio": null
-    },
-    {
-      "id": "14-4-3",
-      "role": "Speaker A",
-      "hanzi": "能借给我看看吗？",
-      "pinyin": "Néng jiè gěi wǒ kànkan ma?",
-      "translation": {
-        "en": "Could you lend it to me to read?",
-        "ar": "هل يمكنك إعارتي إياه لأقرأه؟"
-      },
-      "audio": null
-    },
-    {
-      "id": "14-4-4",
-      "role": "Speaker B",
-      "hanzi": "当然可以，看完了再还给我就行。",
-      "pinyin": "Dāngrán kěyǐ, kàn wán le zài huán gěi wǒ jiù xíng.",
-      "translation": {
-        "en": "Of course! Just return it to me after you finish reading.",
-        "ar": "بالتأكيد، متى ما فرغت من قراءته أعده لي."
+        "en": "Great! Let’s get something to eat after the movie.",
+        "ar": "رائع! لنذهب لتناول الطعام بعد الفيلم."
       },
       "audio": null
     }
@@ -249,5 +132,6 @@
     "enabled": true,
     "mode": "line-by-line"
   },
-  "authoringNote": "Official HSK 2 Standard Course Lesson 14 dialogues."
+  "authoringNote": "Official HSK 2 Standard Course Lesson 14 dialogues.",
+  "curriculum": "standard"
 }
