@@ -3,10 +3,31 @@
 import Link from "next/link";
 import { useLanguage } from "@/components/language/language-provider";
 import { Pill, Surface } from "@/components/ui/card";
+import { usePersistentProgress } from "@/lib/progress/use-progress";
 
 export default function HomeHeroSection({ totalWords = 0, totalUnits = 0 }) {
   const { lang, tr } = useLanguage();
   const isArabic = lang === "ar";
+  const { progress, syncStatus } = usePersistentProgress();
+  const hasProgress =
+    progress.learnedWords.length > 0 ||
+    progress.favorites.length > 0 ||
+    progress.reviewHistory.length > 0 ||
+    progress.completedUnits.length > 0 ||
+    progress.completedConversations.length > 0;
+  const latestReview = [...progress.reviewHistory].reverse().find((review) => {
+    const level = Number(review.level);
+    return Number.isInteger(level) && level >= 1 && level <= 6;
+  });
+  const continueHref = latestReview
+    ? `/flashcards/hsk/${Number(latestReview.level)}`
+    : "/dashboard";
+  const now = Date.now();
+  const dueReviewCount = Object.values(progress.wordStats || {}).filter(
+    (stats) =>
+      stats?.nextReviewAt && new Date(stats.nextReviewAt).getTime() <= now,
+  ).length;
+  const isProgressLoading = syncStatus === "loading";
 
   return (
     <section className="grid gap-6 py-3 sm:py-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-10">
@@ -18,21 +39,45 @@ export default function HomeHeroSection({ totalWords = 0, totalUnits = 0 }) {
           {tr("homeHeroSubtitle")}
         </p>
         <div className="flex flex-wrap gap-2 sm:gap-2.5">
-          <Link
-            href="/hsk/1"
-            className="rounded-full bg-teal-700 px-5 py-2.5 sm:px-6 sm:py-3 text-xs sm:text-sm font-black text-white shadow-xs transition hover:-translate-y-0.5 hover:bg-teal-800"
-          >
-            {tr("startHsk1")}
-          </Link>
+          {hasProgress ? (
+            <>
+              <Link
+                href={continueHref}
+                className="inline-flex min-h-11 items-center rounded-full bg-teal-700 px-5 py-2.5 text-xs font-black text-white shadow-xs transition hover:-translate-y-0.5 hover:bg-teal-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2 sm:px-6 sm:py-3 sm:text-sm"
+              >
+                {tr("continueLearning")}
+              </Link>
+              {dueReviewCount > 0 ? (
+                <Link
+                  href="/dashboard/words?filter=due"
+                  className="inline-flex min-h-11 items-center rounded-full border border-teal-200 bg-teal-50 px-5 py-2.5 text-xs font-black text-teal-900 shadow-xs transition hover:-translate-y-0.5 hover:border-teal-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2 sm:px-6 sm:py-3 sm:text-sm"
+                >
+                  {tr("reviewDueCards")} ({dueReviewCount})
+                </Link>
+              ) : null}
+            </>
+          ) : isProgressLoading ? (
+            <div
+              aria-hidden="true"
+              className="h-11 w-36 animate-pulse rounded-full bg-slate-200"
+            />
+          ) : (
+            <Link
+              href="/hsk/1"
+              className="inline-flex min-h-11 items-center rounded-full bg-teal-700 px-5 py-2.5 text-xs font-black text-white shadow-xs transition hover:-translate-y-0.5 hover:bg-teal-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2 sm:px-6 sm:py-3 sm:text-sm"
+            >
+              {tr("startHsk1")}
+            </Link>
+          )}
           <Link
             href="/flashcards"
-            className="rounded-full border border-slate-300 bg-white px-5 py-2.5 sm:px-6 sm:py-3 text-xs sm:text-sm font-black text-slate-900 shadow-xs transition hover:-translate-y-0.5 hover:border-slate-400"
+            className="inline-flex min-h-11 items-center rounded-full border border-slate-300 bg-white px-5 py-2.5 text-xs font-black text-slate-900 shadow-xs transition hover:-translate-y-0.5 hover:border-slate-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2 sm:px-6 sm:py-3 sm:text-sm"
           >
             {tr("reviewFlashcards")}
           </Link>
           <Link
             href="/grammar"
-            className="rounded-full border border-blue-200 bg-blue-50 px-5 py-2.5 sm:px-6 sm:py-3 text-xs sm:text-sm font-black text-blue-900 shadow-xs transition hover:-translate-y-0.5 hover:border-blue-300"
+            className="inline-flex min-h-11 items-center rounded-full border border-blue-200 bg-blue-50 px-5 py-2.5 text-xs font-black text-blue-900 shadow-xs transition hover:-translate-y-0.5 hover:border-blue-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2 sm:px-6 sm:py-3 sm:text-sm"
           >
             {tr("grammarPath")}
           </Link>
@@ -59,11 +104,8 @@ export default function HomeHeroSection({ totalWords = 0, totalUnits = 0 }) {
 
       <Surface className="p-3 sm:p-4 lg:p-5">
         <div className="rounded-xl sm:rounded-2xl border border-slate-200 bg-slate-50 p-3 sm:p-4 text-slate-950">
-          <div className="flex items-center justify-between gap-3">
-            <Pill tone="green">{tr("liveLessonPreview")}</Pill>
-            <span className="text-[11px] sm:text-xs font-black uppercase tracking-[0.18em] text-teal-700">
-              {tr("shadowing")}
-            </span>
+          <div className="flex items-center gap-3">
+            <Pill tone="green">{tr("sampleLesson")}</Pill>
           </div>
 
           <div className="mt-3.5 sm:mt-4 grid gap-2.5 sm:gap-3">
@@ -93,7 +135,7 @@ export default function HomeHeroSection({ totalWords = 0, totalUnits = 0 }) {
             </div>
 
             {/* Student Card */}
-            <div className="ml-auto max-w-[88%] rounded-xl border border-blue-200 bg-blue-50 p-3 sm:p-3.5 text-slate-950 shadow-2xs">
+            <div className="ms-auto max-w-[88%] rounded-xl border border-blue-200 bg-blue-50 p-3 sm:p-3.5 text-slate-950 shadow-2xs">
               <p className="text-[11px] font-black uppercase tracking-[0.16em] text-blue-800">
                 {tr("student")}
               </p>
@@ -118,14 +160,13 @@ export default function HomeHeroSection({ totalWords = 0, totalUnits = 0 }) {
             </div>
           </div>
 
-          {/* Pronunciation Notice */}
           <div className="mt-3.5 sm:mt-4 rounded-xl border border-slate-200 bg-white p-3">
             <div className="mb-1.5 flex items-center justify-between text-[11px] font-black uppercase tracking-[0.16em] text-slate-500">
-              <span>{tr("pronunciationPractice")}</span>
-              <span>{tr("comingSoon")}</span>
+              <span>{tr("sampleDialogue")}</span>
+              <span>{tr("sampleOnly")}</span>
             </div>
             <p className="text-xs font-semibold leading-relaxed text-slate-600">
-              {tr("pronunciationNotice")}
+              {tr("sampleLessonNote")}
             </p>
           </div>
         </div>

@@ -5,9 +5,8 @@ import { languages } from "@/lib/i18n/dictionaries";
 import { useLanguage } from "./language-provider";
 
 export default function LanguageSwitcher() {
-  const { lang, setLang } = useLanguage();
+  const { lang, setLang, tr } = useLanguage();
   const detailsRef = useRef(null);
-  const active = languages[lang] || languages.en;
 
   const chooseLanguage = (code) => {
     setLang(code);
@@ -17,8 +16,7 @@ export default function LanguageSwitcher() {
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (
-        detailsRef.current &&
-        detailsRef.current.open &&
+        detailsRef.current?.open &&
         !detailsRef.current.contains(e.target)
       ) {
         detailsRef.current.open = false;
@@ -42,8 +40,8 @@ export default function LanguageSwitcher() {
   return (
     <details ref={detailsRef} className="group relative">
       <summary
-        className="inline-flex cursor-pointer list-none items-center gap-1 sm:gap-2 rounded-full border border-slate-200 bg-white px-2 py-1 sm:px-3 sm:py-2 text-xs sm:text-sm font-black text-slate-800 shadow-2xs transition marker:hidden hover:border-teal-400 hover:bg-slate-50 focus:outline-hidden [&::-webkit-details-marker]:hidden"
-        aria-label="Select language"
+        className="inline-flex min-h-11 cursor-pointer list-none items-center gap-1 rounded-full border border-slate-200 bg-white px-2 text-xs font-black text-slate-800 shadow-2xs transition marker:hidden hover:border-teal-400 hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2 sm:gap-2 sm:px-3 sm:text-sm [&::-webkit-details-marker]:hidden"
+        aria-label={tr("language")}
       >
         <svg
           className="h-4 w-4 text-slate-500 shrink-0"
@@ -82,7 +80,7 @@ export default function LanguageSwitcher() {
             key={code}
             type="button"
             onClick={() => chooseLanguage(code)}
-            className={`flex w-full items-center justify-between rounded-xl px-3 py-2 text-left text-sm font-bold transition ${
+            className={`flex min-h-11 w-full items-center justify-between rounded-xl px-3 py-2 text-start text-sm font-bold transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-1 ${
               code === lang
                 ? "bg-teal-700 text-white shadow-2xs"
                 : "text-slate-700 hover:bg-slate-100"

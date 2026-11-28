@@ -66,6 +66,26 @@ export const dictionary = {
     zh: "\u5b66\u4e60\u9762\u677f",
     ar: "\u0644\u0648\u062d\u0629 \u0627\u0644\u062a\u0642\u062f\u0645",
   },
+  language: {
+    en: "Language",
+    zh: "语言",
+    ar: "اللغة",
+  },
+  openNavigationMenu: {
+    en: "Open navigation menu",
+    zh: "打开导航菜单",
+    ar: "فتح قائمة التنقل",
+  },
+  closeNavigationMenu: {
+    en: "Close navigation menu",
+    zh: "关闭导航菜单",
+    ar: "إغلاق قائمة التنقل",
+  },
+  navigationMenu: {
+    en: "Navigation menu",
+    zh: "导航菜单",
+    ar: "قائمة التنقل",
+  },
   navLearn: {
     en: "Learn",
     zh: "\u5b66\u4e60",
@@ -1165,6 +1185,16 @@ export const dictionary = {
     zh: "多语言 HSK 1-6 学习平台：词汇、长对话、闪卡、听力、语法和进度保存。",
     ar: "منصة متعددة اللغات لمستويات HSK 1-6: مفردات، محادثات، بطاقات، استماع، قواعد، وحفظ للتقدم.",
   },
+  continueLearning: {
+    en: "Continue learning",
+    zh: "继续学习",
+    ar: "تابع التعلم",
+  },
+  reviewDueCards: {
+    en: "Review due cards",
+    zh: "复习到期卡片",
+    ar: "راجع البطاقات المستحقة",
+  },
   startHsk1: {
     en: "Start HSK 1",
     zh: "开始 HSK 1",
@@ -1180,10 +1210,75 @@ export const dictionary = {
     zh: "语法路径",
     ar: "مسار القواعد",
   },
+  startHere: {
+    en: "Start here",
+    zh: "从这里开始",
+    ar: "ابدأ من هنا",
+  },
+  startHereTitle: {
+    en: "A clear path through your level",
+    zh: "按步骤学完你的级别",
+    ar: "مسار واضح للتقدم في مستواك",
+  },
+  startHereDesc: {
+    en: "Choose an HSK level, then connect vocabulary, conversations, grammar, and flashcards in one simple route.",
+    zh: "选择 HSK 级别，再通过词汇、对话、语法和闪卡逐步学习。",
+    ar: "اختر مستوى HSK، ثم انتقل بين المفردات والمحادثات والقواعد والبطاقات ضمن مسار واحد.",
+  },
+  chooseHskLevel: {
+    en: "Choose an HSK level",
+    zh: "选择 HSK 级别",
+    ar: "اختر مستوى HSK",
+  },
+  hskLevelLabel: {
+    en: "HSK",
+    zh: "HSK",
+    ar: "HSK",
+  },
+  startPathVocabulary: {
+    en: "Study vocabulary",
+    zh: "学习词汇",
+    ar: "ادرس المفردات",
+  },
+  startPathConversations: {
+    en: "Practice conversations",
+    zh: "练习对话",
+    ar: "تدرب على المحادثات",
+  },
+  startPathGrammar: {
+    en: "Learn grammar",
+    zh: "学习语法",
+    ar: "تعلم القواعد",
+  },
+  startPathFlashcards: {
+    en: "Review flashcards",
+    zh: "复习闪卡",
+    ar: "راجع البطاقات",
+  },
   liveLessonPreview: {
     en: "Live lesson preview",
     zh: "课程预览",
     ar: "معاينة درس مباشر",
+  },
+  sampleLesson: {
+    en: "Sample lesson",
+    zh: "课程示例",
+    ar: "نموذج درس",
+  },
+  sampleDialogue: {
+    en: "Sample dialogue",
+    zh: "对话示例",
+    ar: "نموذج محادثة",
+  },
+  sampleOnly: {
+    en: "Sample only",
+    zh: "仅供示例",
+    ar: "للعرض فقط",
+  },
+  sampleLessonNote: {
+    en: "This is a static sample dialogue. Speaking practice and pronunciation scoring are not active yet.",
+    zh: "这是静态对话示例。口语练习和发音评分功能尚未启用。",
+    ar: "هذا نموذج ثابت للمحادثة. تدريب التحدث وتقييم النطق غير متاحين حالياً.",
   },
   shadowing: {
     en: "Shadowing",
